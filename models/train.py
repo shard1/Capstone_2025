@@ -5,6 +5,7 @@ import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 from vit_vanila import ViTVanilla
+
 def get_cifar10_dataloaders(batch_size = 64):
     transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
     train_set = datasets.CIFAR10(root = './data', train = True, download = True, transform = transform)
@@ -35,9 +36,8 @@ def train_model(model, loss_fn, data_loader, optimizer, num_epochs, device):
 
             train_loss += loss.item()
 
-            print('Epoch: %d | Loss: %.4f | Train Acc: %.2f%%' \
-                  (epoch, train_loss / i, train_corr / train_n * 100))
-            return model
+        print('Epoch: %d | Loss: %.4f | Train Acc: %.2f%%' %(epoch, train_loss / (i+1), train_corr / train_n * 100))
+    return model
             
 
 def test_model(model, data_loader):
@@ -71,15 +71,15 @@ if __name__ == '__main__':
                        mlp_dim = 256,
                        num_classes = 10).to(device)
     
-    learning_rate = 0.001
-    num_epochs = 5
+    learning_rate = 0.03
+    num_epochs = 10
     loss_fn = nn.CrossEntropyLoss()
     train_loader, test_loader = get_cifar10_dataloaders()
 
     optimizer = optim.SGD(model.parameters(), lr = learning_rate, momentum = 0.9)
     model = train_model(model, loss_fn, train_loader, optimizer, num_epochs, device)
-    acc_test = test_model(model, test_loader)
+    #acc_test = test_model(model, test_loader)
 
-    print('Test Accuracy: %.2f' %(acc_test * 100))
+    #print('Test Accuracy: %.2f' %(acc_test * 100))
 
 

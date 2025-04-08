@@ -43,18 +43,18 @@ N denotes number of patches
 class CreateEmbedding(nn.Module):
     def __init__(self, patch_dim, emb_dim, num_patches):
         super(CreateEmbedding, self).__init__()
-        self.proj = nn.Linear(patch_dim, emb_dim)           #linear projection of 1x(PxPxC) to 1xD, D > PXPXC
+        self.proj = nn.Linear(patch_dim, emb_dim)           #linear projection of (PxPxC) x 1 to Dx1
         self.pos_embed = nn.Parameter(torch.randn(1, num_patches + 1, emb_dim))     #create a learnable position embeddings, initialized with random numbers (1, N+1, D)
         self.cls_token = nn.Parameter(torch.randn(1, 1, emb_dim))       #create a learnable class token
     def forward(self, patches):
         b = patches.size(0)             #batch size
-        x = self.proj(patches)              #projecting each patch to 1 x D from 1 x (PXPXC), in total N x D  (B, N, D)
+        x = self.proj(patches)              #projecting each patch to D x 1 from (P x P x C) x 1, in total D x N  (B, N, D)
         cls_tokens = self.cls_token.expand(b, -1, -1)           #duplicate class token across the batch, (B, 1, D)
         x = torch.cat((cls_tokens, x), dim = 1)         # (B, N+1, D)
         x = x + self.pos_embed                      #(B, N+1, D)
         return x
 
-#contains two layers with a GELU non-linearity
+#contains two fc layers with a GELU non-linearity
 class MLP(nn.Module):
     def __init__(self, emb_dim, mlp_dim, dropout = 0.1):
         super(MLP, self).__init__()
@@ -74,8 +74,8 @@ class EncoderBlock(nn.Module):
         self.norm2 = nn.LayerNorm(emb_dim)
         self.mlp = MLP(emb_dim, mlp_dim, dropout)
     def forward(self, x):
-        attentionOutput, _ = self.multi_attention(self.norm1(x), self.norm1(x), self.norm1(x))
-        x = x + attentionOutput
+        attention_output, _ = self.multi_attention(self.norm1(x), self.norm1(x), self.norm1(x))
+        x = x + attention_output
         x = x + self.mlp(self.norm2(x))
         return x
 
