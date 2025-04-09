@@ -11,7 +11,6 @@ Create three objects to implement ViT (vanilla)
 3. MLP Head
 """
 import torch
-import torch.nn.functional as F
 import torch.nn as nn
 
 #create patches from an image
