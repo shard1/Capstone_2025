@@ -6,7 +6,6 @@ from torch.utils.data import Dataset, DataLoader
 patient_id;diagnosis_id;coarse;fine;split
 '''
 
-
 def load_anno(anno_path):
     anno_dict = {}
     with open(anno_path, "r") as rf:

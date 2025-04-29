@@ -18,21 +18,27 @@ class Aggregator(nn.Module):            #CLAM wrapper
 
 
 class Classifier(nn.Module):
-    def __init__(self, levels = 2, nc = 4, nf = 14, input_dim = 512):      #default values chosen based on our experiment setting
+    def __init__(self, levels = 2, nc = 4, nf = 14, dropout = 0.25, input_dim = 512):      #default values chosen based on our experiment setting
         super().__init__()
-        assert input_dim % levels == 0, "input dimension must be divisible by k"
+        assert input_dim % levels == 0, "Input dimension must be divisible by k"
         self.input_dim = input_dim
         self.levels = levels          #hierarchy levels
         self.nc = nc
         self.nf = nf
+        self.dropout = dropout
         self.feature_dim = int(input_dim / self.levels)
 
-        projection_head_c = [nn.Linear(self.input_dim, self.feature_dim) for _ in range(self.nc)]
-        projection_head_f = [nn.Linear(self.input_dim, self.feature_dim) for _ in range(self.nf)]
+        projection_fc = [nn.Linear(self.input_dim, self.feature_dim), nn.ReLU(), nn.Dropout(self.dropout)]
+        self.projection_fc = nn.Sequential(*projection_fc)
+        projection_head_c = [self.fc for _ in range(self.nc)]
+        projection_head_f = [self.fc for _ in range(self.nf)]
+        
         self.projection_head_c = nn.ModuleList(projection_head_c)
         self.projection_head_f = nn.ModuleList(projection_head_f)
 
-        classification_heads = [nn.Linear(self.feature_dim, 1) for _ in range(self.levels)]
+        classification_fc = [nn.Linear(self.feature_dim, 1), nn.ReLU(), nn.Dropout(self.dropout)]
+        self.classification_fc = nn.Sequential(*classification_fc)
+        classification_heads = [self.classification_fc for _ in range(self.levels)]
         self.classification_heads = nn.ModuleList(classification_heads)
 
         # self.classification_head_c = nn.Linear(self.feature_dim, 1)
