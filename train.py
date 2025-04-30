@@ -5,10 +5,17 @@ import random
 import torch
 import torch.optim as optim
 import torch.nn as nn
+import torch.nn.functional as F
 from torch.utils.data import DataLoader
 
 from dataloader.dataloader_AMC import AMCDataset
 from models import HiClass
+
+def jsd_loss(p, q, eps = 1e-8):
+    m = 0.5 * (p+q)
+    kl_pm = F.kl_div((p + eps).log(), m, reduction = 'batchmean')
+    kl_qm = F.kl_div((q+eps).log(), m, reduction='batchmean')
+    return 0.5 * (kl_pm + kl_qm)
 
 def train(args, epoch, model, loss_fn, train_loader, optimizer, device):
     model.train()
@@ -23,7 +30,7 @@ def train(args, epoch, model, loss_fn, train_loader, optimizer, device):
         coarse_gt = coarse_gt.to(device)
         fine_gt = fine_gt.to(device)
 
-        pred_coarse, pred_fine = HiClass(patch_feature)
+        pred_coarse, pred_fine = model(patch_feature)
 
         loss_ce = nn.CrossEntropyLoss()
         #loss_con = nn.
@@ -109,8 +116,8 @@ if __name__ == '__main__':
     test_loader = DataLoader(test_dataset, batch_size=args.batch_size, num_workers=args.workers, shuffle=False)
 
     # TO DO
-    model =
-    loss_fn =
+    model = HiClass(nc = 4, nf = 14, levels = 2)
+    #loss_fn = 
     optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=0.9)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
