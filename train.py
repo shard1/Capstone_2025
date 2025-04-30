@@ -4,38 +4,46 @@ import random
 
 import torch
 import torch.optim as optim
+import torch.nn as nn
 from torch.utils.data import DataLoader
 
 from dataloader.dataloader_AMC import AMCDataset
-
+from models import HiClass
 
 def train(args, epoch, model, loss_fn, train_loader, optimizer, device):
     model.train()
 
     train_loss = 0.0
-    train_corr, train_n = 0, 0
+    correct_coarse = 0
+    correct_fine = 0
+    train_n = 0
+
     for i, (data, coarse_gt, fine_gt) in enumerate(train_loader):
-        images = images.to(device)
+        patch_feature = (torch.load(data)).to(device)
         coarse_gt = coarse_gt.to(device)
         fine_gt = fine_gt.to(device)
 
+        pred_coarse, pred_fine = HiClass(patch_feature)
+
+        loss_ce = nn.CrossEntropyLoss()
+        #loss_con = nn.
+        loss_coarse = loss_ce + loss_con + loss_kl + loss_gce
+        loss_fine = loss_ce + loss_con + loss_kl + loss_gce
+        
         optimizer.zero_grad()
-
-        outputs = model(images)
-        loss = loss_fn(outputs, labels)
-        loss.backward()
-
+        #loss.backward()
         optimizer.step()
 
-        _, pred = torch.max(outputs, 1)
-        train_corr += torch.sum(pred == labels).item()
-        train_n += labels.size(0)
-
-        train_loss += loss.item()
+        #_, pred = torch.max(outputs, 1)
+        correct_coarse += torch.sum(pred_coarse == coarse_gt).item()
+        correct_fine += torch.sum(pred_fine == fine_gt).item()
+        train_n += coarse_gt.size(0)
+        #train_loss += loss.item()
 
         if i % args.print_freq == 0 or i == len(train_loader) - 1:
-            print('Epoch: %d | %d | Loss: %.4f | Train Acc: %.2f%%' % (epoch + 1, i, train_loss / train_n,
-                                                                       (train_corr / train_n) * 100))
+            print('Epoch: %d | %d | Loss: %.4f | Coarse Acc: %.2f%% | Fine Acc: %.2f%%' % (epoch + 1, i, train_loss / train_n,
+                                                                       (correct_coarse / train_n) * 100),
+                                                                       (correct_fine/train_n) * 100)
 
     return train_corr / train_n, train_loss / train_n
 
@@ -46,11 +54,11 @@ def test(args, epoch, model, test_loader, device, tag="Validation"):
     test_corr_coarse, test_corr_fine, test_n = 0, 0, 0
     with torch.no_grad():
         for i, (data, coarse_gt, fine_gt) in enumerate(test_loader):
-            images = images.to(device)
+            patch_feature = (torch.load(data)).to(device)
             coarse_gt = coarse_gt.to(device)
             fine_gt = fine_gt.to(device)
 
-            output_coarse, output_fine = model(images)
+            output_coarse, output_fine = HiClass(patch_feature)
 
             _, pred_coarse = torch.max(output_coarse, 1)
             _, pred_fine = torch.max(output_fine, 1)

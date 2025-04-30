@@ -74,13 +74,13 @@ class HiClass(nn.Module):
         super().__init__()
         self.aggregator = Aggregator()
         self.classifier = Classifier(levels = levels, nc = nc, nf = nf)
-        self.coarse_labels = {0 : "Benign", 1 : "Cancer", 2 : "Dysplasia", 3 : "Gastritis"}
-        self.fine_labels = {0 : "fundic gland polyp", 1 : "hyperplastic polyp." , 2 : "xanthoma", 3 : "adenocarcinoma",
-                            4 : "tubular adenocarcinoma", 5 : "poorly cohesive carcinoma", 6 : "low grade dysplasia",
-                            7 : "high grade dysplasia", 8 : "chronic active gastritis", 9 : "chronic gastritis",
-                            10 : "erosion", 11 : "intestinal metaplasia", 12 : "lymphoid aggregate", 13: "ulceration"}
+        # self.coarse_labels = {0 : "Benign", 1 : "Cancer", 2 : "Dysplasia", 3 : "Gastritis"}
+        # self.fine_labels = {0 : "fundic gland polyp", 1 : "hyperplastic polyp." , 2 : "xanthoma", 3 : "adenocarcinoma",
+        #                     4 : "tubular adenocarcinoma", 5 : "poorly cohesive carcinoma", 6 : "low grade dysplasia",
+        #                     7 : "high grade dysplasia", 8 : "chronic active gastritis", 9 : "chronic gastritis",
+        #                     10 : "erosion", 11 : "intestinal metaplasia", 12 : "lymphoid aggregate", 13: "ulceration"}
 
     def forward(self, x):
         x = self.aggregator(x)
         coarse_class, fine_class = self.classifier(x)
-        return self.coarse_labels[coarse_class], self.fine_labels[fine_class]
+        return coarse_class, fine_class

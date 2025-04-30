@@ -59,8 +59,8 @@ def load_data(base_dir, anno_dict, split=None):
 
 class AMCDataset(Dataset):
     def __init__(self, base_dir, anno_path, split="train"):
-        self.anno_dict = load_anno(anno_path)
-        self.data = load_data(base_dir, anno_dict, split)
+        self.anno = load_anno(anno_path)
+        self.data = load_data(base_dir, self.anno, split)
         self.split = split
 
     def __len__(self):
@@ -89,8 +89,8 @@ if __name__ == "__main__":
     base_dir = "/home/user/data/UJSMB_STLB"
     anno_path = "/home/user/lib/Capstone_2025/dataloader/amc_fine_grained_anno.csv"
 
-    anno_dict = load_anno(anno_path)
-    data = load_data(base_dir, anno_dict)
+    # anno_dict = load_anno(anno_path)
+    # data = load_data(base_dir, anno_dict)
 
     train_dataset = AMCDataset(base_dir, anno_path, split="train")
     val_dataset = AMCDataset(base_dir, anno_path, split="val")
