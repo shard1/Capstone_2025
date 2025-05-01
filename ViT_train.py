@@ -72,30 +72,30 @@ def test_model(model, data_loader):
 
 if __name__ == '__main__':
     # Arguments 설정
-    parser = argparse.ArgumentParser(description='PyTorch Training')
-    parser.add_argument('--data', default='./Data/Qupath2/patch', help='path to dataset')  # [변경] 이미지 패치 저장 경로
-    parser.add_argument('--workers', default=4, type=int, help='number of data loading workers')
-    parser.add_argument('--input_size', default=512, type=int, help='image input size')  # [변경] 입력 이미지의 크기
-    parser.add_argument('--start_epoch', default=0, type=int, help='manual epoch number')
-    parser.add_argument('--epochs', default=300, type=int, help='number of total epochs to run')  # [변경]훈련 반복 수
-    parser.add_argument('--batch_size', default=1, type=int, help='mini-batch size')  # [변경]배치 사이즈
-    parser.add_argument('--lr', default=0.00001, type=float, help='initial learning rate', dest='lr')  # [변경] 초기 Learning rate
-    parser.add_argument('--seed', default=103, type=int, help='seed for initializing training.')
-    parser.add_argument('--result', default='results', type=str, help='path to results')
-    args = parser.parse_args()
-
-    if args.seed is not None:
-        random.seed(args.seed)
-        torch.manual_seed(args.seed)
-        torch.backends.cudnn.deterministic = True
-
-    train_dataset = AMCDataset(base_dir, anno_path, split="train")
-    val_dataset = AMCDataset(base_dir, anno_path, split="val")
-    test_dataset = AMCDataset(base_dir, anno_path, split="test")
-
-    train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True)
-    val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False)
-    test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)
+    # parser = argparse.ArgumentParser(description='PyTorch Training')
+    # parser.add_argument('--data', default='./Data/Qupath2/patch', help='path to dataset')  # [변경] 이미지 패치 저장 경로
+    # parser.add_argument('--workers', default=4, type=int, help='number of data loading workers')
+    # parser.add_argument('--input_size', default=512, type=int, help='image input size')  # [변경] 입력 이미지의 크기
+    # parser.add_argument('--start_epoch', default=0, type=int, help='manual epoch number')
+    # parser.add_argument('--epochs', default=300, type=int, help='number of total epochs to run')  # [변경]훈련 반복 수
+    # parser.add_argument('--batch_size', default=1, type=int, help='mini-batch size')  # [변경]배치 사이즈
+    # parser.add_argument('--lr', default=0.00001, type=float, help='initial learning rate', dest='lr')  # [변경] 초기 Learning rate
+    # parser.add_argument('--seed', default=103, type=int, help='seed for initializing training.')
+    # parser.add_argument('--result', default='results', type=str, help='path to results')
+    # args = parser.parse_args()
+    #
+    # if args.seed is not None:
+    #     random.seed(args.seed)
+    #     torch.manual_seed(args.seed)
+    #     torch.backends.cudnn.deterministic = True
+    #
+    # train_dataset = AMCDataset(base_dir, anno_path, split="train")
+    # val_dataset = AMCDataset(base_dir, anno_path, split="val")
+    # test_dataset = AMCDataset(base_dir, anno_path, split="test")
+    #
+    # train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True)
+    # val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False)
+    # test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)
 
 
 

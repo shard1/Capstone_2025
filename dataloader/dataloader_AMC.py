@@ -83,22 +83,3 @@ class AMCDataset(Dataset):
     def __getitem__(self, idx):
         data, coarse_gt, fine_gt, split = self.data[idx]
         return data, coarse_gt, fine_gt
-
-
-if __name__ == "__main__":
-    base_dir = "/home/user/data/UJSMB_STLB"
-    anno_path = "/home/user/lib/Capstone_2025/dataloader/amc_fine_grained_anno.csv"
-
-    # anno_dict = load_anno(anno_path)
-    # data = load_data(base_dir, anno_dict)
-
-    train_dataset = AMCDataset(base_dir, anno_path, split="train")
-    val_dataset = AMCDataset(base_dir, anno_path, split="val")
-    test_dataset = AMCDataset(base_dir, anno_path, split="test")
-
-    train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True)
-    val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False)
-    test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)
-
-    for data, coarse_gt, fine_gt in train_loader:
-        pass
