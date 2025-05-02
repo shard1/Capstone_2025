@@ -62,7 +62,7 @@ class Attn_Net_Gated(nn.Module):
         self.attention_c = nn.Linear(D, n_classes)
 
     def forward(self, x):
-        a = self.attention_a(x)
+        a = self.attention_a(x)     #[Nx256]
         b = self.attention_b(x)
         A = a.mul(b)
         A = self.attention_c(A)  # N x n_classes		not normalized yet
@@ -121,9 +121,11 @@ class CLAM_SB(nn.Module):
         top_p_ids = torch.topk(A, self.k_sample)[1][-1]  # topk[1] returns indices of top k values (shape [1 B]) top[1][-1] returns the k indices
         top_p = torch.index_select(h, dim=0,
                                    index=top_p_ids)  # selects from h feature vectors using the top k indices, shape [B,D]
+        
         top_n_ids = torch.topk(-A, self.k_sample, dim=1)[1][-1]
         top_n = torch.index_select(h, dim=0,
                                    index=top_n_ids)  # shape [B, D] because h has shape [N, D] N feature vectors with dimension D
+        
         p_targets = self.create_positive_targets(self.k_sample, device)  # shape [B]
         n_targets = self.create_negative_targets(self.k_sample, device)  # shape [B]
 
@@ -148,7 +150,7 @@ class CLAM_SB(nn.Module):
         return instance_loss, p_preds, p_targets
 
     def forward(self, h, label=None, instance_eval=False, return_features=False, attention_only=False):
-        A, h = self.attention_net(h)  # NxK       or Nxn_classes
+        A, h = self.attention_net(h)  # NxK    Nxn_classes for A, [N, 1024] for input h [N, 512] for output h
         A = torch.transpose(A, 1, 0)  # KxN		n_classes x N
         if attention_only:
             return A
@@ -161,8 +163,8 @@ class CLAM_SB(nn.Module):
             all_targets = []
             inst_labels = F.one_hot(label, num_classes=self.n_classes).squeeze()  # binarize label, label is slide level
             for i in range(len(self.instance_classifiers)):
-                inst_label = inst_labels[i].item()
-                classifier = self.instance_classifiers[i]
+                inst_label = inst_labels[i].item()      #pseudo label
+                classifier = self.instance_classifiers[i]       #select instance classifier layer
                 if inst_label == 1:  # in-the-class:
                     instance_loss, preds, targets = self.inst_eval(A, h, classifier)
                     all_preds.extend(preds.cpu().numpy())
@@ -180,18 +182,18 @@ class CLAM_SB(nn.Module):
                 total_inst_loss /= len(self.instance_classifiers)
         
         # h is [N,D], A is [n_classes = 1, N] because only one attention branch exists
-        M = torch.mm(A, h)  # [n_classes = 1, D]   h_slide
-        logits = self.classifiers(M)  # [1, n_classes]
-        Y_hat = torch.topk(logits, 1, dim=1)[1]  # shape [1]		unnormalized logit value
+        M = torch.mm(A, h)  # [n_classes = 1, D]   h_slide,  n_classes from attention
+        logits = self.classifiers(M)  # [1, n_classes = 2], n_classes from initialization
+        Y_hat = torch.topk(logits, 1, dim=1)[1]  # shape [1]	predicted class
         Y_prob = F.softmax(logits, dim=1)  # [1, n_classes]		#normalized logit value
         if instance_eval:
             results_dict = {'instance_loss': total_inst_loss, 'inst_labels': np.array(all_targets),
-                            'inst_preds': np.array(all_preds)}
+                            'inst_preds': np.array(all_preds)}      #from clustering layers
         else:
             results_dict = {}
         if return_features:
             results_dict.update({'features': M})
-        return logits, Y_prob, Y_hat, A_raw, results_dict
+        return logits, Y_prob, Y_hat, A_raw, results_dict       
 
 
 class CLAM_MB(CLAM_SB):
@@ -218,7 +220,7 @@ class CLAM_MB(CLAM_SB):
         self.subtyping = subtyping
 
     def forward(self, h, label=None, instance_eval=False, return_features=False, attention_only=False):
-        A, h = self.attention_net(h)  # NxK     Nxn_classes
+        A, h = self.attention_net(h)  # NxK     Nxn_classes for A, Nx512 for output h and Nx1024 for input h
         A = torch.transpose(A, 1, 0)  # KxN
         if attention_only:
             return A
@@ -249,7 +251,7 @@ class CLAM_MB(CLAM_SB):
             if self.subtyping:
                 total_inst_loss /= len(self.instance_classifiers)
 
-        M = torch.mm(A, h)  # slide level representation h_slide
+        M = torch.mm(A, h)  # slide level representation h_slide, [n_classes, D]
 
         logits = torch.empty(1, self.n_classes).float().to(M.device)
         for c in range(self.n_classes):
