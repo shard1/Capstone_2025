@@ -11,39 +11,41 @@ from dataloader.dataloader_AMC import AMCDataset
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+
 class AccuracyLogger(object):
     def __init__(self, n_classes):
         super().__init__()
         self.n_classes = n_classes
         self.initialize()
-    
+
     def initialize(self):
-        self.data = [{"count" : 0, "correct" : 0} for i in range(self.n_classes)]
-    
+        self.data = [{"count": 0, "correct": 0} for i in range(self.n_classes)]
+
     def log(self, Y_hat, Y):
         Y_hat = int(Y_hat)
         Y = int(Y)
         self.data[Y]["count"] += 1
         self.data[Y]["correct"] += (Y_hat == Y)
-    
+
     def log_batch(self, Y_hat, Y):
-        Y_hat = np.array(Y_hat).astype(int)
-        Y = np.array(Y).astype(int)
-        for label_class in np.unique(Y):
+        Y_hat = np.array(Y_hat).astype(int)  # predictions for a batch
+        Y = np.array(Y).astype(int)  # ground truth for a batch
+        for label_class in np.unique(Y):  # unique class labels in a batch, no duplicates
             cls_mask = Y == label_class
             self.data[label_class]["count"] += cls_mask.sum()
             self.data[label_class]["correct"] += (Y_hat[cls_mask] == Y[cls_mask]).sum()
-    
+
     def get_summary(self, c):
-        count = self.data[c]["count"] 
+        count = self.data[c]["count"]
         correct = self.data[c]["correct"]
-        
-        if count == 0: 
+
+        if count == 0:
             acc = None
         else:
             acc = float(correct) / count
-        
+
         return acc, correct, count
+
 
 def configure_loss_fns(bag_loss, inst_loss, n_classes):
     if bag_loss == 'svm':
@@ -61,14 +63,16 @@ def configure_loss_fns(bag_loss, inst_loss, n_classes):
         instance_loss_fn = nn.CrossEntropyLoss()
     return loss_fn, instance_loss_fn
 
+
 def configure_model(model_args, model_type, inst_loss_fn, n_classes):
     if model_type == 'clam_mb':
-        model = CLAM_MB(**model_args, n_classes = n_classes, instance_loss_fn=inst_loss_fn, subtyping=True)
+        model = CLAM_MB(**model_args, n_classes=n_classes, instance_loss_fn=inst_loss_fn, subtyping=True)
     elif args.model_type == 'clam_sb':
         model = CLAM_SB(**model_args, instance_loss_fn=inst_loss_fn, subtyping=True)
     else:
         raise NotImplementedError
     return model
+
 
 def configure_clam(model_args, model_type, hierarchy, bag_loss, inst_loss):
     if hierarchy == 'coarse-only':
@@ -82,16 +86,25 @@ def configure_clam(model_args, model_type, hierarchy, bag_loss, inst_loss):
         model = configure_model(model_args, model_type, instance_loss_fn, 18)
     return model, loss_fn
 
-def train_clam(epoch, model, loader, optimizer, n_classes, bag_weight, writer = None, loss_fn = None, hierarchy = 'both'):
+
+def train_clam(epoch, model, loader, optimizer, n_classes, bag_weight, loss_fn=None, hierarchy='both'):
     model.train()
-    #think about this
-    acc_logger = AccuracyLogger(n_classes=n_classes)
-    inst_logger = AccuracyLogger(n_classes=n_classes)
+    # think about this
+    is_hierarchy = hierarchy not in ('coarse-only', 'fine-only')
+    if is_hierarchy:
+        acc_logger_coarse = AccuracyLogger(n_classes=4)
+        acc_logger_fine = AccuracyLogger(n_classes=14)
+        inst_logger_coarse = AccuracyLogger(n_classes=4)
+        inst_logger_fine = AccuracyLogger(n_classes=14)
+    else:
+        acc_logger = AccuracyLogger(n_classes=n_classes)
+        inst_logger = AccuracyLogger(n_classes=n_classes)
 
     train_loss = 0.
     # train_error = 0.
     train_inst_loss = 0.
     inst_count = 0
+
     print("Training for {} level...\n".format(hierarchy))
     for batch_idx, (data, coarse_gt, fine_gt) in enumerate(loader):
         data = (torch.load(data)).to(device)
@@ -101,38 +114,50 @@ def train_clam(epoch, model, loader, optimizer, n_classes, bag_weight, writer = 
         if hierarchy == 'coarse-only':
             logits, y_prob, y_hat, _, instance_dict = model(data, label=coarse_gt, instance_eval=True)
             loss = loss_fn(logits, coarse_gt)
-
+            acc_logger.log(y_hat, coarse_gt)
         elif hierarchy == 'fine-only':
             logits, y_prob, y_hat, _, instance_dict = model(data, label=fine_gt, instance_eval=True)
             loss = loss_fn(logits, fine_gt)
+            acc_logger.log(y_hat, fine_gt)
         else:
             combined = coarse_gt + fine_gt
-            logits, y_prob, y_hat, _, instance_dict = model(data, label=combined, instance_eval=True)
-            loss = loss_fn(logits, coarse_gt)
+            logits, y_prob, y_hat, _, instance_dict = model(data, label=combined, instance_eval=True, is_hierarchy=True)
+            logits_coarse, logits_fine = logits
+            y_prob_coarse, y_prob_fine = y_prob
+            y_hat_coarse, y_hat_fine = y_hat
+            loss_coarse = loss_fn(logits_coarse, coarse_gt)
+            loss_fine = loss_fn(logits_fine, fine_gt)
+            loss = loss_coarse + loss_fine
+            acc_logger_coarse.log(y_hat_coarse, coarse_gt)
+            acc_logger_fine.log(y_hat_fine, fine_gt)
 
-        loss_value = loss.item()                            #scalar,  bag loss
-        instance_loss = instance_dict['instance_loss']      #tensor
+        loss_value = loss.item()  # scalar,  bag loss
+        instance_loss = instance_dict['instance_loss']  # tensor
         inst_count += 1
-        instance_loss_value = instance_loss.item()              #scalar, instance loss
+        instance_loss_value = instance_loss.item()  # scalar, instance loss
 
-        train_inst_loss += instance_loss_value                  #accumulate instance loss
-        train_loss += loss_value                        #accumulate total train loss
-        total_loss = bag_weight * loss + (1-bag_weight) * instance_loss             #total loss tensor
+        train_inst_loss += instance_loss_value  # accumulate instance loss
+        train_loss += loss_value  # accumulate total train loss
+        total_loss = bag_weight * loss + (1 - bag_weight) * instance_loss  # total loss tensor
 
-        #for logging
+        # for logging
         inst_preds = instance_dict['inst_pred']
         inst_labels = instance_dict['inst_labels']
         inst_logger.log_batch(inst_preds, inst_labels)
 
-
         if (batch_idx + 1) % 20 == 0:
             if hierarchy == 'coarse-only':
-                print('batch {}, loss: {:.4f}, instance_loss: {:.4f}, weighted_loss: {:.4f}, '.format(batch_idx, loss_value, instance_loss_value, total_loss.item()) +
-                'label: {}, bag_size: {}'.format(coarse_gt.item(), data.size(0)))
+                print('batch {}, loss: {:.4f}, instance_loss: {:.4f}, weighted_loss: {:.4f}, '.format(batch_idx,
+                                                                                                      loss_value,
+                                                                                                      instance_loss_value,
+                                                                                                      total_loss.item()) +
+                      'label: {}, bag_size: {}'.format(coarse_gt.item(), data.size(0)))
             elif hierarchy == 'fine-only':
-                print('batch {}, loss: {:.4f}, instance_loss: {:.4f}, weighted_loss: {:.4f}, '.format(batch_idx, loss_value, instance_loss_value,
-                                                                    total_loss.item()) +
-                                                                'label: {}, bag_size: {}'.format(fine_gt.item(), data.size(0)))
+                print('batch {}, loss: {:.4f}, instance_loss: {:.4f}, weighted_loss: {:.4f}, '.format(batch_idx,
+                                                                                                      loss_value,
+                                                                                                      instance_loss_value,
+                                                                                                      total_loss.item()) +
+                      'label: {}, bag_size: {}'.format(fine_gt.item(), data.size(0)))
             else:
                 pass
 
@@ -140,7 +165,7 @@ def train_clam(epoch, model, loader, optimizer, n_classes, bag_weight, writer = 
         # train_error += error
 
         # backward pass
-        total_loss.backward()       #backprop on the entire CLAM model
+        total_loss.backward()  # backprop on the entire CLAM model
 
         # step
         optimizer.step()
@@ -148,7 +173,7 @@ def train_clam(epoch, model, loader, optimizer, n_classes, bag_weight, writer = 
 
     # calculate loss and error for epoch
     train_loss /= len(loader)
-    #train_error /= len(loader)
+    # train_error /= len(loader)
 
     if inst_count > 0:
         train_inst_loss /= inst_count
@@ -157,11 +182,18 @@ def train_clam(epoch, model, loader, optimizer, n_classes, bag_weight, writer = 
             acc, correct, count = inst_logger.get_summary(i)
             print('class {} clustering acc {}: correct {}/{}'.format(i, acc, correct, count))
 
-    #print('Epoch: {}, train_loss: {:.4f}, train_clustering_loss:  {:.4f}, train_error: {:.4f}'.format(epoch, train_loss, train_inst_loss,  train_error))
+    # print('Epoch: {}, train_loss: {:.4f}, train_clustering_loss:  {:.4f}, train_error: {:.4f}'.format(epoch, train_loss, train_inst_loss,  train_error))
     for i in range(n_classes):
-        acc, correct, count = acc_logger.get_summary(i)
-        print('class {}: acc {}, correct {}/{}'.format(i, acc, correct, count))
-    
+        if is_hierarchy:
+            acc, correct, count = acc_logger_coarse.get_summary(i)
+            print('Coarse class {}: acc {}, correct {}/{}'.format(i, acc, correct, count))
+            acc, correct, count = acc_logger_fine.get_summary(i)
+            print('Fine class {}: acc {}, correct {}/{}'.format(i, acc, correct, count))
+        else:
+            acc, correct, count = acc_logger.get_summary(i)
+            print('class {}: acc {}, correct {}/{}'.format(i, acc, correct, count))
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='PyTorch Training')
 
@@ -179,11 +211,12 @@ if __name__ == '__main__':
     parser.add_argument('--print_freq', default=100, type=int)
     parser.add_argument('--save_freq', default=10, type=int)
     parser.add_argument('--result', default='./results', type=str, help='path to results')
-    parser.add_argument('--bag_loss', default = 'svm', type = str, help = 'bag level classifier loss function')
-    parser.add_argument('--inst_loss', default='svm', type=str, help = 'instance classifier loss function')
-    parser.add_argument('--model_type', type=str, choices = ['clam_sb', 'clam_mb'], help = 'options for a model')
-    parser.add_argument('--hierarchy', default = 'both', type = str, choices = ['coarse-only', 'fine-only', 'both'], help = 'choose classification type')
-    parser.add_argument('--bag_weight', default = 0.7, type = float, help = 'clam: weight coefficient for bag-level loss')
+    parser.add_argument('--bag_loss', default='svm', type=str, help='bag level classifier loss function')
+    parser.add_argument('--inst_loss', default='svm', type=str, help='instance classifier loss function')
+    parser.add_argument('--model_type', type=str, choices=['clam_sb', 'clam_mb'], help='options for a model')
+    parser.add_argument('--hierarchy', default='both', type=str, choices=['coarse-only', 'fine-only', 'coarse-and-fine'],
+                        help='choose classification type')
+    parser.add_argument('--bag_weight', default=0.7, type=float, help='clam: weight coefficient for bag-level loss')
     args = parser.parse_args()
 
     print("Preparing data...\n")
@@ -201,8 +234,8 @@ if __name__ == '__main__':
     print("Test on {} samples\n".format(len(test_dataset)))
 
     print("\nPreparing model...\n")
-    model_args = {"gate" : True, "size_arg" : "small", "dropout" : 0.25,
-                  "k_sample" : 8}
+    model_args = {"gate": True, "size_arg": "small", "dropout": 0.25,
+                  "k_sample": 8}
 
     model, loss_fn = configure_clam(model_args, args.model_type, args.hierarchy, args.bag_loss, args.inst_loss)
 
@@ -211,14 +244,14 @@ if __name__ == '__main__':
     for epoch in range(args.epochs):
         if args.model_type in ['clam_mb', 'clam_sb'] and args.hierarchy in ['coarse-only', 'fine-only', 'both']:
             if args.hierarchy == 'coarse-only':
-                train_clam(epoch, model, train_loader, optimizer, n_classes = 4, bag_weight = args.bag_weight,
-                        writer = False, loss_fn = loss_fn, hierarchy = args.hierarchy)
+                train_clam(epoch, model, train_loader, optimizer, n_classes=4, bag_weight=args.bag_weight,
+                           loss_fn=loss_fn, hierarchy=args.hierarchy)
             elif args.hierarchy == 'fine-only':
                 train_clam(epoch, model, train_loader, optimizer, n_classes=14, bag_weight=args.bag_weight,
-                           writer=False, loss_fn=loss_fn, hierarchy=args.hierarchy)
+                           loss_fn=loss_fn, hierarchy=args.hierarchy)
             else:
                 train_clam(epoch, model, train_loader, optimizer, n_classes=18, bag_weight=args.bag_weight,
-                           writer=False, loss_fn=loss_fn, hierarchy=args.hierarchy)
+                           loss_fn=loss_fn, hierarchy=args.hierarchy)
         else:
             pass
 
@@ -227,12 +260,3 @@ if __name__ == '__main__':
     #
     # results_dict, test_error, test_auc, acc_logger = summary(model, test_loader, args.n_classes)
     # print('Test error: {:.4f}, ROC AUC: {:.4f}'.format(test_error, test_auc))
-
-
-
-
-
-
-
-
-        
