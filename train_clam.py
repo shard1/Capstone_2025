@@ -4,10 +4,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
-from sklearn.metrics import auc as calc_auc
-from sklearn.metrics import roc_auc_score, roc_curve
-from sklearn.preprocessing import label_binarize
-from tensorboardX import SummaryWriter
+from topk.svm import SmoothTop1SVM
 
 from models.model_CLAM import CLAM_SB, CLAM_MB
 from dataloader.dataloader_AMC import AMCDataset
@@ -48,85 +45,122 @@ class AccuracyLogger(object):
         
         return acc, correct, count
 
+def configure_loss_fns(bag_loss, inst_loss, n_classes):
+    if bag_loss == 'svm':
+        loss_fn = SmoothTop1SVM(n_classes)
+        if device.type == 'cuda':
+            loss_fn = loss_fn.cuda()
+    else:
+        loss_fn = nn.CrossEntropyLoss()
 
-def train_clam(epoch, model, loader, optimizer, n_classes, bag_weight, writer = None, loss_fn = None, coarse = True, fine = True):
+    if inst_loss == 'svm':
+        instance_loss_fn = SmoothTop1SVM(n_classes)
+        if device.type == 'cuda':
+            instance_loss_fn = instance_loss_fn.cuda()
+    else:
+        instance_loss_fn = nn.CrossEntropyLoss()
+    return loss_fn, instance_loss_fn
+
+def configure_model(model_args, model_type, inst_loss_fn, n_classes):
+    if model_type == 'clam_mb':
+        model = CLAM_MB(**model_args, n_classes = n_classes, instance_loss_fn=inst_loss_fn, subtyping=True)
+    elif args.model_type == 'clam_sb':
+        model = CLAM_SB(**model_args, instance_loss_fn=inst_loss_fn, subtyping=True)
+    else:
+        raise NotImplementedError
+    return model
+
+def configure_clam(model_args, model_type, hierarchy, bag_loss, inst_loss):
+    if hierarchy == 'coarse-only':
+        loss_fn, instance_loss_fn = configure_loss_fns(bag_loss, inst_loss, n_classes=4)
+        model = configure_model(model_args, model_type, instance_loss_fn, 4)
+    elif hierarchy == 'fine-only':
+        loss_fn, instance_loss_fn = configure_loss_fns(bag_loss, inst_loss, n_classes=14)
+        model = configure_model(model_args, model_type, instance_loss_fn, 14)
+    else:
+        loss_fn, instance_loss_fn = configure_loss_fns(bag_loss, inst_loss, n_classes=18)
+        model = configure_model(model_args, model_type, instance_loss_fn, 18)
+    return model, loss_fn
+
+def train_clam(epoch, model, loader, optimizer, n_classes, bag_weight, writer = None, loss_fn = None, hierarchy = 'both'):
     model.train()
+    #think about this
     acc_logger = AccuracyLogger(n_classes=n_classes)
     inst_logger = AccuracyLogger(n_classes=n_classes)
 
     train_loss = 0.
-    inst_loss = 0.
+    # train_error = 0.
+    train_inst_loss = 0.
     inst_count = 0
+    print("Training for {} level...\n".format(hierarchy))
+    for batch_idx, (data, coarse_gt, fine_gt) in enumerate(loader):
+        data = (torch.load(data)).to(device)
+        coarse_gt = coarse_gt.to(device)
+        fine_gt = fine_gt.to(device)
 
-    if coarse or fine:
-        for i, (data, coarse_gt, fine_gt) in enumerate(loader):
-            data = (torch.load(data)).to(device)
-            coarse_gt = coarse_gt.to(device)
-            fine_gt = fine_gt.to(device)
-            if coarse and fine:
-                logits, Y_prob, Y_hat, _, instance_dict = model(data, label=coarse_gt, instance_eval=True)
-                loss = loss_fn(logits, coarse_gt)
+        if hierarchy == 'coarse-only':
+            logits, y_prob, y_hat, _, instance_dict = model(data, label=coarse_gt, instance_eval=True)
+            loss = loss_fn(logits, coarse_gt)
 
-            elif coarse:
-                logits, Y_prob, Y_hat, _, instance_dict = model(data, label=coarse_gt, instance_eval=True)
-                loss = loss_fn(logits, coarse_gt)
+        elif hierarchy == 'fine-only':
+            logits, y_prob, y_hat, _, instance_dict = model(data, label=fine_gt, instance_eval=True)
+            loss = loss_fn(logits, fine_gt)
+        else:
+            combined = coarse_gt + fine_gt
+            logits, y_prob, y_hat, _, instance_dict = model(data, label=combined, instance_eval=True)
+            loss = loss_fn(logits, coarse_gt)
 
-            elif fine: 
-                logits, Y_prob, Y_hat, _, instance_dict = model(data, label=fine_gt, instance_eval=True)      
-                loss = loss_fn(logits, fine_gt)
-            
-            loss_value = loss.item()
-            instance_loss = instance_dict['instance_loss']
-            inst_count += 1
-            instance_loss_value = instance_loss.item()
-            
-            train_inst_loss += instance_loss_value
-            total_loss = bag_weight * loss + (1-bag_weight) * instance_loss
-            
-            #for logging
-            inst_preds = instance_dict['inst_pred']
-            inst_labels = instance_dict['inst_labels']
-            inst_logger.log_batch(inst_preds, inst_labels)
+        loss_value = loss.item()                            #scalar,  bag loss
+        instance_loss = instance_dict['instance_loss']      #tensor
+        inst_count += 1
+        instance_loss_value = instance_loss.item()              #scalar, instance loss
 
-            train_loss += loss_value
-            if (i + 1) % 20 == 0:
-                print('batch {}, loss: {:.4f}, instance_loss: {:.4f}, weighted_loss: {:.4f}, '.format(batch_idx, loss_value, instance_loss_value, total_loss.item()) + 
-                    'label: {}, bag_size: {}'.format(coarse_gt.item(), data.size(0)))
+        train_inst_loss += instance_loss_value                  #accumulate instance loss
+        train_loss += loss_value                        #accumulate total train loss
+        total_loss = bag_weight * loss + (1-bag_weight) * instance_loss             #total loss tensor
 
-            # error = calculate_error(Y_hat, label)
-            # train_error += error
-            
-            # backward pass
-            total_loss.backward()
-            # step
-            optimizer.step()
-            optimizer.zero_grad()
+        #for logging
+        inst_preds = instance_dict['inst_pred']
+        inst_labels = instance_dict['inst_labels']
+        inst_logger.log_batch(inst_preds, inst_labels)
 
-            # calculate loss and error for epoch
-            train_loss /= len(loader)
-            #train_error /= len(loader)
 
-            if inst_count > 0:
-                train_inst_loss /= inst_count
-                print('\n')
-                for i in range(2):
-                    acc, correct, count = inst_logger.get_summary(i)
-                    print('class {} clustering acc {}: correct {}/{}'.format(i, acc, correct, count))
+        if (batch_idx + 1) % 20 == 0:
+            if hierarchy == 'coarse-only':
+                print('batch {}, loss: {:.4f}, instance_loss: {:.4f}, weighted_loss: {:.4f}, '.format(batch_idx, loss_value, instance_loss_value, total_loss.item()) +
+                'label: {}, bag_size: {}'.format(coarse_gt.item(), data.size(0)))
+            elif hierarchy == 'fine-only':
+                print('batch {}, loss: {:.4f}, instance_loss: {:.4f}, weighted_loss: {:.4f}, '.format(batch_idx, loss_value, instance_loss_value,
+                                                                    total_loss.item()) +
+                                                                'label: {}, bag_size: {}'.format(fine_gt.item(), data.size(0)))
+            else:
+                pass
 
-            print('Epoch: {}, train_loss: {:.4f}, train_clustering_loss:  {:.4f}, train_error: {:.4f}'.format(epoch, train_loss, train_inst_loss,  train_error))
-            for i in range(n_classes):
-                acc, correct, count = acc_logger.get_summary(i)
-                print('class {}: acc {}, correct {}/{}'.format(i, acc, correct, count))
-                if writer and acc is not None:
-                    writer.add_scalar('train/class_{}_acc'.format(i), acc, epoch)
+        # error = calculate_error(Y_hat, label)
+        # train_error += error
 
-            if writer:
-                writer.add_scalar('train/loss', train_loss, epoch)
-                #writer.add_scalar('train/error', train_error, epoch)
-                writer.add_scalar('train/clustering_loss', train_inst_loss, epoch)
+        # backward pass
+        total_loss.backward()       #backprop on the entire CLAM model
 
-    else:
-        pass  #raise error
+        # step
+        optimizer.step()
+        optimizer.zero_grad()
+
+    # calculate loss and error for epoch
+    train_loss /= len(loader)
+    #train_error /= len(loader)
+
+    if inst_count > 0:
+        train_inst_loss /= inst_count
+        print('\n')
+        for i in range(2):
+            acc, correct, count = inst_logger.get_summary(i)
+            print('class {} clustering acc {}: correct {}/{}'.format(i, acc, correct, count))
+
+    #print('Epoch: {}, train_loss: {:.4f}, train_clustering_loss:  {:.4f}, train_error: {:.4f}'.format(epoch, train_loss, train_inst_loss,  train_error))
+    for i in range(n_classes):
+        acc, correct, count = acc_logger.get_summary(i)
+        print('class {}: acc {}, correct {}/{}'.format(i, acc, correct, count))
     
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='PyTorch Training')
@@ -145,21 +179,12 @@ if __name__ == '__main__':
     parser.add_argument('--print_freq', default=100, type=int)
     parser.add_argument('--save_freq', default=10, type=int)
     parser.add_argument('--result', default='./results', type=str, help='path to results')
-    parser.add_argument('--inst_loss', default='svm', type=str, help='path to checkpoint')
+    parser.add_argument('--bag_loss', default = 'svm', type = str, help = 'bag level classifier loss function')
+    parser.add_argument('--inst_loss', default='svm', type=str, help = 'instance classifier loss function')
     parser.add_argument('--model_type', type=str, choices = ['clam_sb', 'clam_mb'], help = 'options for a model')
+    parser.add_argument('--hierarchy', default = 'both', type = str, choices = ['coarse-only', 'fine-only', 'both'], help = 'choose classification type')
+    parser.add_argument('--bag_weight', default = 0.7, type = float, help = 'clam: weight coefficient for bag-level loss')
     args = parser.parse_args()
-
-    # writer_dir = os.path.join(args.results_dir, str(cur))
-    # if not os.path.isdir(writer_dir):
-    #     os.mkdir(writer_dir)
-    #
-    # if args.log_data:
-    #     from tensorboardX import SummaryWriter
-    #
-    #     writer = SummaryWriter(writer_dir, flush_secs=15)
-    #
-    # else:
-    #     writer = None
 
     print("Preparing data...\n")
 
@@ -175,29 +200,39 @@ if __name__ == '__main__':
     print("Validation on {} samples\n".format(len(val_dataset)))
     print("Test on {} samples\n".format(len(test_dataset)))
 
-
-    print("\nChoosing loss function...\n")
-    if args.inst_loss == 'svm':
-        from topk.svm import SmoothTop1SVM
-        loss_fn = SmoothTop1SVM(n_classes = args.n_classes)
-        if device.type == 'cuda':
-            loss_fn = loss_fn.cuda()
-    else :
-        loss_fn = nn.CrossEntropyLoss()
-
     print("\nPreparing model...\n")
     model_args = {"gate" : True, "size_arg" : "small", "dropout" : 0.25,
-                  "k_sample" : 8, "n_classes" : 2}
+                  "k_sample" : 8}
 
-    if args.model_type == 'clam_mb':
-        model = CLAM_MB(**model_args, instance_loss_fn = loss_fn, subtyping=True)
-    elif args.model_type == 'clam_sb':
-        model = CLAM_SB(**model_args, instance_loss_fn=loss_fn, subtyping=True)
-    else:
-        raise NotImplementedError
-
+    model, loss_fn = configure_clam(model_args, args.model_type, args.hierarchy, args.bag_loss, args.inst_loss)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+
+    for epoch in range(args.epochs):
+        if args.model_type in ['clam_mb', 'clam_sb'] and args.hierarchy in ['coarse-only', 'fine-only', 'both']:
+            if args.hierarchy == 'coarse-only':
+                train_clam(epoch, model, train_loader, optimizer, n_classes = 4, bag_weight = args.bag_weight,
+                        writer = False, loss_fn = loss_fn, hierarchy = args.hierarchy)
+            elif args.hierarchy == 'fine-only':
+                train_clam(epoch, model, train_loader, optimizer, n_classes=14, bag_weight=args.bag_weight,
+                           writer=False, loss_fn=loss_fn, hierarchy=args.hierarchy)
+            else:
+                train_clam(epoch, model, train_loader, optimizer, n_classes=18, bag_weight=args.bag_weight,
+                           writer=False, loss_fn=loss_fn, hierarchy=args.hierarchy)
+        else:
+            pass
+
+    # _, val_error, val_auc, _ = summary(model, val_loader, args.n_classes)
+    # print('Val error: {:.4f}, ROC AUC: {:.4f}'.format(val_error, val_auc))
+    #
+    # results_dict, test_error, test_auc, acc_logger = summary(model, test_loader, args.n_classes)
+    # print('Test error: {:.4f}, ROC AUC: {:.4f}'.format(test_error, test_auc))
+
+
+
+
+
+
 
 
         
