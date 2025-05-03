@@ -87,18 +87,18 @@ def configure_clam(model_args, model_type, hierarchy, bag_loss, inst_loss):
     return model, loss_fn
 
 
-def train_clam(epoch, model, loader, optimizer, n_classes, bag_weight, loss_fn=None, hierarchy='both'):
+def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn=None, hierarchy='coarse-and-fine'):
     model.train()
-    # think about this
-    is_hierarchy = hierarchy not in ('coarse-only', 'fine-only')
+
+    is_hierarchy = hierarchy not in ('coarse', 'fine')
     if is_hierarchy:
-        acc_logger_coarse = AccuracyLogger(n_classes=4)
-        acc_logger_fine = AccuracyLogger(n_classes=14)
-        inst_logger_coarse = AccuracyLogger(n_classes=4)
-        inst_logger_fine = AccuracyLogger(n_classes=14)
+        acc_logger_coarse = AccuracyLogger(n_classes = num_classes['coarse'])
+        acc_logger_fine = AccuracyLogger(n_classes = num_classes['fine'])
+        inst_logger_coarse = AccuracyLogger(n_classes = num_classes['coarse'])
+        inst_logger_fine = AccuracyLogger(n_classes = num_classes['fine'])
     else:
-        acc_logger = AccuracyLogger(n_classes=n_classes)
-        inst_logger = AccuracyLogger(n_classes=n_classes)
+        acc_logger = AccuracyLogger(n_classes=num_classes[hierarchy])
+        inst_logger = AccuracyLogger(n_classes=num_classes[hierarchy])
 
     train_loss = 0.
     # train_error = 0.
@@ -111,25 +111,39 @@ def train_clam(epoch, model, loader, optimizer, n_classes, bag_weight, loss_fn=N
         coarse_gt = coarse_gt.to(device)
         fine_gt = fine_gt.to(device)
 
-        if hierarchy == 'coarse-only':
+        if hierarchy == 'coarse':
             logits, y_prob, y_hat, _, instance_dict = model(data, label=coarse_gt, instance_eval=True)
             loss = loss_fn(logits, coarse_gt)
             acc_logger.log(y_hat, coarse_gt)
-        elif hierarchy == 'fine-only':
+            inst_preds = instance_dict['inst_pred']
+            inst_labels = instance_dict['inst_labels']
+            inst_logger.log_batch(inst_preds, inst_labels)
+        elif hierarchy == 'fine':
             logits, y_prob, y_hat, _, instance_dict = model(data, label=fine_gt, instance_eval=True)
             loss = loss_fn(logits, fine_gt)
             acc_logger.log(y_hat, fine_gt)
+            inst_preds = instance_dict['inst_pred']
+            inst_labels = instance_dict['inst_labels']
+            inst_logger.log_batch(inst_preds, inst_labels)
         else:
             combined = coarse_gt + fine_gt
             logits, y_prob, y_hat, _, instance_dict = model(data, label=combined, instance_eval=True, is_hierarchy=True)
             logits_coarse, logits_fine = logits
             y_prob_coarse, y_prob_fine = y_prob
             y_hat_coarse, y_hat_fine = y_hat
+            
             loss_coarse = loss_fn(logits_coarse, coarse_gt)
             loss_fine = loss_fn(logits_fine, fine_gt)
             loss = loss_coarse + loss_fine
+            
             acc_logger_coarse.log(y_hat_coarse, coarse_gt)
             acc_logger_fine.log(y_hat_fine, fine_gt)
+            
+            
+            inst_preds = instance_dict['inst_pred']
+            inst_labels = instance_dict['inst_labels']
+            inst_logger_coarse.log_batch(inst_preds, inst_labels)
+            inst_logger_fine.log_batch()
 
         loss_value = loss.item()  # scalar,  bag loss
         instance_loss = instance_dict['instance_loss']  # tensor
@@ -139,11 +153,6 @@ def train_clam(epoch, model, loader, optimizer, n_classes, bag_weight, loss_fn=N
         train_inst_loss += instance_loss_value  # accumulate instance loss
         train_loss += loss_value  # accumulate total train loss
         total_loss = bag_weight * loss + (1 - bag_weight) * instance_loss  # total loss tensor
-
-        # for logging
-        inst_preds = instance_dict['inst_pred']
-        inst_labels = instance_dict['inst_labels']
-        inst_logger.log_batch(inst_preds, inst_labels)
 
         if (batch_idx + 1) % 20 == 0:
             if hierarchy == 'coarse-only':
@@ -166,7 +175,6 @@ def train_clam(epoch, model, loader, optimizer, n_classes, bag_weight, loss_fn=N
 
         # backward pass
         total_loss.backward()  # backprop on the entire CLAM model
-
         # step
         optimizer.step()
         optimizer.zero_grad()
@@ -214,7 +222,7 @@ if __name__ == '__main__':
     parser.add_argument('--bag_loss', default='svm', type=str, help='bag level classifier loss function')
     parser.add_argument('--inst_loss', default='svm', type=str, help='instance classifier loss function')
     parser.add_argument('--model_type', type=str, choices=['clam_sb', 'clam_mb'], help='options for a model')
-    parser.add_argument('--hierarchy', default='both', type=str, choices=['coarse-only', 'fine-only', 'coarse-and-fine'],
+    parser.add_argument('--hierarchy', default='coarse-and-fine', type=str, choices=['coarse', 'fine', 'coarse-and-fine'],
                         help='choose classification type')
     parser.add_argument('--bag_weight', default=0.7, type=float, help='clam: weight coefficient for bag-level loss')
     args = parser.parse_args()
@@ -236,21 +244,22 @@ if __name__ == '__main__':
     print("\nPreparing model...\n")
     model_args = {"gate": True, "size_arg": "small", "dropout": 0.25,
                   "k_sample": 8}
+    class_dict = {'coarse' : 4, 'fine' : 14, 'coarse-and-fine' : 18}
 
     model, loss_fn = configure_clam(model_args, args.model_type, args.hierarchy, args.bag_loss, args.inst_loss)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
     for epoch in range(args.epochs):
-        if args.model_type in ['clam_mb', 'clam_sb'] and args.hierarchy in ['coarse-only', 'fine-only', 'both']:
-            if args.hierarchy == 'coarse-only':
-                train_clam(epoch, model, train_loader, optimizer, n_classes=4, bag_weight=args.bag_weight,
+        if args.model_type in ['clam_mb', 'clam_sb'] and args.hierarchy in ['coarse', 'fine', 'coarse-and-fine']:
+            if args.hierarchy == 'coarse':
+                train_clam(epoch, model, train_loader, optimizer, class_dict, n_classes=4, bag_weight=args.bag_weight,
                            loss_fn=loss_fn, hierarchy=args.hierarchy)
-            elif args.hierarchy == 'fine-only':
-                train_clam(epoch, model, train_loader, optimizer, n_classes=14, bag_weight=args.bag_weight,
+            elif args.hierarchy == 'fine':
+                train_clam(epoch, model, train_loader, optimizer, class_dict, n_classes=14, bag_weight=args.bag_weight,
                            loss_fn=loss_fn, hierarchy=args.hierarchy)
             else:
-                train_clam(epoch, model, train_loader, optimizer, n_classes=18, bag_weight=args.bag_weight,
+                train_clam(epoch, model, train_loader, optimizer, class_dict, n_classes=18, bag_weight=args.bag_weight,
                            loss_fn=loss_fn, hierarchy=args.hierarchy)
         else:
             pass
