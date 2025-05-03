@@ -12,6 +12,7 @@ args:
     n_classes: number of classes 
 """
 
+#if you see this, the changes have been merged
 
 class Attn_Net(nn.Module):
 
@@ -94,8 +95,9 @@ class CLAM_SB(nn.Module):
             attention_net = Attn_Net(L=size[1], D=size[2], dropout=dropout, n_classes=1)
         fc.append(attention_net)
         self.attention_net = nn.Sequential(*fc)  # attention layers
-        self.classifiers = nn.Linear(size[1], n_classes)  # classifier at the end
-        instance_classifiers = [nn.Linear(size[1], 2) for i in range(n_classes)]  # clustering layers
+        self.classifiers = nn.Linear(size[1], n_classes)  # classifier at the end,
+                                                    # computationally equivalent to two linear classifiers with one output each
+        instance_classifiers = [nn.Linear(size[1], 2) for i in range(n_classes)]  # instance level classifier
         self.instance_classifiers = nn.ModuleList(instance_classifiers)
         self.k_sample = k_sample
         self.instance_loss_fn = instance_loss_fn
@@ -141,13 +143,13 @@ class CLAM_SB(nn.Module):
             A = A.view(1, -1)  # [1, N]
         top_p_ids = torch.topk(A, self.k_sample)[1][-1]  # [1, B]
         top_p = torch.index_select(h, dim=0, index=top_p_ids)  # [B, D]
-        p_targets = self.create_negative_targets(self.k_sample, device)  # [B]
+        p_targets = self.create_negative_targets(self.k_sample, device)  # [B],  create negative targets to penalize false positives
         logits = classifier(top_p)  # [B, 2]
         p_preds = torch.topk(logits, 1, dim=1)[1].squeeze(1)  # [B]
         instance_loss = self.instance_loss_fn(logits, p_targets)
         return instance_loss, p_preds, p_targets
 
-    def forward(self, h, label=None, instance_eval=False, return_features=False, attention_only=False,is_hierarchy=False):
+    def forward(self, h, label=None, instance_eval=False, return_features=False, attention_only=False, is_hierarchy=False):
         A, h = self.attention_net(h)  # NxK   Nxn_classes for A, [N, 1024] for input h [N, 512] for output h
         A = torch.transpose(A, 1, 0)  # KxN		n_classes x N
         if attention_only:
@@ -296,6 +298,5 @@ class CLAM_MB(CLAM_SB):
             if return_features:
                 results_dict.update({'features': M})
             return logits, Y_prob, Y_hat, A_raw, results_dict
-
 
 
