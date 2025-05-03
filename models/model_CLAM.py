@@ -149,7 +149,7 @@ class CLAM_SB(nn.Module):
         instance_loss = self.instance_loss_fn(logits, p_targets)
         return instance_loss, p_preds, p_targets
 
-    def forward(self, h, label=None, instance_eval=False, return_features=False, attention_only=False, is_hierarchy=False):
+    def forward(self, h, hier_class, label=None, instance_eval=False, return_features=False, attention_only=False, is_hierarchy=False):
         A, h = self.attention_net(h)  # NxK   Nxn_classes for A, [N, 1024] for input h [N, 512] for output h
         A = torch.transpose(A, 1, 0)  # KxN		n_classes x N
         if attention_only:
@@ -183,12 +183,10 @@ class CLAM_SB(nn.Module):
 
         # h is [N,D], A is [n_classes = 1, N] because only one attention branch exists
         M = torch.mm(A, h)  # [n_classes = 1, D]   h_slide,  n_classes from attention
-        logits = self.classifiers(M)  # [1, n_classes = 2], n_classes from initialization
-
+        logits = self.classifiers(M)  # [1, n_classes]
         if is_hierarchy:
-            logits = self.classifiers(M)  # [1, n_classes]
-            logits_coarse = logits[:, :4]
-            logits_fine = logits[:, 4:]
+            logits_coarse = logits[:, : hier_class['coarse']]
+            logits_fine = logits[:, hier_class['coarse']:]
 
             Y_hat_coarse = torch.topk(logits_coarse, 1, dim=1)[1]  # shape [1]		unnormalized logit value
             Y_hat_fine = torch.topk(logits_fine, 1, dim=1)[1]  # shape [1]		unnormalized logit value
@@ -240,7 +238,7 @@ class CLAM_MB(CLAM_SB):
         self.n_classes = n_classes
         self.subtyping = subtyping
 
-    def forward(self, h, label=None, instance_eval=False, return_features=False, attention_only=False,is_hierarchy=False):
+    def forward(self, h, hier_class, label=None, instance_eval=False, return_features=False, attention_only=False,is_hierarchy=False):
         A, h = self.attention_net(h)  # NxK     Nxn_classes for A, Nx512 for output h and Nx1024 for input h
         A = torch.transpose(A, 1, 0)  # KxN
         if attention_only:
@@ -274,20 +272,31 @@ class CLAM_MB(CLAM_SB):
 
         M = torch.mm(A, h)  # slide level representation h_slide, [n_classes, D]
 
-        logits = torch.empty(1, self.n_classes).float().to(M.device)
-        for c in range(self.n_classes):
-            logits[0, c] = self.classifiers[c](M[c])
-
         if is_hierarchy:
-            # TO DO
-            # logits_coarse = torch.empty(1, 4).float().to(M.device)
-            # for c in range(0, 4):
-            #     logits_coarse[0, c] = self.classifiers[c](M[c])
-            # logits_fine = torch.empty(1, 14).float().to(M.device)
-            # for c in range(4, 18):
-            #     logits_fine[0, c] = self.classifiers[c](M[c])
-            return
+            logits_coarse = torch.empty(1, hier_class['coarse']).float().to(M.device)
+            for c in range(0, hier_class['coarse']):
+                logits_coarse[0, c] = self.classifiers[c](M[c])
+            logits_fine = torch.empty(1, hier_class['fine']).float().to(M.device)
+            for c in range(hier_class['coarse'], hier_class['coarse'] + hier_class['fine']):
+                logits_fine[0, c] = self.classifiers[c](M[c])
+            Y_hat_coarse = torch.topk(logits_coarse, 1, dim = 1)[1]
+            Y_hat_fine = torch.topk(logits_fine, 1, dim = 1)[1]
+            Y_prob_coarse = F.softmax(logits_coarse, dim=1)
+            Y_prob_fine = F.softmax(logits_fine, dim=1)
+            if instance_eval:
+                results_dict = {'instance_loss': total_inst_loss, 'inst_labels': np.array(all_targets),
+                                'inst_preds': np.array(all_preds)}
+            else:
+                results_dict = {}
+            if return_features:
+                results_dict.update({'features': M})
+            return (logits_coarse, logits_fine), (Y_prob_coarse, Y_prob_fine), (Y_hat_coarse,
+                                                                                Y_hat_fine), A_raw, results_dict
         else:
+            logits = torch.empty(1, self.n_classes).float().to(M.device)
+            for c in range(self.n_classes):
+                logits[0, c] = self.classifiers[c](M[c])
+
             Y_hat = torch.topk(logits, 1, dim=1)[1]
             Y_prob = F.softmax(logits, dim=1)
             if instance_eval:
