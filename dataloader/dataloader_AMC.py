@@ -96,7 +96,13 @@ class AMCDataset(Dataset):
     def __getitem__(self, idx):
         data, coarse_gt, fine_gt, split = self.data[idx]
         data_tensor = torch.load(data)
-        return data_tensor, coarse_gt, fine_gt
+        if data_tensor.dim() == 3 and data_tensor.shape[0] == 1:
+            data_tensor = data_tensor.squeeze(0)
+        return data_tensor, torch.tensor([coarse_gt]), torch.tensor([fine_gt])
+
+
+def identity_collate(batch):
+    return batch[0]
 
 if __name__ == "__main__":
     base_dir = "/home/user/data/UJSMB_STLB"
@@ -106,8 +112,12 @@ if __name__ == "__main__":
     val_dataset = AMCDataset(base_dir, anno_path, split="val")
     test_dataset = AMCDataset(base_dir, anno_path, split="test")
 
-    print(train_dataset)
-    #print(val_dataset)
-    # train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True)
+    # print(train_dataset)
+    # print(val_dataset)
+    train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True, collate_fn=identity_collate)
+    for data, coarse_gt, fine_gt in train_loader:
+        print(data.shape)
+
+
     # val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False)
     # test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)

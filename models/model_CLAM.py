@@ -44,7 +44,7 @@ args:
 
 
 class Attn_Net_Gated(nn.Module):
-    def __init__(self, L=1024, D=256, dropout=False, n_classes=1):
+    def __init__(self, L=1024, D=256, dropout=True, n_classes=1):
         super(Attn_Net_Gated, self).__init__()
         self.attention_a = [
             nn.Linear(L, D),  # Va in paper
@@ -117,7 +117,6 @@ class CLAM_SB(nn.Module):
         device = h.device
         if len(A.shape) == 1:
             A = A.view(1, -1)  # change to shape [1,N], N patches so N attention scores	(also one class so [1,N])
-
         # topk returns top k scores and corresponding indices using attention score A (normalized)
         # k and B are used interchangeably (B in the paper)
         top_p_ids = torch.topk(A, self.k_sample)[1][-1]  # topk[1] returns indices of top k values (shape [1 B]) top[1][-1] returns the k indices
@@ -156,7 +155,6 @@ class CLAM_SB(nn.Module):
             return A
         A_raw = A
         A = F.softmax(A, dim=1)  # softmax over N			A was not normalized, now it is
-
         if instance_eval:
             total_inst_loss = 0.0
             all_preds = []

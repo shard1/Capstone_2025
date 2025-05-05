@@ -49,6 +49,8 @@ class AccuracyLogger(object):
 
         return acc, correct, count
 
+def identity_collate(batch):
+    return batch[0]
 
 def configure_loss_fns(bag_loss, inst_loss, n_classes):
     if bag_loss == 'svm':
@@ -59,7 +61,7 @@ def configure_loss_fns(bag_loss, inst_loss, n_classes):
         loss_fn = nn.CrossEntropyLoss()
 
     if inst_loss == 'svm':
-        instance_loss_fn = SmoothTop1SVM(n_classes)
+        instance_loss_fn = SmoothTop1SVM(2)
         if device.type == 'cuda':
             instance_loss_fn = instance_loss_fn.cuda()
     else:
@@ -71,7 +73,7 @@ def configure_model(model_args, model_type, inst_loss_fn, n_classes):
     if model_type == 'clam_mb':
         model = CLAM_MB(**model_args, n_classes=n_classes, instance_loss_fn=inst_loss_fn, subtyping=True)
     elif model_type == 'clam_sb':
-        model = CLAM_SB(**model_args, instance_loss_fn=inst_loss_fn, subtyping=True)
+        model = CLAM_SB(**model_args, n_classes=n_classes, instance_loss_fn=inst_loss_fn, subtyping=True)
     else:
         raise NotImplementedError
     return model
@@ -80,7 +82,7 @@ def configure_model(model_args, model_type, inst_loss_fn, n_classes):
 def configure_clam(model_args, model_type, hierarchy, bag_loss, inst_loss):
     if hierarchy == 'coarse':
         loss_fn, instance_loss_fn = configure_loss_fns(bag_loss, inst_loss, n_classes=4)
-        model = configure_model(model_args, model_type, instance_loss_fn, 4)
+        model = configure_model(model_args, model_type, instance_loss_fn, n_classes=4)
     elif hierarchy == 'fine':
         loss_fn, instance_loss_fn = configure_loss_fns(bag_loss, inst_loss, n_classes=14)
         model = configure_model(model_args, model_type, instance_loss_fn, 14)
@@ -116,14 +118,14 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
             logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=coarse_gt, instance_eval=True)
             loss = loss_fn(logits, coarse_gt)
             acc_logger.log(y_hat, coarse_gt)
-            inst_preds = instance_dict['inst_pred']
+            inst_preds = instance_dict['inst_preds']
             inst_labels = instance_dict['inst_labels']
             inst_logger.log_batch(inst_preds, inst_labels)
         elif hierarchy == 'fine':
             logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=fine_gt, instance_eval=True)
             loss = loss_fn(logits, fine_gt)
             acc_logger.log(y_hat, fine_gt)
-            inst_preds = instance_dict['inst_pred']
+            inst_preds = instance_dict['inst_preds']
             inst_labels = instance_dict['inst_labels']
             inst_logger.log_batch(inst_preds, inst_labels)
         else:
@@ -141,7 +143,7 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
             acc_logger_fine.log(y_hat_fine, fine_gt)
 
 
-            inst_preds = instance_dict['inst_pred']
+            inst_preds = instance_dict['inst_preds']
             inst_labels = instance_dict['inst_labels']
             inst_logger_fine.log_batch(inst_preds, inst_labels)
 
@@ -155,7 +157,7 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
         train_loss += loss_value  # accumulate total train loss
         total_loss = bag_weight * loss + (1 - bag_weight) * instance_loss  # total loss tensor
 
-        if (batch_idx + 1) % 20 == 0:
+        if (batch_idx + 1) % 100 == 0:
             if hierarchy == 'coarse':
                 print('batch {}, loss: {:.4f}, instance_loss: {:.4f}, weighted_loss: {:.4f}, '.format(batch_idx,
                                                                                                       loss_value,
@@ -247,7 +249,7 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
                 logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=coarse_gt, instance_eval=True)
                 loss = loss_fn(logits, coarse_gt)
                 acc_logger.log(y_hat, coarse_gt)
-                inst_preds = instance_dict['inst_pred']
+                inst_preds = instance_dict['inst_preds']
                 inst_labels = instance_dict['inst_labels']
                 inst_logger.log_batch(inst_preds, inst_labels)
                 labels[batch_idx] = coarse_gt.item()
@@ -257,7 +259,7 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
                 logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=fine_gt, instance_eval=True)
                 loss = loss_fn(logits, fine_gt)
                 acc_logger.log(y_hat, fine_gt)
-                inst_preds = instance_dict['inst_pred']
+                inst_preds = instance_dict['inst_preds']
                 inst_labels = instance_dict['inst_labels']
                 inst_logger.log_batch(inst_preds, inst_labels)
                 labels[batch_idx] = fine_gt.item()
@@ -276,7 +278,7 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
                 acc_logger_coarse.log(y_hat_coarse, coarse_gt)
                 acc_logger_fine.log(y_hat_fine, fine_gt)
 
-                inst_preds = instance_dict['inst_pred']
+                inst_preds = instance_dict['inst_preds']
                 inst_labels = instance_dict['inst_labels']
                 inst_logger_coarse.log_batch(inst_preds, inst_labels)
                 inst_logger_fine.log_batch(inst_preds, inst_labels)
@@ -379,7 +381,7 @@ if __name__ == '__main__':
     parser.add_argument('--workers', default=1, type=int, help='number of data loading workers')
     parser.add_argument('--batch_size', default=1, type=int, help='mini-batch size')  # [변경]배치 사이즈
     parser.add_argument('--start_epoch', default=0, type=int, help='manual epoch number')
-    parser.add_argument('--epochs', default=30, type=int, help='number of total epochs to run')  # [변경]훈련 반복 수
+    parser.add_argument('--epochs', default=50, type=int, help='number of total epochs to run')  # [변경]훈련 반복 수
     parser.add_argument('--lr', default=0.00001, type=float, help='initial learning rate',
                         dest='lr')  # [변경] 초기 Learning rate
     #parser.add_argument('--print_freq', default=100, type=int)
@@ -399,9 +401,9 @@ if __name__ == '__main__':
     val_dataset = AMCDataset(args.base_dir, args.anno_path, split="val")
     test_dataset = AMCDataset(args.base_dir, args.anno_path, split="test")
 
-    train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True)
-    val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False)
-    test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)
+    train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True, collate_fn=identity_collate)
+    val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False, collate_fn=identity_collate)
+    test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False, collate_fn=identity_collate)
 
     print("Training on {} samples\n".format(len(train_dataset)))
     print("Validation on {} samples\n".format(len(val_dataset)))
@@ -410,7 +412,7 @@ if __name__ == '__main__':
     print("\nPreparing model...\n")
     model_args = {"gate": True, "size_arg": "small", "dropout": 0.25,
                   "k_sample": 8}
-    class_dict = {'coarse': 4, 'fine': 14, 'coarse-and-fine': 18}
+    class_dict = {'coarse': 4, 'fine': 14, 'coarse-and-fine': 14}
 
     #############################################CLAM_SB##########################################
     model, loss_fn = configure_clam(model_args, 'clam_sb', hierarchy = 'coarse', bag_loss=args.bag_loss, inst_loss=args.inst_loss)
@@ -424,7 +426,7 @@ if __name__ == '__main__':
     # model, loss_fn = configure_clam(model_args, args.model_type, args.hierarchy, args.bag_loss, args.inst_loss)
     print("Done\n")
 
-    print("Setting optimizer...\n")
+    print("Setting optimizer...")
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
     print("Done\n")
 
