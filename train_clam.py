@@ -127,9 +127,8 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
             inst_labels = instance_dict['inst_labels']
             inst_logger.log_batch(inst_preds, inst_labels)
         else:
-            #change this part
-            combined = coarse_gt + fine_gt
-            logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=combined, instance_eval=True, is_hierarchy=True)
+            #coarse and fine
+            logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=fine_gt, instance_eval=True, is_hierarchy=True)
             logits_coarse, logits_fine = logits
             y_prob_coarse, y_prob_fine = y_prob
             y_hat_coarse, y_hat_fine = y_hat
@@ -261,10 +260,7 @@ def validate_clam(cur, epoch, model, loader, num_classes, loss_fn=None, results_
                 labels[batch_idx] = fine_gt.item()
                 prob[batch_idx] = y_prob.cpu().numpy()
             else:
-                ######################### change this part########################
-                combined = coarse_gt + fine_gt
-                ########################################################################
-                logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=combined, instance_eval=True,
+                logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=fine_gt, instance_eval=True,
                                                                 is_hierarchy=True)
                 logits_coarse, logits_fine = logits
                 y_prob_coarse, y_prob_fine = y_prob
@@ -301,7 +297,6 @@ def validate_clam(cur, epoch, model, loader, num_classes, loss_fn=None, results_
     # val_error /= len(loader)
     val_loss /= len(loader)
 
-    #########################Is this good now?########################
     if is_hierarchy:
         auc_coarse = 0
         auc_fine = 0
@@ -330,7 +325,7 @@ def validate_clam(cur, epoch, model, loader, num_classes, loss_fn=None, results_
                     fpr, tpr, _ = roc_curve(binary_labels_fine[:, class_idx], prob_fine[:, class_idx])
                     fine_auc_vals.append(calc_auc(fpr, tpr))
                 else:
-                    coarse_auc_vals.append(float('nan'))
+                    fine_auc_vals.append(float('nan'))
             auc = np.nanmean(np.array(fine_auc_vals))
         print('\nVal Set, val_loss: {:.4f}, coarse auc: {:.4f}, fine auc: {:.4f}'.format(val_loss, auc_coarse, auc_fine))
     else:
@@ -350,7 +345,6 @@ def validate_clam(cur, epoch, model, loader, num_classes, loss_fn=None, results_
 
             auc = np.nanmean(np.array(auc_vals))
         print('\nVal Set, val_loss: {:.4f}, auc: {:.4f}'.format(val_loss, auc))
-    #####################################################################################
     # print('\nVal Set, val_loss: {:.4f}, val_error: {:.4f}, auc: {:.4f}'.format(val_loss, val_error, auc))
 
 
@@ -372,14 +366,12 @@ def validate_clam(cur, epoch, model, loader, num_classes, loss_fn=None, results_
             acc, correct, count = acc_logger.get_summary(i)
             print('class {}: acc {}, correct {}/{}'.format(i, acc, correct, count))
 
-    return False
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='PyTorch Training')
 
     parser.add_argument('--seed', default=103, type=int, help='seed for initializing training.')
-    parser.add_argument('--base_dir', default="/home/user/data/UJSMB_STLB", help='path to dataset')  # [변경] 이미지 패치 저장 경로
-    parser.add_argument('--anno_path', default="/home/user/lib/Capstone_2025/dataloader/amc_fine_grained_anno.csv",
+    parser.add_argument('--base_dir', default="some path", help='path to dataset')  # [변경] 이미지 패치 저장 경로
+    parser.add_argument('--anno_path', default="some path",
                         help='path to dataset')  # [변경] 이미지 패치 저장 경로
 
     parser.add_argument('--workers', default=1, type=int, help='number of data loading workers')
@@ -427,12 +419,15 @@ if __name__ == '__main__':
             if args.hierarchy == 'coarse':
                 train_clam(epoch, model, train_loader, optimizer, class_dict, bag_weight=args.bag_weight,
                            loss_fn=loss_fn, hierarchy=args.hierarchy)
+                validate_clam(cur, epoch, model, val_loader, class_dict, loss_fn=loss_fn, hierarchy=args.hierarchy)
             elif args.hierarchy == 'fine':
                 train_clam(epoch, model, train_loader, optimizer, class_dict, bag_weight=args.bag_weight,
                            loss_fn=loss_fn, hierarchy=args.hierarchy)
+                validate_clam(cur, epoch, model, val_loader, class_dict, loss_fn=loss_fn, hierarchy=args.hierarchy)
             else:
                 train_clam(epoch, model, train_loader, optimizer, class_dict, bag_weight=args.bag_weight,
                            loss_fn=loss_fn, hierarchy=args.hierarchy)
+                validate_clam(cur, epoch, model, val_loader, class_dict, loss_fn = loss_fn, hierarchy=args.hierarchy)
         else:
             pass
             #for my model

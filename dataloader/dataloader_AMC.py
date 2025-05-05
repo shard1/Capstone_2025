@@ -1,6 +1,6 @@
 import os
 
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset
 
 '''
 patient_id;diagnosis_id;coarse;fine;split
