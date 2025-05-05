@@ -1,4 +1,6 @@
 import argparse
+import os
+import random
 
 import numpy as np
 import torch
@@ -51,6 +53,15 @@ class AccuracyLogger(object):
 
 def identity_collate(batch):
     return batch[0]
+def set_seed(seed):
+    torch.manual_seed(seed)
+    np.random.seed(seed)
+    random.seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    os.environ["PYTHONHASHSEED"] = str(seed)
+
 
 def configure_loss_fns(bag_loss, inst_loss, n_classes):
     if bag_loss == 'svm':
@@ -395,6 +406,8 @@ if __name__ == '__main__':
     parser.add_argument('--bag_weight', default=0.7, type=float, help='clam: weight coefficient for bag-level loss')
     args = parser.parse_args()
 
+    set_seed(args.seed)
+
     print("Preparing data...\n")
 
     train_dataset = AMCDataset(args.base_dir, args.anno_path, split="train")
@@ -415,35 +428,35 @@ if __name__ == '__main__':
     class_dict = {'coarse': 4, 'fine': 14, 'coarse-and-fine': 14}
 
     #############################################CLAM_SB##########################################
-    model, loss_fn = configure_clam(model_args, 'clam_sb', hierarchy = 'coarse', bag_loss=args.bag_loss, inst_loss=args.inst_loss)
-    # model, loss_fn = configure_clam(model_args, 'clam_sb', hierarchy='fine', bag_loss=args.bag_loss,
+    model_coarse_sb, loss_fn = configure_clam(model_args, 'clam_sb', hierarchy = 'coarse', bag_loss=args.bag_loss, inst_loss=args.inst_loss)
+    # model_fine_sb, loss_fn = configure_clam(model_args, 'clam_sb', hierarchy='fine', bag_loss=args.bag_loss,
     #                                 inst_loss=args.inst_loss)
-    # model, loss_fn = configure_clam(model_args, 'clam_sb', hierarchy='coarse-and-fine', bag_loss=args.bag_loss,
+    # model_hierarchy_sb, loss_fn = configure_clam(model_args, 'clam_sb', hierarchy='coarse-and-fine', bag_loss=args.bag_loss,
     #                                 inst_loss=args.inst_loss)
-    model = model.to(device)
+    model_coarse_sb = model_coarse_sb.to(device)
 
     ########################################CLAM_MB#############################################
     # model, loss_fn = configure_clam(model_args, args.model_type, args.hierarchy, args.bag_loss, args.inst_loss)
     print("Done\n")
 
     print("Setting optimizer...")
-    optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
+    optimizer = torch.optim.Adam(model_coarse_sb.parameters(), lr=args.lr)
     print("Done\n")
 
     for epoch in range(args.epochs):
         if args.model_type in ['clam_mb', 'clam_sb'] and args.hierarchy in ['coarse', 'fine', 'coarse-and-fine']:
             if args.hierarchy == 'coarse':
-                train_clam(epoch, model, train_loader, optimizer, class_dict, bag_weight=args.bag_weight,
+                train_clam(epoch, model_coarse_sb, train_loader, optimizer, class_dict, bag_weight=args.bag_weight,
                            loss_fn=loss_fn, hierarchy=args.hierarchy)
-                validate_clam(epoch, model, val_loader, class_dict, loss_fn=loss_fn, hierarchy=args.hierarchy)
-            elif args.hierarchy == 'fine':
-                train_clam(epoch, model, train_loader, optimizer, class_dict, bag_weight=args.bag_weight,
-                           loss_fn=loss_fn, hierarchy=args.hierarchy)
-                validate_clam(epoch, model, val_loader, class_dict, loss_fn=loss_fn, hierarchy=args.hierarchy)
-            else:
-                train_clam(epoch, model, train_loader, optimizer, class_dict, bag_weight=args.bag_weight,
-                           loss_fn=loss_fn, hierarchy=args.hierarchy)
-                validate_clam(epoch, model, val_loader, class_dict, loss_fn = loss_fn, hierarchy=args.hierarchy)
+                validate_clam(epoch, model_coarse_sb, val_loader, class_dict, loss_fn=loss_fn, hierarchy=args.hierarchy)
+            # elif args.hierarchy == 'fine':
+            #     train_clam(epoch, model_fine_sb, train_loader, optimizer, class_dict, bag_weight=args.bag_weight,
+            #                loss_fn=loss_fn, hierarchy=args.hierarchy)
+            #     validate_clam(epoch, model_fine_sb, val_loader, class_dict, loss_fn=loss_fn, hierarchy=args.hierarchy)
+            # else:
+            #     train_clam(epoch, model_hierarchy_sb, train_loader, optimizer, class_dict, bag_weight=args.bag_weight,
+            #                loss_fn=loss_fn, hierarchy=args.hierarchy)
+            #     validate_clam(epoch, model_hierarchy_sb, val_loader, class_dict, loss_fn = loss_fn, hierarchy=args.hierarchy)
         else:
             pass
             #for my model
