@@ -370,10 +370,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='PyTorch Training')
 
     parser.add_argument('--seed', default=103, type=int, help='seed for initializing training.')
-    parser.add_argument('--base_dir', default="some path", help='path to dataset')  # [변경] 이미지 패치 저장 경로
-    parser.add_argument('--anno_path', default="some path",
+    parser.add_argument('--base_dir', default="/home/user/data/UJSMB_STLB", help='path to dataset')  # [변경] 이미지 패치 저장 경로
+    parser.add_argument('--anno_path', default="/home/user/lib/Capstone_2025/dataloader/amc_fine_grained_anno.csv",
                         help='path to dataset')  # [변경] 이미지 패치 저장 경로
-
     parser.add_argument('--workers', default=1, type=int, help='number of data loading workers')
     parser.add_argument('--batch_size', default=1, type=int, help='mini-batch size')  # [변경]배치 사이즈
     parser.add_argument('--start_epoch', default=0, type=int, help='manual epoch number')
