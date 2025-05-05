@@ -2,6 +2,7 @@ import argparse
 import os
 import random
 
+import matplotlib.pyplot as plt
 import numpy as np
 import torch
 import torch.nn as nn
@@ -51,8 +52,11 @@ class AccuracyLogger(object):
 
         return acc, correct, count
 
+
 def identity_collate(batch):
     return batch[0]
+
+
 def set_seed(seed):
     torch.manual_seed(seed)
     np.random.seed(seed)
@@ -106,10 +110,10 @@ def configure_clam(model_args, model_type, hierarchy, bag_loss, inst_loss):
 def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn=None, hierarchy='coarse-and-fine'):
     model.train()
 
-    acc_logger_coarse = AccuracyLogger(n_classes = num_classes['coarse'])
-    acc_logger_fine = AccuracyLogger(n_classes = num_classes['fine'])
-    inst_logger_coarse = AccuracyLogger(n_classes = num_classes['coarse'])
-    inst_logger_fine = AccuracyLogger(n_classes = num_classes['fine'])
+    acc_logger_coarse = AccuracyLogger(n_classes=num_classes['coarse'])
+    acc_logger_fine = AccuracyLogger(n_classes=num_classes['fine'])
+    inst_logger_coarse = AccuracyLogger(n_classes=num_classes['coarse'])
+    inst_logger_fine = AccuracyLogger(n_classes=num_classes['fine'])
 
     acc_logger = AccuracyLogger(n_classes=num_classes[hierarchy])
     inst_logger = AccuracyLogger(n_classes=num_classes[hierarchy])
@@ -140,8 +144,9 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
             inst_labels = instance_dict['inst_labels']
             inst_logger.log_batch(inst_preds, inst_labels)
         else:
-            #coarse and fine
-            logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=fine_gt, instance_eval=True, is_hierarchy=True)
+            # coarse and fine
+            logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=fine_gt, instance_eval=True,
+                                                            is_hierarchy=True)
             logits_coarse, logits_fine = logits
             y_prob_coarse, y_prob_fine = y_prob
             y_hat_coarse, y_hat_fine = y_hat
@@ -153,7 +158,6 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
             acc_logger_coarse.log(y_hat_coarse, coarse_gt)
             acc_logger_fine.log(y_hat_fine, fine_gt)
 
-
             inst_preds = instance_dict['inst_preds']
             inst_labels = instance_dict['inst_labels']
             inst_logger_fine.log_batch(inst_preds, inst_labels)
@@ -162,7 +166,6 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
         instance_loss = instance_dict['instance_loss']  # tensor
         instance_loss_value = instance_loss.item()  # scalar, instance loss
         inst_count += 1
-
 
         train_inst_loss += instance_loss_value  # accumulate instance loss
         train_loss += loss_value  # accumulate total train loss
@@ -203,18 +206,19 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
 
     if inst_count > 0:
         train_inst_loss /= inst_count
-        print('\n')
+        print('Instance Classifier Stats\n')
         for i in range(2):
             acc, correct, count = inst_logger.get_summary(i)
             print('class {} clustering acc {}: correct {}/{}\n'.format(i, acc, correct, count))
 
     # print('Epoch: {}, train_loss: {:.4f}, train_clustering_loss:  {:.4f}, train_error: {:.4f}'.format(epoch, train_loss, train_inst_loss,  train_error))
-    print('Epoch: {}, train_loss: {:.4f}, train_clustering_loss:  {:.4f}\n'.format(epoch, train_loss, train_inst_loss))
+    print('\nEpoch: {}, train_loss: {:.4f}, train_clustering_loss:  {:.4f}\n'.format(epoch, train_loss, train_inst_loss))
 
     if hierarchy == 'coarse-and-fine':
         for i in range(num_classes['coarse']):
             acc_coarse, correct_coarse, count_coarse = acc_logger_coarse.get_summary(i)
-            print('Coarse class {}: coarse acc {}, correct coarse {}/{} \n'.format(i, acc_coarse, correct_coarse, count_coarse))
+            print('Coarse class {}: coarse acc {}, correct coarse {}/{} \n'.format(i, acc_coarse, correct_coarse,
+                                                                                   count_coarse))
         for i in range(num_classes['fine']):
             acc_fine, correct_fine, count_fine = acc_logger_fine.get_summary(i)
             print('Fine class {}: fine acc {}, correct fine {}/{} \n'.format(i, acc_fine, correct_fine, count_fine))
@@ -223,8 +227,10 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
             acc, correct, count = acc_logger.get_summary(i)
             print('class {}: acc {}, correct {}/{} \n'.format(i, acc, correct, count))
 
+    return train_loss
 
-def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=None, hierarchy = 'coarse-and-fine'):
+
+def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=None, hierarchy='coarse-and-fine'):
     model.eval()
 
     is_hierarchy = hierarchy not in ('coarse', 'fine')
@@ -299,7 +305,6 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
                 prob_coarse[batch_idx] = y_prob_coarse.cpu().numpy()
                 prob_fine[batch_idx] = y_prob_fine.cpu().numpy()
 
-
             val_loss += loss.item()
             instance_loss = instance_dict['instance_loss']
 
@@ -343,7 +348,8 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
                 else:
                     fine_auc_vals.append(float('nan'))
             auc = np.nanmean(np.array(fine_auc_vals))
-        print('Val Set, val_loss: {:.4f}, coarse auc: {:.4f}, fine auc: {:.4f} \n'.format(val_loss, auc_coarse, auc_fine))
+        print(
+            'Val Set, val_loss: {:.4f}, coarse auc: {:.4f}, fine auc: {:.4f} \n'.format(val_loss, auc_coarse, auc_fine))
     else:
         auc = 0
         if num_classes[hierarchy] == 2:
@@ -360,27 +366,36 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
                     auc_vals.append(float('nan'))
 
             auc = np.nanmean(np.array(auc_vals))
-        print('Val Set, val_loss: {:.4f}, auc: {:.4f} \n'.format(val_loss, auc))
+        print('\nVal Set, val_loss: {:.4f}, auc: {:.4f} \n'.format(val_loss, auc))
     # print('\nVal Set, val_loss: {:.4f}, val_error: {:.4f}, auc: {:.4f}'.format(val_loss, val_error, auc))
 
 
-    if inst_count > 0:
-        val_inst_loss /= inst_count
-        for i in range(2):
-            acc, correct, count = inst_logger.get_summary(i)
-            print('class {} clustering acc {}: correct {}/{} \n'.format(i, acc, correct, count))
-
     if is_hierarchy:
+        if inst_count > 0:
+            val_inst_loss /= inst_count
+            for i in range(2):
+                acc_coarse, correct_coarse, count_coarse = inst_logger_coarse.get_summary(i)
+                acc_fine, correct_fine, count_fine = inst_logger_fine.get_summary(i)
+                print('class {} coarse instance clustering acc {}: correct {}/{} \n'.format(i, acc_coarse, correct_coarse, count_coarse))
+                print('class {} fine instance clustering acc {}: correct {}/{} \n'.format(i, acc_fine, correct_fine, count_fine))
+
         for i in range(num_classes['coarse']):
             acc_coarse, correct_coarse, count_coarse = acc_logger_coarse.get_summary(i)
-            print('class {}: coarse acc {}, correct coarse {}/{} \n'.format(i, acc_coarse, correct_coarse, count_coarse))
+            print(
+                'class {}: coarse acc {}, correct coarse {}/{} \n'.format(i, acc_coarse, correct_coarse, count_coarse))
         for i in range(num_classes['fine']):
             acc_fine, correct_fine, count_fine = acc_logger_fine.get_summary(i)
             print('class {}: fine acc {}, correct fine {}/{} \n'.format(i, acc_fine, correct_fine, count_fine))
     else:
+        if inst_count > 0:
+            val_inst_loss /= inst_count
+            for i in range(2):
+                acc, correct, count = inst_logger.get_summary(i)
+                print('class {} clustering acc {}: correct {}/{} \n'.format(i, acc, correct, count))
         for i in range(num_classes[hierarchy]):
             acc, correct, count = acc_logger.get_summary(i)
             print('class {}: acc {}, correct {}/{} \n'.format(i, acc, correct, count))
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='PyTorch Training')
@@ -393,14 +408,15 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size', default=1, type=int, help='mini-batch size')  # [변경]배치 사이즈
     parser.add_argument('--start_epoch', default=0, type=int, help='manual epoch number')
     parser.add_argument('--epochs', default=50, type=int, help='number of total epochs to run')  # [변경]훈련 반복 수
-    parser.add_argument('--lr', default=0.00001, type=float, help='initial learning rate',
+    parser.add_argument('--lr', default=0.0002, type=float, help='initial learning rate',
                         dest='lr')  # [변경] 초기 Learning rate
-    #parser.add_argument('--print_freq', default=100, type=int)
-    #parser.add_argument('--save_freq', default=10, type=int)
-    #parser.add_argument('--result', default='./results', type=str, help='path to results')
+    # parser.add_argument('--print_freq', default=100, type=int)
+    # parser.add_argument('--save_freq', default=10, type=int)
+    # parser.add_argument('--result', default='./results', type=str, help='path to results')
     parser.add_argument('--bag_loss', default='ce', type=str, help='bag level classifier loss function')
     parser.add_argument('--inst_loss', default='svm', type=str, help='instance classifier loss function')
-    parser.add_argument('--model_type', type=str, default = 'clam_sb', choices=['clam_sb', 'clam_mb'], help='options for a model')
+    parser.add_argument('--model_type', type=str, default='clam_sb', choices=['clam_sb', 'clam_mb'],
+                        help='options for a model')
     parser.add_argument('--hierarchy', default='coarse', type=str, choices=['coarse', 'fine', 'coarse-and-fine'],
                         help='choose classification type')
     parser.add_argument('--bag_weight', default=0.7, type=float, help='clam: weight coefficient for bag-level loss')
@@ -428,26 +444,34 @@ if __name__ == '__main__':
     class_dict = {'coarse': 4, 'fine': 14, 'coarse-and-fine': 14}
 
     #############################################CLAM_SB##########################################
-    model_coarse_sb, loss_fn = configure_clam(model_args, 'clam_sb', hierarchy = 'coarse', bag_loss=args.bag_loss, inst_loss=args.inst_loss)
+    model_coarse_sb, loss_fn = configure_clam(model_args, 'clam_sb', hierarchy='coarse', bag_loss=args.bag_loss,
+                                              inst_loss=args.inst_loss)
     # model_fine_sb, loss_fn = configure_clam(model_args, 'clam_sb', hierarchy='fine', bag_loss=args.bag_loss,
     #                                 inst_loss=args.inst_loss)
     # model_hierarchy_sb, loss_fn = configure_clam(model_args, 'clam_sb', hierarchy='coarse-and-fine', bag_loss=args.bag_loss,
     #                                 inst_loss=args.inst_loss)
+
     model_coarse_sb = model_coarse_sb.to(device)
+    # model_fine_sb = model_fine_sb.to(device)
+    # model_hierarchy_sb = model_hierarchy_sb.to(device)
+
 
     ########################################CLAM_MB#############################################
     # model, loss_fn = configure_clam(model_args, args.model_type, args.hierarchy, args.bag_loss, args.inst_loss)
     print("Done\n")
 
     print("Setting optimizer...")
-    optimizer = torch.optim.Adam(model_coarse_sb.parameters(), lr=args.lr)
+    optimizer = torch.optim.Adam(model_coarse_sb.parameters(), lr=args.lr, weight_decay=1e-5)
     print("Done\n")
 
+    train_losses = []
     for epoch in range(args.epochs):
         if args.model_type in ['clam_mb', 'clam_sb'] and args.hierarchy in ['coarse', 'fine', 'coarse-and-fine']:
             if args.hierarchy == 'coarse':
-                train_clam(epoch, model_coarse_sb, train_loader, optimizer, class_dict, bag_weight=args.bag_weight,
-                           loss_fn=loss_fn, hierarchy=args.hierarchy)
+                train_loss = train_clam(epoch, model_coarse_sb, train_loader, optimizer, class_dict,
+                                        bag_weight=args.bag_weight,
+                                        loss_fn=loss_fn, hierarchy=args.hierarchy)
+                train_losses.append(train_loss)
                 validate_clam(epoch, model_coarse_sb, val_loader, class_dict, loss_fn=loss_fn, hierarchy=args.hierarchy)
             # elif args.hierarchy == 'fine':
             #     train_clam(epoch, model_fine_sb, train_loader, optimizer, class_dict, bag_weight=args.bag_weight,
@@ -459,8 +483,14 @@ if __name__ == '__main__':
             #     validate_clam(epoch, model_hierarchy_sb, val_loader, class_dict, loss_fn = loss_fn, hierarchy=args.hierarchy)
         else:
             pass
-            #for my model
-
+            # for my model
+    plt.figure(figsize=(10, 5))
+    plt.plot(range(1, len(train_losses) + 1), train_losses, label='Train Loss')
+    plt.xlabel("Epoch")
+    plt.ylabel("Loss")
+    plt.title("Training Loss vs. Epoch")
+    plt.legend()
+    plt.show()
     # _, val_error, val_auc, _ = summary(model, val_loader, args.n_classes)
     # print('Val error: {:.4f}, ROC AUC: {:.4f}'.format(val_error, val_auc))
     #
