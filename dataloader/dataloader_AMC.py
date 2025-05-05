@@ -1,10 +1,12 @@
 import os
 
-from torch.utils.data import Dataset
+import torch
+from torch.utils.data import Dataset, DataLoader
 
 '''
 patient_id;diagnosis_id;coarse;fine;split
 '''
+
 
 def load_anno(anno_path):
     anno_dict = {}
@@ -73,13 +75,39 @@ class AMCDataset(Dataset):
                 fine_stats[fine_gt] = 0
             fine_stats[fine_gt] += 1
 
-        str = ""
-        str += "[{} set] {}\n".format(self.split, len(self))
+        msg_fine = ""
+        msg_fine += "[{} set] {}\n".format(self.split, len(self))
         for k, v in sorted(fine_stats.items()):
-            str += "Fine {}: {}\n".format(k, v)
-        str += "\n"
-        return str
+            msg_fine += "Fine {}: {}\n".format(k, v)
+        msg_fine += "total num of fine classes: {}\n".format(len(fine_stats))
+
+        coarse_stats = {}
+        for data, coarse_gt, fine_gt, split in self.data:
+            if coarse_gt not in coarse_stats:
+                coarse_stats[coarse_gt] = 0
+            coarse_stats[coarse_gt] += 1
+        msg_coarse = ""
+        msg_coarse += "[{} set] {}\n".format(self.split, len(self))
+        for k, v in sorted(coarse_stats.items()):
+            msg_coarse += "Coarse {}: {}\n".format(k, v)
+        msg_coarse += "total num of coarse classes: {} \n".format(len(coarse_stats))
+        return msg_coarse + msg_fine
 
     def __getitem__(self, idx):
         data, coarse_gt, fine_gt, split = self.data[idx]
-        return data, coarse_gt, fine_gt
+        data_tensor = torch.load(data)
+        return data_tensor, coarse_gt, fine_gt
+
+if __name__ == "__main__":
+    base_dir = "/home/user/data/UJSMB_STLB"
+    anno_path = "/home/user/lib/Capstone_2025/dataloader/amc_fine_grained_anno.csv"
+
+    train_dataset = AMCDataset(base_dir, anno_path, split="train")
+    val_dataset = AMCDataset(base_dir, anno_path, split="val")
+    test_dataset = AMCDataset(base_dir, anno_path, split="test")
+
+    print(train_dataset)
+    #print(val_dataset)
+    # train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True)
+    # val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False)
+    # test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)

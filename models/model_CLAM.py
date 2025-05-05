@@ -149,7 +149,7 @@ class CLAM_SB(nn.Module):
         instance_loss = self.instance_loss_fn(logits, p_targets)
         return instance_loss, p_preds, p_targets
 
-    def forward(self, h, hier_class, label=None, instance_eval=False, return_features=False, attention_only=False, is_hierarchy=False):
+    def forward(self, h, num_class, label=None, instance_eval=False, return_features=False, attention_only=False, is_hierarchy=False):
         A, h = self.attention_net(h)  # NxK   Nxn_classes for A, [N, 1024] for input h [N, 512] for output h
         A = torch.transpose(A, 1, 0)  # KxN		n_classes x N
         if attention_only:
@@ -185,8 +185,8 @@ class CLAM_SB(nn.Module):
         M = torch.mm(A, h)  # [n_classes = 1, D]   h_slide,  n_classes from attention
         logits = self.classifiers(M)  # [1, n_classes]
         if is_hierarchy:
-            logits_coarse = logits[:, : hier_class['coarse']]
-            logits_fine = logits[:, hier_class['coarse']:]
+            logits_coarse = logits[:, : num_class['coarse']]
+            logits_fine = logits[:, num_class['coarse']:]
 
             Y_hat_coarse = torch.topk(logits_coarse, 1, dim=1)[1]  # shape [1]		unnormalized logit value
             Y_hat_fine = torch.topk(logits_fine, 1, dim=1)[1]  # shape [1]		unnormalized logit value
@@ -238,7 +238,7 @@ class CLAM_MB(CLAM_SB):
         self.n_classes = n_classes
         self.subtyping = subtyping
 
-    def forward(self, h, hier_class, label=None, instance_eval=False, return_features=False, attention_only=False,is_hierarchy=False):
+    def forward(self, h, num_class, label=None, instance_eval=False, return_features=False, attention_only=False,is_hierarchy=False):
         A, h = self.attention_net(h)  # NxK     Nxn_classes for A, Nx512 for output h and Nx1024 for input h
         A = torch.transpose(A, 1, 0)  # KxN
         if attention_only:
@@ -273,11 +273,11 @@ class CLAM_MB(CLAM_SB):
         M = torch.mm(A, h)  # slide level representation h_slide, [n_classes, D]
 
         if is_hierarchy:
-            logits_coarse = torch.empty(1, hier_class['coarse']).float().to(M.device)
-            for c in range(0, hier_class['coarse']):
+            logits_coarse = torch.empty(1, num_class['coarse']).float().to(M.device)
+            for c in range(0, num_class['coarse']):
                 logits_coarse[0, c] = self.classifiers[c](M[c])
-            logits_fine = torch.empty(1, hier_class['fine']).float().to(M.device)
-            for c in range(hier_class['coarse'], hier_class['coarse'] + hier_class['fine']):
+            logits_fine = torch.empty(1, num_class['fine']).float().to(M.device)
+            for c in range(num_class['coarse'], num_class['coarse'] + num_class['fine']):
                 logits_fine[0, c] = self.classifiers[c](M[c])
             Y_hat_coarse = torch.topk(logits_coarse, 1, dim = 1)[1]
             Y_hat_fine = torch.topk(logits_fine, 1, dim = 1)[1]
