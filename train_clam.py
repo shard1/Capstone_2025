@@ -7,6 +7,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 from sklearn.metrics import auc as calc_auc
+from sklearn.metrics import f1_score, accuracy_score
 from sklearn.metrics import roc_auc_score, roc_curve
 from sklearn.preprocessing import label_binarize
 from torch.utils.data import DataLoader
@@ -133,6 +134,7 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
             logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=coarse_gt, instance_eval=True)
             loss = loss_fn(logits, coarse_gt)
             acc_logger.log(y_hat, coarse_gt)
+
             inst_preds = instance_dict['inst_preds']
             inst_labels = instance_dict['inst_labels']
             inst_logger.log_batch(inst_preds, inst_labels)
@@ -140,6 +142,7 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
             logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=fine_gt, instance_eval=True)
             loss = loss_fn(logits, fine_gt)
             acc_logger.log(y_hat, fine_gt)
+
             inst_preds = instance_dict['inst_preds']
             inst_labels = instance_dict['inst_labels']
             inst_logger.log_batch(inst_preds, inst_labels)
@@ -258,6 +261,8 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
     labels_fine = np.zeros(len(loader))
 
     sample_size = model.k_sample
+    all_preds = []
+    all_labels = []
     with torch.inference_mode():
         for batch_idx, (data, coarse_gt, fine_gt) in enumerate(loader):
             data, coarse_gt, fine_gt = data.to(device), coarse_gt.to(device), fine_gt.to(device)
@@ -266,6 +271,9 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
                 logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=coarse_gt, instance_eval=True)
                 loss = loss_fn(logits, coarse_gt)
                 acc_logger.log(y_hat, coarse_gt)
+                all_preds.append(int(y_hat))
+                all_labels.append(int(coarse_gt))
+
                 inst_preds = instance_dict['inst_preds']
                 inst_labels = instance_dict['inst_labels']
                 inst_logger.log_batch(inst_preds, inst_labels)
@@ -276,6 +284,9 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
                 logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=fine_gt, instance_eval=True)
                 loss = loss_fn(logits, fine_gt)
                 acc_logger.log(y_hat, fine_gt)
+                all_preds.append(int(y_hat))
+                all_labels.append(int(fine_gt))
+
                 inst_preds = instance_dict['inst_preds']
                 inst_labels = instance_dict['inst_labels']
                 inst_logger.log_batch(inst_preds, inst_labels)
@@ -395,6 +406,10 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
         for i in range(num_classes[hierarchy]):
             acc, correct, count = acc_logger.get_summary(i)
             print('class {}: acc {}, correct {}/{} \n'.format(i, acc, correct, count))
+    f1 = f1_score(all_labels, all_preds, average='macro')
+    acc = accuracy_score(all_labels, all_preds)
+    print(f"Overall Accuracy: {acc:.4f}\n")
+    print(f"Overall F1 Score: {f1:.4f}\n")
 
 def createLossCurve(losses, model_type, hierarchy):
     plot_title = "Loss Curve " + "(" + hierarchy + "_" + model_type + ")"
@@ -424,7 +439,7 @@ if __name__ == '__main__':
     # parser.add_argument('--result', default='./results', type=str, help='path to results')
     parser.add_argument('--bag_loss', default='ce', type=str, help='bag level classifier loss function')
     parser.add_argument('--inst_loss', default='svm', type=str, help='instance classifier loss function')
-    parser.add_argument('--model_type', type=str, default='clam_sb', choices=['clam_sb', 'clam_mb'],
+    parser.add_argument('--model_type', type=str, default='clam_mb', choices=['clam_sb', 'clam_mb'],
                         help='options for a model')
     parser.add_argument('--hierarchy', default='coarse', type=str, choices=['coarse', 'fine', 'coarse-and-fine'],
                         help='choose classification type')
