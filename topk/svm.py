@@ -79,7 +79,7 @@ class MaxTopkSVM(_SVMLoss):
 
 
 class SmoothTop1SVM(_SVMLoss):
-    def __init__(self, n_classes, alpha=None, tau=1.):
+    def __init__(self, n_classes, alpha=1., tau=1.):
         super(SmoothTop1SVM, self).__init__(n_classes=n_classes,
                                             alpha=alpha)
         self.tau = tau
