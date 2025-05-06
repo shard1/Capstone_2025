@@ -1,0 +1,6026 @@
+/home/user/anaconda3/envs/engdesign/bin/python /home/user/lib/Capstone_2025/train_clam.py 
+Preparing data...
+
+/home/user/anaconda3/envs/engdesign/lib/python3.13/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 804: forward compatibility was attempted on non supported HW (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
+  return torch._C._cuda_getDeviceCount() > 0
+Training on 2170 samples
+
+Validation on 264 samples
+
+Test on 264 samples
+
+
+Preparing model...
+
+Setting tau to 1.0
+Setting tau to 1.0
+Setting tau to 1.0
+Setting tau to 1.0
+Done
+
+Setting optimizer...
+Done
+
+Training for fine level...
+
+batch 99, loss: 1.1993, instance_loss: 0.2149, weighted_loss: 0.9040, label: 7, bag_size: 330 
+
+batch 199, loss: 1.5359, instance_loss: 0.2060, weighted_loss: 1.1369, label: 7, bag_size: 541 
+
+batch 299, loss: 1.4439, instance_loss: 0.2187, weighted_loss: 1.0763, label: 4, bag_size: 831 
+
+batch 399, loss: 0.8559, instance_loss: 0.1514, weighted_loss: 0.6446, label: 6, bag_size: 311 
+
+batch 499, loss: 1.2530, instance_loss: 0.2092, weighted_loss: 0.9398, label: 3, bag_size: 149 
+
+batch 599, loss: 0.4953, instance_loss: 0.1055, weighted_loss: 0.3784, label: 6, bag_size: 345 
+
+batch 699, loss: 0.0369, instance_loss: 0.0224, weighted_loss: 0.0325, label: 6, bag_size: 651 
+
+batch 799, loss: 0.5301, instance_loss: 0.1226, weighted_loss: 0.4079, label: 6, bag_size: 861 
+
+batch 899, loss: 2.1250, instance_loss: 0.2258, weighted_loss: 1.5553, label: 4, bag_size: 433 
+
+batch 999, loss: 2.2535, instance_loss: 0.2524, weighted_loss: 1.6532, label: 10, bag_size: 278 
+
+batch 1099, loss: 0.1318, instance_loss: 0.0509, weighted_loss: 0.1075, label: 6, bag_size: 246 
+
+batch 1199, loss: 1.6050, instance_loss: 0.1908, weighted_loss: 1.1808, label: 3, bag_size: 347 
+
+batch 1299, loss: 2.0025, instance_loss: 0.2411, weighted_loss: 1.4741, label: 6, bag_size: 658 
+
+batch 1399, loss: 0.6357, instance_loss: 0.0869, weighted_loss: 0.4710, label: 6, bag_size: 1048 
+
+batch 1499, loss: 1.7515, instance_loss: 0.1662, weighted_loss: 1.2759, label: 7, bag_size: 850 
+
+batch 1599, loss: 2.9212, instance_loss: 0.2549, weighted_loss: 2.1213, label: 5, bag_size: 308 
+
+batch 1699, loss: 0.3954, instance_loss: 0.0684, weighted_loss: 0.2973, label: 6, bag_size: 293 
+
+batch 1799, loss: 0.6344, instance_loss: 0.1042, weighted_loss: 0.4753, label: 3, bag_size: 490 
+
+batch 1899, loss: 1.6813, instance_loss: 0.2240, weighted_loss: 1.2441, label: 4, bag_size: 1172 
+
+batch 1999, loss: 1.4507, instance_loss: 0.1813, weighted_loss: 1.0699, label: 6, bag_size: 449 
+
+batch 2099, loss: 2.1690, instance_loss: 0.2297, weighted_loss: 1.5872, label: 3, bag_size: 622 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9964450296247531: correct 242176/243040
+
+class 1 clustering acc 0.12402073732718893: correct 2153/17360
+
+
+Epoch: 0, train_loss: 1.5813, train_clustering_loss:  0.1876
+
+class 0: acc 0.0, correct 0/12 
+
+class 1: acc 0.0, correct 0/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.4932301740812379, correct 255/517 
+
+class 4: acc 0.04, correct 6/150 
+
+class 5: acc 0.12173913043478261, correct 14/115 
+
+class 6: acc 0.8556085918854416, correct 717/838 
+
+class 7: acc 0.07228915662650602, correct 18/249 
+
+class 8: acc 0.011235955056179775, correct 1/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0, correct 0/132 
+
+class 11: acc 0.0, correct 0/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/26 
+
+
+Val Set, val_loss: 1.4355, auc: 0.7696 
+
+class 0 clustering acc 0.9980045995670995: correct 29509/29568 
+
+class 1 clustering acc 0.1747159090909091: correct 369/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.578125, correct 37/64 
+
+class 4: acc 0.0, correct 0/18 
+
+class 5: acc 0.21428571428571427, correct 3/14 
+
+class 6: acc 0.8846153846153846, correct 92/104 
+
+class 7: acc 0.03333333333333333, correct 1/30 
+
+class 8: acc 0.0, correct 0/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0, correct 0/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.5038
+
+Overall F1 Score: 0.1382
+
+Training for fine level...
+
+batch 99, loss: 0.0262, instance_loss: 0.0163, weighted_loss: 0.0232, label: 6, bag_size: 488 
+
+batch 199, loss: 1.0267, instance_loss: 0.1387, weighted_loss: 0.7603, label: 6, bag_size: 654 
+
+batch 299, loss: 2.2151, instance_loss: 0.2886, weighted_loss: 1.6371, label: 0, bag_size: 1736 
+
+batch 399, loss: 2.0653, instance_loss: 0.2853, weighted_loss: 1.5313, label: 7, bag_size: 1586 
+
+batch 499, loss: 0.8345, instance_loss: 0.1317, weighted_loss: 0.6237, label: 3, bag_size: 1293 
+
+batch 599, loss: 0.9039, instance_loss: 0.1282, weighted_loss: 0.6712, label: 6, bag_size: 436 
+
+batch 699, loss: 2.5102, instance_loss: 0.2783, weighted_loss: 1.8406, label: 13, bag_size: 239 
+
+batch 799, loss: 2.0962, instance_loss: 0.2362, weighted_loss: 1.5382, label: 7, bag_size: 756 
+
+batch 899, loss: 0.7068, instance_loss: 0.1487, weighted_loss: 0.5394, label: 3, bag_size: 1256 
+
+batch 999, loss: 2.2809, instance_loss: 0.2775, weighted_loss: 1.6799, label: 5, bag_size: 415 
+
+batch 1099, loss: 0.0927, instance_loss: 0.0463, weighted_loss: 0.0788, label: 6, bag_size: 874 
+
+batch 1199, loss: 1.3297, instance_loss: 0.1733, weighted_loss: 0.9827, label: 6, bag_size: 347 
+
+batch 1299, loss: 1.4857, instance_loss: 0.2236, weighted_loss: 1.1071, label: 3, bag_size: 762 
+
+batch 1399, loss: 1.2891, instance_loss: 0.2067, weighted_loss: 0.9644, label: 3, bag_size: 187 
+
+batch 1499, loss: 0.3349, instance_loss: 0.0871, weighted_loss: 0.2605, label: 3, bag_size: 2239 
+
+batch 1599, loss: 4.0841, instance_loss: 0.4483, weighted_loss: 2.9934, label: 7, bag_size: 1064 
+
+batch 1699, loss: 0.0175, instance_loss: 0.0104, weighted_loss: 0.0154, label: 6, bag_size: 448 
+
+batch 1799, loss: 1.5862, instance_loss: 0.2009, weighted_loss: 1.1706, label: 6, bag_size: 225 
+
+batch 1899, loss: 5.8973, instance_loss: 0.3926, weighted_loss: 4.2459, label: 13, bag_size: 581 
+
+batch 1999, loss: 0.6953, instance_loss: 0.1428, weighted_loss: 0.5296, label: 3, bag_size: 1860 
+
+batch 2099, loss: 3.2643, instance_loss: 0.2753, weighted_loss: 2.3676, label: 4, bag_size: 298 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.996667215273206: correct 242230/243040
+
+class 1 clustering acc 0.16555299539170507: correct 2874/17360
+
+
+Epoch: 1, train_loss: 1.4297, train_clustering_loss:  0.1692
+
+class 0: acc 0.0, correct 0/12 
+
+class 1: acc 0.0625, correct 2/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.5319148936170213, correct 275/517 
+
+class 4: acc 0.06666666666666667, correct 10/150 
+
+class 5: acc 0.23478260869565218, correct 27/115 
+
+class 6: acc 0.8842482100238663, correct 741/838 
+
+class 7: acc 0.1566265060240964, correct 39/249 
+
+class 8: acc 0.0449438202247191, correct 4/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.022727272727272728, correct 3/132 
+
+class 11: acc 0.0, correct 0/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/26 
+
+
+Val Set, val_loss: 1.4717, auc: 0.7578 
+
+class 0 clustering acc 0.9980722402597403: correct 29511/29568 
+
+class 1 clustering acc 0.1846590909090909: correct 390/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.546875, correct 35/64 
+
+class 4: acc 0.0, correct 0/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.7884615384615384, correct 82/104 
+
+class 7: acc 0.3, correct 9/30 
+
+class 8: acc 0.4, correct 4/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0, correct 0/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.5000
+
+Overall F1 Score: 0.1806
+
+Training for fine level...
+
+batch 99, loss: 1.4184, instance_loss: 0.2014, weighted_loss: 1.0533, label: 4, bag_size: 567 
+
+batch 199, loss: 1.2491, instance_loss: 0.1622, weighted_loss: 0.9231, label: 6, bag_size: 317 
+
+batch 299, loss: 1.3263, instance_loss: 0.1876, weighted_loss: 0.9847, label: 3, bag_size: 381 
+
+batch 399, loss: 0.3964, instance_loss: 0.0995, weighted_loss: 0.3073, label: 3, bag_size: 981 
+
+batch 499, loss: 1.7095, instance_loss: 0.1520, weighted_loss: 1.2423, label: 3, bag_size: 389 
+
+batch 599, loss: 4.2709, instance_loss: 0.3458, weighted_loss: 3.0934, label: 13, bag_size: 829 
+
+batch 699, loss: 0.3963, instance_loss: 0.0817, weighted_loss: 0.3019, label: 6, bag_size: 217 
+
+batch 799, loss: 1.2248, instance_loss: 0.1759, weighted_loss: 0.9101, label: 3, bag_size: 365 
+
+batch 899, loss: 2.9434, instance_loss: 0.2816, weighted_loss: 2.1449, label: 5, bag_size: 851 
+
+batch 999, loss: 0.1565, instance_loss: 0.0318, weighted_loss: 0.1191, label: 6, bag_size: 353 
+
+batch 1099, loss: 1.6911, instance_loss: 0.2176, weighted_loss: 1.2490, label: 7, bag_size: 129 
+
+batch 1199, loss: 0.3610, instance_loss: 0.0701, weighted_loss: 0.2738, label: 6, bag_size: 449 
+
+batch 1299, loss: 2.7230, instance_loss: 0.2536, weighted_loss: 1.9822, label: 5, bag_size: 2056 
+
+batch 1399, loss: 1.0777, instance_loss: 0.1583, weighted_loss: 0.8019, label: 6, bag_size: 847 
+
+batch 1499, loss: 1.3125, instance_loss: 0.1628, weighted_loss: 0.9676, label: 3, bag_size: 354 
+
+batch 1599, loss: 0.9242, instance_loss: 0.1448, weighted_loss: 0.6904, label: 3, bag_size: 725 
+
+batch 1699, loss: 0.0435, instance_loss: 0.0266, weighted_loss: 0.0385, label: 6, bag_size: 364 
+
+batch 1799, loss: 3.2239, instance_loss: 0.2584, weighted_loss: 2.3343, label: 6, bag_size: 506 
+
+batch 1899, loss: 1.1851, instance_loss: 0.1638, weighted_loss: 0.8787, label: 5, bag_size: 1867 
+
+batch 1999, loss: 0.8218, instance_loss: 0.1406, weighted_loss: 0.6174, label: 6, bag_size: 350 
+
+batch 2099, loss: 4.4884, instance_loss: 0.3146, weighted_loss: 3.2363, label: 1, bag_size: 1452 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9970004937458854: correct 242311/243040
+
+class 1 clustering acc 0.178110599078341: correct 3092/17360
+
+
+Epoch: 2, train_loss: 1.3618, train_clustering_loss:  0.1654
+
+class 0: acc 0.0, correct 0/12 
+
+class 1: acc 0.125, correct 4/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.528046421663443, correct 273/517 
+
+class 4: acc 0.03333333333333333, correct 5/150 
+
+class 5: acc 0.3565217391304348, correct 41/115 
+
+class 6: acc 0.8591885441527446, correct 720/838 
+
+class 7: acc 0.24899598393574296, correct 62/249 
+
+class 8: acc 0.15730337078651685, correct 14/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.045454545454545456, correct 6/132 
+
+class 11: acc 0.0, correct 0/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/26 
+
+
+Val Set, val_loss: 1.4674, auc: 0.7339 
+
+class 0 clustering acc 0.9947916666666666: correct 29414/29568 
+
+class 1 clustering acc 0.2372159090909091: correct 501/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.5625, correct 36/64 
+
+class 4: acc 0.0, correct 0/18 
+
+class 5: acc 0.0, correct 0/14 
+
+class 6: acc 0.9326923076923077, correct 97/104 
+
+class 7: acc 0.06666666666666667, correct 2/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0, correct 0/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.5189
+
+Overall F1 Score: 0.1456
+
+Training for fine level...
+
+batch 99, loss: 0.4181, instance_loss: 0.1598, weighted_loss: 0.3406, label: 5, bag_size: 260 
+
+batch 199, loss: 1.1103, instance_loss: 0.2062, weighted_loss: 0.8391, label: 0, bag_size: 37 
+
+batch 299, loss: 0.5770, instance_loss: 0.1067, weighted_loss: 0.4359, label: 3, bag_size: 1767 
+
+batch 399, loss: 0.2091, instance_loss: 0.0289, weighted_loss: 0.1550, label: 6, bag_size: 743 
+
+batch 499, loss: 2.3605, instance_loss: 0.2264, weighted_loss: 1.7202, label: 10, bag_size: 249 
+
+batch 599, loss: 1.2177, instance_loss: 0.1724, weighted_loss: 0.9041, label: 3, bag_size: 1114 
+
+batch 699, loss: 2.8478, instance_loss: 0.2861, weighted_loss: 2.0793, label: 1, bag_size: 207 
+
+batch 799, loss: 0.5638, instance_loss: 0.1301, weighted_loss: 0.4337, label: 3, bag_size: 1522 
+
+batch 899, loss: 1.6429, instance_loss: 0.1893, weighted_loss: 1.2068, label: 3, bag_size: 792 
+
+batch 999, loss: 3.2659, instance_loss: 0.2937, weighted_loss: 2.3743, label: 7, bag_size: 661 
+
+batch 1099, loss: 0.2141, instance_loss: 0.0569, weighted_loss: 0.1669, label: 6, bag_size: 1364 
+
+batch 1199, loss: 0.1810, instance_loss: 0.0593, weighted_loss: 0.1445, label: 6, bag_size: 249 
+
+batch 1299, loss: 1.0427, instance_loss: 0.1511, weighted_loss: 0.7752, label: 3, bag_size: 826 
+
+batch 1399, loss: 0.0127, instance_loss: 0.0238, weighted_loss: 0.0160, label: 6, bag_size: 667 
+
+batch 1499, loss: 0.0239, instance_loss: 0.0254, weighted_loss: 0.0243, label: 6, bag_size: 686 
+
+batch 1599, loss: 0.7757, instance_loss: 0.1620, weighted_loss: 0.5916, label: 5, bag_size: 1867 
+
+batch 1699, loss: 0.0090, instance_loss: 0.0159, weighted_loss: 0.0111, label: 6, bag_size: 956 
+
+batch 1799, loss: 1.4839, instance_loss: 0.1693, weighted_loss: 1.0895, label: 6, bag_size: 125 
+
+batch 1899, loss: 3.3368, instance_loss: 0.3327, weighted_loss: 2.4355, label: 3, bag_size: 360 
+
+batch 1999, loss: 1.1583, instance_loss: 0.1639, weighted_loss: 0.8600, label: 6, bag_size: 235 
+
+batch 2099, loss: 1.4828, instance_loss: 0.1747, weighted_loss: 1.0903, label: 6, bag_size: 1149 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9967453917050692: correct 242249/243040
+
+class 1 clustering acc 0.1836405529953917: correct 3188/17360
+
+
+Epoch: 3, train_loss: 1.2921, train_clustering_loss:  0.1635
+
+class 0: acc 0.16666666666666666, correct 2/12 
+
+class 1: acc 0.21875, correct 7/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.5473887814313346, correct 283/517 
+
+class 4: acc 0.12, correct 18/150 
+
+class 5: acc 0.33043478260869563, correct 38/115 
+
+class 6: acc 0.8591885441527446, correct 720/838 
+
+class 7: acc 0.30120481927710846, correct 75/249 
+
+class 8: acc 0.2247191011235955, correct 20/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.07575757575757576, correct 10/132 
+
+class 11: acc 0.0, correct 0/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/26 
+
+
+Val Set, val_loss: 1.5462, auc: 0.6843 
+
+class 0 clustering acc 0.9959415584415584: correct 29448/29568 
+
+class 1 clustering acc 0.17566287878787878: correct 371/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.734375, correct 47/64 
+
+class 4: acc 0.0, correct 0/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.7115384615384616, correct 74/104 
+
+class 7: acc 0.06666666666666667, correct 2/30 
+
+class 8: acc 0.3, correct 3/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4886
+
+Overall F1 Score: 0.1753
+
+Training for fine level...
+
+batch 99, loss: 1.3079, instance_loss: 0.2152, weighted_loss: 0.9801, label: 3, bag_size: 517 
+
+batch 199, loss: 1.1304, instance_loss: 0.1616, weighted_loss: 0.8398, label: 6, bag_size: 1422 
+
+batch 299, loss: 0.0360, instance_loss: 0.0126, weighted_loss: 0.0290, label: 6, bag_size: 835 
+
+batch 399, loss: 1.1214, instance_loss: 0.1665, weighted_loss: 0.8349, label: 7, bag_size: 1004 
+
+batch 499, loss: 0.1717, instance_loss: 0.0744, weighted_loss: 0.1425, label: 3, bag_size: 2186 
+
+batch 599, loss: 0.4233, instance_loss: 0.1110, weighted_loss: 0.3296, label: 6, bag_size: 517 
+
+batch 699, loss: 0.2962, instance_loss: 0.1300, weighted_loss: 0.2463, label: 3, bag_size: 177 
+
+batch 799, loss: 3.0989, instance_loss: 0.2996, weighted_loss: 2.2591, label: 4, bag_size: 234 
+
+batch 899, loss: 1.2784, instance_loss: 0.1836, weighted_loss: 0.9499, label: 4, bag_size: 1087 
+
+batch 999, loss: 5.9052, instance_loss: 0.3845, weighted_loss: 4.2490, label: 10, bag_size: 1875 
+
+batch 1099, loss: 0.0672, instance_loss: 0.0190, weighted_loss: 0.0528, label: 6, bag_size: 342 
+
+batch 1199, loss: 2.4530, instance_loss: 0.2497, weighted_loss: 1.7920, label: 7, bag_size: 565 
+
+batch 1299, loss: 1.4744, instance_loss: 0.1890, weighted_loss: 1.0888, label: 7, bag_size: 344 
+
+batch 1399, loss: 1.9693, instance_loss: 0.2232, weighted_loss: 1.4454, label: 7, bag_size: 243 
+
+batch 1499, loss: 1.9239, instance_loss: 0.2285, weighted_loss: 1.4153, label: 3, bag_size: 348 
+
+batch 1599, loss: 1.0382, instance_loss: 0.2254, weighted_loss: 0.7943, label: 6, bag_size: 1796 
+
+batch 1699, loss: 1.4611, instance_loss: 0.2632, weighted_loss: 1.1017, label: 3, bag_size: 1667 
+
+batch 1799, loss: 1.1149, instance_loss: 0.1719, weighted_loss: 0.8320, label: 7, bag_size: 276 
+
+batch 1899, loss: 0.3846, instance_loss: 0.0971, weighted_loss: 0.2983, label: 6, bag_size: 770 
+
+batch 1999, loss: 0.0063, instance_loss: 0.0105, weighted_loss: 0.0075, label: 6, bag_size: 312 
+
+batch 2099, loss: 0.0207, instance_loss: 0.0202, weighted_loss: 0.0206, label: 6, bag_size: 365 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9965931533903885: correct 242212/243040
+
+class 1 clustering acc 0.2072004608294931: correct 3597/17360
+
+
+Epoch: 4, train_loss: 1.2088, train_clustering_loss:  0.1607
+
+class 0: acc 0.25, correct 3/12 
+
+class 1: acc 0.25, correct 8/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.5802707930367504, correct 300/517 
+
+class 4: acc 0.19333333333333333, correct 29/150 
+
+class 5: acc 0.3826086956521739, correct 44/115 
+
+class 6: acc 0.8556085918854416, correct 717/838 
+
+class 7: acc 0.3413654618473896, correct 85/249 
+
+class 8: acc 0.3595505617977528, correct 32/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.13636363636363635, correct 18/132 
+
+class 11: acc 0.1, correct 1/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.038461538461538464, correct 1/26 
+
+
+Val Set, val_loss: 1.5120, auc: 0.6763 
+
+class 0 clustering acc 0.9948593073593074: correct 29416/29568 
+
+class 1 clustering acc 0.22679924242424243: correct 479/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.53125, correct 34/64 
+
+class 4: acc 0.0, correct 0/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.9134615384615384, correct 95/104 
+
+class 7: acc 0.16666666666666666, correct 5/30 
+
+class 8: acc 0.1, correct 1/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.5189
+
+Overall F1 Score: 0.1669
+
+Training for fine level...
+
+batch 99, loss: 1.7498, instance_loss: 0.1993, weighted_loss: 1.2847, label: 3, bag_size: 696 
+
+batch 199, loss: 0.0117, instance_loss: 0.0097, weighted_loss: 0.0111, label: 6, bag_size: 463 
+
+batch 299, loss: 0.3679, instance_loss: 0.1404, weighted_loss: 0.2996, label: 8, bag_size: 149 
+
+batch 399, loss: 1.2071, instance_loss: 0.1961, weighted_loss: 0.9038, label: 7, bag_size: 461 
+
+batch 499, loss: 0.5659, instance_loss: 0.0986, weighted_loss: 0.4257, label: 3, bag_size: 988 
+
+batch 599, loss: 0.1167, instance_loss: 0.0567, weighted_loss: 0.0987, label: 6, bag_size: 795 
+
+batch 699, loss: 0.1650, instance_loss: 0.0641, weighted_loss: 0.1348, label: 3, bag_size: 700 
+
+batch 799, loss: 1.0049, instance_loss: 0.1483, weighted_loss: 0.7479, label: 6, bag_size: 232 
+
+batch 899, loss: 1.4112, instance_loss: 0.1616, weighted_loss: 1.0363, label: 6, bag_size: 367 
+
+batch 999, loss: 1.6595, instance_loss: 0.2354, weighted_loss: 1.2323, label: 8, bag_size: 490 
+
+batch 1099, loss: 3.0572, instance_loss: 0.2733, weighted_loss: 2.2220, label: 4, bag_size: 262 
+
+batch 1199, loss: 0.3612, instance_loss: 0.0769, weighted_loss: 0.2759, label: 6, bag_size: 302 
+
+batch 1299, loss: 1.9088, instance_loss: 0.2083, weighted_loss: 1.3987, label: 10, bag_size: 1274 
+
+batch 1399, loss: 0.7016, instance_loss: 0.1565, weighted_loss: 0.5381, label: 6, bag_size: 310 
+
+batch 1499, loss: 0.2830, instance_loss: 0.0737, weighted_loss: 0.2202, label: 6, bag_size: 1110 
+
+batch 1599, loss: 0.0393, instance_loss: 0.2053, weighted_loss: 0.0891, label: 1, bag_size: 482 
+
+batch 1699, loss: 0.1274, instance_loss: 0.0967, weighted_loss: 0.1182, label: 4, bag_size: 3332 
+
+batch 1799, loss: 1.5232, instance_loss: 0.1893, weighted_loss: 1.1231, label: 6, bag_size: 853 
+
+batch 1899, loss: 0.0128, instance_loss: 0.0119, weighted_loss: 0.0125, label: 6, bag_size: 318 
+
+batch 1999, loss: 0.0081, instance_loss: 0.0079, weighted_loss: 0.0080, label: 6, bag_size: 632 
+
+batch 2099, loss: 0.5394, instance_loss: 0.1407, weighted_loss: 0.4198, label: 6, bag_size: 380 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.996617840684661: correct 242218/243040
+
+class 1 clustering acc 0.20587557603686635: correct 3574/17360
+
+
+Epoch: 5, train_loss: 1.1001, train_clustering_loss:  0.1581
+
+class 0: acc 0.25, correct 3/12 
+
+class 1: acc 0.28125, correct 9/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.6131528046421664, correct 317/517 
+
+class 4: acc 0.28, correct 42/150 
+
+class 5: acc 0.5130434782608696, correct 59/115 
+
+class 6: acc 0.8520286396181385, correct 714/838 
+
+class 7: acc 0.43775100401606426, correct 109/249 
+
+class 8: acc 0.3595505617977528, correct 32/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.19696969696969696, correct 26/132 
+
+class 11: acc 0.1, correct 1/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.15384615384615385, correct 4/26 
+
+
+Val Set, val_loss: 1.6280, auc: 0.6656 
+
+class 0 clustering acc 0.9961106601731602: correct 29453/29568 
+
+class 1 clustering acc 0.21212121212121213: correct 448/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.578125, correct 37/64 
+
+class 4: acc 0.0, correct 0/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.7788461538461539, correct 81/104 
+
+class 7: acc 0.13333333333333333, correct 4/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4773
+
+Overall F1 Score: 0.1637
+
+Training for fine level...
+
+batch 99, loss: 0.6166, instance_loss: 0.2117, weighted_loss: 0.4951, label: 4, bag_size: 1667 
+
+batch 199, loss: 1.1460, instance_loss: 0.1639, weighted_loss: 0.8514, label: 6, bag_size: 472 
+
+batch 299, loss: 2.2858, instance_loss: 0.2868, weighted_loss: 1.6861, label: 4, bag_size: 657 
+
+batch 399, loss: 0.1934, instance_loss: 0.0863, weighted_loss: 0.1613, label: 6, bag_size: 954 
+
+batch 499, loss: 0.1138, instance_loss: 0.0468, weighted_loss: 0.0937, label: 6, bag_size: 265 
+
+batch 599, loss: 0.6728, instance_loss: 0.0862, weighted_loss: 0.4968, label: 3, bag_size: 633 
+
+batch 699, loss: 0.0302, instance_loss: 0.0444, weighted_loss: 0.0345, label: 6, bag_size: 502 
+
+batch 799, loss: 0.1516, instance_loss: 0.0452, weighted_loss: 0.1197, label: 6, bag_size: 304 
+
+batch 899, loss: 1.2977, instance_loss: 0.2166, weighted_loss: 0.9734, label: 10, bag_size: 105 
+
+batch 999, loss: 0.1146, instance_loss: 0.0638, weighted_loss: 0.0993, label: 6, bag_size: 335 
+
+batch 1099, loss: 0.4349, instance_loss: 0.1599, weighted_loss: 0.3524, label: 6, bag_size: 174 
+
+batch 1199, loss: 0.5973, instance_loss: 0.1837, weighted_loss: 0.4732, label: 4, bag_size: 631 
+
+batch 1299, loss: 0.7306, instance_loss: 0.1839, weighted_loss: 0.5666, label: 7, bag_size: 252 
+
+batch 1399, loss: 0.3340, instance_loss: 0.1837, weighted_loss: 0.2889, label: 6, bag_size: 1426 
+
+batch 1499, loss: 3.6686, instance_loss: 0.2743, weighted_loss: 2.6503, label: 6, bag_size: 1331 
+
+batch 1599, loss: 1.9669, instance_loss: 0.1883, weighted_loss: 1.4333, label: 3, bag_size: 179 
+
+batch 1699, loss: 0.0257, instance_loss: 0.0141, weighted_loss: 0.0222, label: 6, bag_size: 679 
+
+batch 1799, loss: 0.0149, instance_loss: 0.0222, weighted_loss: 0.0171, label: 6, bag_size: 887 
+
+batch 1899, loss: 2.2049, instance_loss: 0.2238, weighted_loss: 1.6106, label: 10, bag_size: 79 
+
+batch 1999, loss: 0.1443, instance_loss: 0.0552, weighted_loss: 0.1175, label: 6, bag_size: 544 
+
+batch 2099, loss: 0.0071, instance_loss: 0.0327, weighted_loss: 0.0148, label: 6, bag_size: 409 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9962639894667544: correct 242132/243040
+
+class 1 clustering acc 0.2298963133640553: correct 3991/17360
+
+
+Epoch: 6, train_loss: 0.9531, train_clustering_loss:  0.1536
+
+class 0: acc 0.3333333333333333, correct 4/12 
+
+class 1: acc 0.46875, correct 15/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.6653771760154739, correct 344/517 
+
+class 4: acc 0.34, correct 51/150 
+
+class 5: acc 0.5826086956521739, correct 67/115 
+
+class 6: acc 0.8424821002386634, correct 706/838 
+
+class 7: acc 0.5542168674698795, correct 138/249 
+
+class 8: acc 0.449438202247191, correct 40/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.24242424242424243, correct 32/132 
+
+class 11: acc 0.4, correct 4/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.19230769230769232, correct 5/26 
+
+
+Val Set, val_loss: 1.7933, auc: 0.6392 
+
+class 0 clustering acc 0.9948931277056277: correct 29417/29568 
+
+class 1 clustering acc 0.23863636363636365: correct 504/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.671875, correct 43/64 
+
+class 4: acc 0.0, correct 0/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6730769230769231, correct 70/104 
+
+class 7: acc 0.16666666666666666, correct 5/30 
+
+class 8: acc 0.1, correct 1/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4583
+
+Overall F1 Score: 0.1522
+
+Training for fine level...
+
+batch 99, loss: 2.0594, instance_loss: 0.2533, weighted_loss: 1.5176, label: 5, bag_size: 168 
+
+batch 199, loss: 0.6539, instance_loss: 0.1797, weighted_loss: 0.5116, label: 3, bag_size: 473 
+
+batch 299, loss: 1.0688, instance_loss: 0.1839, weighted_loss: 0.8033, label: 7, bag_size: 563 
+
+batch 399, loss: 0.2821, instance_loss: 0.1990, weighted_loss: 0.2572, label: 3, bag_size: 356 
+
+batch 499, loss: 0.5260, instance_loss: 0.1516, weighted_loss: 0.4137, label: 7, bag_size: 325 
+
+batch 599, loss: 3.5818, instance_loss: 0.2926, weighted_loss: 2.5950, label: 4, bag_size: 347 
+
+batch 699, loss: 2.4346, instance_loss: 0.2542, weighted_loss: 1.7805, label: 10, bag_size: 483 
+
+batch 799, loss: 0.8900, instance_loss: 0.1260, weighted_loss: 0.6608, label: 3, bag_size: 663 
+
+batch 899, loss: 0.0595, instance_loss: 0.1916, weighted_loss: 0.0991, label: 7, bag_size: 276 
+
+batch 999, loss: 2.5129, instance_loss: 0.2449, weighted_loss: 1.8325, label: 5, bag_size: 344 
+
+batch 1099, loss: 0.3331, instance_loss: 0.1536, weighted_loss: 0.2792, label: 6, bag_size: 294 
+
+batch 1199, loss: 0.4647, instance_loss: 0.1462, weighted_loss: 0.3692, label: 13, bag_size: 481 
+
+batch 1299, loss: 4.2953, instance_loss: 0.1567, weighted_loss: 3.0537, label: 6, bag_size: 422 
+
+batch 1399, loss: 0.9560, instance_loss: 0.2256, weighted_loss: 0.7369, label: 4, bag_size: 724 
+
+batch 1499, loss: 1.4962, instance_loss: 0.2115, weighted_loss: 1.1108, label: 5, bag_size: 1460 
+
+batch 1599, loss: 1.1323, instance_loss: 0.2105, weighted_loss: 0.8558, label: 5, bag_size: 889 
+
+batch 1699, loss: 0.0867, instance_loss: 0.0481, weighted_loss: 0.0751, label: 6, bag_size: 359 
+
+batch 1799, loss: 0.3077, instance_loss: 0.0934, weighted_loss: 0.2434, label: 3, bag_size: 182 
+
+batch 1899, loss: 0.0101, instance_loss: 0.1164, weighted_loss: 0.0420, label: 6, bag_size: 129 
+
+batch 1999, loss: 0.4507, instance_loss: 0.1760, weighted_loss: 0.3683, label: 1, bag_size: 129 
+
+batch 2099, loss: 0.0305, instance_loss: 0.0143, weighted_loss: 0.0257, label: 6, bag_size: 334 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9962516458196181: correct 242129/243040
+
+class 1 clustering acc 0.24671658986175116: correct 4283/17360
+
+
+Epoch: 7, train_loss: 0.8092, train_clustering_loss:  0.1497
+
+class 0: acc 0.6666666666666666, correct 8/12 
+
+class 1: acc 0.5625, correct 18/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.7659574468085106, correct 396/517 
+
+class 4: acc 0.4266666666666667, correct 64/150 
+
+class 5: acc 0.6521739130434783, correct 75/115 
+
+class 6: acc 0.863961813842482, correct 724/838 
+
+class 7: acc 0.6265060240963856, correct 156/249 
+
+class 8: acc 0.550561797752809, correct 49/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.4621212121212121, correct 61/132 
+
+class 11: acc 0.7, correct 7/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.34615384615384615, correct 9/26 
+
+
+Val Set, val_loss: 1.8139, auc: 0.6447 
+
+class 0 clustering acc 0.9931344696969697: correct 29365/29568 
+
+class 1 clustering acc 0.2528409090909091: correct 534/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.53125, correct 34/64 
+
+class 4: acc 0.1111111111111111, correct 2/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.7211538461538461, correct 75/104 
+
+class 7: acc 0.3, correct 9/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4735
+
+Overall F1 Score: 0.1927
+
+Training for fine level...
+
+batch 99, loss: 0.4068, instance_loss: 0.1191, weighted_loss: 0.3205, label: 3, bag_size: 1616 
+
+batch 199, loss: 0.0037, instance_loss: 0.0484, weighted_loss: 0.0171, label: 6, bag_size: 290 
+
+batch 299, loss: 0.4601, instance_loss: 0.1370, weighted_loss: 0.3632, label: 3, bag_size: 592 
+
+batch 399, loss: 0.3697, instance_loss: 0.1469, weighted_loss: 0.3029, label: 7, bag_size: 732 
+
+batch 499, loss: 0.6754, instance_loss: 0.1303, weighted_loss: 0.5119, label: 6, bag_size: 229 
+
+batch 599, loss: 0.7255, instance_loss: 0.1467, weighted_loss: 0.5518, label: 6, bag_size: 635 
+
+batch 699, loss: 0.7709, instance_loss: 0.1319, weighted_loss: 0.5792, label: 3, bag_size: 1803 
+
+batch 799, loss: 0.8878, instance_loss: 0.2778, weighted_loss: 0.7048, label: 1, bag_size: 258 
+
+batch 899, loss: 3.1146, instance_loss: 0.2441, weighted_loss: 2.2535, label: 5, bag_size: 621 
+
+batch 999, loss: 0.0193, instance_loss: 0.0456, weighted_loss: 0.0272, label: 3, bag_size: 2086 
+
+batch 1099, loss: 0.1319, instance_loss: 0.0339, weighted_loss: 0.1025, label: 6, bag_size: 905 
+
+batch 1199, loss: 3.1256, instance_loss: 0.2486, weighted_loss: 2.2625, label: 10, bag_size: 435 
+
+batch 1299, loss: 0.9581, instance_loss: 0.2176, weighted_loss: 0.7359, label: 4, bag_size: 1739 
+
+batch 1399, loss: 0.1650, instance_loss: 0.1087, weighted_loss: 0.1481, label: 7, bag_size: 405 
+
+batch 1499, loss: 0.0005, instance_loss: 0.0133, weighted_loss: 0.0044, label: 6, bag_size: 1161 
+
+batch 1599, loss: 0.1824, instance_loss: 0.1240, weighted_loss: 0.1649, label: 3, bag_size: 1067 
+
+batch 1699, loss: 0.7410, instance_loss: 0.1825, weighted_loss: 0.5734, label: 5, bag_size: 1460 
+
+batch 1799, loss: 1.6725, instance_loss: 0.1497, weighted_loss: 1.2157, label: 6, bag_size: 708 
+
+batch 1899, loss: 0.6324, instance_loss: 0.1629, weighted_loss: 0.4916, label: 4, bag_size: 774 
+
+batch 1999, loss: 0.1944, instance_loss: 0.0840, weighted_loss: 0.1613, label: 5, bag_size: 542 
+
+batch 2099, loss: 0.8039, instance_loss: 0.1505, weighted_loss: 0.6079, label: 6, bag_size: 124 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9958607636603029: correct 242034/243040
+
+class 1 clustering acc 0.26814516129032256: correct 4655/17360
+
+
+Epoch: 8, train_loss: 0.6736, train_clustering_loss:  0.1455
+
+class 0: acc 0.6666666666666666, correct 8/12 
+
+class 1: acc 0.59375, correct 19/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.7659574468085106, correct 396/517 
+
+class 4: acc 0.5333333333333333, correct 80/150 
+
+class 5: acc 0.6695652173913044, correct 77/115 
+
+class 6: acc 0.8902147971360382, correct 746/838 
+
+class 7: acc 0.7188755020080321, correct 179/249 
+
+class 8: acc 0.6853932584269663, correct 61/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.48484848484848486, correct 64/132 
+
+class 11: acc 0.7, correct 7/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.4230769230769231, correct 11/26 
+
+
+Val Set, val_loss: 2.0564, auc: 0.6220 
+
+class 0 clustering acc 0.992086038961039: correct 29334/29568 
+
+class 1 clustering acc 0.2196969696969697: correct 464/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.640625, correct 41/64 
+
+class 4: acc 0.0, correct 0/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6634615384615384, correct 69/104 
+
+class 7: acc 0.2, correct 6/30 
+
+class 8: acc 0.1, correct 1/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4508
+
+Overall F1 Score: 0.1524
+
+Training for fine level...
+
+batch 99, loss: 1.0530, instance_loss: 0.1875, weighted_loss: 0.7933, label: 10, bag_size: 661 
+
+batch 199, loss: 1.9675, instance_loss: 0.2299, weighted_loss: 1.4462, label: 7, bag_size: 492 
+
+batch 299, loss: 0.0156, instance_loss: 0.2205, weighted_loss: 0.0771, label: 3, bag_size: 472 
+
+batch 399, loss: 0.0477, instance_loss: 0.0559, weighted_loss: 0.0502, label: 6, bag_size: 253 
+
+batch 499, loss: 0.0759, instance_loss: 0.0593, weighted_loss: 0.0709, label: 3, bag_size: 762 
+
+batch 599, loss: 0.0708, instance_loss: 0.0935, weighted_loss: 0.0776, label: 3, bag_size: 333 
+
+batch 699, loss: 0.0112, instance_loss: 0.0161, weighted_loss: 0.0127, label: 6, bag_size: 456 
+
+batch 799, loss: 1.1785, instance_loss: 0.1878, weighted_loss: 0.8813, label: 5, bag_size: 484 
+
+batch 899, loss: 0.5185, instance_loss: 0.1620, weighted_loss: 0.4116, label: 3, bag_size: 224 
+
+batch 999, loss: 1.5852, instance_loss: 0.1985, weighted_loss: 1.1692, label: 3, bag_size: 50 
+
+batch 1099, loss: 0.7384, instance_loss: 0.1368, weighted_loss: 0.5579, label: 6, bag_size: 339 
+
+batch 1199, loss: 0.1141, instance_loss: 0.0902, weighted_loss: 0.1069, label: 6, bag_size: 743 
+
+batch 1299, loss: 0.1179, instance_loss: 0.1385, weighted_loss: 0.1241, label: 4, bag_size: 1313 
+
+batch 1399, loss: 0.7523, instance_loss: 0.0930, weighted_loss: 0.5545, label: 6, bag_size: 202 
+
+batch 1499, loss: 0.3005, instance_loss: 0.1881, weighted_loss: 0.2668, label: 4, bag_size: 755 
+
+batch 1599, loss: 0.1111, instance_loss: 0.1490, weighted_loss: 0.1225, label: 8, bag_size: 152 
+
+batch 1699, loss: 0.0155, instance_loss: 0.0606, weighted_loss: 0.0290, label: 6, bag_size: 875 
+
+batch 1799, loss: 1.8449, instance_loss: 0.3484, weighted_loss: 1.3960, label: 10, bag_size: 328 
+
+batch 1899, loss: 3.4413, instance_loss: 0.2551, weighted_loss: 2.4855, label: 5, bag_size: 851 
+
+batch 1999, loss: 0.2301, instance_loss: 0.2338, weighted_loss: 0.2312, label: 10, bag_size: 619 
+
+batch 2099, loss: 0.4339, instance_loss: 0.1722, weighted_loss: 0.3554, label: 3, bag_size: 454 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9958443054641212: correct 242030/243040
+
+class 1 clustering acc 0.27338709677419354: correct 4746/17360
+
+
+Epoch: 9, train_loss: 0.5652, train_clustering_loss:  0.1429
+
+class 0: acc 0.9166666666666666, correct 11/12 
+
+class 1: acc 0.75, correct 24/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.8355899419729207, correct 432/517 
+
+class 4: acc 0.5933333333333334, correct 89/150 
+
+class 5: acc 0.7565217391304347, correct 87/115 
+
+class 6: acc 0.905727923627685, correct 759/838 
+
+class 7: acc 0.7871485943775101, correct 196/249 
+
+class 8: acc 0.7078651685393258, correct 63/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.5909090909090909, correct 78/132 
+
+class 11: acc 0.8, correct 8/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.6153846153846154, correct 16/26 
+
+
+Val Set, val_loss: 2.1183, auc: 0.6435 
+
+class 0 clustering acc 0.9932021103896104: correct 29367/29568 
+
+class 1 clustering acc 0.22490530303030304: correct 475/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.609375, correct 39/64 
+
+class 4: acc 0.05555555555555555, correct 1/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6730769230769231, correct 70/104 
+
+class 7: acc 0.06666666666666667, correct 2/30 
+
+class 8: acc 0.1, correct 1/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.25, correct 4/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4470
+
+Overall F1 Score: 0.1650
+
+Training for fine level...
+
+batch 99, loss: 1.3655, instance_loss: 0.1711, weighted_loss: 1.0072, label: 6, bag_size: 595 
+
+batch 199, loss: 0.0229, instance_loss: 0.1364, weighted_loss: 0.0569, label: 7, bag_size: 206 
+
+batch 299, loss: 0.0667, instance_loss: 0.0694, weighted_loss: 0.0675, label: 6, bag_size: 309 
+
+batch 399, loss: 0.3089, instance_loss: 0.1457, weighted_loss: 0.2599, label: 3, bag_size: 193 
+
+batch 499, loss: 0.1603, instance_loss: 0.0881, weighted_loss: 0.1386, label: 3, bag_size: 873 
+
+batch 599, loss: 0.5561, instance_loss: 0.1570, weighted_loss: 0.4364, label: 3, bag_size: 167 
+
+batch 699, loss: 0.0013, instance_loss: 0.0220, weighted_loss: 0.0076, label: 5, bag_size: 758 
+
+batch 799, loss: 1.0015, instance_loss: 0.1790, weighted_loss: 0.7547, label: 3, bag_size: 191 
+
+batch 899, loss: 0.0151, instance_loss: 0.0918, weighted_loss: 0.0381, label: 6, bag_size: 1049 
+
+batch 999, loss: 0.4311, instance_loss: 0.1643, weighted_loss: 0.3511, label: 6, bag_size: 364 
+
+batch 1099, loss: 0.0431, instance_loss: 0.0464, weighted_loss: 0.0441, label: 6, bag_size: 706 
+
+batch 1199, loss: 0.0958, instance_loss: 0.0772, weighted_loss: 0.0902, label: 3, bag_size: 1211 
+
+batch 1299, loss: 0.4028, instance_loss: 0.2234, weighted_loss: 0.3490, label: 3, bag_size: 242 
+
+batch 1399, loss: 0.3924, instance_loss: 0.1598, weighted_loss: 0.3226, label: 3, bag_size: 435 
+
+batch 1499, loss: 0.0078, instance_loss: 0.0244, weighted_loss: 0.0128, label: 6, bag_size: 834 
+
+batch 1599, loss: 0.0025, instance_loss: 0.0166, weighted_loss: 0.0067, label: 6, bag_size: 210 
+
+batch 1699, loss: 0.9539, instance_loss: 0.1013, weighted_loss: 0.6981, label: 3, bag_size: 2627 
+
+batch 1799, loss: 0.0529, instance_loss: 0.1564, weighted_loss: 0.0839, label: 3, bag_size: 309 
+
+batch 1899, loss: 0.1090, instance_loss: 0.1372, weighted_loss: 0.1174, label: 3, bag_size: 84 
+
+batch 1999, loss: 0.0133, instance_loss: 0.2607, weighted_loss: 0.0875, label: 7, bag_size: 414 
+
+batch 2099, loss: 0.2933, instance_loss: 0.1474, weighted_loss: 0.2495, label: 6, bag_size: 259 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9957496708360764: correct 242007/243040
+
+class 1 clustering acc 0.29567972350230415: correct 5133/17360
+
+
+Epoch: 10, train_loss: 0.4619, train_clustering_loss:  0.1401
+
+class 0: acc 0.8333333333333334, correct 10/12 
+
+class 1: acc 0.65625, correct 21/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.8607350096711799, correct 445/517 
+
+class 4: acc 0.64, correct 96/150 
+
+class 5: acc 0.8434782608695652, correct 97/115 
+
+class 6: acc 0.9081145584725537, correct 761/838 
+
+class 7: acc 0.8232931726907631, correct 205/249 
+
+class 8: acc 0.8202247191011236, correct 73/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.6893939393939394, correct 91/132 
+
+class 11: acc 0.8, correct 8/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.6153846153846154, correct 16/26 
+
+
+Val Set, val_loss: 2.1045, auc: 0.6520 
+
+class 0 clustering acc 0.9955357142857143: correct 29436/29568 
+
+class 1 clustering acc 0.19981060606060605: correct 422/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.484375, correct 31/64 
+
+class 4: acc 0.16666666666666666, correct 3/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.7788461538461539, correct 81/104 
+
+class 7: acc 0.36666666666666664, correct 11/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4924
+
+Overall F1 Score: 0.1956
+
+Training for fine level...
+
+batch 99, loss: 0.0118, instance_loss: 0.1994, weighted_loss: 0.0681, label: 7, bag_size: 533 
+
+batch 199, loss: 0.0012, instance_loss: 0.0145, weighted_loss: 0.0052, label: 6, bag_size: 1044 
+
+batch 299, loss: 3.4447, instance_loss: 0.2908, weighted_loss: 2.4985, label: 8, bag_size: 345 
+
+batch 399, loss: 0.7175, instance_loss: 0.2044, weighted_loss: 0.5635, label: 3, bag_size: 115 
+
+batch 499, loss: 0.6983, instance_loss: 0.1187, weighted_loss: 0.5244, label: 6, bag_size: 833 
+
+batch 599, loss: 1.5642, instance_loss: 0.1959, weighted_loss: 1.1537, label: 4, bag_size: 1150 
+
+batch 699, loss: 0.1221, instance_loss: 0.1079, weighted_loss: 0.1178, label: 3, bag_size: 1767 
+
+batch 799, loss: 0.5614, instance_loss: 0.2149, weighted_loss: 0.4575, label: 6, bag_size: 444 
+
+batch 899, loss: 0.4586, instance_loss: 0.2384, weighted_loss: 0.3926, label: 3, bag_size: 127 
+
+batch 999, loss: 0.6193, instance_loss: 0.1320, weighted_loss: 0.4731, label: 6, bag_size: 655 
+
+batch 1099, loss: 0.0890, instance_loss: 0.1508, weighted_loss: 0.1075, label: 6, bag_size: 466 
+
+batch 1199, loss: 0.2322, instance_loss: 0.1347, weighted_loss: 0.2030, label: 6, bag_size: 113 
+
+batch 1299, loss: 1.7532, instance_loss: 0.3969, weighted_loss: 1.3463, label: 10, bag_size: 1009 
+
+batch 1399, loss: 0.0090, instance_loss: 0.1819, weighted_loss: 0.0609, label: 3, bag_size: 675 
+
+batch 1499, loss: 0.4415, instance_loss: 0.1345, weighted_loss: 0.3494, label: 3, bag_size: 57 
+
+batch 1599, loss: 0.0535, instance_loss: 0.0202, weighted_loss: 0.0435, label: 6, bag_size: 515 
+
+batch 1699, loss: 0.7974, instance_loss: 0.1439, weighted_loss: 0.6014, label: 6, bag_size: 482 
+
+batch 1799, loss: 0.0083, instance_loss: 0.0229, weighted_loss: 0.0127, label: 3, bag_size: 1973 
+
+batch 1899, loss: 2.8052, instance_loss: 0.2216, weighted_loss: 2.0301, label: 5, bag_size: 235 
+
+batch 1999, loss: 0.3172, instance_loss: 0.0794, weighted_loss: 0.2459, label: 6, bag_size: 280 
+
+batch 2099, loss: 0.9455, instance_loss: 0.2937, weighted_loss: 0.7500, label: 5, bag_size: 287 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9955604015799868: correct 241961/243040
+
+class 1 clustering acc 0.3138248847926267: correct 5448/17360
+
+
+Epoch: 11, train_loss: 0.3601, train_clustering_loss:  0.1372
+
+class 0: acc 0.9166666666666666, correct 11/12 
+
+class 1: acc 0.8125, correct 26/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.8897485493230174, correct 460/517 
+
+class 4: acc 0.7733333333333333, correct 116/150 
+
+class 5: acc 0.8173913043478261, correct 94/115 
+
+class 6: acc 0.9355608591885441, correct 784/838 
+
+class 7: acc 0.8835341365461847, correct 220/249 
+
+class 8: acc 0.8089887640449438, correct 72/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.7121212121212122, correct 94/132 
+
+class 11: acc 0.8, correct 8/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.6538461538461539, correct 17/26 
+
+
+Val Set, val_loss: 2.4189, auc: 0.6119 
+
+class 0 clustering acc 0.9935403138528138: correct 29377/29568 
+
+class 1 clustering acc 0.21827651515151514: correct 461/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.5625, correct 36/64 
+
+class 4: acc 0.16666666666666666, correct 3/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6634615384615384, correct 69/104 
+
+class 7: acc 0.2, correct 6/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.125, correct 2/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4508
+
+Overall F1 Score: 0.1798
+
+Training for fine level...
+
+batch 99, loss: 0.0011, instance_loss: 0.0964, weighted_loss: 0.0296, label: 8, bag_size: 132 
+
+batch 199, loss: 0.0183, instance_loss: 0.1639, weighted_loss: 0.0620, label: 5, bag_size: 728 
+
+batch 299, loss: 0.2259, instance_loss: 0.2172, weighted_loss: 0.2233, label: 7, bag_size: 1064 
+
+batch 399, loss: 0.0520, instance_loss: 0.1033, weighted_loss: 0.0674, label: 6, bag_size: 401 
+
+batch 499, loss: 0.0101, instance_loss: 0.0812, weighted_loss: 0.0314, label: 3, bag_size: 165 
+
+batch 599, loss: 0.2359, instance_loss: 0.2724, weighted_loss: 0.2468, label: 4, bag_size: 1666 
+
+batch 699, loss: 0.0262, instance_loss: 0.0386, weighted_loss: 0.0299, label: 3, bag_size: 389 
+
+batch 799, loss: 0.0121, instance_loss: 0.0478, weighted_loss: 0.0228, label: 6, bag_size: 238 
+
+batch 899, loss: 0.3301, instance_loss: 0.0822, weighted_loss: 0.2558, label: 6, bag_size: 334 
+
+batch 999, loss: 0.0005, instance_loss: 0.0136, weighted_loss: 0.0044, label: 3, bag_size: 334 
+
+batch 1099, loss: 0.2427, instance_loss: 0.2198, weighted_loss: 0.2358, label: 4, bag_size: 262 
+
+batch 1199, loss: 0.0014, instance_loss: 0.0241, weighted_loss: 0.0082, label: 6, bag_size: 336 
+
+batch 1299, loss: 0.0436, instance_loss: 0.0674, weighted_loss: 0.0508, label: 6, bag_size: 376 
+
+batch 1399, loss: 0.0158, instance_loss: 0.2688, weighted_loss: 0.0917, label: 4, bag_size: 657 
+
+batch 1499, loss: 0.0043, instance_loss: 0.0842, weighted_loss: 0.0283, label: 3, bag_size: 666 
+
+batch 1599, loss: 0.0260, instance_loss: 0.0865, weighted_loss: 0.0442, label: 6, bag_size: 466 
+
+batch 1699, loss: 0.0070, instance_loss: 0.2017, weighted_loss: 0.0654, label: 7, bag_size: 361 
+
+batch 1799, loss: 0.3971, instance_loss: 0.1564, weighted_loss: 0.3249, label: 6, bag_size: 548 
+
+batch 1899, loss: 0.0000, instance_loss: 0.0049, weighted_loss: 0.0015, label: 6, bag_size: 369 
+
+batch 1999, loss: 5.4232, instance_loss: 0.3350, weighted_loss: 3.8968, label: 3, bag_size: 317 
+
+batch 2099, loss: 1.3791, instance_loss: 0.2487, weighted_loss: 1.0400, label: 6, bag_size: 1206 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9956262343647136: correct 241977/243040
+
+class 1 clustering acc 0.3195852534562212: correct 5548/17360
+
+
+Epoch: 12, train_loss: 0.3073, train_clustering_loss:  0.1356
+
+class 0: acc 0.9166666666666666, correct 11/12 
+
+class 1: acc 0.90625, correct 29/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9090909090909091, correct 470/517 
+
+class 4: acc 0.8466666666666667, correct 127/150 
+
+class 5: acc 0.8608695652173913, correct 99/115 
+
+class 6: acc 0.9379474940334129, correct 786/838 
+
+class 7: acc 0.8995983935742972, correct 224/249 
+
+class 8: acc 0.8426966292134831, correct 75/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.7651515151515151, correct 101/132 
+
+class 11: acc 0.8, correct 8/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.6923076923076923, correct 18/26 
+
+
+Val Set, val_loss: 2.5522, auc: 0.6205 
+
+class 0 clustering acc 0.9917478354978355: correct 29324/29568 
+
+class 1 clustering acc 0.2537878787878788: correct 536/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.53125, correct 34/64 
+
+class 4: acc 0.1111111111111111, correct 2/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.75, correct 78/104 
+
+class 7: acc 0.2, correct 6/30 
+
+class 8: acc 0.1, correct 1/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4735
+
+Overall F1 Score: 0.1804
+
+Training for fine level...
+
+batch 99, loss: 1.0621, instance_loss: 0.2095, weighted_loss: 0.8063, label: 3, bag_size: 354 
+
+batch 199, loss: 0.0218, instance_loss: 0.1207, weighted_loss: 0.0515, label: 8, bag_size: 168 
+
+batch 299, loss: 0.0033, instance_loss: 0.0933, weighted_loss: 0.0303, label: 6, bag_size: 328 
+
+batch 399, loss: 0.0069, instance_loss: 0.1076, weighted_loss: 0.0371, label: 3, bag_size: 347 
+
+batch 499, loss: 0.3595, instance_loss: 0.1437, weighted_loss: 0.2947, label: 10, bag_size: 450 
+
+batch 599, loss: 0.0121, instance_loss: 0.0747, weighted_loss: 0.0309, label: 5, bag_size: 2219 
+
+batch 699, loss: 0.0793, instance_loss: 0.2177, weighted_loss: 0.1208, label: 5, bag_size: 121 
+
+batch 799, loss: 1.4220, instance_loss: 0.2238, weighted_loss: 1.0626, label: 3, bag_size: 618 
+
+batch 899, loss: 0.8579, instance_loss: 0.0677, weighted_loss: 0.6208, label: 6, bag_size: 393 
+
+batch 999, loss: 0.5139, instance_loss: 0.2428, weighted_loss: 0.4326, label: 8, bag_size: 628 
+
+batch 1099, loss: 0.1260, instance_loss: 0.1860, weighted_loss: 0.1440, label: 7, bag_size: 523 
+
+batch 1199, loss: 0.0019, instance_loss: 0.0997, weighted_loss: 0.0312, label: 3, bag_size: 559 
+
+batch 1299, loss: 0.0680, instance_loss: 0.1229, weighted_loss: 0.0844, label: 6, bag_size: 387 
+
+batch 1399, loss: 0.5362, instance_loss: 0.1003, weighted_loss: 0.4055, label: 6, bag_size: 317 
+
+batch 1499, loss: 0.0280, instance_loss: 0.1525, weighted_loss: 0.0653, label: 6, bag_size: 1796 
+
+batch 1599, loss: 0.0196, instance_loss: 0.1509, weighted_loss: 0.0590, label: 7, bag_size: 206 
+
+batch 1699, loss: 0.8730, instance_loss: 0.2920, weighted_loss: 0.6987, label: 5, bag_size: 563 
+
+batch 1799, loss: 0.0094, instance_loss: 0.1155, weighted_loss: 0.0412, label: 6, bag_size: 247 
+
+batch 1899, loss: 0.0130, instance_loss: 0.0734, weighted_loss: 0.0311, label: 6, bag_size: 712 
+
+batch 1999, loss: 0.0034, instance_loss: 0.1075, weighted_loss: 0.0347, label: 6, bag_size: 703 
+
+batch 2099, loss: 0.0016, instance_loss: 0.0617, weighted_loss: 0.0197, label: 6, bag_size: 525 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.995416392363397: correct 241926/243040
+
+class 1 clustering acc 0.33623271889400924: correct 5837/17360
+
+
+Epoch: 13, train_loss: 0.2661, train_clustering_loss:  0.1349
+
+class 0: acc 0.8333333333333334, correct 10/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9187620889748549, correct 475/517 
+
+class 4: acc 0.84, correct 126/150 
+
+class 5: acc 0.8608695652173913, correct 99/115 
+
+class 6: acc 0.9522673031026253, correct 798/838 
+
+class 7: acc 0.8995983935742972, correct 224/249 
+
+class 8: acc 0.8651685393258427, correct 77/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.8333333333333334, correct 110/132 
+
+class 11: acc 0.9, correct 9/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.8461538461538461, correct 22/26 
+
+
+Val Set, val_loss: 2.4909, auc: 0.6365 
+
+class 0 clustering acc 0.9922551406926406: correct 29339/29568 
+
+class 1 clustering acc 0.2334280303030303: correct 493/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.546875, correct 35/64 
+
+class 4: acc 0.2777777777777778, correct 5/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.7019230769230769, correct 73/104 
+
+class 7: acc 0.26666666666666666, correct 8/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4811
+
+Overall F1 Score: 0.2093
+
+Training for fine level...
+
+batch 99, loss: 0.2229, instance_loss: 0.2243, weighted_loss: 0.2233, label: 4, bag_size: 788 
+
+batch 199, loss: 0.1363, instance_loss: 0.2139, weighted_loss: 0.1596, label: 10, bag_size: 235 
+
+batch 299, loss: 0.9389, instance_loss: 0.2111, weighted_loss: 0.7205, label: 3, bag_size: 2625 
+
+batch 399, loss: 1.8591, instance_loss: 0.2312, weighted_loss: 1.3708, label: 3, bag_size: 676 
+
+batch 499, loss: 0.1226, instance_loss: 0.0723, weighted_loss: 0.1075, label: 3, bag_size: 2107 
+
+batch 599, loss: 0.0133, instance_loss: 0.1623, weighted_loss: 0.0580, label: 7, bag_size: 337 
+
+batch 699, loss: 0.2325, instance_loss: 0.1656, weighted_loss: 0.2124, label: 6, bag_size: 325 
+
+batch 799, loss: 0.0371, instance_loss: 0.2029, weighted_loss: 0.0868, label: 7, bag_size: 288 
+
+batch 899, loss: 0.0250, instance_loss: 0.1386, weighted_loss: 0.0591, label: 7, bag_size: 436 
+
+batch 999, loss: 0.0013, instance_loss: 0.0251, weighted_loss: 0.0085, label: 6, bag_size: 243 
+
+batch 1099, loss: 0.0059, instance_loss: 0.1090, weighted_loss: 0.0368, label: 6, bag_size: 741 
+
+batch 1199, loss: 0.0681, instance_loss: 0.1381, weighted_loss: 0.0891, label: 3, bag_size: 421 
+
+batch 1299, loss: 0.0049, instance_loss: 0.0591, weighted_loss: 0.0212, label: 6, bag_size: 525 
+
+batch 1399, loss: 0.0553, instance_loss: 0.1850, weighted_loss: 0.0942, label: 10, bag_size: 876 
+
+batch 1499, loss: 0.2060, instance_loss: 0.1859, weighted_loss: 0.1999, label: 6, bag_size: 1214 
+
+batch 1599, loss: 0.0131, instance_loss: 0.1607, weighted_loss: 0.0574, label: 7, bag_size: 316 
+
+batch 1699, loss: 0.0029, instance_loss: 0.0370, weighted_loss: 0.0131, label: 3, bag_size: 2154 
+
+batch 1799, loss: 0.0374, instance_loss: 0.1830, weighted_loss: 0.0811, label: 3, bag_size: 356 
+
+batch 1899, loss: 0.0772, instance_loss: 0.1059, weighted_loss: 0.0858, label: 3, bag_size: 659 
+
+batch 1999, loss: 0.1794, instance_loss: 0.2474, weighted_loss: 0.1998, label: 6, bag_size: 814 
+
+batch 2099, loss: 5.5609, instance_loss: 0.3892, weighted_loss: 4.0094, label: 13, bag_size: 625 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9953793614219881: correct 241917/243040
+
+class 1 clustering acc 0.3355414746543779: correct 5825/17360
+
+
+Epoch: 14, train_loss: 0.2403, train_clustering_loss:  0.1339
+
+class 0: acc 0.9166666666666666, correct 11/12 
+
+class 1: acc 0.84375, correct 27/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9245647969052224, correct 478/517 
+
+class 4: acc 0.9066666666666666, correct 136/150 
+
+class 5: acc 0.9130434782608695, correct 105/115 
+
+class 6: acc 0.9558472553699284, correct 801/838 
+
+class 7: acc 0.9076305220883534, correct 226/249 
+
+class 8: acc 0.8764044943820225, correct 78/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.8333333333333334, correct 110/132 
+
+class 11: acc 0.9, correct 9/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.8461538461538461, correct 22/26 
+
+
+Val Set, val_loss: 2.6934, auc: 0.6485 
+
+class 0 clustering acc 0.9910714285714286: correct 29304/29568 
+
+class 1 clustering acc 0.24195075757575757: correct 511/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.578125, correct 37/64 
+
+class 4: acc 0.16666666666666666, correct 3/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6923076923076923, correct 72/104 
+
+class 7: acc 0.13333333333333333, correct 4/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4545
+
+Overall F1 Score: 0.1738
+
+Training for fine level...
+
+batch 99, loss: 1.6760, instance_loss: 0.1169, weighted_loss: 1.2083, label: 6, bag_size: 290 
+
+batch 199, loss: 0.1388, instance_loss: 0.0604, weighted_loss: 0.1152, label: 3, bag_size: 835 
+
+batch 299, loss: 0.0514, instance_loss: 0.1410, weighted_loss: 0.0783, label: 6, bag_size: 562 
+
+batch 399, loss: 1.1156, instance_loss: 0.1734, weighted_loss: 0.8330, label: 10, bag_size: 368 
+
+batch 499, loss: 0.0037, instance_loss: 0.1356, weighted_loss: 0.0432, label: 6, bag_size: 708 
+
+batch 599, loss: 0.0077, instance_loss: 0.0731, weighted_loss: 0.0273, label: 6, bag_size: 1853 
+
+batch 699, loss: 0.0149, instance_loss: 0.1494, weighted_loss: 0.0552, label: 1, bag_size: 113 
+
+batch 799, loss: 0.0661, instance_loss: 0.2041, weighted_loss: 0.1075, label: 6, bag_size: 444 
+
+batch 899, loss: 0.0076, instance_loss: 0.0852, weighted_loss: 0.0309, label: 3, bag_size: 1628 
+
+batch 999, loss: 0.4869, instance_loss: 0.1145, weighted_loss: 0.3752, label: 6, bag_size: 367 
+
+batch 1099, loss: 0.0565, instance_loss: 0.1346, weighted_loss: 0.0799, label: 6, bag_size: 112 
+
+batch 1199, loss: 0.0000, instance_loss: 0.0115, weighted_loss: 0.0035, label: 6, bag_size: 364 
+
+batch 1299, loss: 0.0096, instance_loss: 0.0938, weighted_loss: 0.0349, label: 4, bag_size: 510 
+
+batch 1399, loss: 0.1465, instance_loss: 0.1263, weighted_loss: 0.1405, label: 5, bag_size: 1333 
+
+batch 1499, loss: 0.0477, instance_loss: 0.2236, weighted_loss: 0.1005, label: 6, bag_size: 291 
+
+batch 1599, loss: 0.1526, instance_loss: 0.2215, weighted_loss: 0.1733, label: 10, bag_size: 568 
+
+batch 1699, loss: 0.4593, instance_loss: 0.1372, weighted_loss: 0.3626, label: 6, bag_size: 193 
+
+batch 1799, loss: 0.1569, instance_loss: 0.1708, weighted_loss: 0.1611, label: 3, bag_size: 378 
+
+batch 1899, loss: 0.0007, instance_loss: 0.0668, weighted_loss: 0.0206, label: 7, bag_size: 526 
+
+batch 1999, loss: 0.0098, instance_loss: 0.1243, weighted_loss: 0.0441, label: 7, bag_size: 362 
+
+batch 2099, loss: 0.0001, instance_loss: 0.2376, weighted_loss: 0.0714, label: 1, bag_size: 244 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9952970704410796: correct 241897/243040
+
+class 1 clustering acc 0.3421658986175115: correct 5940/17360
+
+
+Epoch: 15, train_loss: 0.1817, train_clustering_loss:  0.1319
+
+class 0: acc 0.75, correct 9/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9439071566731141, correct 488/517 
+
+class 4: acc 0.9, correct 135/150 
+
+class 5: acc 0.9478260869565217, correct 109/115 
+
+class 6: acc 0.9630071599045346, correct 807/838 
+
+class 7: acc 0.9518072289156626, correct 237/249 
+
+class 8: acc 0.8651685393258427, correct 77/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.8863636363636364, correct 117/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.8846153846153846, correct 23/26 
+
+
+Val Set, val_loss: 3.0567, auc: 0.6088 
+
+class 0 clustering acc 0.9907670454545454: correct 29295/29568 
+
+class 1 clustering acc 0.22253787878787878: correct 470/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.390625, correct 25/64 
+
+class 4: acc 0.5, correct 9/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.7019230769230769, correct 73/104 
+
+class 7: acc 0.1, correct 3/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4318
+
+Overall F1 Score: 0.1724
+
+Training for fine level...
+
+batch 99, loss: 0.1615, instance_loss: 0.1842, weighted_loss: 0.1683, label: 7, bag_size: 322 
+
+batch 199, loss: 0.1308, instance_loss: 0.2724, weighted_loss: 0.1733, label: 13, bag_size: 837 
+
+batch 299, loss: 0.0909, instance_loss: 0.1260, weighted_loss: 0.1014, label: 6, bag_size: 269 
+
+batch 399, loss: 0.0011, instance_loss: 0.0730, weighted_loss: 0.0227, label: 6, bag_size: 640 
+
+batch 499, loss: 0.0089, instance_loss: 0.1115, weighted_loss: 0.0397, label: 3, bag_size: 555 
+
+batch 599, loss: 0.2018, instance_loss: 0.1046, weighted_loss: 0.1726, label: 6, bag_size: 317 
+
+batch 699, loss: 0.0737, instance_loss: 0.1586, weighted_loss: 0.0992, label: 7, bag_size: 266 
+
+batch 799, loss: 0.0945, instance_loss: 0.0977, weighted_loss: 0.0955, label: 3, bag_size: 343 
+
+batch 899, loss: 0.0247, instance_loss: 0.2729, weighted_loss: 0.0992, label: 4, bag_size: 542 
+
+batch 999, loss: 0.0131, instance_loss: 0.1230, weighted_loss: 0.0461, label: 3, bag_size: 568 
+
+batch 1099, loss: 0.0001, instance_loss: 0.1327, weighted_loss: 0.0399, label: 6, bag_size: 1246 
+
+batch 1199, loss: 0.0286, instance_loss: 0.1381, weighted_loss: 0.0614, label: 3, bag_size: 407 
+
+batch 1299, loss: 0.0084, instance_loss: 0.0408, weighted_loss: 0.0181, label: 6, bag_size: 700 
+
+batch 1399, loss: 0.2922, instance_loss: 0.1437, weighted_loss: 0.2476, label: 3, bag_size: 248 
+
+batch 1499, loss: 0.0024, instance_loss: 0.0217, weighted_loss: 0.0082, label: 6, bag_size: 619 
+
+batch 1599, loss: 0.0024, instance_loss: 0.1846, weighted_loss: 0.0570, label: 6, bag_size: 2344 
+
+batch 1699, loss: 0.0028, instance_loss: 0.0047, weighted_loss: 0.0033, label: 6, bag_size: 210 
+
+batch 1799, loss: 0.0036, instance_loss: 0.1276, weighted_loss: 0.0408, label: 6, bag_size: 422 
+
+batch 1899, loss: 0.0087, instance_loss: 0.2242, weighted_loss: 0.0733, label: 7, bag_size: 338 
+
+batch 1999, loss: 0.3235, instance_loss: 0.2000, weighted_loss: 0.2864, label: 3, bag_size: 371 
+
+batch 2099, loss: 0.3628, instance_loss: 0.1699, weighted_loss: 0.3049, label: 3, bag_size: 2059 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9951489466754444: correct 241861/243040
+
+class 1 clustering acc 0.35046082949308754: correct 6084/17360
+
+
+Epoch: 16, train_loss: 0.1801, train_clustering_loss:  0.1320
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.9375, correct 30/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9516441005802708, correct 492/517 
+
+class 4: acc 0.9133333333333333, correct 137/150 
+
+class 5: acc 0.9304347826086956, correct 107/115 
+
+class 6: acc 0.9630071599045346, correct 807/838 
+
+class 7: acc 0.9437751004016064, correct 235/249 
+
+class 8: acc 0.9325842696629213, correct 83/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.8712121212121212, correct 115/132 
+
+class 11: acc 0.9, correct 9/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.8461538461538461, correct 22/26 
+
+
+Val Set, val_loss: 3.0051, auc: 0.6392 
+
+class 0 clustering acc 0.9919507575757576: correct 29330/29568 
+
+class 1 clustering acc 0.24242424242424243: correct 512/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.5, correct 32/64 
+
+class 4: acc 0.2777777777777778, correct 5/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6634615384615384, correct 69/104 
+
+class 7: acc 0.2, correct 6/30 
+
+class 8: acc 0.3, correct 3/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.3125, correct 5/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4583
+
+Overall F1 Score: 0.2088
+
+Training for fine level...
+
+batch 99, loss: 0.0301, instance_loss: 0.0628, weighted_loss: 0.0399, label: 6, bag_size: 524 
+
+batch 199, loss: 0.0002, instance_loss: 0.2261, weighted_loss: 0.0680, label: 5, bag_size: 304 
+
+batch 299, loss: 0.0084, instance_loss: 0.1648, weighted_loss: 0.0553, label: 7, bag_size: 338 
+
+batch 399, loss: 0.0001, instance_loss: 0.0182, weighted_loss: 0.0055, label: 6, bag_size: 691 
+
+batch 499, loss: 0.0072, instance_loss: 0.1439, weighted_loss: 0.0482, label: 3, bag_size: 250 
+
+batch 599, loss: 0.4081, instance_loss: 0.1654, weighted_loss: 0.3353, label: 5, bag_size: 1534 
+
+batch 699, loss: 1.0838, instance_loss: 0.1988, weighted_loss: 0.8183, label: 3, bag_size: 407 
+
+batch 799, loss: 0.0004, instance_loss: 0.0722, weighted_loss: 0.0219, label: 6, bag_size: 576 
+
+batch 899, loss: 0.0019, instance_loss: 0.1708, weighted_loss: 0.0526, label: 6, bag_size: 595 
+
+batch 999, loss: 0.0001, instance_loss: 0.0413, weighted_loss: 0.0124, label: 6, bag_size: 1032 
+
+batch 1099, loss: 0.1511, instance_loss: 0.2227, weighted_loss: 0.1726, label: 4, bag_size: 248 
+
+batch 1199, loss: 0.0984, instance_loss: 0.2072, weighted_loss: 0.1311, label: 7, bag_size: 244 
+
+batch 1299, loss: 0.5114, instance_loss: 0.3341, weighted_loss: 0.4582, label: 7, bag_size: 1064 
+
+batch 1399, loss: 0.0238, instance_loss: 0.0787, weighted_loss: 0.0403, label: 6, bag_size: 174 
+
+batch 1499, loss: 0.0002, instance_loss: 0.1720, weighted_loss: 0.0518, label: 3, bag_size: 472 
+
+batch 1599, loss: 0.0045, instance_loss: 0.0522, weighted_loss: 0.0188, label: 6, bag_size: 607 
+
+batch 1699, loss: 0.3788, instance_loss: 0.1833, weighted_loss: 0.3202, label: 3, bag_size: 1263 
+
+batch 1799, loss: 0.0675, instance_loss: 0.1364, weighted_loss: 0.0882, label: 3, bag_size: 483 
+
+batch 1899, loss: 0.0127, instance_loss: 0.0685, weighted_loss: 0.0295, label: 3, bag_size: 490 
+
+batch 1999, loss: 0.0003, instance_loss: 0.1220, weighted_loss: 0.0368, label: 3, bag_size: 1627 
+
+batch 2099, loss: 0.0004, instance_loss: 0.2586, weighted_loss: 0.0779, label: 1, bag_size: 440 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9948979591836735: correct 241800/243040
+
+class 1 clustering acc 0.35650921658986173: correct 6189/17360
+
+
+Epoch: 17, train_loss: 0.1596, train_clustering_loss:  0.1311
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9516441005802708, correct 492/517 
+
+class 4: acc 0.92, correct 138/150 
+
+class 5: acc 0.9043478260869565, correct 104/115 
+
+class 6: acc 0.9689737470167065, correct 812/838 
+
+class 7: acc 0.9317269076305221, correct 232/249 
+
+class 8: acc 0.9101123595505618, correct 81/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9242424242424242, correct 122/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.8076923076923077, correct 21/26 
+
+
+Val Set, val_loss: 2.9595, auc: 0.6348 
+
+class 0 clustering acc 0.9917478354978355: correct 29324/29568 
+
+class 1 clustering acc 0.22490530303030304: correct 475/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.53125, correct 34/64 
+
+class 4: acc 0.3888888888888889, correct 7/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6634615384615384, correct 69/104 
+
+class 7: acc 0.16666666666666666, correct 5/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.125, correct 2/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4545
+
+Overall F1 Score: 0.1921
+
+Training for fine level...
+
+batch 99, loss: 0.0037, instance_loss: 0.1081, weighted_loss: 0.0351, label: 3, bag_size: 65 
+
+batch 199, loss: 0.0000, instance_loss: 0.1575, weighted_loss: 0.0473, label: 7, bag_size: 220 
+
+batch 299, loss: 0.5382, instance_loss: 0.1800, weighted_loss: 0.4307, label: 3, bag_size: 792 
+
+batch 399, loss: 0.1011, instance_loss: 0.2150, weighted_loss: 0.1353, label: 4, bag_size: 1223 
+
+batch 499, loss: 0.0010, instance_loss: 0.0221, weighted_loss: 0.0073, label: 6, bag_size: 658 
+
+batch 599, loss: 0.0552, instance_loss: 0.1244, weighted_loss: 0.0760, label: 6, bag_size: 1555 
+
+batch 699, loss: 1.3140, instance_loss: 0.1814, weighted_loss: 0.9742, label: 6, bag_size: 229 
+
+batch 799, loss: 0.0000, instance_loss: 0.0109, weighted_loss: 0.0033, label: 6, bag_size: 921 
+
+batch 899, loss: 0.0585, instance_loss: 0.1433, weighted_loss: 0.0839, label: 10, bag_size: 259 
+
+batch 999, loss: 0.0260, instance_loss: 0.1223, weighted_loss: 0.0549, label: 10, bag_size: 119 
+
+batch 1099, loss: 0.0001, instance_loss: 0.1118, weighted_loss: 0.0336, label: 10, bag_size: 663 
+
+batch 1199, loss: 0.0007, instance_loss: 0.0562, weighted_loss: 0.0173, label: 5, bag_size: 2131 
+
+batch 1299, loss: 0.0518, instance_loss: 0.0852, weighted_loss: 0.0618, label: 6, bag_size: 393 
+
+batch 1399, loss: 0.0952, instance_loss: 0.1491, weighted_loss: 0.1114, label: 4, bag_size: 378 
+
+batch 1499, loss: 1.1001, instance_loss: 0.1779, weighted_loss: 0.8235, label: 6, bag_size: 368 
+
+batch 1599, loss: 0.0214, instance_loss: 0.1608, weighted_loss: 0.0632, label: 3, bag_size: 223 
+
+batch 1699, loss: 0.0002, instance_loss: 0.0606, weighted_loss: 0.0183, label: 6, bag_size: 1547 
+
+batch 1799, loss: 0.0437, instance_loss: 0.0718, weighted_loss: 0.0521, label: 6, bag_size: 448 
+
+batch 1899, loss: 0.0070, instance_loss: 0.1024, weighted_loss: 0.0356, label: 6, bag_size: 365 
+
+batch 1999, loss: 0.0001, instance_loss: 0.0609, weighted_loss: 0.0184, label: 3, bag_size: 537 
+
+batch 2099, loss: 0.0053, instance_loss: 0.2408, weighted_loss: 0.0759, label: 10, bag_size: 720 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9950707702435813: correct 241842/243040
+
+class 1 clustering acc 0.3604838709677419: correct 6258/17360
+
+
+Epoch: 18, train_loss: 0.1466, train_clustering_loss:  0.1296
+
+class 0: acc 0.9166666666666666, correct 11/12 
+
+class 1: acc 0.90625, correct 29/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9593810444874274, correct 496/517 
+
+class 4: acc 0.9333333333333333, correct 140/150 
+
+class 5: acc 0.9652173913043478, correct 111/115 
+
+class 6: acc 0.9618138424821002, correct 806/838 
+
+class 7: acc 0.9558232931726908, correct 238/249 
+
+class 8: acc 0.898876404494382, correct 80/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.8636363636363636, correct 114/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.8461538461538461, correct 22/26 
+
+
+Val Set, val_loss: 2.9576, auc: 0.6052 
+
+class 0 clustering acc 0.9916801948051948: correct 29322/29568 
+
+class 1 clustering acc 0.21117424242424243: correct 446/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.390625, correct 25/64 
+
+class 4: acc 0.3333333333333333, correct 6/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.7019230769230769, correct 73/104 
+
+class 7: acc 0.4, correct 12/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4583
+
+Overall F1 Score: 0.1988
+
+Training for fine level...
+
+batch 99, loss: 0.0045, instance_loss: 0.0705, weighted_loss: 0.0243, label: 6, bag_size: 214 
+
+batch 199, loss: 0.0861, instance_loss: 0.3560, weighted_loss: 0.1671, label: 7, bag_size: 533 
+
+batch 299, loss: 0.0125, instance_loss: 0.1221, weighted_loss: 0.0454, label: 6, bag_size: 1214 
+
+batch 399, loss: 0.0003, instance_loss: 0.1266, weighted_loss: 0.0382, label: 3, bag_size: 564 
+
+batch 499, loss: 0.0026, instance_loss: 0.1831, weighted_loss: 0.0567, label: 3, bag_size: 265 
+
+batch 599, loss: 0.0001, instance_loss: 0.0224, weighted_loss: 0.0068, label: 5, bag_size: 1204 
+
+batch 699, loss: 0.0102, instance_loss: 0.1744, weighted_loss: 0.0595, label: 7, bag_size: 286 
+
+batch 799, loss: 0.0021, instance_loss: 0.1304, weighted_loss: 0.0406, label: 3, bag_size: 241 
+
+batch 899, loss: 0.0021, instance_loss: 0.0338, weighted_loss: 0.0116, label: 6, bag_size: 706 
+
+batch 999, loss: 0.3723, instance_loss: 0.1460, weighted_loss: 0.3044, label: 10, bag_size: 450 
+
+batch 1099, loss: 0.0505, instance_loss: 0.1857, weighted_loss: 0.0910, label: 10, bag_size: 338 
+
+batch 1199, loss: 0.0000, instance_loss: 0.3231, weighted_loss: 0.0969, label: 1, bag_size: 554 
+
+batch 1299, loss: 0.0010, instance_loss: 0.0234, weighted_loss: 0.0077, label: 6, bag_size: 965 
+
+batch 1399, loss: 0.0088, instance_loss: 0.1468, weighted_loss: 0.0502, label: 3, bag_size: 421 
+
+batch 1499, loss: 0.0037, instance_loss: 0.2220, weighted_loss: 0.0692, label: 7, bag_size: 288 
+
+batch 1599, loss: 0.0001, instance_loss: 0.0324, weighted_loss: 0.0098, label: 6, bag_size: 394 
+
+batch 1699, loss: 0.1253, instance_loss: 0.1856, weighted_loss: 0.1434, label: 3, bag_size: 442 
+
+batch 1799, loss: 0.0000, instance_loss: 0.0112, weighted_loss: 0.0034, label: 6, bag_size: 312 
+
+batch 1899, loss: 0.0002, instance_loss: 0.0953, weighted_loss: 0.0287, label: 13, bag_size: 481 
+
+batch 1999, loss: 0.1268, instance_loss: 0.0983, weighted_loss: 0.1183, label: 6, bag_size: 573 
+
+batch 2099, loss: 0.0425, instance_loss: 0.1155, weighted_loss: 0.0644, label: 6, bag_size: 729 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9952353522053983: correct 241882/243040
+
+class 1 clustering acc 0.3676267281105991: correct 6382/17360
+
+
+Epoch: 19, train_loss: 0.0991, train_clustering_loss:  0.1286
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9690522243713733, correct 501/517 
+
+class 4: acc 0.96, correct 144/150 
+
+class 5: acc 0.9826086956521739, correct 113/115 
+
+class 6: acc 0.9844868735083532, correct 825/838 
+
+class 7: acc 0.9678714859437751, correct 241/249 
+
+class 8: acc 0.9662921348314607, correct 86/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9545454545454546, correct 126/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 3.1709, auc: 0.6359 
+
+class 0 clustering acc 0.9902935606060606: correct 29281/29568 
+
+class 1 clustering acc 0.22632575757575757: correct 478/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.40625, correct 26/64 
+
+class 4: acc 0.2777777777777778, correct 5/18 
+
+class 5: acc 0.21428571428571427, correct 3/14 
+
+class 6: acc 0.6442307692307693, correct 67/104 
+
+class 7: acc 0.3333333333333333, correct 10/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.125, correct 2/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4356
+
+Overall F1 Score: 0.2000
+
+Training for fine level...
+
+batch 99, loss: 0.0713, instance_loss: 0.2185, weighted_loss: 0.1154, label: 10, bag_size: 386 
+
+batch 199, loss: 0.0000, instance_loss: 0.1117, weighted_loss: 0.0335, label: 3, bag_size: 193 
+
+batch 299, loss: 0.0061, instance_loss: 0.3124, weighted_loss: 0.0980, label: 8, bag_size: 388 
+
+batch 399, loss: 0.0009, instance_loss: 0.0676, weighted_loss: 0.0209, label: 6, bag_size: 712 
+
+batch 499, loss: 0.0001, instance_loss: 0.0683, weighted_loss: 0.0206, label: 6, bag_size: 665 
+
+batch 599, loss: 0.0545, instance_loss: 0.1724, weighted_loss: 0.0899, label: 10, bag_size: 327 
+
+batch 699, loss: 0.0012, instance_loss: 0.2312, weighted_loss: 0.0702, label: 5, bag_size: 155 
+
+batch 799, loss: 0.0463, instance_loss: 0.1621, weighted_loss: 0.0810, label: 13, bag_size: 309 
+
+batch 899, loss: 0.0004, instance_loss: 0.0760, weighted_loss: 0.0231, label: 6, bag_size: 229 
+
+batch 999, loss: 0.0069, instance_loss: 0.0617, weighted_loss: 0.0234, label: 3, bag_size: 826 
+
+batch 1099, loss: 0.0006, instance_loss: 0.1900, weighted_loss: 0.0574, label: 10, bag_size: 430 
+
+batch 1199, loss: 0.0653, instance_loss: 0.1080, weighted_loss: 0.0781, label: 6, bag_size: 276 
+
+batch 1299, loss: 0.0000, instance_loss: 0.1061, weighted_loss: 0.0318, label: 6, bag_size: 377 
+
+batch 1399, loss: 0.0430, instance_loss: 0.1064, weighted_loss: 0.0620, label: 3, bag_size: 2121 
+
+batch 1499, loss: 0.0428, instance_loss: 0.0389, weighted_loss: 0.0416, label: 6, bag_size: 433 
+
+batch 1599, loss: 0.3723, instance_loss: 0.1026, weighted_loss: 0.2913, label: 3, bag_size: 2948 
+
+batch 1699, loss: 0.1044, instance_loss: 0.1908, weighted_loss: 0.1303, label: 3, bag_size: 161 
+
+batch 1799, loss: 0.0017, instance_loss: 0.0822, weighted_loss: 0.0258, label: 7, bag_size: 701 
+
+batch 1899, loss: 0.0123, instance_loss: 0.1030, weighted_loss: 0.0395, label: 6, bag_size: 371 
+
+batch 1999, loss: 0.0011, instance_loss: 0.0313, weighted_loss: 0.0102, label: 6, bag_size: 905 
+
+batch 2099, loss: 0.0021, instance_loss: 0.1389, weighted_loss: 0.0431, label: 6, bag_size: 422 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9951119157340356: correct 241852/243040
+
+class 1 clustering acc 0.36912442396313366: correct 6408/17360
+
+
+Epoch: 20, train_loss: 0.1237, train_clustering_loss:  0.1297
+
+class 0: acc 0.9166666666666666, correct 11/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9613152804642167, correct 497/517 
+
+class 4: acc 0.9266666666666666, correct 139/150 
+
+class 5: acc 0.9739130434782609, correct 112/115 
+
+class 6: acc 0.9737470167064439, correct 816/838 
+
+class 7: acc 0.9397590361445783, correct 234/249 
+
+class 8: acc 0.9438202247191011, correct 84/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9393939393939394, correct 124/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 3.3924, auc: 0.6045 
+
+class 0 clustering acc 0.992288961038961: correct 29340/29568 
+
+class 1 clustering acc 0.2334280303030303: correct 493/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.484375, correct 31/64 
+
+class 4: acc 0.3333333333333333, correct 6/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6538461538461539, correct 68/104 
+
+class 7: acc 0.16666666666666666, correct 5/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4394
+
+Overall F1 Score: 0.1895
+
+Training for fine level...
+
+batch 99, loss: 0.0000, instance_loss: 0.2244, weighted_loss: 0.0673, label: 7, bag_size: 661 
+
+batch 199, loss: 0.0104, instance_loss: 0.0519, weighted_loss: 0.0229, label: 6, bag_size: 576 
+
+batch 299, loss: 0.0046, instance_loss: 0.1475, weighted_loss: 0.0475, label: 5, bag_size: 1333 
+
+batch 399, loss: 0.0005, instance_loss: 0.1957, weighted_loss: 0.0591, label: 4, bag_size: 326 
+
+batch 499, loss: 0.1304, instance_loss: 0.2035, weighted_loss: 0.1523, label: 6, bag_size: 555 
+
+batch 599, loss: 0.0106, instance_loss: 0.1251, weighted_loss: 0.0449, label: 6, bag_size: 301 
+
+batch 699, loss: 0.0028, instance_loss: 0.0934, weighted_loss: 0.0300, label: 3, bag_size: 405 
+
+batch 799, loss: 0.0000, instance_loss: 0.0038, weighted_loss: 0.0011, label: 6, bag_size: 180 
+
+batch 899, loss: 0.0000, instance_loss: 0.0351, weighted_loss: 0.0106, label: 6, bag_size: 620 
+
+batch 999, loss: 0.0000, instance_loss: 0.0408, weighted_loss: 0.0122, label: 6, bag_size: 308 
+
+batch 1099, loss: 0.2331, instance_loss: 0.1584, weighted_loss: 0.2107, label: 3, bag_size: 1727 
+
+batch 1199, loss: 0.0051, instance_loss: 0.0350, weighted_loss: 0.0141, label: 3, bag_size: 409 
+
+batch 1299, loss: 0.0016, instance_loss: 0.0563, weighted_loss: 0.0180, label: 6, bag_size: 333 
+
+batch 1399, loss: 0.1073, instance_loss: 0.1180, weighted_loss: 0.1105, label: 3, bag_size: 1523 
+
+batch 1499, loss: 0.0004, instance_loss: 0.2107, weighted_loss: 0.0635, label: 5, bag_size: 317 
+
+batch 1599, loss: 0.0433, instance_loss: 0.1613, weighted_loss: 0.0787, label: 3, bag_size: 454 
+
+batch 1699, loss: 0.0013, instance_loss: 0.0786, weighted_loss: 0.0245, label: 6, bag_size: 448 
+
+batch 1799, loss: 0.0002, instance_loss: 0.0569, weighted_loss: 0.0172, label: 3, bag_size: 2085 
+
+batch 1899, loss: 4.5113, instance_loss: 0.3136, weighted_loss: 3.2520, label: 10, bag_size: 378 
+
+batch 1999, loss: 0.0011, instance_loss: 0.1195, weighted_loss: 0.0366, label: 6, bag_size: 552 
+
+batch 2099, loss: 0.0030, instance_loss: 0.0614, weighted_loss: 0.0205, label: 6, bag_size: 854 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9951160302830809: correct 241853/243040
+
+class 1 clustering acc 0.36733870967741933: correct 6377/17360
+
+
+Epoch: 21, train_loss: 0.0967, train_clustering_loss:  0.1287
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 1.0, correct 32/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9806576402321083, correct 507/517 
+
+class 4: acc 0.9533333333333334, correct 143/150 
+
+class 5: acc 0.9565217391304348, correct 110/115 
+
+class 6: acc 0.9809069212410502, correct 822/838 
+
+class 7: acc 0.9598393574297188, correct 239/249 
+
+class 8: acc 0.9550561797752809, correct 85/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.946969696969697, correct 125/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 3.6430, auc: 0.6038 
+
+class 0 clustering acc 0.9900906385281385: correct 29275/29568 
+
+class 1 clustering acc 0.22537878787878787: correct 476/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.484375, correct 31/64 
+
+class 4: acc 0.16666666666666666, correct 3/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6730769230769231, correct 70/104 
+
+class 7: acc 0.23333333333333334, correct 7/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4356
+
+Overall F1 Score: 0.1736
+
+Training for fine level...
+
+batch 99, loss: 0.0000, instance_loss: 0.2266, weighted_loss: 0.0680, label: 5, bag_size: 250 
+
+batch 199, loss: 0.0002, instance_loss: 0.0566, weighted_loss: 0.0171, label: 3, bag_size: 600 
+
+batch 299, loss: 0.0007, instance_loss: 0.0796, weighted_loss: 0.0244, label: 3, bag_size: 1767 
+
+batch 399, loss: 0.0003, instance_loss: 0.0414, weighted_loss: 0.0126, label: 6, bag_size: 368 
+
+batch 499, loss: 0.0124, instance_loss: 0.1200, weighted_loss: 0.0447, label: 3, bag_size: 119 
+
+batch 599, loss: 0.0091, instance_loss: 0.2031, weighted_loss: 0.0673, label: 6, bag_size: 352 
+
+batch 699, loss: 0.4953, instance_loss: 0.1529, weighted_loss: 0.3926, label: 13, bag_size: 13 
+
+batch 799, loss: 0.4497, instance_loss: 0.2446, weighted_loss: 0.3881, label: 4, bag_size: 185 
+
+batch 899, loss: 0.0575, instance_loss: 0.0606, weighted_loss: 0.0584, label: 3, bag_size: 389 
+
+batch 999, loss: 0.0013, instance_loss: 0.2446, weighted_loss: 0.0743, label: 3, bag_size: 540 
+
+batch 1099, loss: 0.9586, instance_loss: 0.1393, weighted_loss: 0.7128, label: 6, bag_size: 575 
+
+batch 1199, loss: 0.0007, instance_loss: 0.2013, weighted_loss: 0.0609, label: 6, bag_size: 310 
+
+batch 1299, loss: 0.0021, instance_loss: 0.1545, weighted_loss: 0.0478, label: 3, bag_size: 374 
+
+batch 1399, loss: 0.0006, instance_loss: 0.0711, weighted_loss: 0.0217, label: 6, bag_size: 733 
+
+batch 1499, loss: 0.0006, instance_loss: 0.1175, weighted_loss: 0.0357, label: 7, bag_size: 75 
+
+batch 1599, loss: 0.2943, instance_loss: 0.1676, weighted_loss: 0.2563, label: 3, bag_size: 622 
+
+batch 1699, loss: 0.0003, instance_loss: 0.1200, weighted_loss: 0.0362, label: 4, bag_size: 1632 
+
+batch 1799, loss: 0.0005, instance_loss: 0.1389, weighted_loss: 0.0420, label: 6, bag_size: 235 
+
+batch 1899, loss: 0.4931, instance_loss: 0.2527, weighted_loss: 0.4210, label: 4, bag_size: 2069 
+
+batch 1999, loss: 0.7550, instance_loss: 0.2520, weighted_loss: 0.6041, label: 10, bag_size: 527 
+
+batch 2099, loss: 0.0009, instance_loss: 0.0147, weighted_loss: 0.0050, label: 6, bag_size: 789 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9946469716919025: correct 241739/243040
+
+class 1 clustering acc 0.3771889400921659: correct 6548/17360
+
+
+Epoch: 22, train_loss: 0.1198, train_clustering_loss:  0.1293
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.875, correct 28/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9671179883945842, correct 500/517 
+
+class 4: acc 0.9133333333333333, correct 137/150 
+
+class 5: acc 0.9391304347826087, correct 108/115 
+
+class 6: acc 0.9761336515513126, correct 818/838 
+
+class 7: acc 0.9598393574297188, correct 239/249 
+
+class 8: acc 0.9775280898876404, correct 87/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9090909090909091, correct 120/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.8846153846153846, correct 23/26 
+
+
+Val Set, val_loss: 3.6610, auc: 0.5757 
+
+class 0 clustering acc 0.990428841991342: correct 29285/29568 
+
+class 1 clustering acc 0.22301136363636365: correct 471/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.515625, correct 33/64 
+
+class 4: acc 0.2222222222222222, correct 4/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.6346153846153846, correct 66/104 
+
+class 7: acc 0.16666666666666666, correct 5/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.125, correct 2/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4318
+
+Overall F1 Score: 0.1834
+
+Training for fine level...
+
+batch 99, loss: 0.7090, instance_loss: 0.3396, weighted_loss: 0.5981, label: 7, bag_size: 1064 
+
+batch 199, loss: 0.0030, instance_loss: 0.0822, weighted_loss: 0.0268, label: 6, bag_size: 293 
+
+batch 299, loss: 0.0003, instance_loss: 0.0107, weighted_loss: 0.0034, label: 6, bag_size: 629 
+
+batch 399, loss: 0.0000, instance_loss: 0.0170, weighted_loss: 0.0051, label: 6, bag_size: 1161 
+
+batch 499, loss: 0.0002, instance_loss: 0.0602, weighted_loss: 0.0182, label: 6, bag_size: 468 
+
+batch 599, loss: 0.0022, instance_loss: 0.1180, weighted_loss: 0.0370, label: 4, bag_size: 589 
+
+batch 699, loss: 0.0001, instance_loss: 0.0381, weighted_loss: 0.0115, label: 6, bag_size: 221 
+
+batch 799, loss: 0.5242, instance_loss: 0.1253, weighted_loss: 0.4045, label: 3, bag_size: 1663 
+
+batch 899, loss: 0.0000, instance_loss: 0.0601, weighted_loss: 0.0180, label: 6, bag_size: 475 
+
+batch 999, loss: 0.0037, instance_loss: 0.1031, weighted_loss: 0.0335, label: 6, bag_size: 129 
+
+batch 1099, loss: 0.0060, instance_loss: 0.1272, weighted_loss: 0.0424, label: 6, bag_size: 473 
+
+batch 1199, loss: 0.0090, instance_loss: 0.1869, weighted_loss: 0.0624, label: 7, bag_size: 1865 
+
+batch 1299, loss: 0.0126, instance_loss: 0.2574, weighted_loss: 0.0860, label: 3, bag_size: 393 
+
+batch 1399, loss: 0.0036, instance_loss: 0.1428, weighted_loss: 0.0454, label: 3, bag_size: 343 
+
+batch 1499, loss: 0.0005, instance_loss: 0.0352, weighted_loss: 0.0109, label: 3, bag_size: 1490 
+
+batch 1599, loss: 0.0002, instance_loss: 0.0675, weighted_loss: 0.0204, label: 6, bag_size: 604 
+
+batch 1699, loss: 0.0000, instance_loss: 0.0657, weighted_loss: 0.0197, label: 6, bag_size: 875 
+
+batch 1799, loss: 0.0047, instance_loss: 0.1901, weighted_loss: 0.0603, label: 4, bag_size: 303 
+
+batch 1899, loss: 0.0007, instance_loss: 0.0230, weighted_loss: 0.0074, label: 6, bag_size: 515 
+
+batch 1999, loss: 0.0000, instance_loss: 0.0419, weighted_loss: 0.0126, label: 6, bag_size: 1547 
+
+batch 2099, loss: 0.0248, instance_loss: 0.1909, weighted_loss: 0.0746, label: 3, bag_size: 142 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9948609282422647: correct 241791/243040
+
+class 1 clustering acc 0.37943548387096776: correct 6587/17360
+
+
+Epoch: 23, train_loss: 0.0899, train_clustering_loss:  0.1274
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 1.0, correct 32/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9748549323017408, correct 504/517 
+
+class 4: acc 0.9733333333333334, correct 146/150 
+
+class 5: acc 0.9478260869565217, correct 109/115 
+
+class 6: acc 0.9797136038186157, correct 821/838 
+
+class 7: acc 0.963855421686747, correct 240/249 
+
+class 8: acc 0.9550561797752809, correct 85/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9621212121212122, correct 127/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 3.5585, auc: 0.5869 
+
+class 0 clustering acc 0.9904626623376623: correct 29286/29568 
+
+class 1 clustering acc 0.22395833333333334: correct 473/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.5, correct 32/64 
+
+class 4: acc 0.2222222222222222, correct 4/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6826923076923077, correct 71/104 
+
+class 7: acc 0.26666666666666666, correct 8/30 
+
+class 8: acc 0.1, correct 1/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.125, correct 2/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4508
+
+Overall F1 Score: 0.1803
+
+Training for fine level...
+
+batch 99, loss: 0.0070, instance_loss: 0.2181, weighted_loss: 0.0703, label: 8, bag_size: 172 
+
+batch 199, loss: 0.0005, instance_loss: 0.1179, weighted_loss: 0.0358, label: 8, bag_size: 665 
+
+batch 299, loss: 0.0012, instance_loss: 0.0952, weighted_loss: 0.0294, label: 13, bag_size: 829 
+
+batch 399, loss: 0.0098, instance_loss: 0.1415, weighted_loss: 0.0493, label: 7, bag_size: 248 
+
+batch 499, loss: 0.0015, instance_loss: 0.0170, weighted_loss: 0.0061, label: 6, bag_size: 246 
+
+batch 599, loss: 0.0000, instance_loss: 0.1632, weighted_loss: 0.0490, label: 3, bag_size: 675 
+
+batch 699, loss: 2.3548, instance_loss: 0.3020, weighted_loss: 1.7390, label: 11, bag_size: 830 
+
+batch 799, loss: 0.1356, instance_loss: 0.1871, weighted_loss: 0.1510, label: 7, bag_size: 739 
+
+batch 899, loss: 0.0172, instance_loss: 0.1893, weighted_loss: 0.0689, label: 6, bag_size: 431 
+
+batch 999, loss: 0.0005, instance_loss: 0.1436, weighted_loss: 0.0434, label: 7, bag_size: 209 
+
+batch 1099, loss: 0.0006, instance_loss: 0.1545, weighted_loss: 0.0468, label: 6, bag_size: 729 
+
+batch 1199, loss: 0.0004, instance_loss: 0.0490, weighted_loss: 0.0150, label: 3, bag_size: 872 
+
+batch 1299, loss: 0.0004, instance_loss: 0.1265, weighted_loss: 0.0382, label: 10, bag_size: 1342 
+
+batch 1399, loss: 0.0032, instance_loss: 0.1416, weighted_loss: 0.0447, label: 8, bag_size: 120 
+
+batch 1499, loss: 0.0021, instance_loss: 0.1497, weighted_loss: 0.0464, label: 7, bag_size: 1064 
+
+batch 1599, loss: 0.0001, instance_loss: 0.0282, weighted_loss: 0.0085, label: 6, bag_size: 902 
+
+batch 1699, loss: 0.0000, instance_loss: 0.0922, weighted_loss: 0.0277, label: 7, bag_size: 740 
+
+batch 1799, loss: 0.0000, instance_loss: 0.1762, weighted_loss: 0.0529, label: 7, bag_size: 220 
+
+batch 1899, loss: 0.0031, instance_loss: 0.1536, weighted_loss: 0.0482, label: 7, bag_size: 334 
+
+batch 1999, loss: 0.0004, instance_loss: 0.0594, weighted_loss: 0.0181, label: 6, bag_size: 456 
+
+batch 2099, loss: 0.0010, instance_loss: 0.0940, weighted_loss: 0.0289, label: 6, bag_size: 460 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9948691573403555: correct 241793/243040
+
+class 1 clustering acc 0.38680875576036866: correct 6715/17360
+
+
+Epoch: 24, train_loss: 0.0801, train_clustering_loss:  0.1263
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 1.0, correct 32/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.97678916827853, correct 505/517 
+
+class 4: acc 0.9733333333333334, correct 146/150 
+
+class 5: acc 0.9652173913043478, correct 111/115 
+
+class 6: acc 0.9785202863961814, correct 820/838 
+
+class 7: acc 0.9839357429718876, correct 245/249 
+
+class 8: acc 0.9775280898876404, correct 87/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9318181818181818, correct 123/132 
+
+class 11: acc 0.9, correct 9/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 3.5887, auc: 0.6372 
+
+class 0 clustering acc 0.9900568181818182: correct 29274/29568 
+
+class 1 clustering acc 0.24526515151515152: correct 518/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.40625, correct 26/64 
+
+class 4: acc 0.2777777777777778, correct 5/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.7596153846153846, correct 79/104 
+
+class 7: acc 0.26666666666666666, correct 8/30 
+
+class 8: acc 0.0, correct 0/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4545
+
+Overall F1 Score: 0.1672
+
+Training for fine level...
+
+batch 99, loss: 0.0000, instance_loss: 0.0492, weighted_loss: 0.0148, label: 5, bag_size: 1204 
+
+batch 199, loss: 0.0312, instance_loss: 0.0944, weighted_loss: 0.0502, label: 3, bag_size: 643 
+
+batch 299, loss: 0.0003, instance_loss: 0.2258, weighted_loss: 0.0680, label: 7, bag_size: 2046 
+
+batch 399, loss: 0.3908, instance_loss: 0.1997, weighted_loss: 0.3335, label: 10, bag_size: 361 
+
+batch 499, loss: 0.0000, instance_loss: 0.0080, weighted_loss: 0.0024, label: 6, bag_size: 455 
+
+batch 599, loss: 0.0015, instance_loss: 0.0882, weighted_loss: 0.0275, label: 6, bag_size: 597 
+
+batch 699, loss: 0.0000, instance_loss: 0.0508, weighted_loss: 0.0153, label: 6, bag_size: 665 
+
+batch 799, loss: 0.0001, instance_loss: 0.1916, weighted_loss: 0.0576, label: 8, bag_size: 681 
+
+batch 899, loss: 0.0000, instance_loss: 0.1621, weighted_loss: 0.0486, label: 7, bag_size: 843 
+
+batch 999, loss: 0.0000, instance_loss: 0.0425, weighted_loss: 0.0127, label: 3, bag_size: 2104 
+
+batch 1099, loss: 0.0003, instance_loss: 0.0715, weighted_loss: 0.0216, label: 7, bag_size: 518 
+
+batch 1199, loss: 0.0018, instance_loss: 0.1547, weighted_loss: 0.0476, label: 10, bag_size: 249 
+
+batch 1299, loss: 0.0008, instance_loss: 0.1460, weighted_loss: 0.0443, label: 6, bag_size: 1897 
+
+batch 1399, loss: 0.0038, instance_loss: 0.1801, weighted_loss: 0.0567, label: 7, bag_size: 182 
+
+batch 1499, loss: 0.0000, instance_loss: 0.0347, weighted_loss: 0.0104, label: 6, bag_size: 788 
+
+batch 1599, loss: 0.0000, instance_loss: 0.1032, weighted_loss: 0.0310, label: 6, bag_size: 235 
+
+batch 1699, loss: 0.1204, instance_loss: 0.2683, weighted_loss: 0.1648, label: 7, bag_size: 541 
+
+batch 1799, loss: 0.0234, instance_loss: 0.0871, weighted_loss: 0.0425, label: 3, bag_size: 1445 
+
+batch 1899, loss: 0.0016, instance_loss: 0.1970, weighted_loss: 0.0602, label: 7, bag_size: 283 
+
+batch 1999, loss: 0.0023, instance_loss: 0.2673, weighted_loss: 0.0818, label: 10, bag_size: 2813 
+
+batch 2099, loss: 0.0000, instance_loss: 0.2116, weighted_loss: 0.0635, label: 7, bag_size: 608 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.994564680710994: correct 241719/243040
+
+class 1 clustering acc 0.38433179723502303: correct 6672/17360
+
+
+Epoch: 25, train_loss: 0.0785, train_clustering_loss:  0.1273
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.9375, correct 30/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9787234042553191, correct 506/517 
+
+class 4: acc 0.9733333333333334, correct 146/150 
+
+class 5: acc 0.9826086956521739, correct 113/115 
+
+class 6: acc 0.986873508353222, correct 827/838 
+
+class 7: acc 0.9437751004016064, correct 235/249 
+
+class 8: acc 0.9438202247191011, correct 84/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9393939393939394, correct 124/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 3.8816, auc: 0.5949 
+
+class 0 clustering acc 0.9901582792207793: correct 29277/29568 
+
+class 1 clustering acc 0.2215909090909091: correct 468/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.4375, correct 28/64 
+
+class 4: acc 0.2222222222222222, correct 4/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.6057692307692307, correct 63/104 
+
+class 7: acc 0.26666666666666666, correct 8/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4091
+
+Overall F1 Score: 0.1745
+
+Training for fine level...
+
+batch 99, loss: 0.0408, instance_loss: 0.1221, weighted_loss: 0.0652, label: 8, bag_size: 152 
+
+batch 199, loss: 0.0125, instance_loss: 0.1255, weighted_loss: 0.0464, label: 3, bag_size: 304 
+
+batch 299, loss: 0.0021, instance_loss: 0.0355, weighted_loss: 0.0121, label: 6, bag_size: 330 
+
+batch 399, loss: 0.0154, instance_loss: 0.1559, weighted_loss: 0.0576, label: 10, bag_size: 388 
+
+batch 499, loss: 0.0004, instance_loss: 0.2311, weighted_loss: 0.0696, label: 7, bag_size: 1004 
+
+batch 599, loss: 0.0005, instance_loss: 0.1255, weighted_loss: 0.0380, label: 6, bag_size: 396 
+
+batch 699, loss: 0.1201, instance_loss: 0.1463, weighted_loss: 0.1279, label: 6, bag_size: 649 
+
+batch 799, loss: 0.0000, instance_loss: 0.1036, weighted_loss: 0.0311, label: 3, bag_size: 204 
+
+batch 899, loss: 0.0142, instance_loss: 0.1215, weighted_loss: 0.0464, label: 6, bag_size: 271 
+
+batch 999, loss: 0.0041, instance_loss: 0.2253, weighted_loss: 0.0705, label: 3, bag_size: 3615 
+
+batch 1099, loss: 0.0000, instance_loss: 0.1309, weighted_loss: 0.0393, label: 6, bag_size: 480 
+
+batch 1199, loss: 0.0001, instance_loss: 0.0304, weighted_loss: 0.0092, label: 3, bag_size: 1104 
+
+batch 1299, loss: 0.1505, instance_loss: 0.2444, weighted_loss: 0.1787, label: 8, bag_size: 716 
+
+batch 1399, loss: 0.0000, instance_loss: 0.0571, weighted_loss: 0.0171, label: 6, bag_size: 225 
+
+batch 1499, loss: 0.0020, instance_loss: 0.1044, weighted_loss: 0.0327, label: 3, bag_size: 1323 
+
+batch 1599, loss: 0.0006, instance_loss: 0.1469, weighted_loss: 0.0445, label: 7, bag_size: 361 
+
+batch 1699, loss: 0.0017, instance_loss: 0.1085, weighted_loss: 0.0337, label: 5, bag_size: 2272 
+
+batch 1799, loss: 0.0000, instance_loss: 0.0043, weighted_loss: 0.0013, label: 6, bag_size: 424 
+
+batch 1899, loss: 0.0000, instance_loss: 0.1275, weighted_loss: 0.0383, label: 7, bag_size: 843 
+
+batch 1999, loss: 0.0021, instance_loss: 0.1173, weighted_loss: 0.0367, label: 8, bag_size: 172 
+
+batch 2099, loss: 0.0011, instance_loss: 0.0387, weighted_loss: 0.0124, label: 6, bag_size: 295 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9946840026333114: correct 241748/243040
+
+class 1 clustering acc 0.38461981566820275: correct 6677/17360
+
+
+Epoch: 26, train_loss: 0.0762, train_clustering_loss:  0.1265
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9690522243713733, correct 501/517 
+
+class 4: acc 0.9666666666666667, correct 145/150 
+
+class 5: acc 0.9739130434782609, correct 112/115 
+
+class 6: acc 0.9844868735083532, correct 825/838 
+
+class 7: acc 0.9759036144578314, correct 243/249 
+
+class 8: acc 0.9662921348314607, correct 86/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9696969696969697, correct 128/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9230769230769231, correct 24/26 
+
+
+Val Set, val_loss: 3.5722, auc: 0.6163 
+
+class 0 clustering acc 0.9902259199134199: correct 29279/29568 
+
+class 1 clustering acc 0.24289772727272727: correct 513/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.453125, correct 29/64 
+
+class 4: acc 0.2222222222222222, correct 4/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.6346153846153846, correct 66/104 
+
+class 7: acc 0.4, correct 12/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4470
+
+Overall F1 Score: 0.1999
+
+Training for fine level...
+
+batch 99, loss: 0.0001, instance_loss: 0.0570, weighted_loss: 0.0171, label: 3, bag_size: 1628 
+
+batch 199, loss: 0.0035, instance_loss: 0.2589, weighted_loss: 0.0802, label: 8, bag_size: 345 
+
+batch 299, loss: 0.0013, instance_loss: 0.0795, weighted_loss: 0.0248, label: 6, bag_size: 412 
+
+batch 399, loss: 0.0147, instance_loss: 0.0172, weighted_loss: 0.0154, label: 6, bag_size: 658 
+
+batch 499, loss: 0.0015, instance_loss: 0.1519, weighted_loss: 0.0466, label: 6, bag_size: 1048 
+
+batch 599, loss: 0.0004, instance_loss: 0.1013, weighted_loss: 0.0306, label: 6, bag_size: 396 
+
+batch 699, loss: 0.0002, instance_loss: 0.1024, weighted_loss: 0.0308, label: 3, bag_size: 241 
+
+batch 799, loss: 0.0009, instance_loss: 0.0228, weighted_loss: 0.0075, label: 3, bag_size: 778 
+
+batch 899, loss: 0.2129, instance_loss: 0.2119, weighted_loss: 0.2126, label: 6, bag_size: 1347 
+
+batch 999, loss: 0.0710, instance_loss: 0.2531, weighted_loss: 0.1257, label: 8, bag_size: 444 
+
+batch 1099, loss: 0.0519, instance_loss: 0.2896, weighted_loss: 0.1232, label: 8, bag_size: 1529 
+
+batch 1199, loss: 0.3561, instance_loss: 0.1527, weighted_loss: 0.2951, label: 6, bag_size: 192 
+
+batch 1299, loss: 0.0001, instance_loss: 0.0929, weighted_loss: 0.0280, label: 4, bag_size: 53 
+
+batch 1399, loss: 0.0000, instance_loss: 0.0253, weighted_loss: 0.0076, label: 6, bag_size: 462 
+
+batch 1499, loss: 0.0002, instance_loss: 0.0726, weighted_loss: 0.0219, label: 1, bag_size: 101 
+
+batch 1599, loss: 0.0000, instance_loss: 0.0790, weighted_loss: 0.0237, label: 7, bag_size: 483 
+
+batch 1699, loss: 0.0008, instance_loss: 0.1271, weighted_loss: 0.0387, label: 4, bag_size: 504 
+
+batch 1799, loss: 0.0062, instance_loss: 0.2676, weighted_loss: 0.0846, label: 8, bag_size: 462 
+
+batch 1899, loss: 0.0006, instance_loss: 0.0996, weighted_loss: 0.0303, label: 3, bag_size: 1536 
+
+batch 1999, loss: 0.0114, instance_loss: 0.1436, weighted_loss: 0.0510, label: 10, bag_size: 288 
+
+batch 2099, loss: 0.0000, instance_loss: 0.1466, weighted_loss: 0.0440, label: 7, bag_size: 614 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9946469716919025: correct 241739/243040
+
+class 1 clustering acc 0.3982718894009217: correct 6914/17360
+
+
+Epoch: 27, train_loss: 0.0588, train_clustering_loss:  0.1260
+
+class 0: acc 0.75, correct 9/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9787234042553191, correct 506/517 
+
+class 4: acc 0.98, correct 147/150 
+
+class 5: acc 0.9739130434782609, correct 112/115 
+
+class 6: acc 0.9928400954653938, correct 832/838 
+
+class 7: acc 0.9759036144578314, correct 243/249 
+
+class 8: acc 1.0, correct 89/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9393939393939394, correct 124/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 4.1057, auc: 0.6279 
+
+class 0 clustering acc 0.9899891774891775: correct 29272/29568 
+
+class 1 clustering acc 0.23958333333333334: correct 506/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.515625, correct 33/64 
+
+class 4: acc 0.1111111111111111, correct 2/18 
+
+class 5: acc 0.21428571428571427, correct 3/14 
+
+class 6: acc 0.5384615384615384, correct 56/104 
+
+class 7: acc 0.2, correct 6/30 
+
+class 8: acc 0.1, correct 1/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.125, correct 2/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.3902
+
+Overall F1 Score: 0.1649
+
+Training for fine level...
+
+batch 99, loss: 0.4186, instance_loss: 0.1917, weighted_loss: 0.3506, label: 7, bag_size: 206 
+
+batch 199, loss: 0.0001, instance_loss: 0.1948, weighted_loss: 0.0585, label: 3, bag_size: 172 
+
+batch 299, loss: 0.0005, instance_loss: 0.0231, weighted_loss: 0.0072, label: 6, bag_size: 859 
+
+batch 399, loss: 0.0180, instance_loss: 0.0583, weighted_loss: 0.0300, label: 6, bag_size: 601 
+
+batch 499, loss: 0.4795, instance_loss: 0.1094, weighted_loss: 0.3685, label: 3, bag_size: 2601 
+
+batch 599, loss: 0.0022, instance_loss: 0.1670, weighted_loss: 0.0517, label: 4, bag_size: 1150 
+
+batch 699, loss: 0.9695, instance_loss: 0.3014, weighted_loss: 0.7690, label: 5, bag_size: 317 
+
+batch 799, loss: 0.0230, instance_loss: 0.0864, weighted_loss: 0.0420, label: 3, bag_size: 496 
+
+batch 899, loss: 1.4532, instance_loss: 0.2257, weighted_loss: 1.0850, label: 4, bag_size: 933 
+
+batch 999, loss: 0.0001, instance_loss: 0.1755, weighted_loss: 0.0527, label: 7, bag_size: 414 
+
+batch 1099, loss: 0.0009, instance_loss: 0.1699, weighted_loss: 0.0516, label: 0, bag_size: 1736 
+
+batch 1199, loss: 0.1446, instance_loss: 0.0803, weighted_loss: 0.1253, label: 3, bag_size: 848 
+
+batch 1299, loss: 0.0001, instance_loss: 0.0597, weighted_loss: 0.0180, label: 6, bag_size: 761 
+
+batch 1399, loss: 0.1040, instance_loss: 0.1618, weighted_loss: 0.1214, label: 3, bag_size: 1067 
+
+batch 1499, loss: 0.0000, instance_loss: 0.2604, weighted_loss: 0.0781, label: 4, bag_size: 98 
+
+batch 1599, loss: 0.0001, instance_loss: 0.0700, weighted_loss: 0.0211, label: 3, bag_size: 2154 
+
+batch 1699, loss: 0.0071, instance_loss: 0.0983, weighted_loss: 0.0344, label: 4, bag_size: 685 
+
+batch 1799, loss: 0.0018, instance_loss: 0.1389, weighted_loss: 0.0429, label: 7, bag_size: 246 
+
+batch 1899, loss: 0.4801, instance_loss: 0.1374, weighted_loss: 0.3773, label: 6, bag_size: 113 
+
+batch 1999, loss: 0.0005, instance_loss: 0.0249, weighted_loss: 0.0078, label: 6, bag_size: 821 
+
+batch 2099, loss: 0.0149, instance_loss: 0.1237, weighted_loss: 0.0476, label: 3, bag_size: 187 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9947169190256748: correct 241756/243040
+
+class 1 clustering acc 0.3830069124423963: correct 6649/17360
+
+
+Epoch: 28, train_loss: 0.0908, train_clustering_loss:  0.1280
+
+class 0: acc 0.9166666666666666, correct 11/12 
+
+class 1: acc 0.9375, correct 30/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9748549323017408, correct 504/517 
+
+class 4: acc 0.9333333333333333, correct 140/150 
+
+class 5: acc 0.9565217391304348, correct 110/115 
+
+class 6: acc 0.9892601431980907, correct 829/838 
+
+class 7: acc 0.9558232931726908, correct 238/249 
+
+class 8: acc 0.9101123595505618, correct 81/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9393939393939394, correct 124/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 3.7733, auc: 0.6196 
+
+class 0 clustering acc 0.9902259199134199: correct 29279/29568 
+
+class 1 clustering acc 0.2315340909090909: correct 489/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.484375, correct 31/64 
+
+class 4: acc 0.2222222222222222, correct 4/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6442307692307693, correct 67/104 
+
+class 7: acc 0.36666666666666664, correct 11/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.3333333333333333, correct 1/3 
+
+Overall Accuracy: 0.4545
+
+Overall F1 Score: 0.2437
+
+Training for fine level...
+
+batch 99, loss: 0.0000, instance_loss: 0.1045, weighted_loss: 0.0314, label: 4, bag_size: 189 
+
+batch 199, loss: 0.0008, instance_loss: 0.0838, weighted_loss: 0.0257, label: 5, bag_size: 467 
+
+batch 299, loss: 0.0005, instance_loss: 0.0834, weighted_loss: 0.0254, label: 5, bag_size: 488 
+
+batch 399, loss: 0.0006, instance_loss: 0.0543, weighted_loss: 0.0167, label: 3, bag_size: 2692 
+
+batch 499, loss: 0.0000, instance_loss: 0.0251, weighted_loss: 0.0075, label: 6, bag_size: 473 
+
+batch 599, loss: 0.0152, instance_loss: 0.1531, weighted_loss: 0.0566, label: 6, bag_size: 375 
+
+batch 699, loss: 0.0001, instance_loss: 0.0919, weighted_loss: 0.0276, label: 6, bag_size: 253 
+
+batch 799, loss: 0.0001, instance_loss: 0.0086, weighted_loss: 0.0026, label: 6, bag_size: 381 
+
+batch 899, loss: 0.0000, instance_loss: 0.0776, weighted_loss: 0.0233, label: 3, bag_size: 531 
+
+batch 999, loss: 0.0002, instance_loss: 0.1698, weighted_loss: 0.0511, label: 4, bag_size: 2170 
+
+batch 1099, loss: 0.0005, instance_loss: 0.0712, weighted_loss: 0.0217, label: 6, bag_size: 587 
+
+batch 1199, loss: 0.0005, instance_loss: 0.2183, weighted_loss: 0.0659, label: 8, bag_size: 478 
+
+batch 1299, loss: 0.0046, instance_loss: 0.0601, weighted_loss: 0.0213, label: 6, bag_size: 225 
+
+batch 1399, loss: 0.1549, instance_loss: 0.1124, weighted_loss: 0.1422, label: 6, bag_size: 168 
+
+batch 1499, loss: 0.0199, instance_loss: 0.0530, weighted_loss: 0.0298, label: 6, bag_size: 794 
+
+batch 1599, loss: 0.0000, instance_loss: 0.0159, weighted_loss: 0.0048, label: 6, bag_size: 274 
+
+batch 1699, loss: 0.0001, instance_loss: 0.2079, weighted_loss: 0.0624, label: 3, bag_size: 666 
+
+batch 1799, loss: 0.0001, instance_loss: 0.0858, weighted_loss: 0.0258, label: 6, bag_size: 389 
+
+batch 1899, loss: 0.0000, instance_loss: 0.2288, weighted_loss: 0.0686, label: 1, bag_size: 220 
+
+batch 1999, loss: 0.0093, instance_loss: 0.2357, weighted_loss: 0.0773, label: 11, bag_size: 84 
+
+batch 2099, loss: 0.0006, instance_loss: 0.1460, weighted_loss: 0.0442, label: 0, bag_size: 37 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9946963462804477: correct 241751/243040
+
+class 1 clustering acc 0.3866359447004608: correct 6712/17360
+
+
+Epoch: 29, train_loss: 0.0730, train_clustering_loss:  0.1260
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9864603481624759, correct 510/517 
+
+class 4: acc 0.9533333333333334, correct 143/150 
+
+class 5: acc 0.991304347826087, correct 114/115 
+
+class 6: acc 0.9844868735083532, correct 825/838 
+
+class 7: acc 0.9799196787148594, correct 244/249 
+
+class 8: acc 0.9213483146067416, correct 82/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.946969696969697, correct 125/132 
+
+class 11: acc 0.9, correct 9/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9230769230769231, correct 24/26 
+
+
+Val Set, val_loss: 3.8344, auc: 0.6443 
+
+class 0 clustering acc 0.9901244588744589: correct 29276/29568 
+
+class 1 clustering acc 0.25142045454545453: correct 531/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.5625, correct 36/64 
+
+class 4: acc 0.16666666666666666, correct 3/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6538461538461539, correct 68/104 
+
+class 7: acc 0.2, correct 6/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4508
+
+Overall F1 Score: 0.1839
+
+Training for fine level...
+
+batch 99, loss: 0.0005, instance_loss: 0.0815, weighted_loss: 0.0248, label: 6, bag_size: 1058 
+
+batch 199, loss: 0.0000, instance_loss: 0.0871, weighted_loss: 0.0261, label: 6, bag_size: 888 
+
+batch 299, loss: 0.0203, instance_loss: 0.1051, weighted_loss: 0.0458, label: 3, bag_size: 270 
+
+batch 399, loss: 0.0001, instance_loss: 0.1227, weighted_loss: 0.0369, label: 7, bag_size: 509 
+
+batch 499, loss: 0.5132, instance_loss: 0.2938, weighted_loss: 0.4474, label: 6, bag_size: 921 
+
+batch 599, loss: 0.0000, instance_loss: 0.1541, weighted_loss: 0.0462, label: 10, bag_size: 22 
+
+batch 699, loss: 0.0059, instance_loss: 0.1507, weighted_loss: 0.0493, label: 4, bag_size: 356 
+
+batch 799, loss: 0.0000, instance_loss: 0.1255, weighted_loss: 0.0377, label: 10, bag_size: 756 
+
+batch 899, loss: 0.0056, instance_loss: 0.1556, weighted_loss: 0.0506, label: 10, bag_size: 338 
+
+batch 999, loss: 0.0002, instance_loss: 0.0888, weighted_loss: 0.0268, label: 5, bag_size: 897 
+
+batch 1099, loss: 0.0003, instance_loss: 0.1363, weighted_loss: 0.0411, label: 6, bag_size: 316 
+
+batch 1199, loss: 0.0000, instance_loss: 0.0820, weighted_loss: 0.0246, label: 6, bag_size: 735 
+
+batch 1299, loss: 0.3887, instance_loss: 0.1644, weighted_loss: 0.3214, label: 5, bag_size: 1460 
+
+batch 1399, loss: 0.0002, instance_loss: 0.0924, weighted_loss: 0.0278, label: 7, bag_size: 422 
+
+batch 1499, loss: 0.0110, instance_loss: 0.0319, weighted_loss: 0.0173, label: 6, bag_size: 789 
+
+batch 1599, loss: 0.0000, instance_loss: 0.1528, weighted_loss: 0.0459, label: 5, bag_size: 607 
+
+batch 1699, loss: 0.0242, instance_loss: 0.0585, weighted_loss: 0.0345, label: 6, bag_size: 287 
+
+batch 1799, loss: 0.0000, instance_loss: 0.0933, weighted_loss: 0.0280, label: 6, bag_size: 394 
+
+batch 1899, loss: 0.0068, instance_loss: 0.1436, weighted_loss: 0.0478, label: 6, bag_size: 1549 
+
+batch 1999, loss: 0.0110, instance_loss: 0.0627, weighted_loss: 0.0265, label: 3, bag_size: 480 
+
+batch 2099, loss: 0.0000, instance_loss: 0.0043, weighted_loss: 0.0013, label: 6, bag_size: 635 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9946058262014483: correct 241729/243040
+
+class 1 clustering acc 0.39233870967741935: correct 6811/17360
+
+
+Epoch: 30, train_loss: 0.0697, train_clustering_loss:  0.1262
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 1.0, correct 32/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9845261121856866, correct 509/517 
+
+class 4: acc 0.98, correct 147/150 
+
+class 5: acc 0.9739130434782609, correct 112/115 
+
+class 6: acc 0.9892601431980907, correct 829/838 
+
+class 7: acc 0.9799196787148594, correct 244/249 
+
+class 8: acc 0.9775280898876404, correct 87/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9621212121212122, correct 127/132 
+
+class 11: acc 0.9, correct 9/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 1.0, correct 26/26 
+
+
+Val Set, val_loss: 4.4809, auc: 0.5935 
+
+class 0 clustering acc 0.9877232142857143: correct 29205/29568 
+
+class 1 clustering acc 0.2760416666666667: correct 583/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.453125, correct 29/64 
+
+class 4: acc 0.16666666666666666, correct 3/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.7980769230769231, correct 83/104 
+
+class 7: acc 0.06666666666666667, correct 2/30 
+
+class 8: acc 0.1, correct 1/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.125, correct 2/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4583
+
+Overall F1 Score: 0.1587
+
+Training for fine level...
+
+batch 99, loss: 0.0921, instance_loss: 0.1662, weighted_loss: 0.1144, label: 3, bag_size: 186 
+
+batch 199, loss: 0.0495, instance_loss: 0.2375, weighted_loss: 0.1059, label: 3, bag_size: 2059 
+
+batch 299, loss: 0.0000, instance_loss: 0.0350, weighted_loss: 0.0105, label: 6, bag_size: 333 
+
+batch 399, loss: 0.0000, instance_loss: 0.0906, weighted_loss: 0.0272, label: 6, bag_size: 129 
+
+batch 499, loss: 0.0004, instance_loss: 0.0606, weighted_loss: 0.0184, label: 7, bag_size: 850 
+
+batch 599, loss: 0.0014, instance_loss: 0.1767, weighted_loss: 0.0540, label: 4, bag_size: 1223 
+
+batch 699, loss: 0.1899, instance_loss: 0.1278, weighted_loss: 0.1712, label: 3, bag_size: 1727 
+
+batch 799, loss: 0.0000, instance_loss: 0.0301, weighted_loss: 0.0090, label: 6, bag_size: 875 
+
+batch 899, loss: 0.0000, instance_loss: 0.0530, weighted_loss: 0.0159, label: 6, bag_size: 232 
+
+batch 999, loss: 0.0019, instance_loss: 0.1424, weighted_loss: 0.0441, label: 10, bag_size: 201 
+
+batch 1099, loss: 0.0000, instance_loss: 0.2220, weighted_loss: 0.0666, label: 13, bag_size: 829 
+
+batch 1199, loss: 0.0006, instance_loss: 0.2134, weighted_loss: 0.0644, label: 3, bag_size: 377 
+
+batch 1299, loss: 0.1185, instance_loss: 0.2763, weighted_loss: 0.1658, label: 8, bag_size: 452 
+
+batch 1399, loss: 0.0004, instance_loss: 0.0835, weighted_loss: 0.0253, label: 6, bag_size: 929 
+
+batch 1499, loss: 0.0000, instance_loss: 0.0114, weighted_loss: 0.0034, label: 6, bag_size: 495 
+
+batch 1599, loss: 0.0011, instance_loss: 0.0368, weighted_loss: 0.0118, label: 6, bag_size: 645 
+
+batch 1699, loss: 0.0025, instance_loss: 0.2059, weighted_loss: 0.0635, label: 3, bag_size: 394 
+
+batch 1799, loss: 0.0039, instance_loss: 0.0454, weighted_loss: 0.0163, label: 7, bag_size: 362 
+
+batch 1899, loss: 0.0012, instance_loss: 0.0715, weighted_loss: 0.0223, label: 3, bag_size: 1535 
+
+batch 1999, loss: 0.1071, instance_loss: 0.0648, weighted_loss: 0.0944, label: 6, bag_size: 574 
+
+batch 2099, loss: 1.2281, instance_loss: 0.2281, weighted_loss: 0.9281, label: 7, bag_size: 276 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9946181698485846: correct 241732/243040
+
+class 1 clustering acc 0.39711981566820276: correct 6894/17360
+
+
+Epoch: 31, train_loss: 0.0668, train_clustering_loss:  0.1261
+
+class 0: acc 0.9166666666666666, correct 11/12 
+
+class 1: acc 0.9375, correct 30/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9864603481624759, correct 510/517 
+
+class 4: acc 0.9533333333333334, correct 143/150 
+
+class 5: acc 0.9739130434782609, correct 112/115 
+
+class 6: acc 0.9856801909307876, correct 826/838 
+
+class 7: acc 0.9718875502008032, correct 242/249 
+
+class 8: acc 0.9775280898876404, correct 87/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.946969696969697, correct 125/132 
+
+class 11: acc 0.9, correct 9/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 3.9112, auc: 0.6069 
+
+class 0 clustering acc 0.9911390692640693: correct 29306/29568 
+
+class 1 clustering acc 0.2324810606060606: correct 491/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.40625, correct 26/64 
+
+class 4: acc 0.2222222222222222, correct 4/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6826923076923077, correct 71/104 
+
+class 7: acc 0.3, correct 9/30 
+
+class 8: acc 0.5, correct 5/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4432
+
+Overall F1 Score: 0.2011
+
+Training for fine level...
+
+batch 99, loss: 0.0070, instance_loss: 0.0474, weighted_loss: 0.0191, label: 3, bag_size: 873 
+
+batch 199, loss: 0.0002, instance_loss: 0.1471, weighted_loss: 0.0443, label: 6, bag_size: 243 
+
+batch 299, loss: 0.0003, instance_loss: 0.0547, weighted_loss: 0.0166, label: 6, bag_size: 636 
+
+batch 399, loss: 0.0000, instance_loss: 0.0364, weighted_loss: 0.0109, label: 3, bag_size: 1323 
+
+batch 499, loss: 0.0018, instance_loss: 0.1352, weighted_loss: 0.0418, label: 3, bag_size: 975 
+
+batch 599, loss: 0.0000, instance_loss: 0.1172, weighted_loss: 0.0352, label: 3, bag_size: 568 
+
+batch 699, loss: 0.0000, instance_loss: 0.0188, weighted_loss: 0.0056, label: 6, bag_size: 208 
+
+batch 799, loss: 0.0019, instance_loss: 0.1657, weighted_loss: 0.0511, label: 7, bag_size: 352 
+
+batch 899, loss: 0.0011, instance_loss: 0.0190, weighted_loss: 0.0065, label: 6, bag_size: 563 
+
+batch 999, loss: 0.0100, instance_loss: 0.1397, weighted_loss: 0.0489, label: 6, bag_size: 621 
+
+batch 1099, loss: 0.0001, instance_loss: 0.1230, weighted_loss: 0.0370, label: 6, bag_size: 667 
+
+batch 1199, loss: 0.0000, instance_loss: 0.0172, weighted_loss: 0.0052, label: 6, bag_size: 246 
+
+batch 1299, loss: 0.0005, instance_loss: 0.0747, weighted_loss: 0.0227, label: 3, bag_size: 2086 
+
+batch 1399, loss: 0.0000, instance_loss: 0.1686, weighted_loss: 0.0506, label: 3, bag_size: 1860 
+
+batch 1499, loss: 0.0120, instance_loss: 0.0918, weighted_loss: 0.0359, label: 6, bag_size: 576 
+
+batch 1599, loss: 0.0023, instance_loss: 0.1521, weighted_loss: 0.0472, label: 6, bag_size: 106 
+
+batch 1699, loss: 0.0091, instance_loss: 0.2155, weighted_loss: 0.0710, label: 7, bag_size: 266 
+
+batch 1799, loss: 0.0000, instance_loss: 0.0031, weighted_loss: 0.0009, label: 6, bag_size: 290 
+
+batch 1899, loss: 0.0086, instance_loss: 0.1929, weighted_loss: 0.0639, label: 10, bag_size: 383 
+
+batch 1999, loss: 0.0003, instance_loss: 0.0716, weighted_loss: 0.0217, label: 1, bag_size: 119 
+
+batch 2099, loss: 0.0000, instance_loss: 0.0860, weighted_loss: 0.0258, label: 7, bag_size: 483 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.994593482554312: correct 241726/243040
+
+class 1 clustering acc 0.4015552995391705: correct 6971/17360
+
+
+Epoch: 32, train_loss: 0.0563, train_clustering_loss:  0.1254
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 1.0, correct 32/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9864603481624759, correct 510/517 
+
+class 4: acc 0.9866666666666667, correct 148/150 
+
+class 5: acc 0.9739130434782609, correct 112/115 
+
+class 6: acc 0.9821002386634845, correct 823/838 
+
+class 7: acc 0.9839357429718876, correct 245/249 
+
+class 8: acc 0.9325842696629213, correct 83/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9772727272727273, correct 129/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 4.1229, auc: 0.6298 
+
+class 0 clustering acc 0.9925595238095238: correct 29348/29568 
+
+class 1 clustering acc 0.21354166666666666: correct 451/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.390625, correct 25/64 
+
+class 4: acc 0.2777777777777778, correct 5/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.6730769230769231, correct 70/104 
+
+class 7: acc 0.3, correct 9/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.25, correct 4/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4432
+
+Overall F1 Score: 0.2035
+
+Training for fine level...
+
+batch 99, loss: 0.0001, instance_loss: 0.0589, weighted_loss: 0.0177, label: 6, bag_size: 216 
+
+batch 199, loss: 0.0059, instance_loss: 0.0637, weighted_loss: 0.0232, label: 3, bag_size: 1744 
+
+batch 299, loss: 0.0000, instance_loss: 0.1570, weighted_loss: 0.0471, label: 4, bag_size: 347 
+
+batch 399, loss: 0.0199, instance_loss: 0.1116, weighted_loss: 0.0474, label: 6, bag_size: 115 
+
+batch 499, loss: 0.0015, instance_loss: 0.2222, weighted_loss: 0.0677, label: 7, bag_size: 589 
+
+batch 599, loss: 0.0023, instance_loss: 0.1365, weighted_loss: 0.0426, label: 6, bag_size: 108 
+
+batch 699, loss: 0.0000, instance_loss: 0.0939, weighted_loss: 0.0282, label: 3, bag_size: 379 
+
+batch 799, loss: 0.0001, instance_loss: 0.1499, weighted_loss: 0.0450, label: 3, bag_size: 471 
+
+batch 899, loss: 0.0013, instance_loss: 0.0986, weighted_loss: 0.0305, label: 5, bag_size: 897 
+
+batch 999, loss: 0.0000, instance_loss: 0.1945, weighted_loss: 0.0584, label: 3, bag_size: 356 
+
+batch 1099, loss: 0.0011, instance_loss: 0.2265, weighted_loss: 0.0687, label: 10, bag_size: 328 
+
+batch 1199, loss: 0.0054, instance_loss: 0.1468, weighted_loss: 0.0478, label: 1, bag_size: 198 
+
+batch 1299, loss: 0.0016, instance_loss: 0.1832, weighted_loss: 0.0561, label: 7, bag_size: 687 
+
+batch 1399, loss: 0.0017, instance_loss: 0.0717, weighted_loss: 0.0227, label: 6, bag_size: 808 
+
+batch 1499, loss: 0.0109, instance_loss: 0.1649, weighted_loss: 0.0571, label: 4, bag_size: 749 
+
+batch 1599, loss: 0.0000, instance_loss: 0.0336, weighted_loss: 0.0101, label: 6, bag_size: 1015 
+
+batch 1699, loss: 0.0001, instance_loss: 0.0467, weighted_loss: 0.0140, label: 6, bag_size: 1140 
+
+batch 1799, loss: 0.0000, instance_loss: 0.0109, weighted_loss: 0.0033, label: 6, bag_size: 559 
+
+batch 1899, loss: 0.0002, instance_loss: 0.0296, weighted_loss: 0.0090, label: 6, bag_size: 318 
+
+batch 1999, loss: 0.0034, instance_loss: 0.1560, weighted_loss: 0.0492, label: 6, bag_size: 677 
+
+batch 2099, loss: 0.0000, instance_loss: 0.1987, weighted_loss: 0.0596, label: 3, bag_size: 746 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9948568136932192: correct 241790/243040
+
+class 1 clustering acc 0.4054723502304147: correct 7039/17360
+
+
+Epoch: 33, train_loss: 0.0563, train_clustering_loss:  0.1240
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9845261121856866, correct 509/517 
+
+class 4: acc 0.9666666666666667, correct 145/150 
+
+class 5: acc 1.0, correct 115/115 
+
+class 6: acc 0.9844868735083532, correct 825/838 
+
+class 7: acc 0.9678714859437751, correct 241/249 
+
+class 8: acc 0.9775280898876404, correct 87/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 1.0, correct 132/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 4.5766, auc: 0.6273 
+
+class 0 clustering acc 0.9873850108225108: correct 29195/29568 
+
+class 1 clustering acc 0.2708333333333333: correct 572/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.546875, correct 35/64 
+
+class 4: acc 0.05555555555555555, correct 1/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.7692307692307693, correct 80/104 
+
+class 7: acc 0.1, correct 3/30 
+
+class 8: acc 0.1, correct 1/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.125, correct 2/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4659
+
+Overall F1 Score: 0.1585
+
+Training for fine level...
+
+batch 99, loss: 0.0000, instance_loss: 0.0788, weighted_loss: 0.0236, label: 6, bag_size: 403 
+
+batch 199, loss: 0.0056, instance_loss: 0.2059, weighted_loss: 0.0657, label: 7, bag_size: 802 
+
+batch 299, loss: 0.0000, instance_loss: 0.1508, weighted_loss: 0.0453, label: 6, bag_size: 228 
+
+batch 399, loss: 0.0708, instance_loss: 0.2158, weighted_loss: 0.1143, label: 4, bag_size: 749 
+
+batch 499, loss: 0.0001, instance_loss: 0.0345, weighted_loss: 0.0104, label: 6, bag_size: 1049 
+
+batch 599, loss: 0.0014, instance_loss: 0.1408, weighted_loss: 0.0432, label: 3, bag_size: 927 
+
+batch 699, loss: 0.0006, instance_loss: 0.1041, weighted_loss: 0.0317, label: 6, bag_size: 369 
+
+batch 799, loss: 0.0841, instance_loss: 0.1553, weighted_loss: 0.1055, label: 10, bag_size: 710 
+
+batch 899, loss: 0.0139, instance_loss: 0.3017, weighted_loss: 0.1003, label: 1, bag_size: 260 
+
+batch 999, loss: 0.0025, instance_loss: 0.2634, weighted_loss: 0.0808, label: 3, bag_size: 622 
+
+batch 1099, loss: 0.0000, instance_loss: 0.1019, weighted_loss: 0.0306, label: 6, bag_size: 1222 
+
+batch 1199, loss: 0.0000, instance_loss: 0.0495, weighted_loss: 0.0148, label: 3, bag_size: 309 
+
+batch 1299, loss: 0.0034, instance_loss: 0.1890, weighted_loss: 0.0591, label: 7, bag_size: 926 
+
+batch 1399, loss: 0.0027, instance_loss: 0.0349, weighted_loss: 0.0124, label: 3, bag_size: 941 
+
+batch 1499, loss: 0.0101, instance_loss: 0.1310, weighted_loss: 0.0464, label: 6, bag_size: 471 
+
+batch 1599, loss: 0.0000, instance_loss: 0.1648, weighted_loss: 0.0495, label: 7, bag_size: 896 
+
+batch 1699, loss: 0.0000, instance_loss: 0.0804, weighted_loss: 0.0242, label: 7, bag_size: 201 
+
+batch 1799, loss: 0.0002, instance_loss: 0.0564, weighted_loss: 0.0170, label: 3, bag_size: 2213 
+
+batch 1899, loss: 0.0030, instance_loss: 0.1638, weighted_loss: 0.0512, label: 6, bag_size: 890 
+
+batch 1999, loss: 0.0000, instance_loss: 0.0381, weighted_loss: 0.0114, label: 3, bag_size: 298 
+
+batch 2099, loss: 0.0629, instance_loss: 0.1253, weighted_loss: 0.0816, label: 3, bag_size: 1981 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9946387425938117: correct 241737/243040
+
+class 1 clustering acc 0.3965437788018433: correct 6884/17360
+
+
+Epoch: 34, train_loss: 0.0482, train_clustering_loss:  0.1265
+
+class 0: acc 0.9166666666666666, correct 11/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9864603481624759, correct 510/517 
+
+class 4: acc 0.9733333333333334, correct 146/150 
+
+class 5: acc 0.9739130434782609, correct 112/115 
+
+class 6: acc 0.9952267303102625, correct 834/838 
+
+class 7: acc 0.9759036144578314, correct 243/249 
+
+class 8: acc 0.9662921348314607, correct 86/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9848484848484849, correct 130/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 1.0, correct 26/26 
+
+
+Val Set, val_loss: 4.1814, auc: 0.6331 
+
+class 0 clustering acc 0.9912405303030303: correct 29309/29568 
+
+class 1 clustering acc 0.23390151515151514: correct 494/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.4375, correct 28/64 
+
+class 4: acc 0.3333333333333333, correct 6/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.7115384615384616, correct 74/104 
+
+class 7: acc 0.3, correct 9/30 
+
+class 8: acc 0.1, correct 1/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4621
+
+Overall F1 Score: 0.1948
+
+Training for fine level...
+
+batch 99, loss: 0.0309, instance_loss: 0.2174, weighted_loss: 0.0868, label: 11, bag_size: 464 
+
+batch 199, loss: 0.0000, instance_loss: 0.0117, weighted_loss: 0.0035, label: 3, bag_size: 1189 
+
+batch 299, loss: 0.9023, instance_loss: 0.1925, weighted_loss: 0.6893, label: 7, bag_size: 328 
+
+batch 399, loss: 0.0246, instance_loss: 0.0707, weighted_loss: 0.0384, label: 6, bag_size: 601 
+
+batch 499, loss: 0.3713, instance_loss: 0.2092, weighted_loss: 0.3226, label: 4, bag_size: 483 
+
+batch 599, loss: 0.0003, instance_loss: 0.1822, weighted_loss: 0.0549, label: 3, bag_size: 447 
+
+batch 699, loss: 0.0011, instance_loss: 0.1309, weighted_loss: 0.0400, label: 3, bag_size: 167 
+
+batch 799, loss: 0.0437, instance_loss: 0.1323, weighted_loss: 0.0702, label: 6, bag_size: 620 
+
+batch 899, loss: 0.0849, instance_loss: 0.4482, weighted_loss: 0.1939, label: 4, bag_size: 486 
+
+batch 999, loss: 0.0125, instance_loss: 0.1392, weighted_loss: 0.0505, label: 4, bag_size: 1692 
+
+batch 1099, loss: 0.0002, instance_loss: 0.0261, weighted_loss: 0.0080, label: 6, bag_size: 323 
+
+batch 1199, loss: 0.0004, instance_loss: 0.0408, weighted_loss: 0.0125, label: 6, bag_size: 209 
+
+batch 1299, loss: 0.0000, instance_loss: 0.2134, weighted_loss: 0.0640, label: 1, bag_size: 207 
+
+batch 1399, loss: 0.0028, instance_loss: 0.2035, weighted_loss: 0.0630, label: 4, bag_size: 427 
+
+batch 1499, loss: 0.0006, instance_loss: 0.1010, weighted_loss: 0.0307, label: 6, bag_size: 718 
+
+batch 1599, loss: 0.0016, instance_loss: 0.1886, weighted_loss: 0.0577, label: 3, bag_size: 78 
+
+batch 1699, loss: 0.0006, instance_loss: 0.2027, weighted_loss: 0.0612, label: 8, bag_size: 868 
+
+batch 1799, loss: 0.0000, instance_loss: 0.0365, weighted_loss: 0.0109, label: 5, bag_size: 847 
+
+batch 1899, loss: 0.0033, instance_loss: 0.1528, weighted_loss: 0.0482, label: 6, bag_size: 770 
+
+batch 1999, loss: 0.0002, instance_loss: 0.0581, weighted_loss: 0.0176, label: 6, bag_size: 310 
+
+batch 2099, loss: 0.0018, instance_loss: 0.1296, weighted_loss: 0.0401, label: 7, bag_size: 1836 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9945605661619487: correct 241718/243040
+
+class 1 clustering acc 0.39349078341013827: correct 6831/17360
+
+
+Epoch: 35, train_loss: 0.0651, train_clustering_loss:  0.1265
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 1.0, correct 32/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9748549323017408, correct 504/517 
+
+class 4: acc 0.9866666666666667, correct 148/150 
+
+class 5: acc 0.991304347826087, correct 114/115 
+
+class 6: acc 0.986873508353222, correct 827/838 
+
+class 7: acc 0.9598393574297188, correct 239/249 
+
+class 8: acc 0.9550561797752809, correct 85/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9621212121212122, correct 127/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 1.0, correct 26/26 
+
+
+Val Set, val_loss: 4.5984, auc: 0.6242 
+
+class 0 clustering acc 0.9908008658008658: correct 29296/29568 
+
+class 1 clustering acc 0.22821969696969696: correct 482/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.46875, correct 30/64 
+
+class 4: acc 0.1111111111111111, correct 2/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.6826923076923077, correct 71/104 
+
+class 7: acc 0.16666666666666666, correct 5/30 
+
+class 8: acc 0.1, correct 1/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.125, correct 2/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4280
+
+Overall F1 Score: 0.1658
+
+Training for fine level...
+
+batch 99, loss: 0.0001, instance_loss: 0.1556, weighted_loss: 0.0467, label: 6, bag_size: 2114 
+
+batch 199, loss: 0.0000, instance_loss: 0.0472, weighted_loss: 0.0142, label: 3, bag_size: 298 
+
+batch 299, loss: 0.0000, instance_loss: 0.0294, weighted_loss: 0.0088, label: 6, bag_size: 679 
+
+batch 399, loss: 0.0000, instance_loss: 0.1516, weighted_loss: 0.0455, label: 4, bag_size: 570 
+
+batch 499, loss: 0.0004, instance_loss: 0.3085, weighted_loss: 0.0928, label: 8, bag_size: 901 
+
+batch 599, loss: 0.0001, instance_loss: 0.1013, weighted_loss: 0.0305, label: 3, bag_size: 673 
+
+batch 699, loss: 0.0000, instance_loss: 0.0448, weighted_loss: 0.0135, label: 6, bag_size: 308 
+
+batch 799, loss: 0.0003, instance_loss: 0.0647, weighted_loss: 0.0196, label: 6, bag_size: 1217 
+
+batch 899, loss: 0.0027, instance_loss: 0.1832, weighted_loss: 0.0568, label: 5, bag_size: 2219 
+
+batch 999, loss: 0.0005, instance_loss: 0.2307, weighted_loss: 0.0696, label: 7, bag_size: 298 
+
+batch 1099, loss: 0.0002, instance_loss: 0.1403, weighted_loss: 0.0422, label: 8, bag_size: 179 
+
+batch 1199, loss: 0.1102, instance_loss: 0.2739, weighted_loss: 0.1593, label: 5, bag_size: 37 
+
+batch 1299, loss: 0.0009, instance_loss: 0.2482, weighted_loss: 0.0751, label: 5, bag_size: 1061 
+
+batch 1399, loss: 0.0000, instance_loss: 0.0114, weighted_loss: 0.0034, label: 6, bag_size: 987 
+
+batch 1499, loss: 0.0002, instance_loss: 0.1745, weighted_loss: 0.0525, label: 3, bag_size: 258 
+
+batch 1599, loss: 0.0001, instance_loss: 0.1236, weighted_loss: 0.0371, label: 3, bag_size: 381 
+
+batch 1699, loss: 0.0267, instance_loss: 0.2203, weighted_loss: 0.0848, label: 6, bag_size: 1364 
+
+batch 1799, loss: 0.0048, instance_loss: 0.0679, weighted_loss: 0.0237, label: 6, bag_size: 341 
+
+batch 1899, loss: 0.0096, instance_loss: 0.1148, weighted_loss: 0.0411, label: 1, bag_size: 101 
+
+batch 1999, loss: 0.0000, instance_loss: 0.2539, weighted_loss: 0.0762, label: 1, bag_size: 1452 
+
+batch 2099, loss: 0.0001, instance_loss: 0.0169, weighted_loss: 0.0052, label: 6, bag_size: 336 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9945482225148123: correct 241715/243040
+
+class 1 clustering acc 0.4021889400921659: correct 6982/17360
+
+
+Epoch: 36, train_loss: 0.0424, train_clustering_loss:  0.1252
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9922630560928434, correct 513/517 
+
+class 4: acc 0.9866666666666667, correct 148/150 
+
+class 5: acc 1.0, correct 115/115 
+
+class 6: acc 0.9892601431980907, correct 829/838 
+
+class 7: acc 0.9799196787148594, correct 244/249 
+
+class 8: acc 0.9662921348314607, correct 86/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9772727272727273, correct 129/132 
+
+class 11: acc 0.9, correct 9/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 4.5700, auc: 0.5932 
+
+class 0 clustering acc 0.9889407467532467: correct 29241/29568 
+
+class 1 clustering acc 0.25946969696969696: correct 548/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.5, correct 32/64 
+
+class 4: acc 0.1111111111111111, correct 2/18 
+
+class 5: acc 0.0, correct 0/14 
+
+class 6: acc 0.6730769230769231, correct 70/104 
+
+class 7: acc 0.23333333333333334, correct 7/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4394
+
+Overall F1 Score: 0.1698
+
+Training for fine level...
+
+batch 99, loss: 1.7676, instance_loss: 0.1627, weighted_loss: 1.2862, label: 3, bag_size: 1860 
+
+batch 199, loss: 0.0260, instance_loss: 0.2896, weighted_loss: 0.1051, label: 5, bag_size: 1061 
+
+batch 299, loss: 0.0000, instance_loss: 0.1548, weighted_loss: 0.0465, label: 5, bag_size: 244 
+
+batch 399, loss: 0.0000, instance_loss: 0.1335, weighted_loss: 0.0401, label: 4, bag_size: 410 
+
+batch 499, loss: 0.0000, instance_loss: 0.1430, weighted_loss: 0.0429, label: 3, bag_size: 566 
+
+batch 599, loss: 0.0888, instance_loss: 0.1259, weighted_loss: 0.0999, label: 6, bag_size: 376 
+
+batch 699, loss: 2.6714, instance_loss: 0.1395, weighted_loss: 1.9119, label: 3, bag_size: 305 
+
+batch 799, loss: 0.0001, instance_loss: 0.0636, weighted_loss: 0.0191, label: 6, bag_size: 274 
+
+batch 899, loss: 0.1460, instance_loss: 0.3157, weighted_loss: 0.1969, label: 4, bag_size: 298 
+
+batch 999, loss: 0.0000, instance_loss: 0.0411, weighted_loss: 0.0123, label: 3, bag_size: 1323 
+
+batch 1099, loss: 0.0000, instance_loss: 0.0125, weighted_loss: 0.0038, label: 6, bag_size: 518 
+
+batch 1199, loss: 0.0118, instance_loss: 0.1632, weighted_loss: 0.0572, label: 7, bag_size: 389 
+
+batch 1299, loss: 0.0004, instance_loss: 0.0965, weighted_loss: 0.0293, label: 6, bag_size: 206 
+
+batch 1399, loss: 0.0005, instance_loss: 0.0966, weighted_loss: 0.0293, label: 6, bag_size: 344 
+
+batch 1499, loss: 0.0008, instance_loss: 0.1520, weighted_loss: 0.0462, label: 3, bag_size: 517 
+
+batch 1599, loss: 0.0000, instance_loss: 0.0354, weighted_loss: 0.0106, label: 6, bag_size: 475 
+
+batch 1699, loss: 0.0000, instance_loss: 0.0344, weighted_loss: 0.0103, label: 6, bag_size: 844 
+
+batch 1799, loss: 0.0848, instance_loss: 0.1811, weighted_loss: 0.1137, label: 3, bag_size: 575 
+
+batch 1899, loss: 0.0038, instance_loss: 0.1317, weighted_loss: 0.0422, label: 6, bag_size: 270 
+
+batch 1999, loss: 0.0002, instance_loss: 0.2080, weighted_loss: 0.0625, label: 8, bag_size: 417 
+
+batch 2099, loss: 0.0357, instance_loss: 0.1371, weighted_loss: 0.0661, label: 6, bag_size: 304 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9945029624753127: correct 241704/243040
+
+class 1 clustering acc 0.40184331797235023: correct 6976/17360
+
+
+Epoch: 37, train_loss: 0.0762, train_clustering_loss:  0.1259
+
+class 0: acc 0.9166666666666666, correct 11/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9787234042553191, correct 506/517 
+
+class 4: acc 0.9533333333333334, correct 143/150 
+
+class 5: acc 0.991304347826087, correct 114/115 
+
+class 6: acc 0.9844868735083532, correct 825/838 
+
+class 7: acc 0.9518072289156626, correct 237/249 
+
+class 8: acc 0.9325842696629213, correct 83/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9924242424242424, correct 131/132 
+
+class 11: acc 0.9, correct 9/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 4.3068, auc: 0.6457 
+
+class 0 clustering acc 0.9891436688311688: correct 29247/29568 
+
+class 1 clustering acc 0.25047348484848486: correct 529/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.421875, correct 27/64 
+
+class 4: acc 0.1111111111111111, correct 2/18 
+
+class 5: acc 0.2857142857142857, correct 4/14 
+
+class 6: acc 0.7307692307692307, correct 76/104 
+
+class 7: acc 0.23333333333333334, correct 7/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4508
+
+Overall F1 Score: 0.1898
+
+Training for fine level...
+
+batch 99, loss: 0.0007, instance_loss: 0.0764, weighted_loss: 0.0234, label: 3, bag_size: 65 
+
+batch 199, loss: 0.0345, instance_loss: 0.2613, weighted_loss: 0.1025, label: 1, bag_size: 220 
+
+batch 299, loss: 0.0001, instance_loss: 0.0940, weighted_loss: 0.0283, label: 6, bag_size: 216 
+
+batch 399, loss: 0.0016, instance_loss: 0.2195, weighted_loss: 0.0669, label: 3, bag_size: 339 
+
+batch 499, loss: 0.0090, instance_loss: 0.1209, weighted_loss: 0.0426, label: 7, bag_size: 267 
+
+batch 599, loss: 0.0003, instance_loss: 0.1355, weighted_loss: 0.0409, label: 6, bag_size: 333 
+
+batch 699, loss: 0.0073, instance_loss: 0.3860, weighted_loss: 0.1209, label: 3, bag_size: 738 
+
+batch 799, loss: 0.0000, instance_loss: 0.0893, weighted_loss: 0.0268, label: 6, bag_size: 235 
+
+batch 899, loss: 0.0000, instance_loss: 0.0671, weighted_loss: 0.0201, label: 6, bag_size: 605 
+
+batch 999, loss: 0.0000, instance_loss: 0.1820, weighted_loss: 0.0546, label: 3, bag_size: 983 
+
+batch 1099, loss: 0.0208, instance_loss: 0.2674, weighted_loss: 0.0948, label: 7, bag_size: 243 
+
+batch 1199, loss: 0.0014, instance_loss: 0.0570, weighted_loss: 0.0181, label: 3, bag_size: 457 
+
+batch 1299, loss: 0.0013, instance_loss: 0.1655, weighted_loss: 0.0506, label: 4, bag_size: 953 
+
+batch 1399, loss: 0.1655, instance_loss: 0.1345, weighted_loss: 0.1562, label: 6, bag_size: 463 
+
+batch 1499, loss: 0.0000, instance_loss: 0.0709, weighted_loss: 0.0213, label: 7, bag_size: 290 
+
+batch 1599, loss: 0.0015, instance_loss: 0.0566, weighted_loss: 0.0180, label: 3, bag_size: 1211 
+
+batch 1699, loss: 0.0000, instance_loss: 0.0572, weighted_loss: 0.0171, label: 6, bag_size: 714 
+
+batch 1799, loss: 0.0102, instance_loss: 0.1170, weighted_loss: 0.0422, label: 3, bag_size: 119 
+
+batch 1899, loss: 0.0000, instance_loss: 0.2150, weighted_loss: 0.0645, label: 7, bag_size: 497 
+
+batch 1999, loss: 0.0001, instance_loss: 0.0699, weighted_loss: 0.0210, label: 7, bag_size: 850 
+
+batch 2099, loss: 0.0002, instance_loss: 0.0456, weighted_loss: 0.0138, label: 6, bag_size: 712 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9949185319289006: correct 241805/243040
+
+class 1 clustering acc 0.41025345622119813: correct 7122/17360
+
+
+Epoch: 38, train_loss: 0.0411, train_clustering_loss:  0.1220
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 1.0, correct 32/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9845261121856866, correct 509/517 
+
+class 4: acc 0.9933333333333333, correct 149/150 
+
+class 5: acc 0.9739130434782609, correct 112/115 
+
+class 6: acc 0.9880668257756563, correct 828/838 
+
+class 7: acc 0.963855421686747, correct 240/249 
+
+class 8: acc 1.0, correct 89/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9772727272727273, correct 129/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 1.0, correct 26/26 
+
+
+Val Set, val_loss: 4.5363, auc: 0.6148 
+
+class 0 clustering acc 0.9875879329004329: correct 29201/29568 
+
+class 1 clustering acc 0.26136363636363635: correct 552/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.453125, correct 29/64 
+
+class 4: acc 0.05555555555555555, correct 1/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6153846153846154, correct 64/104 
+
+class 7: acc 0.36666666666666664, correct 11/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4205
+
+Overall F1 Score: 0.1745
+
+Training for fine level...
+
+batch 99, loss: 0.0000, instance_loss: 0.0820, weighted_loss: 0.0246, label: 6, bag_size: 521 
+
+batch 199, loss: 0.0988, instance_loss: 0.1540, weighted_loss: 0.1153, label: 7, bag_size: 1479 
+
+batch 299, loss: 0.0000, instance_loss: 0.0636, weighted_loss: 0.0191, label: 6, bag_size: 326 
+
+batch 399, loss: 0.0000, instance_loss: 0.0399, weighted_loss: 0.0120, label: 6, bag_size: 532 
+
+batch 499, loss: 0.0002, instance_loss: 0.2018, weighted_loss: 0.0607, label: 5, bag_size: 168 
+
+batch 599, loss: 0.0000, instance_loss: 0.0791, weighted_loss: 0.0237, label: 3, bag_size: 1616 
+
+batch 699, loss: 0.0061, instance_loss: 0.1246, weighted_loss: 0.0417, label: 13, bag_size: 574 
+
+batch 799, loss: 0.0148, instance_loss: 0.2087, weighted_loss: 0.0730, label: 10, bag_size: 333 
+
+batch 899, loss: 0.0000, instance_loss: 0.0992, weighted_loss: 0.0298, label: 7, bag_size: 346 
+
+batch 999, loss: 0.0029, instance_loss: 0.1423, weighted_loss: 0.0447, label: 3, bag_size: 190 
+
+batch 1099, loss: 0.0000, instance_loss: 0.0964, weighted_loss: 0.0289, label: 10, bag_size: 1274 
+
+batch 1199, loss: 0.0000, instance_loss: 0.0297, weighted_loss: 0.0089, label: 6, bag_size: 619 
+
+batch 1299, loss: 0.0000, instance_loss: 0.1848, weighted_loss: 0.0555, label: 5, bag_size: 287 
+
+batch 1399, loss: 0.0001, instance_loss: 0.1867, weighted_loss: 0.0561, label: 6, bag_size: 489 
+
+batch 1499, loss: 0.0000, instance_loss: 0.0406, weighted_loss: 0.0122, label: 6, bag_size: 643 
+
+batch 1599, loss: 0.0000, instance_loss: 0.0621, weighted_loss: 0.0186, label: 6, bag_size: 605 
+
+batch 1699, loss: 0.0252, instance_loss: 0.0806, weighted_loss: 0.0418, label: 6, bag_size: 366 
+
+batch 1799, loss: 0.0041, instance_loss: 0.1316, weighted_loss: 0.0423, label: 7, bag_size: 1064 
+
+batch 1899, loss: 0.0000, instance_loss: 0.1847, weighted_loss: 0.0554, label: 10, bag_size: 344 
+
+batch 1999, loss: 0.0000, instance_loss: 0.0322, weighted_loss: 0.0097, label: 3, bag_size: 457 
+
+batch 2099, loss: 0.1065, instance_loss: 0.1268, weighted_loss: 0.1126, label: 10, bag_size: 710 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9945605661619487: correct 241718/243040
+
+class 1 clustering acc 0.4063364055299539: correct 7054/17360
+
+
+Epoch: 39, train_loss: 0.0556, train_clustering_loss:  0.1251
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 1.0, correct 32/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9825918762088974, correct 508/517 
+
+class 4: acc 0.9666666666666667, correct 145/150 
+
+class 5: acc 0.991304347826087, correct 114/115 
+
+class 6: acc 0.9892601431980907, correct 829/838 
+
+class 7: acc 0.9718875502008032, correct 242/249 
+
+class 8: acc 1.0, correct 89/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9772727272727273, correct 129/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9230769230769231, correct 24/26 
+
+
+Val Set, val_loss: 4.4993, auc: 0.6313 
+
+class 0 clustering acc 0.9897862554112554: correct 29266/29568 
+
+class 1 clustering acc 0.24431818181818182: correct 516/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.515625, correct 33/64 
+
+class 4: acc 0.05555555555555555, correct 1/18 
+
+class 5: acc 0.21428571428571427, correct 3/14 
+
+class 6: acc 0.6730769230769231, correct 70/104 
+
+class 7: acc 0.23333333333333334, correct 7/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4508
+
+Overall F1 Score: 0.1892
+
+Training for fine level...
+
+batch 99, loss: 0.0000, instance_loss: 0.0992, weighted_loss: 0.0298, label: 6, bag_size: 339 
+
+batch 199, loss: 0.8216, instance_loss: 0.1942, weighted_loss: 0.6334, label: 5, bag_size: 88 
+
+batch 299, loss: 0.0019, instance_loss: 0.2255, weighted_loss: 0.0690, label: 5, bag_size: 308 
+
+batch 399, loss: 0.0000, instance_loss: 0.1211, weighted_loss: 0.0363, label: 3, bag_size: 848 
+
+batch 499, loss: 0.0001, instance_loss: 0.0857, weighted_loss: 0.0258, label: 5, bag_size: 836 
+
+batch 599, loss: 0.0000, instance_loss: 0.0031, weighted_loss: 0.0009, label: 6, bag_size: 432 
+
+batch 699, loss: 0.0000, instance_loss: 0.0934, weighted_loss: 0.0280, label: 3, bag_size: 1124 
+
+batch 799, loss: 0.0040, instance_loss: 0.1757, weighted_loss: 0.0555, label: 7, bag_size: 435 
+
+batch 899, loss: 0.0255, instance_loss: 0.1569, weighted_loss: 0.0649, label: 1, bag_size: 153 
+
+batch 999, loss: 0.0002, instance_loss: 0.1751, weighted_loss: 0.0526, label: 3, bag_size: 1009 
+
+batch 1099, loss: 0.0000, instance_loss: 0.1519, weighted_loss: 0.0456, label: 3, bag_size: 209 
+
+batch 1199, loss: 0.0019, instance_loss: 0.1217, weighted_loss: 0.0379, label: 6, bag_size: 393 
+
+batch 1299, loss: 0.0018, instance_loss: 0.1543, weighted_loss: 0.0475, label: 3, bag_size: 696 
+
+batch 1399, loss: 0.0011, instance_loss: 0.2060, weighted_loss: 0.0625, label: 8, bag_size: 118 
+
+batch 1499, loss: 0.0038, instance_loss: 0.1150, weighted_loss: 0.0372, label: 6, bag_size: 259 
+
+batch 1599, loss: 0.0135, instance_loss: 0.1544, weighted_loss: 0.0558, label: 4, bag_size: 1692 
+
+batch 1699, loss: 0.1243, instance_loss: 0.2281, weighted_loss: 0.1555, label: 10, bag_size: 558 
+
+batch 1799, loss: 0.0007, instance_loss: 0.2003, weighted_loss: 0.0606, label: 3, bag_size: 965 
+
+batch 1899, loss: 0.0075, instance_loss: 0.1820, weighted_loss: 0.0599, label: 5, bag_size: 1181 
+
+batch 1999, loss: 0.0034, instance_loss: 0.0842, weighted_loss: 0.0277, label: 7, bag_size: 519 
+
+batch 2099, loss: 3.3821, instance_loss: 0.2583, weighted_loss: 2.4450, label: 8, bag_size: 628 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9945111915734035: correct 241706/243040
+
+class 1 clustering acc 0.40213133640552995: correct 6981/17360
+
+
+Epoch: 40, train_loss: 0.0729, train_clustering_loss:  0.1262
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9787234042553191, correct 506/517 
+
+class 4: acc 0.9666666666666667, correct 145/150 
+
+class 5: acc 0.9652173913043478, correct 111/115 
+
+class 6: acc 0.9904534606205251, correct 830/838 
+
+class 7: acc 0.9718875502008032, correct 242/249 
+
+class 8: acc 0.9775280898876404, correct 87/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9545454545454546, correct 126/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 4.4621, auc: 0.6577 
+
+class 0 clustering acc 0.9893465909090909: correct 29253/29568 
+
+class 1 clustering acc 0.2552083333333333: correct 539/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.46875, correct 30/64 
+
+class 4: acc 0.2777777777777778, correct 5/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.7403846153846154, correct 77/104 
+
+class 7: acc 0.16666666666666666, correct 5/30 
+
+class 8: acc 0.3, correct 3/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4659
+
+Overall F1 Score: 0.1937
+
+Training for fine level...
+
+batch 99, loss: 0.0001, instance_loss: 0.0658, weighted_loss: 0.0198, label: 3, bag_size: 333 
+
+batch 199, loss: 0.0021, instance_loss: 0.2007, weighted_loss: 0.0616, label: 3, bag_size: 265 
+
+batch 299, loss: 0.0038, instance_loss: 0.1090, weighted_loss: 0.0353, label: 6, bag_size: 422 
+
+batch 399, loss: 0.0001, instance_loss: 0.2342, weighted_loss: 0.0703, label: 7, bag_size: 2046 
+
+batch 499, loss: 0.0000, instance_loss: 0.0694, weighted_loss: 0.0208, label: 3, bag_size: 267 
+
+batch 599, loss: 0.0054, instance_loss: 0.1552, weighted_loss: 0.0503, label: 0, bag_size: 901 
+
+batch 699, loss: 0.0060, instance_loss: 0.2761, weighted_loss: 0.0870, label: 8, bag_size: 94 
+
+batch 799, loss: 0.0001, instance_loss: 0.1328, weighted_loss: 0.0399, label: 3, bag_size: 927 
+
+batch 899, loss: 0.0000, instance_loss: 0.0212, weighted_loss: 0.0064, label: 3, bag_size: 936 
+
+batch 999, loss: 0.0004, instance_loss: 0.2215, weighted_loss: 0.0668, label: 10, bag_size: 328 
+
+batch 1099, loss: 0.0000, instance_loss: 0.0642, weighted_loss: 0.0193, label: 7, bag_size: 405 
+
+batch 1199, loss: 0.0033, instance_loss: 0.1430, weighted_loss: 0.0452, label: 4, bag_size: 1313 
+
+batch 1299, loss: 0.0000, instance_loss: 0.0605, weighted_loss: 0.0181, label: 6, bag_size: 643 
+
+batch 1399, loss: 0.0000, instance_loss: 0.3305, weighted_loss: 0.0992, label: 10, bag_size: 367 
+
+batch 1499, loss: 0.0000, instance_loss: 0.3073, weighted_loss: 0.0922, label: 3, bag_size: 1667 
+
+batch 1599, loss: 0.0058, instance_loss: 0.1887, weighted_loss: 0.0607, label: 8, bag_size: 2244 
+
+batch 1699, loss: 0.0001, instance_loss: 0.0807, weighted_loss: 0.0243, label: 7, bag_size: 518 
+
+batch 1799, loss: 0.0218, instance_loss: 0.1509, weighted_loss: 0.0605, label: 4, bag_size: 477 
+
+batch 1899, loss: 0.0000, instance_loss: 0.0581, weighted_loss: 0.0174, label: 6, bag_size: 265 
+
+batch 1999, loss: 0.0004, instance_loss: 0.0727, weighted_loss: 0.0221, label: 8, bag_size: 778 
+
+batch 2099, loss: 0.0026, instance_loss: 0.1290, weighted_loss: 0.0405, label: 6, bag_size: 1897 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9944741606319948: correct 241697/243040
+
+class 1 clustering acc 0.41192396313364055: correct 7151/17360
+
+
+Epoch: 41, train_loss: 0.0398, train_clustering_loss:  0.1246
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9864603481624759, correct 510/517 
+
+class 4: acc 0.9933333333333333, correct 149/150 
+
+class 5: acc 0.991304347826087, correct 114/115 
+
+class 6: acc 0.9952267303102625, correct 834/838 
+
+class 7: acc 0.9799196787148594, correct 244/249 
+
+class 8: acc 0.9550561797752809, correct 85/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9545454545454546, correct 126/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 1.0, correct 26/26 
+
+
+Val Set, val_loss: 4.3520, auc: 0.6411 
+
+class 0 clustering acc 0.9888731060606061: correct 29239/29568 
+
+class 1 clustering acc 0.25047348484848486: correct 529/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.53125, correct 34/64 
+
+class 4: acc 0.16666666666666666, correct 3/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.6826923076923077, correct 71/104 
+
+class 7: acc 0.26666666666666666, correct 8/30 
+
+class 8: acc 0.3, correct 3/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.125, correct 2/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4659
+
+Overall F1 Score: 0.2004
+
+Training for fine level...
+
+batch 99, loss: 0.0005, instance_loss: 0.1162, weighted_loss: 0.0352, label: 6, bag_size: 1214 
+
+batch 199, loss: 0.0001, instance_loss: 0.3093, weighted_loss: 0.0928, label: 3, bag_size: 738 
+
+batch 299, loss: 0.0000, instance_loss: 0.1150, weighted_loss: 0.0345, label: 3, bag_size: 2139 
+
+batch 399, loss: 0.0000, instance_loss: 0.1260, weighted_loss: 0.0378, label: 7, bag_size: 245 
+
+batch 499, loss: 0.0000, instance_loss: 0.0170, weighted_loss: 0.0051, label: 6, bag_size: 505 
+
+batch 599, loss: 0.0019, instance_loss: 0.0925, weighted_loss: 0.0291, label: 6, bag_size: 472 
+
+batch 699, loss: 0.0031, instance_loss: 0.0591, weighted_loss: 0.0199, label: 3, bag_size: 476 
+
+batch 799, loss: 0.0555, instance_loss: 0.3659, weighted_loss: 0.1486, label: 1, bag_size: 807 
+
+batch 899, loss: 0.0300, instance_loss: 0.0854, weighted_loss: 0.0466, label: 6, bag_size: 969 
+
+batch 999, loss: 0.0000, instance_loss: 0.2386, weighted_loss: 0.0716, label: 3, bag_size: 472 
+
+batch 1099, loss: 0.0025, instance_loss: 0.0422, weighted_loss: 0.0144, label: 3, bag_size: 558 
+
+batch 1199, loss: 0.0023, instance_loss: 0.1420, weighted_loss: 0.0442, label: 6, bag_size: 178 
+
+batch 1299, loss: 0.0068, instance_loss: 0.1760, weighted_loss: 0.0576, label: 3, bag_size: 349 
+
+batch 1399, loss: 0.0148, instance_loss: 0.2091, weighted_loss: 0.0731, label: 4, bag_size: 788 
+
+batch 1499, loss: 0.0000, instance_loss: 0.0486, weighted_loss: 0.0146, label: 6, bag_size: 365 
+
+batch 1599, loss: 0.0000, instance_loss: 0.0901, weighted_loss: 0.0270, label: 3, bag_size: 641 
+
+batch 1699, loss: 0.0000, instance_loss: 0.0440, weighted_loss: 0.0132, label: 6, bag_size: 732 
+
+batch 1799, loss: 0.0024, instance_loss: 0.3069, weighted_loss: 0.0938, label: 7, bag_size: 608 
+
+batch 1899, loss: 0.0000, instance_loss: 0.0121, weighted_loss: 0.0036, label: 6, bag_size: 506 
+
+batch 1999, loss: 0.0242, instance_loss: 0.1034, weighted_loss: 0.0480, label: 6, bag_size: 108 
+
+batch 2099, loss: 0.0000, instance_loss: 0.2170, weighted_loss: 0.0651, label: 3, bag_size: 268 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9946469716919025: correct 241739/243040
+
+class 1 clustering acc 0.4060483870967742: correct 7049/17360
+
+
+Epoch: 42, train_loss: 0.0564, train_clustering_loss:  0.1244
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9825918762088974, correct 508/517 
+
+class 4: acc 0.9866666666666667, correct 148/150 
+
+class 5: acc 0.991304347826087, correct 114/115 
+
+class 6: acc 0.9844868735083532, correct 825/838 
+
+class 7: acc 0.9759036144578314, correct 243/249 
+
+class 8: acc 0.9775280898876404, correct 87/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9545454545454546, correct 126/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 4.6003, auc: 0.6141 
+
+class 0 clustering acc 0.9921875: correct 29337/29568 
+
+class 1 clustering acc 0.18986742424242425: correct 401/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.40625, correct 26/64 
+
+class 4: acc 0.2222222222222222, correct 4/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.6730769230769231, correct 70/104 
+
+class 7: acc 0.36666666666666664, correct 11/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4470
+
+Overall F1 Score: 0.1957
+
+Training for fine level...
+
+batch 99, loss: 0.0000, instance_loss: 0.1183, weighted_loss: 0.0355, label: 3, bag_size: 142 
+
+batch 199, loss: 0.0005, instance_loss: 0.1283, weighted_loss: 0.0388, label: 6, bag_size: 765 
+
+batch 299, loss: 0.0000, instance_loss: 0.1206, weighted_loss: 0.0362, label: 3, bag_size: 204 
+
+batch 399, loss: 0.0000, instance_loss: 0.0095, weighted_loss: 0.0028, label: 6, bag_size: 289 
+
+batch 499, loss: 0.0000, instance_loss: 0.0908, weighted_loss: 0.0272, label: 6, bag_size: 271 
+
+batch 599, loss: 0.0000, instance_loss: 0.1042, weighted_loss: 0.0313, label: 3, bag_size: 687 
+
+batch 699, loss: 0.0003, instance_loss: 0.0675, weighted_loss: 0.0205, label: 6, bag_size: 902 
+
+batch 799, loss: 0.0000, instance_loss: 0.0064, weighted_loss: 0.0019, label: 6, bag_size: 448 
+
+batch 899, loss: 0.0021, instance_loss: 0.1719, weighted_loss: 0.0531, label: 7, bag_size: 268 
+
+batch 999, loss: 0.0002, instance_loss: 0.0238, weighted_loss: 0.0073, label: 6, bag_size: 543 
+
+batch 1099, loss: 0.0001, instance_loss: 0.0543, weighted_loss: 0.0164, label: 3, bag_size: 298 
+
+batch 1199, loss: 0.0001, instance_loss: 0.0799, weighted_loss: 0.0240, label: 6, bag_size: 866 
+
+batch 1299, loss: 0.0002, instance_loss: 0.3659, weighted_loss: 0.1099, label: 1, bag_size: 260 
+
+batch 1399, loss: 0.0000, instance_loss: 0.0626, weighted_loss: 0.0188, label: 6, bag_size: 1049 
+
+batch 1499, loss: 0.0146, instance_loss: 0.0156, weighted_loss: 0.0149, label: 6, bag_size: 475 
+
+batch 1599, loss: 0.1081, instance_loss: 0.0339, weighted_loss: 0.0859, label: 6, bag_size: 714 
+
+batch 1699, loss: 0.0007, instance_loss: 0.3089, weighted_loss: 0.0932, label: 13, bag_size: 372 
+
+batch 1799, loss: 0.0005, instance_loss: 0.0709, weighted_loss: 0.0216, label: 3, bag_size: 1632 
+
+batch 1899, loss: 0.0000, instance_loss: 0.2075, weighted_loss: 0.0623, label: 10, bag_size: 175 
+
+batch 1999, loss: 0.0000, instance_loss: 0.1914, weighted_loss: 0.0574, label: 10, bag_size: 1167 
+
+batch 2099, loss: 0.0000, instance_loss: 0.0733, weighted_loss: 0.0220, label: 4, bag_size: 685 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9946840026333114: correct 241748/243040
+
+class 1 clustering acc 0.4046082949308756: correct 7024/17360
+
+
+Epoch: 43, train_loss: 0.0580, train_clustering_loss:  0.1257
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9825918762088974, correct 508/517 
+
+class 4: acc 0.9733333333333334, correct 146/150 
+
+class 5: acc 0.991304347826087, correct 114/115 
+
+class 6: acc 0.9844868735083532, correct 825/838 
+
+class 7: acc 0.963855421686747, correct 240/249 
+
+class 8: acc 0.9662921348314607, correct 86/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9772727272727273, correct 129/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.8846153846153846, correct 23/26 
+
+
+Val Set, val_loss: 4.3574, auc: 0.6418 
+
+class 0 clustering acc 0.989549512987013: correct 29259/29568 
+
+class 1 clustering acc 0.24621212121212122: correct 520/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.46875, correct 30/64 
+
+class 4: acc 0.2222222222222222, correct 4/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.6923076923076923, correct 72/104 
+
+class 7: acc 0.3, correct 9/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.125, correct 2/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4583
+
+Overall F1 Score: 0.1963
+
+Training for fine level...
+
+batch 99, loss: 0.0000, instance_loss: 0.0840, weighted_loss: 0.0252, label: 6, bag_size: 279 
+
+batch 199, loss: 0.0000, instance_loss: 0.1144, weighted_loss: 0.0343, label: 6, bag_size: 658 
+
+batch 299, loss: 0.1431, instance_loss: 0.2997, weighted_loss: 0.1901, label: 5, bag_size: 402 
+
+batch 399, loss: 0.0022, instance_loss: 0.2300, weighted_loss: 0.0705, label: 4, bag_size: 428 
+
+batch 499, loss: 0.0013, instance_loss: 0.0262, weighted_loss: 0.0088, label: 6, bag_size: 162 
+
+batch 599, loss: 0.0000, instance_loss: 0.0679, weighted_loss: 0.0204, label: 3, bag_size: 440 
+
+batch 699, loss: 0.0000, instance_loss: 0.0155, weighted_loss: 0.0046, label: 6, bag_size: 359 
+
+batch 799, loss: 0.0004, instance_loss: 0.0377, weighted_loss: 0.0116, label: 6, bag_size: 505 
+
+batch 899, loss: 0.0000, instance_loss: 0.0458, weighted_loss: 0.0138, label: 3, bag_size: 666 
+
+batch 999, loss: 0.0015, instance_loss: 0.1036, weighted_loss: 0.0321, label: 4, bag_size: 1892 
+
+batch 1099, loss: 0.0006, instance_loss: 0.0395, weighted_loss: 0.0123, label: 3, bag_size: 1404 
+
+batch 1199, loss: 0.0030, instance_loss: 0.1424, weighted_loss: 0.0448, label: 6, bag_size: 427 
+
+batch 1299, loss: 0.0000, instance_loss: 0.0448, weighted_loss: 0.0135, label: 6, bag_size: 368 
+
+batch 1399, loss: 0.0001, instance_loss: 0.1228, weighted_loss: 0.0369, label: 6, bag_size: 216 
+
+batch 1499, loss: 0.0528, instance_loss: 0.1628, weighted_loss: 0.0858, label: 4, bag_size: 567 
+
+batch 1599, loss: 0.0002, instance_loss: 0.0433, weighted_loss: 0.0131, label: 6, bag_size: 834 
+
+batch 1699, loss: 0.0021, instance_loss: 0.2042, weighted_loss: 0.0627, label: 4, bag_size: 175 
+
+batch 1799, loss: 0.0050, instance_loss: 0.1613, weighted_loss: 0.0519, label: 10, bag_size: 245 
+
+batch 1899, loss: 0.0074, instance_loss: 0.2209, weighted_loss: 0.0714, label: 5, bag_size: 295 
+
+batch 1999, loss: 0.0000, instance_loss: 0.0375, weighted_loss: 0.0113, label: 3, bag_size: 1104 
+
+batch 2099, loss: 0.0001, instance_loss: 0.1203, weighted_loss: 0.0362, label: 5, bag_size: 574 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9946263989466755: correct 241734/243040
+
+class 1 clustering acc 0.4168778801843318: correct 7237/17360
+
+
+Epoch: 44, train_loss: 0.0384, train_clustering_loss:  0.1223
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 1.0, correct 32/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9903288201160542, correct 512/517 
+
+class 4: acc 1.0, correct 150/150 
+
+class 5: acc 0.9826086956521739, correct 113/115 
+
+class 6: acc 0.9904534606205251, correct 830/838 
+
+class 7: acc 0.9799196787148594, correct 244/249 
+
+class 8: acc 0.9775280898876404, correct 87/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9696969696969697, correct 128/132 
+
+class 11: acc 0.9, correct 9/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 1.0, correct 26/26 
+
+
+Val Set, val_loss: 4.7427, auc: 0.6406 
+
+class 0 clustering acc 0.9895156926406926: correct 29258/29568 
+
+class 1 clustering acc 0.24100378787878787: correct 509/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.375, correct 24/64 
+
+class 4: acc 0.2777777777777778, correct 5/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.7019230769230769, correct 73/104 
+
+class 7: acc 0.16666666666666666, correct 5/30 
+
+class 8: acc 0.1, correct 1/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4242
+
+Overall F1 Score: 0.1699
+
+Training for fine level...
+
+batch 99, loss: 0.0000, instance_loss: 0.2163, weighted_loss: 0.0649, label: 5, bag_size: 37 
+
+batch 199, loss: 0.0000, instance_loss: 0.0467, weighted_loss: 0.0140, label: 6, bag_size: 622 
+
+batch 299, loss: 0.0010, instance_loss: 0.1028, weighted_loss: 0.0315, label: 6, bag_size: 714 
+
+batch 399, loss: 0.0228, instance_loss: 0.1085, weighted_loss: 0.0485, label: 3, bag_size: 848 
+
+batch 499, loss: 0.0004, instance_loss: 0.0819, weighted_loss: 0.0249, label: 6, bag_size: 599 
+
+batch 599, loss: 0.0002, instance_loss: 0.1648, weighted_loss: 0.0496, label: 3, bag_size: 311 
+
+batch 699, loss: 0.0000, instance_loss: 0.2007, weighted_loss: 0.0602, label: 10, bag_size: 388 
+
+batch 799, loss: 0.0000, instance_loss: 0.2347, weighted_loss: 0.0704, label: 3, bag_size: 215 
+
+batch 899, loss: 0.0000, instance_loss: 0.0893, weighted_loss: 0.0268, label: 1, bag_size: 119 
+
+batch 999, loss: 0.0000, instance_loss: 0.0647, weighted_loss: 0.0194, label: 3, bag_size: 476 
+
+batch 1099, loss: 0.0000, instance_loss: 0.0373, weighted_loss: 0.0112, label: 3, bag_size: 388 
+
+batch 1199, loss: 0.0000, instance_loss: 0.0566, weighted_loss: 0.0170, label: 6, bag_size: 198 
+
+batch 1299, loss: 0.0018, instance_loss: 0.1271, weighted_loss: 0.0394, label: 6, bag_size: 1549 
+
+batch 1399, loss: 0.0005, instance_loss: 0.0756, weighted_loss: 0.0230, label: 6, bag_size: 112 
+
+batch 1499, loss: 0.0003, instance_loss: 0.0925, weighted_loss: 0.0280, label: 6, bag_size: 297 
+
+batch 1599, loss: 0.0000, instance_loss: 0.0715, weighted_loss: 0.0214, label: 6, bag_size: 294 
+
+batch 1699, loss: 0.0013, instance_loss: 0.1461, weighted_loss: 0.0448, label: 7, bag_size: 444 
+
+batch 1799, loss: 0.0000, instance_loss: 0.0769, weighted_loss: 0.0231, label: 5, bag_size: 1079 
+
+batch 1899, loss: 0.0005, instance_loss: 0.1375, weighted_loss: 0.0416, label: 4, bag_size: 3332 
+
+batch 1999, loss: 0.0000, instance_loss: 0.1305, weighted_loss: 0.0392, label: 3, bag_size: 359 
+
+batch 2099, loss: 0.0113, instance_loss: 0.1844, weighted_loss: 0.0633, label: 7, bag_size: 266 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9944042132982225: correct 241680/243040
+
+class 1 clustering acc 0.4131336405529954: correct 7172/17360
+
+
+Epoch: 45, train_loss: 0.0481, train_clustering_loss:  0.1240
+
+class 0: acc 0.9166666666666666, correct 11/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.97678916827853, correct 505/517 
+
+class 4: acc 0.98, correct 147/150 
+
+class 5: acc 0.991304347826087, correct 114/115 
+
+class 6: acc 0.9904534606205251, correct 830/838 
+
+class 7: acc 0.9839357429718876, correct 245/249 
+
+class 8: acc 0.9662921348314607, correct 86/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9848484848484849, correct 130/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 1.0, correct 26/26 
+
+
+Val Set, val_loss: 4.4414, auc: 0.6234 
+
+class 0 clustering acc 0.9903950216450217: correct 29284/29568 
+
+class 1 clustering acc 0.24100378787878787: correct 509/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.453125, correct 29/64 
+
+class 4: acc 0.2777777777777778, correct 5/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.6923076923076923, correct 72/104 
+
+class 7: acc 0.3, correct 9/30 
+
+class 8: acc 0.0, correct 0/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4545
+
+Overall F1 Score: 0.1929
+
+Training for fine level...
+
+batch 99, loss: 0.0000, instance_loss: 0.1473, weighted_loss: 0.0442, label: 10, bag_size: 347 
+
+batch 199, loss: 0.0003, instance_loss: 0.2715, weighted_loss: 0.0817, label: 10, bag_size: 457 
+
+batch 299, loss: 0.0000, instance_loss: 0.0502, weighted_loss: 0.0151, label: 6, bag_size: 1222 
+
+batch 399, loss: 0.0000, instance_loss: 0.0325, weighted_loss: 0.0098, label: 6, bag_size: 414 
+
+batch 499, loss: 0.0000, instance_loss: 0.0965, weighted_loss: 0.0290, label: 5, bag_size: 2219 
+
+batch 599, loss: 0.0242, instance_loss: 0.0797, weighted_loss: 0.0409, label: 6, bag_size: 847 
+
+batch 699, loss: 0.0000, instance_loss: 0.0766, weighted_loss: 0.0230, label: 7, bag_size: 422 
+
+batch 799, loss: 0.0008, instance_loss: 0.2317, weighted_loss: 0.0701, label: 10, bag_size: 483 
+
+batch 899, loss: 0.0000, instance_loss: 0.1090, weighted_loss: 0.0327, label: 3, bag_size: 333 
+
+batch 999, loss: 0.0018, instance_loss: 0.1159, weighted_loss: 0.0360, label: 4, bag_size: 1706 
+
+batch 1099, loss: 0.0007, instance_loss: 0.1773, weighted_loss: 0.0537, label: 10, bag_size: 276 
+
+batch 1199, loss: 0.0000, instance_loss: 0.0113, weighted_loss: 0.0034, label: 6, bag_size: 1211 
+
+batch 1299, loss: 0.0000, instance_loss: 0.0576, weighted_loss: 0.0173, label: 3, bag_size: 3773 
+
+batch 1399, loss: 0.4903, instance_loss: 0.1239, weighted_loss: 0.3804, label: 10, bag_size: 208 
+
+batch 1499, loss: 0.0001, instance_loss: 0.0881, weighted_loss: 0.0265, label: 3, bag_size: 328 
+
+batch 1599, loss: 0.0000, instance_loss: 0.0079, weighted_loss: 0.0024, label: 6, bag_size: 250 
+
+batch 1699, loss: 0.0002, instance_loss: 0.2001, weighted_loss: 0.0601, label: 7, bag_size: 527 
+
+batch 1799, loss: 0.0018, instance_loss: 0.1816, weighted_loss: 0.0557, label: 10, bag_size: 565 
+
+batch 1899, loss: 0.0030, instance_loss: 0.1444, weighted_loss: 0.0454, label: 10, bag_size: 486 
+
+batch 1999, loss: 0.0000, instance_loss: 0.0907, weighted_loss: 0.0272, label: 6, bag_size: 472 
+
+batch 2099, loss: 0.0156, instance_loss: 0.1482, weighted_loss: 0.0554, label: 3, bag_size: 354 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9945399934167215: correct 241713/243040
+
+class 1 clustering acc 0.4138824884792627: correct 7185/17360
+
+
+Epoch: 46, train_loss: 0.0658, train_clustering_loss:  0.1241
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 1.0, correct 32/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9787234042553191, correct 506/517 
+
+class 4: acc 0.9666666666666667, correct 145/150 
+
+class 5: acc 0.9652173913043478, correct 111/115 
+
+class 6: acc 0.986873508353222, correct 827/838 
+
+class 7: acc 0.9799196787148594, correct 244/249 
+
+class 8: acc 0.9662921348314607, correct 86/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9772727272727273, correct 129/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 4.7685, auc: 0.6191 
+
+class 0 clustering acc 0.9903950216450217: correct 29284/29568 
+
+class 1 clustering acc 0.22964015151515152: correct 485/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.515625, correct 33/64 
+
+class 4: acc 0.2222222222222222, correct 4/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.6923076923076923, correct 72/104 
+
+class 7: acc 0.16666666666666666, correct 5/30 
+
+class 8: acc 0.3, correct 3/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.125, correct 2/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4583
+
+Overall F1 Score: 0.1964
+
+Training for fine level...
+
+batch 99, loss: 0.0000, instance_loss: 0.0109, weighted_loss: 0.0033, label: 6, bag_size: 753 
+
+batch 199, loss: 0.0001, instance_loss: 0.1235, weighted_loss: 0.0371, label: 8, bag_size: 159 
+
+batch 299, loss: 0.0023, instance_loss: 0.2091, weighted_loss: 0.0643, label: 3, bag_size: 224 
+
+batch 399, loss: 0.0000, instance_loss: 0.0806, weighted_loss: 0.0242, label: 6, bag_size: 796 
+
+batch 499, loss: 0.0000, instance_loss: 0.1068, weighted_loss: 0.0320, label: 3, bag_size: 1616 
+
+batch 599, loss: 0.0080, instance_loss: 0.2329, weighted_loss: 0.0755, label: 4, bag_size: 1046 
+
+batch 699, loss: 0.0000, instance_loss: 0.0708, weighted_loss: 0.0212, label: 6, bag_size: 622 
+
+batch 799, loss: 0.0268, instance_loss: 0.2345, weighted_loss: 0.0891, label: 8, bag_size: 139 
+
+batch 899, loss: 0.0000, instance_loss: 0.1917, weighted_loss: 0.0575, label: 7, bag_size: 409 
+
+batch 999, loss: 0.0005, instance_loss: 0.1918, weighted_loss: 0.0579, label: 7, bag_size: 686 
+
+batch 1099, loss: 0.0000, instance_loss: 0.0624, weighted_loss: 0.0187, label: 3, bag_size: 862 
+
+batch 1199, loss: 0.0005, instance_loss: 0.2808, weighted_loss: 0.0846, label: 5, bag_size: 376 
+
+batch 1299, loss: 0.0002, instance_loss: 0.1064, weighted_loss: 0.0320, label: 6, bag_size: 11 
+
+batch 1399, loss: 0.0001, instance_loss: 0.2278, weighted_loss: 0.0684, label: 3, bag_size: 393 
+
+batch 1499, loss: 0.1664, instance_loss: 0.1841, weighted_loss: 0.1717, label: 10, bag_size: 216 
+
+batch 1599, loss: 0.0000, instance_loss: 0.2132, weighted_loss: 0.0640, label: 3, bag_size: 792 
+
+batch 1699, loss: 0.0000, instance_loss: 0.0396, weighted_loss: 0.0119, label: 6, bag_size: 465 
+
+batch 1799, loss: 0.0000, instance_loss: 0.1634, weighted_loss: 0.0490, label: 6, bag_size: 509 
+
+batch 1899, loss: 0.0000, instance_loss: 0.0961, weighted_loss: 0.0288, label: 6, bag_size: 733 
+
+batch 1999, loss: 0.0000, instance_loss: 0.0558, weighted_loss: 0.0167, label: 7, bag_size: 239 
+
+batch 2099, loss: 0.0000, instance_loss: 0.2245, weighted_loss: 0.0674, label: 8, bag_size: 609 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9946058262014483: correct 241729/243040
+
+class 1 clustering acc 0.406221198156682: correct 7052/17360
+
+
+Epoch: 47, train_loss: 0.0423, train_clustering_loss:  0.1236
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9825918762088974, correct 508/517 
+
+class 4: acc 0.9733333333333334, correct 146/150 
+
+class 5: acc 0.9565217391304348, correct 110/115 
+
+class 6: acc 0.9940334128878282, correct 833/838 
+
+class 7: acc 0.9879518072289156, correct 246/249 
+
+class 8: acc 1.0, correct 89/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9772727272727273, correct 129/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 1.0, correct 26/26 
+
+
+Val Set, val_loss: 4.7043, auc: 0.6321 
+
+class 0 clustering acc 0.9888731060606061: correct 29239/29568 
+
+class 1 clustering acc 0.2604166666666667: correct 550/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.484375, correct 31/64 
+
+class 4: acc 0.3333333333333333, correct 6/18 
+
+class 5: acc 0.14285714285714285, correct 2/14 
+
+class 6: acc 0.7211538461538461, correct 75/104 
+
+class 7: acc 0.13333333333333333, correct 4/30 
+
+class 8: acc 0.4, correct 4/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4735
+
+Overall F1 Score: 0.2180
+
+Training for fine level...
+
+batch 99, loss: 0.8752, instance_loss: 0.1807, weighted_loss: 0.6668, label: 3, bag_size: 169 
+
+batch 199, loss: 0.0081, instance_loss: 0.1486, weighted_loss: 0.0503, label: 3, bag_size: 2625 
+
+batch 299, loss: 0.0001, instance_loss: 0.1324, weighted_loss: 0.0398, label: 4, bag_size: 123 
+
+batch 399, loss: 0.0000, instance_loss: 0.0155, weighted_loss: 0.0047, label: 6, bag_size: 308 
+
+batch 499, loss: 0.0005, instance_loss: 0.0722, weighted_loss: 0.0220, label: 6, bag_size: 239 
+
+batch 599, loss: 0.0006, instance_loss: 0.2585, weighted_loss: 0.0780, label: 5, bag_size: 201 
+
+batch 699, loss: 0.0008, instance_loss: 0.0812, weighted_loss: 0.0250, label: 0, bag_size: 419 
+
+batch 799, loss: 0.0029, instance_loss: 0.1254, weighted_loss: 0.0397, label: 6, bag_size: 609 
+
+batch 899, loss: 0.0006, instance_loss: 0.1613, weighted_loss: 0.0488, label: 10, bag_size: 501 
+
+batch 999, loss: 0.0000, instance_loss: 0.1699, weighted_loss: 0.0510, label: 7, bag_size: 545 
+
+batch 1099, loss: 0.0151, instance_loss: 0.1592, weighted_loss: 0.0583, label: 10, bag_size: 450 
+
+batch 1199, loss: 0.0000, instance_loss: 0.1223, weighted_loss: 0.0367, label: 3, bag_size: 161 
+
+batch 1299, loss: 1.9395, instance_loss: 0.2678, weighted_loss: 1.4380, label: 8, bag_size: 681 
+
+batch 1399, loss: 0.0002, instance_loss: 0.0727, weighted_loss: 0.0219, label: 6, bag_size: 511 
+
+batch 1499, loss: 0.1402, instance_loss: 0.2207, weighted_loss: 0.1644, label: 6, bag_size: 1364 
+
+batch 1599, loss: 0.0000, instance_loss: 0.0096, weighted_loss: 0.0029, label: 6, bag_size: 592 
+
+batch 1699, loss: 0.0070, instance_loss: 0.1257, weighted_loss: 0.0426, label: 6, bag_size: 746 
+
+batch 1799, loss: 0.0006, instance_loss: 0.2156, weighted_loss: 0.0651, label: 10, bag_size: 1875 
+
+batch 1899, loss: 0.0000, instance_loss: 0.1176, weighted_loss: 0.0353, label: 7, bag_size: 416 
+
+batch 1999, loss: 0.0000, instance_loss: 0.1039, weighted_loss: 0.0312, label: 3, bag_size: 332 
+
+batch 2099, loss: 0.0038, instance_loss: 0.1607, weighted_loss: 0.0509, label: 6, bag_size: 12 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.994593482554312: correct 241726/243040
+
+class 1 clustering acc 0.4229838709677419: correct 7343/17360
+
+
+Epoch: 48, train_loss: 0.0336, train_clustering_loss:  0.1211
+
+class 0: acc 1.0, correct 12/12 
+
+class 1: acc 0.96875, correct 31/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9845261121856866, correct 509/517 
+
+class 4: acc 0.9733333333333334, correct 146/150 
+
+class 5: acc 0.991304347826087, correct 114/115 
+
+class 6: acc 0.9952267303102625, correct 834/838 
+
+class 7: acc 0.9879518072289156, correct 246/249 
+
+class 8: acc 0.9775280898876404, correct 87/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9924242424242424, correct 131/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 1.0, correct 26/26 
+
+
+Val Set, val_loss: 4.6557, auc: 0.6292 
+
+class 0 clustering acc 0.9886025432900433: correct 29231/29568 
+
+class 1 clustering acc 0.234375: correct 495/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.484375, correct 31/64 
+
+class 4: acc 0.1111111111111111, correct 2/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6923076923076923, correct 72/104 
+
+class 7: acc 0.26666666666666666, correct 8/30 
+
+class 8: acc 0.3, correct 3/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.0625, correct 1/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4470
+
+Overall F1 Score: 0.1775
+
+Training for fine level...
+
+batch 99, loss: 0.0001, instance_loss: 0.2067, weighted_loss: 0.0621, label: 10, bag_size: 542 
+
+batch 199, loss: 0.0000, instance_loss: 0.1527, weighted_loss: 0.0458, label: 5, bag_size: 793 
+
+batch 299, loss: 0.0000, instance_loss: 0.0890, weighted_loss: 0.0267, label: 6, bag_size: 681 
+
+batch 399, loss: 0.0000, instance_loss: 0.0591, weighted_loss: 0.0177, label: 3, bag_size: 1847 
+
+batch 499, loss: 0.0000, instance_loss: 0.0401, weighted_loss: 0.0120, label: 6, bag_size: 333 
+
+batch 599, loss: 0.0452, instance_loss: 0.2239, weighted_loss: 0.0988, label: 8, bag_size: 139 
+
+batch 699, loss: 0.0000, instance_loss: 0.0407, weighted_loss: 0.0122, label: 6, bag_size: 451 
+
+batch 799, loss: 0.0000, instance_loss: 0.2468, weighted_loss: 0.0740, label: 3, bag_size: 646 
+
+batch 899, loss: 0.0000, instance_loss: 0.0630, weighted_loss: 0.0189, label: 6, bag_size: 630 
+
+batch 999, loss: 0.0000, instance_loss: 0.0104, weighted_loss: 0.0031, label: 6, bag_size: 676 
+
+batch 1099, loss: 0.0001, instance_loss: 0.0892, weighted_loss: 0.0269, label: 10, bag_size: 116 
+
+batch 1199, loss: 0.0000, instance_loss: 0.0824, weighted_loss: 0.0247, label: 10, bag_size: 243 
+
+batch 1299, loss: 0.0000, instance_loss: 0.0413, weighted_loss: 0.0124, label: 6, bag_size: 424 
+
+batch 1399, loss: 0.0000, instance_loss: 0.2507, weighted_loss: 0.0752, label: 7, bag_size: 247 
+
+batch 1499, loss: 0.0038, instance_loss: 0.1358, weighted_loss: 0.0434, label: 6, bag_size: 154 
+
+batch 1599, loss: 0.0025, instance_loss: 0.0719, weighted_loss: 0.0233, label: 6, bag_size: 679 
+
+batch 1699, loss: 0.0012, instance_loss: 0.2038, weighted_loss: 0.0620, label: 4, bag_size: 1967 
+
+batch 1799, loss: 0.0000, instance_loss: 0.0930, weighted_loss: 0.0279, label: 6, bag_size: 336 
+
+batch 1899, loss: 0.0085, instance_loss: 0.0827, weighted_loss: 0.0308, label: 6, bag_size: 542 
+
+batch 1999, loss: 0.0000, instance_loss: 0.0414, weighted_loss: 0.0124, label: 6, bag_size: 596 
+
+batch 2099, loss: 0.0000, instance_loss: 0.1516, weighted_loss: 0.0455, label: 3, bag_size: 778 
+
+Instance Classifier Stats
+
+class 0 clustering acc 0.9942560895325873: correct 241644/243040
+
+class 1 clustering acc 0.4211405529953917: correct 7311/17360
+
+
+Epoch: 49, train_loss: 0.0392, train_clustering_loss:  0.1227
+
+class 0: acc 0.9166666666666666, correct 11/12 
+
+class 1: acc 1.0, correct 32/32 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.9922630560928434, correct 513/517 
+
+class 4: acc 0.9733333333333334, correct 146/150 
+
+class 5: acc 1.0, correct 115/115 
+
+class 6: acc 0.9916467780429594, correct 831/838 
+
+class 7: acc 0.9759036144578314, correct 243/249 
+
+class 8: acc 0.9887640449438202, correct 88/89 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.9772727272727273, correct 129/132 
+
+class 11: acc 1.0, correct 10/10 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.9615384615384616, correct 25/26 
+
+
+Val Set, val_loss: 4.6655, auc: 0.6342 
+
+class 0 clustering acc 0.987790854978355: correct 29207/29568 
+
+class 1 clustering acc 0.2518939393939394: correct 532/2112 
+
+class 0: acc 0.0, correct 0/1 
+
+class 1: acc 0.0, correct 0/3 
+
+class 2: acc None, correct 0/0 
+
+class 3: acc 0.453125, correct 29/64 
+
+class 4: acc 0.3333333333333333, correct 6/18 
+
+class 5: acc 0.07142857142857142, correct 1/14 
+
+class 6: acc 0.6442307692307693, correct 67/104 
+
+class 7: acc 0.26666666666666666, correct 8/30 
+
+class 8: acc 0.2, correct 2/10 
+
+class 9: acc None, correct 0/0 
+
+class 10: acc 0.1875, correct 3/16 
+
+class 11: acc 0.0, correct 0/1 
+
+class 12: acc None, correct 0/0 
+
+class 13: acc 0.0, correct 0/3 
+
+Overall Accuracy: 0.4394
+
+Overall F1 Score: 0.1930
+
+
+Process finished with exit code 0
+
