@@ -288,8 +288,7 @@ class CLAM_MB(CLAM_SB):
                 results_dict = {}
             if return_features:
                 results_dict.update({'features': M})
-            return (logits_coarse, logits_fine), (Y_prob_coarse, Y_prob_fine), (Y_hat_coarse,
-                                                                                Y_hat_fine), A_raw, results_dict
+            return (logits_coarse, logits_fine), (Y_prob_coarse, Y_prob_fine), (Y_hat_coarse, Y_hat_fine), A_raw, results_dict
         else:
             logits = torch.empty(1, self.n_classes).float().to(M.device)
             for c in range(self.n_classes):
