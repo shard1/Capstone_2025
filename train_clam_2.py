@@ -65,9 +65,8 @@ class AccuracyLogger(object):
         return acc, correct, count
 
 def calculate_error(Y_hat, Y):
-	error = 1. - Y_hat.float().eq(Y.float()).float().mean().item()
-
-	return error
+    error = 1. - Y_hat.float().eq(Y.float()).float().mean().item()
+    return error
 
 def summary(model, loader, n_classes):
     acc_logger = AccuracyLogger(n_classes=n_classes)
@@ -81,8 +80,8 @@ def summary(model, loader, n_classes):
     slide_ids = loader.dataset.slide_data['slide_id']
     patient_results = {}
 
-    for batch_idx, (data, label) in enumerate(loader):
-        data, label = data.to(device), label.to(device)
+    for batch_idx, (data, coarse_gt, fine_gt) in enumerate(loader):
+        data, coarse_gt, fine_gt = data.to(device), coarse_gt.to(device), fine_gt.to(device)
         slide_id = slide_ids.iloc[batch_idx]
         with torch.inference_mode():
             logits, Y_prob, Y_hat, _, _ = model(data)
@@ -174,11 +173,13 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
     model.train()
     is_hierarchy = hierarchy not in ('coarse', 'fine')
 
+    #for hierarchy
     acc_logger_coarse = AccuracyLogger(n_classes=num_classes['coarse'])
     acc_logger_fine = AccuracyLogger(n_classes=num_classes['fine'])
     inst_logger_coarse = AccuracyLogger(n_classes=num_classes['coarse'])
     inst_logger_fine = AccuracyLogger(n_classes=num_classes['fine'])
 
+    #non hierarchy
     acc_logger = AccuracyLogger(n_classes=num_classes[hierarchy])
     inst_logger = AccuracyLogger(n_classes=num_classes[hierarchy])
 
@@ -190,12 +191,14 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
     all_preds = []
     all_labels = []
 
+    #for hierarchy
     all_preds_coarse = []
     all_labels_coarse = []
     all_preds_fine = []
     all_labels_fine = []
 
     log_writer.print_and_write("Training for {} level...".format(hierarchy))
+
     for batch_idx, (data, coarse_gt, fine_gt) in enumerate(loader):
         data = data.to(device)
         coarse_gt = coarse_gt.to(device)
@@ -526,9 +529,10 @@ def drawPlot(acc, model_type, hierarchy, save_path=None, label=""):
     plt.ylabel(label)
     plt.title(plot_title)
     plt.legend()
-    plt.show()
     if save_path is not None:
         plt.savefig(save_path)
+    plt.show()
+
 
 
 if __name__ == '__main__':
@@ -610,7 +614,7 @@ if __name__ == '__main__':
                                     hierarchy=args.hierarchy, log_writer=log_writer)
             validation_losses.append(val_loss)
             val_accs.append(val_acc)
-        else:
+        else:       #for hierarchy
             raise NotImplementedError
 
         if best_acc < val_acc:

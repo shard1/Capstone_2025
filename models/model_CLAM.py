@@ -90,9 +90,9 @@ class CLAM_SB(nn.Module):
         size = self.size_dict[size_arg]
         fc = [nn.Linear(size[0], size[1]), nn.ReLU(), nn.Dropout(dropout)]  # nn.Linear is W1 in the paper
         if gate:
-            attention_net = Attn_Net_Gated(L=size[1], D=size[2], dropout=dropout, n_classes=1)
+            attention_net = Attn_Net_Gated(L=size[1], D=size[2], dropout=True, n_classes=1)
         else:
-            attention_net = Attn_Net(L=size[1], D=size[2], dropout=dropout, n_classes=1)
+            attention_net = Attn_Net(L=size[1], D=size[2], dropout=True, n_classes=1)
         fc.append(attention_net)
         self.attention_net = nn.Sequential(*fc)  # attention layers
         self.classifiers = nn.Linear(size[1], n_classes)  # classifier at the end,
@@ -155,10 +155,10 @@ class CLAM_SB(nn.Module):
             return A
         A_raw = A
         A = F.softmax(A, dim=1)  # softmax over N			A was not normalized, now it is
+        total_inst_loss = 0.0
+        all_preds = []
+        all_targets = []
         if instance_eval:
-            total_inst_loss = 0.0
-            all_preds = []
-            all_targets = []
             inst_labels = F.one_hot(label, num_classes=self.n_classes).squeeze()  # binarize label, label is slide level
             for i in range(len(self.instance_classifiers)):
                 inst_label = inst_labels[i].item()       #pseudo label
@@ -182,6 +182,7 @@ class CLAM_SB(nn.Module):
         # h is [N,D], A is [n_classes = 1, N] because only one attention branch exists
         M = torch.mm(A, h)  # [n_classes = 1, D]   h_slide,  n_classes from attention
         logits = self.classifiers(M)  # [1, n_classes]
+        ####################################################
         if is_hierarchy:
             logits_coarse = logits[:, : num_class['coarse']]
             logits_fine = logits[:, num_class['coarse']:]
@@ -198,8 +199,8 @@ class CLAM_SB(nn.Module):
             if return_features:
                 results_dict.update({'features': M})
             return (logits_coarse, logits_fine), (Y_prob_coarse, Y_prob_fine), (Y_hat_coarse,
-                                                                                Y_hat_fine), A_raw, results_dict
-
+                                                                       Y_hat_fine), A_raw, results_dict
+        ############################################################
         else:
             Y_hat = torch.topk(logits, 1, dim=1)[1]  # shape [1]		unnormalized logit value
             Y_prob = F.softmax(logits, dim=1)  # [1, n_classes]		#normalized logit value
@@ -221,13 +222,12 @@ class CLAM_MB(CLAM_SB):
         size = self.size_dict[size_arg]
         fc = [nn.Linear(size[0], size[1]), nn.ReLU(), nn.Dropout(dropout)]
         if gate:
-            attention_net = Attn_Net_Gated(L=size[1], D=size[2], dropout=dropout, n_classes=n_classes)
+            attention_net = Attn_Net_Gated(L=size[1], D=size[2], dropout=True, n_classes=n_classes)
         else:
-            attention_net = Attn_Net(L=size[1], D=size[2], dropout=dropout, n_classes=n_classes)
+            attention_net = Attn_Net(L=size[1], D=size[2], dropout=True, n_classes=n_classes)
         fc.append(attention_net)
         self.attention_net = nn.Sequential(*fc)
-        bag_classifiers = [nn.Linear(size[1], 1) for i in
-                           range(n_classes)]  # use an independent linear layer to predict each class
+        bag_classifiers = [nn.Linear(size[1], 1) for i in range(n_classes)]  # use an independent linear layer to predict each class
         self.classifiers = nn.ModuleList(bag_classifiers)
         instance_classifiers = [nn.Linear(size[1], 2) for i in range(n_classes)]
         self.instance_classifiers = nn.ModuleList(instance_classifiers)
@@ -244,10 +244,12 @@ class CLAM_MB(CLAM_SB):
         A_raw = A
         A = F.softmax(A, dim=1)  # softmax over N
 
+        total_inst_loss = 0.0
+        all_preds = []
+        all_targets = []
+
         if instance_eval:
-            total_inst_loss = 0.0
-            all_preds = []
-            all_targets = []
+
             inst_labels = F.one_hot(label, num_classes=self.n_classes).squeeze()  # binarize label
             for i in range(len(self.instance_classifiers)):
                 inst_label = inst_labels[i].item()
@@ -269,7 +271,7 @@ class CLAM_MB(CLAM_SB):
                 total_inst_loss /= len(self.instance_classifiers)
 
         M = torch.mm(A, h)  # slide level representation h_slide, [n_classes, D]
-
+#####################################################################################
         if is_hierarchy:
             logits_coarse = torch.empty(1, num_class['coarse']).float().to(M.device)
             for c in range(0, num_class['coarse']):
@@ -289,6 +291,7 @@ class CLAM_MB(CLAM_SB):
             if return_features:
                 results_dict.update({'features': M})
             return (logits_coarse, logits_fine), (Y_prob_coarse, Y_prob_fine), (Y_hat_coarse, Y_hat_fine), A_raw, results_dict
+        #####################################################################
         else:
             logits = torch.empty(1, self.n_classes).float().to(M.device)
             for c in range(self.n_classes):
