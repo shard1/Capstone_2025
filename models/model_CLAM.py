@@ -121,7 +121,7 @@ class CLAM_SB(nn.Module):
         # k and B are used interchangeably (B in the paper)
         top_p_ids = torch.topk(A, self.k_sample)[1][-1]  # topk[1] returns indices of top k values (shape [1 B]) top[1][-1] returns the k indices
         top_p = torch.index_select(h, dim=0,
-                                   index=top_p_ids)  # selects from h feature vectors using the top k indices, shape [B,D]
+                                   index=top_p_ids)  # selects from feature vectors (h) using the top k indices, shape [B,D]
         top_n_ids = torch.topk(-A, self.k_sample, dim=1)[1][-1]
         top_n = torch.index_select(h, dim=0,
                                    index=top_n_ids)  # shape [B, D] because h has shape [N, D] N feature vectors with dimension D
@@ -249,7 +249,6 @@ class CLAM_MB(CLAM_SB):
         all_targets = []
 
         if instance_eval:
-
             inst_labels = F.one_hot(label, num_classes=self.n_classes).squeeze()  # binarize label
             for i in range(len(self.instance_classifiers)):
                 inst_label = inst_labels[i].item()

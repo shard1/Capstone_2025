@@ -1,11 +1,10 @@
 import argparse
 import os
-import random
 
-import matplotlib.pyplot as plt
 import numpy as np
 import torch
-import torch.nn as nn
+
+from utils import *
 from sklearn.metrics import auc as calc_auc
 from sklearn.metrics import f1_score, accuracy_score
 from sklearn.metrics import roc_auc_score, roc_curve
@@ -13,8 +12,6 @@ from sklearn.preprocessing import label_binarize
 from torch.utils.data import DataLoader
 
 from dataloader.dataloader_AMC import AMCDataset
-from models.model_CLAM import CLAM_SB, CLAM_MB
-from topk.svm import SmoothTop1SVM
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -64,10 +61,6 @@ class AccuracyLogger(object):
 
         return acc, correct, count
 
-def calculate_error(Y_hat, Y):
-    error = 1. - Y_hat.float().eq(Y.float()).float().mean().item()
-    return error
-
 def summary(model, loader, n_classes):
     acc_logger = AccuracyLogger(n_classes=n_classes)
     model.eval()
@@ -115,60 +108,6 @@ def summary(model, loader, n_classes):
     return patient_results, test_error, auc, acc_logger
 
 
-def identity_collate(batch):
-    return batch[0]
-
-
-def set_seed(seed):
-    np.random.seed(seed)
-    random.seed(seed)
-    torch.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed)
-    torch.backends.cudnn.deterministic = True
-    torch.backends.cudnn.benchmark = False
-    os.environ["PYTHONHASHSEED"] = str(seed)
-
-
-def configure_loss_fns(bag_loss, inst_loss, n_classes):
-    if bag_loss == 'svm':
-        loss_fn = SmoothTop1SVM(n_classes)
-        if device.type == 'cuda':
-            loss_fn = loss_fn.cuda()
-    else:
-        loss_fn = nn.CrossEntropyLoss()
-
-    if inst_loss == 'svm':
-        instance_loss_fn = SmoothTop1SVM(2)
-        if device.type == 'cuda':
-            instance_loss_fn = instance_loss_fn.cuda()
-    else:
-        instance_loss_fn = nn.CrossEntropyLoss()
-    return loss_fn, instance_loss_fn
-
-
-def configure_model(model_args, model_type, inst_loss_fn, n_classes):
-    if model_type == 'clam_mb':
-        model = CLAM_MB(**model_args, n_classes=n_classes, instance_loss_fn=inst_loss_fn, subtyping=True)
-    elif model_type == 'clam_sb':
-        model = CLAM_SB(**model_args, n_classes=n_classes, instance_loss_fn=inst_loss_fn, subtyping=True)
-    else:
-        raise NotImplementedError
-    return model
-
-
-def configure_clam(model_args, model_type, hierarchy, bag_loss, inst_loss):
-    if hierarchy == 'coarse':
-        loss_fn, instance_loss_fn = configure_loss_fns(bag_loss, inst_loss, n_classes=4)
-        model = configure_model(model_args, model_type, instance_loss_fn, n_classes=4)
-    elif hierarchy == 'fine':
-        loss_fn, instance_loss_fn = configure_loss_fns(bag_loss, inst_loss, n_classes=14)
-        model = configure_model(model_args, model_type, instance_loss_fn, 14)
-    else:
-        loss_fn, instance_loss_fn = configure_loss_fns(bag_loss, inst_loss, n_classes=14)
-        model = configure_model(model_args, model_type, instance_loss_fn, 14)
-    return model, loss_fn
-
-
 def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn=None, hierarchy='coarse-and-fine', log_writer=None):
     model.train()
     is_hierarchy = hierarchy not in ('coarse', 'fine')
@@ -180,8 +119,8 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
     inst_logger_fine = AccuracyLogger(n_classes=num_classes['fine'])
 
     #non hierarchy
-    acc_logger = AccuracyLogger(n_classes=num_classes[hierarchy])
-    inst_logger = AccuracyLogger(n_classes=num_classes[hierarchy])
+    acc_logger = AccuracyLogger(n_classes=num_classes[hierarchy])       #tracks bag level accuracy
+    inst_logger = AccuracyLogger(n_classes=num_classes[hierarchy])          #tracks instance level accuracy
 
     train_loss = 0.
     train_error = 0.
@@ -203,35 +142,8 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
         data = data.to(device)
         coarse_gt = coarse_gt.to(device)
         fine_gt = fine_gt.to(device)
-
-        if hierarchy == 'coarse':
-            logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=coarse_gt, instance_eval=True)
-            loss = loss_fn(logits, coarse_gt)
-            acc_logger.log(y_hat, coarse_gt)
-
-            error = calculate_error(y_hat, coarse_gt)
-            train_error += error
-
-            inst_preds = instance_dict['inst_preds']
-            inst_labels = instance_dict['inst_labels']
-            inst_logger.log_batch(inst_preds, inst_labels)
-
-            all_preds.append(int(y_hat))
-            all_labels.append(int(coarse_gt))
-        elif hierarchy == 'fine':
-            logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=fine_gt, instance_eval=True)
-            loss = loss_fn(logits, fine_gt)
-            acc_logger.log(y_hat, fine_gt)
-            error = calculate_error(y_hat, fine_gt)
-            train_error += error
-
-            inst_preds = instance_dict['inst_preds']
-            inst_labels = instance_dict['inst_labels']
-            inst_logger.log_batch(inst_preds, inst_labels)
-
-            all_preds.append(int(y_hat))
-            all_labels.append(int(fine_gt))
-        else:
+##################################################################
+        if is_hierarchy:
             # coarse and fine
             logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=fine_gt, instance_eval=True,
                                                             is_hierarchy=True)
@@ -257,39 +169,50 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
             all_labels_coarse.append(int(coarse_gt))
             all_preds_fine.append(int(y_hat_fine))
             all_labels_fine.append(int(fine_gt))
+############################################################
+        else:
+            label_gt = fine_gt
+            if hierarchy == 'coarse':
+                label_gt = coarse_gt
+            logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=label_gt, instance_eval=True)
+            acc_logger.log(y_hat, label_gt)
+            loss = loss_fn(logits, label_gt)
+            loss_value = loss.item()  # scalar,  bag loss
+            
+            instance_loss = instance_dict['instance_loss']  # tensor
+            inst_count += 1
+            instance_loss_value = instance_loss.item()  # scalar, instance loss
+            
+            train_loss += loss_value  # accumulate total train loss
+            train_inst_loss += instance_loss_value  # accumulate instance loss
+            total_loss = bag_weight * loss + (1 - bag_weight) * instance_loss  # total loss tensor
 
+            inst_preds = instance_dict['inst_preds']
+            inst_labels = instance_dict['inst_labels']
+            inst_logger.log_batch(inst_preds, inst_labels)
 
-        loss_value = loss.item()  # scalar,  bag loss
-        instance_loss = instance_dict['instance_loss']  # tensor
-        instance_loss_value = instance_loss.item()  # scalar, instance loss
-        inst_count += 1
+            all_preds.append(int(y_hat))
+            all_labels.append(int(label_gt))
 
-        train_inst_loss += instance_loss_value  # accumulate instance loss
-        train_loss += loss_value  # accumulate total train loss
-        total_loss = bag_weight * loss + (1 - bag_weight) * instance_loss  # total loss tensor
+            error = calculate_error(y_hat, label_gt)
+            train_error += error
 
         if (batch_idx + 1) % 100 == 0:
-            if hierarchy == 'coarse':
-                log_writer.print_and_write('batch {}, loss: {:.4f}, instance_loss: {:.4f}, weighted_loss: {:.4f}, '.format(batch_idx+1,
-                                                                                                      loss_value,
-                                                                                                      instance_loss_value,
-                                                                                                      total_loss.item()) +
-                      'label: {}, bag_size: {}'.format(coarse_gt.item(), data.size(0)))
-            elif hierarchy == 'fine':
+            if is_hierarchy:
                 log_writer.print_and_write('batch {}, loss: {:.4f}, instance_loss: {:.4f}, weighted_loss: {:.4f}, '.format(batch_idx+1,
                                                                                                       loss_value,
                                                                                                       instance_loss_value,
                                                                                                       total_loss.item()) +
                       'label: {}, bag_size: {}'.format(fine_gt.item(), data.size(0)))
+                
             else:
+                label_gt = coarse_gt if hierarchy == 'coarse' else fine_gt
+                
                 log_writer.print_and_write('batch {}, loss: {:.4f}, instance_loss: {:.4f}, weighted_loss: {:.4f}, '.format(batch_idx+1,
                                                                                                       loss_value,
                                                                                                       instance_loss_value,
                                                                                                       total_loss.item()) +
-                      'label: {}, bag_size: {}'.format(fine_gt.item(), data.size(0)))
-
-
-
+                      'label: {}, bag_size: {}'.format(label_gt.item(), data.size(0)))
         # backward pass
         total_loss.backward()  # backprop on the entire CLAM model
         # step
@@ -297,7 +220,7 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
         optimizer.zero_grad()
 
     # calculate loss and error for epoch
-    train_loss /= len(loader)
+    train_loss /= len(loader)           #bag level loss
     train_error /= len(loader)
 
     if inst_count > 0:
@@ -310,7 +233,7 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
     log_writer.print_and_write(
         'Epoch: {}, train_loss: {:.4f}, train_clustering_loss:  {:.4f}, train_error: {:.4f}'.format(epoch, train_loss, train_inst_loss, train_error))
 
-    if hierarchy == 'coarse-and-fine':
+    if is_hierarchy:
         acc_coarse, acc_fine = 0.0, 0.0
         for i in range(num_classes['coarse']):
             acc_coarse, correct_coarse, count_coarse = acc_logger_coarse.get_summary(i)
@@ -319,18 +242,19 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
         for i in range(num_classes['fine']):
             acc_fine, correct_fine, count_fine = acc_logger_fine.get_summary(i)
             log_writer.print_and_write('Fine class {}: fine acc {}, correct fine {}/{} '.format(i, acc_fine, correct_fine, count_fine))
-
+        
+        acc_coarse = accuracy_score(all_labels_coarse, all_preds_coarse)
+        acc_fine = accuracy_score(all_labels_fine, all_preds_fine)
+        return acc_coarse, acc_fine, train_loss
     else:
         acc = 0.
         for i in range(num_classes[hierarchy]):
             acc, correct, count = acc_logger.get_summary(i)
             log_writer.print_and_write('class {}: acc {}, correct {}/{} '.format(i, acc, correct, count))
 
-    acc = accuracy_score(all_labels, all_preds)
-    log_writer.print_and_write(f"Overall Accuracy: {acc:.4f}")
-    # acc_coarse = accuracy_score(all_labels_coarse, all_preds_coarse)
-    # acc_fine = accuracy_score(all_labels_fine, all_preds_fine)
-    return acc, train_loss #if not is_hierarchy else (acc_coarse, acc_fine), train_loss
+        acc = accuracy_score(all_labels, all_preds)
+        log_writer.print_and_write(f"Overall Accuracy: {acc:.4f}")
+        return acc, train_loss 
 
 def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=None, hierarchy='coarse-and-fine', log_writer=None):
     model.eval()
@@ -338,17 +262,13 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
     is_hierarchy = hierarchy not in ('coarse', 'fine')
     acc_logger_coarse = AccuracyLogger(n_classes=num_classes['coarse'])
     acc_logger_fine = AccuracyLogger(n_classes=num_classes['fine'])
-    inst_logger_coarse = AccuracyLogger(n_classes=num_classes['coarse'])
-    inst_logger_fine = AccuracyLogger(n_classes=num_classes['fine'])
 
     acc_logger = AccuracyLogger(n_classes=num_classes[hierarchy])
     inst_logger = AccuracyLogger(n_classes=num_classes[hierarchy])
 
     val_loss = 0.
     val_error = 0.
-
     val_inst_loss = 0.
-    val_inst_acc = 0.
     inst_count = 0
 
     prob = np.zeros((len(loader), num_classes[hierarchy]))
@@ -359,79 +279,77 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
     labels_coarse = np.zeros(len(loader))
     labels_fine = np.zeros(len(loader))
 
+    all_preds_coarse = []
+    all_preds_fine = []
+    all_labels_coarse = []
+    all_labels_fine = []
+
     all_preds = []
     all_labels = []
     with torch.inference_mode():
         for batch_idx, (data, coarse_gt, fine_gt) in enumerate(loader):
             data, coarse_gt, fine_gt = data.to(device), coarse_gt.to(device), fine_gt.to(device)
-
-            if hierarchy == 'coarse':
-                logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=coarse_gt, instance_eval=True)
-                loss = loss_fn(logits, coarse_gt)
-                acc_logger.log(y_hat, coarse_gt)
-                all_preds.append(int(y_hat))
-                all_labels.append(int(coarse_gt))
-
-                inst_preds = instance_dict['inst_preds']
-                inst_labels = instance_dict['inst_labels']
-                inst_logger.log_batch(inst_preds, inst_labels)
-                labels[batch_idx] = coarse_gt.item()
-                prob[batch_idx] = y_prob.cpu().numpy()
-
-                error = calculate_error(y_hat, coarse_gt)
-                val_error += error
-
-            elif hierarchy == 'fine':
-                logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=fine_gt, instance_eval=True)
-                loss = loss_fn(logits, fine_gt)
-                acc_logger.log(y_hat, fine_gt)
-                all_preds.append(int(y_hat))
-                all_labels.append(int(fine_gt))
-
-                inst_preds = instance_dict['inst_preds']
-                inst_labels = instance_dict['inst_labels']
-                inst_logger.log_batch(inst_preds, inst_labels)
-                labels[batch_idx] = fine_gt.item()
-                prob[batch_idx] = y_prob.cpu().numpy()
-
-                error = calculate_error(y_hat, fine_gt)
-                val_error += error
-            else:
+        #####################hierarchical################################
+            if is_hierarchy:
                 logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=fine_gt, instance_eval=True,
                                                                 is_hierarchy=True)
                 logits_coarse, logits_fine = logits
                 y_prob_coarse, y_prob_fine = y_prob
                 y_hat_coarse, y_hat_fine = y_hat
 
+                acc_logger_coarse.log(y_hat_coarse, coarse_gt)
+                acc_logger_fine.log(y_hat_fine, fine_gt)
+
                 loss_coarse = loss_fn(logits_coarse, coarse_gt)
                 loss_fine = loss_fn(logits_fine, fine_gt)
                 loss = loss_coarse + loss_fine
 
-                acc_logger_coarse.log(y_hat_coarse, coarse_gt)
-                acc_logger_fine.log(y_hat_fine, fine_gt)
-
                 inst_preds = instance_dict['inst_preds']
                 inst_labels = instance_dict['inst_labels']
-                inst_logger_coarse.log_batch(inst_preds, inst_labels)
-                inst_logger_fine.log_batch(inst_preds, inst_labels)
+                inst_logger.log_batch(inst_preds, inst_labels)
 
                 labels_coarse[batch_idx] = coarse_gt.item()
                 labels_fine[batch_idx] = fine_gt.item()
                 prob_coarse[batch_idx] = y_prob_coarse.cpu().numpy()
                 prob_fine[batch_idx] = y_prob_fine.cpu().numpy()
 
-            val_loss += loss.item()
-            instance_loss = instance_dict['instance_loss']
+                all_preds_coarse.append(int(y_hat_coarse))
+                all_preds_fine.append(int(y_hat_fine))
+                all_labels_coarse.append(int(coarse_gt))
+                all_labels_fine.append(int(fine_gt))
 
-            inst_count += 1
-            instance_loss_value = instance_loss.item()
-            val_inst_loss += instance_loss_value
+                error_coarse = calculate_error(y_hat_coarse, coarse_gt)
+                error_fine = calculate_error(y_hat_fine, fine_gt)
+                val_error += error_coarse + error_fine
+        ######################################################################
+            else:
+                label_gt = coarse_gt if hierarchy == 'coarse' else fine_gt
+                logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=label_gt, instance_eval=True)
+                acc_logger.log(y_hat, label_gt)
+                loss = loss_fn(logits, label_gt)
+                val_loss += loss.item()
+                
+                instance_loss = instance_dict['instance_loss']
+                inst_count += 1
+                instance_loss_value = instance_loss.item()
+                val_inst_loss += instance_loss_value
 
+                inst_preds = instance_dict['inst_preds']
+                inst_labels = instance_dict['inst_labels']
+                inst_logger.log_batch(inst_preds, inst_labels)
+                
+                prob[batch_idx] = y_prob.cpu().numpy()
+                labels[batch_idx] = label_gt.item()
 
+                all_preds.append(int(y_hat))
+                all_labels.append(int(label_gt))
+
+                error = calculate_error(y_hat, label_gt)
+                val_error += error
 
     val_error /= len(loader)
     val_loss /= len(loader)
-
+    #######################hierarchical#########################
     if is_hierarchy:
         auc_coarse = 0
         auc_fine = 0
@@ -464,6 +382,30 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
             auc = np.nanmean(np.array(fine_auc_vals))
         log_writer.print_and_write(
             'Val Set, val_loss: {:.4f}, coarse auc: {:.4f}, fine auc: {:.4f} '.format(val_loss, auc_coarse, auc_fine))
+        if inst_count > 0:
+            val_inst_loss /= inst_count
+            for i in range(2):
+                acc, correct, count = inst_logger.get_summary(i)
+                log_writer.print_and_write('class {} clustering acc {}: correct {}/{} '.format(i, acc, correct, count))
+        for i in range(num_classes['coarse']):
+            acc, correct, count = acc_logger_coarse.get_summary(i)
+            log_writer.print_and_write('class {}: acc {}, correct {}/{} '.format(i, acc, correct, count))
+        
+        for i in range(num_classes['fine']):
+            acc, correct, count = acc_logger_fine.get_summary(i)
+            log_writer.print_and_write('class {}: acc {}, correct {}/{} '.format(i, acc, correct, count))
+        
+        f1_coarse = f1_score(all_labels_coarse, all_preds_coarse, average='macro')
+        acc_coarse = accuracy_score(all_labels_coarse, all_preds_coarse)
+        f1_fine = f1_score(all_labels_fine, all_preds_fine, average='macro')
+        acc_fine = accuracy_score(all_labels_fine, all_preds_fine)
+        log_writer.print_and_write(f"Coarse Overall Accuracy: {acc_coarse:.4f}")
+        log_writer.print_and_write(f"Coarse Overall F1 Score: {f1_coarse:.4f}")
+        log_writer.print_and_write(f"Fine Overall Accuracy: {acc_fine:.4f}")
+        log_writer.print_and_write(f"Fine Overall F1 Score: {f1_fine:.4f}")
+
+        return acc_coarse, acc_fine, val_loss
+    #############################################################################
     else:
         auc = 0
         if num_classes[hierarchy] == 2:
@@ -480,60 +422,24 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
                     auc_vals.append(float('nan'))
 
             auc = np.nanmean(np.array(auc_vals))
-        log_writer.print_and_write('\nVal Set, val_loss: {:.4f}, auc: {:.4f} '.format(val_loss, auc))
-    # log_writer.print_and_write('\nVal Set, val_loss: {:.4f}, val_error: {:.4f}, auc: {:.4f}'.format(val_loss, val_error, auc))
-
-    if is_hierarchy:
-        if inst_count > 0:
-            val_inst_loss /= inst_count
-            for i in range(2):
-                acc_coarse, correct_coarse, count_coarse = inst_logger_coarse.get_summary(i)
-                acc_fine, correct_fine, count_fine = inst_logger_fine.get_summary(i)
-                log_writer.print_and_write(
-                    'class {} coarse instance clustering acc {}: correct {}/{} '.format(i, acc_coarse, correct_coarse,
-                                                                                          count_coarse))
-                log_writer.print_and_write('class {} fine instance clustering acc {}: correct {}/{} '.format(i, acc_fine, correct_fine,
-                                                                                          count_fine))
-
-        for i in range(num_classes['coarse']):
-            acc_coarse, correct_coarse, count_coarse = acc_logger_coarse.get_summary(i)
-            log_writer.print_and_write(
-                'class {}: coarse acc {}, correct coarse {}/{} '.format(i, acc_coarse, correct_coarse, count_coarse))
-        for i in range(num_classes['fine']):
-            acc_fine, correct_fine, count_fine = acc_logger_fine.get_summary(i)
-            log_writer.print_and_write('class {}: fine acc {}, correct fine {}/{} '.format(i, acc_fine, correct_fine, count_fine))
-    else:
+        log_writer.print_and_write('\nVal Set, val_loss: {:.4f}, val_error: {:.4f}, auc: {:.4f}'.format(val_loss, val_error, auc))
+        
         if inst_count > 0:
             val_inst_loss /= inst_count
             for i in range(2):
                 acc, correct, count = inst_logger.get_summary(i)
                 log_writer.print_and_write('class {} clustering acc {}: correct {}/{} '.format(i, acc, correct, count))
+        
         for i in range(num_classes[hierarchy]):
             acc, correct, count = acc_logger.get_summary(i)
             log_writer.print_and_write('class {}: acc {}, correct {}/{} '.format(i, acc, correct, count))
 
-    #for non-hierarchical
-    f1 = f1_score(all_labels, all_preds, average='macro')
-    acc = accuracy_score(all_labels, all_preds)
-    log_writer.print_and_write(f"Overall Accuracy: {acc:.4f}")
-    log_writer.print_and_write(f"Overall F1 Score: {f1:.4f}")
+        f1 = f1_score(all_labels, all_preds, average='macro')
+        acc = accuracy_score(all_labels, all_preds)
+        log_writer.print_and_write(f"Overall Accuracy: {acc:.4f}")
+        log_writer.print_and_write(f"Overall F1 Score: {f1:.4f}")
 
-    return acc, val_loss
-
-
-def drawPlot(acc, model_type, hierarchy, save_path=None, label=""):
-    plot_title = "{} ({}_{})".format(label, hierarchy, model_type)
-    plt.figure(figsize=(10, 5))
-    plt.plot(range(1, len(acc) + 1), acc, label=label)
-    plt.xlabel("Epoch")
-    plt.ylabel(label)
-    plt.title(plot_title)
-    plt.legend()
-    if save_path is not None:
-        plt.savefig(save_path)
-    plt.show()
-
-
+        return acc, val_loss
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='PyTorch Training')
