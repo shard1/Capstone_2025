@@ -42,11 +42,11 @@ def configure_clam(model_args, model_type, hierarchy, bag_loss, inst_loss):
         loss_fn, instance_loss_fn = configure_loss_fns(bag_loss, inst_loss, n_classes=4)
         model = configure_model(model_args, model_type, instance_loss_fn, n_classes=4)
     elif hierarchy == 'fine':
-        loss_fn, instance_loss_fn = configure_loss_fns(bag_loss, inst_loss, n_classes=14)
-        model = configure_model(model_args, model_type, instance_loss_fn, 14)
+        loss_fn, instance_loss_fn = configure_loss_fns(bag_loss, inst_loss, n_classes=11)
+        model = configure_model(model_args, model_type, instance_loss_fn, 11)
     else:
-        loss_fn, instance_loss_fn = configure_loss_fns(bag_loss, inst_loss, n_classes=14)
-        model = configure_model(model_args, model_type, instance_loss_fn, 14)
+        loss_fn, instance_loss_fn = configure_loss_fns(bag_loss, inst_loss, n_classes=15)
+        model = configure_model(model_args, model_type, instance_loss_fn, 15)
     return model, loss_fn
 
 def calculate_error(Y_hat, Y):

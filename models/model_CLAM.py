@@ -119,7 +119,12 @@ class CLAM_SB(nn.Module):
             A = A.view(1, -1)  # change to shape [1,N], N patches so N attention scores	(also one class so [1,N])
         # topk returns top k scores and corresponding indices using attention score A (normalized)
         # k and B are used interchangeably (B in the paper)
-        top_p_ids = torch.topk(A, self.k_sample)[1][-1]  # topk[1] returns indices of top k values (shape [1 B]) top[1][-1] returns the k indices
+
+        k = min(self.k_sample, A.shape[-1])
+        if k == 0:
+            raise ValueError("Bag has no patches.")
+        top_p_ids = torch.topk(A, k)[1][-1]
+        # top_p_ids = torch.topk(A, self.k_sample)[1][-1]  # topk[1] returns indices of top k values (shape [1 B]) top[1][-1] returns the k indices
         top_p = torch.index_select(h, dim=0,
                                    index=top_p_ids)  # selects from feature vectors (h) using the top k indices, shape [B,D]
         top_n_ids = torch.topk(-A, self.k_sample, dim=1)[1][-1]
@@ -140,7 +145,12 @@ class CLAM_SB(nn.Module):
         device = h.device
         if len(A.shape) == 1:
             A = A.view(1, -1)  # [1, N]
-        top_p_ids = torch.topk(A, self.k_sample)[1][-1]  # [1, B]
+
+        k = min(self.k_sample, A.shape[-1])
+        if k == 0:
+            raise ValueError("Bag has no patches.")
+        top_p_ids = torch.topk(A, k)[1][-1]
+        #top_p_ids = torch.topk(A, self.k_sample)[1][-1]  # [1, B]
         top_p = torch.index_select(h, dim=0, index=top_p_ids)  # [B, D]
         p_targets = self.create_negative_targets(self.k_sample, device)  # [B],  create negative targets to penalize false positives
         logits = classifier(top_p)  # [B, 2]
@@ -187,8 +197,8 @@ class CLAM_SB(nn.Module):
             logits_coarse = logits[:, : num_class['coarse']]
             logits_fine = logits[:, num_class['coarse']:]
 
-            Y_hat_coarse = torch.topk(logits_coarse, 1, dim=1)[1]  # shape [1]		unnormalized logit value
-            Y_hat_fine = torch.topk(logits_fine, 1, dim=1)[1]  # shape [1]		unnormalized logit value
+            Y_hat_coarse = torch.topk(logits_coarse, 1, dim=1)[1]  # shape [1]
+            Y_hat_fine = torch.topk(logits_fine, 1, dim=1)[1] - num_class['coarse']  # shift by 4 units to account for coarse labels
             Y_prob_coarse = F.softmax(logits_coarse, dim=1)  # [1, n_classes]		#normalized logit value
             Y_prob_fine = F.softmax(logits_fine, dim=1)  # [1, n_classes]		#normalized logit value
             if instance_eval:
@@ -247,7 +257,6 @@ class CLAM_MB(CLAM_SB):
         total_inst_loss = 0.0
         all_preds = []
         all_targets = []
-
         if instance_eval:
             inst_labels = F.one_hot(label, num_classes=self.n_classes).squeeze()  # binarize label
             for i in range(len(self.instance_classifiers)):
@@ -276,8 +285,8 @@ class CLAM_MB(CLAM_SB):
             for c in range(0, num_class['coarse']):
                 logits_coarse[0, c] = self.classifiers[c](M[c])
             logits_fine = torch.empty(1, num_class['fine']).float().to(M.device)
-            for c in range(num_class['coarse'], num_class['coarse'] + num_class['fine']):
-                logits_fine[0, c] = self.classifiers[c](M[c])
+            for c in range(num_class['coarse'], num_class['coarse-and-fine']):
+                logits_fine[0, c-num_class['coarse']] = self.classifiers[c](M[c])
             Y_hat_coarse = torch.topk(logits_coarse, 1, dim = 1)[1]
             Y_hat_fine = torch.topk(logits_fine, 1, dim = 1)[1]
             Y_prob_coarse = F.softmax(logits_coarse, dim=1)

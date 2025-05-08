@@ -97,7 +97,7 @@
 #                         dest='lr')  # [변경] 초기 Learning rate
 #     parser.add_argument('--print_freq', default=100, type=int)
 #     parser.add_argument('--save_freq', default=10, type=int)
-#     parser.add_argument('--result', default='./results', type=str, help='path to results')
+#     parser.add_argument('--result', default='./results_ver1', type=str, help='path to results_ver1')
 #     args = parser.parse_args()
 #
 #     os.makedirs(args.result, exist_ok=True)

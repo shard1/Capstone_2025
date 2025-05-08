@@ -7,6 +7,20 @@ from torch.utils.data import Dataset, DataLoader
 patient_id;diagnosis_id;coarse;fine;split
 '''
 
+fine_dict = {
+    0: 0,
+    1: 1,
+    3: 2,
+    4: 3,
+    5: 4,
+    6: 5,
+    7: 6,
+    8: 7,
+    10: 8,
+    11: 9,
+    13: 10
+}
+
 
 def load_anno(anno_path):
     anno_dict = {}
@@ -19,6 +33,8 @@ def load_anno(anno_path):
             coarse = int(line_split[2])
             fine = int(line_split[3])
             split = line_split[4]
+
+            fine = fine_dict[fine]
 
             if patient_id not in anno_dict:
                 anno_dict[patient_id] = {}
@@ -70,27 +86,27 @@ class AMCDataset(Dataset):
 
     def __str__(self):
         fine_stats = {}
-        for data, coarse_gt, fine_gt, split in self.data:
+        for data, coarse_gt, fine_gt, split, patient_id, diagnosis_id in self.data:
             if fine_gt not in fine_stats:
                 fine_stats[fine_gt] = 0
             fine_stats[fine_gt] += 1
 
         msg_fine = ""
-        msg_fine += "[{} set] {}".format(self.split, len(self))
+        msg_fine += "[{} set] {}\n".format(self.split, len(self))
         for k, v in sorted(fine_stats.items()):
-            msg_fine += "Fine {}: {}".format(k, v)
-        msg_fine += "total num of fine classes: {}".format(len(fine_stats))
+            msg_fine += "Fine {}: {}\n".format(k, v)
+        msg_fine += "total num of fine classes: {}\n".format(len(fine_stats))
 
         coarse_stats = {}
-        for data, coarse_gt, fine_gt, split in self.data:
+        for data, coarse_gt, fine_gt, split, patient_id, diagnosis_id in self.data:
             if coarse_gt not in coarse_stats:
                 coarse_stats[coarse_gt] = 0
             coarse_stats[coarse_gt] += 1
         msg_coarse = ""
-        msg_coarse += "[{} set] {}".format(self.split, len(self))
+        msg_coarse += "[{} set] {}\n".format(self.split, len(self))
         for k, v in sorted(coarse_stats.items()):
-            msg_coarse += "Coarse {}: {}".format(k, v)
-        msg_coarse += "total num of coarse classes: {} ".format(len(coarse_stats))
+            msg_coarse += "Coarse {}: {}\n".format(k, v)
+        msg_coarse += "total num of coarse classes: {}\n".format(len(coarse_stats))
         return msg_coarse + msg_fine
 
     def __getitem__(self, idx):
@@ -104,6 +120,7 @@ class AMCDataset(Dataset):
 def identity_collate(batch):
     return batch[0]
 
+
 if __name__ == "__main__":
     base_dir = "/home/user/data/UJSMB_STLB"
     anno_path = "/home/user/lib/Capstone_2025/dataloader/amc_fine_grained_anno.csv"
@@ -115,10 +132,9 @@ if __name__ == "__main__":
     print(train_dataset)
     print(val_dataset)
     print(test_dataset)
-    # train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True, collate_fn=identity_collate)
-    # for data, coarse_gt, fine_gt in train_loader:
+    train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True, collate_fn=identity_collate)
+    # for data, coarse_gt, fine_gt, patient_id, diagnosis_id in train_loader:
     #     print(data.shape)
-
 
     # val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False)
     # test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)

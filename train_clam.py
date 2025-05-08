@@ -458,7 +458,7 @@ if __name__ == '__main__':
                         dest='lr')  # [변경] 초기 Learning rate
     # parser.add_argument('--print_freq', default=100, type=int)
     # parser.add_argument('--save_freq', default=10, type=int)
-    parser.add_argument('--result', default='./results', type=str, help='path to results')
+    parser.add_argument('--result', default='./results_ver1', type=str, help='path to results_ver1')
     parser.add_argument('--bag_loss', default='ce', type=str, help='bag level classifier loss function')
     parser.add_argument('--inst_loss', default='svm', type=str, help='instance classifier loss function')
     parser.add_argument('--model_type', type=str, default='clam_mb', choices=['clam_sb', 'clam_mb'],

@@ -81,7 +81,7 @@ if __name__ == '__main__':
     # parser.add_argument('--batch_size', default=1, type=int, help='mini-batch size')  # [변경]배치 사이즈
     # parser.add_argument('--lr', default=0.00001, type=float, help='initial learning rate', dest='lr')  # [변경] 초기 Learning rate
     # parser.add_argument('--seed', default=103, type=int, help='seed for initializing training.')
-    # parser.add_argument('--result', default='results', type=str, help='path to results')
+    # parser.add_argument('--result', default='results_ver1', type=str, help='path to results_ver1')
     # args = parser.parse_args()
     #
     # if args.seed is not None:
