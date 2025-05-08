@@ -1,9 +1,15 @@
-from models.model_CLAM import CLAM_SB, CLAM_MB
-from topk.svm import SmoothTop1SVM
-import matplotlib.pyplot as plt
-import torch.nn as nn
+import os
 import random
 
+import matplotlib.pyplot as plt
+import numpy as np
+import torch
+import torch.nn as nn
+
+from models.model_CLAM import CLAM_SB, CLAM_MB
+from topk.svm import SmoothTop1SVM
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 def configure_loss_fns(bag_loss, inst_loss, n_classes):
     if bag_loss == 'svm':
         loss_fn = SmoothTop1SVM(n_classes)

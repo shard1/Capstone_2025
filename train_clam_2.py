@@ -1,10 +1,5 @@
 import argparse
-import os
 
-import numpy as np
-import torch
-
-from utils import *
 from sklearn.metrics import auc as calc_auc
 from sklearn.metrics import f1_score, accuracy_score
 from sklearn.metrics import roc_auc_score, roc_curve
@@ -12,6 +7,7 @@ from sklearn.preprocessing import label_binarize
 from torch.utils.data import DataLoader
 
 from dataloader.dataloader_AMC import AMCDataset
+from utils import *
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -410,8 +406,8 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
                 acc, correct, count = inst_logger.get_summary(i)
                 log_writer.print_and_write('class {} clustering acc {}: correct {}/{} '.format(i, acc, correct, count))
         
-        printAcc(num_classes, 'coarse', acc_logger_coarse)
-        printAcc(num_classes, 'fine', acc_logger_fine)
+        printAcc(num_classes, 'coarse', acc_logger_coarse, log_writer)
+        printAcc(num_classes, 'fine', acc_logger_fine, log_writer)
 
         f1_coarse = f1_score(all_labels_coarse, all_preds_coarse, average='macro')
         acc_coarse = accuracy_score(all_labels_coarse, all_preds_coarse)
@@ -434,7 +430,7 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
                 acc, correct, count = inst_logger.get_summary(i)
                 log_writer.print_and_write('class {} clustering acc {}: correct {}/{} '.format(i, acc, correct, count))
         
-        printAcc(num_classes, hierarchy, acc_logger)
+        printAcc(num_classes, hierarchy, acc_logger, log_writer)
         f1 = f1_score(all_labels, all_preds, average='macro')
         acc = accuracy_score(all_labels, all_preds)
         log_writer.print_and_write(f"Overall Accuracy: {acc:.4f}")
@@ -468,7 +464,8 @@ if __name__ == '__main__':
                         help='choose classification type')
     parser.add_argument('--bag_weight', default=0.7, type=float, help='clam: weight coefficient for bag-level loss')
     args = parser.parse_args()
-    args.result = os.path.join(args.result, args.hierarchy)
+    model_hierarchy = os.path.join(args.hierarchy, args.model_type)
+    args.result = os.path.join(args.result, model_hierarchy)
     os.makedirs(args.result, exist_ok=True)
 
     set_seed(args.seed)
