@@ -182,7 +182,7 @@ class CLAM_SB(nn.Module):
         # h is [N,D], A is [n_classes = 1, N] because only one attention branch exists
         M = torch.mm(A, h)  # [n_classes = 1, D]   h_slide,  n_classes from attention
         logits = self.classifiers(M)  # [1, n_classes]
-        ####################################################
+        #######################hierarchical#############################
         if is_hierarchy:
             logits_coarse = logits[:, : num_class['coarse']]
             logits_fine = logits[:, num_class['coarse']:]
@@ -270,7 +270,7 @@ class CLAM_MB(CLAM_SB):
                 total_inst_loss /= len(self.instance_classifiers)
 
         M = torch.mm(A, h)  # slide level representation h_slide, [n_classes, D]
-#####################################################################################
+#######################################hierarchical##############################################
         if is_hierarchy:
             logits_coarse = torch.empty(1, num_class['coarse']).float().to(M.device)
             for c in range(0, num_class['coarse']):

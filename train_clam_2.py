@@ -61,42 +61,14 @@ class AccuracyLogger(object):
 
         return acc, correct, count
 
-def summary(model, loader, n_classes):
-    acc_logger = AccuracyLogger(n_classes=n_classes)
-    model.eval()
-    test_loss = 0.
-    test_error = 0.
-
-    all_probs = np.zeros((len(loader), n_classes))
-    all_labels = np.zeros(len(loader))
-
-    slide_ids = loader.dataset.slide_data['slide_id']
-    patient_results = {}
-
-    for batch_idx, (data, coarse_gt, fine_gt) in enumerate(loader):
-        data, coarse_gt, fine_gt = data.to(device), coarse_gt.to(device), fine_gt.to(device)
-        slide_id = slide_ids.iloc[batch_idx]
-        with torch.inference_mode():
-            logits, Y_prob, Y_hat, _, _ = model(data)
-
-        acc_logger.log(Y_hat, label)
-        probs = Y_prob.cpu().numpy()
-        all_probs[batch_idx] = probs
-        all_labels[batch_idx] = label.item()
-
-        patient_results.update({slide_id: {'slide_id': np.array(slide_id), 'prob': probs, 'label': label.item()}})
-        error = calculate_error(Y_hat, label)
-        test_error += error
-
-    test_error /= len(loader)
-
-    if n_classes == 2:
+def computeAUC(all_labels, all_probs, num_classes, hierarchy):
+    if num_classes[hierarchy] == 2:
         auc = roc_auc_score(all_labels, all_probs[:, 1])
         aucs = []
     else:
         aucs = []
-        binary_labels = label_binarize(all_labels, classes=[i for i in range(n_classes)])
-        for class_idx in range(n_classes):
+        binary_labels = label_binarize(all_labels, classes=[i for i in range(num_classes[hierarchy])])
+        for class_idx in range(num_classes[hierarchy]):
             if class_idx in all_labels:
                 fpr, tpr, _ = roc_curve(binary_labels[:, class_idx], all_probs[:, class_idx])
                 aucs.append(calc_auc(fpr, tpr))
@@ -104,9 +76,82 @@ def summary(model, loader, n_classes):
                 aucs.append(float('nan'))
 
         auc = np.nanmean(np.array(aucs))
+        return auc
+    
+def summary(model, loader, num_classes, hierarchy):
+    is_hierarchy = hierarchy not in ('coarse', 'fine')
+    acc_logger_coarse = AccuracyLogger(n_classes=num_classes['coarse'])
+    acc_logger_fine = AccuracyLogger(n_classes=num_classes['fine'])
+    acc_logger = AccuracyLogger(n_classes=num_classes[hierarchy])
+    
+    model.eval()
+    test_error = 0.
 
-    return patient_results, test_error, auc, acc_logger
+    all_probs_coarse = np.zeros((len(loader), num_classes['coarse']))
+    all_probs_fine = np.zeros((len(loader), num_classes['fine']))
+    all_labels_coarse = np.zeros(len(loader))
+    all_labels_fine = np.zeros(len(loader))
 
+    all_probs = np.zeros((len(loader), num_classes[hierarchy]))
+    all_labels = np.zeros(len(loader))
+
+    patient_results = {}
+
+    for batch_idx, (data, coarse_gt, fine_gt, patient_id, diagnosis_id) in enumerate(loader):
+        data, coarse_gt, fine_gt = data.to(device), coarse_gt.to(device), fine_gt.to(device)
+        slide_id = f"{patient_id}_{diagnosis_id}"
+        
+        with torch.inference_mode():
+            logits, y_prob, y_hat, _, _ = model(data, num_classes, label = fine_gt, instance_eval = True, 
+                                                    is_hierarchy = True)
+            if is_hierarchy:
+                logits_coarse, logits_fine = logits
+                y_prob_coarse, y_prob_fine = y_prob
+                y_hat_coarse, y_hat_fine = y_hat
+
+                acc_logger_coarse.log(y_hat_coarse, coarse_gt)
+                acc_logger_fine.log(y_hat_fine, fine_gt)
+
+                probs_coarse = y_prob_coarse.cpu().numpy()
+                probs_fine = y_prob_fine.cpu().numpy()
+                all_probs_coarse[batch_idx] = probs_coarse
+                all_probs_fine[batch_idx] = probs_fine
+                all_labels_coarse[batch_idx] = coarse_gt.item()
+                all_labels_fine[batch_idx] = fine_gt.item()
+
+                patient_results.update({slide_id: {'slide_id': np.array(slide_id), 'prob': probs_fine, 'label': fine_gt.item()}})
+                error = calculate_error(y_hat_fine, fine_gt)
+                test_error += error
+
+                test_error /= len(loader)
+
+                auc_coarse = computeAUC(all_labels_coarse, all_probs_coarse, num_classes, 'coarse')
+                auc_fine = computeAUC(all_labels_fine, all_probs_fine, num_classes, 'fine')                
+
+                return patient_results, test_error, auc_coarse, auc_fine, acc_logger_coarse, acc_logger_fine
+
+            else:
+                label_gt = coarse_gt if hierarchy == 'coarse' else fine_gt
+                acc_logger.log(y_hat, label_gt)
+                probs = y_prob.cpu().numpy()
+                all_probs[batch_idx] = probs
+                all_labels[batch_idx] = label_gt.item()
+
+                patient_results.update({slide_id: {'slide_id': np.array(slide_id), 'prob': probs, 'label': label_gt.item()}})
+                error = calculate_error(y_hat, label_gt)
+                test_error += error
+
+                test_error /= len(loader)
+
+                auc = computeAUC(all_labels, all_probs, num_classes, hierarchy)
+
+                return patient_results, test_error, auc, acc_logger
+
+def printAcc(num_classes, hierarchy, acc_logger, log_writer):
+    for i in range(num_classes[hierarchy]):
+        acc, correct, count = acc_logger.get_summary(i)
+        log_writer.print_and_write('{} class {}: {} acc {}, correct {} {}/{} '.format(hierarchy, i, hierarchy, acc, hierarchy,
+                                                                                      correct, count))
 
 def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn=None, hierarchy='coarse-and-fine', log_writer=None):
     model.train()
@@ -115,8 +160,6 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
     #for hierarchy
     acc_logger_coarse = AccuracyLogger(n_classes=num_classes['coarse'])
     acc_logger_fine = AccuracyLogger(n_classes=num_classes['fine'])
-    inst_logger_coarse = AccuracyLogger(n_classes=num_classes['coarse'])
-    inst_logger_fine = AccuracyLogger(n_classes=num_classes['fine'])
 
     #non hierarchy
     acc_logger = AccuracyLogger(n_classes=num_classes[hierarchy])       #tracks bag level accuracy
@@ -138,7 +181,7 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
 
     log_writer.print_and_write("Training for {} level...".format(hierarchy))
 
-    for batch_idx, (data, coarse_gt, fine_gt) in enumerate(loader):
+    for batch_idx, (data, coarse_gt, fine_gt, _ , _) in enumerate(loader):
         data = data.to(device)
         coarse_gt = coarse_gt.to(device)
         fine_gt = fine_gt.to(device)
@@ -151,24 +194,33 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
             y_prob_coarse, y_prob_fine = y_prob
             y_hat_coarse, y_hat_fine = y_hat
 
-            loss_coarse = loss_fn(logits_coarse, coarse_gt)
-            loss_fine = loss_fn(logits_fine, fine_gt)
-            loss = loss_coarse + loss_fine
-
-            error = calculate_error(y_hat, fine_gt)
-            train_error += error
-
             acc_logger_coarse.log(y_hat_coarse, coarse_gt)
             acc_logger_fine.log(y_hat_fine, fine_gt)
 
+            loss_coarse = loss_fn(logits_coarse, coarse_gt)
+            loss_fine = loss_fn(logits_fine, fine_gt)
+            loss = loss_coarse + loss_fine
+            loss_value = loss.item()
+
+            instance_loss = instance_dict['instance_loss']  # tensor
+            inst_count += 1
+            instance_loss_value = instance_loss.item()  # scalar, instance loss
+
+            train_loss += loss_value  # accumulate total train loss
+            train_inst_loss += instance_loss_value  # accumulate instance loss
+            total_loss = bag_weight * loss + (1 - bag_weight) * instance_loss  # total loss tensor
+
             inst_preds = instance_dict['inst_preds']
             inst_labels = instance_dict['inst_labels']
-            inst_logger_fine.log_batch(inst_preds, inst_labels)
+            inst_logger.log_batch(inst_preds, inst_labels)
 
             all_preds_coarse.append(int(y_hat_coarse))
             all_labels_coarse.append(int(coarse_gt))
             all_preds_fine.append(int(y_hat_fine))
             all_labels_fine.append(int(fine_gt))
+
+            error = calculate_error(y_hat_fine, fine_gt)
+            train_error += error
 ############################################################
         else:
             label_gt = fine_gt
@@ -234,24 +286,13 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
         'Epoch: {}, train_loss: {:.4f}, train_clustering_loss:  {:.4f}, train_error: {:.4f}'.format(epoch, train_loss, train_inst_loss, train_error))
 
     if is_hierarchy:
-        acc_coarse, acc_fine = 0.0, 0.0
-        for i in range(num_classes['coarse']):
-            acc_coarse, correct_coarse, count_coarse = acc_logger_coarse.get_summary(i)
-            log_writer.print_and_write('Coarse class {}: coarse acc {}, correct coarse {}/{} '.format(i, acc_coarse, correct_coarse,
-                                                                                   count_coarse))
-        for i in range(num_classes['fine']):
-            acc_fine, correct_fine, count_fine = acc_logger_fine.get_summary(i)
-            log_writer.print_and_write('Fine class {}: fine acc {}, correct fine {}/{} '.format(i, acc_fine, correct_fine, count_fine))
-        
+        printAcc(num_classes, 'coarse', acc_logger_coarse, log_writer)
+        printAcc(num_classes, 'fine', acc_logger_fine, log_writer)
         acc_coarse = accuracy_score(all_labels_coarse, all_preds_coarse)
         acc_fine = accuracy_score(all_labels_fine, all_preds_fine)
         return acc_coarse, acc_fine, train_loss
     else:
-        acc = 0.
-        for i in range(num_classes[hierarchy]):
-            acc, correct, count = acc_logger.get_summary(i)
-            log_writer.print_and_write('class {}: acc {}, correct {}/{} '.format(i, acc, correct, count))
-
+        printAcc(num_classes, hierarchy, acc_logger, log_writer)
         acc = accuracy_score(all_labels, all_preds)
         log_writer.print_and_write(f"Overall Accuracy: {acc:.4f}")
         return acc, train_loss 
@@ -287,7 +328,7 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
     all_preds = []
     all_labels = []
     with torch.inference_mode():
-        for batch_idx, (data, coarse_gt, fine_gt) in enumerate(loader):
+        for batch_idx, (data, coarse_gt, fine_gt, _, _) in enumerate(loader):
             data, coarse_gt, fine_gt = data.to(device), coarse_gt.to(device), fine_gt.to(device)
         #####################hierarchical################################
             if is_hierarchy:
@@ -303,6 +344,12 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
                 loss_coarse = loss_fn(logits_coarse, coarse_gt)
                 loss_fine = loss_fn(logits_fine, fine_gt)
                 loss = loss_coarse + loss_fine
+                val_loss += loss.item()
+                
+                instance_loss = instance_dict['instance_loss']
+                inst_count += 1
+                instance_loss_value = instance_loss.item()
+                val_inst_loss += instance_loss_value
 
                 inst_preds = instance_dict['inst_preds']
                 inst_labels = instance_dict['inst_labels']
@@ -351,50 +398,21 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
     val_loss /= len(loader)
     #######################hierarchical#########################
     if is_hierarchy:
-        auc_coarse = 0
-        auc_fine = 0
-        if num_classes['coarse'] == 2:
-            auc_coarse = roc_auc_score(labels_coarse, prob_coarse[:, 1])
-            coarse_auc_vals = []
-        else:
-            coarse_auc_vals = []
-            binary_labels_coarse = label_binarize(labels_coarse, classes=[i for i in range(num_classes['coarse'])])
-            for class_idx in range(num_classes['coarse']):
-                if class_idx in labels_coarse:
-                    fpr, tpr, _ = roc_curve(binary_labels_coarse[:, class_idx], prob_coarse[:, class_idx])
-                    coarse_auc_vals.append(calc_auc(fpr, tpr))
-                else:
-                    coarse_auc_vals.append(float('nan'))
-
-            auc = np.nanmean(np.array(coarse_auc_vals))
-        if num_classes['fine'] == 2:
-            auc_fine = roc_auc_score(labels_fine, prob_fine[:, 1])
-            fine_auc_vals = []
-        else:
-            fine_auc_vals = []
-            binary_labels_fine = label_binarize(labels_fine, classes=[i for i in range(num_classes['fine'])])
-            for class_idx in range(num_classes['fine']):
-                if class_idx in labels_fine:
-                    fpr, tpr, _ = roc_curve(binary_labels_fine[:, class_idx], prob_fine[:, class_idx])
-                    fine_auc_vals.append(calc_auc(fpr, tpr))
-                else:
-                    fine_auc_vals.append(float('nan'))
-            auc = np.nanmean(np.array(fine_auc_vals))
+        auc_coarse = computeAUC(labels_coarse, prob_coarse, num_classes, 'coarse')
+        auc_fine = computeAUC(labels_fine, prob_fine, num_classes, 'fine')
+        
         log_writer.print_and_write(
             'Val Set, val_loss: {:.4f}, coarse auc: {:.4f}, fine auc: {:.4f} '.format(val_loss, auc_coarse, auc_fine))
+        
         if inst_count > 0:
             val_inst_loss /= inst_count
             for i in range(2):
                 acc, correct, count = inst_logger.get_summary(i)
                 log_writer.print_and_write('class {} clustering acc {}: correct {}/{} '.format(i, acc, correct, count))
-        for i in range(num_classes['coarse']):
-            acc, correct, count = acc_logger_coarse.get_summary(i)
-            log_writer.print_and_write('class {}: acc {}, correct {}/{} '.format(i, acc, correct, count))
         
-        for i in range(num_classes['fine']):
-            acc, correct, count = acc_logger_fine.get_summary(i)
-            log_writer.print_and_write('class {}: acc {}, correct {}/{} '.format(i, acc, correct, count))
-        
+        printAcc(num_classes, 'coarse', acc_logger_coarse)
+        printAcc(num_classes, 'fine', acc_logger_fine)
+
         f1_coarse = f1_score(all_labels_coarse, all_preds_coarse, average='macro')
         acc_coarse = accuracy_score(all_labels_coarse, all_preds_coarse)
         f1_fine = f1_score(all_labels_fine, all_preds_fine, average='macro')
@@ -407,21 +425,7 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
         return acc_coarse, acc_fine, val_loss
     #############################################################################
     else:
-        auc = 0
-        if num_classes[hierarchy] == 2:
-            auc = roc_auc_score(labels, prob[:, 1])
-            auc_vals = []
-        else:
-            auc_vals = []
-            binary_labels = label_binarize(labels, classes=[i for i in range(num_classes[hierarchy])])
-            for class_idx in range(num_classes[hierarchy]):
-                if class_idx in labels:
-                    fpr, tpr, _ = roc_curve(binary_labels[:, class_idx], prob[:, class_idx])
-                    auc_vals.append(calc_auc(fpr, tpr))
-                else:
-                    auc_vals.append(float('nan'))
-
-            auc = np.nanmean(np.array(auc_vals))
+        auc = computeAUC(labels, prob, num_classes, hierarchy)
         log_writer.print_and_write('\nVal Set, val_loss: {:.4f}, val_error: {:.4f}, auc: {:.4f}'.format(val_loss, val_error, auc))
         
         if inst_count > 0:
@@ -430,10 +434,7 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
                 acc, correct, count = inst_logger.get_summary(i)
                 log_writer.print_and_write('class {} clustering acc {}: correct {}/{} '.format(i, acc, correct, count))
         
-        for i in range(num_classes[hierarchy]):
-            acc, correct, count = acc_logger.get_summary(i)
-            log_writer.print_and_write('class {}: acc {}, correct {}/{} '.format(i, acc, correct, count))
-
+        printAcc(num_classes, hierarchy, acc_logger)
         f1 = f1_score(all_labels, all_preds, average='macro')
         acc = accuracy_score(all_labels, all_preds)
         log_writer.print_and_write(f"Overall Accuracy: {acc:.4f}")
@@ -540,8 +541,21 @@ if __name__ == '__main__':
 
     model = model.load_state_dict(torch.load(best_save_path))
 
-    _, val_error, val_auc, _ = summary(model, val_loader, args.n_classes)
-    log_writer.print_and_write('Val error: {:.4f}, ROC AUC: {:.4f}'.format(val_error, val_auc))
+    if args.hierarchy not in ('coarse', 'fine'):
+        _, val_error, val_auc_coarse, val_auc_fine, _, _ = summary(model, val_loader, class_dict, hierarchy=args.hierarchy)
+        log_writer.print_and_write('Val error: {:.4f}, ROC Coarse AUC: {:.4f}'.format(val_error, val_auc_coarse))
+        log_writer.print_and_write('Val error: {:.4f}, ROC Fine AUC: {:.4f}'.format(val_error, val_auc_fine))
 
-    results_dict, test_error, test_auc, acc_logger = summary(model, test_loader, args.n_classes)
-    log_writer.print_and_write('Test error: {:.4f}, ROC AUC: {:.4f}'.format(test_error, test_auc))
+        results_dict, test_error, test_auc_coarse, test_auc_fine, acc_logger_coarse, acc_logger_fine = summary(model, test_loader, class_dict, hierarchy=args.hierarchy)
+        log_writer.print_and_write('Test error: {:.4f}, ROC Coarse AUC: {:.4f}'.format(test_error, test_auc_coarse))
+        log_writer.print_and_write('Test error: {:.4f}, ROC Fine AUC: {:.4f}'.format(test_error, test_auc_fine))
+        printAcc(class_dict, hierarchy='coarse', acc_logger=acc_logger_coarse, log_writer=log_writer)
+        printAcc(class_dict, hierarchy='fine', acc_logger=acc_logger_fine, log_writer=log_writer)
+    else:
+        _, val_error, val_auc, _ = summary(model, val_loader, class_dict, hierarchy=args.hierarchy)
+        log_writer.print_and_write('Val error: {:.4f}, ROC AUC: {:.4f}'.format(val_error, val_auc))
+
+        results_dict, test_error, test_auc, acc_logger = summary(model, test_loader, class_dict, hierarchy=args.hierarchy)
+        log_writer.print_and_write('Test error: {:.4f}, ROC AUC: {:.4f}'.format(test_error, test_auc))
+
+        printAcc(class_dict, hierarchy=args.hierarchy, acc_logger=acc_logger, log_writer=log_writer)

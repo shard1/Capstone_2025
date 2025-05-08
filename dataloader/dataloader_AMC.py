@@ -54,7 +54,7 @@ def load_data(base_dir, anno_dict, split=None):
             annotation = anno_dict[patient_id][diagnosis_id]
             if split is not None and split != annotation[2]:
                 continue
-            data.append((file_path, annotation[0], annotation[1], annotation[2]))
+            data.append((file_path, annotation[0], annotation[1], annotation[2], patient_id, diagnosis_id))
 
     return data
 
@@ -94,11 +94,11 @@ class AMCDataset(Dataset):
         return msg_coarse + msg_fine
 
     def __getitem__(self, idx):
-        data, coarse_gt, fine_gt, split = self.data[idx]
+        data, coarse_gt, fine_gt, split, patient_id, diagnosis_id = self.data[idx]
         data_tensor = torch.load(data)
         if data_tensor.dim() == 3 and data_tensor.shape[0] == 1:
             data_tensor = data_tensor.squeeze(0)
-        return data_tensor, torch.tensor([coarse_gt]), torch.tensor([fine_gt])
+        return data_tensor, torch.tensor([coarse_gt]), torch.tensor([fine_gt]), patient_id, diagnosis_id
 
 
 def identity_collate(batch):
