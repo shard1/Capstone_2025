@@ -11,7 +11,6 @@ from utils import *
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-
 class TextWriter():
     def __init__(self, save_path):
         super(TextWriter, self).__init__()
@@ -150,7 +149,7 @@ def printAcc(num_classes, hierarchy, acc_logger, log_writer):
         log_writer.print_and_write('{} class {}: {} acc {}, correct {} {}/{} '.format(hierarchy, i, hierarchy, acc, hierarchy,
                                                                                       correct, count))
 
-def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn=None, hierarchy='coarse-and-fine', log_writer=None):
+def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn=None, hierarchy='coarse_and_fine', log_writer=None):
     model.train()
     is_hierarchy = hierarchy not in ('coarse', 'fine')
 
@@ -198,7 +197,10 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
             #fine_gt = fine_gt.unsqueeze(0)
             loss_coarse = loss_fn(logits_coarse, coarse_gt)
             loss_fine = loss_fn(logits_fine, fine_gt)
+
             loss = loss_coarse + loss_fine
+
+
             loss_value = loss.item()
 
             instance_loss = instance_dict['instance_loss']  # tensor
@@ -283,7 +285,7 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
             log_writer.print_and_write('class {} clustering acc {}: correct {}/{}'.format(i, acc, correct, count))
 
     log_writer.print_and_write(
-        '\nEpoch: {}, train_loss: {:.4f}, train_clustering_loss:  {:.4f}, train_error: {:.4f}'.format(epoch, train_loss, train_inst_loss, train_error))
+        '\nEpoch: {}, train_loss: {:.4f}, train_clustering_loss: {:.4f}, train_error: {:.4f}'.format(epoch, train_loss, train_inst_loss, train_error))
 
     if is_hierarchy:
         printAcc(num_classes, 'coarse', acc_logger_coarse, log_writer)
@@ -297,7 +299,7 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
         log_writer.print_and_write(f"Overall Accuracy: {acc:.4f}")
         return acc, train_loss 
 
-def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=None, hierarchy='coarse-and-fine', log_writer=None):
+def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=None, hierarchy='coarse_and_fine', log_writer=None):
     model.eval()
 
     is_hierarchy = hierarchy not in ('coarse', 'fine')
@@ -330,7 +332,7 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
     with torch.inference_mode():
         for batch_idx, (data, coarse_gt, fine_gt, _, _) in enumerate(loader):
             data, coarse_gt, fine_gt = data.to(device), coarse_gt.to(device), fine_gt.to(device)
-        #####################hierarchical################################
+        #####################################hierarchical################################
             if is_hierarchy:
                 logits, y_prob, y_hat, _, instance_dict = model(data, num_classes, label=fine_gt, instance_eval=True,
                                                                 is_hierarchy=True)
@@ -398,7 +400,7 @@ def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=N
 
     val_error /= len(loader)
     val_loss /= len(loader)
-    #######################hierarchical#########################
+    ###############################hierarchical#################################
     if is_hierarchy:
         auc_coarse = computeAUC(labels_coarse, prob_coarse, num_classes, 'coarse')
         auc_fine = computeAUC(labels_fine, prob_fine, num_classes, 'fine')
@@ -465,13 +467,13 @@ if __name__ == '__main__':
     parser.add_argument('--inst_loss', default='svm', type=str, help='instance classifier loss function')
     parser.add_argument('--model_type', type=str, default='clam_mb', choices=['clam_sb', 'clam_mb'],
                         help='options for a model')
-    parser.add_argument('--hierarchy', default='coarse', type=str, choices=['coarse', 'fine', 'coarse-and-fine'],
+    parser.add_argument('--hierarchy', default='coarse_and_fine', type=str, choices=['coarse', 'fine', 'coarse_and_fine'],
                         help='choose classification type')
     parser.add_argument('--bag_weight', default=0.7, type=float, help='clam: weight coefficient for bag-level loss')
+    parser.add_argument('--lr_str', default='1e-6', type=str)
     args = parser.parse_args()
-    path1 = os.path.join(args.hierarchy, args.model_type)
-    path2 = os.path.join(path1, 'lr_1e-6')
-    args.result = os.path.join(args.result, path2)
+
+    args.result = os.path.join(args.result, args.hierarchy, args.model_type, args.lr_str)
     os.makedirs(args.result, exist_ok=True)
 
     set_seed(args.seed)
@@ -493,7 +495,7 @@ if __name__ == '__main__':
 
     log_writer.print_and_write("Preparing model...")
     model_args = {"gate": True, "size_arg": "small", "dropout": 0.25, "k_sample": 8}
-    class_dict = {'coarse': 4, 'fine': 11, 'coarse-and-fine': 15}
+    class_dict = {'coarse': 4, 'fine': 11, 'coarse_and_fine': 15}
 
     model, loss_fn = configure_clam(model_args, args.model_type, hierarchy=args.hierarchy, bag_loss=args.bag_loss, inst_loss=args.inst_loss)
     model = model.to(device)
@@ -538,6 +540,12 @@ if __name__ == '__main__':
             f1_fine.append(val_f1_fine)
             f1_coarse.append(val_f1_coarse)
 
+            if best_acc < val_acc_fine:
+                best_acc, best_epochs = val_acc_fine, epoch
+                save_path = os.path.join(args.result, "{}.pth".format(epoch+1))
+                torch.save(model.state_dict(), save_path)
+                torch.save(model.state_dict(), best_save_path)
+
         else:
             train_acc, train_loss = train_clam(epoch+1, model, train_loader, optimizer, class_dict,
                                     bag_weight=args.bag_weight, loss_fn=loss_fn,
@@ -551,12 +559,11 @@ if __name__ == '__main__':
             val_accs.append(val_acc)
             f1_scores.append(f1)
 
-
-        if best_acc < val_acc:
-            best_acc, best_epochs = val_acc, epoch
-            save_path = os.path.join(args.result, "{}.pth".format(epoch+1))
-            torch.save(model.state_dict(), save_path)
-            torch.save(model.state_dict(), best_save_path)
+            if best_acc < val_acc:
+                best_acc, best_epochs = val_acc, epoch
+                save_path = os.path.join(args.result, "{}.pth".format(epoch+1))
+                torch.save(model.state_dict(), save_path)
+                torch.save(model.state_dict(), best_save_path)
 
         # Early stopping
         if epoch - best_epochs > args.early_stopping_threshold and epoch > args.epochs_min:
@@ -572,8 +579,10 @@ if __name__ == '__main__':
                  label="Train loss")
         drawPlot(validation_losses, args.model_type, args.hierarchy,
                  save_path=os.path.join(args.result, "validation_loss.png"), label="Validation loss")
-        drawPlot(f1_coarse, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "f1_coarse.png"),)
-        drawPlot(f1_fine, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "f1_fine.png"))
+        drawPlot(f1_coarse, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "f1_coarse.png"),
+                 label="f1 Score Coarse")
+        drawPlot(f1_fine, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "f1_fine.png"),
+                 label="f1 Score Fine")
         drawPlot(train_coarse_accs, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "train_coarse_acc.png"),
                  label="Train Coarse accuracy")
         drawPlot(val_coarse_accs, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "validation_coarse_acc.png"),
@@ -601,7 +610,8 @@ if __name__ == '__main__':
                  label="Train loss")
         drawPlot(validation_losses, args.model_type, args.hierarchy,
                  save_path=os.path.join(args.result, "validation_loss.png"), label="Validation loss")
-        drawPlot(f1_scores, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "f1_scores.png"),)
+        drawPlot(f1_scores, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "f1_scores.png"),
+                 label="F1 score")
         drawPlot(train_accs, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "train_acc.png"),
                  label="Train accuracy")
         drawPlot(val_accs, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "validation_acc.png"),

@@ -119,7 +119,7 @@ def configure_clam(model_args, model_type, hierarchy, bag_loss, inst_loss):
     return model, loss_fn
 
 
-def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn=None, hierarchy='coarse-and-fine', log_writer=None):
+def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn=None, hierarchy='coarse_and_fine', log_writer=None):
     model.train()
 
     acc_logger_coarse = AccuracyLogger(n_classes=num_classes['coarse'])
@@ -229,7 +229,7 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
     log_writer.print_and_write(
         '\nEpoch: {}, train_loss: {:.4f}, train_clustering_loss:  {:.4f}\n'.format(epoch, train_loss, train_inst_loss))
 
-    if hierarchy == 'coarse-and-fine':
+    if hierarchy == 'coarse_and_fine':
         for i in range(num_classes['coarse']):
             acc_coarse, correct_coarse, count_coarse = acc_logger_coarse.get_summary(i)
             log_writer.print_and_write('Coarse class {}: coarse acc {}, correct coarse {}/{} \n'.format(i, acc_coarse, correct_coarse,
@@ -245,7 +245,7 @@ def train_clam(epoch, model, loader, optimizer, num_classes, bag_weight, loss_fn
     return train_loss
 
 
-def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=None, hierarchy='coarse-and-fine', log_writer=None):
+def validate_clam(epoch, model, loader, num_classes, loss_fn=None, results_dir=None, hierarchy='coarse_and_fine', log_writer=None):
     model.eval()
 
     is_hierarchy = hierarchy not in ('coarse', 'fine')
@@ -463,7 +463,7 @@ if __name__ == '__main__':
     parser.add_argument('--inst_loss', default='svm', type=str, help='instance classifier loss function')
     parser.add_argument('--model_type', type=str, default='clam_mb', choices=['clam_sb', 'clam_mb'],
                         help='options for a model')
-    parser.add_argument('--hierarchy', default='coarse', type=str, choices=['coarse', 'fine', 'coarse-and-fine'],
+    parser.add_argument('--hierarchy', default='coarse', type=str, choices=['coarse', 'fine', 'coarse_and_fine'],
                         help='choose classification type')
     parser.add_argument('--bag_weight', default=0.7, type=float, help='clam: weight coefficient for bag-level loss')
     args = parser.parse_args()
@@ -490,7 +490,7 @@ if __name__ == '__main__':
     log_writer.print_and_write("\nPreparing model...\n")
     model_args = {"gate": True, "size_arg": "small", "dropout": 0.25,
                   "k_sample": 8}
-    class_dict = {'coarse': 4, 'fine': 14, 'coarse-and-fine': 14}
+    class_dict = {'coarse': 4, 'fine': 14, 'coarse_and_fine': 14}
 
 
     # model, loss_fn = configure_clam(model_args, args.model_type, hierarchy=args.hierarchy, bag_loss=args.bag_loss, inst_loss=args.inst_loss)
@@ -506,7 +506,7 @@ if __name__ == '__main__':
                                                     inst_loss=args.inst_loss)
     model_fine_mb, loss_fn_fine_mb = configure_clam(model_args, 'clam_mb', hierarchy='fine', bag_loss=args.bag_loss,
                                                     inst_loss=args.inst_loss)
-    # model_hierarchy_sb, loss_fn_hierarchy_sb = configure_clam(model_args, 'clam_sb', hierarchy='coarse-and-fine', bag_loss=args.bag_loss,
+    # model_hierarchy_sb, loss_fn_hierarchy_sb = configure_clam(model_args, 'clam_sb', hierarchy='coarse_and_fine', bag_loss=args.bag_loss,
     #                                 inst_loss=args.inst_loss)
 
     model = None
@@ -529,7 +529,7 @@ if __name__ == '__main__':
     best_save_path = os.path.join(args.result, "best.pth")
     train_losses = []
     for epoch in range(args.epochs):
-        if args.model_type in ['clam_mb', 'clam_sb'] and args.hierarchy in ['coarse', 'fine', 'coarse-and-fine']:
+        if args.model_type in ['clam_mb', 'clam_sb'] and args.hierarchy in ['coarse', 'fine', 'coarse_and_fine']:
             if args.hierarchy == 'coarse' and args.model_type == 'clam_sb':
                 train_loss = train_clam(epoch, model_coarse_sb, train_loader, optimizer, class_dict,
                                         bag_weight=args.bag_weight,
@@ -589,9 +589,9 @@ if __name__ == '__main__':
     #     createLossCurve(train_losses, 'clam_mb', 'coarse', save_path=fig_save_path)
     # elif args.hierarchy == 'fine' and args.model_type == 'clam_mb':
     #     createLossCurve(train_losses, 'clam_mb', 'fine', save_path=fig_save_path)
-    # elif args.hierarchy == 'coarse-and-fine' and args.model_type == 'clam_sb':
+    # elif args.hierarchy == 'coarse_and_fine' and args.model_type == 'clam_sb':
     #     pass
-    # elif args.hierarchy == 'coarse-and-fine' and args.model_type == 'clam_mb':
+    # elif args.hierarchy == 'coarse_and_fine' and args.model_type == 'clam_mb':
     #     pass
 
     model = model.load_state_dict(torch.load(best_save_path))
