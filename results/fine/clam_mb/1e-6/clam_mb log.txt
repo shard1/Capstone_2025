@@ -34,33 +34,33 @@ class 0 clustering acc 0.6893747381650608: correct 131643/190960
 class 1 clustering acc 0.3380184331797235: correct 5868/17360
 
 Epoch: 1, train_loss: 2.1233, train_clustering_loss:  1.1800, train_error: 0.6687
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.0038684719535783366, correct fine 2/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8520286396181385, correct fine 714/838 
-fine class 6: fine acc 0.004016064257028112, correct fine 1/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.07692307692307693, correct fine 2/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.0038684719535783366, correct fine 2/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8520286396181385, correct fine 714/838
+fine class 6: fine acc 0.004016064257028112, correct fine 1/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.07692307692307693, correct fine 2/26
 Overall Accuracy: 0.3313
 
 Val Set, val_loss: 1.8912, val_error: 0.6061, auc: 0.6492
-class 0 clustering acc 0.9535123966942148: correct 22152/23232 
-class 1 clustering acc 0.05823863636363636: correct 123/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.0, correct fine 0/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 1.0, correct fine 104/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9535123966942148: correct 22152/23232
+class 1 clustering acc 0.05823863636363636: correct 123/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.0, correct fine 0/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 1.0, correct fine 104/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.3939
 Overall F1 Score: 0.0514
 
@@ -92,33 +92,33 @@ class 0 clustering acc 0.9765762463343108: correct 186487/190960
 class 1 clustering acc 0.03796082949308756: correct 659/17360
 
 Epoch: 2, train_loss: 1.8274, train_clustering_loss:  0.7583, train_error: 0.6134
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.0019342359767891683, correct fine 1/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 1.0, correct fine 838/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.0019342359767891683, correct fine 1/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 1.0, correct fine 838/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.3866
 
 Val Set, val_loss: 1.7402, val_error: 0.6023, auc: 0.6544
-class 0 clustering acc 0.9993543388429752: correct 23217/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.015625, correct fine 1/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 1.0, correct fine 104/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9993543388429752: correct 23217/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.015625, correct fine 1/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 1.0, correct fine 104/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.3977
 Overall F1 Score: 0.0543
 
@@ -150,33 +150,33 @@ class 0 clustering acc 0.9993454126518643: correct 190835/190960
 class 1 clustering acc 0.001152073732718894: correct 20/17360
 
 Epoch: 3, train_loss: 1.7373, train_clustering_loss:  0.4829, train_error: 0.6000
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.06769825918762089, correct fine 35/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.9940334128878282, correct fine 833/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.06769825918762089, correct fine 35/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.9940334128878282, correct fine 833/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4000
 
 Val Set, val_loss: 1.6845, val_error: 0.5720, auc: 0.6593
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.1875, correct fine 12/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.9711538461538461, correct fine 101/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.1875, correct fine 12/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.9711538461538461, correct fine 101/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.4280
 Overall F1 Score: 0.0783
 
@@ -208,33 +208,33 @@ class 0 clustering acc 0.9999842899036447: correct 190957/190960
 class 1 clustering acc 0.0: correct 0/17360
 
 Epoch: 4, train_loss: 1.6950, train_clustering_loss:  0.3496, train_error: 0.5728
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.21083172147001933, correct fine 109/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.9761336515513126, correct fine 818/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.21083172147001933, correct fine 109/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.9761336515513126, correct fine 818/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4272
 
 Val Set, val_loss: 1.6536, val_error: 0.5379, auc: 0.6661
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.40625, correct fine 26/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.9230769230769231, correct fine 96/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.40625, correct fine 26/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.9230769230769231, correct fine 96/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.4621
 Overall F1 Score: 0.0960
 
@@ -266,33 +266,33 @@ class 0 clustering acc 0.999994763301215: correct 190959/190960
 class 1 clustering acc 0.0: correct 0/17360
 
 Epoch: 5, train_loss: 1.6673, train_clustering_loss:  0.2920, train_error: 0.5447
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.379110251450677, correct fine 196/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.9451073985680191, correct fine 792/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.379110251450677, correct fine 196/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.9451073985680191, correct fine 792/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4553
 
 Val Set, val_loss: 1.6321, val_error: 0.5265, auc: 0.6733
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.46875, correct fine 30/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.9134615384615384, correct fine 95/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.46875, correct fine 30/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.9134615384615384, correct fine 95/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.4735
 Overall F1 Score: 0.1001
 
@@ -324,33 +324,33 @@ class 0 clustering acc 1.0: correct 190960/190960
 class 1 clustering acc 0.0: correct 0/17360
 
 Epoch: 6, train_loss: 1.6452, train_clustering_loss:  0.2657, train_error: 0.5373
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.43520309477756286, correct fine 225/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.9295942720763724, correct fine 779/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.43520309477756286, correct fine 225/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.9295942720763724, correct fine 779/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4627
 
 Val Set, val_loss: 1.6160, val_error: 0.5189, auc: 0.6818
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.5, correct fine 32/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.9134615384615384, correct fine 95/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.5, correct fine 32/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.9134615384615384, correct fine 95/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.4811
 Overall F1 Score: 0.1014
 
@@ -382,33 +382,33 @@ class 0 clustering acc 1.0: correct 190960/190960
 class 1 clustering acc 0.0: correct 0/17360
 
 Epoch: 7, train_loss: 1.6276, train_clustering_loss:  0.2534, train_error: 0.5323
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.4816247582205029, correct fine 249/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.9140811455847255, correct fine 766/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.4816247582205029, correct fine 249/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.9140811455847255, correct fine 766/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4677
 
 Val Set, val_loss: 1.6026, val_error: 0.5152, auc: 0.6886
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.546875, correct fine 35/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8942307692307693, correct fine 93/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.546875, correct fine 35/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8942307692307693, correct fine 93/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.4848
 Overall F1 Score: 0.1030
 
@@ -440,33 +440,33 @@ class 0 clustering acc 1.0: correct 190960/190960
 class 1 clustering acc 0.0: correct 0/17360
 
 Epoch: 8, train_loss: 1.6125, train_clustering_loss:  0.2472, train_error: 0.5327
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5164410058027079, correct fine 267/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8914081145584726, correct fine 747/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5164410058027079, correct fine 267/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8914081145584726, correct fine 747/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4673
 
 Val Set, val_loss: 1.5917, val_error: 0.5114, auc: 0.6951
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.578125, correct fine 37/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.578125, correct fine 37/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.4886
 Overall F1 Score: 0.1044
 
@@ -498,33 +498,33 @@ class 0 clustering acc 1.0: correct 190960/190960
 class 1 clustering acc 5.76036866359447e-05: correct 1/17360
 
 Epoch: 9, train_loss: 1.5997, train_clustering_loss:  0.2430, train_error: 0.5327
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5435203094777563, correct fine 281/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8747016706443914, correct fine 733/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5435203094777563, correct fine 281/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8747016706443914, correct fine 733/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4673
 
 Val Set, val_loss: 1.5824, val_error: 0.5114, auc: 0.6983
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.578125, correct fine 37/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.578125, correct fine 37/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.4886
 Overall F1 Score: 0.1043
 
@@ -556,33 +556,33 @@ class 0 clustering acc 1.0: correct 190960/190960
 class 1 clustering acc 0.0: correct 0/17360
 
 Epoch: 10, train_loss: 1.5883, train_clustering_loss:  0.2409, train_error: 0.5313
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5473887814313346, correct fine 283/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8758949880668258, correct fine 734/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5473887814313346, correct fine 283/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8758949880668258, correct fine 734/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4687
 
 Val Set, val_loss: 1.5742, val_error: 0.5114, auc: 0.7030
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.578125, correct fine 37/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.578125, correct fine 37/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.4886
 Overall F1 Score: 0.1041
 
@@ -614,33 +614,33 @@ class 0 clustering acc 1.0: correct 190960/190960
 class 1 clustering acc 0.0001152073732718894: correct 2/17360
 
 Epoch: 11, train_loss: 1.5777, train_clustering_loss:  0.2390, train_error: 0.5253
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5880077369439072, correct fine 304/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8663484486873508, correct fine 726/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5880077369439072, correct fine 304/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8663484486873508, correct fine 726/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4747
 
 Val Set, val_loss: 1.5670, val_error: 0.5114, auc: 0.7066
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.578125, correct fine 37/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.578125, correct fine 37/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.4886
 Overall F1 Score: 0.1041
 
@@ -672,33 +672,33 @@ class 0 clustering acc 0.9999895266024298: correct 190958/190960
 class 1 clustering acc 0.0004032258064516129: correct 7/17360
 
 Epoch: 12, train_loss: 1.5691, train_clustering_loss:  0.2374, train_error: 0.5253
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5841392649903289, correct fine 302/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8687350835322196, correct fine 728/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5841392649903289, correct fine 302/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8687350835322196, correct fine 728/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4747
 
 Val Set, val_loss: 1.5601, val_error: 0.5038, auc: 0.7120
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.4962
 Overall F1 Score: 0.1062
 
@@ -730,33 +730,33 @@ class 0 clustering acc 0.9999895266024298: correct 190958/190960
 class 1 clustering acc 0.0010368663594470047: correct 18/17360
 
 Epoch: 13, train_loss: 1.5598, train_clustering_loss:  0.2360, train_error: 0.5253
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5899419729206963, correct fine 305/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8651551312649165, correct fine 725/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5899419729206963, correct fine 305/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8651551312649165, correct fine 725/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4747
 
 Val Set, val_loss: 1.5539, val_error: 0.5038, auc: 0.7148
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.4962
 Overall F1 Score: 0.1061
 
@@ -788,33 +788,33 @@ class 0 clustering acc 0.9999738165060745: correct 190955/190960
 class 1 clustering acc 0.001152073732718894: correct 20/17360
 
 Epoch: 14, train_loss: 1.5528, train_clustering_loss:  0.2351, train_error: 0.5226
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.597678916827853, correct fine 309/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8675417661097852, correct fine 727/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.597678916827853, correct fine 309/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8675417661097852, correct fine 727/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4774
 
 Val Set, val_loss: 1.5479, val_error: 0.4962, auc: 0.7185
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5038
 Overall F1 Score: 0.1082
 
@@ -846,33 +846,33 @@ class 0 clustering acc 0.9999476330121492: correct 190950/190960
 class 1 clustering acc 0.002880184331797235: correct 50/17360
 
 Epoch: 15, train_loss: 1.5456, train_clustering_loss:  0.2337, train_error: 0.5212
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6112185686653772, correct fine 316/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8627684964200477, correct fine 723/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6112185686653772, correct fine 316/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8627684964200477, correct fine 723/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4788
 
 Val Set, val_loss: 1.5421, val_error: 0.4962, auc: 0.7231
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5038
 Overall F1 Score: 0.1080
 
@@ -904,33 +904,33 @@ class 0 clustering acc 0.9999214495182237: correct 190945/190960
 class 1 clustering acc 0.004377880184331797: correct 76/17360
 
 Epoch: 16, train_loss: 1.5388, train_clustering_loss:  0.2327, train_error: 0.5221
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6170212765957447, correct fine 319/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8568019093078759, correct fine 718/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6170212765957447, correct fine 319/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8568019093078759, correct fine 718/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4779
 
 Val Set, val_loss: 1.5373, val_error: 0.4962, auc: 0.7237
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0: correct 0/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0: correct 0/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5038
 Overall F1 Score: 0.1082
 
@@ -962,33 +962,33 @@ class 0 clustering acc 0.9999162128194387: correct 190944/190960
 class 1 clustering acc 0.005011520737327189: correct 87/17360
 
 Epoch: 17, train_loss: 1.5320, train_clustering_loss:  0.2317, train_error: 0.5221
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6015473887814313, correct fine 311/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8663484486873508, correct fine 726/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6015473887814313, correct fine 311/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8663484486873508, correct fine 726/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4779
 
 Val Set, val_loss: 1.5318, val_error: 0.5000, auc: 0.7293
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0004734848484848485: correct 1/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0004734848484848485: correct 1/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5000
 Overall F1 Score: 0.1072
 
@@ -1020,33 +1020,33 @@ class 0 clustering acc 0.9999109761206535: correct 190943/190960
 class 1 clustering acc 0.00771889400921659: correct 134/17360
 
 Epoch: 18, train_loss: 1.5267, train_clustering_loss:  0.2311, train_error: 0.5194
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6421663442940039, correct fine 332/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8484486873508353, correct fine 711/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6421663442940039, correct fine 332/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8484486873508353, correct fine 711/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4806
 
 Val Set, val_loss: 1.5273, val_error: 0.4962, auc: 0.7293
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0014204545454545455: correct 3/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0014204545454545455: correct 3/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5038
 Overall F1 Score: 0.1080
 
@@ -1078,33 +1078,33 @@ class 0 clustering acc 0.9998167155425219: correct 190925/190960
 class 1 clustering acc 0.011175115207373272: correct 194/17360
 
 Epoch: 19, train_loss: 1.5203, train_clustering_loss:  0.2297, train_error: 0.5175
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6266924564796905, correct fine 324/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8627684964200477, correct fine 723/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6266924564796905, correct fine 324/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8627684964200477, correct fine 723/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4825
 
 Val Set, val_loss: 1.5223, val_error: 0.4924, auc: 0.7335
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0014204545454545455: correct 3/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0014204545454545455: correct 3/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5076
 Overall F1 Score: 0.1090
 
@@ -1136,33 +1136,33 @@ class 0 clustering acc 0.999753875157101: correct 190913/190960
 class 1 clustering acc 0.01543778801843318: correct 268/17360
 
 Epoch: 20, train_loss: 1.5142, train_clustering_loss:  0.2284, train_error: 0.5152
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6382978723404256, correct fine 330/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.860381861575179, correct fine 721/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.007575757575757576, correct fine 1/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6382978723404256, correct fine 330/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.860381861575179, correct fine 721/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.007575757575757576, correct fine 1/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4848
 
 Val Set, val_loss: 1.5178, val_error: 0.4924, auc: 0.7361
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.0023674242424242425: correct 5/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.0023674242424242425: correct 5/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5076
 Overall F1 Score: 0.1090
 
@@ -1194,33 +1194,33 @@ class 0 clustering acc 0.9996177209886887: correct 190887/190960
 class 1 clustering acc 0.018605990783410138: correct 323/17360
 
 Epoch: 21, train_loss: 1.5085, train_clustering_loss:  0.2284, train_error: 0.5194
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6499032882011605, correct fine 336/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8436754176610979, correct fine 707/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6499032882011605, correct fine 336/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8436754176610979, correct fine 707/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4806
 
 Val Set, val_loss: 1.5137, val_error: 0.4924, auc: 0.7376
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.004734848484848485: correct 10/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.004734848484848485: correct 10/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5076
 Overall F1 Score: 0.1090
 
@@ -1252,33 +1252,33 @@ class 0 clustering acc 0.9995915374947633: correct 190882/190960
 class 1 clustering acc 0.024423963133640553: correct 424/17360
 
 Epoch: 22, train_loss: 1.5035, train_clustering_loss:  0.2272, train_error: 0.5161
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6228239845261122, correct fine 322/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8675417661097852, correct fine 727/838 
-fine class 6: fine acc 0.004016064257028112, correct fine 1/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6228239845261122, correct fine 322/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8675417661097852, correct fine 727/838
+fine class 6: fine acc 0.004016064257028112, correct fine 1/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4839
 
 Val Set, val_loss: 1.5094, val_error: 0.4962, auc: 0.7393
-class 0 clustering acc 1.0: correct 23232/23232 
-class 1 clustering acc 0.008049242424242424: correct 17/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 1.0: correct 23232/23232
+class 1 clustering acc 0.008049242424242424: correct 17/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5038
 Overall F1 Score: 0.1083
 
@@ -1310,33 +1310,33 @@ class 0 clustering acc 0.9996596145789695: correct 190895/190960
 class 1 clustering acc 0.028629032258064516: correct 497/17360
 
 Epoch: 23, train_loss: 1.4978, train_clustering_loss:  0.2266, train_error: 0.5171
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6499032882011605, correct fine 336/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.847255369928401, correct fine 710/838 
-fine class 6: fine acc 0.008032128514056224, correct fine 2/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6499032882011605, correct fine 336/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.847255369928401, correct fine 710/838
+fine class 6: fine acc 0.008032128514056224, correct fine 2/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4829
 
 Val Set, val_loss: 1.5056, val_error: 0.4924, auc: 0.7408
-class 0 clustering acc 0.999870867768595: correct 23229/23232 
-class 1 clustering acc 0.014204545454545454: correct 30/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.999870867768595: correct 23229/23232
+class 1 clustering acc 0.014204545454545454: correct 30/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5076
 Overall F1 Score: 0.1090
 
@@ -1368,33 +1368,33 @@ class 0 clustering acc 0.9994763301214914: correct 190860/190960
 class 1 clustering acc 0.03335253456221198: correct 579/17360
 
 Epoch: 24, train_loss: 1.4931, train_clustering_loss:  0.2255, train_error: 0.5161
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6460348162475822, correct fine 334/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8532219570405728, correct fine 715/838 
-fine class 6: fine acc 0.004016064257028112, correct fine 1/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6460348162475822, correct fine 334/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8532219570405728, correct fine 715/838
+fine class 6: fine acc 0.004016064257028112, correct fine 1/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4839
 
 Val Set, val_loss: 1.5019, val_error: 0.4924, auc: 0.7423
-class 0 clustering acc 0.9997847796143251: correct 23227/23232 
-class 1 clustering acc 0.019412878787878788: correct 41/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9997847796143251: correct 23227/23232
+class 1 clustering acc 0.019412878787878788: correct 41/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5076
 Overall F1 Score: 0.1092
 
@@ -1426,33 +1426,33 @@ class 0 clustering acc 0.9994449099287809: correct 190854/190960
 class 1 clustering acc 0.04124423963133641: correct 716/17360
 
 Epoch: 25, train_loss: 1.4882, train_clustering_loss:  0.2250, train_error: 0.5111
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6460348162475822, correct fine 334/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8627684964200477, correct fine 723/838 
-fine class 6: fine acc 0.012048192771084338, correct fine 3/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.007575757575757576, correct fine 1/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6460348162475822, correct fine 334/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8627684964200477, correct fine 723/838
+fine class 6: fine acc 0.012048192771084338, correct fine 3/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.007575757575757576, correct fine 1/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4889
 
 Val Set, val_loss: 1.4973, val_error: 0.4924, auc: 0.7448
-class 0 clustering acc 0.9997847796143251: correct 23227/23232 
-class 1 clustering acc 0.02556818181818182: correct 54/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9997847796143251: correct 23227/23232
+class 1 clustering acc 0.02556818181818182: correct 54/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5076
 Overall F1 Score: 0.1090
 
@@ -1484,33 +1484,33 @@ class 0 clustering acc 0.9992354419773775: correct 190814/190960
 class 1 clustering acc 0.04740783410138249: correct 823/17360
 
 Epoch: 26, train_loss: 1.4828, train_clustering_loss:  0.2244, train_error: 0.5111
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6363636363636364, correct fine 329/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8675417661097852, correct fine 727/838 
-fine class 6: fine acc 0.01606425702811245, correct fine 4/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.007575757575757576, correct fine 1/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6363636363636364, correct fine 329/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8675417661097852, correct fine 727/838
+fine class 6: fine acc 0.01606425702811245, correct fine 4/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.007575757575757576, correct fine 1/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4889
 
 Val Set, val_loss: 1.4935, val_error: 0.4962, auc: 0.7460
-class 0 clustering acc 0.9997847796143251: correct 23227/23232 
-class 1 clustering acc 0.030303030303030304: correct 64/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8653846153846154, correct fine 90/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9997847796143251: correct 23227/23232
+class 1 clustering acc 0.030303030303030304: correct 64/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8653846153846154, correct fine 90/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5038
 Overall F1 Score: 0.1136
 
@@ -1542,33 +1542,33 @@ class 0 clustering acc 0.9991673648931714: correct 190801/190960
 class 1 clustering acc 0.050806451612903224: correct 882/17360
 
 Epoch: 27, train_loss: 1.4778, train_clustering_loss:  0.2230, train_error: 0.5120
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6441005802707931, correct fine 333/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.860381861575179, correct fine 721/838 
-fine class 6: fine acc 0.01606425702811245, correct fine 4/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.007575757575757576, correct fine 1/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6441005802707931, correct fine 333/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.860381861575179, correct fine 721/838
+fine class 6: fine acc 0.01606425702811245, correct fine 4/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.007575757575757576, correct fine 1/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4880
 
 Val Set, val_loss: 1.4898, val_error: 0.4924, auc: 0.7474
-class 0 clustering acc 0.9996986914600551: correct 23225/23232 
-class 1 clustering acc 0.041193181818181816: correct 87/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9996986914600551: correct 23225/23232
+class 1 clustering acc 0.041193181818181816: correct 87/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5076
 Overall F1 Score: 0.1143
 
@@ -1600,33 +1600,33 @@ class 0 clustering acc 0.9991307080016757: correct 190794/190960
 class 1 clustering acc 0.05599078341013825: correct 972/17360
 
 Epoch: 28, train_loss: 1.4727, train_clustering_loss:  0.2232, train_error: 0.5069
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6499032882011605, correct fine 336/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8663484486873508, correct fine 726/838 
-fine class 6: fine acc 0.028112449799196786, correct fine 7/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.007575757575757576, correct fine 1/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6499032882011605, correct fine 336/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8663484486873508, correct fine 726/838
+fine class 6: fine acc 0.028112449799196786, correct fine 7/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.007575757575757576, correct fine 1/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4931
 
 Val Set, val_loss: 1.4866, val_error: 0.4924, auc: 0.7482
-class 0 clustering acc 0.9995695592286501: correct 23222/23232 
-class 1 clustering acc 0.05113636363636364: correct 108/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9995695592286501: correct 23222/23232
+class 1 clustering acc 0.05113636363636364: correct 108/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5076
 Overall F1 Score: 0.1144
 
@@ -1658,33 +1658,33 @@ class 0 clustering acc 0.998968370339338: correct 190763/190960
 class 1 clustering acc 0.06451612903225806: correct 1120/17360
 
 Epoch: 29, train_loss: 1.4682, train_clustering_loss:  0.2219, train_error: 0.5097
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6421663442940039, correct fine 332/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8651551312649165, correct fine 725/838 
-fine class 6: fine acc 0.024096385542168676, correct fine 6/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.007575757575757576, correct fine 1/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6421663442940039, correct fine 332/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8651551312649165, correct fine 725/838
+fine class 6: fine acc 0.024096385542168676, correct fine 6/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.007575757575757576, correct fine 1/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4903
 
 Val Set, val_loss: 1.4834, val_error: 0.4848, auc: 0.7489
-class 0 clustering acc 0.9993973829201102: correct 23218/23232 
-class 1 clustering acc 0.0625: correct 132/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8942307692307693, correct fine 93/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9993973829201102: correct 23218/23232
+class 1 clustering acc 0.0625: correct 132/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8942307692307693, correct fine 93/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5152
 Overall F1 Score: 0.1161
 
@@ -1716,33 +1716,33 @@ class 0 clustering acc 0.9988112693757855: correct 190733/190960
 class 1 clustering acc 0.07275345622119815: correct 1263/17360
 
 Epoch: 30, train_loss: 1.4641, train_clustering_loss:  0.2219, train_error: 0.5069
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6305609284332688, correct fine 326/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8723150357995226, correct fine 731/838 
-fine class 6: fine acc 0.04417670682730924, correct fine 11/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.015151515151515152, correct fine 2/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6305609284332688, correct fine 326/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8723150357995226, correct fine 731/838
+fine class 6: fine acc 0.04417670682730924, correct fine 11/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.015151515151515152, correct fine 2/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4931
 
 Val Set, val_loss: 1.4792, val_error: 0.4924, auc: 0.7502
-class 0 clustering acc 0.9993543388429752: correct 23217/23232 
-class 1 clustering acc 0.06865530303030302: correct 145/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9993543388429752: correct 23217/23232
+class 1 clustering acc 0.06865530303030302: correct 145/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5076
 Overall F1 Score: 0.1145
 
@@ -1774,33 +1774,33 @@ class 0 clustering acc 0.9985599078341014: correct 190685/190960
 class 1 clustering acc 0.07713133640552995: correct 1339/17360
 
 Epoch: 31, train_loss: 1.4594, train_clustering_loss:  0.2211, train_error: 0.5074
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.632495164410058, correct fine 327/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.869928400954654, correct fine 729/838 
-fine class 6: fine acc 0.04417670682730924, correct fine 11/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.015151515151515152, correct fine 2/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.632495164410058, correct fine 327/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.869928400954654, correct fine 729/838
+fine class 6: fine acc 0.04417670682730924, correct fine 11/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.015151515151515152, correct fine 2/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4926
 
 Val Set, val_loss: 1.4758, val_error: 0.4962, auc: 0.7515
-class 0 clustering acc 0.9991821625344353: correct 23213/23232 
-class 1 clustering acc 0.07291666666666667: correct 154/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8653846153846154, correct fine 90/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9991821625344353: correct 23213/23232
+class 1 clustering acc 0.07291666666666667: correct 154/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8653846153846154, correct fine 90/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5038
 Overall F1 Score: 0.1137
 
@@ -1832,33 +1832,33 @@ class 0 clustering acc 0.9987117720988689: correct 190714/190960
 class 1 clustering acc 0.08323732718894009: correct 1445/17360
 
 Epoch: 32, train_loss: 1.4541, train_clustering_loss:  0.2206, train_error: 0.5074
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6518375241779497, correct fine 337/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.860381861575179, correct fine 721/838 
-fine class 6: fine acc 0.04417670682730924, correct fine 11/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6518375241779497, correct fine 337/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.860381861575179, correct fine 721/838
+fine class 6: fine acc 0.04417670682730924, correct fine 11/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4926
 
 Val Set, val_loss: 1.4733, val_error: 0.4848, auc: 0.7521
-class 0 clustering acc 0.9990530303030303: correct 23210/23232 
-class 1 clustering acc 0.09138257575757576: correct 193/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8942307692307693, correct fine 93/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9990530303030303: correct 23210/23232
+class 1 clustering acc 0.09138257575757576: correct 193/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8942307692307693, correct fine 93/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5152
 Overall F1 Score: 0.1161
 
@@ -1890,33 +1890,33 @@ class 0 clustering acc 0.9985075408462505: correct 190675/190960
 class 1 clustering acc 0.09107142857142857: correct 1581/17360
 
 Epoch: 33, train_loss: 1.4503, train_clustering_loss:  0.2197, train_error: 0.5028
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6382978723404256, correct fine 330/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.008695652173913044, correct fine 1/115 
-fine class 5: fine acc 0.8747016706443914, correct fine 733/838 
-fine class 6: fine acc 0.04819277108433735, correct fine 12/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.022727272727272728, correct fine 3/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6382978723404256, correct fine 330/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.008695652173913044, correct fine 1/115
+fine class 5: fine acc 0.8747016706443914, correct fine 733/838
+fine class 6: fine acc 0.04819277108433735, correct fine 12/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.022727272727272728, correct fine 3/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4972
 
 Val Set, val_loss: 1.4697, val_error: 0.4886, auc: 0.7536
-class 0 clustering acc 0.9989669421487604: correct 23208/23232 
-class 1 clustering acc 0.09611742424242424: correct 203/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9989669421487604: correct 23208/23232
+class 1 clustering acc 0.09611742424242424: correct 203/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1153
 
@@ -1948,33 +1948,33 @@ class 0 clustering acc 0.9984080435693339: correct 190656/190960
 class 1 clustering acc 0.09130184331797235: correct 1585/17360
 
 Epoch: 34, train_loss: 1.4456, train_clustering_loss:  0.2200, train_error: 0.5060
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6421663442940039, correct fine 332/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.017391304347826087, correct fine 2/115 
-fine class 5: fine acc 0.8687350835322196, correct fine 728/838 
-fine class 6: fine acc 0.040160642570281124, correct fine 10/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6421663442940039, correct fine 332/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.017391304347826087, correct fine 2/115
+fine class 5: fine acc 0.8687350835322196, correct fine 728/838
+fine class 6: fine acc 0.040160642570281124, correct fine 10/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4940
 
 Val Set, val_loss: 1.4668, val_error: 0.4848, auc: 0.7544
-class 0 clustering acc 0.9987947658402204: correct 23204/23232 
-class 1 clustering acc 0.10558712121212122: correct 223/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8942307692307693, correct fine 93/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9987947658402204: correct 23204/23232
+class 1 clustering acc 0.10558712121212122: correct 223/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8942307692307693, correct fine 93/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5152
 Overall F1 Score: 0.1163
 
@@ -2006,33 +2006,33 @@ class 0 clustering acc 0.998172392124005: correct 190611/190960
 class 1 clustering acc 0.10023041474654378: correct 1740/17360
 
 Epoch: 35, train_loss: 1.4398, train_clustering_loss:  0.2192, train_error: 0.5032
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6247582205029013, correct fine 323/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.034782608695652174, correct fine 4/115 
-fine class 5: fine acc 0.8782816229116945, correct fine 736/838 
-fine class 6: fine acc 0.05622489959839357, correct fine 14/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.007575757575757576, correct fine 1/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6247582205029013, correct fine 323/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.034782608695652174, correct fine 4/115
+fine class 5: fine acc 0.8782816229116945, correct fine 736/838
+fine class 6: fine acc 0.05622489959839357, correct fine 14/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.007575757575757576, correct fine 1/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4968
 
 Val Set, val_loss: 1.4636, val_error: 0.4924, auc: 0.7570
-class 0 clustering acc 0.9988378099173554: correct 23205/23232 
-class 1 clustering acc 0.10748106060606061: correct 227/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9988378099173554: correct 23205/23232
+class 1 clustering acc 0.10748106060606061: correct 227/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5076
 Overall F1 Score: 0.1145
 
@@ -2064,33 +2064,33 @@ class 0 clustering acc 0.9981462086300796: correct 190606/190960
 class 1 clustering acc 0.09971198156682028: correct 1731/17360
 
 Epoch: 36, train_loss: 1.4361, train_clustering_loss:  0.2184, train_error: 0.5041
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6421663442940039, correct fine 332/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.034782608695652174, correct fine 4/115 
-fine class 5: fine acc 0.863961813842482, correct fine 724/838 
-fine class 6: fine acc 0.05622489959839357, correct fine 14/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.015151515151515152, correct fine 2/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6421663442940039, correct fine 332/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.034782608695652174, correct fine 4/115
+fine class 5: fine acc 0.863961813842482, correct fine 724/838
+fine class 6: fine acc 0.05622489959839357, correct fine 14/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.015151515151515152, correct fine 2/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4959
 
 Val Set, val_loss: 1.4614, val_error: 0.4848, auc: 0.7577
-class 0 clustering acc 0.9986656336088154: correct 23201/23232 
-class 1 clustering acc 0.11789772727272728: correct 249/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8942307692307693, correct fine 93/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9986656336088154: correct 23201/23232
+class 1 clustering acc 0.11789772727272728: correct 249/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8942307692307693, correct fine 93/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5152
 Overall F1 Score: 0.1164
 
@@ -2122,33 +2122,33 @@ class 0 clustering acc 0.9979576874738165: correct 190570/190960
 class 1 clustering acc 0.11486175115207373: correct 1994/17360
 
 Epoch: 37, train_loss: 1.4329, train_clustering_loss:  0.2182, train_error: 0.4995
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6286266924564797, correct fine 325/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.034782608695652174, correct fine 4/115 
-fine class 5: fine acc 0.883054892601432, correct fine 740/838 
-fine class 6: fine acc 0.05220883534136546, correct fine 13/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.022727272727272728, correct fine 3/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6286266924564797, correct fine 325/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.034782608695652174, correct fine 4/115
+fine class 5: fine acc 0.883054892601432, correct fine 740/838
+fine class 6: fine acc 0.05220883534136546, correct fine 13/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.022727272727272728, correct fine 3/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5005
 
 Val Set, val_loss: 1.4578, val_error: 0.4886, auc: 0.7596
-class 0 clustering acc 0.9986656336088154: correct 23201/23232 
-class 1 clustering acc 0.11647727272727272: correct 246/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.671875, correct fine 43/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9986656336088154: correct 23201/23232
+class 1 clustering acc 0.11647727272727272: correct 246/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.671875, correct fine 43/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1157
 
@@ -2180,33 +2180,33 @@ class 0 clustering acc 0.9979419773774613: correct 190567/190960
 class 1 clustering acc 0.11140552995391705: correct 1934/17360
 
 Epoch: 38, train_loss: 1.4279, train_clustering_loss:  0.2180, train_error: 0.5051
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6228239845261122, correct fine 322/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.034782608695652174, correct fine 4/115 
-fine class 5: fine acc 0.869928400954654, correct fine 729/838 
-fine class 6: fine acc 0.060240963855421686, correct fine 15/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6228239845261122, correct fine 322/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.034782608695652174, correct fine 4/115
+fine class 5: fine acc 0.869928400954654, correct fine 729/838
+fine class 6: fine acc 0.060240963855421686, correct fine 15/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4949
 
 Val Set, val_loss: 1.4554, val_error: 0.4886, auc: 0.7604
-class 0 clustering acc 0.9986656336088154: correct 23201/23232 
-class 1 clustering acc 0.125: correct 264/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9986656336088154: correct 23201/23232
+class 1 clustering acc 0.125: correct 264/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1157
 
@@ -2238,33 +2238,33 @@ class 0 clustering acc 0.9977953498114789: correct 190539/190960
 class 1 clustering acc 0.11802995391705069: correct 2049/17360
 
 Epoch: 39, train_loss: 1.4234, train_clustering_loss:  0.2173, train_error: 0.5028
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6247582205029013, correct fine 323/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.043478260869565216, correct fine 5/115 
-fine class 5: fine acc 0.8723150357995226, correct fine 731/838 
-fine class 6: fine acc 0.060240963855421686, correct fine 15/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6247582205029013, correct fine 323/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.043478260869565216, correct fine 5/115
+fine class 5: fine acc 0.8723150357995226, correct fine 731/838
+fine class 6: fine acc 0.060240963855421686, correct fine 15/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4972
 
 Val Set, val_loss: 1.4532, val_error: 0.4773, auc: 0.7618
-class 0 clustering acc 0.9984934573002755: correct 23197/23232 
-class 1 clustering acc 0.1278409090909091: correct 270/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.9230769230769231, correct fine 96/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9984934573002755: correct 23197/23232
+class 1 clustering acc 0.1278409090909091: correct 270/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.9230769230769231, correct fine 96/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5227
 Overall F1 Score: 0.1178
 
@@ -2296,33 +2296,33 @@ class 0 clustering acc 0.9974183074989527: correct 190467/190960
 class 1 clustering acc 0.12430875576036866: correct 2158/17360
 
 Epoch: 40, train_loss: 1.4204, train_clustering_loss:  0.2171, train_error: 0.5018
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6131528046421664, correct fine 317/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.06956521739130435, correct fine 8/115 
-fine class 5: fine acc 0.8794749403341289, correct fine 737/838 
-fine class 6: fine acc 0.0642570281124498, correct fine 16/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.022727272727272728, correct fine 3/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6131528046421664, correct fine 317/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.06956521739130435, correct fine 8/115
+fine class 5: fine acc 0.8794749403341289, correct fine 737/838
+fine class 6: fine acc 0.0642570281124498, correct fine 16/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.022727272727272728, correct fine 3/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4982
 
 Val Set, val_loss: 1.4500, val_error: 0.4886, auc: 0.7652
-class 0 clustering acc 0.9985365013774105: correct 23198/23232 
-class 1 clustering acc 0.12547348484848486: correct 265/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.671875, correct fine 43/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9985365013774105: correct 23198/23232
+class 1 clustering acc 0.12547348484848486: correct 265/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.671875, correct fine 43/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1160
 
@@ -2354,33 +2354,33 @@ class 0 clustering acc 0.9976958525345622: correct 190520/190960
 class 1 clustering acc 0.1256336405529954: correct 2181/17360
 
 Epoch: 41, train_loss: 1.4149, train_clustering_loss:  0.2170, train_error: 0.5041
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6170212765957447, correct fine 319/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.06956521739130435, correct fine 8/115 
-fine class 5: fine acc 0.8747016706443914, correct fine 733/838 
-fine class 6: fine acc 0.05622489959839357, correct fine 14/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.007575757575757576, correct fine 1/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6170212765957447, correct fine 319/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.06956521739130435, correct fine 8/115
+fine class 5: fine acc 0.8747016706443914, correct fine 733/838
+fine class 6: fine acc 0.05622489959839357, correct fine 14/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.007575757575757576, correct fine 1/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4959
 
 Val Set, val_loss: 1.4474, val_error: 0.4886, auc: 0.7668
-class 0 clustering acc 0.9984073691460055: correct 23195/23232 
-class 1 clustering acc 0.12926136363636365: correct 273/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.671875, correct fine 43/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9984073691460055: correct 23195/23232
+class 1 clustering acc 0.12926136363636365: correct 273/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.671875, correct fine 43/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1160
 
@@ -2412,33 +2412,33 @@ class 0 clustering acc 0.9974287808965229: correct 190469/190960
 class 1 clustering acc 0.12839861751152074: correct 2229/17360
 
 Epoch: 42, train_loss: 1.4107, train_clustering_loss:  0.2170, train_error: 0.4982
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6150870406189555, correct fine 318/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.09565217391304348, correct fine 11/115 
-fine class 5: fine acc 0.8770883054892601, correct fine 735/838 
-fine class 6: fine acc 0.07630522088353414, correct fine 19/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.03787878787878788, correct fine 5/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6150870406189555, correct fine 318/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.09565217391304348, correct fine 11/115
+fine class 5: fine acc 0.8770883054892601, correct fine 735/838
+fine class 6: fine acc 0.07630522088353414, correct fine 19/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.03787878787878788, correct fine 5/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5018
 
 Val Set, val_loss: 1.4451, val_error: 0.4886, auc: 0.7677
-class 0 clustering acc 0.9980199724517906: correct 23186/23232 
-class 1 clustering acc 0.13257575757575757: correct 280/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9980199724517906: correct 23186/23232
+class 1 clustering acc 0.13257575757575757: correct 280/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1156
 
@@ -2470,33 +2470,33 @@ class 0 clustering acc 0.9977482195224131: correct 190530/190960
 class 1 clustering acc 0.12839861751152074: correct 2229/17360
 
 Epoch: 43, train_loss: 1.4069, train_clustering_loss:  0.2164, train_error: 0.5023
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6131528046421664, correct fine 317/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.11304347826086956, correct fine 13/115 
-fine class 5: fine acc 0.8651551312649165, correct fine 725/838 
-fine class 6: fine acc 0.08032128514056225, correct fine 20/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6131528046421664, correct fine 317/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.11304347826086956, correct fine 13/115
+fine class 5: fine acc 0.8651551312649165, correct fine 725/838
+fine class 6: fine acc 0.08032128514056225, correct fine 20/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.4977
 
 Val Set, val_loss: 1.4440, val_error: 0.4848, auc: 0.7686
-class 0 clustering acc 0.9976325757575758: correct 23177/23232 
-class 1 clustering acc 0.14109848484848486: correct 298/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.9230769230769231, correct fine 96/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9976325757575758: correct 23177/23232
+class 1 clustering acc 0.14109848484848486: correct 298/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.9230769230769231, correct fine 96/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5152
 Overall F1 Score: 0.1156
 
@@ -2528,33 +2528,33 @@ class 0 clustering acc 0.9972402597402598: correct 190433/190960
 class 1 clustering acc 0.1351958525345622: correct 2347/17360
 
 Epoch: 44, train_loss: 1.4049, train_clustering_loss:  0.2164, train_error: 0.4968
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6150870406189555, correct fine 318/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.1391304347826087, correct fine 16/115 
-fine class 5: fine acc 0.8794749403341289, correct fine 737/838 
-fine class 6: fine acc 0.0642570281124498, correct fine 16/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6150870406189555, correct fine 318/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.1391304347826087, correct fine 16/115
+fine class 5: fine acc 0.8794749403341289, correct fine 737/838
+fine class 6: fine acc 0.0642570281124498, correct fine 16/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5032
 
 Val Set, val_loss: 1.4406, val_error: 0.4811, auc: 0.7701
-class 0 clustering acc 0.9976325757575758: correct 23177/23232 
-class 1 clustering acc 0.140625: correct 297/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.9038461538461539, correct fine 94/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9976325757575758: correct 23177/23232
+class 1 clustering acc 0.140625: correct 297/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.9038461538461539, correct fine 94/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5189
 Overall F1 Score: 0.1282
 
@@ -2586,33 +2586,33 @@ class 0 clustering acc 0.9971145789694177: correct 190409/190960
 class 1 clustering acc 0.13974654377880186: correct 2426/17360
 
 Epoch: 45, train_loss: 1.4008, train_clustering_loss:  0.2158, train_error: 0.4963
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6073500967117988, correct fine 314/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.14782608695652175, correct fine 17/115 
-fine class 5: fine acc 0.8818615751789977, correct fine 739/838 
-fine class 6: fine acc 0.07630522088353414, correct fine 19/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.022727272727272728, correct fine 3/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6073500967117988, correct fine 314/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.14782608695652175, correct fine 17/115
+fine class 5: fine acc 0.8818615751789977, correct fine 739/838
+fine class 6: fine acc 0.07630522088353414, correct fine 19/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.022727272727272728, correct fine 3/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5037
 
 Val Set, val_loss: 1.4383, val_error: 0.4886, auc: 0.7709
-class 0 clustering acc 0.9976325757575758: correct 23177/23232 
-class 1 clustering acc 0.1396780303030303: correct 295/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9976325757575758: correct 23177/23232
+class 1 clustering acc 0.1396780303030303: correct 295/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1265
 
@@ -2644,33 +2644,33 @@ class 0 clustering acc 0.9971145789694177: correct 190409/190960
 class 1 clustering acc 0.1399769585253456: correct 2430/17360
 
 Epoch: 46, train_loss: 1.3974, train_clustering_loss:  0.2157, train_error: 0.4926
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6189555125725339, correct fine 320/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.16521739130434782, correct fine 19/115 
-fine class 5: fine acc 0.8758949880668258, correct fine 734/838 
-fine class 6: fine acc 0.08835341365461848, correct fine 22/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.03787878787878788, correct fine 5/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6189555125725339, correct fine 320/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.16521739130434782, correct fine 19/115
+fine class 5: fine acc 0.8758949880668258, correct fine 734/838
+fine class 6: fine acc 0.08835341365461848, correct fine 22/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.03787878787878788, correct fine 5/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5074
 
 Val Set, val_loss: 1.4361, val_error: 0.4811, auc: 0.7724
-class 0 clustering acc 0.9975895316804407: correct 23176/23232 
-class 1 clustering acc 0.14488636363636365: correct 306/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.9038461538461539, correct fine 94/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9975895316804407: correct 23176/23232
+class 1 clustering acc 0.14488636363636365: correct 306/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.9038461538461539, correct fine 94/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5189
 Overall F1 Score: 0.1282
 
@@ -2702,33 +2702,33 @@ class 0 clustering acc 0.9972297863426896: correct 190431/190960
 class 1 clustering acc 0.1447004608294931: correct 2512/17360
 
 Epoch: 47, train_loss: 1.3932, train_clustering_loss:  0.2146, train_error: 0.4922
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6073500967117988, correct fine 314/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.17391304347826086, correct fine 20/115 
-fine class 5: fine acc 0.8818615751789977, correct fine 739/838 
-fine class 6: fine acc 0.0963855421686747, correct fine 24/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6073500967117988, correct fine 314/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.17391304347826086, correct fine 20/115
+fine class 5: fine acc 0.8818615751789977, correct fine 739/838
+fine class 6: fine acc 0.0963855421686747, correct fine 24/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5078
 
 Val Set, val_loss: 1.4344, val_error: 0.4886, auc: 0.7724
-class 0 clustering acc 0.9973743112947658: correct 23171/23232 
-class 1 clustering acc 0.14772727272727273: correct 312/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.9038461538461539, correct fine 94/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9973743112947658: correct 23171/23232
+class 1 clustering acc 0.14772727272727273: correct 312/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.9038461538461539, correct fine 94/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1255
 
@@ -2760,33 +2760,33 @@ class 0 clustering acc 0.9972297863426896: correct 190431/190960
 class 1 clustering acc 0.14285714285714285: correct 2480/17360
 
 Epoch: 48, train_loss: 1.3896, train_clustering_loss:  0.2147, train_error: 0.4908
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6054158607350096, correct fine 313/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.21739130434782608, correct fine 25/115 
-fine class 5: fine acc 0.8782816229116945, correct fine 736/838 
-fine class 6: fine acc 0.10040160642570281, correct fine 25/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.03787878787878788, correct fine 5/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6054158607350096, correct fine 313/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.21739130434782608, correct fine 25/115
+fine class 5: fine acc 0.8782816229116945, correct fine 736/838
+fine class 6: fine acc 0.10040160642570281, correct fine 25/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.03787878787878788, correct fine 5/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5092
 
 Val Set, val_loss: 1.4326, val_error: 0.4886, auc: 0.7733
-class 0 clustering acc 0.9974173553719008: correct 23172/23232 
-class 1 clustering acc 0.15104166666666666: correct 319/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9974173553719008: correct 23172/23232
+class 1 clustering acc 0.15104166666666666: correct 319/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1266
 
@@ -2818,33 +2818,33 @@ class 0 clustering acc 0.9971459991621282: correct 190415/190960
 class 1 clustering acc 0.1434331797235023: correct 2490/17360
 
 Epoch: 49, train_loss: 1.3871, train_clustering_loss:  0.2147, train_error: 0.4912
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6247582205029013, correct fine 323/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.2, correct fine 23/115 
-fine class 5: fine acc 0.8675417661097852, correct fine 727/838 
-fine class 6: fine acc 0.10040160642570281, correct fine 25/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.03787878787878788, correct fine 5/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6247582205029013, correct fine 323/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.2, correct fine 23/115
+fine class 5: fine acc 0.8675417661097852, correct fine 727/838
+fine class 6: fine acc 0.10040160642570281, correct fine 25/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.03787878787878788, correct fine 5/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5088
 
 Val Set, val_loss: 1.4313, val_error: 0.4773, auc: 0.7746
-class 0 clustering acc 0.997029958677686: correct 23163/23232 
-class 1 clustering acc 0.16051136363636365: correct 339/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.59375, correct fine 38/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.14285714285714285, correct fine 2/14 
-fine class 5: fine acc 0.9230769230769231, correct fine 96/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.997029958677686: correct 23163/23232
+class 1 clustering acc 0.16051136363636365: correct 339/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.59375, correct fine 38/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.14285714285714285, correct fine 2/14
+fine class 5: fine acc 0.9230769230769231, correct fine 96/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5227
 Overall F1 Score: 0.1416
 
@@ -2876,33 +2876,33 @@ class 0 clustering acc 0.9968946376204441: correct 190367/190960
 class 1 clustering acc 0.14746543778801843: correct 2560/17360
 
 Epoch: 50, train_loss: 1.3847, train_clustering_loss:  0.2149, train_error: 0.4940
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.597678916827853, correct fine 309/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.2, correct fine 23/115 
-fine class 5: fine acc 0.8747016706443914, correct fine 733/838 
-fine class 6: fine acc 0.10843373493975904, correct fine 27/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.03787878787878788, correct fine 5/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.597678916827853, correct fine 309/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.2, correct fine 23/115
+fine class 5: fine acc 0.8747016706443914, correct fine 733/838
+fine class 6: fine acc 0.10843373493975904, correct fine 27/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.03787878787878788, correct fine 5/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5060
 
 Val Set, val_loss: 1.4286, val_error: 0.4886, auc: 0.7757
-class 0 clustering acc 0.9972451790633609: correct 23168/23232 
-class 1 clustering acc 0.1581439393939394: correct 334/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.59375, correct fine 38/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.14285714285714285, correct fine 2/14 
-fine class 5: fine acc 0.8942307692307693, correct fine 93/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9972451790633609: correct 23168/23232
+class 1 clustering acc 0.1581439393939394: correct 334/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.59375, correct fine 38/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.14285714285714285, correct fine 2/14
+fine class 5: fine acc 0.8942307692307693, correct fine 93/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1390
 
@@ -2934,33 +2934,33 @@ class 0 clustering acc 0.9969679514034353: correct 190381/190960
 class 1 clustering acc 0.14930875576036867: correct 2592/17360
 
 Epoch: 51, train_loss: 1.3820, train_clustering_loss:  0.2141, train_error: 0.4935
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.597678916827853, correct fine 309/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.20869565217391303, correct fine 24/115 
-fine class 5: fine acc 0.8794749403341289, correct fine 737/838 
-fine class 6: fine acc 0.09236947791164658, correct fine 23/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.03787878787878788, correct fine 5/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.597678916827853, correct fine 309/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.20869565217391303, correct fine 24/115
+fine class 5: fine acc 0.8794749403341289, correct fine 737/838
+fine class 6: fine acc 0.09236947791164658, correct fine 23/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.03787878787878788, correct fine 5/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5065
 
 Val Set, val_loss: 1.4265, val_error: 0.4924, auc: 0.7774
-class 0 clustering acc 0.9973743112947658: correct 23171/23232 
-class 1 clustering acc 0.1553030303030303: correct 328/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.59375, correct fine 38/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.14285714285714285, correct fine 2/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9973743112947658: correct 23171/23232
+class 1 clustering acc 0.1553030303030303: correct 328/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.59375, correct fine 38/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.14285714285714285, correct fine 2/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5076
 Overall F1 Score: 0.1381
 
@@ -2992,33 +2992,33 @@ class 0 clustering acc 0.9969836614997906: correct 190384/190960
 class 1 clustering acc 0.1453917050691244: correct 2524/17360
 
 Epoch: 52, train_loss: 1.3784, train_clustering_loss:  0.2143, train_error: 0.4894
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6092843326885881, correct fine 315/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.22608695652173913, correct fine 26/115 
-fine class 5: fine acc 0.8735083532219571, correct fine 732/838 
-fine class 6: fine acc 0.10843373493975904, correct fine 27/249 
-fine class 7: fine acc 0.02247191011235955, correct fine 2/89 
-fine class 8: fine acc 0.045454545454545456, correct fine 6/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6092843326885881, correct fine 315/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.22608695652173913, correct fine 26/115
+fine class 5: fine acc 0.8735083532219571, correct fine 732/838
+fine class 6: fine acc 0.10843373493975904, correct fine 27/249
+fine class 7: fine acc 0.02247191011235955, correct fine 2/89
+fine class 8: fine acc 0.045454545454545456, correct fine 6/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5106
 
 Val Set, val_loss: 1.4251, val_error: 0.4886, auc: 0.7782
-class 0 clustering acc 0.9972451790633609: correct 23168/23232 
-class 1 clustering acc 0.16145833333333334: correct 341/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.59375, correct fine 38/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.14285714285714285, correct fine 2/14 
-fine class 5: fine acc 0.8942307692307693, correct fine 93/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9972451790633609: correct 23168/23232
+class 1 clustering acc 0.16145833333333334: correct 341/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.59375, correct fine 38/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.14285714285714285, correct fine 2/14
+fine class 5: fine acc 0.8942307692307693, correct fine 93/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1390
 
@@ -3050,33 +3050,33 @@ class 0 clustering acc 0.9968579807289485: correct 190360/190960
 class 1 clustering acc 0.1527073732718894: correct 2651/17360
 
 Epoch: 53, train_loss: 1.3756, train_clustering_loss:  0.2138, train_error: 0.4871
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6015473887814313, correct fine 311/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.22608695652173913, correct fine 26/115 
-fine class 5: fine acc 0.8842482100238663, correct fine 741/838 
-fine class 6: fine acc 0.11244979919678715, correct fine 28/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.045454545454545456, correct fine 6/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6015473887814313, correct fine 311/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.22608695652173913, correct fine 26/115
+fine class 5: fine acc 0.8842482100238663, correct fine 741/838
+fine class 6: fine acc 0.11244979919678715, correct fine 28/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.045454545454545456, correct fine 6/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5129
 
 Val Set, val_loss: 1.4234, val_error: 0.4886, auc: 0.7791
-class 0 clustering acc 0.9972451790633609: correct 23168/23232 
-class 1 clustering acc 0.16051136363636365: correct 339/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.59375, correct fine 38/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.14285714285714285, correct fine 2/14 
-fine class 5: fine acc 0.8942307692307693, correct fine 93/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9972451790633609: correct 23168/23232
+class 1 clustering acc 0.16051136363636365: correct 339/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.59375, correct fine 38/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.14285714285714285, correct fine 2/14
+fine class 5: fine acc 0.8942307692307693, correct fine 93/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1394
 
@@ -3108,33 +3108,33 @@ class 0 clustering acc 0.9969470046082949: correct 190377/190960
 class 1 clustering acc 0.15063364055299538: correct 2615/17360
 
 Epoch: 54, train_loss: 1.3731, train_clustering_loss:  0.2135, train_error: 0.4853
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6112185686653772, correct fine 316/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.22608695652173913, correct fine 26/115 
-fine class 5: fine acc 0.8782816229116945, correct fine 736/838 
-fine class 6: fine acc 0.12048192771084337, correct fine 30/249 
-fine class 7: fine acc 0.033707865168539325, correct fine 3/89 
-fine class 8: fine acc 0.045454545454545456, correct fine 6/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6112185686653772, correct fine 316/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.22608695652173913, correct fine 26/115
+fine class 5: fine acc 0.8782816229116945, correct fine 736/838
+fine class 6: fine acc 0.12048192771084337, correct fine 30/249
+fine class 7: fine acc 0.033707865168539325, correct fine 3/89
+fine class 8: fine acc 0.045454545454545456, correct fine 6/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5147
 
 Val Set, val_loss: 1.4220, val_error: 0.4886, auc: 0.7803
-class 0 clustering acc 0.9970730027548209: correct 23164/23232 
-class 1 clustering acc 0.16429924242424243: correct 347/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.59375, correct fine 38/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.14285714285714285, correct fine 2/14 
-fine class 5: fine acc 0.8942307692307693, correct fine 93/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9970730027548209: correct 23164/23232
+class 1 clustering acc 0.16429924242424243: correct 347/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.59375, correct fine 38/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.14285714285714285, correct fine 2/14
+fine class 5: fine acc 0.8942307692307693, correct fine 93/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1394
 
@@ -3166,33 +3166,33 @@ class 0 clustering acc 0.9968056137410977: correct 190350/190960
 class 1 clustering acc 0.15535714285714286: correct 2697/17360
 
 Epoch: 55, train_loss: 1.3722, train_clustering_loss:  0.2139, train_error: 0.4843
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6092843326885881, correct fine 315/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.23478260869565218, correct fine 27/115 
-fine class 5: fine acc 0.883054892601432, correct fine 740/838 
-fine class 6: fine acc 0.12449799196787148, correct fine 31/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.03787878787878788, correct fine 5/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6092843326885881, correct fine 315/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.23478260869565218, correct fine 27/115
+fine class 5: fine acc 0.883054892601432, correct fine 740/838
+fine class 6: fine acc 0.12449799196787148, correct fine 31/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.03787878787878788, correct fine 5/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5157
 
 Val Set, val_loss: 1.4199, val_error: 0.4924, auc: 0.7813
-class 0 clustering acc 0.9971590909090909: correct 23166/23232 
-class 1 clustering acc 0.16051136363636365: correct 339/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.59375, correct fine 38/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.14285714285714285, correct fine 2/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9971590909090909: correct 23166/23232
+class 1 clustering acc 0.16051136363636365: correct 339/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.59375, correct fine 38/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.14285714285714285, correct fine 2/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5076
 Overall F1 Score: 0.1386
 
@@ -3224,33 +3224,33 @@ class 0 clustering acc 0.9967480100544617: correct 190339/190960
 class 1 clustering acc 0.15691244239631336: correct 2724/17360
 
 Epoch: 56, train_loss: 1.3676, train_clustering_loss:  0.2132, train_error: 0.4848
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6034816247582205, correct fine 312/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.24347826086956523, correct fine 28/115 
-fine class 5: fine acc 0.883054892601432, correct fine 740/838 
-fine class 6: fine acc 0.12048192771084337, correct fine 30/249 
-fine class 7: fine acc 0.02247191011235955, correct fine 2/89 
-fine class 8: fine acc 0.045454545454545456, correct fine 6/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6034816247582205, correct fine 312/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.24347826086956523, correct fine 28/115
+fine class 5: fine acc 0.883054892601432, correct fine 740/838
+fine class 6: fine acc 0.12048192771084337, correct fine 30/249
+fine class 7: fine acc 0.02247191011235955, correct fine 2/89
+fine class 8: fine acc 0.045454545454545456, correct fine 6/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5152
 
 Val Set, val_loss: 1.4184, val_error: 0.4886, auc: 0.7826
-class 0 clustering acc 0.9972451790633609: correct 23168/23232 
-class 1 clustering acc 0.16051136363636365: correct 339/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.59375, correct fine 38/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.14285714285714285, correct fine 2/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.1, correct fine 3/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9972451790633609: correct 23168/23232
+class 1 clustering acc 0.16051136363636365: correct 339/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.59375, correct fine 38/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.14285714285714285, correct fine 2/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.1, correct fine 3/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1434
 
@@ -3282,33 +3282,33 @@ class 0 clustering acc 0.9968056137410977: correct 190350/190960
 class 1 clustering acc 0.15650921658986175: correct 2717/17360
 
 Epoch: 57, train_loss: 1.3647, train_clustering_loss:  0.2132, train_error: 0.4839
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5918762088974855, correct fine 306/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.24347826086956523, correct fine 28/115 
-fine class 5: fine acc 0.883054892601432, correct fine 740/838 
-fine class 6: fine acc 0.14859437751004015, correct fine 37/249 
-fine class 7: fine acc 0.033707865168539325, correct fine 3/89 
-fine class 8: fine acc 0.045454545454545456, correct fine 6/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5918762088974855, correct fine 306/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.24347826086956523, correct fine 28/115
+fine class 5: fine acc 0.883054892601432, correct fine 740/838
+fine class 6: fine acc 0.14859437751004015, correct fine 37/249
+fine class 7: fine acc 0.033707865168539325, correct fine 3/89
+fine class 8: fine acc 0.045454545454545456, correct fine 6/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5161
 
 Val Set, val_loss: 1.4178, val_error: 0.4886, auc: 0.7829
-class 0 clustering acc 0.9972451790633609: correct 23168/23232 
-class 1 clustering acc 0.16145833333333334: correct 341/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.14285714285714285, correct fine 2/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9972451790633609: correct 23168/23232
+class 1 clustering acc 0.16145833333333334: correct 341/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.14285714285714285, correct fine 2/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1392
 
@@ -3340,33 +3340,33 @@ class 0 clustering acc 0.9967113531629661: correct 190332/190960
 class 1 clustering acc 0.15483870967741936: correct 2688/17360
 
 Epoch: 58, train_loss: 1.3631, train_clustering_loss:  0.2131, train_error: 0.4834
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6150870406189555, correct fine 318/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.22608695652173913, correct fine 26/115 
-fine class 5: fine acc 0.8758949880668258, correct fine 734/838 
-fine class 6: fine acc 0.13654618473895583, correct fine 34/249 
-fine class 7: fine acc 0.033707865168539325, correct fine 3/89 
-fine class 8: fine acc 0.045454545454545456, correct fine 6/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6150870406189555, correct fine 318/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.22608695652173913, correct fine 26/115
+fine class 5: fine acc 0.8758949880668258, correct fine 734/838
+fine class 6: fine acc 0.13654618473895583, correct fine 34/249
+fine class 7: fine acc 0.033707865168539325, correct fine 3/89
+fine class 8: fine acc 0.045454545454545456, correct fine 6/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5166
 
 Val Set, val_loss: 1.4160, val_error: 0.4811, auc: 0.7828
-class 0 clustering acc 0.9970730027548209: correct 23164/23232 
-class 1 clustering acc 0.16761363636363635: correct 354/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.59375, correct fine 38/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.14285714285714285, correct fine 2/14 
-fine class 5: fine acc 0.9038461538461539, correct fine 94/104 
-fine class 6: fine acc 0.1, correct fine 3/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9970730027548209: correct 23164/23232
+class 1 clustering acc 0.16761363636363635: correct 354/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.59375, correct fine 38/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.14285714285714285, correct fine 2/14
+fine class 5: fine acc 0.9038461538461539, correct fine 94/104
+fine class 6: fine acc 0.1, correct fine 3/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5189
 Overall F1 Score: 0.1453
 
@@ -3398,33 +3398,33 @@ class 0 clustering acc 0.9965175953079178: correct 190295/190960
 class 1 clustering acc 0.15996543778801844: correct 2777/17360
 
 Epoch: 59, train_loss: 1.3601, train_clustering_loss:  0.2128, train_error: 0.4816
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5899419729206963, correct fine 305/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.24347826086956523, correct fine 28/115 
-fine class 5: fine acc 0.8902147971360382, correct fine 746/838 
-fine class 6: fine acc 0.14859437751004015, correct fine 37/249 
-fine class 7: fine acc 0.033707865168539325, correct fine 3/89 
-fine class 8: fine acc 0.045454545454545456, correct fine 6/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5899419729206963, correct fine 305/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.24347826086956523, correct fine 28/115
+fine class 5: fine acc 0.8902147971360382, correct fine 746/838
+fine class 6: fine acc 0.14859437751004015, correct fine 37/249
+fine class 7: fine acc 0.033707865168539325, correct fine 3/89
+fine class 8: fine acc 0.045454545454545456, correct fine 6/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5184
 
 Val Set, val_loss: 1.4143, val_error: 0.4886, auc: 0.7834
-class 0 clustering acc 0.9972451790633609: correct 23168/23232 
-class 1 clustering acc 0.16382575757575757: correct 346/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.14285714285714285, correct fine 2/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9972451790633609: correct 23168/23232
+class 1 clustering acc 0.16382575757575757: correct 346/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.14285714285714285, correct fine 2/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1395
 
@@ -3456,34 +3456,37 @@ class 0 clustering acc 0.9966118558860494: correct 190313/190960
 class 1 clustering acc 0.1580069124423963: correct 2743/17360
 
 Epoch: 60, train_loss: 1.3602, train_clustering_loss:  0.2127, train_error: 0.4816
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6092843326885881, correct fine 315/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.24347826086956523, correct fine 28/115 
-fine class 5: fine acc 0.8818615751789977, correct fine 739/838 
-fine class 6: fine acc 0.14056224899598393, correct fine 35/249 
-fine class 7: fine acc 0.033707865168539325, correct fine 3/89 
-fine class 8: fine acc 0.03787878787878788, correct fine 5/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6092843326885881, correct fine 315/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.24347826086956523, correct fine 28/115
+fine class 5: fine acc 0.8818615751789977, correct fine 739/838
+fine class 6: fine acc 0.14056224899598393, correct fine 35/249
+fine class 7: fine acc 0.033707865168539325, correct fine 3/89
+fine class 8: fine acc 0.03787878787878788, correct fine 5/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
 Overall Accuracy: 0.5184
 
 Val Set, val_loss: 1.4124, val_error: 0.4886, auc: 0.7835
-class 0 clustering acc 0.9972021349862259: correct 23167/23232 
-class 1 clustering acc 0.16477272727272727: correct 348/2112 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.59375, correct fine 38/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.14285714285714285, correct fine 2/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.1, correct fine 3/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+class 0 clustering acc 0.9972021349862259: correct 23167/23232
+class 1 clustering acc 0.16477272727272727: correct 348/2112
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.59375, correct fine 38/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.14285714285714285, correct fine 2/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.1, correct fine 3/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Overall Accuracy: 0.5114
 Overall F1 Score: 0.1433
 
 Val error: 0.4773, ROC AUC: 0.7618
+
+Evaluation on Test Set...
+f1: 0.1184, Acc: 0.5019

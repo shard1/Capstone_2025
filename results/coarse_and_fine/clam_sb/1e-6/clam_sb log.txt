@@ -34,39 +34,39 @@ class 0 clustering acc 0.7968356374807988: correct 207496/260400
 class 1 clustering acc 0.2653225806451613: correct 4606/17360
 
 Epoch: 1, train_loss: 3.2483, train_clustering_loss: 1.0719, train_error: 0.6364
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.0, correct coarse 0/782 
-coarse class 2: coarse acc 0.9981600735970562, correct coarse 1085/1087 
-coarse class 3: coarse acc 0.0, correct coarse 0/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.017408123791102514, correct fine 9/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.9224343675417661, correct fine 773/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.05303030303030303, correct fine 7/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.9327, coarse auc: 0.6641, fine auc: 0.5881 
-class 0 clustering acc 0.984280303030303: correct 31182/31680 
-class 1 clustering acc 0.029356060606060608: correct 62/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.0, correct coarse 0/96 
-coarse class 2: coarse acc 1.0, correct coarse 134/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.0, correct fine 0/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 1.0, correct fine 104/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.0, correct coarse 0/782
+coarse class 2: coarse acc 0.9981600735970562, correct coarse 1085/1087
+coarse class 3: coarse acc 0.0, correct coarse 0/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.017408123791102514, correct fine 9/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.9224343675417661, correct fine 773/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.05303030303030303, correct fine 7/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.9327, coarse auc: 0.6641, fine auc: 0.5881
+class 0 clustering acc 0.984280303030303: correct 31182/31680
+class 1 clustering acc 0.029356060606060608: correct 62/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.0, correct coarse 0/96
+coarse class 2: coarse acc 1.0, correct coarse 134/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.0, correct fine 0/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 1.0, correct fine 104/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.5076
 Coarse Overall F1 Score: 0.1683
 Fine Overall Accuracy: 0.3939
@@ -100,39 +100,39 @@ class 0 clustering acc 0.9881182795698925: correct 257306/260400
 class 1 clustering acc 0.020967741935483872: correct 364/17360
 
 Epoch: 2, train_loss: 2.8582, train_clustering_loss: 0.6701, train_error: 0.6120
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.03324808184143223, correct coarse 26/782 
-coarse class 2: coarse acc 0.9908003679852806, correct coarse 1077/1087 
-coarse class 3: coarse acc 0.0, correct coarse 0/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.009671179883945842, correct fine 5/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.9988066825775657, correct fine 837/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.7268, coarse auc: 0.6782, fine auc: 0.6115 
-class 0 clustering acc 0.9999368686868687: correct 31678/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.041666666666666664, correct coarse 4/96 
-coarse class 2: coarse acc 0.9850746268656716, correct coarse 132/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.0, correct fine 0/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 1.0, correct fine 104/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.03324808184143223, correct coarse 26/782
+coarse class 2: coarse acc 0.9908003679852806, correct coarse 1077/1087
+coarse class 3: coarse acc 0.0, correct coarse 0/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.009671179883945842, correct fine 5/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.9988066825775657, correct fine 837/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.7268, coarse auc: 0.6782, fine auc: 0.6115
+class 0 clustering acc 0.9999368686868687: correct 31678/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.041666666666666664, correct coarse 4/96
+coarse class 2: coarse acc 0.9850746268656716, correct coarse 132/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.0, correct fine 0/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 1.0, correct fine 104/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.5152
 Coarse Overall F1 Score: 0.1882
 Fine Overall Accuracy: 0.3939
@@ -166,39 +166,39 @@ class 0 clustering acc 0.9998233486943164: correct 260354/260400
 class 1 clustering acc 0.0006336405529953918: correct 11/17360
 
 Epoch: 3, train_loss: 2.7325, train_clustering_loss: 0.4085, train_error: 0.6065
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.16624040920716113, correct coarse 130/782 
-coarse class 2: coarse acc 0.9714811407543699, correct coarse 1056/1087 
-coarse class 3: coarse acc 0.0, correct coarse 0/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.04061895551257253, correct fine 21/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.9940334128878282, correct fine 833/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.6432, coarse auc: 0.6869, fine auc: 0.6294 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.3645833333333333, correct coarse 35/96 
-coarse class 2: coarse acc 0.9104477611940298, correct coarse 122/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.171875, correct fine 11/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.9807692307692307, correct fine 102/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.16624040920716113, correct coarse 130/782
+coarse class 2: coarse acc 0.9714811407543699, correct coarse 1056/1087
+coarse class 3: coarse acc 0.0, correct coarse 0/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.04061895551257253, correct fine 21/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.9940334128878282, correct fine 833/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.6432, coarse auc: 0.6869, fine auc: 0.6294
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.3645833333333333, correct coarse 35/96
+coarse class 2: coarse acc 0.9104477611940298, correct coarse 122/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.171875, correct fine 11/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.9807692307692307, correct fine 102/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.5947
 Coarse Overall F1 Score: 0.2937
 Fine Overall Accuracy: 0.4280
@@ -232,39 +232,39 @@ class 0 clustering acc 0.999984639016897: correct 260396/260400
 class 1 clustering acc 0.0001152073732718894: correct 2/17360
 
 Epoch: 4, train_loss: 2.6647, train_clustering_loss: 0.2803, train_error: 0.5783
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.38618925831202044, correct coarse 302/782 
-coarse class 2: coarse acc 0.9006439742410304, correct coarse 979/1087 
-coarse class 3: coarse acc 0.0, correct coarse 0/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.17988394584139264, correct fine 93/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.9809069212410502, correct fine 822/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.5907, coarse auc: 0.6946, fine auc: 0.6454 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.4791666666666667, correct coarse 46/96 
-coarse class 2: coarse acc 0.9029850746268657, correct coarse 121/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.25, correct fine 16/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.9615384615384616, correct fine 100/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.38618925831202044, correct coarse 302/782
+coarse class 2: coarse acc 0.9006439742410304, correct coarse 979/1087
+coarse class 3: coarse acc 0.0, correct coarse 0/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.17988394584139264, correct fine 93/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.9809069212410502, correct fine 822/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.5907, coarse auc: 0.6946, fine auc: 0.6454
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.4791666666666667, correct coarse 46/96
+coarse class 2: coarse acc 0.9029850746268657, correct coarse 121/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.25, correct fine 16/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.9615384615384616, correct fine 100/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6326
 Coarse Overall F1 Score: 0.3227
 Fine Overall Accuracy: 0.4394
@@ -298,39 +298,39 @@ class 0 clustering acc 0.9999961597542243: correct 260399/260400
 class 1 clustering acc 5.76036866359447e-05: correct 1/17360
 
 Epoch: 5, train_loss: 2.6141, train_clustering_loss: 0.2250, train_error: 0.5599
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.4731457800511509, correct coarse 370/782 
-coarse class 2: coarse acc 0.8794848206071757, correct coarse 956/1087 
-coarse class 3: coarse acc 0.0, correct coarse 0/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.2862669245647969, correct fine 148/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.9630071599045346, correct fine 807/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.5507, coarse auc: 0.7018, fine auc: 0.6560 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.5104166666666666, correct coarse 49/96 
-coarse class 2: coarse acc 0.8805970149253731, correct coarse 118/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.375, correct fine 24/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.9423076923076923, correct fine 98/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.4731457800511509, correct coarse 370/782
+coarse class 2: coarse acc 0.8794848206071757, correct coarse 956/1087
+coarse class 3: coarse acc 0.0, correct coarse 0/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.2862669245647969, correct fine 148/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.9630071599045346, correct fine 807/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.5507, coarse auc: 0.7018, fine auc: 0.6560
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.5104166666666666, correct coarse 49/96
+coarse class 2: coarse acc 0.8805970149253731, correct coarse 118/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.375, correct fine 24/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.9423076923076923, correct fine 98/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6326
 Coarse Overall F1 Score: 0.3250
 Fine Overall Accuracy: 0.4621
@@ -364,39 +364,39 @@ class 0 clustering acc 1.0: correct 260400/260400
 class 1 clustering acc 0.0: correct 0/17360
 
 Epoch: 6, train_loss: 2.5728, train_clustering_loss: 0.2008, train_error: 0.5475
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.5281329923273658, correct coarse 413/782 
-coarse class 2: coarse acc 0.8638454461821528, correct coarse 939/1087 
-coarse class 3: coarse acc 0.0, correct coarse 0/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.37524177949709864, correct fine 194/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.9403341288782816, correct fine 788/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.5177, coarse auc: 0.7060, fine auc: 0.6668 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.5416666666666666, correct coarse 52/96 
-coarse class 2: coarse acc 0.8731343283582089, correct coarse 117/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.515625, correct fine 33/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.9134615384615384, correct fine 95/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.5281329923273658, correct coarse 413/782
+coarse class 2: coarse acc 0.8638454461821528, correct coarse 939/1087
+coarse class 3: coarse acc 0.0, correct coarse 0/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.37524177949709864, correct fine 194/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.9403341288782816, correct fine 788/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.5177, coarse auc: 0.7060, fine auc: 0.6668
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.5416666666666666, correct coarse 52/96
+coarse class 2: coarse acc 0.8731343283582089, correct coarse 117/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.515625, correct fine 33/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.9134615384615384, correct fine 95/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6402
 Coarse Overall F1 Score: 0.3305
 Fine Overall Accuracy: 0.4848
@@ -430,39 +430,39 @@ class 0 clustering acc 1.0: correct 260400/260400
 class 1 clustering acc 0.0: correct 0/17360
 
 Epoch: 7, train_loss: 2.5373, train_clustering_loss: 0.1897, train_error: 0.5401
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.571611253196931, correct coarse 447/782 
-coarse class 2: coarse acc 0.8537258509659613, correct coarse 928/1087 
-coarse class 3: coarse acc 0.0, correct coarse 0/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.4584139264990329, correct fine 237/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.9081145584725537, correct fine 761/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.4900, coarse auc: 0.7132, fine auc: 0.6761 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.5625, correct coarse 54/96 
-coarse class 2: coarse acc 0.8656716417910447, correct coarse 116/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.5625, correct fine 36/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.9134615384615384, correct fine 95/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.571611253196931, correct coarse 447/782
+coarse class 2: coarse acc 0.8537258509659613, correct coarse 928/1087
+coarse class 3: coarse acc 0.0, correct coarse 0/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.4584139264990329, correct fine 237/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.9081145584725537, correct fine 761/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.4900, coarse auc: 0.7132, fine auc: 0.6761
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.5625, correct coarse 54/96
+coarse class 2: coarse acc 0.8656716417910447, correct coarse 116/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.5625, correct fine 36/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.9134615384615384, correct fine 95/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6439
 Coarse Overall F1 Score: 0.3338
 Fine Overall Accuracy: 0.4962
@@ -496,39 +496,39 @@ class 0 clustering acc 0.9999961597542243: correct 260399/260400
 class 1 clustering acc 0.0: correct 0/17360
 
 Epoch: 8, train_loss: 2.5068, train_clustering_loss: 0.1836, train_error: 0.5355
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6023017902813299, correct coarse 471/782 
-coarse class 2: coarse acc 0.8362465501379944, correct coarse 909/1087 
-coarse class 3: coarse acc 0.0, correct coarse 0/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5087040618955513, correct fine 263/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8890214797136038, correct fine 745/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.4656, coarse auc: 0.7195, fine auc: 0.6874 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.5729166666666666, correct coarse 55/96 
-coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.5625, correct fine 36/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.9038461538461539, correct fine 94/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6023017902813299, correct coarse 471/782
+coarse class 2: coarse acc 0.8362465501379944, correct coarse 909/1087
+coarse class 3: coarse acc 0.0, correct coarse 0/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5087040618955513, correct fine 263/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8890214797136038, correct fine 745/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.4656, coarse auc: 0.7195, fine auc: 0.6874
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.5729166666666666, correct coarse 55/96
+coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.5625, correct fine 36/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.9038461538461539, correct fine 94/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6402
 Coarse Overall F1 Score: 0.3327
 Fine Overall Accuracy: 0.4924
@@ -562,39 +562,39 @@ class 0 clustering acc 1.0: correct 260400/260400
 class 1 clustering acc 5.76036866359447e-05: correct 1/17360
 
 Epoch: 9, train_loss: 2.4795, train_clustering_loss: 0.1801, train_error: 0.5300
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6163682864450127, correct coarse 482/782 
-coarse class 2: coarse acc 0.8380864765409384, correct coarse 911/1087 
-coarse class 3: coarse acc 0.0, correct coarse 0/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5319148936170213, correct fine 275/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8890214797136038, correct fine 745/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.4439, coarse auc: 0.7290, fine auc: 0.6970 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6041666666666666, correct coarse 58/96 
-coarse class 2: coarse acc 0.7985074626865671, correct coarse 107/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.59375, correct fine 38/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8942307692307693, correct fine 93/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6163682864450127, correct coarse 482/782
+coarse class 2: coarse acc 0.8380864765409384, correct coarse 911/1087
+coarse class 3: coarse acc 0.0, correct coarse 0/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5319148936170213, correct fine 275/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8890214797136038, correct fine 745/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.4439, coarse auc: 0.7290, fine auc: 0.6970
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6041666666666666, correct coarse 58/96
+coarse class 2: coarse acc 0.7985074626865671, correct coarse 107/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.59375, correct fine 38/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8942307692307693, correct fine 93/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6250
 Coarse Overall F1 Score: 0.3272
 Fine Overall Accuracy: 0.4962
@@ -628,39 +628,39 @@ class 0 clustering acc 1.0: correct 260400/260400
 class 1 clustering acc 5.76036866359447e-05: correct 1/17360
 
 Epoch: 10, train_loss: 2.4550, train_clustering_loss: 0.1775, train_error: 0.5272
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6445012787723785, correct coarse 504/782 
-coarse class 2: coarse acc 0.8141674333026679, correct coarse 885/1087 
-coarse class 3: coarse acc 0.0, correct coarse 0/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.586073500967118, correct fine 303/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8627684964200477, correct fine 723/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.4233, coarse auc: 0.7351, fine auc: 0.7056 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.59375, correct coarse 57/96 
-coarse class 2: coarse acc 0.8059701492537313, correct coarse 108/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.59375, correct fine 38/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.9038461538461539, correct fine 94/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6445012787723785, correct coarse 504/782
+coarse class 2: coarse acc 0.8141674333026679, correct coarse 885/1087
+coarse class 3: coarse acc 0.0, correct coarse 0/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.586073500967118, correct fine 303/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8627684964200477, correct fine 723/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.4233, coarse auc: 0.7351, fine auc: 0.7056
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.59375, correct coarse 57/96
+coarse class 2: coarse acc 0.8059701492537313, correct coarse 108/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.59375, correct fine 38/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.9038461538461539, correct fine 94/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6250
 Coarse Overall F1 Score: 0.3268
 Fine Overall Accuracy: 0.5000
@@ -694,39 +694,39 @@ class 0 clustering acc 0.999984639016897: correct 260396/260400
 class 1 clustering acc 0.0002304147465437788: correct 4/17360
 
 Epoch: 11, train_loss: 2.4303, train_clustering_loss: 0.1756, train_error: 0.5249
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6355498721227621, correct coarse 497/782 
-coarse class 2: coarse acc 0.8224471021159153, correct coarse 894/1087 
-coarse class 3: coarse acc 0.0, correct coarse 0/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5783365570599613, correct fine 299/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8735083532219571, correct fine 732/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.4054, coarse auc: 0.7421, fine auc: 0.7158 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6458333333333334, correct coarse 62/96 
-coarse class 2: coarse acc 0.7835820895522388, correct coarse 105/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.625, correct fine 40/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8269230769230769, correct fine 86/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6355498721227621, correct coarse 497/782
+coarse class 2: coarse acc 0.8224471021159153, correct coarse 894/1087
+coarse class 3: coarse acc 0.0, correct coarse 0/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5783365570599613, correct fine 299/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8735083532219571, correct fine 732/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.4054, coarse auc: 0.7421, fine auc: 0.7158
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6458333333333334, correct coarse 62/96
+coarse class 2: coarse acc 0.7835820895522388, correct coarse 105/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.625, correct fine 40/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8269230769230769, correct fine 86/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6326
 Coarse Overall F1 Score: 0.3330
 Fine Overall Accuracy: 0.4773
@@ -760,39 +760,39 @@ class 0 clustering acc 0.9999923195084486: correct 260398/260400
 class 1 clustering acc 0.0006912442396313364: correct 12/17360
 
 Epoch: 12, train_loss: 2.4103, train_clustering_loss: 0.1740, train_error: 0.5244
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6560102301790282, correct coarse 513/782 
-coarse class 2: coarse acc 0.8104875804967802, correct coarse 881/1087 
-coarse class 3: coarse acc 0.0, correct coarse 0/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6170212765957447, correct fine 319/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.850835322195704, correct fine 713/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.3872, coarse auc: 0.7482, fine auc: 0.7207 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6458333333333334, correct coarse 62/96 
-coarse class 2: coarse acc 0.7985074626865671, correct coarse 107/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.625, correct fine 40/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8653846153846154, correct fine 90/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6560102301790282, correct coarse 513/782
+coarse class 2: coarse acc 0.8104875804967802, correct coarse 881/1087
+coarse class 3: coarse acc 0.0, correct coarse 0/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6170212765957447, correct fine 319/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.850835322195704, correct fine 713/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.3872, coarse auc: 0.7482, fine auc: 0.7207
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6458333333333334, correct coarse 62/96
+coarse class 2: coarse acc 0.7985074626865671, correct coarse 107/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.625, correct fine 40/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8653846153846154, correct fine 90/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6402
 Coarse Overall F1 Score: 0.3367
 Fine Overall Accuracy: 0.4924
@@ -826,39 +826,39 @@ class 0 clustering acc 0.9999884792626728: correct 260397/260400
 class 1 clustering acc 0.0010944700460829493: correct 19/17360
 
 Epoch: 13, train_loss: 2.3902, train_clustering_loss: 0.1724, train_error: 0.5212
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6534526854219949, correct coarse 511/782 
-coarse class 2: coarse acc 0.8261269549218031, correct coarse 898/1087 
-coarse class 3: coarse acc 0.007782101167315175, correct coarse 2/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6150870406189555, correct fine 318/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.860381861575179, correct fine 721/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.3708, coarse auc: 0.7544, fine auc: 0.7294 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6458333333333334, correct coarse 62/96 
-coarse class 2: coarse acc 0.7761194029850746, correct coarse 104/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8365384615384616, correct fine 87/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6534526854219949, correct coarse 511/782
+coarse class 2: coarse acc 0.8261269549218031, correct coarse 898/1087
+coarse class 3: coarse acc 0.007782101167315175, correct coarse 2/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6150870406189555, correct fine 318/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.860381861575179, correct fine 721/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.3708, coarse auc: 0.7544, fine auc: 0.7294
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6458333333333334, correct coarse 62/96
+coarse class 2: coarse acc 0.7761194029850746, correct coarse 104/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8365384615384616, correct fine 87/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6288
 Coarse Overall F1 Score: 0.3312
 Fine Overall Accuracy: 0.4848
@@ -892,39 +892,39 @@ class 0 clustering acc 0.9999807987711213: correct 260395/260400
 class 1 clustering acc 0.0025921658986175116: correct 45/17360
 
 Epoch: 14, train_loss: 2.3713, train_clustering_loss: 0.1711, train_error: 0.5226
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6675191815856778, correct coarse 522/782 
-coarse class 2: coarse acc 0.8095676172953082, correct coarse 880/1087 
-coarse class 3: coarse acc 0.01556420233463035, correct coarse 4/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6382978723404256, correct fine 330/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8424821002386634, correct fine 706/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.3540, coarse auc: 0.7581, fine auc: 0.7345 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6354166666666666, correct coarse 61/96 
-coarse class 2: coarse acc 0.8208955223880597, correct coarse 110/134 
-coarse class 3: coarse acc 0.0, correct coarse 0/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6675191815856778, correct coarse 522/782
+coarse class 2: coarse acc 0.8095676172953082, correct coarse 880/1087
+coarse class 3: coarse acc 0.01556420233463035, correct coarse 4/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6382978723404256, correct fine 330/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8424821002386634, correct fine 706/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.3540, coarse auc: 0.7581, fine auc: 0.7345
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6354166666666666, correct coarse 61/96
+coarse class 2: coarse acc 0.8208955223880597, correct coarse 110/134
+coarse class 3: coarse acc 0.0, correct coarse 0/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6477
 Coarse Overall F1 Score: 0.3400
 Fine Overall Accuracy: 0.5000
@@ -958,39 +958,39 @@ class 0 clustering acc 0.999942396313364: correct 260385/260400
 class 1 clustering acc 0.003974654377880184: correct 69/17360
 
 Epoch: 15, train_loss: 2.3529, train_clustering_loss: 0.1697, train_error: 0.5194
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6534526854219949, correct coarse 511/782 
-coarse class 2: coarse acc 0.8242870285188593, correct coarse 896/1087 
-coarse class 3: coarse acc 0.01556420233463035, correct coarse 4/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6344294003868471, correct fine 328/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8532219570405728, correct fine 715/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.3389, coarse auc: 0.7614, fine auc: 0.7428 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0: correct 0/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.65625, correct coarse 63/96 
-coarse class 2: coarse acc 0.7985074626865671, correct coarse 107/134 
-coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6534526854219949, correct coarse 511/782
+coarse class 2: coarse acc 0.8242870285188593, correct coarse 896/1087
+coarse class 3: coarse acc 0.01556420233463035, correct coarse 4/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6344294003868471, correct fine 328/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8532219570405728, correct fine 715/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.3389, coarse auc: 0.7614, fine auc: 0.7428
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0: correct 0/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.65625, correct coarse 63/96
+coarse class 2: coarse acc 0.7985074626865671, correct coarse 107/134
+coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6477
 Coarse Overall F1 Score: 0.3563
 Fine Overall Accuracy: 0.5038
@@ -1024,39 +1024,39 @@ class 0 clustering acc 0.9998924731182796: correct 260372/260400
 class 1 clustering acc 0.0065668202764976955: correct 114/17360
 
 Epoch: 16, train_loss: 2.3362, train_clustering_loss: 0.1690, train_error: 0.5184
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6636828644501279, correct coarse 519/782 
-coarse class 2: coarse acc 0.8187672493100276, correct coarse 890/1087 
-coarse class 3: coarse acc 0.01556420233463035, correct coarse 4/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6421663442940039, correct fine 332/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.850835322195704, correct fine 713/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.3250, coarse auc: 0.7653, fine auc: 0.7480 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0004734848484848485: correct 1/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.625, correct coarse 60/96 
-coarse class 2: coarse acc 0.8208955223880597, correct coarse 110/134 
-coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6636828644501279, correct coarse 519/782
+coarse class 2: coarse acc 0.8187672493100276, correct coarse 890/1087
+coarse class 3: coarse acc 0.01556420233463035, correct coarse 4/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6421663442940039, correct fine 332/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.850835322195704, correct fine 713/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.3250, coarse auc: 0.7653, fine auc: 0.7480
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0004734848484848485: correct 1/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.625, correct coarse 60/96
+coarse class 2: coarse acc 0.8208955223880597, correct coarse 110/134
+coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6477
 Coarse Overall F1 Score: 0.3550
 Fine Overall Accuracy: 0.5038
@@ -1090,39 +1090,39 @@ class 0 clustering acc 0.9998502304147465: correct 260361/260400
 class 1 clustering acc 0.010253456221198156: correct 178/17360
 
 Epoch: 17, train_loss: 2.3199, train_clustering_loss: 0.1678, train_error: 0.5194
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6547314578005116, correct coarse 512/782 
-coarse class 2: coarse acc 0.8307267709291628, correct coarse 903/1087 
-coarse class 3: coarse acc 0.023346303501945526, correct coarse 6/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6286266924564797, correct fine 325/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8568019093078759, correct fine 718/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.3124, coarse auc: 0.7670, fine auc: 0.7532 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.0014204545454545455: correct 3/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6354166666666666, correct coarse 61/96 
-coarse class 2: coarse acc 0.8134328358208955, correct coarse 109/134 
-coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6547314578005116, correct coarse 512/782
+coarse class 2: coarse acc 0.8307267709291628, correct coarse 903/1087
+coarse class 3: coarse acc 0.023346303501945526, correct coarse 6/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6286266924564797, correct fine 325/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8568019093078759, correct fine 718/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.3124, coarse auc: 0.7670, fine auc: 0.7532
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.0014204545454545455: correct 3/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6354166666666666, correct coarse 61/96
+coarse class 2: coarse acc 0.8134328358208955, correct coarse 109/134
+coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6477
 Coarse Overall F1 Score: 0.3555
 Fine Overall Accuracy: 0.5038
@@ -1156,39 +1156,39 @@ class 0 clustering acc 0.9997388632872504: correct 260332/260400
 class 1 clustering acc 0.014285714285714285: correct 248/17360
 
 Epoch: 18, train_loss: 2.3063, train_clustering_loss: 0.1674, train_error: 0.5184
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6521739130434783, correct coarse 510/782 
-coarse class 2: coarse acc 0.8344066237350506, correct coarse 907/1087 
-coarse class 3: coarse acc 0.023346303501945526, correct coarse 6/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6344294003868471, correct fine 328/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8556085918854416, correct fine 717/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.3011, coarse auc: 0.7693, fine auc: 0.7576 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.003787878787878788: correct 8/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.625, correct coarse 60/96 
-coarse class 2: coarse acc 0.8208955223880597, correct coarse 110/134 
-coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6521739130434783, correct coarse 510/782
+coarse class 2: coarse acc 0.8344066237350506, correct coarse 907/1087
+coarse class 3: coarse acc 0.023346303501945526, correct coarse 6/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6344294003868471, correct fine 328/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8556085918854416, correct fine 717/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.3011, coarse auc: 0.7693, fine auc: 0.7576
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.003787878787878788: correct 8/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.625, correct coarse 60/96
+coarse class 2: coarse acc 0.8208955223880597, correct coarse 110/134
+coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6477
 Coarse Overall F1 Score: 0.3554
 Fine Overall Accuracy: 0.5076
@@ -1222,39 +1222,39 @@ class 0 clustering acc 0.9997119815668203: correct 260325/260400
 class 1 clustering acc 0.02171658986175115: correct 377/17360
 
 Epoch: 19, train_loss: 2.2916, train_clustering_loss: 0.1665, train_error: 0.5143
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6534526854219949, correct coarse 511/782 
-coarse class 2: coarse acc 0.8353265869365225, correct coarse 908/1087 
-coarse class 3: coarse acc 0.023346303501945526, correct coarse 6/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6441005802707931, correct fine 333/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.860381861575179, correct fine 721/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2909, coarse auc: 0.7704, fine auc: 0.7629 
-class 0 clustering acc 1.0: correct 31680/31680 
-class 1 clustering acc 0.006628787878787879: correct 14/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.625, correct coarse 60/96 
-coarse class 2: coarse acc 0.8283582089552238, correct coarse 111/134 
-coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6534526854219949, correct coarse 511/782
+coarse class 2: coarse acc 0.8353265869365225, correct coarse 908/1087
+coarse class 3: coarse acc 0.023346303501945526, correct coarse 6/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6441005802707931, correct fine 333/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.860381861575179, correct fine 721/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2909, coarse auc: 0.7704, fine auc: 0.7629
+class 0 clustering acc 1.0: correct 31680/31680
+class 1 clustering acc 0.006628787878787879: correct 14/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.625, correct coarse 60/96
+coarse class 2: coarse acc 0.8283582089552238, correct coarse 111/134
+coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6515
 Coarse Overall F1 Score: 0.3577
 Fine Overall Accuracy: 0.5038
@@ -1288,39 +1288,39 @@ class 0 clustering acc 0.9996466973886329: correct 260308/260400
 class 1 clustering acc 0.028513824884792628: correct 495/17360
 
 Epoch: 20, train_loss: 2.2801, train_clustering_loss: 0.1656, train_error: 0.5120
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6329923273657289, correct coarse 495/782 
-coarse class 2: coarse acc 0.84360625574977, correct coarse 917/1087 
-coarse class 3: coarse acc 0.04669260700389105, correct coarse 12/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6363636363636364, correct fine 329/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8711217183770883, correct fine 730/838 
-fine class 6: fine acc 0.0, correct fine 0/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2822, coarse auc: 0.7719, fine auc: 0.7690 
-class 0 clustering acc 0.9999684343434343: correct 31679/31680 
-class 1 clustering acc 0.011837121212121212: correct 25/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6666666666666666, correct coarse 64/96 
-coarse class 2: coarse acc 0.8134328358208955, correct coarse 109/134 
-coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6329923273657289, correct coarse 495/782
+coarse class 2: coarse acc 0.84360625574977, correct coarse 917/1087
+coarse class 3: coarse acc 0.04669260700389105, correct coarse 12/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6363636363636364, correct fine 329/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8711217183770883, correct fine 730/838
+fine class 6: fine acc 0.0, correct fine 0/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2822, coarse auc: 0.7719, fine auc: 0.7690
+class 0 clustering acc 0.9999684343434343: correct 31679/31680
+class 1 clustering acc 0.011837121212121212: correct 25/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6666666666666666, correct coarse 64/96
+coarse class 2: coarse acc 0.8134328358208955, correct coarse 109/134
+coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6591
 Coarse Overall F1 Score: 0.3634
 Fine Overall Accuracy: 0.5076
@@ -1354,39 +1354,39 @@ class 0 clustering acc 0.9994815668202764: correct 260265/260400
 class 1 clustering acc 0.036290322580645164: correct 630/17360
 
 Epoch: 21, train_loss: 2.2684, train_clustering_loss: 0.1649, train_error: 0.5092
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.639386189258312, correct coarse 500/782 
-coarse class 2: coarse acc 0.8408463661453542, correct coarse 914/1087 
-coarse class 3: coarse acc 0.042801556420233464, correct coarse 11/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6305609284332688, correct fine 326/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.0, correct fine 0/115 
-fine class 5: fine acc 0.8782816229116945, correct fine 736/838 
-fine class 6: fine acc 0.012048192771084338, correct fine 3/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2737, coarse auc: 0.7730, fine auc: 0.7730 
-class 0 clustering acc 0.9999684343434343: correct 31679/31680 
-class 1 clustering acc 0.015151515151515152: correct 32/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6354166666666666, correct coarse 61/96 
-coarse class 2: coarse acc 0.8134328358208955, correct coarse 109/134 
-coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.639386189258312, correct coarse 500/782
+coarse class 2: coarse acc 0.8408463661453542, correct coarse 914/1087
+coarse class 3: coarse acc 0.042801556420233464, correct coarse 11/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6305609284332688, correct fine 326/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.0, correct fine 0/115
+fine class 5: fine acc 0.8782816229116945, correct fine 736/838
+fine class 6: fine acc 0.012048192771084338, correct fine 3/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2737, coarse auc: 0.7730, fine auc: 0.7730
+class 0 clustering acc 0.9999684343434343: correct 31679/31680
+class 1 clustering acc 0.015151515151515152: correct 32/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6354166666666666, correct coarse 61/96
+coarse class 2: coarse acc 0.8134328358208955, correct coarse 109/134
+coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6477
 Coarse Overall F1 Score: 0.3563
 Fine Overall Accuracy: 0.5076
@@ -1420,39 +1420,39 @@ class 0 clustering acc 0.9995430107526881: correct 260281/260400
 class 1 clustering acc 0.04158986175115208: correct 722/17360
 
 Epoch: 22, train_loss: 2.2579, train_clustering_loss: 0.1645, train_error: 0.5115
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6432225063938619, correct coarse 503/782 
-coarse class 2: coarse acc 0.8417663293468262, correct coarse 915/1087 
-coarse class 3: coarse acc 0.058365758754863814, correct coarse 15/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6305609284332688, correct fine 326/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.017391304347826087, correct fine 2/115 
-fine class 5: fine acc 0.8651551312649165, correct fine 725/838 
-fine class 6: fine acc 0.028112449799196786, correct fine 7/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2665, coarse auc: 0.7746, fine auc: 0.7740 
-class 0 clustering acc 0.9998421717171717: correct 31675/31680 
-class 1 clustering acc 0.029356060606060608: correct 62/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96 
-coarse class 2: coarse acc 0.8283582089552238, correct coarse 111/134 
-coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6432225063938619, correct coarse 503/782
+coarse class 2: coarse acc 0.8417663293468262, correct coarse 915/1087
+coarse class 3: coarse acc 0.058365758754863814, correct coarse 15/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6305609284332688, correct fine 326/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.017391304347826087, correct fine 2/115
+fine class 5: fine acc 0.8651551312649165, correct fine 725/838
+fine class 6: fine acc 0.028112449799196786, correct fine 7/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2665, coarse auc: 0.7746, fine auc: 0.7740
+class 0 clustering acc 0.9998421717171717: correct 31675/31680
+class 1 clustering acc 0.029356060606060608: correct 62/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96
+coarse class 2: coarse acc 0.8283582089552238, correct coarse 111/134
+coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6477
 Coarse Overall F1 Score: 0.3557
 Fine Overall Accuracy: 0.5076
@@ -1486,39 +1486,39 @@ class 0 clustering acc 0.9992741935483871: correct 260211/260400
 class 1 clustering acc 0.05178571428571429: correct 899/17360
 
 Epoch: 23, train_loss: 2.2472, train_clustering_loss: 0.1638, train_error: 0.5078
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6304347826086957, correct coarse 493/782 
-coarse class 2: coarse acc 0.860165593376265, correct coarse 935/1087 
-coarse class 3: coarse acc 0.03501945525291829, correct coarse 9/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6189555125725339, correct fine 320/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.008695652173913044, correct fine 1/115 
-fine class 5: fine acc 0.8866348448687351, correct fine 743/838 
-fine class 6: fine acc 0.01606425702811245, correct fine 4/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.0, correct fine 0/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2596, coarse auc: 0.7762, fine auc: 0.7777 
-class 0 clustering acc 0.9997159090909091: correct 31671/31680 
-class 1 clustering acc 0.03835227272727273: correct 81/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6458333333333334, correct coarse 62/96 
-coarse class 2: coarse acc 0.8208955223880597, correct coarse 110/134 
-coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8653846153846154, correct fine 90/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6304347826086957, correct coarse 493/782
+coarse class 2: coarse acc 0.860165593376265, correct coarse 935/1087
+coarse class 3: coarse acc 0.03501945525291829, correct coarse 9/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6189555125725339, correct fine 320/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.008695652173913044, correct fine 1/115
+fine class 5: fine acc 0.8866348448687351, correct fine 743/838
+fine class 6: fine acc 0.01606425702811245, correct fine 4/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.0, correct fine 0/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2596, coarse auc: 0.7762, fine auc: 0.7777
+class 0 clustering acc 0.9997159090909091: correct 31671/31680
+class 1 clustering acc 0.03835227272727273: correct 81/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6458333333333334, correct coarse 62/96
+coarse class 2: coarse acc 0.8208955223880597, correct coarse 110/134
+coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8653846153846154, correct fine 90/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6553
 Coarse Overall F1 Score: 0.3615
 Fine Overall Accuracy: 0.5000
@@ -1552,39 +1552,39 @@ class 0 clustering acc 0.9992089093701997: correct 260194/260400
 class 1 clustering acc 0.05720046082949309: correct 993/17360
 
 Epoch: 24, train_loss: 2.2417, train_clustering_loss: 0.1634, train_error: 0.5028
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6368286445012787, correct coarse 498/782 
-coarse class 2: coarse acc 0.8482060717571297, correct coarse 922/1087 
-coarse class 3: coarse acc 0.04669260700389105, correct coarse 12/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.632495164410058, correct fine 327/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.02608695652173913, correct fine 3/115 
-fine class 5: fine acc 0.8806682577565632, correct fine 738/838 
-fine class 6: fine acc 0.0321285140562249, correct fine 8/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.022727272727272728, correct fine 3/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2526, coarse auc: 0.7776, fine auc: 0.7778 
-class 0 clustering acc 0.9996212121212121: correct 31668/31680 
-class 1 clustering acc 0.054450757575757576: correct 115/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96 
-coarse class 2: coarse acc 0.8432835820895522, correct coarse 113/134 
-coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.0, correct fine 0/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6368286445012787, correct coarse 498/782
+coarse class 2: coarse acc 0.8482060717571297, correct coarse 922/1087
+coarse class 3: coarse acc 0.04669260700389105, correct coarse 12/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.632495164410058, correct fine 327/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.02608695652173913, correct fine 3/115
+fine class 5: fine acc 0.8806682577565632, correct fine 738/838
+fine class 6: fine acc 0.0321285140562249, correct fine 8/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.022727272727272728, correct fine 3/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2526, coarse auc: 0.7776, fine auc: 0.7778
+class 0 clustering acc 0.9996212121212121: correct 31668/31680
+class 1 clustering acc 0.054450757575757576: correct 115/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96
+coarse class 2: coarse acc 0.8432835820895522, correct coarse 113/134
+coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.0, correct fine 0/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6553
 Coarse Overall F1 Score: 0.3598
 Fine Overall Accuracy: 0.5038
@@ -1618,39 +1618,39 @@ class 0 clustering acc 0.9990821812596006: correct 260161/260400
 class 1 clustering acc 0.06618663594470046: correct 1149/17360
 
 Epoch: 25, train_loss: 2.2306, train_clustering_loss: 0.1627, train_error: 0.5018
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6265984654731458, correct coarse 490/782 
-coarse class 2: coarse acc 0.860165593376265, correct coarse 935/1087 
-coarse class 3: coarse acc 0.05058365758754864, correct coarse 13/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6189555125725339, correct fine 320/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.034782608695652174, correct fine 4/115 
-fine class 5: fine acc 0.8890214797136038, correct fine 745/838 
-fine class 6: fine acc 0.03614457831325301, correct fine 9/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.022727272727272728, correct fine 3/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2467, coarse auc: 0.7787, fine auc: 0.7824 
-class 0 clustering acc 0.9995896464646464: correct 31667/31680 
-class 1 clustering acc 0.061553030303030304: correct 130/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.625, correct coarse 60/96 
-coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134 
-coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.671875, correct fine 43/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6265984654731458, correct coarse 490/782
+coarse class 2: coarse acc 0.860165593376265, correct coarse 935/1087
+coarse class 3: coarse acc 0.05058365758754864, correct coarse 13/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6189555125725339, correct fine 320/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.034782608695652174, correct fine 4/115
+fine class 5: fine acc 0.8890214797136038, correct fine 745/838
+fine class 6: fine acc 0.03614457831325301, correct fine 9/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.022727272727272728, correct fine 3/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2467, coarse auc: 0.7787, fine auc: 0.7824
+class 0 clustering acc 0.9995896464646464: correct 31667/31680
+class 1 clustering acc 0.061553030303030304: correct 130/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.625, correct coarse 60/96
+coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134
+coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.671875, correct fine 43/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6629
 Coarse Overall F1 Score: 0.3645
 Fine Overall Accuracy: 0.5114
@@ -1684,39 +1684,39 @@ class 0 clustering acc 0.9990552995391705: correct 260154/260400
 class 1 clustering acc 0.07119815668202766: correct 1236/17360
 
 Epoch: 26, train_loss: 2.2227, train_clustering_loss: 0.1627, train_error: 0.5023
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6265984654731458, correct coarse 490/782 
-coarse class 2: coarse acc 0.8675252989880404, correct coarse 943/1087 
-coarse class 3: coarse acc 0.042801556420233464, correct coarse 11/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6073500967117988, correct fine 314/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.06086956521739131, correct fine 7/115 
-fine class 5: fine acc 0.8866348448687351, correct fine 743/838 
-fine class 6: fine acc 0.05220883534136546, correct fine 13/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.022727272727272728, correct fine 3/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2421, coarse auc: 0.7803, fine auc: 0.7833 
-class 0 clustering acc 0.9994949494949495: correct 31664/31680 
-class 1 clustering acc 0.07149621212121213: correct 151/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.625, correct coarse 60/96 
-coarse class 2: coarse acc 0.835820895522388, correct coarse 112/134 
-coarse class 3: coarse acc 0.06666666666666667, correct coarse 2/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6265984654731458, correct coarse 490/782
+coarse class 2: coarse acc 0.8675252989880404, correct coarse 943/1087
+coarse class 3: coarse acc 0.042801556420233464, correct coarse 11/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6073500967117988, correct fine 314/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.06086956521739131, correct fine 7/115
+fine class 5: fine acc 0.8866348448687351, correct fine 743/838
+fine class 6: fine acc 0.05220883534136546, correct fine 13/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.022727272727272728, correct fine 3/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2421, coarse auc: 0.7803, fine auc: 0.7833
+class 0 clustering acc 0.9994949494949495: correct 31664/31680
+class 1 clustering acc 0.07149621212121213: correct 151/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.625, correct coarse 60/96
+coarse class 2: coarse acc 0.835820895522388, correct coarse 112/134
+coarse class 3: coarse acc 0.06666666666666667, correct coarse 2/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6591
 Coarse Overall F1 Score: 0.3755
 Fine Overall Accuracy: 0.5114
@@ -1750,39 +1750,39 @@ class 0 clustering acc 0.9990629800307219: correct 260156/260400
 class 1 clustering acc 0.07932027649769585: correct 1377/17360
 
 Epoch: 27, train_loss: 2.2169, train_clustering_loss: 0.1622, train_error: 0.4986
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.629156010230179, correct coarse 492/782 
-coarse class 2: coarse acc 0.859245630174793, correct coarse 934/1087 
-coarse class 3: coarse acc 0.0622568093385214, correct coarse 16/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6092843326885881, correct fine 315/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.08695652173913043, correct fine 10/115 
-fine class 5: fine acc 0.8937947494033412, correct fine 749/838 
-fine class 6: fine acc 0.040160642570281124, correct fine 10/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2371, coarse auc: 0.7821, fine auc: 0.7835 
-class 0 clustering acc 0.9994318181818181: correct 31662/31680 
-class 1 clustering acc 0.07954545454545454: correct 168/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.625, correct coarse 60/96 
-coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134 
-coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.629156010230179, correct coarse 492/782
+coarse class 2: coarse acc 0.859245630174793, correct coarse 934/1087
+coarse class 3: coarse acc 0.0622568093385214, correct coarse 16/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6092843326885881, correct fine 315/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.08695652173913043, correct fine 10/115
+fine class 5: fine acc 0.8937947494033412, correct fine 749/838
+fine class 6: fine acc 0.040160642570281124, correct fine 10/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2371, coarse auc: 0.7821, fine auc: 0.7835
+class 0 clustering acc 0.9994318181818181: correct 31662/31680
+class 1 clustering acc 0.07954545454545454: correct 168/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.625, correct coarse 60/96
+coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134
+coarse class 3: coarse acc 0.03333333333333333, correct coarse 1/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6629
 Coarse Overall F1 Score: 0.3640
 Fine Overall Accuracy: 0.5114
@@ -1816,39 +1816,39 @@ class 0 clustering acc 0.9987941628264209: correct 260086/260400
 class 1 clustering acc 0.086463133640553: correct 1501/17360
 
 Epoch: 28, train_loss: 2.2091, train_clustering_loss: 0.1620, train_error: 0.5000
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6214833759590793, correct coarse 486/782 
-coarse class 2: coarse acc 0.874885004599816, correct coarse 951/1087 
-coarse class 3: coarse acc 0.042801556420233464, correct coarse 11/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6054158607350096, correct fine 313/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.08695652173913043, correct fine 10/115 
-fine class 5: fine acc 0.8926014319809069, correct fine 748/838 
-fine class 6: fine acc 0.04819277108433735, correct fine 12/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.015151515151515152, correct fine 2/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2331, coarse auc: 0.7831, fine auc: 0.7847 
-class 0 clustering acc 0.9994318181818181: correct 31662/31680 
-class 1 clustering acc 0.08664772727272728: correct 183/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6354166666666666, correct coarse 61/96 
-coarse class 2: coarse acc 0.8283582089552238, correct coarse 111/134 
-coarse class 3: coarse acc 0.06666666666666667, correct coarse 2/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.65625, correct fine 42/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6214833759590793, correct coarse 486/782
+coarse class 2: coarse acc 0.874885004599816, correct coarse 951/1087
+coarse class 3: coarse acc 0.042801556420233464, correct coarse 11/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6054158607350096, correct fine 313/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.08695652173913043, correct fine 10/115
+fine class 5: fine acc 0.8926014319809069, correct fine 748/838
+fine class 6: fine acc 0.04819277108433735, correct fine 12/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.015151515151515152, correct fine 2/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2331, coarse auc: 0.7831, fine auc: 0.7847
+class 0 clustering acc 0.9994318181818181: correct 31662/31680
+class 1 clustering acc 0.08664772727272728: correct 183/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6354166666666666, correct coarse 61/96
+coarse class 2: coarse acc 0.8283582089552238, correct coarse 111/134
+coarse class 3: coarse acc 0.06666666666666667, correct coarse 2/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.65625, correct fine 42/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6591
 Coarse Overall F1 Score: 0.3757
 Fine Overall Accuracy: 0.5114
@@ -1882,39 +1882,39 @@ class 0 clustering acc 0.9987941628264209: correct 260086/260400
 class 1 clustering acc 0.09089861751152074: correct 1578/17360
 
 Epoch: 29, train_loss: 2.2035, train_clustering_loss: 0.1615, train_error: 0.4968
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6278772378516624, correct coarse 491/782 
-coarse class 2: coarse acc 0.8656853725850966, correct coarse 941/1087 
-coarse class 3: coarse acc 0.07392996108949416, correct coarse 19/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6131528046421664, correct fine 317/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.10434782608695652, correct fine 12/115 
-fine class 5: fine acc 0.8866348448687351, correct fine 743/838 
-fine class 6: fine acc 0.0642570281124498, correct fine 16/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2279, coarse auc: 0.7842, fine auc: 0.7851 
-class 0 clustering acc 0.9992739898989899: correct 31657/31680 
-class 1 clustering acc 0.09517045454545454: correct 201/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.625, correct coarse 60/96 
-coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134 
-coarse class 3: coarse acc 0.06666666666666667, correct coarse 2/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.0, correct fine 0/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6278772378516624, correct coarse 491/782
+coarse class 2: coarse acc 0.8656853725850966, correct coarse 941/1087
+coarse class 3: coarse acc 0.07392996108949416, correct coarse 19/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6131528046421664, correct fine 317/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.10434782608695652, correct fine 12/115
+fine class 5: fine acc 0.8866348448687351, correct fine 743/838
+fine class 6: fine acc 0.0642570281124498, correct fine 16/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2279, coarse auc: 0.7842, fine auc: 0.7851
+class 0 clustering acc 0.9992739898989899: correct 31657/31680
+class 1 clustering acc 0.09517045454545454: correct 201/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.625, correct coarse 60/96
+coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134
+coarse class 3: coarse acc 0.06666666666666667, correct coarse 2/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.0, correct fine 0/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6667
 Coarse Overall F1 Score: 0.3796
 Fine Overall Accuracy: 0.5076
@@ -1948,39 +1948,39 @@ class 0 clustering acc 0.9987173579109063: correct 260066/260400
 class 1 clustering acc 0.0957373271889401: correct 1662/17360
 
 Epoch: 30, train_loss: 2.1975, train_clustering_loss: 0.1611, train_error: 0.4954
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6202046035805626, correct coarse 485/782 
-coarse class 2: coarse acc 0.8629254829806807, correct coarse 938/1087 
-coarse class 3: coarse acc 0.0622568093385214, correct coarse 16/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.6054158607350096, correct fine 313/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.13043478260869565, correct fine 15/115 
-fine class 5: fine acc 0.8902147971360382, correct fine 746/838 
-fine class 6: fine acc 0.07228915662650602, correct fine 18/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.022727272727272728, correct fine 3/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2232, coarse auc: 0.7858, fine auc: 0.7865 
-class 0 clustering acc 0.9992424242424243: correct 31656/31680 
-class 1 clustering acc 0.10227272727272728: correct 216/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.625, correct coarse 60/96 
-coarse class 2: coarse acc 0.8432835820895522, correct coarse 113/134 
-coarse class 3: coarse acc 0.06666666666666667, correct coarse 2/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.625, correct fine 40/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6202046035805626, correct coarse 485/782
+coarse class 2: coarse acc 0.8629254829806807, correct coarse 938/1087
+coarse class 3: coarse acc 0.0622568093385214, correct coarse 16/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.6054158607350096, correct fine 313/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.13043478260869565, correct fine 15/115
+fine class 5: fine acc 0.8902147971360382, correct fine 746/838
+fine class 6: fine acc 0.07228915662650602, correct fine 18/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.022727272727272728, correct fine 3/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2232, coarse auc: 0.7858, fine auc: 0.7865
+class 0 clustering acc 0.9992424242424243: correct 31656/31680
+class 1 clustering acc 0.10227272727272728: correct 216/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.625, correct coarse 60/96
+coarse class 2: coarse acc 0.8432835820895522, correct coarse 113/134
+coarse class 3: coarse acc 0.06666666666666667, correct coarse 2/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.625, correct fine 40/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6629
 Coarse Overall F1 Score: 0.3780
 Fine Overall Accuracy: 0.5038
@@ -2014,39 +2014,39 @@ class 0 clustering acc 0.998736559139785: correct 260071/260400
 class 1 clustering acc 0.10178571428571428: correct 1767/17360
 
 Epoch: 31, train_loss: 2.1909, train_clustering_loss: 0.1607, train_error: 0.4963
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6329923273657289, correct coarse 495/782 
-coarse class 2: coarse acc 0.8656853725850966, correct coarse 941/1087 
-coarse class 3: coarse acc 0.07392996108949416, correct coarse 19/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.586073500967118, correct fine 303/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.16521739130434782, correct fine 19/115 
-fine class 5: fine acc 0.8926014319809069, correct fine 748/838 
-fine class 6: fine acc 0.08032128514056225, correct fine 20/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.022727272727272728, correct fine 3/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2192, coarse auc: 0.7870, fine auc: 0.7867 
-class 0 clustering acc 0.9991477272727273: correct 31653/31680 
-class 1 clustering acc 0.1084280303030303: correct 229/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96 
-coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134 
-coarse class 3: coarse acc 0.06666666666666667, correct coarse 2/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.640625, correct fine 41/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6329923273657289, correct coarse 495/782
+coarse class 2: coarse acc 0.8656853725850966, correct coarse 941/1087
+coarse class 3: coarse acc 0.07392996108949416, correct coarse 19/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.586073500967118, correct fine 303/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.16521739130434782, correct fine 19/115
+fine class 5: fine acc 0.8926014319809069, correct fine 748/838
+fine class 6: fine acc 0.08032128514056225, correct fine 20/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.022727272727272728, correct fine 3/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2192, coarse auc: 0.7870, fine auc: 0.7867
+class 0 clustering acc 0.9991477272727273: correct 31653/31680
+class 1 clustering acc 0.1084280303030303: correct 229/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96
+coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134
+coarse class 3: coarse acc 0.06666666666666667, correct coarse 2/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.640625, correct fine 41/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6629
 Coarse Overall F1 Score: 0.3778
 Fine Overall Accuracy: 0.5076
@@ -2080,39 +2080,39 @@ class 0 clustering acc 0.9985253456221198: correct 260016/260400
 class 1 clustering acc 0.10437788018433179: correct 1812/17360
 
 Epoch: 32, train_loss: 2.1864, train_clustering_loss: 0.1606, train_error: 0.4917
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6240409207161125, correct coarse 488/782 
-coarse class 2: coarse acc 0.8785648574057038, correct coarse 955/1087 
-coarse class 3: coarse acc 0.07392996108949416, correct coarse 19/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5899419729206963, correct fine 305/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.16521739130434782, correct fine 19/115 
-fine class 5: fine acc 0.8973747016706444, correct fine 752/838 
-fine class 6: fine acc 0.08835341365461848, correct fine 22/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.03787878787878788, correct fine 5/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2159, coarse auc: 0.7882, fine auc: 0.7865 
-class 0 clustering acc 0.999179292929293: correct 31654/31680 
-class 1 clustering acc 0.1103219696969697: correct 233/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6354166666666666, correct coarse 61/96 
-coarse class 2: coarse acc 0.8432835820895522, correct coarse 113/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.625, correct fine 40/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6240409207161125, correct coarse 488/782
+coarse class 2: coarse acc 0.8785648574057038, correct coarse 955/1087
+coarse class 3: coarse acc 0.07392996108949416, correct coarse 19/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5899419729206963, correct fine 305/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.16521739130434782, correct fine 19/115
+fine class 5: fine acc 0.8973747016706444, correct fine 752/838
+fine class 6: fine acc 0.08835341365461848, correct fine 22/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.03787878787878788, correct fine 5/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2159, coarse auc: 0.7882, fine auc: 0.7865
+class 0 clustering acc 0.999179292929293: correct 31654/31680
+class 1 clustering acc 0.1103219696969697: correct 233/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6354166666666666, correct coarse 61/96
+coarse class 2: coarse acc 0.8432835820895522, correct coarse 113/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.625, correct fine 40/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6705
 Coarse Overall F1 Score: 0.3939
 Fine Overall Accuracy: 0.5076
@@ -2146,39 +2146,39 @@ class 0 clustering acc 0.9984600614439324: correct 259999/260400
 class 1 clustering acc 0.1103110599078341: correct 1915/17360
 
 Epoch: 33, train_loss: 2.1797, train_clustering_loss: 0.1603, train_error: 0.4940
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6265984654731458, correct coarse 490/782 
-coarse class 2: coarse acc 0.8666053357865685, correct coarse 942/1087 
-coarse class 3: coarse acc 0.07003891050583658, correct coarse 18/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5880077369439072, correct fine 304/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.16521739130434782, correct fine 19/115 
-fine class 5: fine acc 0.8937947494033412, correct fine 749/838 
-fine class 6: fine acc 0.09236947791164658, correct fine 23/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.022727272727272728, correct fine 3/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2120, coarse auc: 0.7889, fine auc: 0.7872 
-class 0 clustering acc 0.9990214646464647: correct 31649/31680 
-class 1 clustering acc 0.11410984848484848: correct 241/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6041666666666666, correct coarse 58/96 
-coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134 
-coarse class 3: coarse acc 0.06666666666666667, correct coarse 2/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.625, correct fine 40/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.03333333333333333, correct fine 1/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6265984654731458, correct coarse 490/782
+coarse class 2: coarse acc 0.8666053357865685, correct coarse 942/1087
+coarse class 3: coarse acc 0.07003891050583658, correct coarse 18/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5880077369439072, correct fine 304/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.16521739130434782, correct fine 19/115
+fine class 5: fine acc 0.8937947494033412, correct fine 749/838
+fine class 6: fine acc 0.09236947791164658, correct fine 23/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.022727272727272728, correct fine 3/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2120, coarse auc: 0.7889, fine auc: 0.7872
+class 0 clustering acc 0.9990214646464647: correct 31649/31680
+class 1 clustering acc 0.11410984848484848: correct 241/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6041666666666666, correct coarse 58/96
+coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134
+coarse class 3: coarse acc 0.06666666666666667, correct coarse 2/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.625, correct fine 40/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.03333333333333333, correct fine 1/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6591
 Coarse Overall F1 Score: 0.3754
 Fine Overall Accuracy: 0.5038
@@ -2212,39 +2212,39 @@ class 0 clustering acc 0.998379416282642: correct 259978/260400
 class 1 clustering acc 0.11555299539170506: correct 2006/17360
 
 Epoch: 34, train_loss: 2.1760, train_clustering_loss: 0.1601, train_error: 0.4908
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6150895140664961, correct coarse 481/782 
-coarse class 2: coarse acc 0.8859245630174793, correct coarse 963/1087 
-coarse class 3: coarse acc 0.0622568093385214, correct coarse 16/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5764023210831721, correct fine 298/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.16521739130434782, correct fine 19/115 
-fine class 5: fine acc 0.9069212410501193, correct fine 760/838 
-fine class 6: fine acc 0.09236947791164658, correct fine 23/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.03787878787878788, correct fine 5/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2124, coarse auc: 0.7898, fine auc: 0.7879 
-class 0 clustering acc 0.9991161616161616: correct 31652/31680 
-class 1 clustering acc 0.11079545454545454: correct 234/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6458333333333334, correct coarse 62/96 
-coarse class 2: coarse acc 0.8134328358208955, correct coarse 109/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.625, correct fine 40/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.8557692307692307, correct fine 89/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6150895140664961, correct coarse 481/782
+coarse class 2: coarse acc 0.8859245630174793, correct coarse 963/1087
+coarse class 3: coarse acc 0.0622568093385214, correct coarse 16/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5764023210831721, correct fine 298/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.16521739130434782, correct fine 19/115
+fine class 5: fine acc 0.9069212410501193, correct fine 760/838
+fine class 6: fine acc 0.09236947791164658, correct fine 23/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.03787878787878788, correct fine 5/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2124, coarse auc: 0.7898, fine auc: 0.7879
+class 0 clustering acc 0.9991161616161616: correct 31652/31680
+class 1 clustering acc 0.11079545454545454: correct 234/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6458333333333334, correct coarse 62/96
+coarse class 2: coarse acc 0.8134328358208955, correct coarse 109/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.625, correct fine 40/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.8557692307692307, correct fine 89/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6591
 Coarse Overall F1 Score: 0.3882
 Fine Overall Accuracy: 0.5000
@@ -2278,39 +2278,39 @@ class 0 clustering acc 0.9985176651305684: correct 260014/260400
 class 1 clustering acc 0.11059907834101383: correct 1920/17360
 
 Epoch: 35, train_loss: 2.1729, train_clustering_loss: 0.1600, train_error: 0.4908
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6381074168797954, correct coarse 499/782 
-coarse class 2: coarse acc 0.8647654093836247, correct coarse 940/1087 
-coarse class 3: coarse acc 0.08171206225680934, correct coarse 21/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5918762088974855, correct fine 306/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.1826086956521739, correct fine 21/115 
-fine class 5: fine acc 0.8949880668257757, correct fine 750/838 
-fine class 6: fine acc 0.0963855421686747, correct fine 24/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2058, coarse auc: 0.7904, fine auc: 0.7876 
-class 0 clustering acc 0.9989267676767677: correct 31646/31680 
-class 1 clustering acc 0.1240530303030303: correct 262/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96 
-coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6381074168797954, correct coarse 499/782
+coarse class 2: coarse acc 0.8647654093836247, correct coarse 940/1087
+coarse class 3: coarse acc 0.08171206225680934, correct coarse 21/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5918762088974855, correct fine 306/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.1826086956521739, correct fine 21/115
+fine class 5: fine acc 0.8949880668257757, correct fine 750/838
+fine class 6: fine acc 0.0963855421686747, correct fine 24/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2058, coarse auc: 0.7904, fine auc: 0.7876
+class 0 clustering acc 0.9989267676767677: correct 31646/31680
+class 1 clustering acc 0.1240530303030303: correct 262/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96
+coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6667
 Coarse Overall F1 Score: 0.3909
 Fine Overall Accuracy: 0.5076
@@ -2344,39 +2344,39 @@ class 0 clustering acc 0.9983064516129032: correct 259959/260400
 class 1 clustering acc 0.12142857142857143: correct 2108/17360
 
 Epoch: 36, train_loss: 2.1679, train_clustering_loss: 0.1595, train_error: 0.4903
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6227621483375959, correct coarse 487/782 
-coarse class 2: coarse acc 0.8804047838086476, correct coarse 957/1087 
-coarse class 3: coarse acc 0.07782101167315175, correct coarse 20/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5783365570599613, correct fine 299/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.19130434782608696, correct fine 22/115 
-fine class 5: fine acc 0.9021479713603818, correct fine 756/838 
-fine class 6: fine acc 0.10040160642570281, correct fine 25/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2037, coarse auc: 0.7912, fine auc: 0.7881 
-class 0 clustering acc 0.9989267676767677: correct 31646/31680 
-class 1 clustering acc 0.12357954545454546: correct 261/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.625, correct coarse 60/96 
-coarse class 2: coarse acc 0.8432835820895522, correct coarse 113/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6227621483375959, correct coarse 487/782
+coarse class 2: coarse acc 0.8804047838086476, correct coarse 957/1087
+coarse class 3: coarse acc 0.07782101167315175, correct coarse 20/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5783365570599613, correct fine 299/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.19130434782608696, correct fine 22/115
+fine class 5: fine acc 0.9021479713603818, correct fine 756/838
+fine class 6: fine acc 0.10040160642570281, correct fine 25/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2037, coarse auc: 0.7912, fine auc: 0.7881
+class 0 clustering acc 0.9989267676767677: correct 31646/31680
+class 1 clustering acc 0.12357954545454546: correct 261/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.625, correct coarse 60/96
+coarse class 2: coarse acc 0.8432835820895522, correct coarse 113/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6667
 Coarse Overall F1 Score: 0.3911
 Fine Overall Accuracy: 0.5038
@@ -2410,39 +2410,39 @@ class 0 clustering acc 0.9982949308755761: correct 259956/260400
 class 1 clustering acc 0.12183179723502305: correct 2115/17360
 
 Epoch: 37, train_loss: 2.1637, train_clustering_loss: 0.1595, train_error: 0.4903
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6317135549872123, correct coarse 494/782 
-coarse class 2: coarse acc 0.8675252989880404, correct coarse 943/1087 
-coarse class 3: coarse acc 0.07782101167315175, correct coarse 20/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5841392649903289, correct fine 302/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.19130434782608696, correct fine 22/115 
-fine class 5: fine acc 0.8949880668257757, correct fine 750/838 
-fine class 6: fine acc 0.11244979919678715, correct fine 28/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.2002, coarse auc: 0.7910, fine auc: 0.7885 
-class 0 clustering acc 0.9988636363636364: correct 31644/31680 
-class 1 clustering acc 0.13115530303030304: correct 277/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.5833333333333334, correct coarse 56/96 
-coarse class 2: coarse acc 0.8656716417910447, correct coarse 116/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.8942307692307693, correct fine 93/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6317135549872123, correct coarse 494/782
+coarse class 2: coarse acc 0.8675252989880404, correct coarse 943/1087
+coarse class 3: coarse acc 0.07782101167315175, correct coarse 20/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5841392649903289, correct fine 302/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.19130434782608696, correct fine 22/115
+fine class 5: fine acc 0.8949880668257757, correct fine 750/838
+fine class 6: fine acc 0.11244979919678715, correct fine 28/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.2002, coarse auc: 0.7910, fine auc: 0.7885
+class 0 clustering acc 0.9988636363636364: correct 31644/31680
+class 1 clustering acc 0.13115530303030304: correct 277/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.5833333333333334, correct coarse 56/96
+coarse class 2: coarse acc 0.8656716417910447, correct coarse 116/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.8942307692307693, correct fine 93/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6629
 Coarse Overall F1 Score: 0.3882
 Fine Overall Accuracy: 0.5114
@@ -2476,39 +2476,39 @@ class 0 clustering acc 0.9981874039938556: correct 259928/260400
 class 1 clustering acc 0.12828341013824884: correct 2227/17360
 
 Epoch: 38, train_loss: 2.1620, train_clustering_loss: 0.1588, train_error: 0.4894
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6112531969309463, correct coarse 478/782 
-coarse class 2: coarse acc 0.8831646734130635, correct coarse 960/1087 
-coarse class 3: coarse acc 0.08171206225680934, correct coarse 21/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5764023210831721, correct fine 298/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.2, correct fine 23/115 
-fine class 5: fine acc 0.9045346062052506, correct fine 758/838 
-fine class 6: fine acc 0.10040160642570281, correct fine 25/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.1979, coarse auc: 0.7915, fine auc: 0.7893 
-class 0 clustering acc 0.9988636363636364: correct 31644/31680 
-class 1 clustering acc 0.13068181818181818: correct 276/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96 
-coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6112531969309463, correct coarse 478/782
+coarse class 2: coarse acc 0.8831646734130635, correct coarse 960/1087
+coarse class 3: coarse acc 0.08171206225680934, correct coarse 21/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5764023210831721, correct fine 298/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.2, correct fine 23/115
+fine class 5: fine acc 0.9045346062052506, correct fine 758/838
+fine class 6: fine acc 0.10040160642570281, correct fine 25/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.1979, coarse auc: 0.7915, fine auc: 0.7893
+class 0 clustering acc 0.9988636363636364: correct 31644/31680
+class 1 clustering acc 0.13068181818181818: correct 276/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96
+coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6667
 Coarse Overall F1 Score: 0.3909
 Fine Overall Accuracy: 0.5076
@@ -2542,39 +2542,39 @@ class 0 clustering acc 0.9981989247311828: correct 259931/260400
 class 1 clustering acc 0.12851382488479263: correct 2231/17360
 
 Epoch: 39, train_loss: 2.1542, train_clustering_loss: 0.1591, train_error: 0.4889
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6304347826086957, correct coarse 493/782 
-coarse class 2: coarse acc 0.8684452621895125, correct coarse 944/1087 
-coarse class 3: coarse acc 0.08949416342412451, correct coarse 23/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5783365570599613, correct fine 299/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.19130434782608696, correct fine 22/115 
-fine class 5: fine acc 0.9033412887828163, correct fine 757/838 
-fine class 6: fine acc 0.10843373493975904, correct fine 27/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.1953, coarse auc: 0.7918, fine auc: 0.7891 
-class 0 clustering acc 0.998895202020202: correct 31645/31680 
-class 1 clustering acc 0.13068181818181818: correct 276/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96 
-coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6304347826086957, correct coarse 493/782
+coarse class 2: coarse acc 0.8684452621895125, correct coarse 944/1087
+coarse class 3: coarse acc 0.08949416342412451, correct coarse 23/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5783365570599613, correct fine 299/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.19130434782608696, correct fine 22/115
+fine class 5: fine acc 0.9033412887828163, correct fine 757/838
+fine class 6: fine acc 0.10843373493975904, correct fine 27/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.1953, coarse auc: 0.7918, fine auc: 0.7891
+class 0 clustering acc 0.998895202020202: correct 31645/31680
+class 1 clustering acc 0.13068181818181818: correct 276/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96
+coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6667
 Coarse Overall F1 Score: 0.3909
 Fine Overall Accuracy: 0.5038
@@ -2608,39 +2608,39 @@ class 0 clustering acc 0.9981643625192013: correct 259922/260400
 class 1 clustering acc 0.12914746543778802: correct 2242/17360
 
 Epoch: 40, train_loss: 2.1513, train_clustering_loss: 0.1585, train_error: 0.4912
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6163682864450127, correct coarse 482/782 
-coarse class 2: coarse acc 0.8804047838086476, correct coarse 957/1087 
-coarse class 3: coarse acc 0.09727626459143969, correct coarse 25/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5609284332688588, correct fine 290/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.2, correct fine 23/115 
-fine class 5: fine acc 0.9009546539379475, correct fine 755/838 
-fine class 6: fine acc 0.1285140562248996, correct fine 32/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.1930, coarse auc: 0.7921, fine auc: 0.7891 
-class 0 clustering acc 0.9989583333333333: correct 31647/31680 
-class 1 clustering acc 0.13020833333333334: correct 275/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96 
-coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6163682864450127, correct coarse 482/782
+coarse class 2: coarse acc 0.8804047838086476, correct coarse 957/1087
+coarse class 3: coarse acc 0.09727626459143969, correct coarse 25/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5609284332688588, correct fine 290/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.2, correct fine 23/115
+fine class 5: fine acc 0.9009546539379475, correct fine 755/838
+fine class 6: fine acc 0.1285140562248996, correct fine 32/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.1930, coarse auc: 0.7921, fine auc: 0.7891
+class 0 clustering acc 0.9989583333333333: correct 31647/31680
+class 1 clustering acc 0.13020833333333334: correct 275/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6145833333333334, correct coarse 59/96
+coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6667
 Coarse Overall F1 Score: 0.3909
 Fine Overall Accuracy: 0.5038
@@ -2674,39 +2674,39 @@ class 0 clustering acc 0.9982795698924731: correct 259952/260400
 class 1 clustering acc 0.13346774193548386: correct 2317/17360
 
 Epoch: 41, train_loss: 2.1471, train_clustering_loss: 0.1585, train_error: 0.4834
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6240409207161125, correct coarse 488/782 
-coarse class 2: coarse acc 0.8804047838086476, correct coarse 957/1087 
-coarse class 3: coarse acc 0.09727626459143969, correct coarse 25/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5725338491295938, correct fine 296/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.23478260869565218, correct fine 27/115 
-fine class 5: fine acc 0.9021479713603818, correct fine 756/838 
-fine class 6: fine acc 0.14859437751004015, correct fine 37/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.03787878787878788, correct fine 5/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.1908, coarse auc: 0.7925, fine auc: 0.7895 
-class 0 clustering acc 0.9988636363636364: correct 31644/31680 
-class 1 clustering acc 0.13541666666666666: correct 286/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6041666666666666, correct coarse 58/96 
-coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6240409207161125, correct coarse 488/782
+coarse class 2: coarse acc 0.8804047838086476, correct coarse 957/1087
+coarse class 3: coarse acc 0.09727626459143969, correct coarse 25/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5725338491295938, correct fine 296/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.23478260869565218, correct fine 27/115
+fine class 5: fine acc 0.9021479713603818, correct fine 756/838
+fine class 6: fine acc 0.14859437751004015, correct fine 37/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.03787878787878788, correct fine 5/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.1908, coarse auc: 0.7925, fine auc: 0.7895
+class 0 clustering acc 0.9988636363636364: correct 31644/31680
+class 1 clustering acc 0.13541666666666666: correct 286/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6041666666666666, correct coarse 58/96
+coarse class 2: coarse acc 0.8507462686567164, correct coarse 114/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6629
 Coarse Overall F1 Score: 0.3885
 Fine Overall Accuracy: 0.5038
@@ -2740,39 +2740,39 @@ class 0 clustering acc 0.9980952380952381: correct 259904/260400
 class 1 clustering acc 0.1357142857142857: correct 2356/17360
 
 Epoch: 42, train_loss: 2.1457, train_clustering_loss: 0.1582, train_error: 0.4862
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6176470588235294, correct coarse 483/782 
-coarse class 2: coarse acc 0.8877644894204232, correct coarse 965/1087 
-coarse class 3: coarse acc 0.09727626459143969, correct coarse 25/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.574468085106383, correct fine 297/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.19130434782608696, correct fine 22/115 
-fine class 5: fine acc 0.905727923627685, correct fine 759/838 
-fine class 6: fine acc 0.13253012048192772, correct fine 33/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.1909, coarse auc: 0.7926, fine auc: 0.7893 
-class 0 clustering acc 0.9989267676767677: correct 31646/31680 
-class 1 clustering acc 0.13399621212121213: correct 283/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6354166666666666, correct coarse 61/96 
-coarse class 2: coarse acc 0.8208955223880597, correct coarse 110/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.875, correct fine 91/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6176470588235294, correct coarse 483/782
+coarse class 2: coarse acc 0.8877644894204232, correct coarse 965/1087
+coarse class 3: coarse acc 0.09727626459143969, correct coarse 25/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.574468085106383, correct fine 297/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.19130434782608696, correct fine 22/115
+fine class 5: fine acc 0.905727923627685, correct fine 759/838
+fine class 6: fine acc 0.13253012048192772, correct fine 33/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.1909, coarse auc: 0.7926, fine auc: 0.7893
+class 0 clustering acc 0.9989267676767677: correct 31646/31680
+class 1 clustering acc 0.13399621212121213: correct 283/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6354166666666666, correct coarse 61/96
+coarse class 2: coarse acc 0.8208955223880597, correct coarse 110/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.875, correct fine 91/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6591
 Coarse Overall F1 Score: 0.3878
 Fine Overall Accuracy: 0.5038
@@ -2806,39 +2806,39 @@ class 0 clustering acc 0.9981221198156682: correct 259911/260400
 class 1 clustering acc 0.1380184331797235: correct 2396/17360
 
 Epoch: 43, train_loss: 2.1409, train_clustering_loss: 0.1581, train_error: 0.4820
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6253196930946292, correct coarse 489/782 
-coarse class 2: coarse acc 0.8794848206071757, correct coarse 956/1087 
-coarse class 3: coarse acc 0.10116731517509728, correct coarse 26/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5783365570599613, correct fine 299/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.21739130434782608, correct fine 25/115 
-fine class 5: fine acc 0.905727923627685, correct fine 759/838 
-fine class 6: fine acc 0.14859437751004015, correct fine 37/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.030303030303030304, correct fine 4/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.1887, coarse auc: 0.7933, fine auc: 0.7899 
-class 0 clustering acc 0.9989267676767677: correct 31646/31680 
-class 1 clustering acc 0.13304924242424243: correct 281/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.625, correct coarse 60/96 
-coarse class 2: coarse acc 0.8208955223880597, correct coarse 110/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.8653846153846154, correct fine 90/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6253196930946292, correct coarse 489/782
+coarse class 2: coarse acc 0.8794848206071757, correct coarse 956/1087
+coarse class 3: coarse acc 0.10116731517509728, correct coarse 26/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5783365570599613, correct fine 299/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.21739130434782608, correct fine 25/115
+fine class 5: fine acc 0.905727923627685, correct fine 759/838
+fine class 6: fine acc 0.14859437751004015, correct fine 37/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.030303030303030304, correct fine 4/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.1887, coarse auc: 0.7933, fine auc: 0.7899
+class 0 clustering acc 0.9989267676767677: correct 31646/31680
+class 1 clustering acc 0.13304924242424243: correct 281/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.625, correct coarse 60/96
+coarse class 2: coarse acc 0.8208955223880597, correct coarse 110/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.8653846153846154, correct fine 90/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6553
 Coarse Overall F1 Score: 0.3853
 Fine Overall Accuracy: 0.5000
@@ -2872,39 +2872,39 @@ class 0 clustering acc 0.9981336405529954: correct 259914/260400
 class 1 clustering acc 0.13605990783410138: correct 2362/17360
 
 Epoch: 44, train_loss: 2.1369, train_clustering_loss: 0.1578, train_error: 0.4811
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6368286445012787, correct coarse 498/782 
-coarse class 2: coarse acc 0.8638454461821528, correct coarse 939/1087 
-coarse class 3: coarse acc 0.09727626459143969, correct coarse 25/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5899419729206963, correct fine 305/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.22608695652173913, correct fine 26/115 
-fine class 5: fine acc 0.89618138424821, correct fine 751/838 
-fine class 6: fine acc 0.15261044176706828, correct fine 38/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.045454545454545456, correct fine 6/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.1850, coarse auc: 0.7928, fine auc: 0.7899 
-class 0 clustering acc 0.9987373737373737: correct 31640/31680 
-class 1 clustering acc 0.1425189393939394: correct 301/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.6041666666666666, correct coarse 58/96 
-coarse class 2: coarse acc 0.8432835820895522, correct coarse 113/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.06666666666666667, correct fine 2/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6368286445012787, correct coarse 498/782
+coarse class 2: coarse acc 0.8638454461821528, correct coarse 939/1087
+coarse class 3: coarse acc 0.09727626459143969, correct coarse 25/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5899419729206963, correct fine 305/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.22608695652173913, correct fine 26/115
+fine class 5: fine acc 0.89618138424821, correct fine 751/838
+fine class 6: fine acc 0.15261044176706828, correct fine 38/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.045454545454545456, correct fine 6/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.1850, coarse auc: 0.7928, fine auc: 0.7899
+class 0 clustering acc 0.9987373737373737: correct 31640/31680
+class 1 clustering acc 0.1425189393939394: correct 301/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.6041666666666666, correct coarse 58/96
+coarse class 2: coarse acc 0.8432835820895522, correct coarse 113/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.06666666666666667, correct fine 2/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6591
 Coarse Overall F1 Score: 0.3865
 Fine Overall Accuracy: 0.5076
@@ -2938,39 +2938,39 @@ class 0 clustering acc 0.9979531490015361: correct 259867/260400
 class 1 clustering acc 0.1396889400921659: correct 2425/17360
 
 Epoch: 45, train_loss: 2.1380, train_clustering_loss: 0.1575, train_error: 0.4862
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6214833759590793, correct coarse 486/782 
-coarse class 2: coarse acc 0.8822447102115916, correct coarse 959/1087 
-coarse class 3: coarse acc 0.08949416342412451, correct coarse 23/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5667311411992263, correct fine 293/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.23478260869565218, correct fine 27/115 
-fine class 5: fine acc 0.8997613365155132, correct fine 754/838 
-fine class 6: fine acc 0.14457831325301204, correct fine 36/249 
-fine class 7: fine acc 0.0, correct fine 0/89 
-fine class 8: fine acc 0.03787878787878788, correct fine 5/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.1828, coarse auc: 0.7940, fine auc: 0.7898 
-class 0 clustering acc 0.9986742424242424: correct 31638/31680 
-class 1 clustering acc 0.14299242424242425: correct 302/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.625, correct coarse 60/96 
-coarse class 2: coarse acc 0.835820895522388, correct coarse 112/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.1, correct fine 3/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6214833759590793, correct coarse 486/782
+coarse class 2: coarse acc 0.8822447102115916, correct coarse 959/1087
+coarse class 3: coarse acc 0.08949416342412451, correct coarse 23/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5667311411992263, correct fine 293/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.23478260869565218, correct fine 27/115
+fine class 5: fine acc 0.8997613365155132, correct fine 754/838
+fine class 6: fine acc 0.14457831325301204, correct fine 36/249
+fine class 7: fine acc 0.0, correct fine 0/89
+fine class 8: fine acc 0.03787878787878788, correct fine 5/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.1828, coarse auc: 0.7940, fine auc: 0.7898
+class 0 clustering acc 0.9986742424242424: correct 31638/31680
+class 1 clustering acc 0.14299242424242425: correct 302/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.625, correct coarse 60/96
+coarse class 2: coarse acc 0.835820895522388, correct coarse 112/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.1, correct fine 3/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6629
 Coarse Overall F1 Score: 0.3895
 Fine Overall Accuracy: 0.5114
@@ -3004,42 +3004,43 @@ class 0 clustering acc 0.9980491551459293: correct 259892/260400
 class 1 clustering acc 0.140610599078341: correct 2441/17360
 
 Epoch: 46, train_loss: 2.1286, train_clustering_loss: 0.1572, train_error: 0.4783
-coarse class 0: coarse acc 0.0, correct coarse 0/44 
-coarse class 1: coarse acc 0.6214833759590793, correct coarse 486/782 
-coarse class 2: coarse acc 0.8840846366145354, correct coarse 961/1087 
-coarse class 3: coarse acc 0.09727626459143969, correct coarse 25/257 
-fine class 0: fine acc 0.0, correct fine 0/12 
-fine class 1: fine acc 0.0, correct fine 0/32 
-fine class 2: fine acc 0.5725338491295938, correct fine 296/517 
-fine class 3: fine acc 0.0, correct fine 0/150 
-fine class 4: fine acc 0.23478260869565218, correct fine 27/115 
-fine class 5: fine acc 0.9081145584725537, correct fine 761/838 
-fine class 6: fine acc 0.1646586345381526, correct fine 41/249 
-fine class 7: fine acc 0.011235955056179775, correct fine 1/89 
-fine class 8: fine acc 0.045454545454545456, correct fine 6/132 
-fine class 9: fine acc 0.0, correct fine 0/10 
-fine class 10: fine acc 0.0, correct fine 0/26 
-Val Set, val_loss: 2.1818, coarse auc: 0.7944, fine auc: 0.7900 
-class 0 clustering acc 0.9986742424242424: correct 31638/31680 
-class 1 clustering acc 0.1434659090909091: correct 303/2112 
-coarse class 0: coarse acc 0.0, correct coarse 0/4 
-coarse class 1: coarse acc 0.625, correct coarse 60/96 
-coarse class 2: coarse acc 0.8283582089552238, correct coarse 111/134 
-coarse class 3: coarse acc 0.1, correct coarse 3/30 
-fine class 0: fine acc 0.0, correct fine 0/1 
-fine class 1: fine acc 0.0, correct fine 0/3 
-fine class 2: fine acc 0.609375, correct fine 39/64 
-fine class 3: fine acc 0.0, correct fine 0/18 
-fine class 4: fine acc 0.07142857142857142, correct fine 1/14 
-fine class 5: fine acc 0.8846153846153846, correct fine 92/104 
-fine class 6: fine acc 0.1, correct fine 3/30 
-fine class 7: fine acc 0.0, correct fine 0/10 
-fine class 8: fine acc 0.0, correct fine 0/16 
-fine class 9: fine acc 0.0, correct fine 0/1 
-fine class 10: fine acc 0.0, correct fine 0/3 
+coarse class 0: coarse acc 0.0, correct coarse 0/44
+coarse class 1: coarse acc 0.6214833759590793, correct coarse 486/782
+coarse class 2: coarse acc 0.8840846366145354, correct coarse 961/1087
+coarse class 3: coarse acc 0.09727626459143969, correct coarse 25/257
+fine class 0: fine acc 0.0, correct fine 0/12
+fine class 1: fine acc 0.0, correct fine 0/32
+fine class 2: fine acc 0.5725338491295938, correct fine 296/517
+fine class 3: fine acc 0.0, correct fine 0/150
+fine class 4: fine acc 0.23478260869565218, correct fine 27/115
+fine class 5: fine acc 0.9081145584725537, correct fine 761/838
+fine class 6: fine acc 0.1646586345381526, correct fine 41/249
+fine class 7: fine acc 0.011235955056179775, correct fine 1/89
+fine class 8: fine acc 0.045454545454545456, correct fine 6/132
+fine class 9: fine acc 0.0, correct fine 0/10
+fine class 10: fine acc 0.0, correct fine 0/26
+Val Set, val_loss: 2.1818, coarse auc: 0.7944, fine auc: 0.7900
+class 0 clustering acc 0.9986742424242424: correct 31638/31680
+class 1 clustering acc 0.1434659090909091: correct 303/2112
+coarse class 0: coarse acc 0.0, correct coarse 0/4
+coarse class 1: coarse acc 0.625, correct coarse 60/96
+coarse class 2: coarse acc 0.8283582089552238, correct coarse 111/134
+coarse class 3: coarse acc 0.1, correct coarse 3/30
+fine class 0: fine acc 0.0, correct fine 0/1
+fine class 1: fine acc 0.0, correct fine 0/3
+fine class 2: fine acc 0.609375, correct fine 39/64
+fine class 3: fine acc 0.0, correct fine 0/18
+fine class 4: fine acc 0.07142857142857142, correct fine 1/14
+fine class 5: fine acc 0.8846153846153846, correct fine 92/104
+fine class 6: fine acc 0.1, correct fine 3/30
+fine class 7: fine acc 0.0, correct fine 0/10
+fine class 8: fine acc 0.0, correct fine 0/16
+fine class 9: fine acc 0.0, correct fine 0/1
+fine class 10: fine acc 0.0, correct fine 0/3
 Coarse Overall Accuracy: 0.6591
 Coarse Overall F1 Score: 0.3876
 Fine Overall Accuracy: 0.5114
 Fine Overall F1 Score: 0.1353
 
 Evaluation on Test Set...
+f1 Coarse: 0.3641, f1 Fine: 0.1248, Coarse Acc: 0.6654, Fine Acc: 0.5095
