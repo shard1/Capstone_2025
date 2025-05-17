@@ -76,9 +76,18 @@ def load_data(base_dir, anno_dict, split=None):
 
 
 class AMCDataset(Dataset):
-    def __init__(self, base_dir, anno_path, split="train"):
+    def __init__(self, base_dir, anno_path, min_patches, split="train"):
         self.anno = load_anno(anno_path)
-        self.data = load_data(base_dir, self.anno, split)
+        self.all_data = load_data(base_dir, self.anno, split)
+        self.data = []
+        for data in self.all_data:
+            file_path = data[0]
+            data_tensor = torch.load(file_path)
+            if data_tensor.dim() == 3 and data_tensor.shape[0] == 1:
+                data_tensor = data_tensor.squeeze(0)
+            if data_tensor.shape[0] >= min_patches:
+                self.data.append(data)
+
         self.split = split
 
     def __len__(self):
@@ -86,10 +95,13 @@ class AMCDataset(Dataset):
 
     def __str__(self):
         fine_stats = {}
-        for data, coarse_gt, fine_gt, split, patient_id, diagnosis_id in self.data:
+        min_shape = 9999
+        for data, coarse_gt, fine_gt, split in self.data:
             if fine_gt not in fine_stats:
                 fine_stats[fine_gt] = 0
             fine_stats[fine_gt] += 1
+            data_tensor = torch.load(data)
+            min_shape = min(min_shape, data_tensor.shape[0])
 
         msg_fine = ""
         msg_fine += "[{} set] {}\n".format(self.split, len(self))
@@ -98,7 +110,7 @@ class AMCDataset(Dataset):
         msg_fine += "total num of fine classes: {}\n".format(len(fine_stats))
 
         coarse_stats = {}
-        for data, coarse_gt, fine_gt, split, patient_id, diagnosis_id in self.data:
+        for data, coarse_gt, fine_gt, split in self.data: #, patient_id, diagnosis_id in self.data:
             if coarse_gt not in coarse_stats:
                 coarse_stats[coarse_gt] = 0
             coarse_stats[coarse_gt] += 1
@@ -107,13 +119,14 @@ class AMCDataset(Dataset):
         for k, v in sorted(coarse_stats.items()):
             msg_coarse += "Coarse {}: {}\n".format(k, v)
         msg_coarse += "total num of coarse classes: {}\n".format(len(coarse_stats))
-        return msg_coarse + msg_fine
+
+        min_shape_str = str(min_shape)
+
+        return msg_coarse + msg_fine + min_shape_str
 
     def __getitem__(self, idx):
         data, coarse_gt, fine_gt, split = self.data[idx] #, patient_id, diagnosis_id
         data_tensor = torch.load(data)
-        if data_tensor.dim() == 3 and data_tensor.shape[0] == 1:
-            data_tensor = data_tensor.squeeze(0)
         return data_tensor, torch.tensor([coarse_gt]), torch.tensor([fine_gt]) #, patient_id, diagnosis_id
 
 
@@ -125,14 +138,14 @@ if __name__ == "__main__":
     base_dir = "/home/user/data/UJSMB_STLB"
     anno_path = "/home/user/lib/Capstone_2025/dataloader/amc_fine_grained_anno.csv"
 
-    train_dataset = AMCDataset(base_dir, anno_path, split="train")
-    val_dataset = AMCDataset(base_dir, anno_path, split="val")
-    test_dataset = AMCDataset(base_dir, anno_path, split="test")
+    train_dataset = AMCDataset(base_dir, anno_path, 8, split="train")
+    val_dataset = AMCDataset(base_dir, anno_path, 8, split="val")
+    test_dataset = AMCDataset(base_dir, anno_path, 8, split="test")
 
-    print(train_dataset)
-    print(val_dataset)
+    # print(train_dataset)
+    # print(val_dataset)
     print(test_dataset)
-    train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True, collate_fn=identity_collate)
+    # train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True, collate_fn=identity_collate)
     # for data, coarse_gt, fine_gt, patient_id, diagnosis_id in train_loader:
     #     print(data.shape)
 

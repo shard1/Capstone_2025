@@ -511,6 +511,7 @@ if __name__ == '__main__':
     parser.add_argument('--bag_weight', default=0.7, type=float, help='clam: weight coefficient for bag-level loss')
     parser.add_argument('--lr_str', default='1e-6', type=str)
     parser.add_argument('--mode', type = str, default = 'train', choices = ['train', 'test'])
+    parser.add_argument('--min_patch', default=8, type=int, help = 'min number of top k patches for inst eval')
     args = parser.parse_args()
 
     args.result = os.path.join(args.result, args.hierarchy, args.model_type, args.lr_str)
@@ -521,9 +522,9 @@ if __name__ == '__main__':
 
     log_writer.print_and_write("Preparing data...")
 
-    train_dataset = AMCDataset(args.base_dir, args.anno_path, split="train")
-    val_dataset = AMCDataset(args.base_dir, args.anno_path, split="val")
-    test_dataset = AMCDataset(args.base_dir, args.anno_path, split="test")
+    train_dataset = AMCDataset(args.base_dir, args.anno_path, split="train", min_patches=args.min_patch)
+    val_dataset = AMCDataset(args.base_dir, args.anno_path, split="val", min_patches=args.min_patch)
+    test_dataset = AMCDataset(args.base_dir, args.anno_path, split="test", min_patches=args.min_patch)
 
     train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True, collate_fn=identity_collate)
     val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False, collate_fn=identity_collate)
