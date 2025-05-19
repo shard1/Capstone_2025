@@ -1,6 +1,10 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+
+def gamma(x):
+    return x.detach()
+
 class Attn_Net_Gated(nn.Module):
     def __init__(self, L=1024, D=256, dropout=True, n_classes=1):
         super(Attn_Net_Gated, self).__init__()
@@ -26,12 +30,12 @@ class Attn_Net_Gated(nn.Module):
         A = self.attention_c(A)  # N x n_classes		not normalized yet
         return A, x
 
-
 class PrototypeBlock(nn.Module):
-    def __init__(self, k, d, similarity = 'dot'):
+    def __init__(self, similarity = 'cosine'):
         super().__init__(PrototypeBlock, self)
-        self.prototypes = nn.Parameter(torch.randn(k, d))
+        self.register_buffer('prototypes', prototypes)
         self.similarity = similarity
+
     def forward(self, x):
         if self.similarity == 'cosine':
             x = F.normalize(x, dim=-1)
@@ -39,16 +43,47 @@ class PrototypeBlock(nn.Module):
         else:
             p = self.prototypes
         sim = torch.einsum('bnd, kd->bnk', x, p)
-        return sim
+        sim_mean = sim.mean(dim=-1)
+        return sim, sim_mean
+     
 class HPMIL(nn.Module):
-    def __init__(self, k_coarse, k_fine, gate=True, size_arg="small", dropout=0.,
-                 subtyping=False, embed_dim=1024):
+    def __init__(self, num_coarse, num_fine, coarse_proto, fine_proto, 
+                 dropout=0., proj_dim = 512, embed_dim=1024):
         super(HPMIL, self).__init__()
-        self.k_coarse = k_coarse
-        self.k_fine = k_fine
-        self.size_dict = {"small": [embed_dim, 512, 256], "big": [embed_dim, 512, 384]}
-        size = self.size_dict[size_arg]
-        fc = [nn.Linear(size[0], size[1]), nn.ReLU(), nn.Dropout(dropout)] 
-        self.classifiers = 
+        self.projector = nn.Sequential(
+            nn.Linear(embed_dim, proj_dim),
+            nn.ReLU(),
+            nn.Dropout(dropout)
+        )
+        self.attn = Attn_Net_Gated(L=proj_dim, D=256, n_classes=1)
+        self.coarse_proto = PrototypeBlock(coarse_proto)
+        self.fine_proto = PrototypeBlock(fine_proto)
+
+        self.fc_coarse = nn.Linear(2*proj_dim, num_coarse)
+        self.fc_fine = nn.Linear(proj_dim, num_fine)
+    
+    def forward(self, x):
+        x = self.projector(x)
+        attn_raw = self.attn(x)
+        attn_scores = F.softmax(attn_raw, dim=1)
+
+        _, sim_coarse = self.coarse_proto(x)
+        _, sim_fine = self.fine_proto(x)
+
+        sim_coarse = F.softmax(sim_coarse, dim=1)
+        sim_fine = F.softmax(sim_fine, dim=1)
+
+        w_coarse = F.softmax(attn_scores*sim_coarse, dim=1)
+        w_fine = F.softmax(attn_scores*sim_fine, dim=1)
+
+        z_coarse = torch.einsum('bnd, bn->bd', x, w_coarse)
+        z_fine = torch.einsum('bnd, bn->bd', x, w_fine)
+        
+        z_fine_grad_controller = gamma(z_fine)
+        logits_coarse = self.fc_coarse(torch.cat([z_coarse, z_fine_grad_controller], dim=-1))  #[B, 4]
+
+        logits_fine = self.fc_fine(z_fine)     #[B, 11]
+
+        return logits_coarse, logits_fine
         
 
