@@ -45,20 +45,20 @@ def generate_kmeans_prototypes(patch_features, k):
     centroids = torch.tensor(kmeans.cluster_centers_, dtype=torch.float)
     return centroids
 
-def compute_losses(logits_coarseoarse, logits_fineine, y_coarse, y_fine, mapping):
+def compute_losses(logits_coarse, logits_fine, y_coarse, y_fine, mapping):
     loss_fn = nn.CrossEntropyLoss()
-    loss_coarse = loss_fn(logits_coarseoarse, y_coarse)
-    loss_fine = loss_fn(logits_fineine, y_fine)
+    loss_coarse = loss_fn(logits_coarse, y_coarse)
+    loss_fine = loss_fn(logits_fine, y_fine)
 
-    p_fine = F.softmax(logits_fineine, dim=-1)
-    p_coarse = F.softmax(logits_coarseoarse, dim=-1)
+    p_fine = F.softmax(logits_fine, dim=-1)
+    p_coarse = F.softmax(logits_coarse, dim=-1)
 
     p_fine_grouped = p_fine @ mapping.to(p_fine.device)
     loss_kl = F.kl_div(p_fine_grouped.log(), p_coarse, reduction='batchmean')
 
     return loss_coarse, loss_fine, loss_kl
 
-def train(model, train_loader, optimizer, device, mapping, num_coarse, num_fine, lambda_kl = 0.2, log_writer=None):
+def train(model, train_loader, optimizer, mapping, num_coarse, num_fine, lambda_kl = 0.2, log_writer=None):
     model.train()
     total_loss = 0
     preds_c = []
@@ -66,7 +66,7 @@ def train(model, train_loader, optimizer, device, mapping, num_coarse, num_fine,
     labels_c = [] 
     labels_f = []
     log_writer.print_and_write("Training for {} coarse classes and {} fine classes...".format(num_coarse, num_fine))
-    for batch in train_loader:
+    for batch_idx, batch in enumerate(train_loader):
         data, y_coarse, y_fine = batch
         data = data.unsqueeze(0).to(device)
         y_coarse = y_coarse.to(device).squeeze(0)
@@ -75,6 +75,7 @@ def train(model, train_loader, optimizer, device, mapping, num_coarse, num_fine,
         logits_coarse, logits_fine = model(data)
         loss_c, loss_f, loss_kl = compute_losses(logits_coarse, logits_fine, y_coarse, y_fine, mapping)
         loss = loss_c + loss_f + lambda_kl*loss_kl
+        loss_value = loss.item()
 
         pred_coarse = torch.topk(logits_coarse, 1, dim=1)[1]
         pred_fine = torch.topk(logits_fine, 1, dim=1)[1]
@@ -88,11 +89,21 @@ def train(model, train_loader, optimizer, device, mapping, num_coarse, num_fine,
         optimizer.step()
         optimizer.zero_grad()
         total_loss += loss.item()
+        if (batch_idx + 1) % 100 == 0:
+            log_writer.print_and_write('batch {}, loss: {:.4f}, weighted_loss: {:.4f}, '.format(batch_idx+1,
+                                                                                                        loss_value,
+                                                                                                        
+                                                                                                        total_loss.item()) +
+                        'label: {}, bag_size: {}'.format(y_fine.item(), data.size(0)))
+                
+    
+
     acc_coarse = accuracy_score(preds_c, labels_c)
     acc_fine = accuracy_score(labels_f, preds_f)
+    log_writer.print_and_write('\nEpoch: {}, train_loss: {:.4f}, Coarse Acc: {:.4f}, Fine Acc: {:.4f}'.format(epoch, train_loss, acc_coarse, acc_fine))
     return acc_coarse, acc_fine, total_loss/len(train_loader)
 
-def validate(model, val_loader, device, mapping, lambda_kl=0.2):
+def validate(model, val_loader, mapping, lambda_kl=0.2, log_writer=None):
     model.eval()
     preds_c = []
     preds_f = []
@@ -122,9 +133,15 @@ def validate(model, val_loader, device, mapping, lambda_kl=0.2):
     acc_fine = accuracy_score(labels_f, preds_f)
     f1_coarse = f1_score(labels_c, preds_c, average='macro')
     f1_fine = f1_score(labels_f, preds_f, average='macro')
+    log_writer.print_and_write('Val Set, val_loss: {:.4f}'.format(val_loss))
+    
+    log_writer.print_and_write(f"Coarse Overall Accuracy: {acc_coarse:.4f}")
+    log_writer.print_and_write(f"Coarse Overall F1 Score: {f1_coarse:.4f}")
+    log_writer.print_and_write(f"Fine Overall Accuracy: {acc_fine:.4f}")
+    log_writer.print_and_write(f"Fine Overall F1 Score: {f1_fine:.4f}\n")
     return acc_coarse, acc_fine, f1_coarse, f1_fine, val_loss/len(val_loader)
 
-def test(model, test_loader, device, num_coarse, num_fine):
+def test(model, test_loader, num_coarse, num_fine):
     model.eval()
     all_preds_coarse = []
     all_preds_fine = []
@@ -206,6 +223,11 @@ if __name__ == '__main__':
     val_fine_accs = []
     f1_coarse = []
     f1_fine = []
+    validation_losses = []
+
+    train_losses = []
+    train_coarse_accs = []
+    train_fine_accs = []
 
     class_dict = {'coarse': 4, 'fine': 11, 'coarse_and_fine': 15}
     best_acc, best_epochs = 0, 0
@@ -229,28 +251,51 @@ if __name__ == '__main__':
     if args.mode == 'train':
         for epoch in range(args.epochs):
         
-            # acc_coarse, acc_fine, train_loss, train_inst_loss = train(epoch+1, model, train_loader, optimizer, class_dict,
-            #                         bag_weight=args.bag_weight, loss_fn=loss_fn,
-            #                         hierarchy=args.hierarchy, log_writer=log_writer)
-            # train_losses.append(train_loss)
-            
-            # train_coarse_accs.append(acc_coarse)
-            # train_fine_accs.append(acc_fine)
+            acc_coarse, acc_fine, train_loss = train(model, train_loader, optimizer, mapping, class_dict['coarse'], 
+                                                     class_dict['fine'], lambda_kl=0.2, log_writer=log_writer)
+            train_losses.append(train_loss)
+            train_coarse_accs.append(acc_coarse)
+            train_fine_accs.append(acc_fine)
 
-            # val_acc_coarse, val_acc_fine, val_f1_coarse, val_f1_fine, val_loss = validate_clam(epoch+1, model, val_loader, class_dict, loss_fn=loss_fn,
-            #                         hierarchy=args.hierarchy, log_writer=log_writer)
-            # validation_losses.append(val_loss)
-            # val_coarse_accs.append(val_acc_coarse)
-            # val_fine_accs.append(val_acc_fine)
-            # f1_fine.append(val_f1_fine)
-            # f1_coarse.append(val_f1_coarse)
+            val_acc_coarse, val_acc_fine, val_f1_coarse, val_f1_fine, val_loss = validate(model, val_loader, mapping, lambda_kl=0.2,
+                                   log_writer=log_writer)
+            validation_losses.append(val_loss)
+            val_coarse_accs.append(val_acc_coarse)
+            val_fine_accs.append(val_acc_fine)
+            f1_fine.append(val_f1_fine)
+            f1_coarse.append(val_f1_coarse)
 
-            # if best_acc < val_acc_fine:
-            #     best_acc, best_epochs = val_acc_fine, epoch
-            #     save_path = os.path.join(args.result, "{}.pth".format(epoch+1))
-            #     torch.save(model.state_dict(), save_path)
-            #     torch.save(model.state_dict(), best_save_path)
+            if best_acc < val_acc_fine:
+                best_acc, best_epochs = val_acc_fine, epoch
+                save_path = os.path.join(args.result, "{}.pth".format(epoch+1))
+                torch.save(model.state_dict(), save_path)
+                torch.save(model.state_dict(), best_save_path)
 
-            # # Early stopping
-            # if epoch - best_epochs > args.early_stopping_threshold and epoch > args.epochs_min:
-            #     break
+            # Early stopping
+            if epoch - best_epochs > args.early_stopping_threshold and epoch > args.epochs_min:
+                break
+
+   
+        drawPlot(train_losses, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "train_loss.png"),
+                    label="Train loss")
+        drawPlot(validation_losses, args.model_type, args.hierarchy,
+                    save_path=os.path.join(args.result, "validation_loss.png"), label="Validation loss")
+        drawPlot(f1_coarse, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "f1_coarse.png"),
+                    label="f1 Score Coarse")
+        drawPlot(f1_fine, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "f1_fine.png"),
+                    label="f1 Score Fine")
+        drawPlot(train_coarse_accs, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "train_coarse_acc.png"),
+                    label="Train Coarse accuracy")
+        drawPlot(val_coarse_accs, args.model_type, args.hierarchy, save_path=os.path.join(args.result, "validation_coarse_acc.png"),
+                    label="Validation Coarse accuracy")
+        drawPlot(train_fine_accs, args.model_type, args.hierarchy,
+                    save_path=os.path.join(args.result, "train_fine_acc.png"),
+                    label="Train Fine accuracy")
+        drawPlot(val_fine_accs, args.model_type, args.hierarchy,
+                    save_path=os.path.join(args.result, "validation_fine_acc.png"),
+                    label="Validation Fine accuracy")
+        model.load_state_dict(torch.load(best_save_path))
+
+        log_writer.print_and_write("Evaluation on Test Set...")
+        f1_coarse, f1_fine, acc_coarse, acc_fine = test(model, test_loader, class_dict['coarse'], class_dict['fine'])
+        log_writer.print_and_write('f1 Coarse: {:.4f}, f1 Fine: {:.4f}, Coarse Acc: {:.4f}, Fine Acc: {:.4f}'.format(f1_coarse, f1_fine, acc_coarse, acc_fine))

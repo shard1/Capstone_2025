@@ -42,8 +42,8 @@ class PrototypeBlock(nn.Module):
             p = F.normalize(self.prototypes, dim=-1)
         else:
             p = self.prototypes
-        sim = torch.einsum('bnd, kd->bnk', x, p)
-        sim_mean = sim.mean(dim=-1)
+        sim = torch.einsum('bnd, kd->bnk', x, p)   #[b, n, k]
+        sim_mean = sim.mean(dim=-1)         #[b, n]
         return sim, sim_mean
      
 class HPMIL(nn.Module):
