@@ -1,0 +1,3280 @@
+Preparing data...
+Training on 2170 samples
+Validation on 264 samples
+Test on 263 samples
+Preparing model...
+Done
+Setting optimizer...
+Done
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.6394, weighted loss: 3.6453 label: 6, bag_size: 346
+batch 200, loss: 3.4705, weighted loss: 3.4795 label: 6, bag_size: 492
+batch 300, loss: 3.3433, weighted loss: 3.3532 label: 2, bag_size: 57
+batch 400, loss: 3.7662, weighted loss: 3.7705 label: 5, bag_size: 717
+batch 500, loss: 3.6956, weighted loss: 3.7058 label: 3, bag_size: 942
+batch 600, loss: 3.2466, weighted loss: 3.2516 label: 2, bag_size: 365
+batch 700, loss: 3.4377, weighted loss: 3.4410 label: 5, bag_size: 667
+batch 800, loss: 3.5247, weighted loss: 3.5294 label: 4, bag_size: 1673
+batch 900, loss: 3.2397, weighted loss: 3.2499 label: 5, bag_size: 1736
+batch 1000, loss: 3.1090, weighted loss: 3.1136 label: 5, bag_size: 353
+batch 1100, loss: 4.1915, weighted loss: 4.1958 label: 7, bag_size: 521
+batch 1200, loss: 3.1697, weighted loss: 3.1735 label: 6, bag_size: 464
+batch 1300, loss: 3.6288, weighted loss: 3.6370 label: 3, bag_size: 709
+batch 1400, loss: 4.1713, weighted loss: 4.1758 label: 8, bag_size: 615
+batch 1500, loss: 4.5118, weighted loss: 4.5198 label: 7, bag_size: 118
+batch 1600, loss: 3.0266, weighted loss: 3.0320 label: 6, bag_size: 259
+batch 1700, loss: 2.6375, weighted loss: 2.6422 label: 5, bag_size: 1308
+batch 1800, loss: 2.5699, weighted loss: 2.5734 label: 5, bag_size: 1716
+batch 1900, loss: 2.7578, weighted loss: 2.7614 label: 5, bag_size: 482
+batch 2000, loss: 4.4029, weighted loss: 4.4061 label: 8, bag_size: 235
+batch 2100, loss: 2.6340, weighted loss: 2.6372 label: 5, bag_size: 604
+
+Epoch: 0, train_loss: 3.3314, Coarse Acc: 0.4309, Fine Acc: 0.2871
+Val Set, val_loss: 790.9354
+Coarse Overall Accuracy: 0.5492
+Coarse Overall F1 Score: 0.2656
+Fine Overall Accuracy: 0.3977
+Fine Overall F1 Score: 0.0543
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.0335, weighted loss: 2.0369 label: 5, bag_size: 484
+batch 200, loss: 3.6685, weighted loss: 3.6737 label: 3, bag_size: 401
+batch 300, loss: 2.9216, weighted loss: 2.9239 label: 2, bag_size: 618
+batch 400, loss: 2.1534, weighted loss: 2.1561 label: 5, bag_size: 390
+batch 500, loss: 3.0138, weighted loss: 3.0172 label: 2, bag_size: 454
+batch 600, loss: 2.1635, weighted loss: 2.1679 label: 5, bag_size: 217
+batch 700, loss: 2.1394, weighted loss: 2.1425 label: 5, bag_size: 1600
+batch 800, loss: 5.4014, weighted loss: 5.4053 label: 10, bag_size: 372
+batch 900, loss: 2.7891, weighted loss: 2.7933 label: 2, bag_size: 161
+batch 1000, loss: 1.6704, weighted loss: 1.6725 label: 5, bag_size: 180
+batch 1100, loss: 4.4352, weighted loss: 4.4369 label: 8, bag_size: 253
+batch 1200, loss: 1.9994, weighted loss: 2.0002 label: 5, bag_size: 246
+batch 1300, loss: 1.8813, weighted loss: 1.8826 label: 5, bag_size: 729
+batch 1400, loss: 1.9480, weighted loss: 1.9505 label: 5, bag_size: 615
+batch 1500, loss: 2.1907, weighted loss: 2.1914 label: 5, bag_size: 466
+batch 1600, loss: 1.7252, weighted loss: 1.7260 label: 5, bag_size: 1044
+batch 1700, loss: 3.8742, weighted loss: 3.8751 label: 4, bag_size: 616
+batch 1800, loss: 3.7748, weighted loss: 3.7765 label: 4, bag_size: 714
+batch 1900, loss: 2.5256, weighted loss: 2.5282 label: 2, bag_size: 2047
+batch 2000, loss: 3.5771, weighted loss: 3.5794 label: 4, bag_size: 1673
+batch 2100, loss: 2.8791, weighted loss: 2.8812 label: 2, bag_size: 228
+
+Epoch: 1, train_loss: 2.8910, Coarse Acc: 0.5599, Fine Acc: 0.3876
+Val Set, val_loss: 729.7379
+Coarse Overall Accuracy: 0.5530
+Coarse Overall F1 Score: 0.2322
+Fine Overall Accuracy: 0.3977
+Fine Overall F1 Score: 0.0543
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.5283, weighted loss: 3.5313 label: 3, bag_size: 570
+batch 200, loss: 1.5381, weighted loss: 1.5392 label: 5, bag_size: 414
+batch 300, loss: 1.7290, weighted loss: 1.7299 label: 5, bag_size: 656
+batch 400, loss: 1.9097, weighted loss: 1.9099 label: 5, bag_size: 180
+batch 500, loss: 6.2505, weighted loss: 6.2514 label: 1, bag_size: 129
+batch 600, loss: 1.8972, weighted loss: 1.8977 label: 5, bag_size: 1364
+batch 700, loss: 2.7484, weighted loss: 2.7513 label: 6, bag_size: 787
+batch 800, loss: 2.3129, weighted loss: 2.3157 label: 2, bag_size: 795
+batch 900, loss: 2.6321, weighted loss: 2.6341 label: 2, bag_size: 138
+batch 1000, loss: 1.2579, weighted loss: 1.2585 label: 5, bag_size: 432
+batch 1100, loss: 2.9296, weighted loss: 2.9301 label: 2, bag_size: 1184
+batch 1200, loss: 2.1864, weighted loss: 2.1885 label: 5, bag_size: 182
+batch 1300, loss: 2.7908, weighted loss: 2.7919 label: 2, bag_size: 205
+batch 1400, loss: 4.2014, weighted loss: 4.2033 label: 4, bag_size: 665
+batch 1500, loss: 1.5603, weighted loss: 1.5608 label: 5, bag_size: 711
+batch 1600, loss: 2.7244, weighted loss: 2.7252 label: 2, bag_size: 308
+batch 1700, loss: 2.7630, weighted loss: 2.7633 label: 2, bag_size: 347
+batch 1800, loss: 2.2706, weighted loss: 2.2725 label: 2, bag_size: 3550
+batch 1900, loss: 5.8433, weighted loss: 5.8445 label: 10, bag_size: 751
+batch 2000, loss: 2.4929, weighted loss: 2.4938 label: 2, bag_size: 2239
+batch 2100, loss: 1.8658, weighted loss: 1.8679 label: 5, bag_size: 129
+
+Epoch: 2, train_loss: 2.7593, Coarse Acc: 0.5530, Fine Acc: 0.3899
+Val Set, val_loss: 708.2388
+Coarse Overall Accuracy: 0.5795
+Coarse Overall F1 Score: 0.2640
+Fine Overall Accuracy: 0.4091
+Fine Overall F1 Score: 0.0665
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.2143, weighted loss: 1.2153 label: 5, bag_size: 217
+batch 200, loss: 3.6421, weighted loss: 3.6436 label: 3, bag_size: 1967
+batch 300, loss: 3.6464, weighted loss: 3.6476 label: 4, bag_size: 1181
+batch 400, loss: 2.5817, weighted loss: 2.5831 label: 2, bag_size: 179
+batch 500, loss: 3.4342, weighted loss: 3.4354 label: 3, bag_size: 755
+batch 600, loss: 3.6089, weighted loss: 3.6103 label: 4, bag_size: 1445
+batch 700, loss: 1.0156, weighted loss: 1.0169 label: 5, bag_size: 185
+batch 800, loss: 2.8789, weighted loss: 2.8798 label: 6, bag_size: 1836
+batch 900, loss: 1.1642, weighted loss: 1.1643 label: 5, bag_size: 673
+batch 1000, loss: 2.4932, weighted loss: 2.4935 label: 2, bag_size: 1567
+batch 1100, loss: 2.6424, weighted loss: 2.6430 label: 6, bag_size: 649
+batch 1200, loss: 2.7443, weighted loss: 2.7443 label: 2, bag_size: 268
+batch 1300, loss: 2.1331, weighted loss: 2.1335 label: 5, bag_size: 233
+batch 1400, loss: 2.7502, weighted loss: 2.7504 label: 2, bag_size: 666
+batch 1500, loss: 2.8292, weighted loss: 2.8315 label: 6, bag_size: 283
+batch 1600, loss: 2.4238, weighted loss: 2.4248 label: 2, bag_size: 1229
+batch 1700, loss: 2.4514, weighted loss: 2.4519 label: 2, bag_size: 333
+batch 1800, loss: 1.5582, weighted loss: 1.5586 label: 5, bag_size: 880
+batch 1900, loss: 2.4584, weighted loss: 2.4592 label: 2, bag_size: 3530
+batch 2000, loss: 0.7689, weighted loss: 0.7698 label: 5, bag_size: 475
+batch 2100, loss: 1.5609, weighted loss: 1.5611 label: 5, bag_size: 442
+
+Epoch: 3, train_loss: 2.6979, Coarse Acc: 0.5765, Fine Acc: 0.4097
+Val Set, val_loss: 695.9294
+Coarse Overall Accuracy: 0.5947
+Coarse Overall F1 Score: 0.2877
+Fine Overall Accuracy: 0.4508
+Fine Overall F1 Score: 0.0887
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.2724, weighted loss: 1.2728 label: 5, bag_size: 208
+batch 200, loss: 1.4296, weighted loss: 1.4299 label: 5, bag_size: 431
+batch 300, loss: 6.8679, weighted loss: 6.8680 label: 1, bag_size: 129
+batch 400, loss: 2.7616, weighted loss: 2.7624 label: 2, bag_size: 534
+batch 500, loss: 3.0084, weighted loss: 3.0085 label: 6, bag_size: 710
+batch 600, loss: 2.9544, weighted loss: 2.9559 label: 6, bag_size: 259
+batch 700, loss: 1.3591, weighted loss: 1.3596 label: 5, bag_size: 1304
+batch 800, loss: 1.6235, weighted loss: 1.6240 label: 5, bag_size: 1830
+batch 900, loss: 1.7905, weighted loss: 1.7913 label: 5, bag_size: 403
+batch 1000, loss: 1.5333, weighted loss: 1.5334 label: 5, bag_size: 296
+batch 1100, loss: 5.4004, weighted loss: 5.4014 label: 7, bag_size: 444
+batch 1200, loss: 2.2328, weighted loss: 2.2337 label: 2, bag_size: 1211
+batch 1300, loss: 3.5681, weighted loss: 3.5687 label: 3, bag_size: 836
+batch 1400, loss: 1.4611, weighted loss: 1.4612 label: 5, bag_size: 291
+batch 1500, loss: 2.7528, weighted loss: 2.7534 label: 6, bag_size: 194
+batch 1600, loss: 1.9158, weighted loss: 1.9161 label: 2, bag_size: 547
+batch 1700, loss: 2.8401, weighted loss: 2.8402 label: 2, bag_size: 107
+batch 1800, loss: 2.7639, weighted loss: 2.7643 label: 6, bag_size: 461
+batch 1900, loss: 1.0264, weighted loss: 1.0266 label: 5, bag_size: 381
+batch 2000, loss: 2.4403, weighted loss: 2.4409 label: 2, bag_size: 1423
+batch 2100, loss: 1.8972, weighted loss: 1.8978 label: 5, bag_size: 708
+
+Epoch: 4, train_loss: 2.6548, Coarse Acc: 0.6060, Fine Acc: 0.4332
+Val Set, val_loss: 686.5323
+Coarse Overall Accuracy: 0.6212
+Coarse Overall F1 Score: 0.3116
+Fine Overall Accuracy: 0.4508
+Fine Overall F1 Score: 0.0897
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.4994, weighted loss: 3.5003 label: 3, bag_size: 1987
+batch 200, loss: 2.2465, weighted loss: 2.2472 label: 5, bag_size: 472
+batch 300, loss: 5.4762, weighted loss: 5.4766 label: 8, bag_size: 486
+batch 400, loss: 1.1996, weighted loss: 1.1997 label: 5, bag_size: 969
+batch 500, loss: 1.5151, weighted loss: 1.5153 label: 5, bag_size: 433
+batch 600, loss: 1.0752, weighted loss: 1.0757 label: 5, bag_size: 632
+batch 700, loss: 2.0506, weighted loss: 2.0510 label: 2, bag_size: 389
+batch 800, loss: 3.4595, weighted loss: 3.4603 label: 4, bag_size: 2131
+batch 900, loss: 2.9149, weighted loss: 2.9150 label: 6, bag_size: 285
+batch 1000, loss: 5.0537, weighted loss: 5.0541 label: 7, bag_size: 172
+batch 1100, loss: 4.3993, weighted loss: 4.3996 label: 8, bag_size: 313
+batch 1200, loss: 4.5949, weighted loss: 4.5953 label: 8, bag_size: 96
+batch 1300, loss: 1.8750, weighted loss: 1.8751 label: 5, bag_size: 314
+batch 1400, loss: 1.7495, weighted loss: 1.7499 label: 5, bag_size: 888
+batch 1500, loss: 2.2524, weighted loss: 2.2530 label: 2, bag_size: 2119
+batch 1600, loss: 1.5037, weighted loss: 1.5039 label: 5, bag_size: 125
+batch 1700, loss: 2.6943, weighted loss: 2.6946 label: 6, bag_size: 1066
+batch 1800, loss: 2.2134, weighted loss: 2.2136 label: 5, bag_size: 315
+batch 1900, loss: 1.3367, weighted loss: 1.3368 label: 5, bag_size: 216
+batch 2000, loss: 4.5955, weighted loss: 4.5956 label: 8, bag_size: 241
+batch 2100, loss: 1.0426, weighted loss: 1.0439 label: 5, bag_size: 240
+
+Epoch: 5, train_loss: 2.6194, Coarse Acc: 0.6226, Fine Acc: 0.4447
+Val Set, val_loss: 679.1892
+Coarse Overall Accuracy: 0.6212
+Coarse Overall F1 Score: 0.3108
+Fine Overall Accuracy: 0.4621
+Fine Overall F1 Score: 0.0936
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.7960, weighted loss: 1.7961 label: 5, bag_size: 156
+batch 200, loss: 2.0926, weighted loss: 2.0927 label: 2, bag_size: 1085
+batch 300, loss: 5.0044, weighted loss: 5.0050 label: 7, bag_size: 568
+batch 400, loss: 1.1068, weighted loss: 1.1070 label: 5, bag_size: 679
+batch 500, loss: 3.2201, weighted loss: 3.2205 label: 2, bag_size: 775
+batch 600, loss: 1.7572, weighted loss: 1.7574 label: 2, bag_size: 547
+batch 700, loss: 3.1810, weighted loss: 3.1813 label: 2, bag_size: 910
+batch 800, loss: 6.6735, weighted loss: 6.6738 label: 10, bag_size: 625
+batch 900, loss: 1.6118, weighted loss: 1.6120 label: 5, bag_size: 860
+batch 1000, loss: 3.7257, weighted loss: 3.7258 label: 3, bag_size: 477
+batch 1100, loss: 2.6158, weighted loss: 2.6183 label: 2, bag_size: 49
+batch 1200, loss: 2.1716, weighted loss: 2.1719 label: 2, bag_size: 459
+batch 1300, loss: 1.8109, weighted loss: 1.8117 label: 2, bag_size: 1476
+batch 1400, loss: 1.5859, weighted loss: 1.5901 label: 2, bag_size: 2030
+batch 1500, loss: 1.9828, weighted loss: 1.9833 label: 5, bag_size: 174
+batch 1600, loss: 0.9031, weighted loss: 0.9032 label: 5, bag_size: 256
+batch 1700, loss: 2.0888, weighted loss: 2.0904 label: 2, bag_size: 182
+batch 1800, loss: 7.7966, weighted loss: 7.7969 label: 0, bag_size: 212
+batch 1900, loss: 2.0679, weighted loss: 2.0681 label: 2, bag_size: 900
+batch 2000, loss: 1.6580, weighted loss: 1.6583 label: 5, bag_size: 412
+batch 2100, loss: 1.4493, weighted loss: 1.4504 label: 5, bag_size: 887
+
+Epoch: 6, train_loss: 2.5902, Coarse Acc: 0.6253, Fine Acc: 0.4493
+Val Set, val_loss: 672.9669
+Coarse Overall Accuracy: 0.6477
+Coarse Overall F1 Score: 0.3344
+Fine Overall Accuracy: 0.4848
+Fine Overall F1 Score: 0.1011
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.7795, weighted loss: 2.7798 label: 6, bag_size: 507
+batch 200, loss: 2.0014, weighted loss: 2.0016 label: 5, bag_size: 429
+batch 300, loss: 1.4232, weighted loss: 1.4233 label: 5, bag_size: 1081
+batch 400, loss: 1.6283, weighted loss: 1.6286 label: 5, bag_size: 329
+batch 500, loss: 4.9347, weighted loss: 4.9347 label: 8, bag_size: 467
+batch 600, loss: 2.2024, weighted loss: 2.2027 label: 2, bag_size: 304
+batch 700, loss: 2.0256, weighted loss: 2.0260 label: 2, bag_size: 936
+batch 800, loss: 1.3237, weighted loss: 1.3239 label: 5, bag_size: 578
+batch 900, loss: 2.9282, weighted loss: 2.9282 label: 6, bag_size: 406
+batch 1000, loss: 2.9380, weighted loss: 2.9421 label: 4, bag_size: 728
+batch 1100, loss: 5.5473, weighted loss: 5.5474 label: 7, bag_size: 139
+batch 1200, loss: 7.1878, weighted loss: 7.1888 label: 0, bag_size: 277
+batch 1300, loss: 2.6642, weighted loss: 2.6647 label: 6, bag_size: 337
+batch 1400, loss: 0.7420, weighted loss: 0.7426 label: 5, bag_size: 307
+batch 1500, loss: 3.5886, weighted loss: 3.5889 label: 3, bag_size: 160
+batch 1600, loss: 2.9079, weighted loss: 2.9081 label: 6, bag_size: 1004
+batch 1700, loss: 2.8942, weighted loss: 2.8945 label: 2, bag_size: 508
+batch 1800, loss: 0.8642, weighted loss: 0.8643 label: 5, bag_size: 1023
+batch 1900, loss: 0.9155, weighted loss: 0.9162 label: 5, bag_size: 242
+batch 2000, loss: 2.0151, weighted loss: 2.0156 label: 5, bag_size: 377
+batch 2100, loss: 4.3653, weighted loss: 4.3656 label: 8, bag_size: 720
+
+Epoch: 7, train_loss: 2.5637, Coarse Acc: 0.6323, Fine Acc: 0.4576
+Val Set, val_loss: 667.6892
+Coarse Overall Accuracy: 0.6439
+Coarse Overall F1 Score: 0.3330
+Fine Overall Accuracy: 0.4773
+Fine Overall F1 Score: 0.1007
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.2165, weighted loss: 1.2166 label: 5, bag_size: 651
+batch 200, loss: 1.2269, weighted loss: 1.2273 label: 5, bag_size: 223
+batch 300, loss: 1.7243, weighted loss: 1.7245 label: 5, bag_size: 1364
+batch 400, loss: 0.9804, weighted loss: 0.9818 label: 5, bag_size: 240
+batch 500, loss: 3.7609, weighted loss: 3.7637 label: 5, bag_size: 3015
+batch 600, loss: 2.1728, weighted loss: 2.1730 label: 2, bag_size: 1269
+batch 700, loss: 1.9809, weighted loss: 1.9813 label: 2, bag_size: 365
+batch 800, loss: 2.5437, weighted loss: 2.5442 label: 6, bag_size: 346
+batch 900, loss: 3.0187, weighted loss: 3.0189 label: 2, bag_size: 242
+batch 1000, loss: 3.2132, weighted loss: 3.2133 label: 3, bag_size: 3332
+batch 1100, loss: 0.9670, weighted loss: 0.9680 label: 5, bag_size: 206
+batch 1200, loss: 0.5782, weighted loss: 0.5783 label: 5, bag_size: 414
+batch 1300, loss: 2.6598, weighted loss: 2.6605 label: 3, bag_size: 410
+batch 1400, loss: 1.9277, weighted loss: 1.9283 label: 2, bag_size: 1119
+batch 1500, loss: 4.1742, weighted loss: 4.1742 label: 8, bag_size: 344
+batch 1600, loss: 2.7903, weighted loss: 2.7910 label: 2, bag_size: 493
+batch 1700, loss: 1.0831, weighted loss: 1.0832 label: 5, bag_size: 206
+batch 1800, loss: 3.1591, weighted loss: 3.1593 label: 3, bag_size: 1642
+batch 1900, loss: 2.8688, weighted loss: 2.8723 label: 3, bag_size: 1466
+batch 2000, loss: 2.4213, weighted loss: 2.4216 label: 2, bag_size: 558
+batch 2100, loss: 2.9783, weighted loss: 2.9783 label: 2, bag_size: 205
+
+Epoch: 8, train_loss: 2.5417, Coarse Acc: 0.6382, Fine Acc: 0.4608
+Val Set, val_loss: 663.2439
+Coarse Overall Accuracy: 0.6477
+Coarse Overall F1 Score: 0.3352
+Fine Overall Accuracy: 0.4848
+Fine Overall F1 Score: 0.1032
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.7517, weighted loss: 2.7527 label: 2, bag_size: 334
+batch 200, loss: 2.9477, weighted loss: 2.9494 label: 5, bag_size: 216
+batch 300, loss: 1.6645, weighted loss: 1.6649 label: 2, bag_size: 192
+batch 400, loss: 0.8442, weighted loss: 0.8444 label: 5, bag_size: 902
+batch 500, loss: 1.1204, weighted loss: 1.1206 label: 5, bag_size: 1360
+batch 600, loss: 1.5180, weighted loss: 1.5198 label: 2, bag_size: 872
+batch 700, loss: 1.8685, weighted loss: 1.8686 label: 2, bag_size: 1085
+batch 800, loss: 2.3743, weighted loss: 2.3761 label: 5, bag_size: 404
+batch 900, loss: 7.7241, weighted loss: 7.7245 label: 1, bag_size: 244
+batch 1000, loss: 1.1459, weighted loss: 1.1461 label: 5, bag_size: 651
+batch 1100, loss: 5.2553, weighted loss: 5.2555 label: 8, bag_size: 105
+batch 1200, loss: 0.6120, weighted loss: 0.6121 label: 5, bag_size: 178
+batch 1300, loss: 1.7238, weighted loss: 1.7241 label: 5, bag_size: 331
+batch 1400, loss: 1.0604, weighted loss: 1.0606 label: 5, bag_size: 249
+batch 1500, loss: 1.3758, weighted loss: 1.3760 label: 5, bag_size: 873
+batch 1600, loss: 4.4165, weighted loss: 4.4168 label: 8, bag_size: 483
+batch 1700, loss: 4.1000, weighted loss: 4.1001 label: 8, bag_size: 478
+batch 1800, loss: 1.1474, weighted loss: 1.1485 label: 2, bag_size: 447
+batch 1900, loss: 4.7669, weighted loss: 4.7673 label: 8, bag_size: 212
+batch 2000, loss: 3.9588, weighted loss: 3.9596 label: 8, bag_size: 175
+batch 2100, loss: 3.6469, weighted loss: 3.6469 label: 8, bag_size: 216
+
+Epoch: 9, train_loss: 2.5217, Coarse Acc: 0.6387, Fine Acc: 0.4650
+Val Set, val_loss: 659.3596
+Coarse Overall Accuracy: 0.6515
+Coarse Overall F1 Score: 0.3387
+Fine Overall Accuracy: 0.4886
+Fine Overall F1 Score: 0.1041
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 5.3561, weighted loss: 5.3562 label: 8, bag_size: 512
+batch 200, loss: 1.5904, weighted loss: 1.5909 label: 2, bag_size: 601
+batch 300, loss: 1.7770, weighted loss: 1.7775 label: 5, bag_size: 984
+batch 400, loss: 2.9950, weighted loss: 2.9965 label: 4, bag_size: 556
+batch 500, loss: 1.5961, weighted loss: 1.5974 label: 2, bag_size: 1470
+batch 600, loss: 0.7070, weighted loss: 0.7073 label: 5, bag_size: 628
+batch 700, loss: 1.3991, weighted loss: 1.3993 label: 5, bag_size: 326
+batch 800, loss: 4.0410, weighted loss: 4.0413 label: 4, bag_size: 376
+batch 900, loss: 3.1707, weighted loss: 3.1734 label: 4, bag_size: 1841
+batch 1000, loss: 1.7550, weighted loss: 1.7553 label: 5, bag_size: 615
+batch 1100, loss: 0.9374, weighted loss: 0.9375 label: 5, bag_size: 596
+batch 1200, loss: 0.6857, weighted loss: 0.6858 label: 5, bag_size: 1044
+batch 1300, loss: 3.2051, weighted loss: 3.2055 label: 6, bag_size: 2033
+batch 1400, loss: 4.8951, weighted loss: 4.8954 label: 7, bag_size: 618
+batch 1500, loss: 1.3735, weighted loss: 1.3736 label: 5, bag_size: 309
+batch 1600, loss: 4.0842, weighted loss: 4.0843 label: 3, bag_size: 1168
+batch 1700, loss: 2.4704, weighted loss: 2.4709 label: 5, bag_size: 228
+batch 1800, loss: 2.9406, weighted loss: 2.9407 label: 6, bag_size: 670
+batch 1900, loss: 1.1814, weighted loss: 1.1815 label: 5, bag_size: 353
+batch 2000, loss: 2.1981, weighted loss: 2.1990 label: 5, bag_size: 509
+batch 2100, loss: 3.1670, weighted loss: 3.1673 label: 4, bag_size: 1204
+
+Epoch: 10, train_loss: 2.5044, Coarse Acc: 0.6424, Fine Acc: 0.4668
+Val Set, val_loss: 655.8822
+Coarse Overall Accuracy: 0.6439
+Coarse Overall F1 Score: 0.3347
+Fine Overall Accuracy: 0.4962
+Fine Overall F1 Score: 0.1061
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.8678, weighted loss: 2.8685 label: 4, bag_size: 786
+batch 200, loss: 1.0716, weighted loss: 1.0719 label: 5, bag_size: 280
+batch 300, loss: 2.9804, weighted loss: 2.9807 label: 2, bag_size: 250
+batch 400, loss: 3.3259, weighted loss: 3.3260 label: 3, bag_size: 2069
+batch 500, loss: 0.2756, weighted loss: 0.2762 label: 5, bag_size: 83
+batch 600, loss: 7.2627, weighted loss: 7.2629 label: 9, bag_size: 464
+batch 700, loss: 1.6885, weighted loss: 1.6885 label: 5, bag_size: 253
+batch 800, loss: 4.9660, weighted loss: 4.9660 label: 8, bag_size: 276
+batch 900, loss: 2.0683, weighted loss: 2.0689 label: 5, bag_size: 368
+batch 1000, loss: 1.3949, weighted loss: 1.3961 label: 2, bag_size: 480
+batch 1100, loss: 1.0581, weighted loss: 1.0583 label: 5, bag_size: 1140
+batch 1200, loss: 3.8188, weighted loss: 3.8189 label: 3, bag_size: 437
+batch 1300, loss: 5.5194, weighted loss: 5.5196 label: 7, bag_size: 281
+batch 1400, loss: 5.5390, weighted loss: 5.5392 label: 7, bag_size: 760
+batch 1500, loss: 3.2223, weighted loss: 3.2231 label: 3, bag_size: 807
+batch 1600, loss: 1.0476, weighted loss: 1.0477 label: 5, bag_size: 620
+batch 1700, loss: 3.3221, weighted loss: 3.3226 label: 6, bag_size: 409
+batch 1800, loss: 0.3594, weighted loss: 0.3594 label: 5, bag_size: 463
+batch 1900, loss: 2.6007, weighted loss: 2.6011 label: 6, bag_size: 526
+batch 2000, loss: 2.8240, weighted loss: 2.8246 label: 4, bag_size: 1867
+batch 2100, loss: 4.3165, weighted loss: 4.3168 label: 8, bag_size: 141
+
+Epoch: 11, train_loss: 2.4883, Coarse Acc: 0.6465, Fine Acc: 0.4719
+Val Set, val_loss: 652.9361
+Coarse Overall Accuracy: 0.6439
+Coarse Overall F1 Score: 0.3354
+Fine Overall Accuracy: 0.4924
+Fine Overall F1 Score: 0.1051
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 4.6139, weighted loss: 4.6144 label: 7, bag_size: 590
+batch 200, loss: 5.4050, weighted loss: 5.4052 label: 7, bag_size: 444
+batch 300, loss: 1.3556, weighted loss: 1.3556 label: 5, bag_size: 543
+batch 400, loss: 2.8045, weighted loss: 2.8052 label: 6, bag_size: 416
+batch 500, loss: 3.8553, weighted loss: 3.8560 label: 4, bag_size: 304
+batch 600, loss: 2.2577, weighted loss: 2.2592 label: 6, bag_size: 474
+batch 700, loss: 1.0292, weighted loss: 1.0293 label: 5, bag_size: 461
+batch 800, loss: 3.5173, weighted loss: 3.5174 label: 3, bag_size: 1781
+batch 900, loss: 0.6889, weighted loss: 0.6891 label: 5, bag_size: 1301
+batch 1000, loss: 1.0473, weighted loss: 1.0479 label: 5, bag_size: 494
+batch 1100, loss: 4.8410, weighted loss: 4.8411 label: 8, bag_size: 467
+batch 1200, loss: 2.5903, weighted loss: 2.5903 label: 6, bag_size: 402
+batch 1300, loss: 2.5289, weighted loss: 2.5293 label: 6, bag_size: 523
+batch 1400, loss: 1.4443, weighted loss: 1.4444 label: 5, bag_size: 1716
+batch 1500, loss: 2.5713, weighted loss: 2.5716 label: 6, bag_size: 206
+batch 1600, loss: 4.1598, weighted loss: 4.1613 label: 8, bag_size: 563
+batch 1700, loss: 1.8439, weighted loss: 1.8439 label: 5, bag_size: 466
+batch 1800, loss: 1.4360, weighted loss: 1.4362 label: 5, bag_size: 621
+batch 1900, loss: 2.3617, weighted loss: 2.3624 label: 2, bag_size: 530
+batch 2000, loss: 1.1232, weighted loss: 1.1234 label: 5, bag_size: 1564
+batch 2100, loss: 3.8826, weighted loss: 3.8828 label: 3, bag_size: 347
+
+Epoch: 12, train_loss: 2.4737, Coarse Acc: 0.6475, Fine Acc: 0.4719
+Val Set, val_loss: 650.2649
+Coarse Overall Accuracy: 0.6439
+Coarse Overall F1 Score: 0.3352
+Fine Overall Accuracy: 0.4924
+Fine Overall F1 Score: 0.1049
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.9740, weighted loss: 1.9745 label: 5, bag_size: 95
+batch 200, loss: 0.5975, weighted loss: 0.5978 label: 5, bag_size: 252
+batch 300, loss: 0.5812, weighted loss: 0.5814 label: 5, bag_size: 1049
+batch 400, loss: 4.5377, weighted loss: 4.5383 label: 8, bag_size: 96
+batch 500, loss: 1.3182, weighted loss: 1.3196 label: 2, bag_size: 872
+batch 600, loss: 1.6577, weighted loss: 1.6579 label: 5, bag_size: 569
+batch 700, loss: 2.6321, weighted loss: 2.6322 label: 2, bag_size: 267
+batch 800, loss: 1.6461, weighted loss: 1.6465 label: 5, bag_size: 489
+batch 900, loss: 1.3290, weighted loss: 1.3294 label: 5, bag_size: 459
+batch 1000, loss: 0.5467, weighted loss: 0.5469 label: 5, bag_size: 596
+batch 1100, loss: 1.0397, weighted loss: 1.0397 label: 5, bag_size: 802
+batch 1200, loss: 4.8672, weighted loss: 4.8676 label: 7, bag_size: 201
+batch 1300, loss: 4.7465, weighted loss: 4.7467 label: 8, bag_size: 457
+batch 1400, loss: 2.8379, weighted loss: 2.8381 label: 6, bag_size: 147
+batch 1500, loss: 1.2474, weighted loss: 1.2484 label: 2, bag_size: 497
+batch 1600, loss: 4.4867, weighted loss: 4.4867 label: 8, bag_size: 2218
+batch 1700, loss: 3.6835, weighted loss: 3.6842 label: 3, bag_size: 1185
+batch 1800, loss: 0.9957, weighted loss: 0.9959 label: 5, bag_size: 249
+batch 1900, loss: 1.7689, weighted loss: 1.7689 label: 5, bag_size: 677
+batch 2000, loss: 2.6783, weighted loss: 2.6785 label: 6, bag_size: 298
+batch 2100, loss: 1.4595, weighted loss: 1.4597 label: 5, bag_size: 1145
+
+Epoch: 13, train_loss: 2.4610, Coarse Acc: 0.6498, Fine Acc: 0.4737
+Val Set, val_loss: 647.8165
+Coarse Overall Accuracy: 0.6439
+Coarse Overall F1 Score: 0.3354
+Fine Overall Accuracy: 0.4924
+Fine Overall F1 Score: 0.1052
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.2398, weighted loss: 1.2400 label: 2, bag_size: 185
+batch 200, loss: 0.5071, weighted loss: 0.5072 label: 5, bag_size: 853
+batch 300, loss: 2.0884, weighted loss: 2.0886 label: 2, bag_size: 1171
+batch 400, loss: 2.8231, weighted loss: 2.8236 label: 6, bag_size: 390
+batch 500, loss: 0.6475, weighted loss: 0.6476 label: 5, bag_size: 667
+batch 600, loss: 2.2153, weighted loss: 2.2153 label: 5, bag_size: 151
+batch 700, loss: 2.6950, weighted loss: 2.6950 label: 2, bag_size: 2112
+batch 800, loss: 2.2522, weighted loss: 2.2524 label: 2, bag_size: 1360
+batch 900, loss: 3.9352, weighted loss: 3.9360 label: 3, bag_size: 98
+batch 1000, loss: 2.4676, weighted loss: 2.4680 label: 6, bag_size: 1238
+batch 1100, loss: 3.5046, weighted loss: 3.5048 label: 4, bag_size: 779
+batch 1200, loss: 2.3874, weighted loss: 2.3876 label: 6, bag_size: 686
+batch 1300, loss: 1.2155, weighted loss: 1.2158 label: 5, bag_size: 296
+batch 1400, loss: 6.9152, weighted loss: 6.9153 label: 10, bag_size: 2314
+batch 1500, loss: 0.9569, weighted loss: 0.9571 label: 5, bag_size: 779
+batch 1600, loss: 1.3385, weighted loss: 1.3387 label: 5, bag_size: 735
+batch 1700, loss: 1.0267, weighted loss: 1.0269 label: 5, bag_size: 291
+batch 1800, loss: 2.7582, weighted loss: 2.7589 label: 5, bag_size: 190
+batch 1900, loss: 0.6910, weighted loss: 0.6911 label: 5, bag_size: 328
+batch 2000, loss: 2.3969, weighted loss: 2.3972 label: 6, bag_size: 1066
+batch 2100, loss: 2.0850, weighted loss: 2.0855 label: 2, bag_size: 1233
+
+Epoch: 14, train_loss: 2.4494, Coarse Acc: 0.6493, Fine Acc: 0.4747
+Val Set, val_loss: 645.7050
+Coarse Overall Accuracy: 0.6439
+Coarse Overall F1 Score: 0.3352
+Fine Overall Accuracy: 0.4962
+Fine Overall F1 Score: 0.1062
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 4.5197, weighted loss: 4.5197 label: 8, bag_size: 558
+batch 200, loss: 0.5504, weighted loss: 0.5504 label: 5, bag_size: 987
+batch 300, loss: 3.7349, weighted loss: 3.7350 label: 3, bag_size: 197
+batch 400, loss: 3.7994, weighted loss: 3.7995 label: 2, bag_size: 348
+batch 500, loss: 4.7780, weighted loss: 4.7783 label: 8, bag_size: 347
+batch 600, loss: 1.9132, weighted loss: 1.9134 label: 2, bag_size: 2104
+batch 700, loss: 0.9991, weighted loss: 1.0018 label: 2, bag_size: 1447
+batch 800, loss: 4.7713, weighted loss: 4.7718 label: 7, bag_size: 1196
+batch 900, loss: 4.4700, weighted loss: 4.4712 label: 8, bag_size: 116
+batch 1000, loss: 2.5267, weighted loss: 2.5268 label: 6, bag_size: 523
+batch 1100, loss: 1.5655, weighted loss: 1.5656 label: 5, bag_size: 138
+batch 1200, loss: 2.9852, weighted loss: 2.9853 label: 6, bag_size: 683
+batch 1300, loss: 2.5505, weighted loss: 2.5516 label: 3, bag_size: 1692
+batch 1400, loss: 2.9500, weighted loss: 2.9502 label: 2, bag_size: 369
+batch 1500, loss: 3.0396, weighted loss: 3.0399 label: 4, bag_size: 183
+batch 1600, loss: 2.0450, weighted loss: 2.0467 label: 2, bag_size: 4251
+batch 1700, loss: 1.3929, weighted loss: 1.3931 label: 5, bag_size: 124
+batch 1800, loss: 3.2643, weighted loss: 3.2645 label: 3, bag_size: 3892
+batch 1900, loss: 3.8421, weighted loss: 3.8421 label: 8, bag_size: 178
+batch 2000, loss: 3.7101, weighted loss: 3.7106 label: 8, bag_size: 241
+batch 2100, loss: 2.6328, weighted loss: 2.6329 label: 5, bag_size: 770
+
+Epoch: 15, train_loss: 2.4382, Coarse Acc: 0.6516, Fine Acc: 0.4747
+Val Set, val_loss: 643.6955
+Coarse Overall Accuracy: 0.6553
+Coarse Overall F1 Score: 0.3424
+Fine Overall Accuracy: 0.5000
+Fine Overall F1 Score: 0.1070
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.5100, weighted loss: 3.5117 label: 4, bag_size: 168
+batch 200, loss: 2.6975, weighted loss: 2.6976 label: 6, bag_size: 156
+batch 300, loss: 1.2854, weighted loss: 1.2870 label: 2, bag_size: 1762
+batch 400, loss: 3.4021, weighted loss: 3.4044 label: 6, bag_size: 259
+batch 500, loss: 0.6802, weighted loss: 0.6802 label: 5, bag_size: 668
+batch 600, loss: 1.2538, weighted loss: 1.2545 label: 2, bag_size: 697
+batch 700, loss: 1.1451, weighted loss: 1.1452 label: 5, bag_size: 619
+batch 800, loss: 3.1401, weighted loss: 3.1403 label: 2, bag_size: 531
+batch 900, loss: 2.4153, weighted loss: 2.4172 label: 2, bag_size: 49
+batch 1000, loss: 2.7498, weighted loss: 2.7505 label: 3, bag_size: 1739
+batch 1100, loss: 5.0775, weighted loss: 5.0776 label: 4, bag_size: 593
+batch 1200, loss: 5.4931, weighted loss: 5.4933 label: 7, bag_size: 2244
+batch 1300, loss: 1.2654, weighted loss: 1.2664 label: 2, bag_size: 334
+batch 1400, loss: 2.5505, weighted loss: 2.5532 label: 6, bag_size: 541
+batch 1500, loss: 2.5838, weighted loss: 2.5842 label: 5, bag_size: 777
+batch 1600, loss: 0.6900, weighted loss: 0.6900 label: 5, bag_size: 1140
+batch 1700, loss: 2.0461, weighted loss: 2.0465 label: 2, bag_size: 80
+batch 1800, loss: 3.3922, weighted loss: 3.3924 label: 4, bag_size: 779
+batch 1900, loss: 1.1761, weighted loss: 1.1761 label: 5, bag_size: 714
+batch 2000, loss: 0.5567, weighted loss: 0.5603 label: 5, bag_size: 576
+batch 2100, loss: 4.2179, weighted loss: 4.2188 label: 7, bag_size: 172
+
+Epoch: 16, train_loss: 2.4283, Coarse Acc: 0.6498, Fine Acc: 0.4811
+Val Set, val_loss: 641.7474
+Coarse Overall Accuracy: 0.6477
+Coarse Overall F1 Score: 0.3377
+Fine Overall Accuracy: 0.5000
+Fine Overall F1 Score: 0.1073
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.3671, weighted loss: 1.3683 label: 2, bag_size: 388
+batch 200, loss: 0.5761, weighted loss: 0.5764 label: 5, bag_size: 357
+batch 300, loss: 0.3512, weighted loss: 0.3512 label: 5, bag_size: 365
+batch 400, loss: 1.4155, weighted loss: 1.4169 label: 2, bag_size: 1293
+batch 500, loss: 6.7423, weighted loss: 6.7424 label: 1, bag_size: 369
+batch 600, loss: 2.3782, weighted loss: 2.3790 label: 5, bag_size: 235
+batch 700, loss: 4.3605, weighted loss: 4.3614 label: 7, bag_size: 132
+batch 800, loss: 1.3547, weighted loss: 1.3551 label: 2, bag_size: 483
+batch 900, loss: 1.9467, weighted loss: 1.9471 label: 2, bag_size: 271
+batch 1000, loss: 2.6390, weighted loss: 2.6391 label: 6, bag_size: 802
+batch 1100, loss: 3.8918, weighted loss: 3.8921 label: 2, bag_size: 317
+batch 1200, loss: 3.3238, weighted loss: 3.3241 label: 3, bag_size: 2005
+batch 1300, loss: 2.5741, weighted loss: 2.5744 label: 5, bag_size: 777
+batch 1400, loss: 4.3873, weighted loss: 4.3878 label: 8, bag_size: 195
+batch 1500, loss: 0.9196, weighted loss: 0.9197 label: 5, bag_size: 249
+batch 1600, loss: 7.9552, weighted loss: 7.9555 label: 1, bag_size: 1452
+batch 1700, loss: 5.1923, weighted loss: 5.1925 label: 8, bag_size: 153
+batch 1800, loss: 1.8664, weighted loss: 1.8664 label: 5, bag_size: 746
+batch 1900, loss: 2.6376, weighted loss: 2.6377 label: 5, bag_size: 770
+batch 2000, loss: 1.8864, weighted loss: 1.8872 label: 5, bag_size: 397
+batch 2100, loss: 3.1532, weighted loss: 3.1536 label: 2, bag_size: 250
+
+Epoch: 17, train_loss: 2.4199, Coarse Acc: 0.6521, Fine Acc: 0.4811
+Val Set, val_loss: 640.0060
+Coarse Overall Accuracy: 0.6553
+Coarse Overall F1 Score: 0.3426
+Fine Overall Accuracy: 0.5000
+Fine Overall F1 Score: 0.1073
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.3569, weighted loss: 3.3576 label: 4, bag_size: 483
+batch 200, loss: 1.1662, weighted loss: 1.1663 label: 5, bag_size: 463
+batch 300, loss: 1.9487, weighted loss: 1.9490 label: 5, bag_size: 352
+batch 400, loss: 1.2707, weighted loss: 1.2708 label: 5, bag_size: 534
+batch 500, loss: 2.6370, weighted loss: 2.6383 label: 5, bag_size: 280
+batch 600, loss: 1.2801, weighted loss: 1.2809 label: 2, bag_size: 780
+batch 700, loss: 3.3969, weighted loss: 3.3988 label: 5, bag_size: 608
+batch 800, loss: 3.5563, weighted loss: 3.5574 label: 8, bag_size: 299
+batch 900, loss: 2.3147, weighted loss: 2.3161 label: 3, bag_size: 2170
+batch 1000, loss: 2.3661, weighted loss: 2.3663 label: 2, bag_size: 862
+batch 1100, loss: 3.1663, weighted loss: 3.1666 label: 2, bag_size: 726
+batch 1200, loss: 4.1069, weighted loss: 4.1083 label: 8, bag_size: 543
+batch 1300, loss: 2.5495, weighted loss: 2.5500 label: 6, bag_size: 344
+batch 1400, loss: 4.6992, weighted loss: 4.6993 label: 8, bag_size: 467
+batch 1500, loss: 0.4524, weighted loss: 0.4525 label: 5, bag_size: 707
+batch 1600, loss: 2.8712, weighted loss: 2.8716 label: 3, bag_size: 3112
+batch 1700, loss: 5.5369, weighted loss: 5.5385 label: 8, bag_size: 164
+batch 1800, loss: 1.5394, weighted loss: 1.5396 label: 2, bag_size: 206
+batch 1900, loss: 2.6586, weighted loss: 2.6587 label: 5, bag_size: 770
+batch 2000, loss: 3.0592, weighted loss: 3.0598 label: 4, bag_size: 226
+batch 2100, loss: 4.4087, weighted loss: 4.4087 label: 7, bag_size: 850
+
+Epoch: 18, train_loss: 2.4111, Coarse Acc: 0.6530, Fine Acc: 0.4802
+Val Set, val_loss: 638.3955
+Coarse Overall Accuracy: 0.6553
+Coarse Overall F1 Score: 0.3426
+Fine Overall Accuracy: 0.5000
+Fine Overall F1 Score: 0.1072
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.3591, weighted loss: 3.3596 label: 2, bag_size: 237
+batch 200, loss: 0.4102, weighted loss: 0.4106 label: 5, bag_size: 834
+batch 300, loss: 0.7741, weighted loss: 0.7750 label: 5, bag_size: 329
+batch 400, loss: 2.1967, weighted loss: 2.1968 label: 2, bag_size: 2139
+batch 500, loss: 1.6450, weighted loss: 1.6451 label: 2, bag_size: 1918
+batch 600, loss: 6.3803, weighted loss: 6.3808 label: 9, bag_size: 307
+batch 700, loss: 1.6584, weighted loss: 1.6585 label: 5, bag_size: 1077
+batch 800, loss: 1.0355, weighted loss: 1.0364 label: 5, bag_size: 444
+batch 900, loss: 0.1735, weighted loss: 0.1735 label: 5, bag_size: 676
+batch 1000, loss: 3.3887, weighted loss: 3.3898 label: 6, bag_size: 201
+batch 1100, loss: 2.0280, weighted loss: 2.0296 label: 5, bag_size: 129
+batch 1200, loss: 2.5577, weighted loss: 2.5584 label: 2, bag_size: 442
+batch 1300, loss: 0.7684, weighted loss: 0.7697 label: 2, bag_size: 2121
+batch 1400, loss: 3.1142, weighted loss: 3.1144 label: 8, bag_size: 119
+batch 1500, loss: 1.0261, weighted loss: 1.0264 label: 5, bag_size: 394
+batch 1600, loss: 1.4301, weighted loss: 1.4303 label: 5, bag_size: 1214
+batch 1700, loss: 4.2528, weighted loss: 4.2534 label: 4, bag_size: 665
+batch 1800, loss: 2.2345, weighted loss: 2.2365 label: 3, bag_size: 3011
+batch 1900, loss: 0.2117, weighted loss: 0.2119 label: 5, bag_size: 295
+batch 2000, loss: 5.0107, weighted loss: 5.0118 label: 7, bag_size: 1800
+batch 2100, loss: 2.2666, weighted loss: 2.2666 label: 2, bag_size: 1897
+
+Epoch: 19, train_loss: 2.4030, Coarse Acc: 0.6507, Fine Acc: 0.4829
+Val Set, val_loss: 636.9203
+Coarse Overall Accuracy: 0.6515
+Coarse Overall F1 Score: 0.3405
+Fine Overall Accuracy: 0.4962
+Fine Overall F1 Score: 0.1064
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.8478, weighted loss: 2.8487 label: 4, bag_size: 2219
+batch 200, loss: 2.4291, weighted loss: 2.4294 label: 5, bag_size: 466
+batch 300, loss: 2.0576, weighted loss: 2.0587 label: 2, bag_size: 424
+batch 400, loss: 3.5075, weighted loss: 3.5080 label: 6, bag_size: 2033
+batch 500, loss: 2.8560, weighted loss: 2.8562 label: 6, bag_size: 843
+batch 600, loss: 3.1205, weighted loss: 3.1210 label: 4, bag_size: 250
+batch 700, loss: 5.2295, weighted loss: 5.2298 label: 8, bag_size: 378
+batch 800, loss: 2.5341, weighted loss: 2.5342 label: 6, bag_size: 507
+batch 900, loss: 2.8894, weighted loss: 2.8914 label: 4, bag_size: 1049
+batch 1000, loss: 2.2572, weighted loss: 2.2600 label: 2, bag_size: 161
+batch 1100, loss: 2.2595, weighted loss: 2.2597 label: 2, bag_size: 334
+batch 1200, loss: 1.1027, weighted loss: 1.1033 label: 5, bag_size: 358
+batch 1300, loss: 0.6575, weighted loss: 0.6576 label: 5, bag_size: 1005
+batch 1400, loss: 6.3729, weighted loss: 6.3755 label: 8, bag_size: 2813
+batch 1500, loss: 1.9981, weighted loss: 1.9983 label: 2, bag_size: 1665
+batch 1600, loss: 1.6009, weighted loss: 1.6013 label: 2, bag_size: 936
+batch 1700, loss: 2.2551, weighted loss: 2.2554 label: 2, bag_size: 762
+batch 1800, loss: 2.5723, weighted loss: 2.5724 label: 2, bag_size: 435
+batch 1900, loss: 6.8532, weighted loss: 6.8538 label: 9, bag_size: 830
+batch 2000, loss: 2.3773, weighted loss: 2.3777 label: 6, bag_size: 453
+batch 2100, loss: 2.7395, weighted loss: 2.7395 label: 2, bag_size: 436
+
+Epoch: 20, train_loss: 2.3948, Coarse Acc: 0.6544, Fine Acc: 0.4829
+Val Set, val_loss: 635.6275
+Coarse Overall Accuracy: 0.6553
+Coarse Overall F1 Score: 0.3425
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1081
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.5338, weighted loss: 1.5339 label: 2, bag_size: 1085
+batch 200, loss: 0.3645, weighted loss: 0.3649 label: 5, bag_size: 602
+batch 300, loss: 3.8456, weighted loss: 3.8460 label: 8, bag_size: 720
+batch 400, loss: 2.4051, weighted loss: 2.4069 label: 6, bag_size: 280
+batch 500, loss: 2.5846, weighted loss: 2.5858 label: 6, bag_size: 629
+batch 600, loss: 3.0265, weighted loss: 3.0271 label: 3, bag_size: 807
+batch 700, loss: 3.5721, weighted loss: 3.5723 label: 2, bag_size: 215
+batch 800, loss: 3.0785, weighted loss: 3.0785 label: 5, bag_size: 2209
+batch 900, loss: 0.3298, weighted loss: 0.3298 label: 5, bag_size: 555
+batch 1000, loss: 7.4262, weighted loss: 7.4270 label: 9, bag_size: 464
+batch 1100, loss: 2.3054, weighted loss: 2.3056 label: 2, bag_size: 304
+batch 1200, loss: 3.2404, weighted loss: 3.2405 label: 2, bag_size: 371
+batch 1300, loss: 0.4632, weighted loss: 0.4632 label: 5, bag_size: 752
+batch 1400, loss: 2.2851, weighted loss: 2.2852 label: 6, bag_size: 461
+batch 1500, loss: 3.4281, weighted loss: 3.4283 label: 4, bag_size: 607
+batch 1600, loss: 0.6555, weighted loss: 0.6556 label: 5, bag_size: 429
+batch 1700, loss: 2.8024, weighted loss: 2.8039 label: 4, bag_size: 889
+batch 1800, loss: 3.5230, weighted loss: 3.5232 label: 2, bag_size: 666
+batch 1900, loss: 1.6181, weighted loss: 1.6183 label: 2, bag_size: 1567
+batch 2000, loss: 2.7652, weighted loss: 2.7656 label: 6, bag_size: 1865
+batch 2100, loss: 3.1882, weighted loss: 3.1886 label: 2, bag_size: 631
+
+Epoch: 21, train_loss: 2.3883, Coarse Acc: 0.6512, Fine Acc: 0.4820
+Val Set, val_loss: 634.1092
+Coarse Overall Accuracy: 0.6515
+Coarse Overall F1 Score: 0.3405
+Fine Overall Accuracy: 0.4962
+Fine Overall F1 Score: 0.1067
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.2071, weighted loss: 3.2076 label: 3, bag_size: 356
+batch 200, loss: 2.3138, weighted loss: 2.3148 label: 5, bag_size: 469
+batch 300, loss: 2.4759, weighted loss: 2.4760 label: 6, bag_size: 367
+batch 400, loss: 3.8265, weighted loss: 3.8268 label: 8, bag_size: 756
+batch 500, loss: 2.3098, weighted loss: 2.3112 label: 6, bag_size: 304
+batch 600, loss: 2.5916, weighted loss: 2.5917 label: 6, bag_size: 299
+batch 700, loss: 4.3750, weighted loss: 4.3752 label: 2, bag_size: 775
+batch 800, loss: 3.6399, weighted loss: 3.6404 label: 8, bag_size: 229
+batch 900, loss: 2.1856, weighted loss: 2.1867 label: 2, bag_size: 301
+batch 1000, loss: 1.4956, weighted loss: 1.4959 label: 5, bag_size: 513
+batch 1100, loss: 1.3295, weighted loss: 1.3298 label: 5, bag_size: 732
+batch 1200, loss: 2.0894, weighted loss: 2.0895 label: 2, bag_size: 298
+batch 1300, loss: 0.8187, weighted loss: 0.8205 label: 2, bag_size: 2948
+batch 1400, loss: 2.6972, weighted loss: 2.6976 label: 2, bag_size: 214
+batch 1500, loss: 2.1680, weighted loss: 2.1687 label: 6, bag_size: 242
+batch 1600, loss: 1.0408, weighted loss: 1.0411 label: 5, bag_size: 332
+batch 1700, loss: 2.2945, weighted loss: 2.2948 label: 6, bag_size: 580
+batch 1800, loss: 2.4706, weighted loss: 2.4713 label: 2, bag_size: 138
+batch 1900, loss: 5.7747, weighted loss: 5.7749 label: 7, bag_size: 139
+batch 2000, loss: 0.1902, weighted loss: 0.1903 label: 5, bag_size: 329
+batch 2100, loss: 3.4951, weighted loss: 3.4954 label: 3, bag_size: 1006
+
+Epoch: 22, train_loss: 2.3818, Coarse Acc: 0.6507, Fine Acc: 0.4816
+Val Set, val_loss: 632.7489
+Coarse Overall Accuracy: 0.6553
+Coarse Overall F1 Score: 0.3426
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1086
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.1862, weighted loss: 0.1863 label: 5, bag_size: 200
+batch 200, loss: 1.9382, weighted loss: 1.9395 label: 2, bag_size: 555
+batch 300, loss: 1.7976, weighted loss: 1.7977 label: 2, bag_size: 2627
+batch 400, loss: 0.5904, weighted loss: 0.5904 label: 5, bag_size: 1005
+batch 500, loss: 1.9438, weighted loss: 1.9439 label: 5, bag_size: 746
+batch 600, loss: 0.9926, weighted loss: 0.9944 label: 2, bag_size: 884
+batch 700, loss: 5.2804, weighted loss: 5.2811 label: 8, bag_size: 1342
+batch 800, loss: 4.6266, weighted loss: 4.6268 label: 2, bag_size: 359
+batch 900, loss: 0.6987, weighted loss: 0.6988 label: 5, bag_size: 475
+batch 1000, loss: 0.4419, weighted loss: 0.4423 label: 5, bag_size: 724
+batch 1100, loss: 3.7631, weighted loss: 3.7634 label: 5, bag_size: 3051
+batch 1200, loss: 2.4295, weighted loss: 2.4303 label: 3, bag_size: 836
+batch 1300, loss: 6.7171, weighted loss: 6.7187 label: 9, bag_size: 84
+batch 1400, loss: 1.3490, weighted loss: 1.3497 label: 2, bag_size: 821
+batch 1500, loss: 1.8008, weighted loss: 1.8011 label: 5, bag_size: 310
+batch 1600, loss: 1.8595, weighted loss: 1.8597 label: 5, bag_size: 742
+batch 1700, loss: 2.9509, weighted loss: 2.9511 label: 4, bag_size: 223
+batch 1800, loss: 4.3424, weighted loss: 4.3440 label: 7, bag_size: 354
+batch 1900, loss: 3.5803, weighted loss: 3.5809 label: 2, bag_size: 186
+batch 2000, loss: 3.0425, weighted loss: 3.0434 label: 3, bag_size: 427
+batch 2100, loss: 1.2482, weighted loss: 1.2493 label: 2, bag_size: 1084
+
+Epoch: 23, train_loss: 2.3759, Coarse Acc: 0.6516, Fine Acc: 0.4829
+Val Set, val_loss: 631.5102
+Coarse Overall Accuracy: 0.6553
+Coarse Overall F1 Score: 0.3426
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1086
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.7524, weighted loss: 1.7532 label: 2, bag_size: 1628
+batch 200, loss: 0.4373, weighted loss: 0.4379 label: 5, bag_size: 228
+batch 300, loss: 3.3895, weighted loss: 3.3900 label: 2, bag_size: 167
+batch 400, loss: 6.4028, weighted loss: 6.4030 label: 8, bag_size: 419
+batch 500, loss: 1.9828, weighted loss: 1.9829 label: 5, bag_size: 206
+batch 600, loss: 0.7014, weighted loss: 0.7021 label: 5, bag_size: 2663
+batch 700, loss: 1.1355, weighted loss: 1.1358 label: 5, bag_size: 658
+batch 800, loss: 1.7976, weighted loss: 1.7976 label: 5, bag_size: 259
+batch 900, loss: 0.3041, weighted loss: 0.3042 label: 5, bag_size: 444
+batch 1000, loss: 2.2112, weighted loss: 2.2113 label: 6, bag_size: 379
+batch 1100, loss: 3.2643, weighted loss: 3.2645 label: 4, bag_size: 313
+batch 1200, loss: 1.9463, weighted loss: 1.9463 label: 5, bag_size: 639
+batch 1300, loss: 2.0676, weighted loss: 2.0702 label: 6, bag_size: 649
+batch 1400, loss: 2.6013, weighted loss: 2.6027 label: 5, bag_size: 30
+batch 1500, loss: 4.3525, weighted loss: 4.3526 label: 8, bag_size: 430
+batch 1600, loss: 6.1358, weighted loss: 6.1359 label: 8, bag_size: 243
+batch 1700, loss: 2.6319, weighted loss: 2.6327 label: 5, bag_size: 132
+batch 1800, loss: 1.5444, weighted loss: 1.5446 label: 5, bag_size: 655
+batch 1900, loss: 3.7672, weighted loss: 3.7672 label: 8, bag_size: 478
+batch 2000, loss: 1.6863, weighted loss: 1.6865 label: 5, bag_size: 315
+batch 2100, loss: 2.4168, weighted loss: 2.4174 label: 4, bag_size: 919
+
+Epoch: 24, train_loss: 2.3690, Coarse Acc: 0.6525, Fine Acc: 0.4816
+Val Set, val_loss: 630.3996
+Coarse Overall Accuracy: 0.6553
+Coarse Overall F1 Score: 0.3428
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1085
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.9426, weighted loss: 0.9436 label: 5, bag_size: 91
+batch 200, loss: 4.3445, weighted loss: 4.3450 label: 6, bag_size: 585
+batch 300, loss: 3.1319, weighted loss: 3.1336 label: 6, bag_size: 320
+batch 400, loss: 3.3791, weighted loss: 3.3793 label: 6, bag_size: 252
+batch 500, loss: 0.6397, weighted loss: 0.6402 label: 5, bag_size: 714
+batch 600, loss: 3.3607, weighted loss: 3.3621 label: 6, bag_size: 926
+batch 700, loss: 0.8221, weighted loss: 0.8224 label: 5, bag_size: 674
+batch 800, loss: 0.1914, weighted loss: 0.1915 label: 5, bag_size: 537
+batch 900, loss: 1.2111, weighted loss: 1.2119 label: 2, bag_size: 729
+batch 1000, loss: 5.3891, weighted loss: 5.3901 label: 7, bag_size: 118
+batch 1100, loss: 0.2527, weighted loss: 0.2531 label: 5, bag_size: 485
+batch 1200, loss: 1.4451, weighted loss: 1.4458 label: 5, bag_size: 449
+batch 1300, loss: 2.7241, weighted loss: 2.7244 label: 6, bag_size: 414
+batch 1400, loss: 1.2426, weighted loss: 1.2438 label: 2, bag_size: 1397
+batch 1500, loss: 1.2106, weighted loss: 1.2109 label: 5, bag_size: 588
+batch 1600, loss: 2.5851, weighted loss: 2.5860 label: 6, bag_size: 629
+batch 1700, loss: 0.1491, weighted loss: 0.1493 label: 5, bag_size: 861
+batch 1800, loss: 1.2297, weighted loss: 1.2307 label: 2, bag_size: 974
+batch 1900, loss: 4.3130, weighted loss: 4.3130 label: 8, bag_size: 717
+batch 2000, loss: 2.5415, weighted loss: 2.5421 label: 5, bag_size: 378
+batch 2100, loss: 1.9496, weighted loss: 1.9499 label: 5, bag_size: 742
+
+Epoch: 25, train_loss: 2.3627, Coarse Acc: 0.6544, Fine Acc: 0.4848
+Val Set, val_loss: 629.3687
+Coarse Overall Accuracy: 0.6515
+Coarse Overall F1 Score: 0.3409
+Fine Overall Accuracy: 0.5000
+Fine Overall F1 Score: 0.1076
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.3419, weighted loss: 1.3423 label: 5, bag_size: 795
+batch 200, loss: 2.9133, weighted loss: 2.9138 label: 5, bag_size: 376
+batch 300, loss: 0.3422, weighted loss: 0.3423 label: 5, bag_size: 460
+batch 400, loss: 3.8521, weighted loss: 3.8523 label: 4, bag_size: 295
+batch 500, loss: 2.3585, weighted loss: 2.3585 label: 6, bag_size: 689
+batch 600, loss: 0.6425, weighted loss: 0.6425 label: 5, bag_size: 475
+batch 700, loss: 0.1212, weighted loss: 0.1212 label: 5, bag_size: 407
+batch 800, loss: 2.0768, weighted loss: 2.0786 label: 6, bag_size: 468
+batch 900, loss: 0.8013, weighted loss: 0.8013 label: 5, bag_size: 712
+batch 1000, loss: 2.3344, weighted loss: 2.3345 label: 2, bag_size: 187
+batch 1100, loss: 2.5432, weighted loss: 2.5437 label: 2, bag_size: 471
+batch 1200, loss: 3.0821, weighted loss: 3.0833 label: 5, bag_size: 104
+batch 1300, loss: 4.3449, weighted loss: 4.3455 label: 8, bag_size: 195
+batch 1400, loss: 1.0204, weighted loss: 1.0212 label: 2, bag_size: 1847
+batch 1500, loss: 1.5962, weighted loss: 1.5967 label: 2, bag_size: 687
+batch 1600, loss: 0.6652, weighted loss: 0.6669 label: 2, bag_size: 379
+batch 1700, loss: 1.2349, weighted loss: 1.2350 label: 5, bag_size: 1045
+batch 1800, loss: 2.0743, weighted loss: 2.0744 label: 2, bag_size: 1767
+batch 1900, loss: 1.0181, weighted loss: 1.0182 label: 5, bag_size: 665
+batch 2000, loss: 2.3198, weighted loss: 2.3201 label: 2, bag_size: 654
+batch 2100, loss: 4.5828, weighted loss: 4.5831 label: 8, bag_size: 338
+
+Epoch: 26, train_loss: 2.3581, Coarse Acc: 0.6521, Fine Acc: 0.4848
+Val Set, val_loss: 628.1842
+Coarse Overall Accuracy: 0.6553
+Coarse Overall F1 Score: 0.3431
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1086
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.0789, weighted loss: 3.0790 label: 3, bag_size: 123
+batch 200, loss: 5.1204, weighted loss: 5.1212 label: 7, bag_size: 229
+batch 300, loss: 2.0174, weighted loss: 2.0202 label: 6, bag_size: 649
+batch 400, loss: 4.4240, weighted loss: 4.4243 label: 4, bag_size: 37
+batch 500, loss: 1.7073, weighted loss: 1.7088 label: 2, bag_size: 116
+batch 600, loss: 3.6417, weighted loss: 3.6438 label: 3, bag_size: 174
+batch 700, loss: 1.5396, weighted loss: 1.5400 label: 5, bag_size: 318
+batch 800, loss: 1.9599, weighted loss: 1.9603 label: 5, bag_size: 604
+batch 900, loss: 0.4117, weighted loss: 0.4124 label: 5, bag_size: 673
+batch 1000, loss: 0.7444, weighted loss: 0.7451 label: 5, bag_size: 148
+batch 1100, loss: 4.8173, weighted loss: 4.8174 label: 8, bag_size: 347
+batch 1200, loss: 1.5079, weighted loss: 1.5084 label: 5, bag_size: 258
+batch 1300, loss: 1.7443, weighted loss: 1.7449 label: 2, bag_size: 177
+batch 1400, loss: 0.6295, weighted loss: 0.6297 label: 5, bag_size: 1140
+batch 1500, loss: 0.7117, weighted loss: 0.7133 label: 2, bag_size: 2948
+batch 1600, loss: 1.8369, weighted loss: 1.8371 label: 2, bag_size: 1124
+batch 1700, loss: 0.6229, weighted loss: 0.6305 label: 2, bag_size: 757
+batch 1800, loss: 1.1053, weighted loss: 1.1054 label: 5, bag_size: 245
+batch 1900, loss: 0.2055, weighted loss: 0.2056 label: 5, bag_size: 331
+batch 2000, loss: 2.2442, weighted loss: 2.2466 label: 4, bag_size: 1387
+batch 2100, loss: 1.0957, weighted loss: 1.0958 label: 5, bag_size: 408
+
+Epoch: 27, train_loss: 2.3521, Coarse Acc: 0.6548, Fine Acc: 0.4853
+Val Set, val_loss: 627.2140
+Coarse Overall Accuracy: 0.6477
+Coarse Overall F1 Score: 0.3385
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1084
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.5348, weighted loss: 3.5349 label: 2, bag_size: 910
+batch 200, loss: 2.7663, weighted loss: 2.7667 label: 5, bag_size: 233
+batch 300, loss: 0.2098, weighted loss: 0.2099 label: 5, bag_size: 815
+batch 400, loss: 3.3904, weighted loss: 3.3907 label: 3, bag_size: 262
+batch 500, loss: 0.1114, weighted loss: 0.1115 label: 5, bag_size: 407
+batch 600, loss: 1.7289, weighted loss: 1.7297 label: 2, bag_size: 766
+batch 700, loss: 2.2823, weighted loss: 2.2827 label: 6, bag_size: 1238
+batch 800, loss: 7.1939, weighted loss: 7.1945 label: 1, bag_size: 474
+batch 900, loss: 2.1040, weighted loss: 2.1046 label: 6, bag_size: 443
+batch 1000, loss: 0.9119, weighted loss: 0.9121 label: 5, bag_size: 393
+batch 1100, loss: 0.5246, weighted loss: 0.5251 label: 5, bag_size: 226
+batch 1200, loss: 1.4709, weighted loss: 1.4712 label: 5, bag_size: 1716
+batch 1300, loss: 3.4101, weighted loss: 3.4105 label: 6, bag_size: 405
+batch 1400, loss: 2.9376, weighted loss: 2.9379 label: 2, bag_size: 541
+batch 1500, loss: 3.4732, weighted loss: 3.4733 label: 8, bag_size: 415
+batch 1600, loss: 0.4138, weighted loss: 0.4142 label: 5, bag_size: 587
+batch 1700, loss: 0.8344, weighted loss: 0.8346 label: 5, bag_size: 542
+batch 1800, loss: 2.9466, weighted loss: 2.9478 label: 5, bag_size: 464
+batch 1900, loss: 0.1379, weighted loss: 0.1382 label: 5, bag_size: 439
+batch 2000, loss: 0.6651, weighted loss: 0.6663 label: 5, bag_size: 499
+batch 2100, loss: 0.7675, weighted loss: 0.7677 label: 5, bag_size: 235
+
+Epoch: 28, train_loss: 2.3478, Coarse Acc: 0.6544, Fine Acc: 0.4862
+Val Set, val_loss: 626.1493
+Coarse Overall Accuracy: 0.6477
+Coarse Overall F1 Score: 0.3391
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1085
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.5610, weighted loss: 3.5612 label: 8, bag_size: 415
+batch 200, loss: 1.9026, weighted loss: 1.9029 label: 2, bag_size: 84
+batch 300, loss: 1.1224, weighted loss: 1.1226 label: 5, bag_size: 463
+batch 400, loss: 3.4777, weighted loss: 3.4783 label: 6, bag_size: 267
+batch 500, loss: 1.8942, weighted loss: 1.8962 label: 5, bag_size: 129
+batch 600, loss: 3.6385, weighted loss: 3.6415 label: 8, bag_size: 563
+batch 700, loss: 0.7524, weighted loss: 0.7531 label: 2, bag_size: 1827
+batch 800, loss: 0.4519, weighted loss: 0.4525 label: 5, bag_size: 332
+batch 900, loss: 1.1594, weighted loss: 1.1601 label: 5, bag_size: 284
+batch 1000, loss: 2.1686, weighted loss: 2.1688 label: 2, bag_size: 427
+batch 1100, loss: 1.0990, weighted loss: 1.0991 label: 5, bag_size: 329
+batch 1200, loss: 2.0484, weighted loss: 2.0503 label: 6, bag_size: 533
+batch 1300, loss: 1.3548, weighted loss: 1.3553 label: 2, bag_size: 671
+batch 1400, loss: 0.9802, weighted loss: 0.9805 label: 5, bag_size: 156
+batch 1500, loss: 3.7063, weighted loss: 3.7068 label: 8, bag_size: 720
+batch 1600, loss: 5.3582, weighted loss: 5.3583 label: 7, bag_size: 2244
+batch 1700, loss: 6.7256, weighted loss: 6.7277 label: 1, bag_size: 153
+batch 1800, loss: 0.3857, weighted loss: 0.3857 label: 5, bag_size: 752
+batch 1900, loss: 2.1308, weighted loss: 2.1308 label: 6, bag_size: 732
+batch 2000, loss: 6.0657, weighted loss: 6.0673 label: 8, bag_size: 527
+batch 2100, loss: 2.5803, weighted loss: 2.5806 label: 6, bag_size: 194
+
+Epoch: 29, train_loss: 2.3426, Coarse Acc: 0.6548, Fine Acc: 0.4866
+Val Set, val_loss: 625.1964
+Coarse Overall Accuracy: 0.6553
+Coarse Overall F1 Score: 0.3434
+Fine Overall Accuracy: 0.5000
+Fine Overall F1 Score: 0.1076
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 4.7490, weighted loss: 4.7492 label: 3, bag_size: 775
+batch 200, loss: 0.7345, weighted loss: 0.7346 label: 5, bag_size: 653
+batch 300, loss: 7.2005, weighted loss: 7.2022 label: 10, bag_size: 174
+batch 400, loss: 3.8470, weighted loss: 3.8474 label: 3, bag_size: 657
+batch 500, loss: 2.6108, weighted loss: 2.6119 label: 4, bag_size: 691
+batch 600, loss: 2.0447, weighted loss: 2.0447 label: 2, bag_size: 631
+batch 700, loss: 0.5938, weighted loss: 0.5939 label: 5, bag_size: 400
+batch 800, loss: 2.4151, weighted loss: 2.4177 label: 6, bag_size: 541
+batch 900, loss: 1.6728, weighted loss: 1.6731 label: 5, bag_size: 954
+batch 1000, loss: 0.1472, weighted loss: 0.1473 label: 5, bag_size: 312
+batch 1100, loss: 1.5040, weighted loss: 1.5041 label: 5, bag_size: 721
+batch 1200, loss: 2.1675, weighted loss: 2.1723 label: 3, bag_size: 504
+batch 1300, loss: 2.0193, weighted loss: 2.0202 label: 6, bag_size: 1096
+batch 1400, loss: 2.9610, weighted loss: 2.9615 label: 3, bag_size: 483
+batch 1500, loss: 3.7463, weighted loss: 3.7467 label: 7, bag_size: 258
+batch 1600, loss: 1.4270, weighted loss: 1.4275 label: 5, bag_size: 148
+batch 1700, loss: 0.9623, weighted loss: 0.9625 label: 5, bag_size: 308
+batch 1800, loss: 2.9452, weighted loss: 2.9459 label: 8, bag_size: 249
+batch 1900, loss: 2.9136, weighted loss: 2.9153 label: 4, bag_size: 1049
+batch 2000, loss: 0.7224, weighted loss: 0.7234 label: 5, bag_size: 405
+batch 2100, loss: 2.6436, weighted loss: 2.6446 label: 5, bag_size: 537
+
+Epoch: 30, train_loss: 2.3379, Coarse Acc: 0.6562, Fine Acc: 0.4857
+Val Set, val_loss: 624.2098
+Coarse Overall Accuracy: 0.6477
+Coarse Overall F1 Score: 0.3394
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1086
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.4980, weighted loss: 2.4995 label: 2, bag_size: 49
+batch 200, loss: 5.4703, weighted loss: 5.4706 label: 7, bag_size: 479
+batch 300, loss: 2.5507, weighted loss: 2.5509 label: 6, bag_size: 661
+batch 400, loss: 1.1109, weighted loss: 1.1116 label: 2, bag_size: 2352
+batch 500, loss: 2.4505, weighted loss: 2.4508 label: 5, bag_size: 562
+batch 600, loss: 1.2133, weighted loss: 1.2136 label: 5, bag_size: 270
+batch 700, loss: 2.7274, weighted loss: 2.7285 label: 2, bag_size: 217
+batch 800, loss: 2.7105, weighted loss: 2.7114 label: 5, bag_size: 297
+batch 900, loss: 2.5998, weighted loss: 2.6001 label: 2, bag_size: 371
+batch 1000, loss: 1.5282, weighted loss: 1.5286 label: 2, bag_size: 618
+batch 1100, loss: 3.5776, weighted loss: 3.5778 label: 8, bag_size: 440
+batch 1200, loss: 0.9355, weighted loss: 0.9359 label: 5, bag_size: 503
+batch 1300, loss: 2.0653, weighted loss: 2.0675 label: 6, bag_size: 1072
+batch 1400, loss: 3.7946, weighted loss: 3.7950 label: 2, bag_size: 529
+batch 1500, loss: 4.0784, weighted loss: 4.0786 label: 3, bag_size: 276
+batch 1600, loss: 6.0848, weighted loss: 6.0886 label: 1, bag_size: 113
+batch 1700, loss: 1.4218, weighted loss: 1.4233 label: 5, bag_size: 237
+batch 1800, loss: 3.0090, weighted loss: 3.0092 label: 6, bag_size: 292
+batch 1900, loss: 2.9799, weighted loss: 2.9800 label: 6, bag_size: 2023
+batch 2000, loss: 2.7811, weighted loss: 2.7814 label: 2, bag_size: 1616
+batch 2100, loss: 1.2833, weighted loss: 1.2834 label: 5, bag_size: 1068
+
+Epoch: 31, train_loss: 2.3333, Coarse Acc: 0.6558, Fine Acc: 0.4880
+Val Set, val_loss: 623.3836
+Coarse Overall Accuracy: 0.6515
+Coarse Overall F1 Score: 0.3415
+Fine Overall Accuracy: 0.5000
+Fine Overall F1 Score: 0.1076
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.5887, weighted loss: 1.5890 label: 2, bag_size: 385
+batch 200, loss: 0.5160, weighted loss: 0.5194 label: 2, bag_size: 2030
+batch 300, loss: 0.2346, weighted loss: 0.2346 label: 5, bag_size: 679
+batch 400, loss: 6.3343, weighted loss: 6.3344 label: 8, bag_size: 243
+batch 500, loss: 1.3268, weighted loss: 1.3289 label: 4, bag_size: 500
+batch 600, loss: 2.0427, weighted loss: 2.0434 label: 5, bag_size: 596
+batch 700, loss: 0.3452, weighted loss: 0.3457 label: 5, bag_size: 540
+batch 800, loss: 3.8583, weighted loss: 3.8653 label: 6, bag_size: 395
+batch 900, loss: 1.1604, weighted loss: 1.1641 label: 2, bag_size: 956
+batch 1000, loss: 3.2026, weighted loss: 3.2033 label: 6, bag_size: 281
+batch 1100, loss: 1.3247, weighted loss: 1.3251 label: 2, bag_size: 826
+batch 1200, loss: 2.9121, weighted loss: 2.9126 label: 3, bag_size: 610
+batch 1300, loss: 0.2819, weighted loss: 0.2819 label: 5, bag_size: 424
+batch 1400, loss: 5.6275, weighted loss: 5.6291 label: 10, bag_size: 472
+batch 1500, loss: 2.1476, weighted loss: 2.1480 label: 5, bag_size: 548
+batch 1600, loss: 3.2230, weighted loss: 3.2232 label: 3, bag_size: 257
+batch 1700, loss: 1.9833, weighted loss: 1.9847 label: 5, bag_size: 131
+batch 1800, loss: 1.0555, weighted loss: 1.0567 label: 2, bag_size: 1365
+batch 1900, loss: 0.9919, weighted loss: 0.9920 label: 5, bag_size: 280
+batch 2000, loss: 0.7164, weighted loss: 0.7164 label: 5, bag_size: 461
+batch 2100, loss: 0.2900, weighted loss: 0.2901 label: 5, bag_size: 441
+
+Epoch: 32, train_loss: 2.3286, Coarse Acc: 0.6585, Fine Acc: 0.4876
+Val Set, val_loss: 622.5569
+Coarse Overall Accuracy: 0.6515
+Coarse Overall F1 Score: 0.3415
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1083
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.6028, weighted loss: 0.6028 label: 5, bag_size: 765
+batch 200, loss: 0.6663, weighted loss: 0.6666 label: 5, bag_size: 335
+batch 300, loss: 2.6240, weighted loss: 2.6243 label: 2, bag_size: 738
+batch 400, loss: 2.0237, weighted loss: 2.0239 label: 5, bag_size: 576
+batch 500, loss: 4.7021, weighted loss: 4.7028 label: 8, bag_size: 268
+batch 600, loss: 0.9351, weighted loss: 0.9353 label: 5, bag_size: 393
+batch 700, loss: 1.0292, weighted loss: 1.0298 label: 2, bag_size: 697
+batch 800, loss: 1.0140, weighted loss: 1.0151 label: 2, bag_size: 2601
+batch 900, loss: 1.3763, weighted loss: 1.3770 label: 5, bag_size: 449
+batch 1000, loss: 0.5595, weighted loss: 0.5597 label: 5, bag_size: 890
+batch 1100, loss: 1.8032, weighted loss: 1.8036 label: 5, bag_size: 377
+batch 1200, loss: 4.1891, weighted loss: 4.1894 label: 8, bag_size: 1555
+batch 1300, loss: 2.6565, weighted loss: 2.6565 label: 2, bag_size: 1170
+batch 1400, loss: 3.8104, weighted loss: 3.8116 label: 3, bag_size: 477
+batch 1500, loss: 2.2372, weighted loss: 2.2383 label: 3, bag_size: 304
+batch 1600, loss: 0.2155, weighted loss: 0.2155 label: 5, bag_size: 444
+batch 1700, loss: 2.5002, weighted loss: 2.5003 label: 2, bag_size: 823
+batch 1800, loss: 3.6482, weighted loss: 3.6483 label: 8, bag_size: 565
+batch 1900, loss: 0.5235, weighted loss: 0.5238 label: 5, bag_size: 974
+batch 2000, loss: 0.9908, weighted loss: 0.9922 label: 2, bag_size: 1531
+batch 2100, loss: 4.6923, weighted loss: 4.6927 label: 6, bag_size: 1123
+
+Epoch: 33, train_loss: 2.3252, Coarse Acc: 0.6576, Fine Acc: 0.4871
+Val Set, val_loss: 621.6388
+Coarse Overall Accuracy: 0.6515
+Coarse Overall F1 Score: 0.3416
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1085
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 4.0263, weighted loss: 4.0274 label: 8, bag_size: 185
+batch 200, loss: 2.2968, weighted loss: 2.2972 label: 5, bag_size: 469
+batch 300, loss: 2.4326, weighted loss: 2.4328 label: 3, bag_size: 526
+batch 400, loss: 0.1426, weighted loss: 0.1426 label: 5, bag_size: 104
+batch 500, loss: 3.7464, weighted loss: 3.7464 label: 8, bag_size: 478
+batch 600, loss: 6.1521, weighted loss: 6.1524 label: 4, bag_size: 510
+batch 700, loss: 2.8106, weighted loss: 2.8113 label: 5, bag_size: 1048
+batch 800, loss: 1.2578, weighted loss: 1.2583 label: 5, bag_size: 258
+batch 900, loss: 1.5535, weighted loss: 1.5535 label: 5, bag_size: 655
+batch 1000, loss: 3.8410, weighted loss: 3.8421 label: 3, bag_size: 477
+batch 1100, loss: 1.1790, weighted loss: 1.1801 label: 2, bag_size: 983
+batch 1200, loss: 4.1630, weighted loss: 4.1630 label: 2, bag_size: 665
+batch 1300, loss: 0.1109, weighted loss: 0.1113 label: 5, bag_size: 732
+batch 1400, loss: 1.7183, weighted loss: 1.7183 label: 5, bag_size: 814
+batch 1500, loss: 0.1296, weighted loss: 0.1297 label: 5, bag_size: 312
+batch 1600, loss: 1.6086, weighted loss: 1.6087 label: 2, bag_size: 2627
+batch 1700, loss: 0.8738, weighted loss: 0.8739 label: 5, bag_size: 545
+batch 1800, loss: 1.4557, weighted loss: 1.4558 label: 5, bag_size: 422
+batch 1900, loss: 1.2027, weighted loss: 1.2032 label: 5, bag_size: 909
+batch 2000, loss: 2.2664, weighted loss: 2.2667 label: 6, bag_size: 518
+batch 2100, loss: 2.6368, weighted loss: 2.6369 label: 2, bag_size: 218
+
+Epoch: 34, train_loss: 2.3204, Coarse Acc: 0.6599, Fine Acc: 0.4885
+Val Set, val_loss: 620.8588
+Coarse Overall Accuracy: 0.6515
+Coarse Overall F1 Score: 0.3415
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1083
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.5799, weighted loss: 1.5808 label: 5, bag_size: 382
+batch 200, loss: 3.7748, weighted loss: 3.7756 label: 8, bag_size: 1274
+batch 300, loss: 2.4233, weighted loss: 2.4235 label: 2, bag_size: 193
+batch 400, loss: 3.4288, weighted loss: 3.4294 label: 5, bag_size: 304
+batch 500, loss: 2.5075, weighted loss: 2.5076 label: 2, bag_size: 456
+batch 600, loss: 3.0339, weighted loss: 3.0343 label: 3, bag_size: 356
+batch 700, loss: 0.5588, weighted loss: 0.5592 label: 5, bag_size: 341
+batch 800, loss: 0.8327, weighted loss: 0.8329 label: 5, bag_size: 339
+batch 900, loss: 1.2439, weighted loss: 1.2446 label: 5, bag_size: 552
+batch 1000, loss: 1.5708, weighted loss: 1.5716 label: 2, bag_size: 1628
+batch 1100, loss: 2.8118, weighted loss: 2.8126 label: 5, bag_size: 376
+batch 1200, loss: 1.7043, weighted loss: 1.7128 label: 2, bag_size: 235
+batch 1300, loss: 0.3587, weighted loss: 0.3588 label: 5, bag_size: 902
+batch 1400, loss: 0.9966, weighted loss: 0.9977 label: 2, bag_size: 334
+batch 1500, loss: 3.6635, weighted loss: 3.6641 label: 8, bag_size: 430
+batch 1600, loss: 3.0288, weighted loss: 3.0296 label: 8, bag_size: 144
+batch 1700, loss: 1.8348, weighted loss: 1.8375 label: 5, bag_size: 368
+batch 1800, loss: 1.2128, weighted loss: 1.2132 label: 5, bag_size: 449
+batch 1900, loss: 2.6011, weighted loss: 2.6014 label: 6, bag_size: 896
+batch 2000, loss: 7.0210, weighted loss: 7.0215 label: 8, bag_size: 1009
+batch 2100, loss: 0.7109, weighted loss: 0.7119 label: 5, bag_size: 318
+
+Epoch: 35, train_loss: 2.3166, Coarse Acc: 0.6613, Fine Acc: 0.4889
+Val Set, val_loss: 620.0641
+Coarse Overall Accuracy: 0.6515
+Coarse Overall F1 Score: 0.3420
+Fine Overall Accuracy: 0.5076
+Fine Overall F1 Score: 0.1093
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.3407, weighted loss: 1.3412 label: 2, bag_size: 1512
+batch 200, loss: 1.8785, weighted loss: 1.8785 label: 2, bag_size: 2085
+batch 300, loss: 0.2800, weighted loss: 0.2810 label: 5, bag_size: 637
+batch 400, loss: 2.8458, weighted loss: 2.8468 label: 8, bag_size: 249
+batch 500, loss: 2.0297, weighted loss: 2.0298 label: 2, bag_size: 454
+batch 600, loss: 2.1924, weighted loss: 2.1932 label: 6, bag_size: 239
+batch 700, loss: 0.3463, weighted loss: 0.3506 label: 2, bag_size: 357
+batch 800, loss: 4.4173, weighted loss: 4.4174 label: 7, bag_size: 850
+batch 900, loss: 4.6439, weighted loss: 4.6442 label: 3, bag_size: 775
+batch 1000, loss: 3.3079, weighted loss: 3.3084 label: 2, bag_size: 564
+batch 1100, loss: 4.3111, weighted loss: 4.3112 label: 8, bag_size: 285
+batch 1200, loss: 3.8995, weighted loss: 3.9000 label: 8, bag_size: 260
+batch 1300, loss: 1.1932, weighted loss: 1.1933 label: 5, bag_size: 838
+batch 1400, loss: 1.3357, weighted loss: 1.3359 label: 5, bag_size: 649
+batch 1500, loss: 1.5938, weighted loss: 1.5941 label: 5, bag_size: 1678
+batch 1600, loss: 6.4917, weighted loss: 6.4937 label: 0, bag_size: 388
+batch 1700, loss: 6.0277, weighted loss: 6.0277 label: 8, bag_size: 589
+batch 1800, loss: 2.5271, weighted loss: 2.5272 label: 6, bag_size: 330
+batch 1900, loss: 3.1741, weighted loss: 3.1747 label: 5, bag_size: 555
+batch 2000, loss: 1.3261, weighted loss: 1.3265 label: 5, bag_size: 154
+batch 2100, loss: 0.1904, weighted loss: 0.1909 label: 5, bag_size: 761
+
+Epoch: 36, train_loss: 2.3123, Coarse Acc: 0.6594, Fine Acc: 0.4885
+Val Set, val_loss: 619.3363
+Coarse Overall Accuracy: 0.6515
+Coarse Overall F1 Score: 0.3417
+Fine Overall Accuracy: 0.5076
+Fine Overall F1 Score: 0.1091
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.0596, weighted loss: 2.0606 label: 6, bag_size: 334
+batch 200, loss: 2.0353, weighted loss: 2.0368 label: 3, bag_size: 1947
+batch 300, loss: 0.7402, weighted loss: 0.7408 label: 5, bag_size: 206
+batch 400, loss: 2.7877, weighted loss: 2.7880 label: 4, bag_size: 1346
+batch 500, loss: 2.2390, weighted loss: 2.2395 label: 5, bag_size: 229
+batch 600, loss: 1.0882, weighted loss: 1.0884 label: 5, bag_size: 296
+batch 700, loss: 1.3206, weighted loss: 1.3209 label: 2, bag_size: 826
+batch 800, loss: 3.6593, weighted loss: 3.6603 label: 3, bag_size: 459
+batch 900, loss: 0.3496, weighted loss: 0.3502 label: 5, bag_size: 587
+batch 1000, loss: 2.5551, weighted loss: 2.5551 label: 6, bag_size: 406
+batch 1100, loss: 3.6289, weighted loss: 3.6289 label: 2, bag_size: 315
+batch 1200, loss: 3.0691, weighted loss: 3.0694 label: 4, bag_size: 793
+batch 1300, loss: 4.0332, weighted loss: 4.0337 label: 8, bag_size: 1555
+batch 1400, loss: 1.2378, weighted loss: 1.2394 label: 2, bag_size: 1700
+batch 1500, loss: 0.1601, weighted loss: 0.1603 label: 5, bag_size: 400
+batch 1600, loss: 1.2651, weighted loss: 1.2660 label: 2, bag_size: 526
+batch 1700, loss: 2.6067, weighted loss: 2.6068 label: 6, bag_size: 600
+batch 1800, loss: 0.9386, weighted loss: 0.9390 label: 5, bag_size: 308
+batch 1900, loss: 2.7176, weighted loss: 2.7177 label: 2, bag_size: 566
+batch 2000, loss: 1.8005, weighted loss: 1.8011 label: 5, bag_size: 210
+batch 2100, loss: 1.3284, weighted loss: 1.3294 label: 2, bag_size: 1229
+
+Epoch: 37, train_loss: 2.3094, Coarse Acc: 0.6604, Fine Acc: 0.4889
+Val Set, val_loss: 618.5088
+Coarse Overall Accuracy: 0.6591
+Coarse Overall F1 Score: 0.3466
+Fine Overall Accuracy: 0.5076
+Fine Overall F1 Score: 0.1091
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 4.3517, weighted loss: 4.3530 label: 8, bag_size: 467
+batch 200, loss: 0.9504, weighted loss: 0.9511 label: 2, bag_size: 697
+batch 300, loss: 1.9486, weighted loss: 1.9493 label: 6, bag_size: 555
+batch 400, loss: 2.5985, weighted loss: 2.5999 label: 5, bag_size: 472
+batch 500, loss: 2.9933, weighted loss: 2.9934 label: 3, bag_size: 635
+batch 600, loss: 0.7489, weighted loss: 0.7495 label: 5, bag_size: 711
+batch 700, loss: 5.4270, weighted loss: 5.4271 label: 10, bag_size: 837
+batch 800, loss: 1.4507, weighted loss: 1.4508 label: 5, bag_size: 422
+batch 900, loss: 3.9004, weighted loss: 3.9080 label: 6, bag_size: 395
+batch 1000, loss: 1.2797, weighted loss: 1.2803 label: 5, bag_size: 588
+batch 1100, loss: 0.3310, weighted loss: 0.3311 label: 5, bag_size: 667
+batch 1200, loss: 6.0645, weighted loss: 6.0646 label: 8, bag_size: 589
+batch 1300, loss: 3.1229, weighted loss: 3.1230 label: 5, bag_size: 309
+batch 1400, loss: 3.0738, weighted loss: 3.0743 label: 3, bag_size: 2005
+batch 1500, loss: 0.2145, weighted loss: 0.2145 label: 5, bag_size: 679
+batch 1600, loss: 4.5009, weighted loss: 4.5012 label: 7, bag_size: 388
+batch 1700, loss: 3.0840, weighted loss: 3.0841 label: 2, bag_size: 2112
+batch 1800, loss: 2.1224, weighted loss: 2.1252 label: 3, bag_size: 1967
+batch 1900, loss: 2.4695, weighted loss: 2.4697 label: 6, bag_size: 156
+batch 2000, loss: 3.5074, weighted loss: 3.5087 label: 3, bag_size: 495
+batch 2100, loss: 0.4943, weighted loss: 0.4947 label: 5, bag_size: 974
+
+Epoch: 38, train_loss: 2.3057, Coarse Acc: 0.6599, Fine Acc: 0.4926
+Val Set, val_loss: 617.7684
+Coarse Overall Accuracy: 0.6591
+Coarse Overall F1 Score: 0.3461
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1083
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.6504, weighted loss: 1.6521 label: 2, bag_size: 496
+batch 200, loss: 1.3703, weighted loss: 1.3708 label: 2, bag_size: 936
+batch 300, loss: 2.5130, weighted loss: 2.5143 label: 2, bag_size: 222
+batch 400, loss: 3.4013, weighted loss: 3.4023 label: 3, bag_size: 303
+batch 500, loss: 0.9621, weighted loss: 0.9624 label: 5, bag_size: 511
+batch 600, loss: 4.7060, weighted loss: 4.7079 label: 3, bag_size: 233
+batch 700, loss: 3.1336, weighted loss: 3.1356 label: 4, bag_size: 217
+batch 800, loss: 0.1085, weighted loss: 0.1086 label: 5, bag_size: 448
+batch 900, loss: 3.8464, weighted loss: 3.8465 label: 8, bag_size: 756
+batch 1000, loss: 2.7863, weighted loss: 2.7864 label: 6, bag_size: 566
+batch 1100, loss: 1.3875, weighted loss: 1.3876 label: 5, bag_size: 635
+batch 1200, loss: 0.4875, weighted loss: 0.4898 label: 2, bag_size: 1445
+batch 1300, loss: 2.4198, weighted loss: 2.4207 label: 3, bag_size: 567
+batch 1400, loss: 1.0101, weighted loss: 1.0115 label: 2, bag_size: 725
+batch 1500, loss: 1.1293, weighted loss: 1.1305 label: 2, bag_size: 729
+batch 1600, loss: 3.7861, weighted loss: 3.7879 label: 7, bag_size: 149
+batch 1700, loss: 5.5097, weighted loss: 5.5104 label: 8, bag_size: 378
+batch 1800, loss: 5.5083, weighted loss: 5.5088 label: 10, bag_size: 270
+batch 1900, loss: 0.6512, weighted loss: 0.6513 label: 5, bag_size: 229
+batch 2000, loss: 2.2095, weighted loss: 2.2097 label: 5, bag_size: 253
+batch 2100, loss: 3.0338, weighted loss: 3.0342 label: 5, bag_size: 353
+
+Epoch: 39, train_loss: 2.3016, Coarse Acc: 0.6599, Fine Acc: 0.4899
+Val Set, val_loss: 617.1029
+Coarse Overall Accuracy: 0.6591
+Coarse Overall F1 Score: 0.3464
+Fine Overall Accuracy: 0.5076
+Fine Overall F1 Score: 0.1091
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.3290, weighted loss: 0.3290 label: 5, bag_size: 752
+batch 200, loss: 6.4874, weighted loss: 6.4875 label: 10, bag_size: 2314
+batch 300, loss: 0.6318, weighted loss: 0.6320 label: 5, bag_size: 229
+batch 400, loss: 2.8686, weighted loss: 2.8699 label: 3, bag_size: 427
+batch 500, loss: 1.1062, weighted loss: 1.1072 label: 2, bag_size: 729
+batch 600, loss: 2.2468, weighted loss: 2.2483 label: 6, bag_size: 129
+batch 700, loss: 0.6041, weighted loss: 0.6068 label: 5, bag_size: 305
+batch 800, loss: 1.9685, weighted loss: 1.9734 label: 3, bag_size: 350
+batch 900, loss: 0.5442, weighted loss: 0.5454 label: 5, bag_size: 605
+batch 1000, loss: 2.5618, weighted loss: 2.5662 label: 2, bag_size: 161
+batch 1100, loss: 0.6004, weighted loss: 0.6011 label: 5, bag_size: 198
+batch 1200, loss: 2.1925, weighted loss: 2.1925 label: 2, bag_size: 454
+batch 1300, loss: 1.8557, weighted loss: 1.8574 label: 4, bag_size: 1445
+batch 1400, loss: 3.0048, weighted loss: 3.0052 label: 4, bag_size: 793
+batch 1500, loss: 2.7366, weighted loss: 2.7369 label: 3, bag_size: 1087
+batch 1600, loss: 2.1717, weighted loss: 2.1729 label: 3, bag_size: 945
+batch 1700, loss: 1.5324, weighted loss: 1.5325 label: 2, bag_size: 459
+batch 1800, loss: 1.6855, weighted loss: 1.6877 label: 6, bag_size: 328
+batch 1900, loss: 1.0150, weighted loss: 1.0157 label: 2, bag_size: 1279
+batch 2000, loss: 2.0334, weighted loss: 2.0348 label: 3, bag_size: 1947
+batch 2100, loss: 1.5708, weighted loss: 1.5711 label: 5, bag_size: 455
+
+Epoch: 40, train_loss: 2.2981, Coarse Acc: 0.6631, Fine Acc: 0.4912
+Val Set, val_loss: 616.4213
+Coarse Overall Accuracy: 0.6629
+Coarse Overall F1 Score: 0.3485
+Fine Overall Accuracy: 0.5076
+Fine Overall F1 Score: 0.1091
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.4427, weighted loss: 2.4430 label: 6, bag_size: 344
+batch 200, loss: 0.8724, weighted loss: 0.8728 label: 5, bag_size: 308
+batch 300, loss: 3.4428, weighted loss: 3.4435 label: 3, bag_size: 303
+batch 400, loss: 8.5854, weighted loss: 8.5856 label: 1, bag_size: 505
+batch 500, loss: 1.1830, weighted loss: 1.1838 label: 5, bag_size: 1736
+batch 600, loss: 3.3783, weighted loss: 3.3825 label: 8, bag_size: 563
+batch 700, loss: 0.6027, weighted loss: 0.6053 label: 5, bag_size: 849
+batch 800, loss: 2.3264, weighted loss: 2.3267 label: 5, bag_size: 202
+batch 900, loss: 0.8254, weighted loss: 0.8296 label: 2, bag_size: 601
+batch 1000, loss: 3.3054, weighted loss: 3.3068 label: 7, bag_size: 172
+batch 1100, loss: 0.1097, weighted loss: 0.1097 label: 5, bag_size: 210
+batch 1200, loss: 0.7377, weighted loss: 0.7409 label: 2, bag_size: 198
+batch 1300, loss: 1.6238, weighted loss: 1.6262 label: 6, bag_size: 328
+batch 1400, loss: 2.3928, weighted loss: 2.3952 label: 6, bag_size: 541
+batch 1500, loss: 0.5606, weighted loss: 0.5607 label: 5, bag_size: 518
+batch 1600, loss: 0.6432, weighted loss: 0.6450 label: 2, bag_size: 447
+batch 1700, loss: 2.7930, weighted loss: 2.7931 label: 6, bag_size: 696
+batch 1800, loss: 2.9469, weighted loss: 2.9481 label: 2, bag_size: 622
+batch 1900, loss: 6.4393, weighted loss: 6.4409 label: 8, bag_size: 233
+batch 2000, loss: 1.0245, weighted loss: 1.0247 label: 5, bag_size: 329
+batch 2100, loss: 2.8306, weighted loss: 2.8308 label: 6, bag_size: 147
+
+Epoch: 41, train_loss: 2.2952, Coarse Acc: 0.6604, Fine Acc: 0.4940
+Val Set, val_loss: 615.8547
+Coarse Overall Accuracy: 0.6515
+Coarse Overall F1 Score: 0.3417
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1083
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.8006, weighted loss: 3.8011 label: 8, bag_size: 661
+batch 200, loss: 2.1601, weighted loss: 2.1607 label: 6, bag_size: 521
+batch 300, loss: 0.2083, weighted loss: 0.2084 label: 5, bag_size: 835
+batch 400, loss: 1.9433, weighted loss: 1.9434 label: 2, bag_size: 1323
+batch 500, loss: 3.6677, weighted loss: 3.6678 label: 4, bag_size: 997
+batch 600, loss: 2.2632, weighted loss: 2.2636 label: 3, bag_size: 1739
+batch 700, loss: 2.2981, weighted loss: 2.2987 label: 6, bag_size: 436
+batch 800, loss: 1.8568, weighted loss: 1.8586 label: 4, bag_size: 1445
+batch 900, loss: 0.2989, weighted loss: 0.2992 label: 5, bag_size: 540
+batch 1000, loss: 0.6798, weighted loss: 0.6803 label: 2, bag_size: 660
+batch 1100, loss: 1.7781, weighted loss: 1.7788 label: 5, bag_size: 599
+batch 1200, loss: 2.4640, weighted loss: 2.4641 label: 2, bag_size: 456
+batch 1300, loss: 0.7999, weighted loss: 0.8005 label: 5, bag_size: 466
+batch 1400, loss: 3.8770, weighted loss: 3.8781 label: 3, bag_size: 433
+batch 1500, loss: 1.0996, weighted loss: 1.0997 label: 5, bag_size: 473
+batch 1600, loss: 1.8022, weighted loss: 1.8026 label: 2, bag_size: 2104
+batch 1700, loss: 3.3343, weighted loss: 3.3346 label: 8, bag_size: 175
+batch 1800, loss: 1.5148, weighted loss: 1.5158 label: 5, bag_size: 125
+batch 1900, loss: 1.4445, weighted loss: 1.4446 label: 5, bag_size: 861
+batch 2000, loss: 0.5886, weighted loss: 0.5888 label: 5, bag_size: 482
+batch 2100, loss: 2.0909, weighted loss: 2.0917 label: 5, bag_size: 548
+
+Epoch: 42, train_loss: 2.2918, Coarse Acc: 0.6641, Fine Acc: 0.4935
+Val Set, val_loss: 615.2974
+Coarse Overall Accuracy: 0.6515
+Coarse Overall F1 Score: 0.3417
+Fine Overall Accuracy: 0.5114
+Fine Overall F1 Score: 0.1100
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.6811, weighted loss: 2.6815 label: 6, bag_size: 545
+batch 200, loss: 3.2664, weighted loss: 3.2666 label: 4, bag_size: 1400
+batch 300, loss: 0.7966, weighted loss: 0.7966 label: 5, bag_size: 866
+batch 400, loss: 3.6090, weighted loss: 3.6094 label: 2, bag_size: 764
+batch 500, loss: 7.7860, weighted loss: 7.7861 label: 1, bag_size: 451
+batch 600, loss: 1.0522, weighted loss: 1.0525 label: 5, bag_size: 808
+batch 700, loss: 6.4747, weighted loss: 6.4754 label: 10, bag_size: 481
+batch 800, loss: 0.5603, weighted loss: 0.5606 label: 5, bag_size: 637
+batch 900, loss: 3.5384, weighted loss: 3.5402 label: 7, bag_size: 529
+batch 1000, loss: 0.3231, weighted loss: 0.3238 label: 5, bag_size: 607
+batch 1100, loss: 1.4292, weighted loss: 1.4301 label: 2, bag_size: 1311
+batch 1200, loss: 1.9325, weighted loss: 1.9342 label: 6, bag_size: 506
+batch 1300, loss: 0.4151, weighted loss: 0.4205 label: 2, bag_size: 305
+batch 1400, loss: 0.2636, weighted loss: 0.2639 label: 5, bag_size: 755
+batch 1500, loss: 5.9148, weighted loss: 5.9164 label: 1, bag_size: 198
+batch 1600, loss: 0.2089, weighted loss: 0.2093 label: 5, bag_size: 507
+batch 1700, loss: 3.0892, weighted loss: 3.0892 label: 2, bag_size: 2112
+batch 1800, loss: 0.4423, weighted loss: 0.4449 label: 2, bag_size: 2030
+batch 1900, loss: 2.9622, weighted loss: 2.9629 label: 2, bag_size: 165
+batch 2000, loss: 1.6145, weighted loss: 1.6157 label: 5, bag_size: 214
+batch 2100, loss: 10.2015, weighted loss: 10.2016 label: 3, bag_size: 477
+
+Epoch: 43, train_loss: 2.2878, Coarse Acc: 0.6627, Fine Acc: 0.4945
+Val Set, val_loss: 614.6313
+Coarse Overall Accuracy: 0.6553
+Coarse Overall F1 Score: 0.3442
+Fine Overall Accuracy: 0.5114
+Fine Overall F1 Score: 0.1100
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.0923, weighted loss: 0.0924 label: 5, bag_size: 439
+batch 200, loss: 2.6717, weighted loss: 2.6725 label: 3, bag_size: 837
+batch 300, loss: 1.0591, weighted loss: 1.0593 label: 5, bag_size: 194
+batch 400, loss: 1.8471, weighted loss: 1.8479 label: 5, bag_size: 765
+batch 500, loss: 1.1337, weighted loss: 1.1345 label: 5, bag_size: 1736
+batch 600, loss: 2.6819, weighted loss: 2.6834 label: 3, bag_size: 942
+batch 700, loss: 1.4572, weighted loss: 1.4582 label: 5, bag_size: 654
+batch 800, loss: 1.3451, weighted loss: 1.3453 label: 2, bag_size: 1300
+batch 900, loss: 0.2273, weighted loss: 0.2283 label: 5, bag_size: 462
+batch 1000, loss: 0.1049, weighted loss: 0.1052 label: 5, bag_size: 280
+batch 1100, loss: 1.8989, weighted loss: 1.9006 label: 6, bag_size: 468
+batch 1200, loss: 1.4807, weighted loss: 1.4810 label: 2, bag_size: 1110
+batch 1300, loss: 2.1056, weighted loss: 2.1062 label: 6, bag_size: 209
+batch 1400, loss: 0.1172, weighted loss: 0.1173 label: 5, bag_size: 223
+batch 1500, loss: 5.5394, weighted loss: 5.5405 label: 10, bag_size: 239
+batch 1600, loss: 8.3240, weighted loss: 8.3249 label: 0, bag_size: 313
+batch 1700, loss: 1.8206, weighted loss: 1.8215 label: 5, bag_size: 331
+batch 1800, loss: 4.5631, weighted loss: 4.5633 label: 7, bag_size: 388
+batch 1900, loss: 0.4961, weighted loss: 0.4961 label: 5, bag_size: 475
+batch 2000, loss: 2.3547, weighted loss: 2.3557 label: 6, bag_size: 334
+batch 2100, loss: 2.7675, weighted loss: 2.7683 label: 5, bag_size: 121
+
+Epoch: 44, train_loss: 2.2850, Coarse Acc: 0.6641, Fine Acc: 0.4935
+Val Set, val_loss: 613.9860
+Coarse Overall Accuracy: 0.6629
+Coarse Overall F1 Score: 0.3634
+Fine Overall Accuracy: 0.5038
+Fine Overall F1 Score: 0.1139
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.0721, weighted loss: 2.0721 label: 3, bag_size: 1892
+batch 200, loss: 3.1956, weighted loss: 3.1959 label: 3, bag_size: 375
+batch 300, loss: 3.1983, weighted loss: 3.2033 label: 8, bag_size: 563
+batch 400, loss: 1.1689, weighted loss: 1.1693 label: 5, bag_size: 360
+batch 500, loss: 0.8800, weighted loss: 0.8803 label: 5, bag_size: 308
+batch 600, loss: 2.0315, weighted loss: 2.0316 label: 2, bag_size: 989
+batch 700, loss: 3.4741, weighted loss: 3.4745 label: 3, bag_size: 445
+batch 800, loss: 1.8578, weighted loss: 1.8597 label: 6, bag_size: 533
+batch 900, loss: 1.4061, weighted loss: 1.4063 label: 2, bag_size: 2159
+batch 1000, loss: 2.6487, weighted loss: 2.6487 label: 6, bag_size: 435
+batch 1100, loss: 1.7692, weighted loss: 1.7702 label: 5, bag_size: 314
+batch 1200, loss: 2.8324, weighted loss: 2.8331 label: 8, bag_size: 249
+batch 1300, loss: 5.4302, weighted loss: 5.4317 label: 10, bag_size: 239
+batch 1400, loss: 1.9853, weighted loss: 1.9859 label: 5, bag_size: 604
+batch 1500, loss: 6.1125, weighted loss: 6.1126 label: 8, bag_size: 589
+batch 1600, loss: 2.0482, weighted loss: 2.0485 label: 2, bag_size: 237
+batch 1700, loss: 1.7698, weighted loss: 1.7704 label: 5, bag_size: 1145
+batch 1800, loss: 5.9395, weighted loss: 5.9397 label: 8, bag_size: 715
+batch 1900, loss: 7.1392, weighted loss: 7.1401 label: 1, bag_size: 119
+batch 2000, loss: 0.4775, weighted loss: 0.4775 label: 5, bag_size: 330
+batch 2100, loss: 0.2384, weighted loss: 0.2397 label: 5, bag_size: 462
+
+Epoch: 45, train_loss: 2.2821, Coarse Acc: 0.6645, Fine Acc: 0.4963
+Val Set, val_loss: 613.3900
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3658
+Fine Overall Accuracy: 0.5076
+Fine Overall F1 Score: 0.1148
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.9767, weighted loss: 2.9773 label: 8, bag_size: 128
+batch 200, loss: 1.0386, weighted loss: 1.0397 label: 2, bag_size: 1523
+batch 300, loss: 0.9806, weighted loss: 0.9815 label: 2, bag_size: 1762
+batch 400, loss: 1.1614, weighted loss: 1.1617 label: 5, bag_size: 1020
+batch 500, loss: 2.4333, weighted loss: 2.4333 label: 6, bag_size: 492
+batch 600, loss: 3.8233, weighted loss: 3.8236 label: 7, bag_size: 111
+batch 700, loss: 0.5826, weighted loss: 0.5828 label: 2, bag_size: 129
+batch 800, loss: 0.9897, weighted loss: 0.9898 label: 5, bag_size: 603
+batch 900, loss: 2.2687, weighted loss: 2.2693 label: 5, bag_size: 401
+batch 1000, loss: 3.1103, weighted loss: 3.1113 label: 5, bag_size: 2344
+batch 1100, loss: 0.3091, weighted loss: 0.3094 label: 5, bag_size: 956
+batch 1200, loss: 1.7746, weighted loss: 1.7760 label: 6, bag_size: 351
+batch 1300, loss: 4.1177, weighted loss: 4.1185 label: 7, bag_size: 441
+batch 1400, loss: 1.8362, weighted loss: 1.8382 label: 6, bag_size: 506
+batch 1500, loss: 1.6152, weighted loss: 1.6165 label: 5, bag_size: 363
+batch 1600, loss: 2.6950, weighted loss: 2.6964 label: 3, bag_size: 942
+batch 1700, loss: 0.5351, weighted loss: 0.5351 label: 5, bag_size: 857
+batch 1800, loss: 1.2944, weighted loss: 1.2949 label: 2, bag_size: 1536
+batch 1900, loss: 1.9579, weighted loss: 1.9581 label: 2, bag_size: 2085
+batch 2000, loss: 1.5237, weighted loss: 1.5249 label: 5, bag_size: 569
+batch 2100, loss: 0.8270, weighted loss: 0.8271 label: 5, bag_size: 866
+
+Epoch: 46, train_loss: 2.2787, Coarse Acc: 0.6682, Fine Acc: 0.4954
+Val Set, val_loss: 612.8944
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3681
+Fine Overall Accuracy: 0.5076
+Fine Overall F1 Score: 0.1149
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.6358, weighted loss: 3.6363 label: 3, bag_size: 1223
+batch 200, loss: 4.5226, weighted loss: 4.5237 label: 3, bag_size: 933
+batch 300, loss: 0.8097, weighted loss: 0.8203 label: 2, bag_size: 313
+batch 400, loss: 1.6118, weighted loss: 1.6121 label: 5, bag_size: 259
+batch 500, loss: 2.5776, weighted loss: 2.5781 label: 2, bag_size: 520
+batch 600, loss: 2.6567, weighted loss: 2.6570 label: 2, bag_size: 1381
+batch 700, loss: 0.6110, weighted loss: 0.6120 label: 2, bag_size: 298
+batch 800, loss: 1.7252, weighted loss: 1.7257 label: 2, bag_size: 1691
+batch 900, loss: 0.3571, weighted loss: 0.3573 label: 5, bag_size: 192
+batch 1000, loss: 1.3702, weighted loss: 1.3708 label: 2, bag_size: 663
+batch 1100, loss: 0.5407, weighted loss: 0.5408 label: 5, bag_size: 796
+batch 1200, loss: 1.8755, weighted loss: 1.8756 label: 5, bag_size: 890
+batch 1300, loss: 1.3727, weighted loss: 1.3740 label: 5, bag_size: 193
+batch 1400, loss: 2.6890, weighted loss: 2.6913 label: 5, bag_size: 52
+batch 1500, loss: 1.5724, weighted loss: 1.5731 label: 5, bag_size: 106
+batch 1600, loss: 1.4723, weighted loss: 1.4725 label: 2, bag_size: 659
+batch 1700, loss: 1.9820, weighted loss: 1.9832 label: 3, bag_size: 1947
+batch 1800, loss: 0.7215, weighted loss: 0.7240 label: 2, bag_size: 2214
+batch 1900, loss: 0.2714, weighted loss: 0.2715 label: 5, bag_size: 206
+batch 2000, loss: 0.2452, weighted loss: 0.2457 label: 5, bag_size: 198
+batch 2100, loss: 2.7728, weighted loss: 2.7733 label: 2, bag_size: 399
+
+Epoch: 47, train_loss: 2.2761, Coarse Acc: 0.6622, Fine Acc: 0.4945
+Val Set, val_loss: 612.2093
+Coarse Overall Accuracy: 0.6591
+Coarse Overall F1 Score: 0.3471
+Fine Overall Accuracy: 0.5114
+Fine Overall F1 Score: 0.1155
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.4563, weighted loss: 1.4569 label: 5, bag_size: 515
+batch 200, loss: 4.7177, weighted loss: 4.7179 label: 7, bag_size: 981
+batch 300, loss: 1.3788, weighted loss: 1.3792 label: 2, bag_size: 1617
+batch 400, loss: 3.0876, weighted loss: 3.0878 label: 6, bag_size: 2023
+batch 500, loss: 0.2204, weighted loss: 0.2204 label: 5, bag_size: 467
+batch 600, loss: 3.2579, weighted loss: 3.2579 label: 6, bag_size: 608
+batch 700, loss: 0.7737, weighted loss: 0.7744 label: 5, bag_size: 466
+batch 800, loss: 1.8664, weighted loss: 1.8698 label: 5, bag_size: 368
+batch 900, loss: 2.1129, weighted loss: 2.1130 label: 5, bag_size: 317
+batch 1000, loss: 1.7706, weighted loss: 1.7730 label: 3, bag_size: 755
+batch 1100, loss: 3.2144, weighted loss: 3.2146 label: 2, bag_size: 437
+batch 1200, loss: 1.3709, weighted loss: 1.3711 label: 5, bag_size: 247
+batch 1300, loss: 4.9414, weighted loss: 4.9416 label: 6, bag_size: 1123
+batch 1400, loss: 2.6604, weighted loss: 2.6618 label: 3, bag_size: 942
+batch 1500, loss: 3.3749, weighted loss: 3.3759 label: 7, bag_size: 210
+batch 1600, loss: 1.1722, weighted loss: 1.1724 label: 5, bag_size: 867
+batch 1700, loss: 1.2011, weighted loss: 1.2014 label: 5, bag_size: 386
+batch 1800, loss: 0.4848, weighted loss: 0.4883 label: 2, bag_size: 714
+batch 1900, loss: 2.3998, weighted loss: 2.3999 label: 6, bag_size: 2224
+batch 2000, loss: 3.3797, weighted loss: 3.3810 label: 3, bag_size: 495
+batch 2100, loss: 2.0421, weighted loss: 2.0436 label: 5, bag_size: 232
+
+Epoch: 48, train_loss: 2.2731, Coarse Acc: 0.6659, Fine Acc: 0.4954
+Val Set, val_loss: 611.7401
+Coarse Overall Accuracy: 0.6553
+Coarse Overall F1 Score: 0.3442
+Fine Overall Accuracy: 0.5114
+Fine Overall F1 Score: 0.1156
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.1129, weighted loss: 0.1130 label: 5, bag_size: 455
+batch 200, loss: 1.3318, weighted loss: 1.3319 label: 5, bag_size: 1308
+batch 300, loss: 0.8151, weighted loss: 0.8151 label: 5, bag_size: 1547
+batch 400, loss: 2.0468, weighted loss: 2.0469 label: 5, bag_size: 853
+batch 500, loss: 1.5421, weighted loss: 1.5426 label: 5, bag_size: 335
+batch 600, loss: 1.0464, weighted loss: 1.0468 label: 5, bag_size: 808
+batch 700, loss: 2.0429, weighted loss: 2.0433 label: 5, bag_size: 290
+batch 800, loss: 1.1421, weighted loss: 1.1423 label: 5, bag_size: 1364
+batch 900, loss: 2.2467, weighted loss: 2.2468 label: 4, bag_size: 88
+batch 1000, loss: 7.8336, weighted loss: 7.8341 label: 1, bag_size: 439
+batch 1100, loss: 0.4432, weighted loss: 0.4435 label: 5, bag_size: 600
+batch 1200, loss: 1.1263, weighted loss: 1.1279 label: 2, bag_size: 392
+batch 1300, loss: 1.7175, weighted loss: 1.7175 label: 2, bag_size: 1124
+batch 1400, loss: 1.5886, weighted loss: 1.5896 label: 5, bag_size: 363
+batch 1500, loss: 4.2605, weighted loss: 4.2606 label: 7, bag_size: 618
+batch 1600, loss: 1.7096, weighted loss: 1.7110 label: 2, bag_size: 785
+batch 1700, loss: 2.6842, weighted loss: 2.6848 label: 2, bag_size: 411
+batch 1800, loss: 2.3323, weighted loss: 2.3325 label: 6, bag_size: 156
+batch 1900, loss: 1.1004, weighted loss: 1.1014 label: 5, bag_size: 310
+batch 2000, loss: 0.2931, weighted loss: 0.2936 label: 5, bag_size: 540
+batch 2100, loss: 3.6464, weighted loss: 3.6485 label: 3, bag_size: 401
+
+Epoch: 49, train_loss: 2.2703, Coarse Acc: 0.6654, Fine Acc: 0.4977
+Val Set, val_loss: 611.2147
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3686
+Fine Overall Accuracy: 0.5076
+Fine Overall F1 Score: 0.1147
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.1841, weighted loss: 1.1846 label: 5, bag_size: 1364
+batch 200, loss: 0.5429, weighted loss: 0.5442 label: 5, bag_size: 405
+batch 300, loss: 1.7525, weighted loss: 1.7527 label: 5, bag_size: 193
+batch 400, loss: 2.2448, weighted loss: 2.2472 label: 5, bag_size: 968
+batch 500, loss: 0.8991, weighted loss: 0.9017 label: 2, bag_size: 2037
+batch 600, loss: 0.4790, weighted loss: 0.4795 label: 5, bag_size: 205
+batch 700, loss: 1.7538, weighted loss: 1.7542 label: 5, bag_size: 115
+batch 800, loss: 2.9091, weighted loss: 2.9096 label: 6, bag_size: 656
+batch 900, loss: 6.7235, weighted loss: 6.7252 label: 9, bag_size: 84
+batch 1000, loss: 2.0439, weighted loss: 2.0450 label: 3, bag_size: 788
+batch 1100, loss: 2.3099, weighted loss: 2.3105 label: 6, bag_size: 404
+batch 1200, loss: 1.1529, weighted loss: 1.1538 label: 5, bag_size: 324
+batch 1300, loss: 2.2917, weighted loss: 2.2922 label: 5, bag_size: 458
+batch 1400, loss: 5.7391, weighted loss: 5.7431 label: 0, bag_size: 1736
+batch 1500, loss: 0.9613, weighted loss: 0.9618 label: 2, bag_size: 1762
+batch 1600, loss: 1.9920, weighted loss: 1.9925 label: 2, bag_size: 1423
+batch 1700, loss: 3.3948, weighted loss: 3.3955 label: 3, bag_size: 262
+batch 1800, loss: 3.5585, weighted loss: 3.5611 label: 8, bag_size: 541
+batch 1900, loss: 2.6265, weighted loss: 2.6270 label: 5, bag_size: 233
+batch 2000, loss: 0.3195, weighted loss: 0.3196 label: 5, bag_size: 700
+batch 2100, loss: 1.1710, weighted loss: 1.1712 label: 2, bag_size: 826
+
+Epoch: 50, train_loss: 2.2677, Coarse Acc: 0.6636, Fine Acc: 0.4963
+Val Set, val_loss: 610.7333
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3684
+Fine Overall Accuracy: 0.5114
+Fine Overall F1 Score: 0.1156
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 5.0376, weighted loss: 5.0390 label: 7, bag_size: 521
+batch 200, loss: 0.3892, weighted loss: 0.3898 label: 5, bag_size: 511
+batch 300, loss: 1.9174, weighted loss: 1.9175 label: 2, bag_size: 1269
+batch 400, loss: 2.6846, weighted loss: 2.6850 label: 2, bag_size: 448
+batch 500, loss: 1.9697, weighted loss: 1.9701 label: 5, bag_size: 604
+batch 600, loss: 4.2096, weighted loss: 4.2104 label: 4, bag_size: 851
+batch 700, loss: 1.6424, weighted loss: 1.6427 label: 5, bag_size: 359
+batch 800, loss: 3.0399, weighted loss: 3.0410 label: 5, bag_size: 2344
+batch 900, loss: 0.8668, weighted loss: 0.8678 label: 5, bag_size: 180
+batch 1000, loss: 1.4344, weighted loss: 1.4350 label: 2, bag_size: 2818
+batch 1100, loss: 3.1198, weighted loss: 3.1208 label: 4, bag_size: 1534
+batch 1200, loss: 4.2108, weighted loss: 4.2111 label: 8, bag_size: 278
+batch 1300, loss: 1.3541, weighted loss: 1.3545 label: 5, bag_size: 422
+batch 1400, loss: 0.3503, weighted loss: 0.3504 label: 5, bag_size: 812
+batch 1500, loss: 3.2907, weighted loss: 3.2911 label: 2, bag_size: 564
+batch 1600, loss: 3.9553, weighted loss: 3.9564 label: 8, bag_size: 195
+batch 1700, loss: 0.9880, weighted loss: 0.9883 label: 5, bag_size: 603
+batch 1800, loss: 3.9496, weighted loss: 3.9503 label: 8, bag_size: 212
+batch 1900, loss: 4.3289, weighted loss: 4.3294 label: 8, bag_size: 338
+batch 2000, loss: 2.4770, weighted loss: 2.4775 label: 5, bag_size: 228
+batch 2100, loss: 3.1392, weighted loss: 3.1395 label: 3, bag_size: 375
+
+Epoch: 51, train_loss: 2.2647, Coarse Acc: 0.6682, Fine Acc: 0.4968
+Val Set, val_loss: 610.3455
+Coarse Overall Accuracy: 0.6629
+Coarse Overall F1 Score: 0.3646
+Fine Overall Accuracy: 0.5076
+Fine Overall F1 Score: 0.1147
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.8687, weighted loss: 0.8703 label: 2, bag_size: 1226
+batch 200, loss: 3.4099, weighted loss: 3.4103 label: 8, bag_size: 264
+batch 300, loss: 0.2446, weighted loss: 0.2448 label: 5, bag_size: 853
+batch 400, loss: 1.8338, weighted loss: 1.8340 label: 2, bag_size: 1860
+batch 500, loss: 2.2292, weighted loss: 2.2298 label: 5, bag_size: 220
+batch 600, loss: 2.0797, weighted loss: 2.0798 label: 2, bag_size: 1627
+batch 700, loss: 5.4173, weighted loss: 5.4189 label: 8, bag_size: 486
+batch 800, loss: 2.7327, weighted loss: 2.7330 label: 2, bag_size: 505
+batch 900, loss: 2.3656, weighted loss: 2.3660 label: 6, bag_size: 1239
+batch 1000, loss: 2.1749, weighted loss: 2.1749 label: 5, bag_size: 452
+batch 1100, loss: 3.1374, weighted loss: 3.1382 label: 6, bag_size: 390
+batch 1200, loss: 3.9708, weighted loss: 3.9712 label: 2, bag_size: 268
+batch 1300, loss: 0.5272, weighted loss: 0.5276 label: 5, bag_size: 304
+batch 1400, loss: 8.0576, weighted loss: 8.0589 label: 5, bag_size: 362
+batch 1500, loss: 0.4947, weighted loss: 0.4953 label: 2, bag_size: 379
+batch 1600, loss: 3.1985, weighted loss: 3.1987 label: 2, bag_size: 371
+batch 1700, loss: 0.8156, weighted loss: 0.8158 label: 5, bag_size: 857
+batch 1800, loss: 2.2693, weighted loss: 2.2708 label: 4, bag_size: 889
+batch 1900, loss: 2.3023, weighted loss: 2.3025 label: 2, bag_size: 193
+batch 2000, loss: 0.9584, weighted loss: 0.9588 label: 2, bag_size: 1099
+batch 2100, loss: 4.6968, weighted loss: 4.6969 label: 4, bag_size: 424
+
+Epoch: 52, train_loss: 2.2619, Coarse Acc: 0.6654, Fine Acc: 0.4986
+Val Set, val_loss: 609.7235
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3662
+Fine Overall Accuracy: 0.5114
+Fine Overall F1 Score: 0.1155
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.1538, weighted loss: 1.1538 label: 2, bag_size: 1090
+batch 200, loss: 2.8296, weighted loss: 2.8311 label: 5, bag_size: 276
+batch 300, loss: 2.5543, weighted loss: 2.5546 label: 2, bag_size: 446
+batch 400, loss: 2.9735, weighted loss: 2.9739 label: 2, bag_size: 224
+batch 500, loss: 0.7588, weighted loss: 0.7595 label: 5, bag_size: 253
+batch 600, loss: 1.0093, weighted loss: 1.0101 label: 5, bag_size: 463
+batch 700, loss: 2.8613, weighted loss: 2.8614 label: 2, bag_size: 558
+batch 800, loss: 0.5259, weighted loss: 0.5271 label: 5, bag_size: 358
+batch 900, loss: 2.5806, weighted loss: 2.5807 label: 6, bag_size: 802
+batch 1000, loss: 2.5923, weighted loss: 2.5925 label: 4, bag_size: 584
+batch 1100, loss: 2.7628, weighted loss: 2.7639 label: 8, bag_size: 207
+batch 1200, loss: 0.2614, weighted loss: 0.2615 label: 5, bag_size: 597
+batch 1300, loss: 1.1713, weighted loss: 1.1713 label: 5, bag_size: 534
+batch 1400, loss: 0.0911, weighted loss: 0.0913 label: 5, bag_size: 743
+batch 1500, loss: 3.6560, weighted loss: 3.6569 label: 2, bag_size: 209
+batch 1600, loss: 3.8845, weighted loss: 3.8849 label: 3, bag_size: 657
+batch 1700, loss: 1.7542, weighted loss: 1.7554 label: 5, bag_size: 314
+batch 1800, loss: 6.6815, weighted loss: 6.6819 label: 1, bag_size: 474
+batch 1900, loss: 4.1827, weighted loss: 4.1832 label: 3, bag_size: 366
+batch 2000, loss: 1.1425, weighted loss: 1.1426 label: 5, bag_size: 640
+batch 2100, loss: 3.6978, weighted loss: 3.6988 label: 3, bag_size: 459
+
+Epoch: 53, train_loss: 2.2596, Coarse Acc: 0.6664, Fine Acc: 0.4982
+Val Set, val_loss: 609.1842
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3660
+Fine Overall Accuracy: 0.5114
+Fine Overall F1 Score: 0.1153
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.1434, weighted loss: 0.1436 label: 5, bag_size: 1015
+batch 200, loss: 3.1625, weighted loss: 3.1633 label: 2, bag_size: 675
+batch 300, loss: 2.6885, weighted loss: 2.6890 label: 6, bag_size: 362
+batch 400, loss: 1.4819, weighted loss: 1.4833 label: 6, bag_size: 117
+batch 500, loss: 0.2955, weighted loss: 0.2955 label: 5, bag_size: 902
+batch 600, loss: 1.2336, weighted loss: 1.2366 label: 4, bag_size: 454
+batch 700, loss: 0.2350, weighted loss: 0.2352 label: 5, bag_size: 458
+batch 800, loss: 2.1324, weighted loss: 2.1333 label: 2, bag_size: 989
+batch 900, loss: 0.7369, weighted loss: 0.7384 label: 2, bag_size: 732
+batch 1000, loss: 0.3659, weighted loss: 0.3672 label: 2, bag_size: 224
+batch 1100, loss: 1.9680, weighted loss: 1.9681 label: 5, bag_size: 311
+batch 1200, loss: 4.3098, weighted loss: 4.3100 label: 8, bag_size: 105
+batch 1300, loss: 3.7875, weighted loss: 3.7894 label: 4, bag_size: 168
+batch 1400, loss: 0.7022, weighted loss: 0.7037 label: 2, bag_size: 1470
+batch 1500, loss: 2.1005, weighted loss: 2.1016 label: 3, bag_size: 773
+batch 1600, loss: 1.0517, weighted loss: 1.0531 label: 5, bag_size: 324
+batch 1700, loss: 2.3603, weighted loss: 2.3616 label: 6, bag_size: 687
+batch 1800, loss: 1.9124, weighted loss: 1.9134 label: 6, bag_size: 334
+batch 1900, loss: 1.8097, weighted loss: 1.8105 label: 2, bag_size: 1233
+batch 2000, loss: 3.1364, weighted loss: 3.1371 label: 2, bag_size: 1654
+batch 2100, loss: 5.7712, weighted loss: 5.7718 label: 8, bag_size: 435
+
+Epoch: 54, train_loss: 2.2569, Coarse Acc: 0.6700, Fine Acc: 0.4991
+Val Set, val_loss: 608.9629
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3667
+Fine Overall Accuracy: 0.5114
+Fine Overall F1 Score: 0.1154
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.4946, weighted loss: 2.4979 label: 4, bag_size: 185
+batch 200, loss: 2.5745, weighted loss: 2.5748 label: 3, bag_size: 724
+batch 300, loss: 0.8515, weighted loss: 0.8516 label: 2, bag_size: 185
+batch 400, loss: 1.0927, weighted loss: 1.0939 label: 5, bag_size: 1798
+batch 500, loss: 1.4016, weighted loss: 1.4020 label: 2, bag_size: 310
+batch 600, loss: 1.5542, weighted loss: 1.5543 label: 5, bag_size: 366
+batch 700, loss: 0.2318, weighted loss: 0.2320 label: 5, bag_size: 599
+batch 800, loss: 5.3421, weighted loss: 5.3434 label: 7, bag_size: 269
+batch 900, loss: 2.0621, weighted loss: 2.0633 label: 6, bag_size: 373
+batch 1000, loss: 2.6021, weighted loss: 2.6035 label: 5, bag_size: 30
+batch 1100, loss: 0.1852, weighted loss: 0.1853 label: 5, bag_size: 357
+batch 1200, loss: 0.4370, weighted loss: 0.4372 label: 5, bag_size: 1301
+batch 1300, loss: 2.2612, weighted loss: 2.2625 label: 6, bag_size: 411
+batch 1400, loss: 3.4248, weighted loss: 3.4249 label: 8, bag_size: 264
+batch 1500, loss: 1.2463, weighted loss: 1.2465 label: 5, bag_size: 524
+batch 1600, loss: 1.8254, weighted loss: 1.8302 label: 3, bag_size: 1831
+batch 1700, loss: 1.0987, weighted loss: 1.1001 label: 2, bag_size: 1067
+batch 1800, loss: 0.7170, weighted loss: 0.7216 label: 2, bag_size: 207
+batch 1900, loss: 2.9372, weighted loss: 2.9372 label: 6, bag_size: 444
+batch 2000, loss: 2.0755, weighted loss: 2.0781 label: 6, bag_size: 129
+batch 2100, loss: 3.0786, weighted loss: 3.0795 label: 4, bag_size: 1534
+
+Epoch: 55, train_loss: 2.2544, Coarse Acc: 0.6668, Fine Acc: 0.4995
+Val Set, val_loss: 608.3759
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3663
+Fine Overall Accuracy: 0.5152
+Fine Overall F1 Score: 0.1161
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.6440, weighted loss: 1.6442 label: 2, bag_size: 940
+batch 200, loss: 4.1661, weighted loss: 4.1672 label: 5, bag_size: 109
+batch 300, loss: 1.0697, weighted loss: 1.0701 label: 5, bag_size: 1020
+batch 400, loss: 1.0947, weighted loss: 1.0972 label: 5, bag_size: 394
+batch 500, loss: 0.1268, weighted loss: 0.1269 label: 5, bag_size: 307
+batch 600, loss: 2.0332, weighted loss: 2.0333 label: 2, bag_size: 237
+batch 700, loss: 2.6404, weighted loss: 2.6407 label: 2, bag_size: 1616
+batch 800, loss: 3.6449, weighted loss: 3.6454 label: 3, bag_size: 1223
+batch 900, loss: 0.8214, weighted loss: 0.8238 label: 2, bag_size: 480
+batch 1000, loss: 1.6749, weighted loss: 1.6755 label: 5, bag_size: 337
+batch 1100, loss: 4.1876, weighted loss: 4.1877 label: 8, bag_size: 558
+batch 1200, loss: 3.3180, weighted loss: 3.3181 label: 4, bag_size: 574
+batch 1300, loss: 2.1045, weighted loss: 2.1053 label: 2, bag_size: 654
+batch 1400, loss: 2.3443, weighted loss: 2.3448 label: 2, bag_size: 80
+batch 1500, loss: 1.1943, weighted loss: 1.1952 label: 5, bag_size: 773
+batch 1600, loss: 2.5767, weighted loss: 2.5771 label: 6, bag_size: 896
+batch 1700, loss: 0.8001, weighted loss: 0.8015 label: 5, bag_size: 262
+batch 1800, loss: 2.6548, weighted loss: 2.6559 label: 3, bag_size: 1046
+batch 1900, loss: 2.9823, weighted loss: 2.9838 label: 6, bag_size: 106
+batch 2000, loss: 6.2831, weighted loss: 6.2834 label: 1, bag_size: 352
+batch 2100, loss: 0.4486, weighted loss: 0.4488 label: 5, bag_size: 1301
+
+Epoch: 56, train_loss: 2.2520, Coarse Acc: 0.6705, Fine Acc: 0.4991
+Val Set, val_loss: 607.9244
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3662
+Fine Overall Accuracy: 0.5152
+Fine Overall F1 Score: 0.1163
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.0482, weighted loss: 1.0490 label: 2, bag_size: 981
+batch 200, loss: 1.1474, weighted loss: 1.1478 label: 2, bag_size: 483
+batch 300, loss: 4.1884, weighted loss: 4.1884 label: 2, bag_size: 361
+batch 400, loss: 0.1860, weighted loss: 0.1861 label: 5, bag_size: 290
+batch 500, loss: 0.5476, weighted loss: 0.5490 label: 2, bag_size: 2535
+batch 600, loss: 2.7840, weighted loss: 2.7880 label: 4, bag_size: 217
+batch 700, loss: 1.6396, weighted loss: 1.6396 label: 2, bag_size: 1124
+batch 800, loss: 2.5733, weighted loss: 2.5739 label: 2, bag_size: 544
+batch 900, loss: 1.7970, weighted loss: 1.7971 label: 5, bag_size: 742
+batch 1000, loss: 3.3601, weighted loss: 3.3604 label: 6, bag_size: 1836
+batch 1100, loss: 0.6260, weighted loss: 0.6285 label: 2, bag_size: 784
+batch 1200, loss: 1.1485, weighted loss: 1.1492 label: 2, bag_size: 2239
+batch 1300, loss: 0.2894, weighted loss: 0.2895 label: 5, bag_size: 702
+batch 1400, loss: 3.9231, weighted loss: 3.9237 label: 8, bag_size: 483
+batch 1500, loss: 4.5714, weighted loss: 4.5721 label: 4, bag_size: 287
+batch 1600, loss: 2.0434, weighted loss: 2.0437 label: 6, bag_size: 434
+batch 1700, loss: 1.2492, weighted loss: 1.2496 label: 5, bag_size: 814
+batch 1800, loss: 2.5304, weighted loss: 2.5305 label: 3, bag_size: 501
+batch 1900, loss: 3.0350, weighted loss: 3.0352 label: 3, bag_size: 1441
+batch 2000, loss: 1.7269, weighted loss: 1.7282 label: 5, bag_size: 284
+batch 2100, loss: 2.7804, weighted loss: 2.7825 label: 5, bag_size: 297
+
+Epoch: 57, train_loss: 2.2491, Coarse Acc: 0.6664, Fine Acc: 0.4995
+Val Set, val_loss: 607.5358
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3684
+Fine Overall Accuracy: 0.5152
+Fine Overall F1 Score: 0.1160
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.5587, weighted loss: 1.5590 label: 5, bag_size: 655
+batch 200, loss: 1.1912, weighted loss: 1.1940 label: 4, bag_size: 563
+batch 300, loss: 3.0997, weighted loss: 3.1004 label: 7, bag_size: 312
+batch 400, loss: 4.8715, weighted loss: 4.8737 label: 3, bag_size: 233
+batch 500, loss: 1.8736, weighted loss: 1.8740 label: 5, bag_size: 188
+batch 600, loss: 0.0740, weighted loss: 0.0740 label: 5, bag_size: 190
+batch 700, loss: 1.4851, weighted loss: 1.4852 label: 5, bag_size: 854
+batch 800, loss: 2.0145, weighted loss: 2.0152 label: 5, bag_size: 174
+batch 900, loss: 3.1145, weighted loss: 3.1151 label: 2, bag_size: 407
+batch 1000, loss: 0.5163, weighted loss: 0.5164 label: 5, bag_size: 844
+batch 1100, loss: 3.3154, weighted loss: 3.3163 label: 8, bag_size: 209
+batch 1200, loss: 1.2829, weighted loss: 1.2836 label: 5, bag_size: 326
+batch 1300, loss: 2.6117, weighted loss: 2.6128 label: 6, bag_size: 1655
+batch 1400, loss: 2.5243, weighted loss: 2.5249 label: 2, bag_size: 637
+batch 1500, loss: 0.6294, weighted loss: 0.6295 label: 5, bag_size: 229
+batch 1600, loss: 6.1558, weighted loss: 6.1559 label: 10, bag_size: 751
+batch 1700, loss: 2.6869, weighted loss: 2.6873 label: 6, bag_size: 1010
+batch 1800, loss: 0.3882, weighted loss: 0.3885 label: 5, bag_size: 342
+batch 1900, loss: 5.1270, weighted loss: 5.1277 label: 1, bag_size: 129
+batch 2000, loss: 3.1334, weighted loss: 3.1343 label: 3, bag_size: 1678
+batch 2100, loss: 1.9206, weighted loss: 1.9216 label: 6, bag_size: 334
+
+Epoch: 58, train_loss: 2.2477, Coarse Acc: 0.6691, Fine Acc: 0.5005
+Val Set, val_loss: 607.1607
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3852
+Fine Overall Accuracy: 0.5152
+Fine Overall F1 Score: 0.1162
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.5271, weighted loss: 3.5297 label: 8, bag_size: 541
+batch 200, loss: 2.1186, weighted loss: 2.1194 label: 6, bag_size: 245
+batch 300, loss: 1.2024, weighted loss: 1.2026 label: 2, bag_size: 821
+batch 400, loss: 0.7721, weighted loss: 0.7740 label: 2, bag_size: 497
+batch 500, loss: 1.7643, weighted loss: 1.7653 label: 6, bag_size: 555
+batch 600, loss: 2.3883, weighted loss: 2.3884 label: 6, bag_size: 266
+batch 700, loss: 2.8202, weighted loss: 2.8203 label: 2, bag_size: 1214
+batch 800, loss: 1.8928, weighted loss: 1.8929 label: 2, bag_size: 349
+batch 900, loss: 3.0705, weighted loss: 3.0708 label: 6, bag_size: 243
+batch 1000, loss: 0.8981, weighted loss: 0.8996 label: 5, bag_size: 887
+batch 1100, loss: 2.2012, weighted loss: 2.2015 label: 2, bag_size: 955
+batch 1200, loss: 0.9060, weighted loss: 0.9061 label: 2, bag_size: 1427
+batch 1300, loss: 2.4362, weighted loss: 2.4364 label: 6, bag_size: 701
+batch 1400, loss: 3.4520, weighted loss: 3.4523 label: 8, bag_size: 430
+batch 1500, loss: 1.9094, weighted loss: 1.9107 label: 5, bag_size: 111
+batch 1600, loss: 3.8710, weighted loss: 3.8715 label: 8, bag_size: 160
+batch 1700, loss: 3.4184, weighted loss: 3.4186 label: 6, bag_size: 1836
+batch 1800, loss: 2.9665, weighted loss: 2.9666 label: 4, bag_size: 278
+batch 1900, loss: 3.6576, weighted loss: 3.6584 label: 8, bag_size: 340
+batch 2000, loss: 3.3926, weighted loss: 3.3932 label: 5, bag_size: 608
+batch 2100, loss: 2.7461, weighted loss: 2.7462 label: 4, bag_size: 2080
+
+Epoch: 59, train_loss: 2.2444, Coarse Acc: 0.6700, Fine Acc: 0.5000
+Val Set, val_loss: 606.8700
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3800
+Fine Overall Accuracy: 0.5152
+Fine Overall F1 Score: 0.1160
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.2367, weighted loss: 0.2370 label: 5, bag_size: 853
+batch 200, loss: 6.5035, weighted loss: 6.5038 label: 10, bag_size: 335
+batch 300, loss: 1.3002, weighted loss: 1.3013 label: 5, bag_size: 1000
+batch 400, loss: 3.5874, weighted loss: 3.5884 label: 2, bag_size: 169
+batch 500, loss: 1.0355, weighted loss: 1.0391 label: 2, bag_size: 270
+batch 600, loss: 1.1823, weighted loss: 1.1826 label: 5, bag_size: 795
+batch 700, loss: 1.2285, weighted loss: 1.2287 label: 5, bag_size: 360
+batch 800, loss: 0.6275, weighted loss: 0.6324 label: 2, bag_size: 2186
+batch 900, loss: 1.0198, weighted loss: 1.0202 label: 5, bag_size: 431
+batch 1000, loss: 1.1320, weighted loss: 1.1324 label: 2, bag_size: 1085
+batch 1100, loss: 2.8393, weighted loss: 2.8397 label: 6, bag_size: 527
+batch 1200, loss: 5.9407, weighted loss: 5.9410 label: 1, bag_size: 67
+batch 1300, loss: 2.6419, weighted loss: 2.6422 label: 6, bag_size: 298
+batch 1400, loss: 0.4839, weighted loss: 0.4839 label: 5, bag_size: 796
+batch 1500, loss: 0.1411, weighted loss: 0.1411 label: 5, bag_size: 635
+batch 1600, loss: 6.1488, weighted loss: 6.1489 label: 10, bag_size: 752
+batch 1700, loss: 0.2332, weighted loss: 0.2335 label: 5, bag_size: 987
+batch 1800, loss: 4.1486, weighted loss: 4.1487 label: 3, bag_size: 952
+batch 1900, loss: 3.4391, weighted loss: 3.4393 label: 8, bag_size: 328
+batch 2000, loss: 2.2252, weighted loss: 2.2255 label: 2, bag_size: 296
+batch 2100, loss: 1.7164, weighted loss: 1.7183 label: 3, bag_size: 1138
+
+Epoch: 60, train_loss: 2.2429, Coarse Acc: 0.6687, Fine Acc: 0.5009
+Val Set, val_loss: 606.3888
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3847
+Fine Overall Accuracy: 0.5152
+Fine Overall F1 Score: 0.1160
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.3069, weighted loss: 1.3083 label: 5, bag_size: 1564
+batch 200, loss: 0.5132, weighted loss: 0.5136 label: 5, bag_size: 239
+batch 300, loss: 1.4088, weighted loss: 1.4098 label: 5, bag_size: 69
+batch 400, loss: 1.9659, weighted loss: 1.9677 label: 5, bag_size: 661
+batch 500, loss: 2.5574, weighted loss: 2.5577 label: 6, bag_size: 896
+batch 600, loss: 2.5581, weighted loss: 2.5585 label: 5, bag_size: 562
+batch 700, loss: 0.4190, weighted loss: 0.4190 label: 5, bag_size: 330
+batch 800, loss: 1.4974, weighted loss: 1.4995 label: 4, bag_size: 1673
+batch 900, loss: 3.7896, weighted loss: 3.7901 label: 8, bag_size: 216
+batch 1000, loss: 0.8318, weighted loss: 0.8324 label: 5, bag_size: 217
+batch 1100, loss: 3.2330, weighted loss: 3.2357 label: 2, bag_size: 823
+batch 1200, loss: 0.3695, weighted loss: 0.3698 label: 5, bag_size: 812
+batch 1300, loss: 0.7515, weighted loss: 0.7542 label: 2, bag_size: 388
+batch 1400, loss: 3.5322, weighted loss: 3.5350 label: 8, bag_size: 201
+batch 1500, loss: 0.8018, weighted loss: 0.8018 label: 5, bag_size: 866
+batch 1600, loss: 3.3449, weighted loss: 3.3461 label: 2, bag_size: 393
+batch 1700, loss: 3.7546, weighted loss: 3.7554 label: 7, bag_size: 263
+batch 1800, loss: 1.8406, weighted loss: 1.8413 label: 6, bag_size: 209
+batch 1900, loss: 1.2373, weighted loss: 1.2381 label: 5, bag_size: 1853
+batch 2000, loss: 1.2726, weighted loss: 1.2803 label: 5, bag_size: 473
+batch 2100, loss: 0.9069, weighted loss: 0.9086 label: 2, bag_size: 2658
+
+Epoch: 61, train_loss: 2.2395, Coarse Acc: 0.6682, Fine Acc: 0.5046
+Val Set, val_loss: 606.0605
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3824
+Fine Overall Accuracy: 0.5152
+Fine Overall F1 Score: 0.1161
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.3636, weighted loss: 0.3656 label: 2, bag_size: 1078
+batch 200, loss: 1.2318, weighted loss: 1.2322 label: 2, bag_size: 206
+batch 300, loss: 1.8360, weighted loss: 1.8376 label: 5, bag_size: 661
+batch 400, loss: 1.4312, weighted loss: 1.4316 label: 5, bag_size: 455
+batch 500, loss: 0.8903, weighted loss: 0.8913 label: 2, bag_size: 1279
+batch 600, loss: 3.8294, weighted loss: 3.8297 label: 8, bag_size: 285
+batch 700, loss: 0.2345, weighted loss: 0.2345 label: 5, bag_size: 441
+batch 800, loss: 1.0222, weighted loss: 1.0226 label: 5, bag_size: 298
+batch 900, loss: 6.0339, weighted loss: 6.0344 label: 10, bag_size: 357
+batch 1000, loss: 2.4989, weighted loss: 2.4990 label: 2, bag_size: 190
+batch 1100, loss: 1.7903, weighted loss: 1.7920 label: 5, bag_size: 299
+batch 1200, loss: 1.4974, weighted loss: 1.4975 label: 5, bag_size: 880
+batch 1300, loss: 2.1819, weighted loss: 2.1827 label: 2, bag_size: 204
+batch 1400, loss: 5.1847, weighted loss: 5.1863 label: 10, bag_size: 239
+batch 1500, loss: 0.2534, weighted loss: 0.2538 label: 5, bag_size: 1325
+batch 1600, loss: 1.1083, weighted loss: 1.1084 label: 5, bag_size: 91
+batch 1700, loss: 2.3735, weighted loss: 2.3740 label: 2, bag_size: 531
+batch 1800, loss: 0.0977, weighted loss: 0.0977 label: 5, bag_size: 432
+batch 1900, loss: 1.9542, weighted loss: 1.9546 label: 2, bag_size: 1618
+batch 2000, loss: 3.6733, weighted loss: 3.6738 label: 2, bag_size: 360
+batch 2100, loss: 1.8994, weighted loss: 1.8997 label: 5, bag_size: 387
+
+Epoch: 62, train_loss: 2.2376, Coarse Acc: 0.6664, Fine Acc: 0.4995
+Val Set, val_loss: 605.6877
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3843
+Fine Overall Accuracy: 0.5152
+Fine Overall F1 Score: 0.1161
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.4525, weighted loss: 1.4546 label: 2, bag_size: 496
+batch 200, loss: 3.1226, weighted loss: 3.1238 label: 5, bag_size: 555
+batch 300, loss: 2.0359, weighted loss: 2.0367 label: 2, bag_size: 1897
+batch 400, loss: 0.1285, weighted loss: 0.1285 label: 5, bag_size: 414
+batch 500, loss: 2.2793, weighted loss: 2.2797 label: 6, bag_size: 507
+batch 600, loss: 2.1606, weighted loss: 2.1624 label: 2, bag_size: 555
+batch 700, loss: 1.1033, weighted loss: 1.1054 label: 2, bag_size: 193
+batch 800, loss: 2.1559, weighted loss: 2.1569 label: 2, bag_size: 258
+batch 900, loss: 0.1426, weighted loss: 0.1426 label: 5, bag_size: 635
+batch 1000, loss: 0.2924, weighted loss: 0.2925 label: 5, bag_size: 562
+batch 1100, loss: 4.5598, weighted loss: 4.5599 label: 5, bag_size: 3051
+batch 1200, loss: 4.8326, weighted loss: 4.8353 label: 7, bag_size: 229
+batch 1300, loss: 2.5631, weighted loss: 2.5634 label: 6, bag_size: 316
+batch 1400, loss: 1.0475, weighted loss: 1.0484 label: 2, bag_size: 112
+batch 1500, loss: 3.1476, weighted loss: 3.1495 label: 2, bag_size: 119
+batch 1600, loss: 3.5453, weighted loss: 3.5454 label: 6, bag_size: 563
+batch 1700, loss: 3.6682, weighted loss: 3.6682 label: 2, bag_size: 235
+batch 1800, loss: 0.1080, weighted loss: 0.1080 label: 5, bag_size: 331
+batch 1900, loss: 1.2533, weighted loss: 1.2538 label: 5, bag_size: 320
+batch 2000, loss: 2.6420, weighted loss: 2.6421 label: 2, bag_size: 347
+batch 2100, loss: 1.8932, weighted loss: 1.8937 label: 6, bag_size: 461
+
+Epoch: 63, train_loss: 2.2360, Coarse Acc: 0.6691, Fine Acc: 0.5005
+Val Set, val_loss: 605.3519
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3978
+Fine Overall Accuracy: 0.5152
+Fine Overall F1 Score: 0.1159
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.3199, weighted loss: 2.3201 label: 6, bag_size: 701
+batch 200, loss: 1.2157, weighted loss: 1.2163 label: 5, bag_size: 524
+batch 300, loss: 5.5396, weighted loss: 5.5411 label: 7, bag_size: 180
+batch 400, loss: 2.6535, weighted loss: 2.6574 label: 4, bag_size: 217
+batch 500, loss: 5.5707, weighted loss: 5.5728 label: 1, bag_size: 198
+batch 600, loss: 1.3669, weighted loss: 1.3674 label: 2, bag_size: 1479
+batch 700, loss: 0.2161, weighted loss: 0.2161 label: 5, bag_size: 300
+batch 800, loss: 1.5758, weighted loss: 1.5772 label: 4, bag_size: 714
+batch 900, loss: 1.0873, weighted loss: 1.0897 label: 5, bag_size: 394
+batch 1000, loss: 1.9699, weighted loss: 1.9723 label: 4, bag_size: 556
+batch 1100, loss: 3.4856, weighted loss: 3.4881 label: 8, bag_size: 201
+batch 1200, loss: 3.9673, weighted loss: 3.9678 label: 5, bag_size: 150
+batch 1300, loss: 0.9994, weighted loss: 1.0009 label: 2, bag_size: 392
+batch 1400, loss: 0.3343, weighted loss: 0.3345 label: 5, bag_size: 292
+batch 1500, loss: 1.8712, weighted loss: 1.8719 label: 6, bag_size: 92
+batch 1600, loss: 0.5055, weighted loss: 0.5058 label: 5, bag_size: 304
+batch 1700, loss: 3.2938, weighted loss: 3.2946 label: 5, bag_size: 324
+batch 1800, loss: 1.2110, weighted loss: 1.2116 label: 5, bag_size: 460
+batch 1900, loss: 0.0950, weighted loss: 0.0952 label: 5, bag_size: 686
+batch 2000, loss: 7.1798, weighted loss: 7.1807 label: 10, bag_size: 372
+batch 2100, loss: 1.7119, weighted loss: 1.7152 label: 5, bag_size: 113
+
+Epoch: 64, train_loss: 2.2335, Coarse Acc: 0.6677, Fine Acc: 0.5009
+Val Set, val_loss: 604.9768
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3826
+Fine Overall Accuracy: 0.5189
+Fine Overall F1 Score: 0.1170
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.1928, weighted loss: 3.1931 label: 5, bag_size: 2209
+batch 200, loss: 3.3609, weighted loss: 3.3612 label: 8, bag_size: 264
+batch 300, loss: 3.6642, weighted loss: 3.6643 label: 8, bag_size: 720
+batch 400, loss: 3.2199, weighted loss: 3.2204 label: 2, bag_size: 564
+batch 500, loss: 1.8064, weighted loss: 1.8072 label: 6, bag_size: 368
+batch 600, loss: 2.2490, weighted loss: 2.2491 label: 2, bag_size: 587
+batch 700, loss: 1.7315, weighted loss: 1.7323 label: 5, bag_size: 599
+batch 800, loss: 0.4543, weighted loss: 0.4543 label: 5, bag_size: 357
+batch 900, loss: 6.7246, weighted loss: 6.7246 label: 7, bag_size: 704
+batch 1000, loss: 1.1977, weighted loss: 1.1984 label: 2, bag_size: 1293
+batch 1100, loss: 3.6885, weighted loss: 3.6892 label: 3, bag_size: 972
+batch 1200, loss: 3.1271, weighted loss: 3.1271 label: 5, bag_size: 1744
+batch 1300, loss: 1.6707, weighted loss: 1.6713 label: 5, bag_size: 229
+batch 1400, loss: 0.7428, weighted loss: 0.7457 label: 2, bag_size: 174
+batch 1500, loss: 1.7116, weighted loss: 1.7128 label: 5, bag_size: 310
+batch 1600, loss: 0.3992, weighted loss: 0.3993 label: 5, bag_size: 346
+batch 1700, loss: 1.1546, weighted loss: 1.1563 label: 2, bag_size: 848
+batch 1800, loss: 1.3702, weighted loss: 1.3709 label: 5, bag_size: 318
+batch 1900, loss: 2.5231, weighted loss: 2.5231 label: 6, bag_size: 268
+batch 2000, loss: 0.3857, weighted loss: 0.3860 label: 5, bag_size: 812
+batch 2100, loss: 0.8749, weighted loss: 0.8751 label: 5, bag_size: 2032
+
+Epoch: 65, train_loss: 2.2313, Coarse Acc: 0.6728, Fine Acc: 0.5028
+Val Set, val_loss: 604.6658
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3978
+Fine Overall Accuracy: 0.5189
+Fine Overall F1 Score: 0.1170
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.8716, weighted loss: 0.8718 label: 5, bag_size: 339
+batch 200, loss: 1.6373, weighted loss: 1.6379 label: 5, bag_size: 449
+batch 300, loss: 3.3347, weighted loss: 3.3349 label: 8, bag_size: 344
+batch 400, loss: 0.9946, weighted loss: 0.9951 label: 2, bag_size: 2107
+batch 500, loss: 3.8601, weighted loss: 3.8619 label: 7, bag_size: 274
+batch 600, loss: 0.9084, weighted loss: 0.9088 label: 5, bag_size: 322
+batch 700, loss: 1.9200, weighted loss: 1.9208 label: 2, bag_size: 943
+batch 800, loss: 3.7980, weighted loss: 3.7993 label: 8, bag_size: 185
+batch 900, loss: 1.2404, weighted loss: 1.2428 label: 5, bag_size: 696
+batch 1000, loss: 1.6096, weighted loss: 1.6099 label: 2, bag_size: 687
+batch 1100, loss: 2.8296, weighted loss: 2.8298 label: 2, bag_size: 298
+batch 1200, loss: 2.3077, weighted loss: 2.3079 label: 6, bag_size: 625
+batch 1300, loss: 1.8062, weighted loss: 1.8062 label: 2, bag_size: 356
+batch 1400, loss: 2.7610, weighted loss: 2.7615 label: 3, bag_size: 1006
+batch 1500, loss: 1.6739, weighted loss: 1.6751 label: 5, bag_size: 344
+batch 1600, loss: 0.4235, weighted loss: 0.4237 label: 5, bag_size: 288
+batch 1700, loss: 1.4609, weighted loss: 1.4612 label: 5, bag_size: 1068
+batch 1800, loss: 2.5172, weighted loss: 2.5181 label: 2, bag_size: 427
+batch 1900, loss: 2.5578, weighted loss: 2.5579 label: 3, bag_size: 501
+batch 2000, loss: 2.5980, weighted loss: 2.5985 label: 2, bag_size: 411
+batch 2100, loss: 1.6221, weighted loss: 1.6233 label: 2, bag_size: 766
+
+Epoch: 66, train_loss: 2.2294, Coarse Acc: 0.6659, Fine Acc: 0.5032
+Val Set, val_loss: 604.3385
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3950
+Fine Overall Accuracy: 0.5189
+Fine Overall F1 Score: 0.1168
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.0305, weighted loss: 2.0308 label: 3, bag_size: 510
+batch 200, loss: 1.8489, weighted loss: 1.8491 label: 2, bag_size: 989
+batch 300, loss: 1.7746, weighted loss: 1.7754 label: 5, bag_size: 513
+batch 400, loss: 0.0890, weighted loss: 0.0891 label: 5, bag_size: 686
+batch 500, loss: 0.9871, weighted loss: 0.9909 label: 2, bag_size: 1527
+batch 600, loss: 2.7555, weighted loss: 2.7559 label: 6, bag_size: 304
+batch 700, loss: 2.4704, weighted loss: 2.4706 label: 3, bag_size: 2069
+batch 800, loss: 5.2029, weighted loss: 5.2030 label: 7, bag_size: 561
+batch 900, loss: 5.8255, weighted loss: 5.8271 label: 3, bag_size: 406
+batch 1000, loss: 3.4042, weighted loss: 3.4049 label: 3, bag_size: 106
+batch 1100, loss: 2.3653, weighted loss: 2.3656 label: 6, bag_size: 367
+batch 1200, loss: 1.2462, weighted loss: 1.2486 label: 4, bag_size: 2272
+batch 1300, loss: 0.9006, weighted loss: 0.9024 label: 2, bag_size: 526
+batch 1400, loss: 1.3876, weighted loss: 1.3883 label: 6, bag_size: 333
+batch 1500, loss: 7.0597, weighted loss: 7.0602 label: 8, bag_size: 568
+batch 1600, loss: 1.0473, weighted loss: 1.0483 label: 6, bag_size: 787
+batch 1700, loss: 0.7030, weighted loss: 0.7046 label: 2, bag_size: 3615
+batch 1800, loss: 0.1329, weighted loss: 0.1331 label: 5, bag_size: 1015
+batch 1900, loss: 0.3951, weighted loss: 0.3952 label: 5, bag_size: 574
+batch 2000, loss: 1.5108, weighted loss: 1.5109 label: 5, bag_size: 546
+batch 2100, loss: 1.0574, weighted loss: 1.0587 label: 5, bag_size: 463
+
+Epoch: 67, train_loss: 2.2272, Coarse Acc: 0.6691, Fine Acc: 0.5023
+Val Set, val_loss: 604.0134
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3950
+Fine Overall Accuracy: 0.5189
+Fine Overall F1 Score: 0.1170
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.9174, weighted loss: 0.9180 label: 2, bag_size: 1628
+batch 200, loss: 0.7518, weighted loss: 0.7579 label: 2, bag_size: 601
+batch 300, loss: 0.3045, weighted loss: 0.3054 label: 5, bag_size: 256
+batch 400, loss: 1.5414, weighted loss: 1.5435 label: 6, bag_size: 326
+batch 500, loss: 1.6307, weighted loss: 1.6404 label: 3, bag_size: 504
+batch 600, loss: 1.2138, weighted loss: 1.2151 label: 6, bag_size: 89
+batch 700, loss: 2.8328, weighted loss: 2.8332 label: 3, bag_size: 635
+batch 800, loss: 1.3931, weighted loss: 1.3934 label: 2, bag_size: 128
+batch 900, loss: 4.9204, weighted loss: 4.9213 label: 4, bag_size: 593
+batch 1000, loss: 0.6944, weighted loss: 0.6953 label: 2, bag_size: 309
+batch 1100, loss: 3.7454, weighted loss: 3.7462 label: 3, bag_size: 459
+batch 1200, loss: 0.3992, weighted loss: 0.3994 label: 5, bag_size: 330
+batch 1300, loss: 2.4270, weighted loss: 2.4275 label: 6, bag_size: 1239
+batch 1400, loss: 2.3823, weighted loss: 2.3855 label: 4, bag_size: 185
+batch 1500, loss: 2.7917, weighted loss: 2.7930 label: 7, bag_size: 311
+batch 1600, loss: 1.3863, weighted loss: 1.3868 label: 5, bag_size: 151
+batch 1700, loss: 2.8040, weighted loss: 2.8063 label: 2, bag_size: 420
+batch 1800, loss: 2.6891, weighted loss: 2.6897 label: 3, bag_size: 160
+batch 1900, loss: 0.0452, weighted loss: 0.0452 label: 5, bag_size: 407
+batch 2000, loss: 0.6573, weighted loss: 0.6594 label: 5, bag_size: 1048
+batch 2100, loss: 3.0042, weighted loss: 3.0046 label: 2, bag_size: 618
+
+Epoch: 68, train_loss: 2.2249, Coarse Acc: 0.6687, Fine Acc: 0.5037
+Val Set, val_loss: 603.6464
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3950
+Fine Overall Accuracy: 0.5189
+Fine Overall F1 Score: 0.1170
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.6377, weighted loss: 2.6387 label: 6, bag_size: 285
+batch 200, loss: 2.8524, weighted loss: 2.8529 label: 5, bag_size: 1796
+batch 300, loss: 9.7318, weighted loss: 9.7332 label: 5, bag_size: 3015
+batch 400, loss: 3.1038, weighted loss: 3.1053 label: 7, bag_size: 179
+batch 500, loss: 4.6761, weighted loss: 4.6761 label: 2, bag_size: 983
+batch 600, loss: 2.7181, weighted loss: 2.7189 label: 3, bag_size: 602
+batch 700, loss: 0.5220, weighted loss: 0.5237 label: 2, bag_size: 1353
+batch 800, loss: 0.1214, weighted loss: 0.1216 label: 5, bag_size: 761
+batch 900, loss: 1.3182, weighted loss: 1.3195 label: 5, bag_size: 125
+batch 1000, loss: 1.3508, weighted loss: 1.3510 label: 5, bag_size: 649
+batch 1100, loss: 2.0106, weighted loss: 2.0108 label: 2, bag_size: 248
+batch 1200, loss: 3.6057, weighted loss: 3.6059 label: 2, bag_size: 764
+batch 1300, loss: 1.0804, weighted loss: 1.0819 label: 2, bag_size: 192
+batch 1400, loss: 1.5672, weighted loss: 1.5675 label: 2, bag_size: 1171
+batch 1500, loss: 1.7606, weighted loss: 1.7610 label: 6, bag_size: 351
+batch 1600, loss: 1.4366, weighted loss: 1.4382 label: 4, bag_size: 1445
+batch 1700, loss: 0.4461, weighted loss: 0.4462 label: 5, bag_size: 1246
+batch 1800, loss: 5.4009, weighted loss: 5.4012 label: 8, bag_size: 1105
+batch 1900, loss: 2.8099, weighted loss: 2.8105 label: 5, bag_size: 121
+batch 2000, loss: 1.1219, weighted loss: 1.1222 label: 5, bag_size: 91
+batch 2100, loss: 2.9890, weighted loss: 2.9893 label: 5, bag_size: 237
+
+Epoch: 69, train_loss: 2.2222, Coarse Acc: 0.6756, Fine Acc: 0.5074
+Val Set, val_loss: 603.5263
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3978
+Fine Overall Accuracy: 0.5152
+Fine Overall F1 Score: 0.1163
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.5107, weighted loss: 1.5121 label: 2, bag_size: 225
+batch 200, loss: 1.2558, weighted loss: 1.2560 label: 5, bag_size: 718
+batch 300, loss: 1.5804, weighted loss: 1.5806 label: 2, bag_size: 1114
+batch 400, loss: 1.8824, weighted loss: 1.8826 label: 5, bag_size: 890
+batch 500, loss: 6.4109, weighted loss: 6.4122 label: 1, bag_size: 153
+batch 600, loss: 1.8517, weighted loss: 1.8522 label: 2, bag_size: 762
+batch 700, loss: 8.1264, weighted loss: 8.1267 label: 1, bag_size: 807
+batch 800, loss: 2.5016, weighted loss: 2.5018 label: 4, bag_size: 507
+batch 900, loss: 0.8489, weighted loss: 0.8497 label: 2, bag_size: 1304
+batch 1000, loss: 4.5606, weighted loss: 4.5607 label: 7, bag_size: 778
+batch 1100, loss: 2.0662, weighted loss: 2.0670 label: 2, bag_size: 565
+batch 1200, loss: 2.8604, weighted loss: 2.8610 label: 6, bag_size: 589
+batch 1300, loss: 2.8463, weighted loss: 2.8465 label: 2, bag_size: 634
+batch 1400, loss: 1.6331, weighted loss: 1.6352 label: 6, bag_size: 361
+batch 1500, loss: 1.5298, weighted loss: 1.5299 label: 5, bag_size: 366
+batch 1600, loss: 0.6893, weighted loss: 0.6893 label: 5, bag_size: 665
+batch 1700, loss: 2.1987, weighted loss: 2.1989 label: 5, bag_size: 506
+batch 1800, loss: 0.4399, weighted loss: 0.4402 label: 5, bag_size: 2141
+batch 1900, loss: 1.6237, weighted loss: 1.6297 label: 3, bag_size: 836
+batch 2000, loss: 2.0092, weighted loss: 2.0095 label: 3, bag_size: 510
+batch 2100, loss: 3.9870, weighted loss: 3.9872 label: 8, bag_size: 276
+
+Epoch: 70, train_loss: 2.2208, Coarse Acc: 0.6710, Fine Acc: 0.5055
+Val Set, val_loss: 603.2852
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3969
+Fine Overall Accuracy: 0.5152
+Fine Overall F1 Score: 0.1161
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 4.7166, weighted loss: 4.7180 label: 4, bag_size: 317
+batch 200, loss: 0.3745, weighted loss: 0.3745 label: 5, bag_size: 518
+batch 300, loss: 3.7156, weighted loss: 3.7159 label: 2, bag_size: 73
+batch 400, loss: 2.6450, weighted loss: 2.6452 label: 6, bag_size: 802
+batch 500, loss: 0.6598, weighted loss: 0.6633 label: 2, bag_size: 872
+batch 600, loss: 1.6958, weighted loss: 1.6980 label: 6, bag_size: 361
+batch 700, loss: 0.8862, weighted loss: 0.8893 label: 6, bag_size: 504
+batch 800, loss: 3.2042, weighted loss: 3.2054 label: 7, bag_size: 209
+batch 900, loss: 3.9885, weighted loss: 3.9886 label: 3, bag_size: 1168
+batch 1000, loss: 7.0400, weighted loss: 7.0404 label: 7, bag_size: 94
+batch 1100, loss: 0.3740, weighted loss: 0.3741 label: 5, bag_size: 429
+batch 1200, loss: 1.1867, weighted loss: 1.1867 label: 5, bag_size: 534
+batch 1300, loss: 1.3738, weighted loss: 1.3740 label: 5, bag_size: 392
+batch 1400, loss: 0.2323, weighted loss: 0.2327 label: 5, bag_size: 1325
+batch 1500, loss: 1.0274, weighted loss: 1.0286 label: 5, bag_size: 274
+batch 1600, loss: 2.6316, weighted loss: 2.6317 label: 2, bag_size: 646
+batch 1700, loss: 1.6550, weighted loss: 1.6550 label: 2, bag_size: 643
+batch 1800, loss: 4.1605, weighted loss: 4.1611 label: 7, bag_size: 417
+batch 1900, loss: 4.9349, weighted loss: 4.9364 label: 10, bag_size: 837
+batch 2000, loss: 1.4068, weighted loss: 1.4083 label: 5, bag_size: 216
+batch 2100, loss: 2.6975, weighted loss: 2.6998 label: 8, bag_size: 208
+
+Epoch: 71, train_loss: 2.2190, Coarse Acc: 0.6696, Fine Acc: 0.5037
+Val Set, val_loss: 602.9926
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3937
+Fine Overall Accuracy: 0.5152
+Fine Overall F1 Score: 0.1163
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.7839, weighted loss: 0.7897 label: 2, bag_size: 601
+batch 200, loss: 0.9446, weighted loss: 0.9447 label: 5, bag_size: 892
+batch 300, loss: 3.3207, weighted loss: 3.3210 label: 4, bag_size: 398
+batch 400, loss: 2.8946, weighted loss: 2.8946 label: 6, bag_size: 444
+batch 500, loss: 3.1905, weighted loss: 3.1919 label: 4, bag_size: 1380
+batch 600, loss: 0.2941, weighted loss: 0.2949 label: 5, bag_size: 859
+batch 700, loss: 4.7198, weighted loss: 4.7199 label: 6, bag_size: 2193
+batch 800, loss: 4.7877, weighted loss: 4.7881 label: 8, bag_size: 153
+batch 900, loss: 6.6304, weighted loss: 6.6307 label: 7, bag_size: 345
+batch 1000, loss: 0.4678, weighted loss: 0.4679 label: 5, bag_size: 688
+batch 1100, loss: 0.7470, weighted loss: 0.7472 label: 5, bag_size: 444
+batch 1200, loss: 4.1988, weighted loss: 4.1990 label: 8, bag_size: 571
+batch 1300, loss: 3.9047, weighted loss: 3.9111 label: 2, bag_size: 1663
+batch 1400, loss: 2.9870, weighted loss: 2.9880 label: 6, bag_size: 325
+batch 1500, loss: 1.5412, weighted loss: 1.5414 label: 5, bag_size: 331
+batch 1600, loss: 0.6213, weighted loss: 0.6216 label: 5, bag_size: 482
+batch 1700, loss: 0.3157, weighted loss: 0.3174 label: 2, bag_size: 1078
+batch 1800, loss: 0.1530, weighted loss: 0.1532 label: 5, bag_size: 705
+batch 1900, loss: 8.3307, weighted loss: 8.3326 label: 10, bag_size: 724
+batch 2000, loss: 3.3700, weighted loss: 3.3710 label: 3, bag_size: 262
+batch 2100, loss: 1.3732, weighted loss: 1.3733 label: 2, bag_size: 1567
+
+Epoch: 72, train_loss: 2.2176, Coarse Acc: 0.6700, Fine Acc: 0.5055
+Val Set, val_loss: 602.5582
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3969
+Fine Overall Accuracy: 0.5189
+Fine Overall F1 Score: 0.1171
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.2299, weighted loss: 1.2303 label: 5, bag_size: 1049
+batch 200, loss: 1.7976, weighted loss: 1.7977 label: 5, bag_size: 890
+batch 300, loss: 0.6088, weighted loss: 0.6114 label: 2, bag_size: 2214
+batch 400, loss: 3.8571, weighted loss: 3.8592 label: 8, bag_size: 141
+batch 500, loss: 1.3231, weighted loss: 1.3232 label: 5, bag_size: 370
+batch 600, loss: 1.8279, weighted loss: 1.8322 label: 3, bag_size: 350
+batch 700, loss: 1.6996, weighted loss: 1.6999 label: 5, bag_size: 1678
+batch 800, loss: 3.9755, weighted loss: 3.9760 label: 2, bag_size: 268
+batch 900, loss: 1.3226, weighted loss: 1.3232 label: 5, bag_size: 216
+batch 1000, loss: 3.2642, weighted loss: 3.2650 label: 7, bag_size: 338
+batch 1100, loss: 1.7464, weighted loss: 1.7505 label: 3, bag_size: 1967
+batch 1200, loss: 1.1418, weighted loss: 1.1423 label: 5, bag_size: 408
+batch 1300, loss: 2.5136, weighted loss: 2.5139 label: 6, bag_size: 1122
+batch 1400, loss: 1.9529, weighted loss: 1.9531 label: 2, bag_size: 1269
+batch 1500, loss: 6.0730, weighted loss: 6.0732 label: 9, bag_size: 307
+batch 1600, loss: 2.5281, weighted loss: 2.5297 label: 3, bag_size: 1632
+batch 1700, loss: 0.5771, weighted loss: 0.5773 label: 5, bag_size: 542
+batch 1800, loss: 2.8343, weighted loss: 2.8347 label: 4, bag_size: 793
+batch 1900, loss: 4.2930, weighted loss: 4.2937 label: 4, bag_size: 851
+batch 2000, loss: 6.8181, weighted loss: 6.8184 label: 7, bag_size: 675
+batch 2100, loss: 1.1515, weighted loss: 1.1527 label: 2, bag_size: 1263
+
+Epoch: 73, train_loss: 2.2157, Coarse Acc: 0.6714, Fine Acc: 0.5037
+Val Set, val_loss: 602.2314
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3969
+Fine Overall Accuracy: 0.5189
+Fine Overall F1 Score: 0.1171
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.8462, weighted loss: 2.8464 label: 2, bag_size: 746
+batch 200, loss: 1.6569, weighted loss: 1.6573 label: 5, bag_size: 1555
+batch 300, loss: 0.2065, weighted loss: 0.2066 label: 5, bag_size: 332
+batch 400, loss: 3.0274, weighted loss: 3.0278 label: 3, bag_size: 3892
+batch 500, loss: 3.9945, weighted loss: 3.9973 label: 8, bag_size: 380
+batch 600, loss: 1.8727, weighted loss: 1.8731 label: 6, bag_size: 256
+batch 700, loss: 2.5552, weighted loss: 2.5555 label: 4, bag_size: 2080
+batch 800, loss: 0.8549, weighted loss: 0.8549 label: 5, bag_size: 1330
+batch 900, loss: 2.7431, weighted loss: 2.7439 label: 5, bag_size: 509
+batch 1000, loss: 3.2911, weighted loss: 3.2928 label: 2, bag_size: 508
+batch 1100, loss: 1.6963, weighted loss: 1.6969 label: 4, bag_size: 1204
+batch 1200, loss: 1.0714, weighted loss: 1.0717 label: 5, bag_size: 1020
+batch 1300, loss: 3.5269, weighted loss: 3.5278 label: 3, bag_size: 303
+batch 1400, loss: 2.9194, weighted loss: 2.9210 label: 7, bag_size: 354
+batch 1500, loss: 1.1112, weighted loss: 1.1121 label: 4, bag_size: 847
+batch 1600, loss: 1.4110, weighted loss: 1.4111 label: 5, bag_size: 258
+batch 1700, loss: 0.2179, weighted loss: 0.2181 label: 5, bag_size: 254
+batch 1800, loss: 1.7975, weighted loss: 1.8005 label: 3, bag_size: 2842
+batch 1900, loss: 1.6040, weighted loss: 1.6042 label: 2, bag_size: 687
+batch 2000, loss: 2.4729, weighted loss: 2.4741 label: 3, bag_size: 1632
+batch 2100, loss: 1.2495, weighted loss: 1.2497 label: 5, bag_size: 148
+
+Epoch: 74, train_loss: 2.2136, Coarse Acc: 0.6719, Fine Acc: 0.5055
+Val Set, val_loss: 601.9930
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3969
+Fine Overall Accuracy: 0.5189
+Fine Overall F1 Score: 0.1171
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.7818, weighted loss: 0.7830 label: 5, bag_size: 262
+batch 200, loss: 0.4159, weighted loss: 0.4161 label: 5, bag_size: 974
+batch 300, loss: 2.9287, weighted loss: 2.9290 label: 2, bag_size: 540
+batch 400, loss: 7.3320, weighted loss: 7.3321 label: 1, bag_size: 258
+batch 500, loss: 1.0394, weighted loss: 1.0413 label: 5, bag_size: 1798
+batch 600, loss: 2.4884, weighted loss: 2.4884 label: 2, bag_size: 858
+batch 700, loss: 2.9482, weighted loss: 2.9483 label: 2, bag_size: 369
+batch 800, loss: 0.7434, weighted loss: 0.7453 label: 2, bag_size: 1226
+batch 900, loss: 2.3481, weighted loss: 2.3493 label: 3, bag_size: 837
+batch 1000, loss: 1.9599, weighted loss: 1.9603 label: 2, bag_size: 654
+batch 1100, loss: 2.3337, weighted loss: 2.3340 label: 5, bag_size: 40
+batch 1200, loss: 2.9688, weighted loss: 2.9690 label: 2, bag_size: 2112
+batch 1300, loss: 1.7459, weighted loss: 1.7475 label: 5, bag_size: 299
+batch 1400, loss: 1.2019, weighted loss: 1.2023 label: 5, bag_size: 795
+batch 1500, loss: 0.5828, weighted loss: 0.5836 label: 5, bag_size: 1221
+batch 1600, loss: 1.9200, weighted loss: 1.9202 label: 5, bag_size: 210
+batch 1700, loss: 1.8050, weighted loss: 1.8057 label: 2, bag_size: 65
+batch 1800, loss: 0.7161, weighted loss: 0.7167 label: 2, bag_size: 1632
+batch 1900, loss: 1.5971, weighted loss: 1.6077 label: 3, bag_size: 504
+batch 2000, loss: 0.0710, weighted loss: 0.0710 label: 5, bag_size: 210
+batch 2100, loss: 0.4997, weighted loss: 0.4997 label: 5, bag_size: 1032
+
+Epoch: 75, train_loss: 2.2117, Coarse Acc: 0.6728, Fine Acc: 0.5069
+Val Set, val_loss: 601.7536
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3969
+Fine Overall Accuracy: 0.5227
+Fine Overall F1 Score: 0.1179
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.3380, weighted loss: 2.3386 label: 6, bag_size: 424
+batch 200, loss: 0.7535, weighted loss: 0.7536 label: 5, bag_size: 706
+batch 300, loss: 0.4826, weighted loss: 0.4828 label: 5, bag_size: 221
+batch 400, loss: 2.3101, weighted loss: 2.3112 label: 5, bag_size: 338
+batch 500, loss: 4.0266, weighted loss: 4.0270 label: 3, bag_size: 347
+batch 600, loss: 1.4531, weighted loss: 1.4543 label: 5, bag_size: 599
+batch 700, loss: 1.4003, weighted loss: 1.4008 label: 6, bag_size: 225
+batch 800, loss: 0.6745, weighted loss: 0.6758 label: 2, bag_size: 357
+batch 900, loss: 3.7083, weighted loss: 3.7088 label: 3, bag_size: 972
+batch 1000, loss: 1.0389, weighted loss: 1.0409 label: 2, bag_size: 343
+batch 1100, loss: 1.2757, weighted loss: 1.2761 label: 5, bag_size: 622
+batch 1200, loss: 2.4435, weighted loss: 2.4441 label: 2, bag_size: 378
+batch 1300, loss: 2.6643, weighted loss: 2.6647 label: 2, bag_size: 1144
+batch 1400, loss: 0.4569, weighted loss: 0.4571 label: 5, bag_size: 304
+batch 1500, loss: 11.8328, weighted loss: 11.8329 label: 3, bag_size: 477
+batch 1600, loss: 2.4312, weighted loss: 2.4318 label: 3, bag_size: 610
+batch 1700, loss: 5.1249, weighted loss: 5.1263 label: 7, bag_size: 281
+batch 1800, loss: 3.6632, weighted loss: 3.6636 label: 8, bag_size: 160
+batch 1900, loss: 1.4844, weighted loss: 1.4864 label: 6, bag_size: 1235
+batch 2000, loss: 2.7039, weighted loss: 2.7124 label: 8, bag_size: 563
+batch 2100, loss: 0.4112, weighted loss: 0.4112 label: 5, bag_size: 875
+
+Epoch: 76, train_loss: 2.2097, Coarse Acc: 0.6728, Fine Acc: 0.5069
+Val Set, val_loss: 601.9588
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3939
+Fine Overall Accuracy: 0.5227
+Fine Overall F1 Score: 0.1183
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.3892, weighted loss: 1.3896 label: 5, bag_size: 515
+batch 200, loss: 0.5502, weighted loss: 0.5503 label: 5, bag_size: 728
+batch 300, loss: 6.8769, weighted loss: 6.8772 label: 7, bag_size: 675
+batch 400, loss: 1.2038, weighted loss: 1.2041 label: 5, bag_size: 1105
+batch 500, loss: 2.7572, weighted loss: 2.7583 label: 4, bag_size: 1410
+batch 600, loss: 3.4699, weighted loss: 3.4704 label: 6, bag_size: 273
+batch 700, loss: 2.9566, weighted loss: 2.9583 label: 3, bag_size: 1185
+batch 800, loss: 4.8783, weighted loss: 4.8796 label: 10, bag_size: 13
+batch 900, loss: 5.6265, weighted loss: 5.6269 label: 9, bag_size: 936
+batch 1000, loss: 1.8106, weighted loss: 1.8123 label: 4, bag_size: 1279
+batch 1100, loss: 1.0823, weighted loss: 1.0835 label: 5, bag_size: 510
+batch 1200, loss: 2.3675, weighted loss: 2.3736 label: 8, bag_size: 65
+batch 1300, loss: 0.6283, weighted loss: 0.6284 label: 5, bag_size: 794
+batch 1400, loss: 3.5045, weighted loss: 3.5046 label: 2, bag_size: 334
+batch 1500, loss: 0.4061, weighted loss: 0.4062 label: 5, bag_size: 544
+batch 1600, loss: 2.8558, weighted loss: 2.8569 label: 6, bag_size: 325
+batch 1700, loss: 3.6501, weighted loss: 3.6513 label: 6, bag_size: 406
+batch 1800, loss: 1.2896, weighted loss: 1.2904 label: 2, bag_size: 1110
+batch 1900, loss: 3.4929, weighted loss: 3.4933 label: 4, bag_size: 607
+batch 2000, loss: 2.8481, weighted loss: 2.8487 label: 2, bag_size: 304
+batch 2100, loss: 2.9870, weighted loss: 2.9875 label: 7, bag_size: 888
+
+Epoch: 77, train_loss: 2.2085, Coarse Acc: 0.6728, Fine Acc: 0.5060
+Val Set, val_loss: 601.3211
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3928
+Fine Overall Accuracy: 0.5189
+Fine Overall F1 Score: 0.1170
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.1803, weighted loss: 3.1817 label: 7, bag_size: 628
+batch 200, loss: 1.6117, weighted loss: 1.6117 label: 5, bag_size: 929
+batch 300, loss: 0.7061, weighted loss: 0.7069 label: 2, bag_size: 939
+batch 400, loss: 1.5717, weighted loss: 1.5729 label: 5, bag_size: 599
+batch 500, loss: 0.7313, weighted loss: 0.7313 label: 5, bag_size: 483
+batch 600, loss: 0.2248, weighted loss: 0.2251 label: 5, bag_size: 254
+batch 700, loss: 0.3280, weighted loss: 0.3283 label: 5, bag_size: 393
+batch 800, loss: 3.7110, weighted loss: 3.7140 label: 8, bag_size: 338
+batch 900, loss: 0.8966, weighted loss: 0.8975 label: 5, bag_size: 180
+batch 1000, loss: 0.7104, weighted loss: 0.7107 label: 5, bag_size: 335
+batch 1100, loss: 1.3668, weighted loss: 1.3674 label: 2, bag_size: 1803
+batch 1200, loss: 6.1026, weighted loss: 6.1034 label: 10, bag_size: 357
+batch 1300, loss: 0.9051, weighted loss: 0.9056 label: 2, bag_size: 1628
+batch 1400, loss: 0.8809, weighted loss: 0.8823 label: 5, bag_size: 244
+batch 1500, loss: 1.3928, weighted loss: 1.3929 label: 2, bag_size: 671
+batch 1600, loss: 0.9706, weighted loss: 0.9718 label: 2, bag_size: 1067
+batch 1700, loss: 4.5637, weighted loss: 4.5646 label: 7, bag_size: 850
+batch 1800, loss: 4.3077, weighted loss: 4.3083 label: 7, bag_size: 489
+batch 1900, loss: 0.2325, weighted loss: 0.2326 label: 5, bag_size: 204
+batch 2000, loss: 0.6472, weighted loss: 0.6474 label: 5, bag_size: 478
+batch 2100, loss: 2.1236, weighted loss: 2.1245 label: 5, bag_size: 714
+
+Epoch: 78, train_loss: 2.2061, Coarse Acc: 0.6724, Fine Acc: 0.5060
+Val Set, val_loss: 601.0998
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3930
+Fine Overall Accuracy: 0.5227
+Fine Overall F1 Score: 0.1179
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.0134, weighted loss: 2.0149 label: 5, bag_size: 131
+batch 200, loss: 0.6845, weighted loss: 0.6856 label: 5, bag_size: 291
+batch 300, loss: 0.1316, weighted loss: 0.1316 label: 5, bag_size: 180
+batch 400, loss: 2.0242, weighted loss: 2.0286 label: 5, bag_size: 334
+batch 500, loss: 1.0146, weighted loss: 1.0192 label: 5, bag_size: 636
+batch 600, loss: 0.5519, weighted loss: 0.5519 label: 5, bag_size: 658
+batch 700, loss: 6.1371, weighted loss: 6.1385 label: 1, bag_size: 220
+batch 800, loss: 3.1909, weighted loss: 3.1917 label: 6, bag_size: 390
+batch 900, loss: 3.4852, weighted loss: 3.4858 label: 8, bag_size: 430
+batch 1000, loss: 1.1185, weighted loss: 1.1189 label: 5, bag_size: 1049
+batch 1100, loss: 1.2270, weighted loss: 1.2282 label: 2, bag_size: 1549
+batch 1200, loss: 0.0564, weighted loss: 0.0565 label: 5, bag_size: 463
+batch 1300, loss: 7.1194, weighted loss: 7.1223 label: 9, bag_size: 464
+batch 1400, loss: 2.6798, weighted loss: 2.6798 label: 2, bag_size: 435
+batch 1500, loss: 0.4905, weighted loss: 0.4921 label: 2, bag_size: 1445
+batch 1600, loss: 0.2793, weighted loss: 0.2794 label: 5, bag_size: 1023
+batch 1700, loss: 1.1743, weighted loss: 1.1762 label: 5, bag_size: 580
+batch 1800, loss: 4.1375, weighted loss: 4.1385 label: 6, bag_size: 144
+batch 1900, loss: 1.5701, weighted loss: 1.5706 label: 5, bag_size: 1068
+batch 2000, loss: 3.1585, weighted loss: 3.1590 label: 8, bag_size: 144
+batch 2100, loss: 2.6694, weighted loss: 2.6700 label: 6, bag_size: 1010
+
+Epoch: 79, train_loss: 2.2043, Coarse Acc: 0.6728, Fine Acc: 0.5051
+Val Set, val_loss: 600.9302
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3950
+Fine Overall Accuracy: 0.5189
+Fine Overall F1 Score: 0.1173
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.4877, weighted loss: 0.4877 label: 5, bag_size: 461
+batch 200, loss: 1.5162, weighted loss: 1.5163 label: 5, bag_size: 286
+batch 300, loss: 1.5521, weighted loss: 1.5536 label: 5, bag_size: 618
+batch 400, loss: 2.1236, weighted loss: 2.1237 label: 2, bag_size: 454
+batch 500, loss: 1.5157, weighted loss: 1.5160 label: 5, bag_size: 655
+batch 600, loss: 1.5929, weighted loss: 1.5944 label: 3, bag_size: 1138
+batch 700, loss: 3.3673, weighted loss: 3.3682 label: 3, bag_size: 262
+batch 800, loss: 0.7788, weighted loss: 0.7791 label: 5, bag_size: 857
+batch 900, loss: 0.3500, weighted loss: 0.3501 label: 5, bag_size: 429
+batch 1000, loss: 3.3441, weighted loss: 3.3468 label: 2, bag_size: 282
+batch 1100, loss: 5.1992, weighted loss: 5.1993 label: 7, bag_size: 1800
+batch 1200, loss: 1.3882, weighted loss: 1.3901 label: 5, bag_size: 216
+batch 1300, loss: 5.5017, weighted loss: 5.5019 label: 1, bag_size: 149
+batch 1400, loss: 3.2529, weighted loss: 3.2541 label: 3, bag_size: 986
+batch 1500, loss: 1.9070, weighted loss: 1.9124 label: 3, bag_size: 926
+batch 1600, loss: 4.3655, weighted loss: 4.3659 label: 7, bag_size: 388
+batch 1700, loss: 3.9751, weighted loss: 3.9763 label: 5, bag_size: 109
+batch 1800, loss: 1.1244, weighted loss: 1.1302 label: 6, bag_size: 474
+batch 1900, loss: 3.3106, weighted loss: 3.3107 label: 2, bag_size: 437
+batch 2000, loss: 2.3214, weighted loss: 2.3225 label: 5, bag_size: 269
+batch 2100, loss: 1.1093, weighted loss: 1.1095 label: 5, bag_size: 355
+
+Epoch: 80, train_loss: 2.2022, Coarse Acc: 0.6751, Fine Acc: 0.5065
+Val Set, val_loss: 600.6518
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3928
+Fine Overall Accuracy: 0.5227
+Fine Overall F1 Score: 0.1179
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.0222, weighted loss: 1.0232 label: 5, bag_size: 585
+batch 200, loss: 0.1138, weighted loss: 0.1140 label: 5, bag_size: 424
+batch 300, loss: 0.1280, weighted loss: 0.1281 label: 5, bag_size: 288
+batch 400, loss: 0.4755, weighted loss: 0.4770 label: 2, bag_size: 1353
+batch 500, loss: 1.8627, weighted loss: 1.8636 label: 6, bag_size: 351
+batch 600, loss: 1.5601, weighted loss: 1.5616 label: 2, bag_size: 225
+batch 700, loss: 2.8592, weighted loss: 2.8596 label: 4, bag_size: 278
+batch 800, loss: 5.1839, weighted loss: 5.1843 label: 1, bag_size: 482
+batch 900, loss: 0.0580, weighted loss: 0.0580 label: 5, bag_size: 179
+batch 1000, loss: 3.6579, weighted loss: 3.6580 label: 5, bag_size: 304
+batch 1100, loss: 0.7660, weighted loss: 0.7663 label: 5, bag_size: 545
+batch 1200, loss: 4.8808, weighted loss: 4.8812 label: 7, bag_size: 599
+batch 1300, loss: 2.2851, weighted loss: 2.2863 label: 5, bag_size: 269
+batch 1400, loss: 2.1360, weighted loss: 2.1364 label: 2, bag_size: 205
+batch 1500, loss: 1.4745, weighted loss: 1.4749 label: 2, bag_size: 1232
+batch 1600, loss: 2.1051, weighted loss: 2.1051 label: 5, bag_size: 658
+batch 1700, loss: 2.6183, weighted loss: 2.6183 label: 6, bag_size: 1586
+batch 1800, loss: 4.3583, weighted loss: 4.3601 label: 3, bag_size: 298
+batch 1900, loss: 0.4284, weighted loss: 0.4285 label: 5, bag_size: 463
+batch 2000, loss: 2.8675, weighted loss: 2.8676 label: 6, bag_size: 220
+batch 2100, loss: 3.6828, weighted loss: 3.6830 label: 2, bag_size: 666
+
+Epoch: 81, train_loss: 2.2010, Coarse Acc: 0.6747, Fine Acc: 0.5041
+Val Set, val_loss: 600.4794
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3947
+Fine Overall Accuracy: 0.5227
+Fine Overall F1 Score: 0.1185
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.5948, weighted loss: 3.5949 label: 8, bag_size: 175
+batch 200, loss: 0.0961, weighted loss: 0.0961 label: 5, bag_size: 307
+batch 300, loss: 1.8744, weighted loss: 1.8751 label: 6, bag_size: 256
+batch 400, loss: 3.0802, weighted loss: 3.0804 label: 2, bag_size: 381
+batch 500, loss: 3.3266, weighted loss: 3.3270 label: 6, bag_size: 252
+batch 600, loss: 0.5093, weighted loss: 0.5109 label: 2, bag_size: 941
+batch 700, loss: 2.6504, weighted loss: 2.6507 label: 6, bag_size: 304
+batch 800, loss: 1.4152, weighted loss: 1.4166 label: 6, bag_size: 307
+batch 900, loss: 0.9776, weighted loss: 0.9777 label: 5, bag_size: 333
+batch 1000, loss: 3.0366, weighted loss: 3.0372 label: 5, bag_size: 353
+batch 1100, loss: 1.6636, weighted loss: 1.6650 label: 6, bag_size: 506
+batch 1200, loss: 4.1474, weighted loss: 4.1479 label: 2, bag_size: 359
+batch 1300, loss: 2.7832, weighted loss: 2.7850 label: 2, bag_size: 179
+batch 1400, loss: 0.0638, weighted loss: 0.0639 label: 5, bag_size: 743
+batch 1500, loss: 3.9150, weighted loss: 3.9156 label: 3, bag_size: 285
+batch 1600, loss: 2.1271, weighted loss: 2.1285 label: 3, bag_size: 605
+batch 1700, loss: 3.4817, weighted loss: 3.4820 label: 2, bag_size: 73
+batch 1800, loss: 2.5202, weighted loss: 2.5213 label: 2, bag_size: 517
+batch 1900, loss: 1.0164, weighted loss: 1.0165 label: 5, bag_size: 460
+batch 2000, loss: 2.6666, weighted loss: 2.6667 label: 2, bag_size: 435
+batch 2100, loss: 1.3118, weighted loss: 1.3123 label: 5, bag_size: 360
+
+Epoch: 82, train_loss: 2.1990, Coarse Acc: 0.6751, Fine Acc: 0.5051
+Val Set, val_loss: 600.1244
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3964
+Fine Overall Accuracy: 0.5227
+Fine Overall F1 Score: 0.1179
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 7.9298, weighted loss: 7.9328 label: 1, bag_size: 142
+batch 200, loss: 2.7740, weighted loss: 2.7741 label: 2, bag_size: 558
+batch 300, loss: 0.6413, weighted loss: 0.6417 label: 5, bag_size: 779
+batch 400, loss: 0.5383, weighted loss: 0.5409 label: 5, bag_size: 329
+batch 500, loss: 3.9103, weighted loss: 3.9126 label: 8, bag_size: 141
+batch 600, loss: 1.9634, weighted loss: 1.9650 label: 6, bag_size: 1530
+batch 700, loss: 0.9211, weighted loss: 0.9215 label: 2, bag_size: 1817
+batch 800, loss: 4.5655, weighted loss: 4.5661 label: 5, bag_size: 3051
+batch 900, loss: 1.6067, weighted loss: 1.6068 label: 2, bag_size: 204
+batch 1000, loss: 2.3948, weighted loss: 2.3951 label: 6, bag_size: 247
+batch 1100, loss: 2.8114, weighted loss: 2.8129 label: 5, bag_size: 464
+batch 1200, loss: 1.9526, weighted loss: 1.9533 label: 6, bag_size: 2443
+batch 1300, loss: 2.1331, weighted loss: 2.1333 label: 5, bag_size: 506
+batch 1400, loss: 0.3184, weighted loss: 0.3190 label: 5, bag_size: 511
+batch 1500, loss: 1.5625, weighted loss: 1.5633 label: 5, bag_size: 429
+batch 1600, loss: 2.4037, weighted loss: 2.4038 label: 6, bag_size: 201
+batch 1700, loss: 1.9931, weighted loss: 1.9932 label: 6, bag_size: 206
+batch 1800, loss: 1.4719, weighted loss: 1.4723 label: 5, bag_size: 337
+batch 1900, loss: 2.5525, weighted loss: 2.5528 label: 8, bag_size: 178
+batch 2000, loss: 2.4976, weighted loss: 2.4978 label: 2, bag_size: 1616
+batch 2100, loss: 0.5471, weighted loss: 0.5477 label: 5, bag_size: 1221
+
+Epoch: 83, train_loss: 2.1976, Coarse Acc: 0.6733, Fine Acc: 0.5092
+Val Set, val_loss: 599.9208
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3928
+Fine Overall Accuracy: 0.5227
+Fine Overall F1 Score: 0.1178
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.5358, weighted loss: 0.5358 label: 5, bag_size: 279
+batch 200, loss: 5.0202, weighted loss: 5.0203 label: 2, bag_size: 317
+batch 300, loss: 1.3300, weighted loss: 1.3306 label: 2, bag_size: 2818
+batch 400, loss: 0.3017, weighted loss: 0.3017 label: 5, bag_size: 307
+batch 500, loss: 0.6127, weighted loss: 0.6130 label: 5, bag_size: 593
+batch 600, loss: 0.6904, weighted loss: 0.6906 label: 5, bag_size: 665
+batch 700, loss: 2.5153, weighted loss: 2.5166 label: 2, bag_size: 169
+batch 800, loss: 0.1880, weighted loss: 0.1882 label: 5, bag_size: 261
+batch 900, loss: 0.5456, weighted loss: 0.5480 label: 2, bag_size: 2214
+batch 1000, loss: 2.8173, weighted loss: 2.8174 label: 6, bag_size: 444
+batch 1100, loss: 2.3537, weighted loss: 2.3540 label: 2, bag_size: 556
+batch 1200, loss: 5.5848, weighted loss: 5.5853 label: 7, bag_size: 479
+batch 1300, loss: 0.4142, weighted loss: 0.4150 label: 5, bag_size: 198
+batch 1400, loss: 2.8386, weighted loss: 2.8397 label: 2, bag_size: 946
+batch 1500, loss: 2.5376, weighted loss: 2.5377 label: 4, bag_size: 1726
+batch 1600, loss: 2.9227, weighted loss: 2.9233 label: 6, bag_size: 325
+batch 1700, loss: 3.9324, weighted loss: 3.9343 label: 4, bag_size: 552
+batch 1800, loss: 1.7953, weighted loss: 1.7955 label: 2, bag_size: 1323
+batch 1900, loss: 4.4103, weighted loss: 4.4105 label: 4, bag_size: 1061
+batch 2000, loss: 2.4568, weighted loss: 2.4570 label: 6, bag_size: 194
+batch 2100, loss: 2.2605, weighted loss: 2.2606 label: 6, bag_size: 1238
+
+Epoch: 84, train_loss: 2.1959, Coarse Acc: 0.6751, Fine Acc: 0.5088
+Val Set, val_loss: 599.6616
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3950
+Fine Overall Accuracy: 0.5265
+Fine Overall F1 Score: 0.1193
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 5.7771, weighted loss: 5.7776 label: 10, bag_size: 162
+batch 200, loss: 0.2921, weighted loss: 0.2924 label: 5, bag_size: 192
+batch 300, loss: 2.8882, weighted loss: 2.8895 label: 2, bag_size: 407
+batch 400, loss: 1.5076, weighted loss: 1.5083 label: 6, bag_size: 1096
+batch 500, loss: 2.6649, weighted loss: 2.6655 label: 2, bag_size: 910
+batch 600, loss: 3.7461, weighted loss: 3.7465 label: 4, bag_size: 665
+batch 700, loss: 1.7762, weighted loss: 1.7769 label: 2, bag_size: 762
+batch 800, loss: 0.5489, weighted loss: 0.5491 label: 5, bag_size: 279
+batch 900, loss: 2.0304, weighted loss: 2.0309 label: 2, bag_size: 454
+batch 1000, loss: 4.8071, weighted loss: 4.8087 label: 10, bag_size: 837
+batch 1100, loss: 0.5859, weighted loss: 0.5867 label: 5, bag_size: 393
+batch 1200, loss: 0.8167, weighted loss: 0.8177 label: 5, bag_size: 253
+batch 1300, loss: 0.0602, weighted loss: 0.0603 label: 5, bag_size: 295
+batch 1400, loss: 3.3561, weighted loss: 3.3567 label: 6, bag_size: 224
+batch 1500, loss: 3.3696, weighted loss: 3.3703 label: 3, bag_size: 257
+batch 1600, loss: 0.5929, weighted loss: 0.5930 label: 5, bag_size: 794
+batch 1700, loss: 2.5656, weighted loss: 2.5663 label: 6, bag_size: 200
+batch 1800, loss: 1.7880, weighted loss: 1.7890 label: 6, bag_size: 740
+batch 1900, loss: 3.9541, weighted loss: 3.9544 label: 8, bag_size: 542
+batch 2000, loss: 1.4236, weighted loss: 1.4264 label: 3, bag_size: 512
+batch 2100, loss: 2.2993, weighted loss: 2.2998 label: 2, bag_size: 506
+
+Epoch: 85, train_loss: 2.1940, Coarse Acc: 0.6756, Fine Acc: 0.5074
+Val Set, val_loss: 599.4716
+Coarse Overall Accuracy: 0.6780
+Coarse Overall F1 Score: 0.3988
+Fine Overall Accuracy: 0.5189
+Fine Overall F1 Score: 0.1172
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.7040, weighted loss: 2.7051 label: 7, bag_size: 149
+batch 200, loss: 0.3012, weighted loss: 0.3014 label: 5, bag_size: 620
+batch 300, loss: 3.7526, weighted loss: 3.7543 label: 8, bag_size: 299
+batch 400, loss: 5.4545, weighted loss: 5.4551 label: 10, bag_size: 451
+batch 500, loss: 3.8816, weighted loss: 3.8822 label: 4, bag_size: 324
+batch 600, loss: 2.7588, weighted loss: 2.7608 label: 2, bag_size: 394
+batch 700, loss: 1.5637, weighted loss: 1.5640 label: 5, bag_size: 1600
+batch 800, loss: 3.8223, weighted loss: 3.8229 label: 8, bag_size: 501
+batch 900, loss: 3.6177, weighted loss: 3.6188 label: 8, bag_size: 1555
+batch 1000, loss: 3.6614, weighted loss: 3.6614 label: 5, bag_size: 304
+batch 1100, loss: 0.6987, weighted loss: 0.7016 label: 2, bag_size: 382
+batch 1200, loss: 0.5983, weighted loss: 0.5991 label: 5, bag_size: 394
+batch 1300, loss: 1.9016, weighted loss: 1.9023 label: 5, bag_size: 708
+batch 1400, loss: 3.1760, weighted loss: 3.1767 label: 3, bag_size: 398
+batch 1500, loss: 3.4315, weighted loss: 3.4327 label: 5, bag_size: 294
+batch 1600, loss: 1.0171, weighted loss: 1.0171 label: 2, bag_size: 1772
+batch 1700, loss: 1.8401, weighted loss: 1.8404 label: 2, bag_size: 248
+batch 1800, loss: 0.8934, weighted loss: 0.8946 label: 2, bag_size: 389
+batch 1900, loss: 0.6343, weighted loss: 0.6358 label: 2, bag_size: 784
+batch 2000, loss: 2.6914, weighted loss: 2.6919 label: 2, bag_size: 448
+batch 2100, loss: 0.6488, weighted loss: 0.6490 label: 5, bag_size: 779
+
+Epoch: 86, train_loss: 2.1928, Coarse Acc: 0.6760, Fine Acc: 0.5111
+Val Set, val_loss: 599.4465
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3928
+Fine Overall Accuracy: 0.5227
+Fine Overall F1 Score: 0.1185
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.2954, weighted loss: 1.2956 label: 2, bag_size: 2627
+batch 200, loss: 0.5996, weighted loss: 0.6048 label: 2, bag_size: 207
+batch 300, loss: 0.5597, weighted loss: 0.5598 label: 2, bag_size: 660
+batch 400, loss: 3.3726, weighted loss: 3.3728 label: 6, bag_size: 252
+batch 500, loss: 0.6151, weighted loss: 0.6154 label: 5, bag_size: 209
+batch 600, loss: 0.2057, weighted loss: 0.2059 label: 5, bag_size: 691
+batch 700, loss: 0.0970, weighted loss: 0.0971 label: 5, bag_size: 485
+batch 800, loss: 0.9237, weighted loss: 0.9289 label: 2, bag_size: 232
+batch 900, loss: 3.1580, weighted loss: 3.1598 label: 4, bag_size: 118
+batch 1000, loss: 2.0696, weighted loss: 2.0697 label: 5, bag_size: 317
+batch 1100, loss: 0.4325, weighted loss: 0.4336 label: 5, bag_size: 605
+batch 1200, loss: 4.0467, weighted loss: 4.0470 label: 2, bag_size: 237
+batch 1300, loss: 0.4940, weighted loss: 0.4990 label: 2, bag_size: 795
+batch 1400, loss: 0.6259, weighted loss: 0.6270 label: 5, bag_size: 311
+batch 1500, loss: 1.7122, weighted loss: 1.7148 label: 3, bag_size: 1172
+batch 1600, loss: 1.0672, weighted loss: 1.0681 label: 5, bag_size: 2114
+batch 1700, loss: 0.6724, weighted loss: 0.6732 label: 2, bag_size: 357
+batch 1800, loss: 2.0417, weighted loss: 2.0419 label: 2, bag_size: 515
+batch 1900, loss: 4.0929, weighted loss: 4.0958 label: 8, bag_size: 380
+batch 2000, loss: 2.6013, weighted loss: 2.6015 label: 8, bag_size: 178
+batch 2100, loss: 1.9227, weighted loss: 1.9234 label: 6, bag_size: 521
+
+Epoch: 87, train_loss: 2.1913, Coarse Acc: 0.6751, Fine Acc: 0.5078
+Val Set, val_loss: 599.0827
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3928
+Fine Overall Accuracy: 0.5303
+Fine Overall F1 Score: 0.1204
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.1084, weighted loss: 1.1086 label: 2, bag_size: 2830
+batch 200, loss: 2.9082, weighted loss: 2.9086 label: 3, bag_size: 1441
+batch 300, loss: 4.7152, weighted loss: 4.7153 label: 8, bag_size: 288
+batch 400, loss: 2.0059, weighted loss: 2.0060 label: 2, bag_size: 332
+batch 500, loss: 1.9997, weighted loss: 2.0008 label: 2, bag_size: 343
+batch 600, loss: 6.7755, weighted loss: 6.7762 label: 5, bag_size: 1331
+batch 700, loss: 0.3968, weighted loss: 0.3969 label: 5, bag_size: 505
+batch 800, loss: 0.7417, weighted loss: 0.7419 label: 5, bag_size: 1547
+batch 900, loss: 0.8938, weighted loss: 0.8949 label: 2, bag_size: 537
+batch 1000, loss: 0.4544, weighted loss: 0.4590 label: 2, bag_size: 558
+batch 1100, loss: 0.8440, weighted loss: 0.8463 label: 5, bag_size: 733
+batch 1200, loss: 2.8061, weighted loss: 2.8066 label: 6, bag_size: 545
+batch 1300, loss: 1.2855, weighted loss: 1.2856 label: 5, bag_size: 315
+batch 1400, loss: 0.3000, weighted loss: 0.3003 label: 5, bag_size: 658
+batch 1500, loss: 0.9625, weighted loss: 0.9631 label: 5, bag_size: 511
+batch 1600, loss: 2.3052, weighted loss: 2.3058 label: 3, bag_size: 610
+batch 1700, loss: 2.7737, weighted loss: 2.7738 label: 6, bag_size: 338
+batch 1800, loss: 0.3549, weighted loss: 0.3553 label: 5, bag_size: 342
+batch 1900, loss: 3.8676, weighted loss: 3.8678 label: 6, bag_size: 379
+batch 2000, loss: 2.1730, weighted loss: 2.1734 label: 2, bag_size: 976
+batch 2100, loss: 2.4050, weighted loss: 2.4054 label: 2, bag_size: 1257
+
+Epoch: 88, train_loss: 2.1894, Coarse Acc: 0.6751, Fine Acc: 0.5097
+Val Set, val_loss: 598.8722
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3950
+Fine Overall Accuracy: 0.5189
+Fine Overall F1 Score: 0.1172
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.2524, weighted loss: 1.2527 label: 5, bag_size: 320
+batch 200, loss: 2.6746, weighted loss: 2.6760 label: 2, bag_size: 1360
+batch 300, loss: 3.1034, weighted loss: 3.1057 label: 2, bag_size: 823
+batch 400, loss: 2.6703, weighted loss: 2.6703 label: 2, bag_size: 1650
+batch 500, loss: 0.7652, weighted loss: 0.7724 label: 2, bag_size: 601
+batch 600, loss: 1.6149, weighted loss: 1.6150 label: 5, bag_size: 544
+batch 700, loss: 1.0012, weighted loss: 1.0016 label: 2, bag_size: 826
+batch 800, loss: 0.1166, weighted loss: 0.1169 label: 5, bag_size: 835
+batch 900, loss: 0.5229, weighted loss: 0.5234 label: 5, bag_size: 318
+batch 1000, loss: 2.0977, weighted loss: 2.0981 label: 6, bag_size: 581
+batch 1100, loss: 0.4472, weighted loss: 0.4490 label: 5, bag_size: 310
+batch 1200, loss: 1.1326, weighted loss: 1.1332 label: 5, bag_size: 559
+batch 1300, loss: 3.2834, weighted loss: 3.2840 label: 7, bag_size: 478
+batch 1400, loss: 5.7508, weighted loss: 5.7518 label: 9, bag_size: 237
+batch 1500, loss: 4.4245, weighted loss: 4.4252 label: 7, bag_size: 426
+batch 1600, loss: 1.6669, weighted loss: 1.6672 label: 2, bag_size: 940
+batch 1700, loss: 0.8277, weighted loss: 0.8301 label: 5, bag_size: 733
+batch 1800, loss: 4.8604, weighted loss: 4.8608 label: 4, bag_size: 593
+batch 1900, loss: 0.6065, weighted loss: 0.6068 label: 5, bag_size: 209
+batch 2000, loss: 1.2442, weighted loss: 1.2460 label: 5, bag_size: 434
+batch 2100, loss: 3.0487, weighted loss: 3.0501 label: 2, bag_size: 622
+
+Epoch: 89, train_loss: 2.1874, Coarse Acc: 0.6770, Fine Acc: 0.5124
+Val Set, val_loss: 598.6600
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3950
+Fine Overall Accuracy: 0.5303
+Fine Overall F1 Score: 0.1201
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.6561, weighted loss: 0.6568 label: 2, bag_size: 357
+batch 200, loss: 4.5909, weighted loss: 4.5915 label: 3, bag_size: 1299
+batch 300, loss: 1.4562, weighted loss: 1.4567 label: 5, bag_size: 1068
+batch 400, loss: 5.5737, weighted loss: 5.5739 label: 7, bag_size: 528
+batch 500, loss: 4.5019, weighted loss: 4.5021 label: 4, bag_size: 37
+batch 600, loss: 3.2484, weighted loss: 3.2546 label: 6, bag_size: 201
+batch 700, loss: 6.2434, weighted loss: 6.2434 label: 1, bag_size: 474
+batch 800, loss: 2.0532, weighted loss: 2.0532 label: 5, bag_size: 639
+batch 900, loss: 4.1184, weighted loss: 4.1185 label: 8, bag_size: 278
+batch 1000, loss: 0.6937, weighted loss: 0.6959 label: 5, bag_size: 1048
+batch 1100, loss: 2.6678, weighted loss: 2.6690 label: 7, bag_size: 311
+batch 1200, loss: 2.9850, weighted loss: 2.9855 label: 2, bag_size: 564
+batch 1300, loss: 0.3783, weighted loss: 0.3786 label: 5, bag_size: 643
+batch 1400, loss: 2.5332, weighted loss: 2.5335 label: 4, bag_size: 2080
+batch 1500, loss: 1.1655, weighted loss: 1.1664 label: 2, bag_size: 398
+batch 1600, loss: 0.1792, weighted loss: 0.1796 label: 5, bag_size: 2402
+batch 1700, loss: 1.2984, weighted loss: 1.2995 label: 2, bag_size: 385
+batch 1800, loss: 1.3060, weighted loss: 1.3067 label: 5, bag_size: 192
+batch 1900, loss: 0.2781, weighted loss: 0.2786 label: 5, bag_size: 226
+batch 2000, loss: 2.8282, weighted loss: 2.8283 label: 2, bag_size: 696
+batch 2100, loss: 1.0137, weighted loss: 1.0141 label: 2, bag_size: 1085
+
+Epoch: 90, train_loss: 2.1868, Coarse Acc: 0.6747, Fine Acc: 0.5115
+Val Set, val_loss: 598.5569
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3928
+Fine Overall Accuracy: 0.5265
+Fine Overall F1 Score: 0.1192
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.8850, weighted loss: 0.8853 label: 5, bag_size: 653
+batch 200, loss: 3.1627, weighted loss: 3.1628 label: 2, bag_size: 353
+batch 300, loss: 1.4855, weighted loss: 1.4956 label: 3, bag_size: 504
+batch 400, loss: 3.3168, weighted loss: 3.3184 label: 8, bag_size: 679
+batch 500, loss: 1.9804, weighted loss: 1.9816 label: 6, bag_size: 1530
+batch 600, loss: 3.5139, weighted loss: 3.5148 label: 8, bag_size: 130
+batch 700, loss: 0.6565, weighted loss: 0.6567 label: 5, bag_size: 665
+batch 800, loss: 9.1187, weighted loss: 9.1188 label: 0, bag_size: 432
+batch 900, loss: 1.4741, weighted loss: 1.4742 label: 2, bag_size: 1234
+batch 1000, loss: 0.5298, weighted loss: 0.5300 label: 5, bag_size: 921
+batch 1100, loss: 0.3080, weighted loss: 0.3087 label: 5, bag_size: 451
+batch 1200, loss: 1.4932, weighted loss: 1.4933 label: 2, bag_size: 1114
+batch 1300, loss: 2.1487, weighted loss: 2.1495 label: 5, bag_size: 116
+batch 1400, loss: 4.6111, weighted loss: 4.6121 label: 4, bag_size: 287
+batch 1500, loss: 0.1740, weighted loss: 0.1741 label: 5, bag_size: 318
+batch 1600, loss: 3.7050, weighted loss: 3.7060 label: 3, bag_size: 459
+batch 1700, loss: 2.4205, weighted loss: 2.4227 label: 5, bag_size: 968
+batch 1800, loss: 1.4157, weighted loss: 1.4168 label: 5, bag_size: 433
+batch 1900, loss: 0.0843, weighted loss: 0.0843 label: 5, bag_size: 307
+batch 2000, loss: 1.9577, weighted loss: 1.9581 label: 2, bag_size: 488
+batch 2100, loss: 3.7899, weighted loss: 3.7922 label: 7, bag_size: 168
+
+Epoch: 91, train_loss: 2.1848, Coarse Acc: 0.6765, Fine Acc: 0.5120
+Val Set, val_loss: 598.4195
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3950
+Fine Overall Accuracy: 0.5265
+Fine Overall F1 Score: 0.1195
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 4.1624, weighted loss: 4.1631 label: 6, bag_size: 231
+batch 200, loss: 1.1709, weighted loss: 1.1727 label: 5, bag_size: 580
+batch 300, loss: 0.9444, weighted loss: 0.9502 label: 2, bag_size: 232
+batch 400, loss: 1.8704, weighted loss: 1.8740 label: 4, bag_size: 1301
+batch 500, loss: 2.2834, weighted loss: 2.2836 label: 6, bag_size: 534
+batch 600, loss: 6.1748, weighted loss: 6.1749 label: 10, bag_size: 625
+batch 700, loss: 1.8404, weighted loss: 1.8433 label: 6, bag_size: 2272
+batch 800, loss: 1.8460, weighted loss: 1.8476 label: 6, bag_size: 570
+batch 900, loss: 5.8898, weighted loss: 5.8913 label: 10, bag_size: 574
+batch 1000, loss: 2.0707, weighted loss: 2.0714 label: 2, bag_size: 205
+batch 1100, loss: 1.4972, weighted loss: 1.4972 label: 2, bag_size: 1205
+batch 1200, loss: 1.9936, weighted loss: 1.9939 label: 5, bag_size: 193
+batch 1300, loss: 2.3495, weighted loss: 2.3497 label: 2, bag_size: 1049
+batch 1400, loss: 2.3350, weighted loss: 2.3354 label: 5, bag_size: 1863
+batch 1500, loss: 0.0766, weighted loss: 0.0766 label: 5, bag_size: 274
+batch 1600, loss: 1.2218, weighted loss: 1.2222 label: 2, bag_size: 1293
+batch 1700, loss: 2.0333, weighted loss: 2.0335 label: 2, bag_size: 454
+batch 1800, loss: 1.8268, weighted loss: 1.8279 label: 2, bag_size: 102
+batch 1900, loss: 4.4884, weighted loss: 4.4893 label: 6, bag_size: 290
+batch 2000, loss: 2.1708, weighted loss: 2.1778 label: 6, bag_size: 242
+batch 2100, loss: 1.3842, weighted loss: 1.3844 label: 5, bag_size: 522
+
+Epoch: 92, train_loss: 2.1822, Coarse Acc: 0.6756, Fine Acc: 0.5097
+Val Set, val_loss: 598.2840
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3945
+Fine Overall Accuracy: 0.5152
+Fine Overall F1 Score: 0.1156
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.2022, weighted loss: 1.2049 label: 5, bag_size: 271
+batch 200, loss: 1.6808, weighted loss: 1.6823 label: 6, bag_size: 506
+batch 300, loss: 0.9961, weighted loss: 0.9974 label: 2, bag_size: 1628
+batch 400, loss: 0.2610, weighted loss: 0.2619 label: 5, bag_size: 360
+batch 500, loss: 8.2311, weighted loss: 8.2312 label: 8, bag_size: 1009
+batch 600, loss: 1.6603, weighted loss: 1.6610 label: 2, bag_size: 2367
+batch 700, loss: 3.5409, weighted loss: 3.5411 label: 3, bag_size: 445
+batch 800, loss: 0.3372, weighted loss: 0.3373 label: 5, bag_size: 456
+batch 900, loss: 0.0548, weighted loss: 0.0549 label: 5, bag_size: 463
+batch 1000, loss: 3.6286, weighted loss: 3.6300 label: 5, bag_size: 153
+batch 1100, loss: 1.7153, weighted loss: 1.7178 label: 5, bag_size: 658
+batch 1200, loss: 0.1107, weighted loss: 0.1112 label: 5, bag_size: 293
+batch 1300, loss: 3.3930, weighted loss: 3.3936 label: 6, bag_size: 248
+batch 1400, loss: 2.2353, weighted loss: 2.2364 label: 7, bag_size: 172
+batch 1500, loss: 1.5778, weighted loss: 1.5779 label: 5, bag_size: 304
+batch 1600, loss: 0.5227, weighted loss: 0.5246 label: 5, bag_size: 305
+batch 1700, loss: 0.8378, weighted loss: 0.8387 label: 2, bag_size: 1365
+batch 1800, loss: 2.3973, weighted loss: 2.3976 label: 2, bag_size: 692
+batch 1900, loss: 2.9126, weighted loss: 2.9142 label: 5, bag_size: 555
+batch 2000, loss: 3.2971, weighted loss: 3.2975 label: 8, bag_size: 415
+batch 2100, loss: 1.4689, weighted loss: 1.4752 label: 3, bag_size: 836
+
+Epoch: 93, train_loss: 2.1811, Coarse Acc: 0.6793, Fine Acc: 0.5124
+Val Set, val_loss: 598.0475
+Coarse Overall Accuracy: 0.6667
+Coarse Overall F1 Score: 0.3930
+Fine Overall Accuracy: 0.5265
+Fine Overall F1 Score: 0.1195
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 4.7144, weighted loss: 4.7163 label: 2, bag_size: 107
+batch 200, loss: 0.2095, weighted loss: 0.2095 label: 5, bag_size: 902
+batch 300, loss: 2.6526, weighted loss: 2.6530 label: 2, bag_size: 241
+batch 400, loss: 0.6940, weighted loss: 0.6959 label: 2, bag_size: 480
+batch 500, loss: 0.0464, weighted loss: 0.0466 label: 5, bag_size: 338
+batch 600, loss: 3.0779, weighted loss: 3.0787 label: 2, bag_size: 224
+batch 700, loss: 3.9139, weighted loss: 3.9146 label: 6, bag_size: 252
+batch 800, loss: 0.2646, weighted loss: 0.2646 label: 5, bag_size: 307
+batch 900, loss: 2.8067, weighted loss: 2.8087 label: 2, bag_size: 250
+batch 1000, loss: 1.9481, weighted loss: 1.9487 label: 3, bag_size: 1947
+batch 1100, loss: 5.8758, weighted loss: 5.8767 label: 8, bag_size: 1875
+batch 1200, loss: 2.1863, weighted loss: 2.1870 label: 6, bag_size: 206
+batch 1300, loss: 0.9884, weighted loss: 0.9896 label: 2, bag_size: 1628
+batch 1400, loss: 0.1549, weighted loss: 0.1551 label: 5, bag_size: 393
+batch 1500, loss: 0.0933, weighted loss: 0.0933 label: 5, bag_size: 104
+batch 1600, loss: 0.9173, weighted loss: 0.9192 label: 2, bag_size: 1229
+batch 1700, loss: 3.9374, weighted loss: 3.9382 label: 3, bag_size: 522
+batch 1800, loss: 3.1134, weighted loss: 3.1137 label: 5, bag_size: 364
+batch 1900, loss: 0.5920, weighted loss: 0.5928 label: 2, bag_size: 1476
+batch 2000, loss: 3.0916, weighted loss: 3.0920 label: 7, bag_size: 159
+batch 2100, loss: 1.1372, weighted loss: 1.1380 label: 5, bag_size: 408
+
+Epoch: 94, train_loss: 2.1801, Coarse Acc: 0.6751, Fine Acc: 0.5111
+Val Set, val_loss: 597.9625
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3949
+Fine Overall Accuracy: 0.5303
+Fine Overall F1 Score: 0.1251
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 2.0327, weighted loss: 2.0348 label: 5, bag_size: 1165
+batch 200, loss: 0.0362, weighted loss: 0.0363 label: 5, bag_size: 407
+batch 300, loss: 0.3903, weighted loss: 0.3904 label: 5, bag_size: 168
+batch 400, loss: 3.0093, weighted loss: 3.0101 label: 8, bag_size: 209
+batch 500, loss: 1.6794, weighted loss: 1.6808 label: 2, bag_size: 238
+batch 600, loss: 4.2846, weighted loss: 4.2847 label: 4, bag_size: 264
+batch 700, loss: 3.7855, weighted loss: 3.7872 label: 8, bag_size: 299
+batch 800, loss: 5.7987, weighted loss: 5.7991 label: 10, bag_size: 416
+batch 900, loss: 2.8782, weighted loss: 2.8785 label: 5, bag_size: 378
+batch 1000, loss: 4.4757, weighted loss: 4.4758 label: 4, bag_size: 435
+batch 1100, loss: 3.2291, weighted loss: 3.2298 label: 8, bag_size: 313
+batch 1200, loss: 0.0353, weighted loss: 0.0353 label: 5, bag_size: 451
+batch 1300, loss: 0.3300, weighted loss: 0.3302 label: 5, bag_size: 705
+batch 1400, loss: 1.6615, weighted loss: 1.6621 label: 4, bag_size: 1867
+batch 1500, loss: 1.3580, weighted loss: 1.3608 label: 4, bag_size: 1147
+batch 1600, loss: 5.4358, weighted loss: 5.4363 label: 10, bag_size: 829
+batch 1700, loss: 11.3538, weighted loss: 11.3540 label: 7, bag_size: 868
+batch 1800, loss: 1.2365, weighted loss: 1.2379 label: 5, bag_size: 216
+batch 1900, loss: 2.5229, weighted loss: 2.5230 label: 4, bag_size: 1726
+batch 2000, loss: 1.7727, weighted loss: 1.7739 label: 5, bag_size: 482
+batch 2100, loss: 0.5147, weighted loss: 0.5172 label: 2, bag_size: 1981
+
+Epoch: 95, train_loss: 2.1787, Coarse Acc: 0.6770, Fine Acc: 0.5143
+Val Set, val_loss: 597.6769
+Coarse Overall Accuracy: 0.6705
+Coarse Overall F1 Score: 0.3949
+Fine Overall Accuracy: 0.5303
+Fine Overall F1 Score: 0.1251
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.0359, weighted loss: 1.0368 label: 5, bag_size: 324
+batch 200, loss: 2.5022, weighted loss: 2.5023 label: 6, bag_size: 625
+batch 300, loss: 1.1548, weighted loss: 1.1573 label: 3, bag_size: 53
+batch 400, loss: 2.8690, weighted loss: 2.8728 label: 2, bag_size: 149
+batch 500, loss: 4.3534, weighted loss: 4.3536 label: 4, bag_size: 264
+batch 600, loss: 0.2667, weighted loss: 0.2673 label: 5, bag_size: 859
+batch 700, loss: 2.5337, weighted loss: 2.5365 label: 5, bag_size: 52
+batch 800, loss: 2.8462, weighted loss: 2.8472 label: 2, bag_size: 631
+batch 900, loss: 4.0070, weighted loss: 4.0082 label: 3, bag_size: 197
+batch 1000, loss: 2.6092, weighted loss: 2.6095 label: 6, bag_size: 416
+batch 1100, loss: 2.2814, weighted loss: 2.2839 label: 3, bag_size: 428
+batch 1200, loss: 0.2298, weighted loss: 0.2298 label: 5, bag_size: 592
+batch 1300, loss: 2.4571, weighted loss: 2.4572 label: 6, bag_size: 361
+batch 1400, loss: 0.6026, weighted loss: 0.6034 label: 2, bag_size: 309
+batch 1500, loss: 2.0432, weighted loss: 2.0437 label: 5, bag_size: 777
+batch 1600, loss: 4.4242, weighted loss: 4.4248 label: 3, bag_size: 366
+batch 1700, loss: 0.6938, weighted loss: 0.6947 label: 2, bag_size: 447
+batch 1800, loss: 1.2852, weighted loss: 1.2865 label: 2, bag_size: 385
+batch 1900, loss: 0.1697, weighted loss: 0.1697 label: 5, bag_size: 874
+batch 2000, loss: 1.6396, weighted loss: 1.6408 label: 5, bag_size: 317
+batch 2100, loss: 0.0972, weighted loss: 0.0973 label: 5, bag_size: 485
+
+Epoch: 96, train_loss: 2.1773, Coarse Acc: 0.6751, Fine Acc: 0.5138
+Val Set, val_loss: 597.5133
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3968
+Fine Overall Accuracy: 0.5265
+Fine Overall F1 Score: 0.1195
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.8994, weighted loss: 1.8995 label: 5, bag_size: 373
+batch 200, loss: 0.9444, weighted loss: 0.9445 label: 5, bag_size: 521
+batch 300, loss: 1.3645, weighted loss: 1.3653 label: 2, bag_size: 536
+batch 400, loss: 1.2331, weighted loss: 1.2335 label: 2, bag_size: 1293
+batch 500, loss: 0.5000, weighted loss: 0.5002 label: 5, bag_size: 234
+batch 600, loss: 1.5080, weighted loss: 1.5084 label: 2, bag_size: 620
+batch 700, loss: 5.4288, weighted loss: 5.4292 label: 8, bag_size: 1105
+batch 800, loss: 5.5248, weighted loss: 5.5255 label: 7, bag_size: 479
+batch 900, loss: 0.7249, weighted loss: 0.7260 label: 2, bag_size: 263
+batch 1000, loss: 2.0486, weighted loss: 2.0487 label: 5, bag_size: 311
+batch 1100, loss: 6.2423, weighted loss: 6.2447 label: 7, bag_size: 549
+batch 1200, loss: 12.0410, weighted loss: 12.0422 label: 1, bag_size: 418
+batch 1300, loss: 4.5467, weighted loss: 4.5475 label: 3, bag_size: 1299
+batch 1400, loss: 4.8371, weighted loss: 4.8373 label: 8, bag_size: 838
+batch 1500, loss: 3.0280, weighted loss: 3.0293 label: 5, bag_size: 555
+batch 1600, loss: 5.2218, weighted loss: 5.2222 label: 1, bag_size: 149
+batch 1700, loss: 0.7347, weighted loss: 0.7347 label: 5, bag_size: 442
+batch 1800, loss: 4.3323, weighted loss: 4.3331 label: 3, bag_size: 366
+batch 1900, loss: 0.6752, weighted loss: 0.6756 label: 5, bag_size: 1113
+batch 2000, loss: 1.3656, weighted loss: 1.3684 label: 3, bag_size: 512
+batch 2100, loss: 1.7414, weighted loss: 1.7415 label: 5, bag_size: 742
+
+Epoch: 97, train_loss: 2.1755, Coarse Acc: 0.6747, Fine Acc: 0.5124
+Val Set, val_loss: 597.3320
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3964
+Fine Overall Accuracy: 0.5303
+Fine Overall F1 Score: 0.1245
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 7.2801, weighted loss: 7.2804 label: 1, bag_size: 554
+batch 200, loss: 1.9395, weighted loss: 1.9398 label: 2, bag_size: 611
+batch 300, loss: 0.3028, weighted loss: 0.3029 label: 5, bag_size: 364
+batch 400, loss: 2.8312, weighted loss: 2.8316 label: 6, bag_size: 276
+batch 500, loss: 1.4393, weighted loss: 1.4399 label: 2, bag_size: 1479
+batch 600, loss: 0.8051, weighted loss: 0.8057 label: 2, bag_size: 1833
+batch 700, loss: 0.2940, weighted loss: 0.2942 label: 5, bag_size: 239
+batch 800, loss: 3.8940, weighted loss: 3.8946 label: 6, bag_size: 252
+batch 900, loss: 3.4615, weighted loss: 3.4620 label: 7, bag_size: 263
+batch 1000, loss: 0.8008, weighted loss: 0.8010 label: 5, bag_size: 365
+batch 1100, loss: 1.7311, weighted loss: 1.7324 label: 5, bag_size: 299
+batch 1200, loss: 0.4849, weighted loss: 0.4865 label: 2, bag_size: 714
+batch 1300, loss: 1.6322, weighted loss: 1.6325 label: 5, bag_size: 577
+batch 1400, loss: 3.5487, weighted loss: 3.5489 label: 2, bag_size: 73
+batch 1500, loss: 0.6497, weighted loss: 0.6499 label: 5, bag_size: 209
+batch 1600, loss: 1.0805, weighted loss: 1.0810 label: 5, bag_size: 909
+batch 1700, loss: 0.2160, weighted loss: 0.2161 label: 5, bag_size: 208
+batch 1800, loss: 1.2430, weighted loss: 1.2440 label: 5, bag_size: 873
+batch 1900, loss: 1.3553, weighted loss: 1.3556 label: 5, bag_size: 353
+batch 2000, loss: 1.8058, weighted loss: 1.8072 label: 3, bag_size: 304
+batch 2100, loss: 1.0311, weighted loss: 1.0313 label: 2, bag_size: 1245
+
+Epoch: 98, train_loss: 2.1748, Coarse Acc: 0.6728, Fine Acc: 0.5134
+Val Set, val_loss: 597.2423
+Coarse Overall Accuracy: 0.6780
+Coarse Overall F1 Score: 0.4109
+Fine Overall Accuracy: 0.5227
+Fine Overall F1 Score: 0.1186
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.9848, weighted loss: 1.9848 label: 5, bag_size: 128
+batch 200, loss: 0.2304, weighted loss: 0.2307 label: 5, bag_size: 1325
+batch 300, loss: 5.1732, weighted loss: 5.1732 label: 4, bag_size: 424
+batch 400, loss: 2.6656, weighted loss: 2.6672 label: 2, bag_size: 1360
+batch 500, loss: 3.7841, weighted loss: 3.7846 label: 1, bag_size: 235
+batch 600, loss: 1.9802, weighted loss: 1.9804 label: 2, bag_size: 1101
+batch 700, loss: 1.8665, weighted loss: 1.8675 label: 2, bag_size: 943
+batch 800, loss: 2.2389, weighted loss: 2.2403 label: 6, bag_size: 334
+batch 900, loss: 3.1197, weighted loss: 3.1218 label: 4, bag_size: 235
+batch 1000, loss: 0.8015, weighted loss: 0.8019 label: 5, bag_size: 364
+batch 1100, loss: 2.4093, weighted loss: 2.4096 label: 4, bag_size: 2080
+batch 1200, loss: 2.4967, weighted loss: 2.4980 label: 6, bag_size: 1655
+batch 1300, loss: 2.9194, weighted loss: 2.9196 label: 6, bag_size: 670
+batch 1400, loss: 1.9489, weighted loss: 1.9489 label: 5, bag_size: 658
+batch 1500, loss: 2.1841, weighted loss: 2.1843 label: 2, bag_size: 587
+batch 1600, loss: 2.1990, weighted loss: 2.1994 label: 5, bag_size: 458
+batch 1700, loss: 1.6964, weighted loss: 1.6981 label: 2, bag_size: 1522
+batch 1800, loss: 3.7495, weighted loss: 3.7512 label: 8, bag_size: 299
+batch 1900, loss: 1.8671, weighted loss: 1.8689 label: 5, bag_size: 235
+batch 2000, loss: 0.1900, weighted loss: 0.1901 label: 5, bag_size: 555
+batch 2100, loss: 0.5605, weighted loss: 0.5607 label: 5, bag_size: 380
+
+Epoch: 99, train_loss: 2.1726, Coarse Acc: 0.6756, Fine Acc: 0.5129
+Val Set, val_loss: 597.1686
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3966
+Fine Overall Accuracy: 0.5303
+Fine Overall F1 Score: 0.1251
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.3251, weighted loss: 3.3265 label: 2, bag_size: 78
+batch 200, loss: 3.0424, weighted loss: 3.0435 label: 2, bag_size: 165
+batch 300, loss: 1.5545, weighted loss: 1.5552 label: 5, bag_size: 599
+batch 400, loss: 0.8881, weighted loss: 0.8882 label: 5, bag_size: 339
+batch 500, loss: 0.5239, weighted loss: 0.5251 label: 2, bag_size: 333
+batch 600, loss: 1.0484, weighted loss: 1.0488 label: 5, bag_size: 298
+batch 700, loss: 0.6132, weighted loss: 0.6133 label: 2, bag_size: 298
+batch 800, loss: 1.3675, weighted loss: 1.3688 label: 6, bag_size: 182
+batch 900, loss: 3.0481, weighted loss: 3.0503 label: 7, bag_size: 209
+batch 1000, loss: 1.3635, weighted loss: 1.3662 label: 3, bag_size: 512
+batch 1100, loss: 0.6968, weighted loss: 0.6970 label: 5, bag_size: 12
+batch 1200, loss: 1.7680, weighted loss: 1.7694 label: 6, bag_size: 468
+batch 1300, loss: 1.1674, weighted loss: 1.1682 label: 5, bag_size: 833
+batch 1400, loss: 1.6792, weighted loss: 1.6795 label: 5, bag_size: 331
+batch 1500, loss: 1.1894, weighted loss: 1.1897 label: 2, bag_size: 1090
+batch 1600, loss: 2.8346, weighted loss: 2.8355 label: 2, bag_size: 363
+batch 1700, loss: 5.9803, weighted loss: 5.9815 label: 8, bag_size: 1875
+batch 1800, loss: 0.5889, weighted loss: 0.5889 label: 5, bag_size: 765
+batch 1900, loss: 3.0886, weighted loss: 3.0902 label: 7, bag_size: 628
+batch 2000, loss: 0.0529, weighted loss: 0.0529 label: 5, bag_size: 179
+batch 2100, loss: 4.0488, weighted loss: 4.0489 label: 8, bag_size: 542
+
+Epoch: 100, train_loss: 2.1707, Coarse Acc: 0.6774, Fine Acc: 0.5124
+Val Set, val_loss: 596.9057
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3969
+Fine Overall Accuracy: 0.5303
+Fine Overall F1 Score: 0.1246
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.1230, weighted loss: 1.1250 label: 2, bag_size: 177
+batch 200, loss: 2.2363, weighted loss: 2.2368 label: 4, bag_size: 2056
+batch 300, loss: 1.7459, weighted loss: 1.7462 label: 5, bag_size: 465
+batch 400, loss: 8.6407, weighted loss: 8.6412 label: 9, bag_size: 205
+batch 500, loss: 3.9012, weighted loss: 3.9015 label: 8, bag_size: 307
+batch 600, loss: 0.4051, weighted loss: 0.4051 label: 5, bag_size: 1301
+batch 700, loss: 2.8107, weighted loss: 2.8109 label: 2, bag_size: 861
+batch 800, loss: 2.2619, weighted loss: 2.2630 label: 2, bag_size: 301
+batch 900, loss: 4.3320, weighted loss: 4.3340 label: 3, bag_size: 298
+batch 1000, loss: 0.2346, weighted loss: 0.2349 label: 5, bag_size: 853
+batch 1100, loss: 0.1308, weighted loss: 0.1308 label: 5, bag_size: 261
+batch 1200, loss: 4.2800, weighted loss: 4.2810 label: 4, bag_size: 851
+batch 1300, loss: 3.7369, weighted loss: 3.7374 label: 8, bag_size: 501
+batch 1400, loss: 2.0119, weighted loss: 2.0122 label: 5, bag_size: 506
+batch 1500, loss: 0.9650, weighted loss: 0.9652 label: 5, bag_size: 519
+batch 1600, loss: 5.7303, weighted loss: 5.7319 label: 3, bag_size: 406
+batch 1700, loss: 5.9626, weighted loss: 5.9637 label: 8, bag_size: 1875
+batch 1800, loss: 1.1346, weighted loss: 1.1349 label: 5, bag_size: 1105
+batch 1900, loss: 1.7258, weighted loss: 1.7288 label: 5, bag_size: 113
+batch 2000, loss: 4.0752, weighted loss: 4.0760 label: 2, bag_size: 562
+batch 2100, loss: 1.2925, weighted loss: 1.2930 label: 5, bag_size: 788
+
+Epoch: 101, train_loss: 2.1703, Coarse Acc: 0.6770, Fine Acc: 0.5129
+Val Set, val_loss: 596.8360
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3968
+Fine Overall Accuracy: 0.5303
+Fine Overall F1 Score: 0.1200
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 4.7102, weighted loss: 4.7121 label: 10, bag_size: 239
+batch 200, loss: 0.1823, weighted loss: 0.1823 label: 5, bag_size: 300
+batch 300, loss: 1.4071, weighted loss: 1.4074 label: 5, bag_size: 649
+batch 400, loss: 4.6941, weighted loss: 4.6965 label: 10, bag_size: 13
+batch 500, loss: 1.2263, weighted loss: 1.2266 label: 2, bag_size: 1293
+batch 600, loss: 2.7518, weighted loss: 2.7530 label: 5, bag_size: 112
+batch 700, loss: 1.3592, weighted loss: 1.3593 label: 2, bag_size: 1567
+batch 800, loss: 0.1484, weighted loss: 0.1486 label: 5, bag_size: 1281
+batch 900, loss: 0.9563, weighted loss: 0.9574 label: 5, bag_size: 244
+batch 1000, loss: 0.7661, weighted loss: 0.7662 label: 5, bag_size: 235
+batch 1100, loss: 3.0570, weighted loss: 3.0585 label: 2, bag_size: 437
+batch 1200, loss: 1.4571, weighted loss: 1.4574 label: 5, bag_size: 422
+batch 1300, loss: 1.4047, weighted loss: 1.4062 label: 5, bag_size: 412
+batch 1400, loss: 0.0820, weighted loss: 0.0820 label: 5, bag_size: 905
+batch 1500, loss: 0.2839, weighted loss: 0.2845 label: 5, bag_size: 451
+batch 1600, loss: 0.3217, weighted loss: 0.3218 label: 5, bag_size: 525
+batch 1700, loss: 2.5895, weighted loss: 2.5899 label: 6, bag_size: 396
+batch 1800, loss: 1.5996, weighted loss: 1.6014 label: 3, bag_size: 813
+batch 1900, loss: 0.7415, weighted loss: 0.7420 label: 5, bag_size: 459
+batch 2000, loss: 5.8462, weighted loss: 5.8468 label: 10, bag_size: 416
+batch 2100, loss: 2.2362, weighted loss: 2.2372 label: 5, bag_size: 382
+
+Epoch: 102, train_loss: 2.1687, Coarse Acc: 0.6760, Fine Acc: 0.5129
+Val Set, val_loss: 596.8274
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3966
+Fine Overall Accuracy: 0.5265
+Fine Overall F1 Score: 0.1195
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.7518, weighted loss: 1.7529 label: 4, bag_size: 2131
+batch 200, loss: 0.7030, weighted loss: 0.7033 label: 5, bag_size: 458
+batch 300, loss: 2.7801, weighted loss: 2.7834 label: 6, bag_size: 146
+batch 400, loss: 4.1927, weighted loss: 4.1942 label: 0, bag_size: 388
+batch 500, loss: 3.3121, weighted loss: 3.3122 label: 4, bag_size: 344
+batch 600, loss: 2.3853, weighted loss: 2.3863 label: 2, bag_size: 301
+batch 700, loss: 4.7454, weighted loss: 4.7456 label: 8, bag_size: 457
+batch 800, loss: 0.1114, weighted loss: 0.1115 label: 5, bag_size: 180
+batch 900, loss: 2.6937, weighted loss: 2.6940 label: 2, bag_size: 646
+batch 1000, loss: 5.9056, weighted loss: 5.9064 label: 10, bag_size: 752
+batch 1100, loss: 1.2667, weighted loss: 1.2671 label: 5, bag_size: 370
+batch 1200, loss: 0.4092, weighted loss: 0.4092 label: 2, bag_size: 762
+batch 1300, loss: 1.1029, weighted loss: 1.1036 label: 5, bag_size: 814
+batch 1400, loss: 0.4225, weighted loss: 0.4225 label: 5, bag_size: 1032
+batch 1500, loss: 5.0648, weighted loss: 5.0649 label: 2, bag_size: 317
+batch 1600, loss: 0.3006, weighted loss: 0.3006 label: 5, bag_size: 632
+batch 1700, loss: 0.3301, weighted loss: 0.3302 label: 5, bag_size: 330
+batch 1800, loss: 5.7213, weighted loss: 5.7224 label: 9, bag_size: 237
+batch 1900, loss: 4.8340, weighted loss: 4.8356 label: 10, bag_size: 391
+batch 2000, loss: 1.6386, weighted loss: 1.6391 label: 2, bag_size: 3530
+batch 2100, loss: 3.5441, weighted loss: 3.5467 label: 2, bag_size: 282
+
+Epoch: 103, train_loss: 2.1670, Coarse Acc: 0.6760, Fine Acc: 0.5129
+Val Set, val_loss: 596.7518
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.3966
+Fine Overall Accuracy: 0.5227
+Fine Overall F1 Score: 0.1235
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.4570, weighted loss: 3.4573 label: 2, bag_size: 235
+batch 200, loss: 2.5140, weighted loss: 2.5151 label: 6, bag_size: 200
+batch 300, loss: 1.7504, weighted loss: 1.7513 label: 5, bag_size: 627
+batch 400, loss: 1.9305, weighted loss: 1.9315 label: 3, bag_size: 1987
+batch 500, loss: 3.4514, weighted loss: 3.4516 label: 6, bag_size: 224
+batch 600, loss: 3.9090, weighted loss: 3.9110 label: 4, bag_size: 552
+batch 700, loss: 1.7213, weighted loss: 1.7224 label: 5, bag_size: 575
+batch 800, loss: 1.7596, weighted loss: 1.7598 label: 5, bag_size: 954
+batch 900, loss: 1.2581, weighted loss: 1.2589 label: 5, bag_size: 795
+batch 1000, loss: 7.0253, weighted loss: 7.0259 label: 1, bag_size: 207
+batch 1100, loss: 2.4432, weighted loss: 2.4434 label: 3, bag_size: 501
+batch 1200, loss: 2.2174, weighted loss: 2.2178 label: 2, bag_size: 218
+batch 1300, loss: 1.2556, weighted loss: 1.2557 label: 2, bag_size: 1567
+batch 1400, loss: 2.2812, weighted loss: 2.2830 label: 5, bag_size: 1048
+batch 1500, loss: 0.6023, weighted loss: 0.6031 label: 5, bag_size: 394
+batch 1600, loss: 0.8372, weighted loss: 0.8376 label: 5, bag_size: 217
+batch 1700, loss: 0.7488, weighted loss: 0.7490 label: 5, bag_size: 385
+batch 1800, loss: 1.8229, weighted loss: 1.8249 label: 5, bag_size: 235
+batch 1900, loss: 0.7142, weighted loss: 0.7143 label: 5, bag_size: 1874
+batch 2000, loss: 3.1677, weighted loss: 3.1683 label: 2, bag_size: 298
+batch 2100, loss: 0.1521, weighted loss: 0.1522 label: 5, bag_size: 261
+
+Epoch: 104, train_loss: 2.1652, Coarse Acc: 0.6797, Fine Acc: 0.5097
+Val Set, val_loss: 596.4169
+Coarse Overall Accuracy: 0.6742
+Coarse Overall F1 Score: 0.4087
+Fine Overall Accuracy: 0.5303
+Fine Overall F1 Score: 0.1246
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 0.8025, weighted loss: 0.8026 label: 2, bag_size: 185
+batch 200, loss: 2.4944, weighted loss: 2.4949 label: 6, bag_size: 362
+batch 300, loss: 0.0686, weighted loss: 0.0686 label: 5, bag_size: 537
+batch 400, loss: 1.8030, weighted loss: 1.8077 label: 3, bag_size: 926
+batch 500, loss: 3.5125, weighted loss: 3.5151 label: 4, bag_size: 169
+batch 600, loss: 0.6817, weighted loss: 0.6818 label: 5, bag_size: 249
+batch 700, loss: 1.5617, weighted loss: 1.5619 label: 2, bag_size: 631
+batch 800, loss: 1.5233, weighted loss: 1.5239 label: 4, bag_size: 919
+batch 900, loss: 2.7834, weighted loss: 2.7837 label: 5, bag_size: 378
+batch 1000, loss: 1.0995, weighted loss: 1.1000 label: 2, bag_size: 1549
+batch 1100, loss: 2.1404, weighted loss: 2.1422 label: 3, bag_size: 459
+batch 1200, loss: 6.0044, weighted loss: 6.0078 label: 8, bag_size: 243
+batch 1300, loss: 10.6574, weighted loss: 10.6580 label: 5, bag_size: 3015
+batch 1400, loss: 1.7996, weighted loss: 1.8059 label: 3, bag_size: 1831
+batch 1500, loss: 1.7254, weighted loss: 1.7262 label: 2, bag_size: 1171
+batch 1600, loss: 0.8505, weighted loss: 0.8509 label: 2, bag_size: 1052
+batch 1700, loss: 1.2814, weighted loss: 1.2819 label: 5, bag_size: 422
+batch 1800, loss: 0.0890, weighted loss: 0.0893 label: 5, bag_size: 1015
+batch 1900, loss: 5.0015, weighted loss: 5.0021 label: 8, bag_size: 153
+batch 2000, loss: 4.5656, weighted loss: 4.5685 label: 1, bag_size: 113
+batch 2100, loss: 0.5411, weighted loss: 0.5413 label: 2, bag_size: 129
+
+Epoch: 105, train_loss: 2.1645, Coarse Acc: 0.6783, Fine Acc: 0.5157
+Val Set, val_loss: 596.6217
+Coarse Overall Accuracy: 0.6818
+Coarse Overall F1 Score: 0.4015
+Fine Overall Accuracy: 0.5227
+Fine Overall F1 Score: 0.1235
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 4.5638, weighted loss: 4.5647 label: 4, bag_size: 287
+batch 200, loss: 5.4344, weighted loss: 5.4350 label: 10, bag_size: 310
+batch 300, loss: 2.6975, weighted loss: 2.6987 label: 3, bag_size: 2005
+batch 400, loss: 4.3278, weighted loss: 4.3279 label: 3, bag_size: 437
+batch 500, loss: 2.3457, weighted loss: 2.3462 label: 2, bag_size: 218
+batch 600, loss: 1.4466, weighted loss: 1.4476 label: 6, bag_size: 477
+batch 700, loss: 0.9568, weighted loss: 0.9569 label: 2, bag_size: 1659
+batch 800, loss: 3.2643, weighted loss: 3.2644 label: 2, bag_size: 50
+batch 900, loss: 0.2697, weighted loss: 0.2705 label: 5, bag_size: 256
+batch 1000, loss: 1.8866, weighted loss: 1.8875 label: 6, bag_size: 422
+batch 1100, loss: 0.7528, weighted loss: 0.7569 label: 2, bag_size: 198
+batch 1200, loss: 1.1724, weighted loss: 1.1738 label: 2, bag_size: 1311
+batch 1300, loss: 1.1111, weighted loss: 1.1112 label: 2, bag_size: 820
+batch 1400, loss: 0.5382, weighted loss: 0.5383 label: 5, bag_size: 279
+batch 1500, loss: 1.5469, weighted loss: 1.5471 label: 2, bag_size: 687
+batch 1600, loss: 3.9247, weighted loss: 3.9250 label: 8, bag_size: 79
+batch 1700, loss: 3.6133, weighted loss: 3.6134 label: 2, bag_size: 235
+batch 1800, loss: 0.6658, weighted loss: 0.6659 label: 5, bag_size: 442
+batch 1900, loss: 1.1961, weighted loss: 1.1973 label: 5, bag_size: 735
+batch 2000, loss: 1.6234, weighted loss: 1.6238 label: 2, bag_size: 1193
+batch 2100, loss: 4.4569, weighted loss: 4.4569 label: 8, bag_size: 430
+
+Epoch: 106, train_loss: 2.1629, Coarse Acc: 0.6751, Fine Acc: 0.5124
+Val Set, val_loss: 596.1554
+Coarse Overall Accuracy: 0.6780
+Coarse Overall F1 Score: 0.4113
+Fine Overall Accuracy: 0.5303
+Fine Overall F1 Score: 0.1251
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 1.9643, weighted loss: 1.9648 label: 5, bag_size: 471
+batch 200, loss: 3.4903, weighted loss: 3.4906 label: 4, bag_size: 616
+batch 300, loss: 0.2400, weighted loss: 0.2400 label: 5, bag_size: 446
+batch 400, loss: 1.3844, weighted loss: 1.3848 label: 2, bag_size: 536
+batch 500, loss: 2.7338, weighted loss: 2.7346 label: 5, bag_size: 509
+batch 600, loss: 0.9872, weighted loss: 0.9893 label: 5, bag_size: 394
+batch 700, loss: 4.9242, weighted loss: 4.9247 label: 8, bag_size: 567
+batch 800, loss: 1.1818, weighted loss: 1.1832 label: 5, bag_size: 510
+batch 900, loss: 2.2696, weighted loss: 2.2700 label: 2, bag_size: 218
+batch 1000, loss: 3.7554, weighted loss: 3.7613 label: 3, bag_size: 477
+batch 1100, loss: 5.1599, weighted loss: 5.1610 label: 7, bag_size: 542
+batch 1200, loss: 0.7469, weighted loss: 0.7482 label: 2, bag_size: 334
+batch 1300, loss: 0.4810, weighted loss: 0.4937 label: 2, bag_size: 313
+batch 1400, loss: 3.4240, weighted loss: 3.4244 label: 4, bag_size: 398
+batch 1500, loss: 4.8809, weighted loss: 4.8819 label: 10, bag_size: 270
+batch 1600, loss: 1.9581, weighted loss: 1.9584 label: 5, bag_size: 331
+batch 1700, loss: 0.1908, weighted loss: 0.1909 label: 5, bag_size: 1044
+batch 1800, loss: 0.2599, weighted loss: 0.2600 label: 5, bag_size: 359
+batch 1900, loss: 2.6301, weighted loss: 2.6302 label: 6, bag_size: 802
+batch 2000, loss: 0.1959, weighted loss: 0.1960 label: 5, bag_size: 602
+batch 2100, loss: 2.9137, weighted loss: 2.9153 label: 4, bag_size: 1534
+
+Epoch: 107, train_loss: 2.1614, Coarse Acc: 0.6751, Fine Acc: 0.5152
+Val Set, val_loss: 596.0934
+Coarse Overall Accuracy: 0.6780
+Coarse Overall F1 Score: 0.4111
+Fine Overall Accuracy: 0.5303
+Fine Overall F1 Score: 0.1245
+
+Training for 4 coarse classes and 11 fine classes...
+batch 100, loss: 3.6711, weighted loss: 3.6711 label: 6, bag_size: 563
+batch 200, loss: 3.0612, weighted loss: 3.0615 label: 3, bag_size: 495
+batch 300, loss: 2.8048, weighted loss: 2.8049 label: 7, bag_size: 258
+batch 400, loss: 3.9620, weighted loss: 3.9621 label: 6, bag_size: 2033
+batch 500, loss: 1.1178, weighted loss: 1.1200 label: 3, bag_size: 53
+batch 600, loss: 0.5394, weighted loss: 0.5405 label: 5, bag_size: 358
+batch 700, loss: 2.0105, weighted loss: 2.0107 label: 5, bag_size: 1246
+batch 800, loss: 1.2988, weighted loss: 1.2990 label: 2, bag_size: 2627
+batch 900, loss: 5.1836, weighted loss: 5.1846 label: 1, bag_size: 101
+batch 1000, loss: 1.8717, weighted loss: 1.8718 label: 5, bag_size: 387
+batch 1100, loss: 3.3572, weighted loss: 3.3577 label: 8, bag_size: 119
+batch 1200, loss: 0.6241, weighted loss: 0.6242 label: 5, bag_size: 712
+batch 1300, loss: 0.0543, weighted loss: 0.0544 label: 5, bag_size: 210
+batch 1400, loss: 1.7188, weighted loss: 1.7194 label: 6, bag_size: 482
+batch 1500, loss: 1.2281, weighted loss: 1.2282 label: 5, bag_size: 320
+batch 1600, loss: 2.4680, weighted loss: 2.4688 label: 3, bag_size: 831
+batch 1700, loss: 2.2748, weighted loss: 2.2751 label: 6, bag_size: 424
+batch 1800, loss: 0.9662, weighted loss: 0.9673 label: 5, bag_size: 274
+batch 1900, loss: 1.7961, weighted loss: 1.7964 label: 5, bag_size: 188
+batch 2000, loss: 3.1956, weighted loss: 3.1966 label: 8, bag_size: 65
+batch 2100, loss: 6.9351, weighted loss: 6.9399 label: 9, bag_size: 464
+
+Epoch: 108, train_loss: 2.1596, Coarse Acc: 0.6802, Fine Acc: 0.5138
+Val Set, val_loss: 596.3824
+Coarse Overall Accuracy: 0.6894
+Coarse Overall F1 Score: 0.4279
+Fine Overall Accuracy: 0.5227
+Fine Overall F1 Score: 0.1188
+
+Evaluation on Test Set...
+f1 Coarse: 0.3650, f1 Fine: 0.1103, Coarse Acc: 0.1371, Fine Acc: 0.0343

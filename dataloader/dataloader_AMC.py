@@ -95,13 +95,13 @@ class AMCDataset(Dataset):
 
     def __str__(self):
         fine_stats = {}
-        min_shape = 9999
+        # min_shape = 9999
         for data, coarse_gt, fine_gt, split in self.data:
             if fine_gt not in fine_stats:
                 fine_stats[fine_gt] = 0
             fine_stats[fine_gt] += 1
             data_tensor = torch.load(data)
-            min_shape = min(min_shape, data_tensor.shape[0])
+            # min_shape = min(min_shape, data_tensor.shape[0])
 
         msg_fine = ""
         msg_fine += "[{} set] {}\n".format(self.split, len(self))
@@ -120,9 +120,9 @@ class AMCDataset(Dataset):
             msg_coarse += "Coarse {}: {}\n".format(k, v)
         msg_coarse += "total num of coarse classes: {}\n".format(len(coarse_stats))
 
-        min_shape_str = str(min_shape)
+        # min_shape_str = str(min_shape)
 
-        return msg_coarse + msg_fine + min_shape_str
+        return msg_coarse + msg_fine
 
     def __getitem__(self, idx):
         data, coarse_gt, fine_gt, split = self.data[idx] #, patient_id, diagnosis_id
@@ -134,20 +134,30 @@ def identity_collate(batch):
     return batch[0]
 
 
-if __name__ == "__main__":
-    base_dir = "/home/user/data/UJSMB_STLB"
-    anno_path = "/home/user/lib/Capstone_2025/dataloader/amc_fine_grained_anno.csv"
+# if __name__ == "__main__":
+#     base_dir = "/home/user/data/UJSMB_STLB"
+#     anno_path = "/home/user/lib/Capstone_2025/dataloader/amc_fine_grained_anno.csv"
+#
+#     train_dataset = AMCDataset(base_dir, anno_path, 8, split="train")
+#     val_dataset = AMCDataset(base_dir, anno_path, 8, split="val")
+#     test_dataset = AMCDataset(base_dir, anno_path, 8, split="test")
 
-    train_dataset = AMCDataset(base_dir, anno_path, 8, split="train")
-    val_dataset = AMCDataset(base_dir, anno_path, 8, split="val")
-    test_dataset = AMCDataset(base_dir, anno_path, 8, split="test")
-
+    coarse_to_fine = {}
     # print(train_dataset)
     # print(val_dataset)
-    print(test_dataset)
+    # print(test_dataset)
     # train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True, collate_fn=identity_collate)
     # for data, coarse_gt, fine_gt, patient_id, diagnosis_id in train_loader:
     #     print(data.shape)
 
     # val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False)
     # test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)
+    # for batch in train_loader:
+    #     data, y_coarse, y_fine = batch
+    #     if y_coarse.item() not in coarse_to_fine:
+    #         coarse_to_fine[y_coarse.item()] = [y_fine.item()]
+    #     else:
+    #         if y_fine.item() not in coarse_to_fine[y_coarse.item()]:
+    #             coarse_to_fine[y_coarse.item()].append(y_fine.item())
+    # for k, v in coarse_to_fine.items():
+    #     print(k, v)

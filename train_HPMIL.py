@@ -9,7 +9,7 @@ from utils import *
 from sklearn.metrics import f1_score, accuracy_score
 from torch.utils.data import DataLoader
 from dataloader.dataloader_AMC import AMCDataset
-from models import HPMIL
+from models.HPMIL import HPMIL
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -17,15 +17,15 @@ mapping = torch.zeros(11,4)
 
 mapping[0][0] = 1
 mapping[1][0] = 1
-mapping[2][0] = 1
+mapping[2][1] = 1
 mapping[3][1] = 1
 mapping[4][1] = 1
-mapping[5][1] = 1
-mapping[6][1] = 1
-mapping[7][2] = 1
-mapping[8][2] = 1
-mapping[9][2] = 1
-mapping[10][2] = 1
+mapping[5][2] = 1
+mapping[6][2] = 1
+mapping[7][3] = 1
+mapping[8][3] = 1
+mapping[9][3] = 1
+mapping[10][3] = 1
 
 
 class TextWriter():
@@ -37,13 +37,6 @@ class TextWriter():
     def print_and_write(self, text):
         print(text)
         self.wf.write(text + "\n")
-
-def generate_kmeans_prototypes(patch_features, k):
-    patch_features_np = patch_features.cpu().numpy()
-    kmeans = KMeans(n_clusters=k, random_state=42)
-    kmeans.fit(patch_features_np)
-    centroids = torch.tensor(kmeans.cluster_centers_, dtype=torch.float)
-    return centroids
 
 def compute_losses(logits_coarse, logits_fine, y_coarse, y_fine, mapping):
     loss_fn = nn.CrossEntropyLoss()
@@ -60,7 +53,7 @@ def compute_losses(logits_coarse, logits_fine, y_coarse, y_fine, mapping):
 
 def train(model, train_loader, optimizer, mapping, num_coarse, num_fine, lambda_kl = 0.2, log_writer=None):
     model.train()
-    total_loss = 0
+    train_loss = 0
     preds_c = []
     preds_f = []
     labels_c = [] 
@@ -69,39 +62,38 @@ def train(model, train_loader, optimizer, mapping, num_coarse, num_fine, lambda_
     for batch_idx, batch in enumerate(train_loader):
         data, y_coarse, y_fine = batch
         data = data.unsqueeze(0).to(device)
-        y_coarse = y_coarse.to(device).squeeze(0)
-        y_fine = y_fine.to(device).squeeze(0)
+        y_coarse = y_coarse.to(device)
+        y_fine = y_fine.to(device)
 
         logits_coarse, logits_fine = model(data)
         loss_c, loss_f, loss_kl = compute_losses(logits_coarse, logits_fine, y_coarse, y_fine, mapping)
-        loss = loss_c + loss_f + lambda_kl*loss_kl
-        loss_value = loss.item()
+        total_loss = loss_c + loss_f + lambda_kl*loss_kl
+        loss_value = loss_c.item() + loss_f.item()
+        train_loss += loss_value
 
         pred_coarse = torch.topk(logits_coarse, 1, dim=1)[1]
         pred_fine = torch.topk(logits_fine, 1, dim=1)[1]
 
-        preds_c.append(pred_coarse)
-        preds_f.append(pred_fine)
-        labels_c.append(y_coarse.item())
-        labels_f.append(y_fine.item())
+        preds_c.append(int(pred_coarse))
+        preds_f.append(int(pred_fine))
+        labels_c.append(int(y_coarse))
+        labels_f.append(int(y_fine))
 
-        loss.backward()
+        total_loss.backward()
         optimizer.step()
         optimizer.zero_grad()
-        total_loss += loss.item()
+
+
         if (batch_idx + 1) % 100 == 0:
-            log_writer.print_and_write('batch {}, loss: {:.4f}, weighted_loss: {:.4f}, '.format(batch_idx+1,
-                                                                                                        loss_value,
-                                                                                                        
-                                                                                                        total_loss.item()) +
-                        'label: {}, bag_size: {}'.format(y_fine.item(), data.size(0)))
+            log_writer.print_and_write('batch {}, loss: {:.4f}, weighted loss: {:.4f} '.format(batch_idx+1, loss_value, total_loss.item()) +
+                        'label: {}, bag_size: {}'.format(y_fine.item(), data.size(1)))
                 
     
-
+    train_loss /= len(train_loader)
     acc_coarse = accuracy_score(preds_c, labels_c)
     acc_fine = accuracy_score(labels_f, preds_f)
     log_writer.print_and_write('\nEpoch: {}, train_loss: {:.4f}, Coarse Acc: {:.4f}, Fine Acc: {:.4f}'.format(epoch, train_loss, acc_coarse, acc_fine))
-    return acc_coarse, acc_fine, total_loss/len(train_loader)
+    return acc_coarse, acc_fine, train_loss
 
 def validate(model, val_loader, mapping, lambda_kl=0.2, log_writer=None):
     model.eval()
@@ -114,21 +106,20 @@ def validate(model, val_loader, mapping, lambda_kl=0.2, log_writer=None):
         for batch in val_loader:
             data, y_coarse, y_fine = batch
             data = data.unsqueeze(0).to(device)
-            y_coarse = y_coarse.to(device).squeeze(0)
-            y_fine = y_fine.to(device).squeeze(0)
+            y_coarse = y_coarse.to(device)
+            y_fine = y_fine.to(device)
 
             logits_coarse, logits_fine = model(data)
             pred_coarse = torch.topk(logits_coarse, 1, dim=1)[1]
             pred_fine = torch.topk(logits_fine, 1, dim=1)[1]
-            preds_c.append(pred_coarse)
-            preds_f.append(pred_fine)
+            preds_c.append(int(pred_coarse))
+            preds_f.append(int(pred_fine))
 
-            labels_c.append(y_coarse.item())
-            labels_f.append(y_fine.item())
+            labels_c.append(int(y_coarse))
+            labels_f.append(int(y_fine))
 
             loss_coarse, loss_fine, loss_kl = compute_losses(logits_coarse, logits_fine, y_coarse, y_fine, mapping)
-            loss = loss_coarse + loss_fine, lambda_kl*loss_kl
-            val_loss += loss.item()
+            val_loss += loss_coarse.item() + loss_fine.item()
     acc_coarse = accuracy_score(labels_c, preds_c)
     acc_fine = accuracy_score(labels_f, preds_f)
     f1_coarse = f1_score(labels_c, preds_c, average='macro')
@@ -155,14 +146,14 @@ def test(model, test_loader, num_coarse, num_fine):
             y_coarse = y_coarse.to(device).squeeze(0)
             y_fine = y_fine.to(device).squeeze(0)
 
-            logits_coarseoarse, logits_fineine = model(data)
-            pred_coarse = logits_coarseoarse.argmax(dim=1).item()
-            pred_fine = logits_fineine.argmax(dim=1).item()
+            logits_coarse, logits_fine = model(data)
+            pred_coarse = torch.topk(logits_coarse, 1, dim=1)[1]
+            pred_fine = torch.topk(logits_fine, 1, dim=1)[1]
 
-            all_preds_coarse.append(pred_coarse)
-            all_preds_fine.append(pred_fine)
-            all_labels_coarse.append(y_coarse.item())
-            all_preds_fine.append(y_fine.item())
+            all_preds_coarse.append(int(pred_coarse))
+            all_preds_fine.append(int(pred_fine))
+            all_labels_coarse.append(int(y_coarse))
+            all_labels_fine.append(int(y_fine))
     acc_coarse = accuracy_score(all_labels_coarse, all_preds_coarse)
     acc_fine = accuracy_score(all_labels_fine, all_preds_fine)
     f1_coarse = f1_score(all_labels_coarse, all_preds_coarse, average='macro')
@@ -190,7 +181,7 @@ if __name__ == '__main__':
     parser.add_argument('--result', default='./results', type=str, help='path to results')
     parser.add_argument('--bag_loss', default='ce', type=str, help='bag level classifier loss function')
     parser.add_argument('--inst_loss', default='svm', type=str, help='instance classifier loss function')
-    parser.add_argument('--model_type', type=str, default='clam_mb', choices=['clam_sb', 'clam_mb'],
+    parser.add_argument('--model_type', type=str, default='clam_mb', choices=['clam_sb', 'clam_mb', 'hpmil'],
                         help='options for a model')
     parser.add_argument('--hierarchy', default='coarse_and_fine', type=str, choices=['coarse', 'fine', 'coarse_and_fine'],
                         help='choose classification type')
@@ -201,7 +192,7 @@ if __name__ == '__main__':
     parser.add_argument('--min_patch', default=8, type=int, help = 'min number of top k patches for inst eval')
     args = parser.parse_args()
 
-    args.result = os.path.join(args.result, args.hierarchy, args.model_type, args.lr_str)
+    args.result = os.path.join(args.result, args.model_type, args.hierarchy, args.lr_str)
     os.makedirs(args.result, exist_ok=True)
 
     set_seed(args.seed)
@@ -239,6 +230,9 @@ if __name__ == '__main__':
 
     log_writer.print_and_write("Preparing model...")
 
+
+    coarse_proto = torch.load("/home/user/lib/Capstone_2025/prototypes/coarse_proto.pt")
+    fine_proto = torch.load("/home/user/lib/Capstone_2025/prototypes/fine_proto.pt")
     model = HPMIL(class_dict['coarse'], class_dict['fine'], coarse_proto, fine_proto, dropout = 0.1)
 
     model = model.to(device)
@@ -296,6 +290,6 @@ if __name__ == '__main__':
                     label="Validation Fine accuracy")
         model.load_state_dict(torch.load(best_save_path))
 
-        log_writer.print_and_write("Evaluation on Test Set...")
-        f1_coarse, f1_fine, acc_coarse, acc_fine = test(model, test_loader, class_dict['coarse'], class_dict['fine'])
-        log_writer.print_and_write('f1 Coarse: {:.4f}, f1 Fine: {:.4f}, Coarse Acc: {:.4f}, Fine Acc: {:.4f}'.format(f1_coarse, f1_fine, acc_coarse, acc_fine))
+    log_writer.print_and_write("Evaluation on Test Set...")
+    f1_coarse, f1_fine, acc_coarse, acc_fine = test(model, test_loader, class_dict['coarse'], class_dict['fine'])
+    log_writer.print_and_write('f1 Coarse: {:.4f}, f1 Fine: {:.4f}, Coarse Acc: {:.4f}, Fine Acc: {:.4f}'.format(f1_coarse, f1_fine, acc_coarse, acc_fine))

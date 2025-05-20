@@ -17,20 +17,6 @@ class MIL_fc(nn.Module):
         self.top_k = top_k
 
     def forward(self, h, return_features=False):
-        # h = self.fc(h)              #[N, 512]
-        # logits = self.classifier(h)  # K x 2   ... [N, 2]
-        #
-        # y_probs = F.softmax(logits, dim=1)      #[N, 2]
-        # top_instance_idx = torch.topk(y_probs[:, 1], self.top_k, dim=0)[1].view(1, )     #[1]
-        # top_instance = torch.index_select(logits, dim=0, index=top_instance_idx)        #[1,2]
-        # Y_hat = torch.topk(top_instance, 1, dim=1)[1]       #prediction, shape: [1]
-        # Y_prob = F.softmax(top_instance, dim=1)             #[1,2]
-        # results_dict = {}
-        #
-        # if return_features:
-        #     top_features = torch.index_select(h, dim=0, index=top_instance_idx)
-        #     results_dict.update({'features': top_features})
-        # return top_instance, Y_prob, Y_hat, y_probs, results_dict
         h = self.fc(h)  # [N, 512]
         logits = self.classifier(h)  # K x 2   ... [N, 2]
 
